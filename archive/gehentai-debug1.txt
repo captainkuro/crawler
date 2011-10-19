@@ -1,0 +1,878 @@
+<html>
+<body>
+<form method="POST" action=/crawler/gehentai.php>
+	URL : <input type="text" name="base" value="http://g.e-hentai.org/g/168833/93bcebfaaf/"><br />
+	<br/>misal: http://g.e-hentai.org/s/2d13e252e5/168833-1<br />
+	<input type="submit">
+</form>
+http://g.e-hentai.org/codegen.php?gid=168833&t=93bcebfaaf&s=1-m-y&type=html<br/>URL:http://g.e-hentai.org/s/2d13e252e5/168833-1<br/>
+
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsa.hentaiverse.net/ehg/image.php?f=2d13e252e5fa3bd74f0c8975504bd118b981f71d-296544-837-1280-jpg&amp;t=358725-b821fb97fa7390851d3c57604db580281e145d30&amp;n=2004_01.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/6b8d0122eb/168833-2<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://sw2.hentaiverse.net/ehg/image.php?f=6b8d0122eb819af0bb394c43201332dd84cfb31f-276772-837-1280-jpg&amp;t=358725-b9b3eca5f79a1baf26f3193cf067514eaceb56df&amp;n=2004_02.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/0b875a7e85/168833-3<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://180.19.224.2:1053/h/0b875a7e850996c0efff2c45cba7769a28303e54-301240-837-1280-jpg/keystamp=1291411858-21f1637d3b/2004_03.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/05c6679984/168833-4<br/>
+
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://87.79.154.121:35479/h/05c6679984dd85fd9233a4626fed86e8e46d2396-247295-837-1280-jpg/keystamp=1291411869-10bd6a9782/2004_04.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/e6feede48b/168833-5<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://sw2.hentaiverse.net/ehg/image.php?f=e6feede48bf788a3115ca823e2c54ad28611e2ce-245541-837-1280-jpg&amp;t=358725-3bf169fb6acec3caa058ac4435036f3d37a625cb&amp;n=2004_05.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/7619a57710/168833-6<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://95.211.98.132:2017/h/7619a577101aad7f83fd54ef5e8bd670baa60962-236527-837-1280-jpg/keystamp=1291411891-2c80339fbb/2004_06.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/0507cdb51a/168833-7<br/>
+Array
+(
+    [0] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+
+    [1] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [2] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [3] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [4] => http://rsa.hentaiverse.net/ehg/image.php?f=0507cdb51a2c57df8c4564f0d4b152b4f4b407a2-249545-837-1280-jpg&amp;t=358725-6b3fbef1bad70cb8c8edcfe09f31ff48c253197c&amp;n=2004_07.jpg
+    [5] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [6] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [7] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [8] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/15d47af627/168833-8<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsa.hentaiverse.net/ehg/image.php?f=15d47af627eeb2a546f1e41bb8a89461332b1809-232519-837-1280-jpg&amp;t=358725-e14e368ab5021bd67439b8d8fe76e3d7e884a30c&amp;n=2004_08.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+
+URL:http://g.e-hentai.org/s/15e349aebc/168833-9<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsa.hentaiverse.net/ehg/image.php?f=15e349aebcab7d69da82d1a6f49e04fd99bb9fde-231201-837-1280-jpg&amp;t=358725-80955bc6c2a8cc7d5b69d5d0318cff10071513db&amp;n=2004_09.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/a22e214b7e/168833-10<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://sw2.hentaiverse.net/ehg/image.php?f=a22e214b7ed486db730dd846f0483f31f7804874-228609-837-1280-jpg&amp;t=358725-fdaa7f44016c99286d7e9134fccb4c07ad18381b&amp;n=2004_10.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/b1e723337a/168833-11<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://sw2.hentaiverse.net/ehg/image.php?f=b1e723337a3dea52cacc37d4d0c2dd7f06b986d5-243909-837-1280-jpg&amp;t=358725-1f8f35c2d6ba8abd50949c2cdc50a91061fc653e&amp;n=2004_11.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/7863a3c8c0/168833-12<br/>
+
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsb.hentaiverse.net/ehg/image.php?f=7863a3c8c03b48abc42cf6e5a6ee3f20ed53e393-248008-837-1280-jpg&amp;t=358725-5e47d28872420dc4f09321967b5f1efadba48db9&amp;n=2004_12.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/00ebdf98d5/168833-13<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://180.19.224.2:1053/h/00ebdf98d5069c1a5b61cd49fa006c6722983c28-281898-837-1280-jpg/keystamp=1291411966-bb46989b6b/2004_13.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/bddda3d0c8/168833-14<br/>
+Array
+(
+    [0] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [1] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [2] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [3] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [4] => http://rsd.hentaiverse.net/ehg/image.php?f=e254a5d3b28d865063c89d5592b044f210c5f6d9-112978-1200-786-jpg&amp;t=358725-a649cf51e88f8f3d7c84d87f8977802972c9afbf&amp;n=2004_14.jpg
+    [5] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [6] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [7] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [8] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+
+URL:http://g.e-hentai.org/s/d1e2297d61/168833-15<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://174.36.96.102:2233/h/d1e2297d616b12405fd2cac35733044f4add1af2-233296-837-1280-jpg/keystamp=1291411987-17461d64c4/2004_15.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/c467128358/168833-16<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsd.hentaiverse.net/ehg/image.php?f=c4671283589ea22eb6310e05ecdad482593e2f90-236995-837-1280-jpg&amp;t=358725-eda4c990c1859570c667ecba7440430196b8da3f&amp;n=2004_16.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/9ed40d5b13/168833-17<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://75.140.68.16:2010/h/9ed40d5b1377cd14804d269672e0352c02279682-228075-838-1280-jpg/keystamp=1291412009-95925eeafa/2004_17.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/09b46a4633/168833-18<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsb.hentaiverse.net/ehg/image.php?f=43f0d5de58594417f640784a712779237f749c79-106871-1200-786-jpg&amp;t=358725-5df6b345ede1e21b705718c8bcfd99d3b984b12e&amp;n=2004_18.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+
+URL:http://g.e-hentai.org/s/6058d5d4d6/168833-19<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsb.hentaiverse.net/ehg/image.php?f=611451154ffcefacb1a1c798ac341579fcc50d86-114172-1200-785-jpg&amp;t=358725-b428de6c830a57fca4541ad92c9eba0fb1a77262&amp;n=2004_19.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/61995705f0/168833-20<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/n/next.png
+    [1] => http://g.ehgt.org/img/f.png
+    [2] => http://g.ehgt.org/img/p.png
+    [3] => http://g.ehgt.org/img/n.png
+    [4] => http://g.ehgt.org/img/l.png
+    [5] => http://rsc.hentaiverse.net/ehg/image.php?f=ab7d3fecdae9db47630c05d3368debda027bbe2e-137412-1200-786-jpg&amp;t=358725-c3a88a96ec81b77b84e45892271b92c6f012582e&amp;n=2004_20.jpg
+    [6] => http://g.ehgt.org/img/f.png
+    [7] => http://g.ehgt.org/img/p.png
+    [8] => http://g.ehgt.org/img/n.png
+    [9] => http://g.ehgt.org/img/l.png
+    [10] => http://g.ehgt.org/img/n/back.png
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://g.ehgt.org/img/menu_right.gif
+    [15] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/2fc121f818/168833-21<br/>
+
+Array
+(
+    [0] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [1] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [2] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [3] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [4] => http://rsa.hentaiverse.net/ehg/image.php?f=2fc121f81879c15f6b0164b5af7d210d09ef00bf-250406-837-1280-jpg&amp;t=358725-82ab8d875aab62ffdd6ceb83b6ae8d6354472167&amp;n=2004_21.jpg
+    [5] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [6] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [7] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [8] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/f5c986a13e/168833-22<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsd.hentaiverse.net/ehg/image.php?f=f5c986a13ec3a14065794159d8b0783be2954547-222884-838-1280-jpg&amp;t=358725-1b2e45cd97068f3ef405510ac82b715ef4a5d925&amp;n=2004_22.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/d32a2adff6/168833-23<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsd.hentaiverse.net/ehg/image.php?f=d32a2adff62e5b551621b6038f04d9111c8ff76d-206027-838-1280-jpg&amp;t=358725-57430f554ca9210f36e59782acd35168376d3485&amp;n=2004_23.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+
+URL:http://g.e-hentai.org/s/40734ea724/168833-24<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://rsb.hentaiverse.net/ehg/image.php?f=40734ea7247a6c1edb73ed81b44754cdf1fc2257-217018-838-1280-jpg&amp;t=358725-76ef4ef4048fc149655830b76c093705512aa032&amp;n=2004_24.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/5cf04a440a/168833-25<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/n/next.png
+    [1] => http://g.ehgt.org/img/f.png
+    [2] => http://g.ehgt.org/img/p.png
+    [3] => http://g.ehgt.org/img/n.png
+    [4] => http://g.ehgt.org/img/l.png
+    [5] => http://rsb.hentaiverse.net/ehg/image.php?f=5cf04a440ae9e0940c886376b9380410bddd656c-254884-838-1280-jpg&amp;t=358725-dc1fdfa61c69c0901306a339072e1a4421f284a9&amp;n=2004_25.jpg
+    [6] => http://g.ehgt.org/img/f.png
+    [7] => http://g.ehgt.org/img/p.png
+    [8] => http://g.ehgt.org/img/n.png
+    [9] => http://g.ehgt.org/img/l.png
+    [10] => http://g.ehgt.org/img/n/back.png
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+
+URL:http://g.e-hentai.org/s/09c2b059e1/168833-26<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://sw2.hentaiverse.net/ehg/image.php?f=1bd89d1fb38aef534f7e0358fb7aa9a81e04dd49-162767-1200-786-jpg&amp;t=358725-8bd5e286692c82b7c2db9b4ea32ffe9cf6bd7c74&amp;n=2004_26.jpg
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/73f48071a6/168833-27<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+
+URL:http://g.e-hentai.org/s/21f0f96a23/168833-28<br/>
+Array
+(
+    [0] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [1] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [2] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [3] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [6] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [7] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [8] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/d942be4b64/168833-29<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/10df50de12/168833-30<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/fb424284e5/168833-31<br/>
+
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/42f6019e5f/168833-32<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/a42847158b/168833-33<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/39ab97e353/168833-34<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/d0f7c4bd03/168833-35<br/>
+
+Array
+(
+    [0] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [1] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [2] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [3] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [6] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [7] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [8] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/1a6a4ce124/168833-36<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/3a0251a9db/168833-37<br/>
+Array
+(
+
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/a6ec44464b/168833-38<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/8aa12f87ad/168833-39<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/0ef9c87894/168833-40<br/>
+
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/73c4792077/168833-41<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/71d0bbb940/168833-42<br/>
+Array
+(
+    [0] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [1] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [2] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [3] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/m.afk
+    [6] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/F.lol
+    [7] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/x.qqm
+    [8] => http://fu0.hentaiverse.net/h/0d636b1d3264d5e9821296c88324d790c22387f3-647433-1096-1600-jpg/keystamp=1269874212-cad1327af5/Aia044.jpg/f.lol
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/5068970260/168833-43<br/>
+
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/242d8ff5b0/168833-44<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/bd2fa8d085/168833-45<br/>
+Array
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+URL:http://g.e-hentai.org/s/a62f8e4867/168833-46<br/>
+Array
+
+(
+    [0] => http://g.ehgt.org/img/f.png
+    [1] => http://g.ehgt.org/img/p.png
+    [2] => http://g.ehgt.org/img/n.png
+    [3] => http://g.ehgt.org/img/l.png
+    [4] => http://g.ehgt.org/img/509s.gif
+    [5] => http://g.ehgt.org/img/f.png
+    [6] => http://g.ehgt.org/img/p.png
+    [7] => http://g.ehgt.org/img/n.png
+    [8] => http://g.ehgt.org/img/l.png
+    [9] => http://g.ehgt.org/img/n/back.png
+    [10] => http://g.ehgt.org/img/menu_right.gif
+    [11] => http://g.ehgt.org/img/menu_right.gif
+    [12] => http://g.ehgt.org/img/menu_right.gif
+    [13] => http://g.ehgt.org/img/menu_right.gif
+    [14] => http://adspaces.ero-advertising.com/adspace/45442.js
+)
+
+</body>
+</html>

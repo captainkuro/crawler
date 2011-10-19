@@ -1,0 +1,27 @@
+// Gather Information
+1 Buka satu halaman manga reader (misal http://mangastream.com/read/billy_bat/18964888/1)
+2 Pergi ke baris yang berisi definisi CSS salah satu potongan 
+  (regex '/#.+position.+width.+height.+top.+left/')
+3 Iterasi hingga ketemu baris penutup (berisi '-->')
+	3a Ambil informasi id, z-index, height, width, left, top tiap potongan 
+	   (regex '/#(\\w+) .+width:(\\d+).*height:(\\d+).*top:(\\d+).*left:(\\d+)/')
+	3b Masukkan ke array (var $imgs)
+4 Pergi ke baris yang berisi ukuran total gambar 
+  (misal <div style="position:relative;width:907px;height:1300px">)
+5 Ambil $tot_width dan $tot_height dari baris ini 
+  (regex '/<div .+position:relative.+width:(\\d+).+height:(\\d+)/')
+6 Iterasi hingga ketemu baris penutup (regex '/^\\s+<\\/div>/')
+	6a Ambil informasi id, src tiap potongan 
+	   (regex '/<div id="([^"]+)".+src="([^"]+)"/')
+	6b Gabungkan ke array tadi (var $imgs)
+7 Setelah seluruh informasi potongan didapat, urutkan ascending berdasarkan z-index 
+  (untuk mengatasi potongan pengganggu, lihat Gambar 4)
+
+// Generate Image
+8 Create canvas berukuran $tot_iwdth x $tot_height (function imagecreatetruecolor())
+9 Iterasi array berisi informasi tadi
+	9a Download potongan (function file_put_contents() dan file_get_contents())
+	9b Convert jadi canvas (function imagecreatefromjpeg/png())
+	9c Tempelkan ke canvas utama (function image_copy())
+	9d Hapus potongan (function unlink())
+10 Export menjadi jpg/png
