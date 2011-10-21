@@ -33,8 +33,8 @@ function imagefap_realm($base) {
 			$finish = true;
 		}
 		while ($line = $c->readline()) {
-			if (Crawler::is_there($line, '<img class="lazy"')) {
-				$img = Crawler::extract($line, 'data-src="', '"');
+			if (Crawler::is_there($line, 'border=0')) {
+				$img = Crawler::extract($line, 'src="', '"');
 				$img = str_replace('/thumb/', '/full/', $img);
 				$filename = basename($img);
 				$ext = Crawler::cutfromlast($filename, '.');
