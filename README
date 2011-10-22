@@ -1,1 +1,8 @@
 Script2 spider website yang gw tulis from scratch.
+
+Requirement:
+- PHP 5.3
+- cURL
+- PDO + Sqlite + Mysql
+
+instead of localhost/crawler/asdf.php use localhost/crawler/asdf
