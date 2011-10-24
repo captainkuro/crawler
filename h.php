@@ -139,7 +139,7 @@ function ichan_realm($start_url) {
 	while ($line = $c->readline()) {
 		if (Crawler::is_there($line, '<a href') && Crawler::is_there($line, 'http://ichan.org/') && Crawler::is_there($line, '/src/')) {
 			$raw = Crawler::extract($line, '"', '"');
-			$img = str_replace('http://c3a56840.linkbucks.com/url/', '', $raw);
+			$img = preg_replace('/http:\/\/[\w\.]+\/url\//', '', $raw);
 			$text = Crawler::n(++$i, 3) . '.jpg';
 			echo "<a href='$img'>$text</a><br/>\n";
 		} else if (Crawler::is_there($line, '"footerbg"')) {
@@ -305,6 +305,16 @@ function thedoujin_realm($url) {
 	$c->close();
 }
 
+function old_hfh_realm($url) {
+	$name = basename($url);
+	$c = new Crawler($url);
+	$exp = Crawler::extract_to_array($c->curline, 'href="', '"');
+	foreach ($exp as $e) {
+		$img = preg_replace('/^.*redirect\.html\?/', '', $e);
+		echo "<a href='$img'>$name</a><br/>\n";
+	}
+}
+
 
 ?>
 <html>
@@ -340,6 +350,8 @@ if ($_POST) {
 		$s->go();
 	} else if (preg_match('/hentairules\.net\/gal\//', $start_url)) {
 		hentairules_realm($start_url);
+	} else if (preg_match('/hentaifromhell\.net/', $start_url)) {
+		old_hfh_realm($start_url);
 	} else {
 		// Simple mapping host => function
 		$map = array(
