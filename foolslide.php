@@ -118,7 +118,7 @@ function crawl_page($p) {
 	$p->go_line('class="open"');
 	$img = $p->curr_line()->dup()->cut_between('src="', '"')->to_s();
 	$iname = urldecode(basename($img));
-	echo "<a href='$img'>$prefix-$ifx-$iname</a><br/>\n";
+	echo "<a href=\"$img\">$prefix-$ifx-$iname</a><br/>\n";
 }
 
 	foreach ($info as $v) {
