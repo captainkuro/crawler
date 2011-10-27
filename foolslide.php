@@ -6,10 +6,6 @@ http://reader.imperialscans.com/reader/series/historys_strongest_disciple_kenich
 */
 extract($_POST);
 
-$supported = array(
-	
-);
-
 echo 
 X::_o('html'),
 	X::_o('body')
