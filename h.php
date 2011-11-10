@@ -340,7 +340,7 @@ if ($_POST) {
 		require_once 'class/spider_hfhgallery1.php';
 		$s = new Spider_Hfhgallery1($start_url);
 		$s->go();
-	} else if (preg_match('/gallery\.hentaifromhell\.net.*hfh/', $start_url)) {
+	} else if (preg_match('/gallery1?\.hentaifromhell\.net.*hfh/', $start_url)) {
 		require_once 'class/spider_hfhgallery1.php';
 		$s = new Spider_Hfhgallery1($start_url);
 		$s->go();
