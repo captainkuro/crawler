@@ -288,9 +288,6 @@ function thedoujin_realm($url) {
 	$c->go_to('class="content"');
 	while ($line = $c->readline()) {
 		if (Crawler::is_there($line, 'src=')) {
-
-
-
 			$thumb = Crawler::extract($line, 'src="', '"');
 			$img = str_replace('/www.', '/img1.', $thumb);
 			$img = str_replace('/thumbnails/', '/images/', $img);
@@ -315,6 +312,34 @@ function old_hfh_realm($url) {
 	}
 }
 
+function rule34($url) {
+	$text = basename(dirname($url));
+	$site = 'http://rule34.paheal.net';
+	$continue = true;
+	while ($continue) {
+		echo "$uri<br/>";
+		$c = new Crawler($url);
+		$c->go_to("id='Navigationleft'");
+		$c->readline();
+		$c->readline();
+		$line = $c->curline;
+		if (preg_match('/<a href=\'([^\']+)\'>Next/', $line, $m)) {
+			$url = $site . $m[1];
+		} else {
+			$continue = false;
+		}
+		$c->go_to("id='Imagesmain'");
+		while ($line = $c->readline()) {
+			if (Crawler::is_there($line, '>Image Only<')) {
+				$href = Crawler::extract($line, "href='", "'");
+				echo "<a href='$href'>$text</a><br/>\n";
+			} else if (Crawler::is_there($line, 'id="footer"')) {
+				break;
+			}
+		}
+	}
+	
+}
 
 ?>
 <html>
@@ -365,6 +390,7 @@ if ($_POST) {
 			'gallery.ryuutama.com' => 'ryuutama_realm',
 			'animephile.com' => 'animephile_realm',
 			'thedoujin.com' => 'thedoujin_realm',
+			'rule34.paheal.net' => 'rule34',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
