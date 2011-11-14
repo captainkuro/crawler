@@ -332,6 +332,7 @@ function rule34($url) {
 		while ($line = $c->readline()) {
 			if (Crawler::is_there($line, '>Image Only<')) {
 				$href = Crawler::extract($line, "href='", "'");
+				$href = substr($href, 0, 200);
 				echo "<a href='$href'>$text</a><br/>\n";
 			} else if (Crawler::is_there($line, 'id="footer"')) {
 				break;
