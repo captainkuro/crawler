@@ -602,3 +602,32 @@ function updaterus2() {
 	}
 }
 // updaterus2();
+
+function comicartcommunity($base_url) {
+	$site = 'http://www.comicartcommunity.com/gallery/';
+	$continue = true;
+	$page = 1;
+	while ($continue) {
+		$url = $base_url . "&page=$page";
+		echo "$url<br/>";
+		$p = new Page($url);
+		$p->go_line('class="imagerow1"');
+		do { if ($p->curr_line()->contain('src="') 
+				&& $p->curr_line()->contain('href="')
+				&& !$p->curr_line()->contain('<!--')) 
+			{
+			$src = $p->curr_line()->dup()
+				->cut_between('src="', '"')
+				->replace('/thumbnails/', '/media/')
+				->to_s();
+			echo "<a href='$site$src'>asdf</a><br />\n";
+		}} while(!$p->next_line()->contain('class="paging"'));
+		if ($p->curr_line()->contain('class="paging">&raquo;')) {
+			
+		} else {
+			$continue = false;
+		}
+		$page++;
+	}
+}
+// comicartcommunity('http://www.comicartcommunity.com/gallery/categories.php?cat_id=75');
