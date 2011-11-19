@@ -313,11 +313,11 @@ function old_hfh_realm($url) {
 }
 
 function rule34($url) {
-	$text = basename(dirname($url));
+	$text = rawurldecode(basename(dirname($url)));
 	$site = 'http://rule34.paheal.net';
 	$continue = true;
 	while ($continue) {
-		echo "$uri<br/>";
+		echo "$url<br/>";
 		$c = new Crawler($url);
 		$c->go_to("id='Navigationleft'");
 		$c->readline();
@@ -332,7 +332,6 @@ function rule34($url) {
 		while ($line = $c->readline()) {
 			if (Crawler::is_there($line, '>Image Only<')) {
 				$href = Crawler::extract($line, "href='", "'");
-				$href = substr($href, 0, 200);
 				echo "<a href='$href'>$text</a><br/>\n";
 			} else if (Crawler::is_there($line, 'id="footer"')) {
 				break;
