@@ -267,15 +267,31 @@ function ryuutama_realm($url) {
 
 // http://www.animephile.com/hentai/full-metal-panic.html?lzkfile=Full+Metal+Panic!%2FFull+Metal%2F
 function animephile_realm($url) {
-	$c = new Crawler($url);
+	$base = 'http://www.animephile.com';
 	$name = basename($url);
 	$name = Crawler::cutuntil($name, '.');
-	$c->go_to('id="gallery"');
-	$raw = Crawler::extract_to_array($c->curline, 'src="', '"');
-	foreach ($raw as $r) {
-		$r = str_replace('/thumbs/', '/', $r);
-		$name = basename(dirname($r));
-		echo "<a href='$r'>$name</a><br />\n";
+	if (strpos($url, '/hentai-doujinshi/')) {
+		$c = new Crawler($url);
+		$c->go_to('id="mainimage"');
+		preg_match('/"viewerLabel"> of (\d+)<\//', $c->curline, $m);
+		$max = $m[1];
+		for ($i=1; $i<=$max; $i++) {
+			$c = new Crawler($url.'?page='.$i);
+			$c->go_to('id="mainimage"');
+			// current image
+			preg_match('/id="mainimage" src="([^"]+)"/', $c->curline, $m);
+			$r = $m[1];
+			echo "<a href=\"$base$r\">$name</a><br />\n";
+		}
+	} else {
+		$c = new Crawler($url);
+		$c->go_to('id="gallery"');
+		$raw = Crawler::extract_to_array($c->curline, 'src="', '"');
+		foreach ($raw as $r) {
+			$r = str_replace('/thumbs/', '/', $r);
+			$name = basename(dirname($r));
+			echo "<a href=\"$r\">$name</a><br />\n";
+		}
 	}
 }
 
