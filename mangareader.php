@@ -1,17 +1,76 @@
 <?php
 require 'crawler.php';
+class Mangareader extends Manga_Crawler {
+	private $sitename = 'http://www.mangareader.net';
+	
+	// need to be overridden, return array[desc,url,infix]
+	// $base is URL submitteds
+	public function extract_info($base) {
+		echo '<tr><td colspan="2">Progress.. ';
+		$c = new Crawler($base);
+		$c->go_to('id="listing"');
+		$list = array();
+		while ($line = $c->readline()) {
+			if (Crawler::is_there($line, 'class="chico_')) {
+				if (!Crawler::is_there($line, ' href="')) $line = $c->readline();
+				$chp = Crawler::extract($line, 'href="', '"');
+				$ifx = Crawler::cutfromlast1($chp, '/');
+				$ifx = str_replace('chapter-', '', $ifx);
+				$ifx = str_replace('.html', '', $ifx);
+				$list[] = array(
+					'url' => $this->sitename . $chp,
+					'infix' => $ifx,
+					'desc' => strip_tags(Crawler::extract($line, ': ', '</td>')),
+				);
+				echo $ifx.'.. ';
+			} else if (Crawler::is_there($line, '</table>')) {
+				break;
+			}
+		}
+		$c->close();
+		echo 'End</td></tr>';
+		return $list;
+	}
+	
+	// must be overridden, echo html of links
+	// $v contain [url,desc,infix]
+	public function crawl_chapter($v) {
+		$c = new Crawler($v['url']);
+		$c->go_to('id="pageMenu"');
+		$pages = array();
+		while ($line = $c->readline()) {
+			if (Crawler::is_there($line, '<option')) {
+				$pages[] = $this->sitename . Crawler::extract($line, 'value="', '"');
+			} else if (Crawler::is_there($line, '</select>')) {
+				break;
+			}
+		}
+		//$pages = Crawler::extract_to_array($c->curline, 'value="', '"');
+		$c->close();
+		
+		Crawler::multiProcess(4, $pages, array($this, 'mangareader_1_page'), array($v['infix']));
+	}
+	
+	public function mangareader_1_page($fil, $url, $chapter) {
+		$prefix = $this->prefix;
+		$chapter = Crawler::pad($chapter, 3);
+		$c = new Crawler($fil);
+		$c->go_to('width="800"');
+		$img = $c->getbetween('src="', '"');
+		// if (@$_GET['show_url']) echo "<a href='$url'>URL</a> ";
+		echo '<a href="'.$img.'">'.$prefix.'-'.$chapter.'-'.basename($img).'</a>'."<br/>\n";
+		$c->close();
+	}
+}
+
+$m = new Mangareader();
+$m->run();
+
+exit;
+
 extract($_POST);
 
-function mangareader_1_page($fil, $url, $chapter) {
-	global $prefix;
-    $chapter = Crawler::pad($chapter, 3);
-	$c = new Crawler($fil);
-	$c->go_to('width="800"');
-	$img = $c->getbetween('src="', '"');
-    if (@$_GET['show_url']) echo "<a href='$url'>URL</a> ";
-	echo '<a href="'.$img.'">'.$prefix.'-'.$chapter.'-'.basename($img).'</a>'."<br/>\n";
-	$c->close();
-}
+
 
 function mangareader_1_chapter($url, $chapter) {
 	global $sitename;
@@ -49,9 +108,9 @@ function click_this() {
 <fieldset>
     <legend>Stage 1</legend>
     <form method="POST" action="">
-        URL FOLDER: <input type="text" name="base" value="<?php echo $base;?>"/> kalo url chapter berarti shortcut<br />
-        Prefix: <input type="text" name="prefix" value="<?php echo $prefix;?>"/><br />
-		Infix: <input type="text" name="infiks" value="<?php echo $infiks?>" /> for shortcut<br/>
+        URL FOLDER: <input type="text" name="base" value="<?php echo @$base;?>"/> kalo url chapter berarti shortcut<br />
+        Prefix: <input type="text" name="prefix" value="<?php echo @$prefix;?>"/><br />
+		Infix: <input type="text" name="infiks" value="<?php echo @$infiks?>" /> for shortcut<br/>
         <input type="submit" name="stage1"/>
     </form>
 </fieldset>
@@ -59,7 +118,7 @@ function click_this() {
 //http://www.mangareader.net/103/one-piece.html
 $sitename = 'http://www.mangareader.net';
 
-if (Crawler::is_there($base, '/chapter-')) {	// shortcut, hanya 1 chapter
+if (Crawler::is_there(@$base, '/chapter-')) {	// shortcut, hanya 1 chapter
 	mangareader_1_chapter($base, $infiks);
 	exit;
 }
@@ -68,8 +127,8 @@ if (Crawler::is_there($base, '/chapter-')) {	// shortcut, hanya 1 chapter
 <fieldset>
     <legend>Stage 2</legend>
     <form method="POST" action="">
-        URL FOLDER: <input type="text" name="base" value="<?php echo $base;?>"><br />
-        Prefix: <input type="text" name="prefix" value="<?php echo $prefix;?>"><br />
+        URL FOLDER: <input type="text" name="base" value="<?php echo @$base;?>"><br />
+        Prefix: <input type="text" name="prefix" value="<?php echo @$prefix;?>"><br />
         <div>Choose volume/chapter to be downloaded:</div>
         <input type="checkbox" name="all" value="all" onclick="click_this()"/>All<br/>
 		<table>
@@ -78,7 +137,7 @@ if (Crawler::is_there($base, '/chapter-')) {	// shortcut, hanya 1 chapter
 				<th>Infix</th>
 			</tr>
 <?php 
-if ($stage1) {
+if (@$stage1) {
 	echo '<tr><td colspan="2">Progress.. ';
 	$c = new Crawler($base);
 	$c->go_to('id="listing"');
@@ -117,7 +176,7 @@ if ($stage1) {
 		<td><input type="text" name="infix[<?php echo $i?>]" value="<?php echo $infix[$key]?>"/></td>
 	</tr><?  $i++;
     }
-} else if ($stage2) {
+} else if (@$stage2) {
     foreach ($chapters as $key => $val) {
         ?><tr>
 			<td>
@@ -139,7 +198,7 @@ if ($stage1) {
     <legend>Stage 3</legend>
     <div>Right-click and DownThemAll! with *text*\*name*.*ext* option</div>
     <?php 
-    if ($stage2) {
+    if (@$stage2) {
 		$chapters = array_reverse($chapters, true);
 		//$descriptions = array_reverse($descriptions);
 		$infix = array_reverse($infix, true);
