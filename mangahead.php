@@ -5,22 +5,20 @@ extract($_POST);
 <html>
 <body>
 <form method="POST" action="">
-	URL FOLDER: <input type="text" name="base" value="<?=$base;?>"><br />
-    Chapter: <input type="text" name="chapter" value="<?=$chapter;?>"><br />
-	Prefix: <input type="text" name="prefix" value="<?=$prefix;?>"><br />
+	URL FOLDER: <input type="text" name="base" value="<?=@$base;?>"><br />
+    Chapter: <input type="text" name="chapter" value="<?=@$chapter;?>"><br />
+	Prefix: <input type="text" name="prefix" value="<?=@$prefix;?>"><br />
 	<input type="submit">
 </form>
 <?
 //http://mangahead.com/Manga-English-Scan/History-Strongest-Disciple-Kenichi/Historys-Strongest-Disciple-Kenichi-392-English-Scan
-$base = $_POST['base'];
-$prefix = $_POST['prefix'];
 $sitename = "http://mangahead.com";
-$pref = $_POST['base'];
+$pref = @$_POST['base'];
 if (!Crawler::is_there($pref, '/index.php/')) {
 	$pref = str_replace($sitename.'/Manga', $sitename.'/index.php/Manga', $pref);
 }
 
-if ($base) {
+if (@$base) {
 	$finish = false;
 	if (Crawler::is_there($pref, '?page=')) {
 		$page = Crawler::cutafter($pref, '?page=');
