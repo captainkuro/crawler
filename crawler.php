@@ -457,9 +457,9 @@ may contain DownThemAll! specific information in the DownThemAll! namespace: htt
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch, CURLOPT_ENCODING, "");
 			curl_setopt($ch, CURLOPT_TIMEOUT, 150);
-			if ($opts['cookie']) curl_setopt($ch, CURLOPT_COOKIE, $opts['cookie']);
-			if ($opts['referrer']) curl_setopt($ch, CURLOPT_REFERER, $opts['referrer']);
-			if ($opts['agent']) curl_setopt($ch, CURLOPT_USERAGENT, $opts['agent']);
+			if (@$opts['cookie']) curl_setopt($ch, CURLOPT_COOKIE, $opts['cookie']);
+			if (@$opts['referrer']) curl_setopt($ch, CURLOPT_REFERER, $opts['referrer']);
+			if (@$opts['agent']) curl_setopt($ch, CURLOPT_USERAGENT, $opts['agent']);
 			$fil = tmpfile();
 			$asdf = curl_exec($ch);
 			//print_r($asdf);
