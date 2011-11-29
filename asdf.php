@@ -80,13 +80,17 @@ function vote_delamibrand($id) {
 	));
 	// echo '<pre>'.$p->content().'</pre>';
 }
-$i = 1;
-$pool_id = array(1,2,7,8,11,12,15,16,17,18,20,21,22,23,24,25,27,28,29,30,31,32,33,37,39,40,41,42,44,46,47);
-while (true) {
-	foreach ($pool_id as $id) {
-		// $id = 46;
-		echo $id.'-'.$i++.' ';
-		vote_delamibrand($id);
-		sleep(3);
+function do_vote_delamibrand() {
+	$i = 1;
+	$pool_id = array(1,2,7,8,11,12,15,16,17,18,20,21,22,23,24,25,27,28,29,30,31,32,33,37,39,40,41,42,44,46,47);
+	while (true) {
+		foreach ($pool_id as $id) {
+			echo $id.'-'.$i++.' ';
+			vote_delamibrand($id);
+			sleep(5);
+			vote_delamibrand(46);
+			sleep(5);
+		}
 	}
 }
+// do_vote_delamibrand();

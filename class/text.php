@@ -243,9 +243,9 @@ class Text {
 	
 	// generate random email
 	public static function random_email() {
-		$user = Text::random_char(rand(3,10));
-		$domain = Text::random_char(rand(5,10));
-		$pool_tld = array('com','net','org','in','co.id','us','ru','gov','com.sg','sg','asia','biz','edu','info');
+		$user = Text::random_char(rand(3,15));
+		$domain = Text::random_char(rand(4,10));
+		$pool_tld = array('com','net','org','in','co.id','us','ru','gov','com.sg','sg','asia','biz','edu','info', 'cn');
 		$tld = $pool_tld[rand(0, count($pool_tld)-1)];
 		$email = "$user@$domain.$tld";
 		return $email;
