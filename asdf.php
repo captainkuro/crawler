@@ -65,3 +65,28 @@ function booru_nanochan() {
 }
 // booru_nanochan();
 
+function vote_delamibrand($id) {
+	$url = 'http://v2web.delamibrands.com/ss2011/vote.php?id='.$id;
+	$data = array(
+		'email' => Text::random_email(),
+		'id' => $id,
+		'submit' => 'Vote',
+	);
+	$p = new Page($url, array(
+		CURLOPT_POST => true,
+		CURLOPT_POSTFIELDS => $data,
+		'become_firefox' => true,
+		CURLOPT_REFERER => $url,
+	));
+	// echo '<pre>'.$p->content().'</pre>';
+}
+$i = 1;
+$pool_id = array(1,2,7,8,11,12,15,16,17,18,20,21,22,23,24,25,27,28,29,30,31,32,33,37,39,40,41,42,44,46,47);
+while (true) {
+	foreach ($pool_id as $id) {
+		// $id = 46;
+		echo $id.'-'.$i++.' ';
+		vote_delamibrand($id);
+		sleep(3);
+	}
+}
