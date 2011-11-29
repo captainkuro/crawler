@@ -1,6 +1,6 @@
 <?php
 
-class Manga_Crawler {
+abstract class Manga_Crawler {
 	public function display_header() {
 		echo 
 		X::_o('html'),
@@ -117,9 +117,9 @@ class Manga_Crawler {
 	
 	// need to be overridden, return array[desc,url,infix]
 	// $base is URL submitted
-	public function extract_info($base) {}
+	abstract public function extract_info($base);
 	
 	// must be overridden, echo html of links
 	// $v contain [url,desc,infix]
-	public function crawl_chapter($v) {}
+	abstract public function crawl_chapter($v);
 }
