@@ -1,6 +1,9 @@
 <?php
 
 abstract class Manga_Crawler {
+	//enable single chapter crawling
+	protected $enable_single_chapter = false;
+	
 	public function display_header() {
 		echo 
 		X::_o('html'),
@@ -26,8 +29,12 @@ abstract class Manga_Crawler {
 		echo 
 		X::h2('1'),
 		X::form(array('method'=>'post'),
-			'Manga: ',X::input(array('type'=>'text','name'=>'base','value'=>@$this->base)),X::br(),
+			'Manga URL: ',X::input(array('type'=>'text','name'=>'base','value'=>@$this->base)),X::br(),
 			'Prefix: ',X::input(array('type'=>'text','name'=>'prefix','value'=>@$this->prefix)),X::br(),
+			$this->enable_single_chapter 
+				? 'Infix: '.X::input(array('type'=>'text','name'=>'singlefix','value'=>@$this->singlefix)).' only for single chapter'.X::br()
+				: ''
+			,
 			X::input(array('type'=>'submit','name'=>'stage1'))
 		)
 		;
@@ -37,7 +44,7 @@ abstract class Manga_Crawler {
 		echo
 		X::h2('2'),
 		X::_o('form', array('method'=>'post')),
-			'Manga: ',X::input(array('type'=>'text','name'=>'base','value'=>@$this->base)),X::br(),
+			'Manga URL: ',X::input(array('type'=>'text','name'=>'base','value'=>@$this->base)),X::br(),
 			'Prefix: ',X::input(array('type'=>'text','name'=>'prefix','value'=>@$this->prefix)),X::br(),
 			X::div('Choose chapter:'),
 			X::input(array('type'=>'checkbox','name'=>'all','onclick'=>'click_this()')),'All',X::br(),
@@ -89,6 +96,15 @@ abstract class Manga_Crawler {
 		$this->display_stage_1();
 		
 		if (isset($this->stage1) || isset($this->stage2)) {
+			// if single chapter, skip stage2 and stage3
+			if ($this->enable_single_chapter && $this->url_is_single_chapter($this->base)) {
+				$this->crawl_chapter(array(
+					'url' => $this->base,
+					'infix' => $this->singlefix,
+					'desc' => '',
+				));
+				exit;
+			}
 			$this->display_stage_2();
 		}
 		
@@ -122,4 +138,9 @@ abstract class Manga_Crawler {
 	// must be overridden, echo html of links
 	// $v contain [url,desc,infix]
 	abstract public function crawl_chapter($v);
+	
+	// must be overridden if want to enable single chapter crawl
+	public function url_is_single_chapter($url) {
+		return false;
+	}
 }

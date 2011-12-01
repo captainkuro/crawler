@@ -2,6 +2,8 @@
 // http://www.batoto.com/comic/_/comics/xblade-r789
 // http://www.batoto.com/read/_/27286/xblade_ch41_by_twilight-dreams-scans
 class Batoto extends Manga_Crawler {
+	protected $enable_single_chapter = true;
+	
 	// need to be overridden, return array[desc,url,infix]
 	// $base is URL submitteds
 	public function extract_info($base) {
@@ -54,6 +56,10 @@ class Batoto extends Manga_Crawler {
 			$iname = preg_replace('/\w{13}\.(\w+)$/', '.$1', $iname);
 		}
 		echo "<a href='$img'>$prefix-$ifx-$iname</a><br/>\n";
+	}
+	
+	public function url_is_single_chapter($url) {
+		return strpos($url, '/read/_') !== false;
 	}
 }
 $b = new Batoto();
