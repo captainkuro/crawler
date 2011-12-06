@@ -357,6 +357,44 @@ function rule34($url) {
 	
 }
 
+function sankakucomplex($url) {
+	if (strpos($url, '/idol.')) {
+		$base = 'http://idol.sankakucomplex.com';
+	} else {
+		$base = 'http://chan.sankakucomplex.com';
+	}
+	$page = 1;
+	do {
+		$purl = $url.'&page='.$page;
+		$P = new Page($purl);
+		$T = new Text($P->content());
+		$a = $T->extract_to_array('href="', '"');
+		foreach ($a as $i => $e) {
+			$E = new Text($e);
+			if (!$E->contain('/post/show')) {
+				unset($a[$i]);
+			}
+		}
+		if (!count($a)) break;
+		foreach ($a as $i => $e) {
+			$E = new Text($e);
+			$kurl = $base . $e;
+			$P = new Page($kurl);
+			$P->go_line('id="lowres"');
+			if ($P->end_of_line()) {
+				$P->reset_line();
+				$P->go_line('id="highres"');
+			}
+			$img = $P->curr_line()->cut_between('href="', '"')->to_s();
+			$P->reset_line();
+			$P->go_line('id="post_old_tags"');
+			$tag = $P->curr_line()->cut_between('value="', '"')->substr(0, 150)->to_s(); // max 100 karakter
+			echo "<a href='$img'>$tag</a><br />\n";
+		}
+		$page++;
+	} while (true);
+}
+
 ?>
 <html>
 <body>
@@ -407,6 +445,7 @@ if ($_POST) {
 			'animephile.com' => 'animephile_realm',
 			'thedoujin.com' => 'thedoujin_realm',
 			'rule34.paheal.net' => 'rule34',
+			'sankakucomplex.com' => 'sankakucomplex',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {

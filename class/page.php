@@ -162,7 +162,7 @@ class Page {
 	}
 	
 	public function end_of_line() {
-		return $this->current_i >= count($this->lines);
+		return $this->current_i >= (count($this->lines)-1);
 	}
 	
 	public function go_line($search) {
