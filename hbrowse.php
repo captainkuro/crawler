@@ -401,10 +401,10 @@ switch ($stage) {
 		$origins = arr_to_flat($origins);
 		?>
 		<form method="post">
-			Title: <input name="title" type="text" value="" /><br/>
-			Artist: <input name="artist" type="text" value="" /><br/>
-			Origin: <input name="origin" type="text" value="" /><br/>
-			Limit: <input name="limit" type="text" value="" /><br />
+			Title: <input name="title" type="text" value="<?php echo @$_REQUEST['title']; ?>" /><br/>
+			Artist: <input name="artist" type="text" value="<?php echo @$_REQUEST['artist']; ?>" /><br/>
+			Origin: <input name="origin" type="text" value="<?php echo @$_REQUEST['origin']; ?>" /><br/>
+			Limit: <input name="limit" type="text" value="<?php echo @$_REQUEST['limit']; ?>" /><br />
 			Order: <input name="order" type="text" value="<?php echo @$_REQUEST['order'] ?>" /><br />
 			Exact Artist: <select name="exact_artist"><option value="">-</option><option><?php echo implode('</option><option>', $artists) ?></option></select>
 			Exact Origin: <select name="exact_origin"><option value="">-</option><option><?php echo implode('</option><option>', $origins) ?></option></select>
@@ -422,8 +422,8 @@ switch ($stage) {
 						<?php foreach ($vals as $val) : ?>
 							<tr>
 								<td><?php echo $val ?></td>
-								<td><input type="checkbox" name="include[<?php echo $key ?>][]" value="<?php echo $val ?>" /></td>
-								<td><input type="checkbox" name="exclude[<?php echo $key ?>][]" value="<?php echo $val ?>" /></td>
+								<td><input type="checkbox" name="include[<?php echo $key ?>][]" value="<?php echo $val ?>" <?php if (in_array($val, (array)@$_REQUEST['include'][$key])) echo 'checked'; ?>/></td>
+								<td><input type="checkbox" name="exclude[<?php echo $key ?>][]" value="<?php echo $val ?>" <?php if (in_array($val, (array)@$_REQUEST['exclude'][$key])) echo 'checked'; ?>/></td>
 							</tr>
 						<?php endforeach ?>
 					</table>
