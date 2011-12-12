@@ -395,6 +395,38 @@ function sankakucomplex($url) {
 	} while (true);
 }
 
+function readhentaionline($url) {
+// http://readhentaionline.com/read-gohoushi-ayanami-san-hentai-manga-online/
+	$base = 'http://readhentaionline.com';
+	$chunk = basename($url);
+	preg_match('/read-(.+)-hentai-manga-online/', $chunk, $m);
+	$title = $m[1];
+	
+	$p = new Page($url);
+	$p->go_line('id="gallery"');
+	$url = $base . $p->next_line()->dup()
+		->cut_between('href="', '"')
+	->to_s();
+	$m = $p->curr_line()->regex_match('/Total No of Images in Gallery: (\d+)/');
+	$pages = $m[1];
+	
+	$p = new Page($url);
+	$t_content = new Text($p->content());
+	$raw = $t_content->extract_to_array('src="', '"');
+	// search for image
+	foreach ($raw as $e) {
+		if (preg_match('/1\.jpg$/', $e)) {
+			$src = $e;
+			break;
+		}
+	}
+	if (!isset($src)) throw new Exception('Image not found');
+	$img_dir = dirname($src);
+	for ($i=1; $i<=$pages; $i++) {
+		echo "<a href='$img_dir/$i.jpg'>$title</a><br/>\n";
+	}
+}
+
 ?>
 <html>
 <body>
@@ -446,6 +478,7 @@ if ($_POST) {
 			'thedoujin.com' => 'thedoujin_realm',
 			'rule34.paheal.net' => 'rule34',
 			'sankakucomplex.com' => 'sankakucomplex',
+			'readhentaionline.com' => 'readhentaionline',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
