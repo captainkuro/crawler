@@ -120,8 +120,10 @@
          * an array of instances of the class associated
          * with this wrapper instead of the raw ORM class.
          */
-        public function find_many() {
-            return array_map(array($this, '_create_model_instance'), parent::find_many());
+        public function find_many($as_array = false) {
+			$result = parent::find_many($as_array);
+			if ($as_array) return $result;
+            return array_map(array($this, '_create_model_instance'), $result);
         }
 
         /**
@@ -340,6 +342,9 @@
         public function get($property) {
             return $this->orm->get($property);
         }
+        public function ori_get($property) {
+            return $this->orm->ori_get($property);
+        }
 
         /**
          * Setter method, allows $model->set('property', 'value') access to data.
@@ -347,6 +352,13 @@
         public function set($property, $value) {
             $this->orm->set($property, $value);
         }
+		
+		/**
+		 * Set multiple properties
+		 */
+		public function set_from_array($arr) {
+			$this->orm->set_from_array($arr);
+		}
 
         /**
          * Check whether the given field has changed since the object was created or saved
@@ -393,4 +405,12 @@
         public function hydrate($data) {
             $this->orm->hydrate($data)->force_all_dirty();
         }
+		
+		public function is_new() {
+			return $this->orm->is_new();
+		}
+		
+		public function is_exists() {
+			return $this->orm->is_exists();
+		}
     }

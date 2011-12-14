@@ -129,6 +129,9 @@
 
         // The data for a hydrated instance of the class
         protected $_data = array();
+		
+		// The data obtained from initial row (find_one())
+		protected $_ori_data = array();
 
         // Fields that have been modified during the
         // lifetime of the object
@@ -374,8 +377,9 @@
          * of instances of the ORM class, or an empty array if
          * no rows were returned.
          */
-        public function find_many() {
+        public function find_many($as_array = false) {
             $rows = $this->_run();
+			if ($as_array) return $rows;
             return array_map(array($this, '_create_instance_from_row'), $rows);
         }
 
@@ -398,6 +402,7 @@
          */
         public function hydrate($data=array()) {
             $this->_data = $data;
+			$this->_ori_data = $data;
             return $this;
         }
 
@@ -998,6 +1003,14 @@
         public function get($key) {
             return isset($this->_data[$key]) ? $this->_data[$key] : null;
         }
+		
+		/**
+		 * Return the initial value of a property (before dirtied)
+		 */
+		public function ori_get($key) {
+            return isset($this->_ori_data[$key]) ? $this->_ori_data[$key] : null;
+        }
+		
 
         /**
          * Return the name of the column in the database table which contains
@@ -1018,7 +1031,7 @@
          * Get the primary key ID of this object.
          */
         public function id() {
-            return $this->get($this->_get_id_column_name());
+            return $this->ori_get($this->_get_id_column_name());
         }
 
         /**
@@ -1027,9 +1040,20 @@
          * database when save() is called.
          */
         public function set($key, $value) {
+			if ($this->get($key) !== $value) {
+				$this->_dirty_fields[$key] = $value;
+			}
             $this->_data[$key] = $value;
-            $this->_dirty_fields[$key] = $value;
         }
+		
+		/**
+		 * Set multiple properties according to array supplied
+		 */
+		public function set_from_array($arr) {
+			foreach ($arr as $k => $v) {
+				$this->set($k, $v);
+			}
+		}
 
         /**
          * Check whether the given field has been changed since this
@@ -1065,10 +1089,15 @@
             // If we've just inserted a new record, set the ID of this object
             if ($this->_is_new) {
                 $this->_is_new = false;
-                if (is_null($this->id())) {
+                if (is_null($this->get($this->_get_id_column_name()))) {
                     $this->_data[$this->_get_id_column_name()] = self::$_db->lastInsertId();
                 }
-            }
+            } else {
+			// If an update, check whether the ID has been changed
+				if ($this->id() != $this->_data[$this->_get_id_column_name()]) {
+					$this->_ori_data[$this->_get_id_column_name()] = $this->_data[$this->_get_id_column_name()];
+				}
+			}
 
             $this->_dirty_fields = array();
             return $success;
@@ -1123,6 +1152,14 @@
             $statement = self::$_db->prepare($query);
             return $statement->execute($params);
         }
+		
+		public function is_new() {
+			return $this->_is_new;
+		}
+		
+		public function is_exists() {
+			return !$this->_is_new;
+		}
 
         // --------------------- //
         // --- MAGIC METHODS --- //
@@ -1139,4 +1176,3 @@
             return isset($this->_data[$key]);
         }
     }
-
