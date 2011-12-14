@@ -7,7 +7,7 @@
  * after years of experience in using Crawler
  */
 
-require_once 'text.php';
+// require_once 'text.php';
 
 class Page {
 	protected $url = ''; // the current url
