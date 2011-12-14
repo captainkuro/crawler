@@ -103,9 +103,32 @@ class Readhentaionline {
 	public $base = 'http://readhentaionline.com';
 	public $db = null;
 	
+	public function create_database() {
+		ORM::get_db()->query('CREATE TABLE `book` (
+		  `id` integer NOT NULL CONSTRAINT pid PRIMARY KEY AUTOINCREMENT,
+		  `url` varchar NOT NULL,
+		  `slug` varchar NOT NULL,
+		  `title` varchar NOT NULL,
+		  `submit_date` varchar NOT NULL,
+		  `description` text NOT NULL,
+		  `pages` integer NOT NULL,
+		  `gallery_url` varchar NOT NULL,
+		  `tags` text NOT NULL,
+		  `thumbs` text NOT NULL,
+		  `first_image` varchar NULL
+		)');
+	}
+	
 	public function run() {
-		$dbpath = realpath('./sqlite/rho.db');
+		$dbpath = './sqlite/rho.db';
+		$empty_database = false;
+		if (!is_file($dbpath)) {
+			touch($dbpath);
+			$empty_database = true;
+		}
+		$dbpath = realpath($dbpath);
 		ORM::configure('sqlite:' . $dbpath);
+		if ($empty_database) $this->create_database();
 		
 		$this->post = (object)$_POST;
 		$stage = isset($_REQUEST['stage']) ? $_REQUEST['stage'] : '';
@@ -135,7 +158,7 @@ class Readhentaionline {
 		}
 		/**/
 		
-		$this->stage_update();
+		// $this->stage_update();
 	}
 	
 	public function extract_info($chapter_url) {
@@ -228,9 +251,7 @@ class Readhentaionline {
 		if (!$book) {
 			$book = Model::factory('Book')->create();
 		}
-		foreach ($info as $k => $v) {
-			$book->$k = $v;
-		}
+		$book->set_from_array($info);
 		$book->save();
 	}
 	
