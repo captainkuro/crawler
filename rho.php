@@ -131,7 +131,7 @@ class Readhentaionline {
 		for ($i=$n-1; $i>=0; --$i) {
 			echo $i.' ';
 			$info = $this->extract_info($links[$i]);
-			$this->save_book($info);
+			$this->add_book($info);
 		}
 		/**/
 		
@@ -217,8 +217,17 @@ class Readhentaionline {
 		return $chapters;
 	}
 	
-	public function save_book($info) {
+	public function add_book($info) {
 		$book = Model::factory('Book')->create();
+		$book->hydrate($info);
+		$book->save();
+	}
+	
+	public function add_or_edit_book($url, $info) {
+		$book = Model::factory('Book')->where('url', $url)->find_one();
+		if (!$book) {
+			$book = Model::factory('Book')->create();
+		}
 		$book->hydrate($info);
 		$book->save();
 	}
@@ -230,9 +239,13 @@ class Readhentaionline {
 	
 	public function stage_update() {
 		$update_url = 'http://readhentaionline.com/category/hentai-manga/';
-		// @TODO
-		$chapters = $this->grab_chapter_urls($update_url, true);
-		print_r($chapters);
+		$links = $this->grab_chapter_urls($update_url, true);
+		$n = count($links);
+		for ($i=$n-1; $i>=0; --$i) {
+			echo "Saving {$links[$i]}\n";
+			$info = $this->extract_info($links[$i]);
+			$this->add_book($info);
+		}
 	}
 }
 $a = new Readhentaionline();
