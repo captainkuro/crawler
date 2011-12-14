@@ -228,7 +228,9 @@ class Readhentaionline {
 		if (!$book) {
 			$book = Model::factory('Book')->create();
 		}
-		$book->hydrate($info);
+		foreach ($info as $k => $v) {
+			$book->$k = $v;
+		}
 		$book->save();
 	}
 	
