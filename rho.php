@@ -99,6 +99,22 @@ class Book extends Model {
 	}
 }
 
+class Post_Data {
+	protected $_;
+	
+	public function __construct() {
+		$this->_ = $_POST;
+	}
+	
+	public function __get($k) {
+		return isset($this->_[$k]) ? $this->_[$k] : null;
+	}
+	
+	public function __set($k, $v) {
+		return $this->_[$k] = $v;
+	}
+}
+
 class Readhentaionline {
 	public $base = 'http://readhentaionline.com';
 	public $db = null;
@@ -120,6 +136,7 @@ class Readhentaionline {
 	}
 	
 	public function run() {
+		echo "<html><head><meta charset='utf-8'></head><body>";
 		$dbpath = './sqlite/rho.db';
 		$empty_database = false;
 		if (!is_file($dbpath)) {
@@ -130,7 +147,7 @@ class Readhentaionline {
 		ORM::configure('sqlite:' . $dbpath);
 		if ($empty_database) $this->create_database();
 		
-		$this->post = (object)$_POST;
+		$this->post = new Post_Data();
 		$stage = isset($_REQUEST['stage']) ? $_REQUEST['stage'] : '';
 		$method = 'stage_'.$stage;
 		if (method_exists($this, $method)) {
@@ -138,27 +155,29 @@ class Readhentaionline {
 		} else {
 			$this->_default();
 		}
+		echo "</body></html>";
 	}
 	
 	public function _default() {
-		// print_r($this->extract_info('http://readhentaionline.com/read-musa-vol-2-hentai-manga-online/'));
+		// print_r($this->extract_info('http://readhentaionline.com/read-a-corner-of-absolute-zero-hentai-manga-online/'));
 		
 		/**
 		$urls = $this->grab_chapter_urls('http://readhentaionline.com/category/hentai-manga/');
 		file_put_contents('rho.all_links', '<?php return '.var_export($urls, true).';');
 		/**/
 		
-		/**
+		// recover
+		/**/
 		$links = include 'rho.all_links';
-		$n = count($links);
-		for ($i=$n-1; $i>=0; --$i) {
-			echo $i.' ';
-			$info = $this->extract_info($links[$i]);
+		$links = array_reverse(array_unique($links));
+		foreach ($links as $link) { //if (!$this->url_already_exist($link)) {
+			echo $link." <br/>\n";
+			$info = $this->extract_info($link);
 			$this->add_book($info);
-		}
+		}//}
 		/**/
 		
-		// $this->stage_update();
+		
 	}
 	
 	public function extract_info($chapter_url) {
@@ -189,7 +208,9 @@ class Readhentaionline {
 		// tags
 		$p->go_line('<!-- /post -->');
 		$p->next_line(2);
-		$tags = $p->curr_line()->extract_to_array('">', '</');
+		$ll = $p->curr_line()->dup();
+		$ll->regex_replace('/<h3>Related Manga<\/h3>.*$/', '');
+		$tags = $ll->extract_to_array('">', '</');
 		$ret['tags'] = array_map('html_entity_decode', $tags, array_fill(0, count($tags), ENT_COMPAT), array_fill(0, count($tags), 'UTF-8'));
 		// # images
 		$p->go_line('id="gallery"');
@@ -224,7 +245,7 @@ class Readhentaionline {
 		$chapters = array();
 		for ($i=1; $i<=$tot_pages; $i++) {
 			$p = new Page($start_page_url . (($i==1) ? '' : ('page/'.$i.'/')));
-			echo $p->url()."\n";
+			echo "Grabbing ".$p->url()."<br/>\n";
 			// grab all chapter in this page
 			$t_content = new Text($p->content());
 			$raw = array_unique($t_content->extract_to_array('href="', '"'));
@@ -265,10 +286,77 @@ class Readhentaionline {
 		$links = $this->grab_chapter_urls($update_url, true);
 		$n = count($links);
 		for ($i=$n-1; $i>=0; --$i) {
-			echo "Saving {$links[$i]}\n";
+			echo "Saving {$links[$i]}<br/>\n";
 			$info = $this->extract_info($links[$i]);
 			$this->add_book($info);
 		}
+	}
+	
+	public function stage_search() {
+		echo "<form method='post'>";
+		// search result
+		if ($_POST) {
+			if (!$this->post->page) $this->post->page = 1;
+			if (!$this->post->perpage) $this->post->perpage = 20;
+			$q = Model::factory('Book')->where_gt('pages', 0);
+			if ($this->post->find) {
+				$q
+					->where_raw('(title LIKE ? OR description LIKE ? OR tags LIKE ?)', 
+					array("%{$this->post->find}%", "%{$this->post->find}%", "%{$this->post->find}%"))
+				;
+			}
+			if ($this->post->without) {
+				$q->where_not_like('tags', "%{$this->post->without}%");
+			}
+			if ($this->post->order_asc) {
+				$q->order_by_asc($this->post->order_asc);
+			}
+			if ($this->post->order_desc) {
+				$q->order_by_desc($this->post->order_desc);
+			}
+			$q->limit($this->post->perpage)->offset(($this->post->page-1) * $this->post->perpage);
+			$books = $q->find_many();
+			
+			foreach ($books as $b) {
+			?>
+				<p>
+					<?php echo "{$b->title} | {$b->pages} pages | {$b->submit_date}"; ?> | 
+					<a href="?stage=download&id=<?php echo $b->id; ?>" target="_blank">Download</a>
+					<a href="<?php echo $b->url; ?>" target="_blank">Origin</a>
+					<br/>
+					<table border="1"><tr><?php $i=0; foreach ($b->tags() as $t) {
+						if ($i>0 && ($i%6)==0) echo '</tr><tr>';
+						echo "<td>$t</td>";
+					$i++; } ?></tr></table>
+					<?php foreach ($b->thumbnails() as $t) {
+						echo "<img src='{$t}' alt='{$b->slug}' />";
+					} ?>
+				</p>
+			<?php
+			}
+			// previous and next
+			?>
+			&lt;&lt; <input type="submit" name="page" value="<?php echo $this->post->page-1; ?>" />
+			<input type="submit" name="page" value="<?php echo $this->post->page+1; ?>" /> &gt;&gt;
+			<?php
+		}
+		// search form
+		?>
+		<div>
+			Find: <input type="text" name="find" value="<?php echo $this->post->find; ?>" /><br/>
+			Without: <input type="text" name="without" value="<?php echo $this->post->without; ?>" /><br/>
+			Per Page: <input type="text" name="perpage" value="<?php echo $this->post->perpage; ?>" /><br/>
+			Order (ASC): <input type="text" name="order_asc" value="<?php echo $this->post->order_asc; ?>" /><br/>
+			Order (DESC): <input type="text" name="order_desc" value="<?php echo $this->post->order_desc; ?>" /><br/>
+			<input type="submit" name="page" value="1" />
+		</div>
+		<?php
+		echo "</form>";
+	}
+	
+	public function stage_download() {
+		$b = Model::factory("Book")->find_one($_REQUEST['id']);
+		$b->image_links();
 	}
 }
 $a = new Readhentaionline();
