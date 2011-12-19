@@ -167,7 +167,7 @@ class Readhentaionline {
 		/**/
 		
 		// recover
-		/**/
+		/**
 		$links = include 'rho.all_links';
 		$links = array_reverse(array_unique($links));
 		foreach ($links as $link) { //if (!$this->url_already_exist($link)) {
@@ -177,7 +177,20 @@ class Readhentaionline {
 		}//}
 		/**/
 		
-		
+		// fix other mangas taken as tags
+		/**
+		$q = Model::factory('Book')->where_gt('pages', 0)->order_by_asc('id');
+		foreach ($q->find_many() as $b) {
+			echo 'Searching '.$b->id." {$b->slug}<br/>\n";
+			$p = new Page($b->url);
+			if (strpos($p->content(), '<h3>Other Chapters') !== false) {
+				echo "Hit {$b->slug}<br/>\n";
+				$data = $this->extract_info($b->url);
+				$b->tags = $data['tags'];
+				$b->save();
+			}
+		}
+		/**/
 	}
 	
 	public function extract_info($chapter_url) {
@@ -210,6 +223,7 @@ class Readhentaionline {
 		$p->next_line(2);
 		$ll = $p->curr_line()->dup();
 		$ll->regex_replace('/<h3>Related Manga<\/h3>.*$/', '');
+		$ll->regex_replace('/<h3>Other Chapters.*$/', '');
 		$tags = $ll->extract_to_array('">', '</');
 		$ret['tags'] = array_map('html_entity_decode', $tags, array_fill(0, count($tags), ENT_COMPAT), array_fill(0, count($tags), 'UTF-8'));
 		// # images
@@ -358,6 +372,7 @@ class Readhentaionline {
 		$b = Model::factory("Book")->find_one($_REQUEST['id']);
 		$b->image_links();
 	}
+	
 }
 $a = new Readhentaionline();
 $a->run();
