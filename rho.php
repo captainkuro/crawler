@@ -339,7 +339,7 @@ class Readhentaionline {
 					<a href="<?php echo $b->url; ?>" target="_blank">Origin</a>
 					<br/>
 					<table border="1"><tr><?php $i=0; foreach ($b->tags() as $t) {
-						if ($i>0 && ($i%6)==0) echo '</tr><tr>';
+						if ($i>0 && ($i%7)==0) echo '</tr><tr>';
 						echo "<td>$t</td>";
 					$i++; } ?></tr></table>
 					<?php foreach ($b->thumbnails() as $t) {
