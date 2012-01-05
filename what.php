@@ -631,3 +631,4 @@ function comicartcommunity($base_url) {
 	}
 }
 // comicartcommunity('http://www.comicartcommunity.com/gallery/categories.php?cat_id=75');
+

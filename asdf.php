@@ -94,3 +94,42 @@ function do_vote_delamibrand() {
 	}
 }
 // do_vote_delamibrand();
+
+class Ippo {
+	// grab list of volume->chapters from 
+	// http://en.wikipedia.org/wiki/List_of_Hajime_no_Ippo_chapters
+	public function grab_volume_chapters() {
+		$p = new Page('http://en.wikipedia.org/wiki/List_of_Hajime_no_Ippo_chapters');
+		$list = array();
+		while (!$p->end_of_line()) {
+			try {
+				$p->go_line('Main article:');
+			} catch (Exception $e) {
+				break;
+			}
+			$href = 'http://en.wikipedia.org'.$p->curr_line()->dup()->cut_between('href="', '"')->to_s();
+			$p2 = new Page($href);
+			while (!$p2->end_of_line()) {
+				try {
+					$p2->go_line('<td id="vol');
+				} catch (Exception $e) {
+					break;
+				}
+				$vol = $p2->curr_line()->dup()->cut_between('">', '<')->to_s();
+				do { if ($p2->curr_line()->contain('<li>Round ')) {
+					$last_chapter = $p2->curr_line()->dup()->cut_between('Round ', ':')->to_s();
+				}} while (!$p2->next_line()->contain('</table>'));
+				$list[$vol] = $last_chapter;
+				echo "v $vol c $last_chapter <br/>\n";
+			}
+			$p->next_line();
+		}
+		return $list;
+	}
+	
+	// open folder of pages, parse filename, move to corresponding volumes
+	public function move_pages_to_volumes() {
+		
+	}
+}
+$i = new Ippo();

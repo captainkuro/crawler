@@ -21,6 +21,31 @@ abstract class Manga_Crawler {
 				}
 			}
 		}
+		
+		function parse_it() {
+			var val = document.getElementById("parse_it").value;
+			val.match(/^(\w+)-/)
+			var from = RegExp.$1;
+			val.match(/-(\w+)$/);
+			var to = RegExp.$1;
+			return [from, to];
+		}
+		
+		function check_it() {
+			var list = parse_it();
+			for (var i=list[0]; i<=list[1]; i++) {
+				var el = document.getElementById("check-"+i);
+				el.checked = true;
+			}
+		}
+		
+		function uncheck_it() {
+			var list = parse_it();
+			for (var i=list[0]; i<=list[1]; i++) {
+				var el = document.getElementById("check-"+i);
+				el.checked = false;
+			}
+		}
 		</script>
 		<?php
 	}
@@ -48,6 +73,10 @@ abstract class Manga_Crawler {
 			'Prefix: ',X::input(array('type'=>'text','name'=>'prefix','value'=>@$this->prefix)),X::br(),
 			X::div('Choose chapter:'),
 			X::input(array('type'=>'checkbox','name'=>'all','onclick'=>'click_this()')),'All',X::br(),
+			X::input(array('id'=>'parse_it')),
+			X::input(array('type'=>'button','onclick'=>'check_it()','value'=>'Check')),
+			X::input(array('type'=>'button','onclick'=>'uncheck_it()','value'=>'Uncheck')),
+			X::br(),
 			X::_o('table'),
 				X::tr(
 					X::th('Chapter Name'),
@@ -119,7 +148,7 @@ abstract class Manga_Crawler {
 		echo
 		X::tr(
 			X::td(
-				X::input(array('type'=>'checkbox','name'=>"info[$i][check]",'value'=>$i)),
+				X::input(array('type'=>'checkbox','name'=>"info[$i][check]",'value'=>$i, 'id'=>'check-'.$v['infix'])),
 				$v['desc'],
 				X::input(array('type'=>'hidden','name'=>"info[$i][url]",'value'=>$v['url'])),
 				X::input(array('type'=>'hidden','name'=>"info[$i][desc]",'value'=>$v['desc']))
