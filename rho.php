@@ -337,6 +337,7 @@ class Readhentaionline {
 					<?php echo "{$b->title} | {$b->pages} pages | {$b->submit_date}"; ?> | 
 					<a href="?stage=download&id=<?php echo $b->id; ?>" target="_blank">Download</a>
 					<a href="<?php echo $b->url; ?>" target="_blank">Origin</a>
+					<a href="?stage=respider&id=<?php echo $b->id; ?>" target="_blank">Re-spider</a>
 					<br/>
 					<table border="1"><tr><?php $i=0; foreach ($b->tags() as $t) {
 						if ($i>0 && ($i%7)==0) echo '</tr><tr>';
@@ -371,6 +372,23 @@ class Readhentaionline {
 	public function stage_download() {
 		$b = Model::factory("Book")->find_one($_REQUEST['id']);
 		$b->image_links();
+		?>
+		<button type="button" onclick="change_ext()">Change PNG</button>
+		<script type="text/javascript">
+		function change_ext() {
+			var list = document.getElementsByTagName("a");
+			for (var i in list) {
+				list[i].href = list[i].href.replace(/\.jpg$/, '.png');
+			}
+		}
+		</script>
+		<?php
+	}
+	
+	public function stage_respider() {
+		$b = Model::factory("Book")->find_one($_REQUEST['id']);
+		$info = $this->extract_info($b->url);
+		$this->add_or_edit_book($b->url, $info);
 	}
 	
 }
