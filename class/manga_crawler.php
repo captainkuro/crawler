@@ -25,9 +25,9 @@ abstract class Manga_Crawler {
 		function parse_it() {
 			var val = document.getElementById("parse_it").value;
 			val.match(/^(\w+)-/)
-			var from = RegExp.$1;
+			var from = parseInt(RegExp.$1);
 			val.match(/-(\w+)$/);
-			var to = RegExp.$1;
+			var to = parseInt(RegExp.$1);
 			return [from, to];
 		}
 		
