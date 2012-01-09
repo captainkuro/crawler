@@ -144,7 +144,7 @@ class Ippo {
 	// open folder of pages, parse filename, move to corresponding volumes
 	public function move_pages_to_volumes($list) {
 		$path = 'D:\temp\manga\hajime\\';
-		$cur_vol = 16; // ubah seperlunya
+		$cur_vol = 64; // ubah seperlunya
 		$cur_pages = array();
 		foreach (scandir($path) as $fname) {
 			if (preg_match('/-(\d{3})-/', $fname, $m)) {
