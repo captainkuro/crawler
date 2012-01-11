@@ -38,6 +38,10 @@ class Text {
 		return $this->s;
 	}
 	
+	public function clone() { // duplicate
+		return new Text($this->s);
+	}
+	
 	public function dup() { // duplicate
 		return new Text($this->s);
 	}
