@@ -48,10 +48,14 @@ if ($base) {
 		echo '<pre>';print_r($raws);echo '</pre>';
 		// gambar image biasanya berada di $raws[4] atau $raws[5]
 		if (Crawler::is_there($raws[0], '/n/next.png')) array_shift($raws);
-		$img = $raws[4];
-		$fname = basename($img);
-		echo "<a href='$img'>$fname</a><br/>\n";
-		$img = $raws[5];
+		// gambar image namanya lebih panjang
+		$base1 = basename($raws[4]);
+		$base2 = basename($raws[5]);
+		if (strlen($base1) > strlen($base2)) {
+			$img = $raws[4];
+		} else {
+			$img = $raws[5];
+		}
 		$fname = basename($img);
 		echo "<a href='$img'>$fname</a><br/>\n";
 		// Download original
