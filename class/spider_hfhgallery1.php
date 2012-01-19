@@ -10,9 +10,10 @@ class Spider_Hfhgallery1 {
 	
 	public function go() {
 		$start_url = $this->url;
-		$base = 'http://gallery1.hentaifromhell.net';
+		$base = 'http://gallery.hentaifromhell.net';
 		$selesai = false;
 		while (!$selesai) {
+			echo "$start_url<br/>\n";
 			$craw = new Crawler($start_url);
 			$craw->go2linewhere('showimg.php?c=');
 			
