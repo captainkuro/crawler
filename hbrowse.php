@@ -302,8 +302,9 @@ switch ($stage) {
 			$c = new Crawler($start);
 			$c->go_to('id="main"');
 			while ($line = $c->readline()) {
-				if (Crawler::is_there($line, 'class="readLink"')) {
-					$href = Crawler::extract($line, 'href="', '"');
+				if (Crawler::is_there($line, 'class="browseDescription"')) {
+					$arr = Crawler::extract_to_array($line, 'href="', '"');
+					$href = end($arr);
 					if (get_book('link', dirname($href))) {
 						$stop = true;
 						break;
@@ -328,6 +329,7 @@ switch ($stage) {
 			echo $link."\n";flush(); // http://www.hbrowse.com/10001/c00001
 			// Cek dah ada di DB belum
 			$data = page_to_array($link);
+			// print_r($data);exit;
 			$data['pic_all'] = '#' . implode('#', page_all_thumbnail($link)) . '#';
 			// Masukkan ke database
 			insert_array_to_database($data);

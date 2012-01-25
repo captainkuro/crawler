@@ -19,8 +19,12 @@ class Spider_Hfhgallery2 {
 	}
 	
 	public function go() {
-		$base_url = 'http://gallery.hentaifromhell.net';
 		$start_url = $this->url;
+		if (preg_match('/gallery1\.hentaifromhell\.net/', $start_url)) {
+			$base_url = 'http://gallery1.hentaifromhell.net';
+		} else {
+			$base_url = 'http://gallery.hentaifromhell.net';
+		}
 		$finish = false;
 		while (!$finish) {
 			$finish = true;
