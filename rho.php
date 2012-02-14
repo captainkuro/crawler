@@ -83,7 +83,7 @@ class Book extends Model {
 			$raw = $t_content->extract_to_array('src="', '"');
 			// search for image
 			foreach ($raw as $e) {
-				if (preg_match('/1\.jpg$/', $e)) {
+				if (preg_match('/\d\.jpg$/', $e)) {
 					$src = $e;
 					break;
 				}
@@ -213,11 +213,17 @@ class Readhentaionline {
 		// description
 		$p->go_line('Manga Info :<');
 		$m = $p->curr_line()->regex_match('/Manga Info :(.*)$/');
-		$part = $m[1];
-		while (strpos($part, '</p>') === false) {
-			$part .= $p->next_line()->to_s();
+		if ($m) {
+			$part = $m[1];
+			while (strpos($part, '</p>') === false) {
+				$part .= $p->next_line()->to_s();
+			}
+			$ret['description'] = html_entity_decode(strip_tags($part), ENT_COMPAT, 'UTF-8');
+		} else {
+			$ret['description'] = '';
+			$p->reset_line();
+			$p->go_line('Author\'s Description');
 		}
-		$ret['description'] = html_entity_decode(strip_tags($part), ENT_COMPAT, 'UTF-8');
 		// tags
 		$p->go_line('<!-- /post -->');
 		$p->next_line(2);
