@@ -2,6 +2,7 @@
 require 'crawler.php';
 class Mangareader extends Manga_Crawler {
 	private $sitename = 'http://www.mangareader.net';
+	protected $enable_single_chapter = true;
 	
 	// need to be overridden, return array[desc,url,infix]
 	// $base is URL submitteds
@@ -60,6 +61,10 @@ class Mangareader extends Manga_Crawler {
 		// if (@$_GET['show_url']) echo "<a href='$url'>URL</a> ";
 		echo '<a href="'.$img.'">'.$prefix.'-'.$chapter.'-'.basename($img).'</a>'."<br/>\n";
 		$c->close();
+	}
+	
+	public function url_is_single_chapter($url) {
+		return (bool)preg_match('/\/\d+$/', $url);
 	}
 }
 
