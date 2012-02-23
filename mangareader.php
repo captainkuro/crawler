@@ -68,5 +68,4 @@ class Mangareader extends Manga_Crawler {
 	}
 }
 
-$m = new Mangareader();
-$m->run();
+Mangareader::factory()->run();

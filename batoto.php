@@ -62,5 +62,4 @@ class Batoto extends Manga_Crawler {
 		return strpos($url, '/read/_') !== false;
 	}
 }
-$b = new Batoto();
-$b->run();
+Batoto::factory()->run();

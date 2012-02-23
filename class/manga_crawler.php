@@ -1,8 +1,16 @@
 <?php
-
+/**
+ * Abstract class for specific manga reader spider
+ * @uses X
+ */
 abstract class Manga_Crawler {
 	//enable single chapter crawling
 	protected $enable_single_chapter = false;
+	
+	public static function factory() {
+		$class = get_called_class();
+		return new $class;
+	}
 	
 	public function display_header() {
 		echo 
