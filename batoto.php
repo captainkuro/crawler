@@ -5,7 +5,7 @@ class Batoto extends Manga_Crawler {
 	protected $enable_single_chapter = true;
 	
 	// need to be overridden, return array[desc,url,infix]
-	// $base is URL submitteds
+	// $base is URL submitted
 	public function extract_info($base) {
 		// crawl chapters
 		$p = new Page($base);
