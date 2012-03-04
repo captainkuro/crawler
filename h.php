@@ -337,9 +337,9 @@ function rule34($url) {
 		$c = new Crawler($url);
 		$c->go_to("id='Navigationleft'");
 		$c->readline();
-		$c->readline();
+		// $c->readline();
 		$line = $c->curline;
-		if (preg_match('/<a href=\'([^\']+)\'>Next/', $line, $m)) {
+		if (preg_match('/<a href="([^\'"]+)">Next/', $line, $m)) {
 			$url = $site . $m[1];
 		} else {
 			$continue = false;

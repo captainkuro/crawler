@@ -60,5 +60,12 @@ class Mangainn extends Manga_Crawler {
 		$iname = Text::create($m[1])->pad(3)->to_s().'.'.$m[2];
 		echo "<a href='$img'>$prefix-$ifx-$iname</a><br/>\n";
 	}
+	
+	public function grab_chapter_infix($url) {
+		$p = new Page($url);
+		$p->go_line('id="gotoMangaInfo"');
+		$m = $p->curr_line()->regex_match('/Chapter (\w*)<\//');
+		return $m[1];
+	}
 }
 Mangainn::factory()->run();

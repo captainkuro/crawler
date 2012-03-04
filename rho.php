@@ -272,7 +272,7 @@ class Readhentaionline {
 			foreach ($raw as $e) {
 				if (preg_match('/^http:\/\/readhentaionline\.com\/read-[^\/]*-hentai-manga-online\/$/', $e)) {
 					if ($check_database) {
-						if ($this->url_already_exist($e)) return $chapters;
+						if ($this->url_already_exist($e)) return array_unique($chapters);
 					}
 					$chapters[] = $e;
 				}
@@ -397,6 +397,18 @@ class Readhentaionline {
 		$b = Model::factory("Book")->find_one($_REQUEST['id']);
 		$info = $this->extract_info($b->url);
 		$this->add_or_edit_book($b->url, $info);
+	}
+	
+	public function stage_fillblanks() {
+		$update_url = 'http://readhentaionline.com/';
+		$links = $this->grab_chapter_urls($update_url);
+		foreach ($links as $link) {
+			if (!$this->url_already_exist($link)) {
+				echo "Saving {$link}<br/>\n";
+				$info = $this->extract_info($link);
+				$this->add_book($info);
+			}
+		}
 	}
 	
 }
