@@ -277,8 +277,9 @@ class Readhentaionline {
 					$chapters[] = $e;
 				}
 			}
+			// return $chapters;//DEBUG
 		}
-		return $chapters;
+		return array_unique($chapters);
 	}
 	
 	public function add_book($info) {
@@ -302,9 +303,10 @@ class Readhentaionline {
 	}
 	
 	public function stage_update() {
-		$update_url = 'http://readhentaionline.com/category/hentai-manga/';
+		$update_url = 'http://readhentaionline.com/';
 		$links = $this->grab_chapter_urls($update_url, true);
 		$n = count($links);
+		// echo '<pre>';print_r($links);exit;//DEBUG
 		for ($i=$n-1; $i>=0; --$i) {
 			echo "Saving {$links[$i]}<br/>\n";
 			$info = $this->extract_info($links[$i]);
