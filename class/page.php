@@ -19,9 +19,9 @@ class Page {
 	protected $current_i = 0;
 	protected $prev_i = 0; // i terakhir sebelum reset_line()
 	protected $ch = null;
-	public static $use_proxy = false;
+	public static $use_proxy = true;
 	public static $proxy = array(
-		'name' => 'proxy.mydomain.de',  // CHANGEME
+		'name' => '10.1.1.2',  // CHANGEME
 		'port' => 8080, // CHANGEME
 		'user' => "",   // CHANGEME
 		'pass' => "",   // CHANGEME
