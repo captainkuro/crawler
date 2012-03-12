@@ -632,3 +632,18 @@ function comicartcommunity($base_url) {
 }
 // comicartcommunity('http://www.comicartcommunity.com/gallery/categories.php?cat_id=75');
 
+function coursera() {
+	$p = new Page();
+	$p->fetch_text(file_get_contents('D:\temp\Design and Analysis of Algorithms I\coursera.dump.htm'));
+	$p->go_line('class="item_list"');
+	do {
+		if ($p->curr_line()->contain('<li')) {
+			$title = $p->next_line()->to_s();
+		} else if ($p->curr_line()->contain('download.mp4')) {
+			$href = $p->curr_line()->dup()
+				->cut_between('href="', '"')->to_s();
+			echo "<a href='$href'>$title</a><br />\n";
+		}
+	} while (!$p->next_line()->contain('<script>'));
+}
+coursera();

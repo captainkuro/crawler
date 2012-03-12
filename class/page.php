@@ -110,7 +110,7 @@ class Page {
 	}
 	
 	public function __destruct() {
-		curl_close($this->ch);
+		if ($this->ch) curl_close($this->ch);
 	}
 	
 	// go to the line indicating next url
