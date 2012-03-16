@@ -44,10 +44,14 @@ class Mangainn extends Manga_Crawler {
 		$this->crawl_page($p, $ifx);
 		array_shift($pages);
 		// grab the rest of pages
-		foreach ($pages as $page) {
+		foreach ($pages as $i => $page) {
+			$pages[$i] = $v['url'].'/page_'.$page;
+			/*
 			$p = new Page($v['url'].'/page_'.$page);
 			$this->crawl_page($p, $ifx);
+			*/
 		}
+		Manga_Crawler::multiProcess(4, $pages, array($this, 'crawl_page'), array($ifx));
 	}
 	
 	public function crawl_page($p, $ifx) {

@@ -135,9 +135,6 @@ abstract class Manga_Crawler {
 		if (isset($this->stage1) || isset($this->stage2)) {
 			// if single chapter, skip stage2 and stage3
 			if ($this->enable_single_chapter && $this->url_is_single_chapter($this->base)) {
-				if ($this->singlefix === '') {
-					$this->singlefix = $this->grab_chapter_infix($this->base);
-				}
 				$this->crawl_chapter(array(
 					'url' => $this->base,
 					'infix' => $this->singlefix,
@@ -183,9 +180,105 @@ abstract class Manga_Crawler {
 	public function url_is_single_chapter($url) {
 		return false;
 	}
+		// must be overriden if want to enable automatic infix	public function grab_chapter_infix($url) {		return 0;	}	
+	/*** CURL MULTITHREAD ***/
+	public static function addHandle(&$curlHandle,$url) {
+		$cURL = curl_init();
+		curl_setopt($cURL, CURLOPT_URL, $url);
+		curl_setopt($cURL, CURLOPT_HEADER, 0);
+		curl_setopt($cURL, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($cURL, CURLOPT_BINARYTRANSFER, 1);
+		curl_multi_add_handle($curlHandle,$cURL);
+		return $cURL;
+	}
 	
-	// must be overriden if want to enable automatic infix
-	public function grab_chapter_infix($url) {
-		return 0;
+	public static function execHandle(&$curlHandle) {
+		/* yg ini bikin 100% CPU
+		$flag=null;
+		do {
+			//fetch pages in parallel
+			curl_multi_exec($curlHandle,$flag);
+		} while ($flag > 0);
+		*/
+		$active = null;
+		//execute the handles
+		do {
+			$mrc = curl_multi_exec($curlHandle, $active);
+		} while ($mrc == CURLM_CALL_MULTI_PERFORM);
+
+		while ($active && $mrc == CURLM_OK) {
+			if (curl_multi_select($curlHandle) != -1) {
+				do {
+					$mrc = curl_multi_exec($curlHandle, $active);
+				} while ($mrc == CURLM_CALL_MULTI_PERFORM);
+			}
+		}
+	}
+	
+	/**
+	 * Mendownload $size buah link sekaligus, lalu diproses oleh fungsi $function
+	 * @param integer $size jumlah thread yg diinginkan
+	 * @param array   $pages_url array of full url
+	 * @param string  $function nama fungsi yang dipanggil untuk memproses 1 halaman,
+	 *                  fungsinya minimal punya 1 parameter (Page $P)
+	 * @param array   $params parameter tambahan ke fungsi
+	 */
+	public static function multiProcess($size, $pages_url, $function, $params = false) {
+		$n = 0;
+		$curlHandle = null;
+		$curlList = array();
+		foreach ($pages_url as $aurl) {
+			if ($n == 0) {
+				$curlHandle = curl_multi_init();
+			}
+			$curlList[$aurl] = self::addHandle($curlHandle, $aurl);
+			$n++;
+			if ($n >= $size) {
+				self::execHandle($curlHandle);
+				foreach ($curlList as $theurl => $curlEl) {
+					$html = curl_multi_getcontent($curlEl);
+					// Ada kemungkinan gagal retrieve
+					if (trim($html)) {
+						$P = new Page();
+						$P->fetch_text($html);
+					} 
+					// In that case, it must retrieve the HTML by itself
+					else {
+						$P = new Page($theurl);
+					}
+					if ($params) {
+						call_user_func_array($function, array_merge(array($P), $params));
+					} else {
+						$function($P);
+					}
+					curl_multi_remove_handle($curlHandle, $curlEl);
+				}
+				curl_multi_close($curlHandle);
+				$n = 0;
+				$curlList = array();
+			}
+		}
+		if ($curlList) {
+			self::execHandle($curlHandle);
+			foreach ($curlList as $theurl => $curlEl) {
+				$html = curl_multi_getcontent($curlEl);
+				// Ada kemungkinan gagal retrieve
+				if (trim($html)) {
+					$P = new Page();
+					$P->fetch_text($html);
+				} 
+				// In that case, it must retrieve the HTML by itself
+				else {
+					$P = new Page($theurl);
+				}
+				if ($params) {
+					call_user_func_array($function, array_merge(array($P), $params));
+				} else {
+					$function($P);
+				}
+				curl_multi_remove_handle($curlHandle, $curlEl);
+			}
+			curl_multi_close($curlHandle);
+		}
 	}
 }

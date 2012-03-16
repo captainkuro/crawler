@@ -19,9 +19,9 @@ class Page {
 	protected $current_i = 0;
 	protected $prev_i = 0; // i terakhir sebelum reset_line()
 	protected $ch = null;
-	public static $use_proxy = false;
+	public static $use_proxy = true;
 	public static $proxy = array(
-		'name' => 'proxy.mydomain.de',  // CHANGEME
+		'name' => '10.1.1.2',  // CHANGEME
 		'port' => 8080, // CHANGEME
 		'user' => "",   // CHANGEME
 		'pass' => "",   // CHANGEME
@@ -31,8 +31,10 @@ class Page {
 	const REG_HREF = 'href=["\']([^"\']+)["\']';
 	const REG_SRC = 'src=["\']([^"\']+)["\']';
 	
-	public function __construct($url, $opts = null) {
-		$this->fetch_url($url, $opts);
+	public function __construct($url = null, $opts = null) {
+		if (isset($url)) {
+			$this->fetch_url($url, $opts);
+		}
 	}
 	
 	public function url() {return $this->url;}
@@ -96,8 +98,19 @@ class Page {
 		$this->current_line = new Text($this->lines[0]);
 	}
 	
+	/**
+	 * Fill $this->content directly, not by retrieveing a URL
+	 */
+	public function fetch_text($text) {
+		$this->content = $text;
+		// Break content per line
+		$this->lines = explode("\n", $this->content);
+		$this->current_i = $this->prev_i = 0;
+		$this->current_line = new Text($this->lines[0]);
+	}
+	
 	public function __destruct() {
-		curl_close($this->ch);
+		if ($this->ch) curl_close($this->ch);
 	}
 	
 	// go to the line indicating next url
