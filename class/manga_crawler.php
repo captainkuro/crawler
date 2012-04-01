@@ -135,6 +135,9 @@ abstract class Manga_Crawler {
 		if (isset($this->stage1) || isset($this->stage2)) {
 			// if single chapter, skip stage2 and stage3
 			if ($this->enable_single_chapter && $this->url_is_single_chapter($this->base)) {
+				if ($this->singlefix === '') {
+					$this->singlefix = $this->grab_chapter_infix($this->base);
+				}
 				$this->crawl_chapter(array(
 					'url' => $this->base,
 					'infix' => $this->singlefix,
@@ -180,7 +183,12 @@ abstract class Manga_Crawler {
 	public function url_is_single_chapter($url) {
 		return false;
 	}
-		// must be overriden if want to enable automatic infix	public function grab_chapter_infix($url) {		return 0;	}	
+	
+	// must be overriden if want to enable automatic infix
+	public function grab_chapter_infix($url) {
+		return 0;
+	}
+	
 	/*** CURL MULTITHREAD ***/
 	public static function addHandle(&$curlHandle,$url) {
 		$cURL = curl_init();
