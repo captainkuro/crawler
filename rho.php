@@ -263,6 +263,9 @@ class Readhentaionline {
 			$tot_pages = 1;
 		}
 		$chapters = array();
+		if (isset($_GET['limitpage'])) {
+			$tot_pages = $_GET['limitpage'];
+		}
 		for ($i=1; $i<=$tot_pages; $i++) {
 			$p = new Page($start_page_url . (($i==1) ? '' : ('page/'.$i.'/')));
 			echo "Grabbing ".$p->url()."<br/>\n";
@@ -309,8 +312,12 @@ class Readhentaionline {
 		// echo '<pre>';print_r($links);exit;//DEBUG
 		for ($i=$n-1; $i>=0; --$i) {
 			echo "Saving {$links[$i]}<br/>\n";
-			$info = $this->extract_info($links[$i]);
-			$this->add_book($info);
+			try {
+				$info = $this->extract_info($links[$i]);
+				$this->add_book($info);
+			} catch (Exception $e) {
+				echo "Cancelled {$links[$i]}<br/>\n";
+			}
 		}
 	}
 	
