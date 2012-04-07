@@ -18,12 +18,14 @@ class Batoto extends Manga_Crawler {
 				$desc = $line->dup()->cut_between('/>', '</a')->to_s();
 				preg_match('/h\.(\d+):?/', $desc, $m);
 				$infix = $m[1];
+				preg_match('/_by_(.*)$/', $href, $m);
+				$group = $m[1];
 				// cek bahasa
 				$lang = $p->next_line(2);
 				if ($lang->contain('English')) {
 					$list[] = array(
 						'url' => $href,
-						'desc' => $desc,
+						'desc' => $desc.' by '.$group,
 						'infix' => $infix,
 					);
 				}
@@ -44,10 +46,13 @@ class Batoto extends Manga_Crawler {
 		$this->crawl_page($p, $ifx);
 		
 		array_shift($pages);
+		/*
 		foreach ($pages as $purl) {
 			$p = new Page($purl);
 			$this->crawl_page($p, $ifx);
 		}
+		*/
+		Manga_Crawler::multiProcess(4, $pages, array($this, 'crawl_page'), array($ifx));
 	}
 	
 	public function crawl_page($p, $ifx) {
