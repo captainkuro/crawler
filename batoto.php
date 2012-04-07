@@ -18,11 +18,15 @@ class Batoto extends Manga_Crawler {
 				$desc = $line->dup()->cut_between('/>', '</a')->to_s();
 				preg_match('/h\.(\d+):?/', $desc, $m);
 				$infix = $m[1];
-				$list[] = array(
-					'url' => $href,
-					'desc' => $desc,
-					'infix' => $infix,
-				);
+				// cek bahasa
+				$lang = $p->next_line(2);
+				if ($lang->contain('English')) {
+					$list[] = array(
+						'url' => $href,
+						'desc' => $desc,
+						'infix' => $infix,
+					);
+				}
 			}
 		} while (!$p->next_line()->contain('</table>'));
 		return $list;
