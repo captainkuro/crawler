@@ -46,13 +46,13 @@ class Batoto extends Manga_Crawler {
 		$this->crawl_page($p, $ifx);
 		
 		array_shift($pages);
-		/*
 		foreach ($pages as $purl) {
 			$p = new Page($purl);
 			$this->crawl_page($p, $ifx);
 		}
-		*/
+		/*
 		Manga_Crawler::multiProcess(4, $pages, array($this, 'crawl_page'), array($ifx));
+		*/
 	}
 	
 	public function crawl_page($p, $ifx) {

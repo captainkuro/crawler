@@ -365,6 +365,9 @@ function sankakucomplex($url) {
 	}
 	$page = 1;
 	do {
+		if (isset($_GET['limit'])) {
+			if ($page > $_GET['limit']) break;
+		}
 		$purl = $url.'&page='.$page;
 		$P = new Page($purl);
 		$T = new Text($P->content());
