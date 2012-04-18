@@ -4,6 +4,13 @@ class Mangareader extends Manga_Crawler {
 	private $sitename = 'http://www.mangareader.net';
 	protected $enable_single_chapter = true;
 	
+	public function display_header() {
+		if (isset($this->base) && strpos($this->base, 'mangapanda.com') !== false) {
+			$this->sitename = 'http://www.mangapanda.com';
+		}
+		parent::display_header();
+	}
+	
 	// need to be overridden, return array[desc,url,infix]
 	// $base is URL submitted
 	public function extract_info($base) {
