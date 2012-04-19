@@ -144,7 +144,7 @@ class Ippo {
 	// open folder of pages, parse filename, move to corresponding volumes
 	public function move_pages_to_volumes($list) {
 		$path = 'D:\temp\manga\hajime\\';
-		$cur_vol = 74; // ubah seperlunya
+		$cur_vol = 1; // ubah seperlunya
 		$cur_pages = array();
 		foreach (scandir($path) as $fname) {
 			if (preg_match('/-(\d{3})-/', $fname, $m)) {
@@ -175,9 +175,33 @@ class Ippo {
 		}
 		return $bat;
 	}
+	
+	public function expand_list($list) {
+		$result = array();
+		foreach ($list as $k => $v) {
+			$result[$k] = array(
+				'from' => $v[0],
+				'to' => $v[1],
+			);
+		}
+		return $result;
+	}
 }
-/**/
+/**
 $i = new Ippo();
 $list = $i->cache_volume_list();
 $i->move_pages_to_volumes($list);
+/**/
+
+/**/
+require_once 'class/manga_crawler.php';
+// kaketyou hitman reborn
+$list = array(
+	1=>array(1,7), 2=>array(8,16), 3=>array(17,25), 4=>array(26,33), 5=>array(34,42), 
+	6=>array(43,51), 7=>array(52,60), 8=>array(61,70), 9=>array(71,79), 10=>array(80,89),
+	11=>array(90,98), 12=>array(99,107), 13=>array(108,116), 14=>array(117,125), 15=>array(126,134),
+	16=>array(135,143), 17=>array(144,153), 18=>array(154,164), 19=>array(165,174), 20=>array(175,185),
+	21=>array(186,195), 22=>array(196,205), 23=>array(206,215), 
+);
+Manga_Crawler::move_pages_to_volumes('D:\temp\Katekyo Hitman Reborn\\', $list, 14);
 /**/

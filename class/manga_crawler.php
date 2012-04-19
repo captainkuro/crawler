@@ -289,4 +289,28 @@ abstract class Manga_Crawler {
 			curl_multi_close($curlHandle);
 		}
 	}
+	
+	/*** File Management ***/
+	// open folder of pages, parse filename, move to corresponding volumes
+	public static function move_pages_to_volumes($path, $list, $cur_vol = 1) {
+		// $path = 'D:\temp\Katekyo Hitman Reborn\\';//contoh
+		$cur_pages = array();
+		foreach (scandir($path) as $fname) {
+			if (preg_match('/-(\d{3})-/', $fname, $m)) {
+				$chap = (int)$m[1];
+				if ($chap >= $list[$cur_vol][0] && $chap <= $list[$cur_vol][1]) {
+					$cur_pages[] = $fname;
+				} elseif ($chap > $list[$cur_vol]['to']) {
+					// make dir
+					$vname = 'Vol '.Text::create($cur_vol)->pad(2)->to_s();
+					if (!is_dir($path.$vname)) mkdir($path.$vname);
+					foreach ($cur_pages as $p) {
+						rename($path.$p, $path.$vname.'/'.$p);
+					}
+					$cur_vol++;
+					$cur_pages = array($fname);
+				}
+			}
+		}
+	}
 }
