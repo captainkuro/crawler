@@ -300,7 +300,7 @@ abstract class Manga_Crawler {
 				$chap = (int)$m[1];
 				if ($chap >= $list[$cur_vol][0] && $chap <= $list[$cur_vol][1]) {
 					$cur_pages[] = $fname;
-				} elseif ($chap > $list[$cur_vol]['to']) {
+				} elseif ($chap > $list[$cur_vol][1]) {
 					// make dir
 					$vname = 'Vol '.Text::create($cur_vol)->pad(2)->to_s();
 					if (!is_dir($path.$vname)) mkdir($path.$vname);
