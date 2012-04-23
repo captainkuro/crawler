@@ -313,4 +313,15 @@ abstract class Manga_Crawler {
 			}
 		}
 	}
+	
+	public static function create_batch_zip($path) {
+		// $path = 'D:\temp\manga\hajime\\'; // contoh
+		$bat = 'cd "'.$path.'"'.PHP_EOL;
+		foreach (scandir($path) as $dname) {
+			if (is_dir($path.$dname) && $dname != '.' && $dname != '..') {
+				$bat .= '7z a "'.$dname.'.zip" ".\\'.$dname.'\*" -tzip -mx0'.PHP_EOL;
+			}
+		}
+		return $bat;
+	}
 }

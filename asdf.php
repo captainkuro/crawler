@@ -205,5 +205,6 @@ $list = array(
 	26=>array(238,247), 27=>array(248,258), 28=>array(259,268), 29=>array(269,278), 30=>array(279,288),
 	31=>array(289,299),
 );
-Manga_Crawler::move_pages_to_volumes('D:\temp\Katekyo Hitman Reborn\\', $list, 14);
+// Manga_Crawler::move_pages_to_volumes('D:\temp\Katekyo Hitman Reborn\\', $list, 22);
+// echo (Manga_Crawler::create_batch_zip('D:\temp\Katekyo Hitman Reborn\\'));
 /**/
