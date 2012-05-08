@@ -203,8 +203,9 @@ $list = array(
 	16=>array(135,143), 17=>array(144,153), 18=>array(154,164), 19=>array(165,174), 20=>array(175,185),
 	21=>array(186,195), 22=>array(196,205), 23=>array(206,215), 24=>array(216,226), 25=>array(227,237),
 	26=>array(238,247), 27=>array(248,258), 28=>array(259,268), 29=>array(269,278), 30=>array(279,288),
-	31=>array(289,299),
+	31=>array(289,299), 32=>array(300,310), 33=>array(311,320), 34=>array(321,330), 35=>array(331,341),
+	36=>array(342,351), 37=>array(352,361), 38=>array(362,999),
 );
-// Manga_Crawler::move_pages_to_volumes('D:\temp\Katekyo Hitman Reborn\\', $list, 22);
-// echo (Manga_Crawler::create_batch_zip('D:\temp\Katekyo Hitman Reborn\\'));
+// Manga_Crawler::move_pages_to_volumes('D:\temp\bacaan\Katekyo Hitman Reborn\\', $list, 26);
+// echo (Manga_Crawler::create_batch_zip('D:\temp\bacaan\Deadman Wonderland\\'));
 /**/
