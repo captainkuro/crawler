@@ -1,6 +1,7 @@
 <?php
 /*
 Spider for readhentaionline.com
+Now http://hentaimangaonline.com/
 
 Halaman utama berisi daftar hentai manga sort by submitted descending
 http://readhentaionline.com/category/hentai-manga/
@@ -116,7 +117,7 @@ class Post_Data {
 }
 
 class Readhentaionline {
-	public $base = 'http://readhentaionline.com';
+	public $base = 'http://hentaimangaonline.com/';
 	public $db = null;
 	
 	public function create_database() {
@@ -273,7 +274,7 @@ class Readhentaionline {
 			$t_content = new Text($p->content());
 			$raw = array_unique($t_content->extract_to_array('href="', '"'));
 			foreach ($raw as $e) {
-				if (preg_match('/^http:\/\/readhentaionline\.com\/read-[^\/]*-hentai-manga-online\/$/', $e)) {
+				if (preg_match('/^http:\/\/hentaimangaonline\.com\/read-[^\/]*-hentai-manga-online\/$/', $e)) {
 					if ($check_database) {
 						if ($this->url_already_exist($e)) return array_unique($chapters);
 					}
@@ -306,7 +307,7 @@ class Readhentaionline {
 	}
 	
 	public function stage_update() {
-		$update_url = 'http://readhentaionline.com/';
+		$update_url = $this->base;
 		$links = $this->grab_chapter_urls($update_url, true);
 		$n = count($links);
 		// echo '<pre>';print_r($links);exit;//DEBUG
@@ -407,7 +408,7 @@ class Readhentaionline {
 	}
 	
 	public function stage_fillblanks() {
-		$update_url = 'http://readhentaionline.com/';
+		$update_url = $this->base;
 		$links = $this->grab_chapter_urls($update_url);
 		foreach ($links as $link) {
 			if (!$this->url_already_exist($link)) {
@@ -415,6 +416,20 @@ class Readhentaionline {
 				$info = $this->extract_info($link);
 				$this->add_book($info);
 			}
+		}
+	}
+	
+	// karena ada perubahan domain dari readhentaionline.com jadi hentaimangaonline.com
+	// bikin jadi tidak tergantung nama domain, kah?
+	public function stage_convert_domain() {
+		$old_domain = 'http://readhentaionline.com/';
+		$new_domain = 'http://hentaimangaonline.com/';
+		$all = Model::factory('Book')->find_many();
+		// strip domain name from url
+		foreach ($all as $book) {
+			$book->url = str_replace($old_domain, $new_domain, $book->url);
+			$book->gallery_url = str_replace($old_domain, $new_domain, $book->gallery_url);
+			$book->save();
 		}
 	}
 	

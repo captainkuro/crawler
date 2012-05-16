@@ -250,10 +250,12 @@ function ryuutama_realm($url) {
 	$base = 'http://gallery.ryuutama.com/';
 	$api = "http://gallery.ryuutama.com/api.php?grab=manga&id=%s&page=1&cache=%s";
 	$c = new Crawler($url);
-	$c->go_to('current_manga =');
-	preg_match('/current_manga = "([^"]+)".*total_pages = "([^"]+)"/', $c->curline, $m);
+	$c->go_to('manga = "');
+	preg_match('/manga = "([^"]+)"/', $c->curline, $m);
 	$id = $m[1];
-	$n = $m[2];
+	$c->go_to('total_pages = "');
+	preg_match('/total_pages = "([^"]+)"/', $c->curline, $m);
+	$n = $m[1];
 	$c->close();
 	// obtain all images
 	$c = new Crawler(sprintf($api, $id, $n));
