@@ -258,7 +258,11 @@ function ryuutama_realm($url) {
 	$n = $m[1];
 	$c->close();
 	// obtain all images
-	$c = new Crawler(sprintf($api, $id, $n));
+	$apiurl = sprintf($api, $id, $n);
+	$c = new Crawler($apiurl);
+	$c->go_to('Connection: close');
+	$c->readline();
+	$c->readline();
 	$images = explode(' ', $c->curline);
 	$c->close();
 	foreach ($images as $src) {
@@ -338,7 +342,7 @@ function rule34($url) {
 		echo "$url<br/>";
 		$c = new Crawler($url);
 		$c->go_to("id='Navigationleft'");
-		$c->readline();
+		// $c->readline();
 		// $c->readline();
 		$line = $c->curline;
 		if (preg_match('/<a href="([^\'"]+)">Next/', $line, $m)) {
@@ -346,12 +350,12 @@ function rule34($url) {
 		} else {
 			$continue = false;
 		}
-		$c->go_to("id='Imagesmain'");
+		$c->go_to("id='image-list'");
 		while ($line = $c->readline()) {
 			if (Crawler::is_there($line, '>Image Only<')) {
-				$href = Crawler::extract($line, "href='", "'");
+				$href = Crawler::extract($line, '<br><a href="', '"');
 				echo "<a href='$href'>$text</a><br/>\n";
-			} else if (Crawler::is_there($line, 'id="footer"')) {
+			} else if (Crawler::is_there($line, '<footer>')) {
 				break;
 			}
 		}
