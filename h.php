@@ -258,7 +258,11 @@ function ryuutama_realm($url) {
 	$n = $m[1];
 	$c->close();
 	// obtain all images
-	$c = new Crawler(sprintf($api, $id, $n));
+	$apiurl = sprintf($api, $id, $n);
+	$c = new Crawler($apiurl);
+	$c->go_to('Connection: close');
+	$c->readline();
+	$c->readline();
 	$images = explode(' ', $c->curline);
 	$c->close();
 	foreach ($images as $src) {
@@ -432,6 +436,29 @@ function readhentaionline($url) {
 	}
 }
 
+function yandere($url) {
+// https://yande.re/post?tags=rating%3Ae+uncensored+sex+
+	$turl = $url;
+	for ($i=1; $i<=16; $i++) {
+		if ($i > 1) $turl = $url . '&page=' .$i;
+		$p = new Page($turl, array(
+			// CURLOPT_CERTINFO => true,
+			CURLOPT_SSL_VERIFYPEER => false,
+		));
+		$p->go_line('Post.register(');
+		do {if ($p->curr_line()->contain('Post.register')) {
+			$json = $p->curr_line()->dup()
+				->cut_between('Post.register(', '})')
+				->to_s()
+			;
+			$obj = json_decode($json.'}');
+			
+			echo "<a href='{$obj->jpeg_url}'>{$obj->tags}.jpg</a><br>\n";
+		}} while (!$p->next_line()->contain('</script>'));
+		
+	}
+}
+
 ?>
 <html>
 <body>
@@ -484,6 +511,7 @@ if ($_POST) {
 			'rule34.paheal.net' => 'rule34',
 			'sankakucomplex.com' => 'sankakucomplex',
 			'readhentaionline.com' => 'readhentaionline',
+			'yande.re' => 'yandere',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {

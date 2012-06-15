@@ -53,10 +53,13 @@ class Mangareader extends Manga_Crawler {
 				break;
 			}
 		}
-		//$pages = Crawler::extract_to_array($c->curline, 'value="', '"');
+		// $pages = Crawler::extract_to_array($c->curline, 'value="', '"');
 		$c->close();
 		
-		Crawler::multiProcess(4, $pages, array($this, 'mangareader_1_page'), array($v['infix']));
+		// Crawler::multiProcess(4, $pages, array($this, 'mangareader_1_page'), array($v['infix']));
+		foreach ($pages as $page) {
+			$this->mangareader_1_page($page, $page, $v['infix']);
+		}
 	}
 	
 	public function mangareader_1_page($fil, $url, $chapter) {
