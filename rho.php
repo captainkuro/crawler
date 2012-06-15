@@ -311,13 +311,13 @@ class Readhentaionline {
 		$links = $this->grab_chapter_urls($update_url, true);
 		$n = count($links);
 		// echo '<pre>';print_r($links);exit;//DEBUG
-		for ($i=$n-1; $i>=0; --$i) {
-			echo "Saving {$links[$i]}<br/>\n";
+		foreach ($links as $l) {
+			echo "Saving {$l}<br/>\n";
 			try {
-				$info = $this->extract_info($links[$i]);
+				$info = $this->extract_info($l);
 				$this->add_book($info);
 			} catch (Exception $e) {
-				echo "Cancelled {$links[$i]}<br/>\n";
+				echo "Cancelled {$l}<br/>\n";
 			}
 		}
 	}
