@@ -164,14 +164,9 @@ abstract class Manga_Crawler {
 	}
 	
 	public function display_stage_3() {
-		echo X::_o('fieldset');
-			echo X::legend('3');
-			
 		foreach ($this->info as $v) {
 			$this->crawl_chapter($v);
 		}
-		
-		echo X::_c('fieldset');
 	}
 	
 	public function display_footer() {

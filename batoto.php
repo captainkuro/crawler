@@ -64,7 +64,7 @@ class Batoto extends Manga_Crawler {
 		if (preg_match('/[0-9a-z]{13}\.\w+$/', $iname)) {
 			$iname = preg_replace('/\w{13}\.(\w+)$/', '.$1', $iname);
 		}
-		echo "<a href='$img'>$prefix-$ifx-$iname</a><br/>\n";
+		echo "<li><a href='$img'>$prefix-$ifx-$iname</a></li>\n";
 	}
 	
 	public function url_is_single_chapter($url) {
