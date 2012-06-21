@@ -14,7 +14,7 @@ class Mangareader extends Manga_Crawler {
 	// need to be overridden, return array[desc,url,infix]
 	// $base is URL submitted
 	public function extract_info($base) {
-		echo '<tr><td colspan="2">Progress.. ';
+		echo '<tr><td colspan="3">Progress.. ';
 		$c = new Crawler($base);
 		$c->go_to('id="listing"');
 		$list = array();
@@ -57,9 +57,11 @@ class Mangareader extends Manga_Crawler {
 		$c->close();
 		
 		// Crawler::multiProcess(4, $pages, array($this, 'mangareader_1_page'), array($v['infix']));
+		echo '<ul>';
 		foreach ($pages as $page) {
 			$this->mangareader_1_page($page, $page, $v['infix']);
 		}
+		echo '</ul>';
 	}
 	
 	public function mangareader_1_page($fil, $url, $chapter) {
@@ -69,7 +71,7 @@ class Mangareader extends Manga_Crawler {
 		$c->go_to('width="800"');
 		$img = $c->getbetween('src="', '"');
 		// if (@$_GET['show_url']) echo "<a href='$url'>URL</a> ";
-		echo '<a href="'.$img.'">'.$prefix.'-'.$chapter.'-'.basename($img).'</a>'."<br/>\n";
+		echo '<li><a href="'.$img.'">'.$prefix.'-'.$chapter.'-'.basename($img).'</a>'."</li>\n";
 		$c->close();
 	}
 	
