@@ -283,7 +283,7 @@ class Readhentaionline {
 			}
 			// return $chapters;//DEBUG
 		}
-		return array_unique($chapters);
+		return array_reverse(array_unique($chapters));
 	}
 	
 	public function add_book($info) {
