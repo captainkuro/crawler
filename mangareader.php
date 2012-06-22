@@ -3,6 +3,7 @@ require 'crawler.php';
 class Mangareader extends Manga_Crawler {
 	private $sitename = 'http://www.mangareader.net';
 	protected $enable_single_chapter = true;
+	protected $column_span = 3;
 	
 	public function display_header() {
 		if (isset($this->base) && strpos($this->base, 'mangapanda.com') !== false) {
@@ -56,11 +57,11 @@ class Mangareader extends Manga_Crawler {
 		// $pages = Crawler::extract_to_array($c->curline, 'value="', '"');
 		$c->close();
 		
-		// Crawler::multiProcess(4, $pages, array($this, 'mangareader_1_page'), array($v['infix']));
 		echo '<ul>';
-		foreach ($pages as $page) {
-			$this->mangareader_1_page($page, $page, $v['infix']);
-		}
+		Crawler::multiProcess(4, $pages, array($this, 'mangareader_1_page'), array($v['infix']));
+		// foreach ($pages as $page) {
+			// $this->mangareader_1_page($page, $page, $v['infix']);
+		// }
 		echo '</ul>';
 	}
 	
@@ -71,7 +72,9 @@ class Mangareader extends Manga_Crawler {
 		$c->go_to('width="800"');
 		$img = $c->getbetween('src="', '"');
 		// if (@$_GET['show_url']) echo "<a href='$url'>URL</a> ";
-		echo '<li><a href="'.$img.'">'.$prefix.'-'.$chapter.'-'.basename($img).'</a>'."</li>\n";
+		preg_match('/(\d+\.\w+)$/', basename($img), $m);
+		$iname = $m[1];
+		echo '<li><a href="'.$img.'">'.$prefix.'-'.$chapter.'-'.$iname.'</a>'."</li>\n";
 		$c->close();
 	}
 	

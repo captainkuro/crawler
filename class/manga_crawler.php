@@ -6,6 +6,7 @@
 abstract class Manga_Crawler {
 	//enable single chapter crawling
 	protected $enable_single_chapter = false;
+	protected $column_span = 4;
 	
 	public static function factory() {
 		$class = get_called_class();
@@ -130,7 +131,7 @@ abstract class Manga_Crawler {
 							X::thead(
 								X::tr(
 									X::th(array('class'=>'span1'), '#'),
-									X::th(array('class'=>'span3'), 'Chapter Name'),
+									X::th(array('class'=>'span4'), 'Chapter Name'),
 									X::th('Infix')
 								)
 							),
@@ -164,9 +165,20 @@ abstract class Manga_Crawler {
 	}
 	
 	public function display_stage_3() {
+		$i = 1;
+		echo "<div class='row-fluid'>\n";
 		foreach ($this->info as $v) {
+			echo "<div class='span{$this->column_span}'>\n";
 			$this->crawl_chapter($v);
+			echo "</div>\n";
+			$limit = (int)(12 / $this->column_span);
+			if ($i % $limit === 0) {
+				echo "</div>\n";
+				echo "<div class='row-fluid'>\n";
+			}
+			$i++;
 		}
+		echo "</div>\n";
 	}
 	
 	public function display_footer() {
