@@ -1,4 +1,5 @@
 <?php
+include '_header.php';
 /**
  * Spider for mangastream.com
  *
@@ -9,14 +10,35 @@
 require 'crawler.php';
 extract($_POST);
 ?>
-<html>
-<body>
-<form method="POST" action="">
-	URL FOLDER: <input type="text" name="base" value="<?php echo @$base;?>"><br />
-	Prefix: <input type="text" name="prefix" value="<?php echo @$prefix;?>"><br />
-	Infix: <input type="text" name="infix" value="<?php echo @$infix;?>"> optional<br />
-	<input type="submit">
-</form>
+
+<div class="container">
+	<form class="form-horizontal" method="POST" action="">
+		<fieldset>
+			<legend>Mangastream.com</legend>
+			<div class="control-group">
+				<label class="control-label">URL FOLDER</label>
+				<div class="controls">
+					<input type="text" name="base" value="<?php echo @$base;?>">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">Prefix</label>
+				<div class="controls">
+					<input type="text" name="prefix" value="<?php echo @$prefix;?>">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">Infix</label>
+				<div class="controls">
+					<input type="text" name="infix" value="<?php echo @$infix;?>">
+					<p class="help-block"> optional</p>
+				</div>
+			</div>
+			<div class="form-actions">
+				<button class="btn btn-primary">Submit</button>
+			</div>
+		</fieldset>
+	</form>
 <?
 //http://mangastream.com/read/kekkaishi/33956873/1
 $base = @$_POST['base'];
@@ -52,6 +74,7 @@ if ($base) {
 		// CYCLE THROUGH PAGES
 		$chatext = Crawler::n($chapter, 3);
 		$i = 0;
+		echo '<ul>';
 		foreach ($pages as $page) { $i++;
 			$Q = new Page($sitename . $page);
 			// echo $base.$page.'<br />'; // debug
@@ -61,8 +84,9 @@ if ($base) {
 				->cut_between('src="', '"')->to_s();
 			$text = Crawler::n($i, 3);
 			$ext = Crawler::cutafter(basename($img), '.');
-			echo "<a href='$img'>$prefix-$chatext-$text.$ext</a><br />\n";
+			echo "<li><a href='$img'>$prefix-$chatext-$text.$ext</a></li>";
 		}
+		echo '</ul>';
 		exit;
 	}
 	// else, $MODE 2/1
@@ -210,3 +234,6 @@ if ($base) {
 		}
     }
 }
+?>
+</div>
+<?php include '_footer.php'; ?>

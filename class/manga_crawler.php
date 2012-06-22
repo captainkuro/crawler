@@ -13,10 +13,7 @@ abstract class Manga_Crawler {
 	}
 	
 	public function display_header() {
-		echo 
-		X::_o('html'),
-			X::_o('body')
-		;
+		include '_header.php';
 		?>
 		<script type="text/javascript">
 		var global_check = false;
@@ -54,42 +51,91 @@ abstract class Manga_Crawler {
 				el.checked = false;
 			}
 		}
+		
+		function check_this_row(el) {
+			var suspects = el.getElementsByTagName('input');
+			suspects[0].click();
+		}
 		</script>
+		
 		<?php
+		echo X::_o('div', array('class'=>'container'));
 	}
 	
 	public function display_stage_1() {
 		echo 
-		X::h2('1'),
-		X::form(array('method'=>'post'),
-			'Manga URL: ',X::input(array('type'=>'text','name'=>'base','value'=>@$this->base)),X::br(),
-			'Prefix: ',X::input(array('type'=>'text','name'=>'prefix','value'=>@$this->prefix)),X::br(),
-			$this->enable_single_chapter 
-				? 'Infix: '.X::input(array('type'=>'text','name'=>'singlefix','value'=>@$this->singlefix)).' only for single chapter'.X::br()
-				: ''
-			,
-			X::input(array('type'=>'submit','name'=>'stage1'))
+		X::form(array('class'=>'form-horizontal', 'method'=>'post'),
+			X::fieldset(
+				X::legend('1'),
+				X::div(array('class'=>'control-group'),
+					X::label(array('class'=>'control-label'), 'Manga URL'),
+					X::div(array('class'=>'controls'),
+						X::input(array('type'=>'text','name'=>'base','value'=>@$this->base))
+					)
+				),
+				X::div(array('class'=>'control-group'),
+					X::label(array('class'=>'control-label'), 'Prefix'),
+					X::div(array('class'=>'controls'),
+						X::input(array('type'=>'text','name'=>'prefix','value'=>@$this->prefix))
+					)
+				),
+				$this->enable_single_chapter 
+					? X::div(array('class'=>'control-group'),
+						X::label(array('class'=>'control-label'), 'Infix'),
+						X::div(array('class'=>'controls'),
+							X::input(array('type'=>'text','name'=>'singlefix','value'=>@$this->singlefix)),
+							X::p(array('class'=>'help-block'), 'only for single chapter')
+						)
+					)
+					: ''
+				,
+				X::div(array('class'=>'form-actions'),
+					X::button(array('class'=>'btn btn-primary','type'=>'submit','name'=>'stage1'), 'Submit')
+				)
+			)
 		)
 		;
 	}
 	
 	public function display_stage_2() {
 		echo
-		X::h2('2'),
-		X::_o('form', array('method'=>'post')),
-			'Manga URL: ',X::input(array('type'=>'text','name'=>'base','value'=>@$this->base)),X::br(),
-			'Prefix: ',X::input(array('type'=>'text','name'=>'prefix','value'=>@$this->prefix)),X::br(),
-			X::div('Choose chapter:'),
-			X::input(array('type'=>'checkbox','name'=>'all','onclick'=>'click_this()')),'All',X::br(),
-			X::input(array('id'=>'parse_it')),
-			X::input(array('type'=>'button','onclick'=>'check_it()','value'=>'Check')),
-			X::input(array('type'=>'button','onclick'=>'uncheck_it()','value'=>'Uncheck')),
-			X::br(),
-			X::_o('table'),
-				X::tr(
-					X::th('Chapter Name'),
-					X::th('Infix')
-				)
+		X::_o('form', array('class'=>'form-horizontal', 'method'=>'post')),
+			X::_o('fieldset'),
+				X::legend('2'),
+				X::div(array('class'=>'control-group'),
+					X::label(array('class'=>'control-label'), 'Manga URL'),
+					X::div(array('class'=>'controls'),
+						X::input(array('type'=>'text','name'=>'base','value'=>@$this->base))
+					)
+				),
+				X::div(array('class'=>'control-group'),
+					X::label(array('class'=>'control-label'), 'Prefix'),
+					X::div(array('class'=>'controls'),
+						X::input(array('type'=>'text','name'=>'prefix','value'=>@$this->prefix))
+					)
+				),
+				X::_o('div', array('class'=>'control-group')),
+					X::label(array('class'=>'control-label'), 'Choose chapter'),
+					X::_o('div', array('class'=>'controls')),
+						X::label(array('class'=>'checkbox'),
+							X::input(array('type'=>'checkbox','name'=>'all','onclick'=>'click_this()')),' All'
+						),
+						X::div(array('class'=>'input-append'),
+							X::input(array('id'=>'parse_it', 'type'=>'text')),
+							X::button(array('type'=>'button','onclick'=>'check_it()','class'=>'btn'), 'Check'),
+							X::button(array('type'=>'button','onclick'=>'uncheck_it()','class'=>'btn'), 'Uncheck')
+						),
+						X::br(),
+						X::_o('table', array('class'=>'table table-condensed')),
+							X::thead(
+								X::tr(
+									X::th(array('class'=>'span1'), '#'),
+									X::th(array('class'=>'span3'), 'Chapter Name'),
+									X::th('Infix')
+								)
+							),
+							X::_o('tbody')
+					
 		;
 		if (isset($this->stage1)) {
 			$list = $this->extract_info($this->base);
@@ -105,8 +151,14 @@ abstract class Manga_Crawler {
 			}}
 		}
 		echo
-			X::_c('table'),
-			X::input(array('type'=>'submit','name'=>'stage2')),
+							X::_c('tbody'),
+						X::_c('table'),
+					X::_c('div'),
+				X::_c('div'),
+				X::div(array('class'=>'form-actions'),
+					X::button(array('class'=>'btn btn-primary','type'=>'submit','name'=>'stage2'), 'Submit')
+				),
+			X::_c('fieldset'),
 		X::_c('form')
 		;
 	}
@@ -118,10 +170,8 @@ abstract class Manga_Crawler {
 	}
 	
 	public function display_footer() {
-		echo
-			X::_c('body'),
-		X::_c('html')
-		;
+		echo X::_c('div');
+		include '_footer.php';
 	}
 	
 	// complete process
@@ -157,15 +207,17 @@ abstract class Manga_Crawler {
 	
 	public function print_choice($i, $v) {
 		echo
-		X::tr(
+		X::tr(array('onclick'=>'check_this_row(this)'),
 			X::td(
-				X::input(array('type'=>'checkbox','name'=>"info[$i][check]",'value'=>$i, 'id'=>'check-'.$v['infix'])),
+				X::input(array('type'=>'checkbox','name'=>"info[$i][check]",'value'=>$i, 'id'=>'check-'.$v['infix'], 'onclick'=>'event.stopPropagation()'))
+			),
+			X::td(
 				$v['desc'],
 				X::input(array('type'=>'hidden','name'=>"info[$i][url]",'value'=>$v['url'])),
 				X::input(array('type'=>'hidden','name'=>"info[$i][desc]",'value'=>$v['desc']))
 			),
 			X::td(
-				X::input(array('type'=>'text','name'=>"info[$i][infix]",'value'=>$v['infix']))
+				X::input(array('class'=>'span1','type'=>'text','name'=>"info[$i][infix]",'value'=>$v['infix'], 'onclick'=>'event.stopPropagation()'))
 			)
 		)
 		;
