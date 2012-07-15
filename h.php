@@ -389,7 +389,8 @@ function sankakucomplex($url) {
 			$E = new Text($e);
 			$kurl = $base . $e;
 			$P = new Page($kurl);
-			$P->go_line('id="lowres"');
+			$P->go_line('id="highres"');
+			// $P->go_line('id="lowres"');
 			if ($P->end_of_line()) {
 				$P->reset_line();
 				$P->go_line('id="highres"');
@@ -459,6 +460,74 @@ function yandere($url) {
 	}
 }
 
+function hentaifromhell($url) {
+// mungkin galeri langsung di halaman ini, http://hentaifromhell.net/shiden-akira-candy-girl/
+// atau ada link ke galeri, // http://hentaifromhell.net/miyabi-tsuzuru-rough-sketch-rough-playing/
+// atau tidak ada galeri, // http://hentaifromhell.net/1st-week-of-homestay/
+	if (strpos($url, 'gallery.php')) {
+		return hfh_gal($url);
+	}
+	$name = basename($url);
+	$p = new Page($url);
+	$p->go_line('alt="Gallery"');
+	if (!$p->curr_line()->contain('alt="Gallery"')) {
+		echo "No gallery <a href='$url'>link</a>";
+		return;
+	}
+	if ($p->curr_line()->contain('href="')) {
+		$gal = $p->curr_line()->dup()
+			->cut_between('href="', '"')
+			->to_s();
+		hfh_gal($gal);
+	} else {
+		$p->go_line("id='gallery-1'");
+		do {
+			$line = $p->curr_line();
+			if ($line->contain('src="')) {
+				$src = $line->dup()
+					->cut_between('src="', '"')
+					->regex_replace('/-\d+x\d+\./', '.')
+					->to_s();
+				echo "<a href='$src'>$name</a><br>\n";
+			}
+		} while (!$p->next_line()->contain('</div>'));
+	}	
+}
+
+function hfh_gal($gal) {
+	$origal = $gal;
+	$name = rawurldecode(basename(dirname($gal)));
+	$masih = true;
+	$base = 'http://hentaifromhell.net';
+	$pn = 0;
+	$totimage = null;
+	while ($masih) {
+		echo $gal.'<br>';
+		$g = new Page($gal);
+		if (!isset($totimage)) {
+			$g->go_line('Images <strong>');
+			$m = $g->curr_line()->regex_match('/of <strong>(\d+)<\/strong>/');
+			$totimage = $m[1];
+			$g->reset_line();
+		}
+		$g->go_line('<img');
+		do { if ($g->curr_line()->contain('src="')) {
+			$src = $g->curr_line()->dup()
+				->cut_between('src="', '"')
+				->regex_replace('/_thmb\.jpg$/', '')
+				->to_s();
+			echo "<a href='$base$src'>$name</a><br>\n";
+		}} while (!$g->next_line()->contain('</table>'));
+		// @TODO
+		if ($pn+20 > $totimage) {
+			$masih = false;
+		} else {
+			$pn += 20;
+			$gal = $origal.'?pn='.$pn;
+		}
+	}
+}
+
 ?>
 <html>
 <body>
@@ -493,8 +562,6 @@ if ($_POST) {
 		$s->go();
 	} else if (preg_match('/hentairules\.net\/gal\//', $start_url)) {
 		hentairules_realm($start_url);
-	} else if (preg_match('/hentaifromhell\.net/', $start_url)) {
-		old_hfh_realm($start_url);
 	} else {
 		// Simple mapping host => function
 		$map = array(
@@ -512,6 +579,7 @@ if ($_POST) {
 			'sankakucomplex.com' => 'sankakucomplex',
 			'readhentaionline.com' => 'readhentaionline',
 			'yande.re' => 'yandere',
+			'hentaifromhell.net' => 'hentaifromhell',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {

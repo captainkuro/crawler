@@ -232,7 +232,11 @@ class Readhentaionline {
 		$ll->regex_replace('/<h3>Related Manga<\/h3>.*$/', '');
 		$ll->regex_replace('/<h3>Other Chapters.*$/', '');
 		$tags = $ll->extract_to_array('">', '</');
-		$ret['tags'] = array_map('html_entity_decode', $tags, array_fill(0, count($tags), ENT_COMPAT), array_fill(0, count($tags), 'UTF-8'));
+		if ($tags && count($tags) > 0) {
+			$ret['tags'] = array_map('html_entity_decode', $tags, array_fill(0, count($tags), ENT_COMPAT), array_fill(0, count($tags), 'UTF-8'));
+		} else {
+			$ret['tags'] = array();
+		}
 		// # images
 		$p->go_line('id="gallery"');
 		$url = $this->base . $p->next_line()->dup()
@@ -283,7 +287,7 @@ class Readhentaionline {
 			}
 			// return $chapters;//DEBUG
 		}
-		return array_reverse(array_unique($chapters));
+		return (array_unique($chapters));
 	}
 	
 	public function add_book($info) {
@@ -307,7 +311,8 @@ class Readhentaionline {
 	}
 	
 	public function stage_update() {
-		$update_url = $this->base;
+		// $update_url = $this->base;
+		$update_url = 'http://hentaimangaonline.com/category/hentai-manga/english-hentai-manga/';
 		$links = $this->grab_chapter_urls($update_url, true);
 		$n = count($links);
 		// echo '<pre>';print_r($links);exit;//DEBUG
