@@ -39,7 +39,7 @@ extract($_POST);
 			</div>
 		</fieldset>
 	</form>
-<?
+<?php
 //http://mangastream.com/read/kekkaishi/33956873/1
 $base = @$_POST['base'];
 $prefix = @$_POST['prefix'];

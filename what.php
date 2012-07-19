@@ -646,4 +646,36 @@ function coursera() {
 		}
 	} while (!$p->next_line()->contain('<script>'));
 }
-coursera();
+// coursera();
+
+function deviantart($gal) {
+	$next = true;
+	preg_match('/:\/\/([^\/]+)\//', $gal, $m);
+	$base = 'http://'.$m[1];
+	do {
+		echo "$gal<br>";
+		$p = new Page($gal);
+		$p->go_line('id="gmi-ResourceStream"');
+		$raw = explode('<a class="thumb', $p->curr_line()->to_s());
+		for ($i=1, $l=count($raw); $i<$l; $i++) {
+			$line = new Text($raw[$i]);
+			$name = $line->dup()->cut_between('<b>', '</')->to_s();
+			if ($line->contain('super_fullimg=')) {
+				$src = $line->dup()->cut_between('super_fullimg="', '"')->to_s();
+			} else {
+				$src = $line->dup()->cut_between('super_img="', '"')->to_s();
+			}
+			echo "<a href='$src'>{$name}</a><br>\n";
+		}
+		// ada next?
+		$p->go_line('<li class="next">');
+		if ($p->curr_line()->contain('<li class="next"><a class="away" href="')) {
+			$part = $p->curr_line()->dup()->cut_between('<li class="next"><a class="away" href="', '"');
+			$gal = $base . $part;
+		} else {
+			$next = false;
+		}
+	} while ($next);
+}
+// deviantart('http://artgerm.deviantart.com/gallery/?catpath=/');
+deviantart('http://thedurrrrian.deviantart.com/gallery/?catpath=/');
