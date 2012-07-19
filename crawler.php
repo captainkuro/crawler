@@ -7,7 +7,7 @@ class Crawler {
 	public $stream;
 	public $curline;
 	public $url;
-	public static $use_proxy = true;
+	public static $use_proxy = false;
 	public static $proxy = array(
 		'name' => '10.1.1.2',  // ganti nih
 		'port' => 8080, // ganti nih
