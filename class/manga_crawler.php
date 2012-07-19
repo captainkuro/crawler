@@ -130,7 +130,7 @@ abstract class Manga_Crawler {
 							X::thead(
 								X::tr(
 									X::th(array('class'=>'span1'), '#'),
-									X::th(array('class'=>'span3'), 'Chapter Name'),
+									X::th(array('class'=>'span5'), 'Chapter Name'),
 									X::th('Infix')
 								)
 							),
