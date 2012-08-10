@@ -678,4 +678,5 @@ function deviantart($gal) {
 	} while ($next);
 }
 // deviantart('http://artgerm.deviantart.com/gallery/?catpath=/');
-deviantart('http://thedurrrrian.deviantart.com/gallery/?catpath=/');
+// deviantart('http://thedurrrrian.deviantart.com/gallery/?catpath=/');
+// deviantart('http://ganassa.deviantart.com/gallery/?offset=0');

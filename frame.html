@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+<TITLE>A simple frameset document</TITLE>
+</HEAD>
+<body>
+	<script type="text/javascript">
+	function go() {
+		var src = document.getElementById('theurl').value;
+		document.getElementById('theframe').src = src;
+	}
+	</script>
+	<input id="theurl"><button id="thebutton" onclick="go()">Go</button><br>
+	<iframe id="theframe" src="javascript:void(0)" style="width:100%;height:100%"></frame>
+</body>
+</HTML>

@@ -3,7 +3,7 @@
 // http://www.batoto.com/read/_/27286/xblade_ch41_by_twilight-dreams-scans
 class Batoto extends Manga_Crawler {
 	protected $enable_single_chapter = true;
-	protected $column_span = 2;
+	protected $column_span = 3;
 	
 	// need to be overridden, return array[desc,url,infix]
 	// $base is URL submitted
@@ -65,8 +65,12 @@ class Batoto extends Manga_Crawler {
 		if (preg_match('/[0-9a-z]{13}\.\w+$/', $iname)) {
 			$iname = preg_replace('/\w{13}\.(\w+)$/', '.$1', $iname);
 		}
-		// ambil last 3 character
-		$iname = substr($iname, -7);
+		if (preg_match('/_(\d+)_[a-zA-Z]+\.\w{3}$/', $iname, $m)) {
+			$iname = $m[1].substr($iname, -4);
+		} else {
+			// ambil last 3 character
+			$iname = substr($iname, -7);
+		}
 		echo "<li><a href='$img'>$prefix-$ifx-$iname</a></li>\n";
 	}
 	

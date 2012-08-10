@@ -58,10 +58,10 @@ class Mangareader extends Manga_Crawler {
 		$c->close();
 		
 		echo '<ul>';
-		Crawler::multiProcess(4, $pages, array($this, 'mangareader_1_page'), array($v['infix']));
-		// foreach ($pages as $page) {
-			// $this->mangareader_1_page($page, $page, $v['infix']);
-		// }
+		// Crawler::multiProcess(4, $pages, array($this, 'mangareader_1_page'), array($v['infix']));
+		foreach ($pages as $page) {
+			$this->mangareader_1_page($page, $page, $v['infix']);
+		}
 		echo '</ul>';
 	}
 	
