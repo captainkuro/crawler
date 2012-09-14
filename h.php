@@ -248,7 +248,8 @@ function hentairules_realm($url) {
 // http://gallery.ryuutama.com/view.php?manga=386
 function ryuutama_realm($url) {
 	$base = 'http://gallery.ryuutama.com/';
-	$api = "http://gallery.ryuutama.com/api.php?grab=manga&id=%s&page=1&cache=%s";
+	// $api = "http://gallery.ryuutama.com/api.php?grab=manga&id=%s&page=1&cache=%s";
+	$api = "http://gallery.ryuutama.com/api.php?grab=newManga&id=%s";
 	$c = new Crawler($url);
 	$c->go_to('manga = "');
 	preg_match('/manga = "([^"]+)"/', $c->curline, $m);
@@ -260,12 +261,11 @@ function ryuutama_realm($url) {
 	// obtain all images
 	$apiurl = sprintf($api, $id, $n);
 	$c = new Crawler($apiurl);
-	$c->go_to('Connection: close');
-	$c->readline();
-	$c->readline();
-	$images = explode(' ', $c->curline);
+	$images = json_decode($c->curline);
 	$c->close();
-	foreach ($images as $src) {
+	
+	foreach ($images as $obj) {
+		$src = $obj->picture_filename;
 		$name = basename(dirname($src));
 		echo "<a href='$base$src'>$name</a><br />\n";
 	}
