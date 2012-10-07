@@ -35,7 +35,7 @@ include 'class/idiorm.php';
 include 'class/paris.php';
 include_once 'class/text.php';
 include_once 'class/page.php';
-include('class/simple_html_dom.php');
+include 'class/simple_html_dom.php';
 
 class Hmanga extends Model {
 	public function save() {
@@ -267,6 +267,197 @@ class Fakku {
 		$hmanga->save();
 	}
 	
+	public function action_update() {
+		foreach (array(
+			'http://www.fakku.net/manga/english', 
+			'http://www.fakku.net/doujinshi/english'
+		) as $starting_url) {
+			$page = 1;
+			$next = true;
+			$to_add = array();
+			while ($next) {
+				$p = new Page($starting_url . ($page > 1 ? '/page/'.$page : ''));
+				$infos = $this->extract_from_page($p);
+				foreach ($infos as $k => $info) {
+					if ($this->is_already_exist($info)) {
+						unset($infos[$k]);
+						$next = false;
+					}
+				}
+				$to_add = array_merge($to_add, $infos);
+				$page++;
+			}
+			$to_add = array_reverse($to_add);
+			// save
+			foreach ($to_add as $info) {
+				echo $info['url']."<br>\n";
+				$this->add_hmanga($info);
+			}
+		}
+	}
+	
+	public function action_search() {
+		$search = array(
+			'any' => explode(' ', @$_POST['any']),
+			'artist' => explode(' ', @$_POST['artist']),
+			'title' => explode(' ', @$_POST['title']),
+			'desc' => explode(' ', @$_POST['desc']),
+			'series' => explode(' ', @$_POST['series']),
+			'tags' => explode(' ', @$_POST['tags']),
+		);
+		$perpage = isset($_POST['perpage']) ? (int)$_POST['perpage'] : 20;
+		$order = isset($_POST['order']) ? $_POST['order'] : 'date desc';
+		$curpage = isset($_POST['curpage']) ? (int)$_POST['curpage'] : 1;
+		if (isset($_POST['next'])) {
+			$curpage++;
+		} else if (isset($_POST['prev'])) {
+			$curpage--;
+		}
+	?>
+		<form class="form-horizontal" method="post">
+			<legend>Search</legend>
+			<div class="control-group">
+				<div class="span6">
+					<label class="control-label">Any</label>
+					<div class="controls">
+						<input type="text" name="any" value="<?php echo @$_POST['any']; ?>">
+					</div>
+				</div>
+			
+				<div class="span6">
+					<label class="control-label">Artist</label>
+					<div class="controls">
+						<input type="text" name="artist" value="<?php echo @$_POST['artist']; ?>">
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="span6">
+					<label class="control-label">Title</label>
+					<div class="controls">
+						<input type="text" name="title" value="<?php echo @$_POST['title']; ?>">
+					</div>
+				</div>
+			
+				<div class="span6">
+					<label class="control-label">Desc</label>
+					<div class="controls">
+						<input type="text" name="desc" value="<?php echo @$_POST['desc']; ?>">
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="span6">
+					<label class="control-label">Series</label>
+					<div class="controls">
+						<input type="text" name="series" value="<?php echo @$_POST['series']; ?>">
+					</div>
+				</div>
+			
+				<div class="span6">
+					<label class="control-label">Tags</label>
+					<div class="controls">
+						<input type="text" name="tags" value="<?php echo @$_POST['tags']; ?>">
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="span3">
+					<label class="control-label">Per Page</label>
+					<div class="controls">
+						<input type="text" name="perpage" value="<?php echo $perpage; ?>" class="input-mini">
+					</div>
+				</div>
+				
+				<div class="span3">
+					<label class="control-label">Page</label>
+					<div class="controls">
+						<input type="text" name="curpage" value="<?php echo $curpage; ?>" class="input-mini">
+					</div>
+				</div>
+				
+				<div class="span6">
+					<label class="control-label">Order</label>
+					<div class="controls">
+						<label class="radio inline">
+							<input type="radio" name="order" value="date desc" <?php echo $order=='date desc'?'checked':''; ?>> date DESC
+						</label>
+						<label class="radio inline">
+							<input type="radio" name="order" value="date asc" <?php echo $order=='date asc'?'checked':''; ?>> date ASC
+						</label>
+						<label class="radio inline">
+							<input type="radio" name="order" value="title asc" <?php echo $order=='title asc'?'checked':''; ?>> title ASC
+						</label>
+						<label class="radio inline">
+							<input type="radio" name="order" value="title desc" <?php echo $order=='title desc'?'checked':''; ?>> title DESC
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<button type="submit" class="btn" name="search">Search</button>
+					<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+				</div>
+			</div>
+			
+			
+		</form>
+	<?php
+		$q = Model::factory('Hmanga')
+			->limit($perpage)
+			->offset(($curpage-1) * $perpage);
+		switch ($order) {
+			default:
+			case 'date desc': $q->order_by_desc('date'); break;
+			case 'date asc': $q->order_by_asc('date'); break;
+			case 'title asc': $q->order_by_asc('title'); break;
+			case 'title desc': $q->order_by_desc('title'); break;
+		}
+		// filter
+		foreach ($search['title'] as $term) { if ($term) {
+			$q->where_like('title', "%{$term}%");
+		}}
+		foreach ($search['series'] as $term) { if ($term) {
+			$q->where_like('series', "%{$term}%");
+		}}
+		foreach ($search['artist'] as $term) { if ($term) {
+			$q->where_like('artist', "%{$term}%");
+		}}
+		foreach ($search['desc'] as $term) { if ($term) {
+			$q->where_like('desc', "%{$term}%");
+		}}
+		foreach ($search['tags'] as $term) { if ($term) {
+			$q->where_like('tags', "%#{$term}#%");
+		}}
+		foreach ($search['any'] as $term) { if ($term) {
+			$q->where_raw('(title LIKE ? OR series LIKE ? OR artist LIKE ? OR desc LIKE ? OR tags LIKE ?)', 
+			array("%{$term}%", "%{$term}%", "%{$term}%", "%{$term}%", "%{$term}%"));
+		}}
+		$result = $q->find_many();
+	?>
+		<?php foreach ($result as $hmanga) : ?>
+			<div class="span6 result">
+				<?php $samples = explode('#', $hmanga->sample); ?>
+				<a href="?action=view&id=<?php echo $hmanga->id; ?>">
+					<img src="<?php echo $samples[0];?>" alt="th">
+					<img src="<?php echo $samples[1];?>" alt="th">
+				</a>
+
+				<dl class="dl-horizontal result">
+					<dt>Title</dt><dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>"><?php echo $hmanga->title; ?></a></dd>
+					<dt>Series</dt><dd><?php echo $hmanga->series; ?></dd>
+					<dt>Artist</dt><dd><?php echo $hmanga->artist; ?></dd>
+					<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
+					<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
+					<dt><a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a></dt>
+				</dl>
+			</div>
+		<?php endforeach; ?>
+	<?php
+	}
+	
 	public function action_view() {
 		$id = $_GET['id'];
 		$hmanga = Model::factory('Hmanga')->find_one($id);
@@ -281,7 +472,7 @@ class Fakku {
 			<dt>Artist</dt><dd><?php echo $hmanga->artist; ?></dd>
 			<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
 			<dt>Description</dt><dd><?php echo $hmanga->desc; ?></dd>
-			<dt>Tags</dt><dd><?php echo str_replace('#', ', ', $hmanga->tags); ?></dd>
+			<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
 		</dl>
 		
 		<ul class="thumbnails">
@@ -295,14 +486,15 @@ class Fakku {
 		<?php endforeach; ?>
 		
 		<?php
-		
+	}
+	
+	public function is_already_exist($info) {
+		$n = ORM::for_table('hmanga')->where('url', $info['url'])->count();
+		return $n > 0;
 	}
 	
 	public function action_test() {
-		$p= new Page('http://www.fakku.net/doujinshi/english/page/35');
-		$infos = $this->extract_from_page($p);
-		echo '<pre>';
-		print_r($infos);
+		
 	}
 }
 Fakku::create()->run();
