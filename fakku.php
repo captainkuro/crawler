@@ -84,7 +84,7 @@ class Hmanga extends Model {
 		$thumbnails = array();
 		$sample = current(explode('#', $this->sample));
 		if ($this->is_type_1()) {
-			$pre = dirname($sample) + '/thumbs/';
+			$pre = dirname($sample) . '/thumbs/';
 			$post = '';
 		} else if ($this->is_type_2()) {
 			$pre = substr($sample, 0, -7);
@@ -315,7 +315,6 @@ class Fakku {
 		}
 	?>
 		<form class="form-horizontal" method="post">
-			<legend>Search</legend>
 			<div class="control-group">
 				<div class="span6">
 					<label class="control-label">Any</label>
