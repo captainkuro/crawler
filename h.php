@@ -248,7 +248,8 @@ function hentairules_realm($url) {
 // http://gallery.ryuutama.com/view.php?manga=386
 function ryuutama_realm($url) {
 	$base = 'http://gallery.ryuutama.com/';
-	$api = "http://gallery.ryuutama.com/api.php?grab=manga&id=%s&page=1&cache=%s";
+	// $api = "http://gallery.ryuutama.com/api.php?grab=manga&id=%s&page=1&cache=%s";
+	$api = "http://gallery.ryuutama.com/api.php?grab=newManga&id=%s";
 	$c = new Crawler($url);
 	$c->go_to('manga = "');
 	preg_match('/manga = "([^"]+)"/', $c->curline, $m);
@@ -260,12 +261,11 @@ function ryuutama_realm($url) {
 	// obtain all images
 	$apiurl = sprintf($api, $id, $n);
 	$c = new Crawler($apiurl);
-	$c->go_to('Connection: close');
-	$c->readline();
-	$c->readline();
-	$images = explode(' ', $c->curline);
+	$images = json_decode($c->curline);
 	$c->close();
-	foreach ($images as $src) {
+	
+	foreach ($images as $obj) {
+		$src = $obj->picture_filename;
 		$name = basename(dirname($src));
 		echo "<a href='$base$src'>$name</a><br />\n";
 	}
@@ -389,8 +389,8 @@ function sankakucomplex($url) {
 			$E = new Text($e);
 			$kurl = $base . $e;
 			$P = new Page($kurl);
-			$P->go_line('id="highres"');
-			// $P->go_line('id="lowres"');
+			// $P->go_line('id="highres"');
+			$P->go_line('id="lowres"');
 			if ($P->end_of_line()) {
 				$P->reset_line();
 				$P->go_line('id="highres"');
@@ -470,17 +470,15 @@ function hentaifromhell($url) {
 	$name = basename($url);
 	$p = new Page($url);
 	$p->go_line('alt="Gallery"');
-	if (!$p->curr_line()->contain('alt="Gallery"')) {
-		echo "No gallery <a href='$url'>link</a>";
-		return;
-	}
 	if ($p->curr_line()->contain('href="')) {
 		$gal = $p->curr_line()->dup()
 			->cut_between('href="', '"')
 			->to_s();
-		hfh_gal($gal);
-	} else {
-		$p->go_line("id='gallery-1'");
+		return hfh_gal($gal);
+	}
+	$p->reset_line();
+	$p->go_line("id='gallery-1'");
+	if ($p->curr_line()->contain("id='gallery-1'")) {
 		do {
 			$line = $p->curr_line();
 			if ($line->contain('src="')) {
@@ -491,7 +489,10 @@ function hentaifromhell($url) {
 				echo "<a href='$src'>$name</a><br>\n";
 			}
 		} while (!$p->next_line()->contain('</div>'));
-	}	
+		return;
+	}
+	echo "No gallery <a href='$url'>link</a>";
+	return;
 }
 
 function hfh_gal($gal) {
@@ -526,6 +527,38 @@ function hfh_gal($gal) {
 			$gal = $origal.'?pn='.$pn;
 		}
 	}
+}
+
+function rule34xxx($url) {
+// http://thumbs.rule34.xxx/r34/1040/thumbnail_c17cd03f02e1e4691a511219bc0e69e0.jpeg?1040147
+// http://img.rule34.xxx/rule34/images/1046/d23f51ac373a14012f5f85129189903f.jpeg?1046207
+	$continue = true;
+	$base = 'http://rule34.xxx/index.php';
+	$tags = Text::create($url)->regex_match('/tags=([^&]+)/');
+	$tags = $tags[1];
+	do {
+		echo $url."<br>\n";
+		$p = new Page($url);
+		$p->go_line('END ExoClick.com');
+		do { if ($p->curr_line()->contain('src="')) {
+			$src = $p->curr_line()->dup()
+				->cut_between('src="', '"')
+				->replace('/thumbs.', '/img.')
+				->replace('/r34/', '/rule34/images/')
+				->replace('/thumbnail_', '/')
+				->to_s()
+			;
+			echo "<a href='$src'>$tags</a><br>\n";
+		}} while (!$p->next_line()->contain('<center>'));
+		$p->reset_line();
+		$p->go_line('id="paginator"');
+		if ($p->curr_line()->contain('alt="next"')) {
+			$m = $p->curr_line()->regex_match('/href="([^"]+)" alt="next"/');
+			$url = $base.html_entity_decode($m[1]);
+		} else {
+			$continue = false;
+		}
+	} while ($continue);
 }
 
 ?>
@@ -580,6 +613,7 @@ if ($_POST) {
 			'readhentaionline.com' => 'readhentaionline',
 			'yande.re' => 'yandere',
 			'hentaifromhell.net' => 'hentaifromhell',
+			'rule34.xxx' => 'rule34xxx',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {

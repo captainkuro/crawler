@@ -194,7 +194,68 @@ class Readhentaionline {
 		/**/
 	}
 	
+	// because html recently changed
 	public function extract_info($chapter_url) {
+		// slug
+		preg_match('/read-(.+)-hentai-manga-online/', $chapter_url, $m);
+		$ret = array(
+			'url' => $chapter_url,
+			'slug' => rawurldecode($m[1]),
+		);
+		$p1 = new Page($chapter_url);
+		$p = new Page();
+		$p->fetch_text(str_replace('</', "\n", $p1->content()));
+		// title
+		$p->go_line('id="leftcontent"');
+		$p->go_line('<h2>');
+		$m = $p->curr_line()->regex_match('/<h2>Read (.*) Hentai Manga Online/');
+		$ret['title'] = html_entity_decode($m[1], ENT_COMPAT, 'UTF-8');
+		// submit date
+		$p->go_line('class="date"');
+		$m = $p->next_line()->regex_match('/strong> (.*)$/');
+		$ret['submit_date'] = date('Y-m-d', strtotime($m[1]));
+		// description
+		$p->go_line('Manga Info :<');
+		$m = $p->curr_line()->regex_match('/Manga Info :(.*)$/');
+		if ($m) {
+			$part = $m[1];
+			while (strpos($part, 'p>') === false) {
+				$part .= $p->next_line()->to_s();
+			}
+			$ret['description'] = html_entity_decode(strip_tags($part), ENT_COMPAT, 'UTF-8');
+		} else {
+			$ret['description'] = '';
+			$p->reset_line();
+			$p->go_line('Author\'s Description');
+		}
+		// tags
+		$p->go_line('<!-- /post -->');
+		$p->next_line();
+		$ret['tags'] = array();
+		do { if ($p->curr_line()->contain('href')) {
+			$m = $p->curr_line()->regex_match('/">(.*)$/');
+			$ret['tags'][] = html_entity_decode($m[1], ENT_COMPAT, 'UTF-8');
+		}} while (!$p->next_line()->contain('<br/>'));
+		$p->go_line('id="gallery"');
+		// gallery url
+		$url = $this->base . $p->curr_line()->dup()
+			->cut_between('id="gallery"><h2><a href="', '"')
+		->to_s();
+		$ret['gallery_url'] = $url;
+		// # images
+		$m = $p->next_line(2)->regex_match('/Total No of Images in Gallery: (\d+)/');
+		$ret['pages'] = $m ? $m[1] : 0;
+		// thumbnails
+		$ret['thumbs'] = array();
+		do {
+			$ret['thumbs'][] = $p->curr_line()->dup()->cut_between('src="', '"')->to_s();
+		} while ($p->next_line()->contain('src="'));
+		// skip first image url, for faster crawling
+		$ret['first_image'] = null;
+		return $ret;
+	}
+	
+	public function extract_info_old($chapter_url) {
 		// slug
 		preg_match('/read-(.+)-hentai-manga-online/', $chapter_url, $m);
 		$ret = array(
@@ -239,9 +300,15 @@ class Readhentaionline {
 		}
 		// # images
 		$p->go_line('id="gallery"');
-		$url = $this->base . $p->next_line()->dup()
-			->cut_between('href="', '"')
-		->to_s();
+		if ($p->curr_line()->contain('Total No of Images in Gallery')) {
+			$url = $this->base . $p->curr_line()->dup()
+				->cut_between('id="gallery"><h2><a href="', '"')
+			->to_s();
+		} else {
+			$url = $this->base . $p->next_line()->dup()
+				->cut_between('href="', '"')
+			->to_s();
+		}
 		$m = $p->curr_line()->regex_match('/Total No of Images in Gallery: (\d+)/');
 		$ret['pages'] = $m ? $m[1] : 0;
 		// thumbnails
@@ -322,7 +389,7 @@ class Readhentaionline {
 				$info = $this->extract_info($l);
 				$this->add_book($info);
 			} catch (Exception $e) {
-				echo "Cancelled {$l}<br/>\n";
+				echo "Cancelled {$l}: <br/><pre>{$e}</pre>\n";
 			}
 		}
 	}
