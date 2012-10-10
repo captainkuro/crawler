@@ -401,8 +401,6 @@ class Fakku {
 				</div>
 			</div>
 			
-			
-		</form>
 	<?php
 		$q = Model::factory('Hmanga')
 			->limit($perpage)
@@ -445,15 +443,24 @@ class Fakku {
 				</a>
 
 				<dl class="dl-horizontal result">
-					<dt>Title</dt><dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>"><?php echo $hmanga->title; ?></a></dd>
+					<dt>Title</dt><dd><a href="?action=view&id=<?php echo $hmanga->id; ?>"><?php echo $hmanga->title; ?></a></dd>
 					<dt>Series</dt><dd><?php echo $hmanga->series; ?></dd>
 					<dt>Artist</dt><dd><?php echo $hmanga->artist; ?></dd>
 					<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
 					<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
 					<dt><a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a></dt>
+					<dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a></dd>
 				</dl>
 			</div>
 		<?php endforeach; ?>
+		
+		<div class="control-group" style="display:block;clear:both">
+			<div class="controls">
+				<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
+				<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+			</div>
+		</div>
+	</form>
 	<?php
 	}
 	
@@ -472,6 +479,7 @@ class Fakku {
 			<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
 			<dt>Description</dt><dd><?php echo $hmanga->desc; ?></dd>
 			<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
+			<dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a></dd>
 		</dl>
 		
 		<ul class="thumbnails">
