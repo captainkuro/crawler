@@ -505,6 +505,14 @@ class Readhentaionline {
 		}
 	}
 	
+	public function stage_respider_all() {
+		$all = Model::factory('Book')->find_many();
+		foreach ($all as $b) {
+			echo $b->id.' '.$b->url."<br>\n";
+			$info = $this->extract_info($b->url);
+			$this->add_or_edit_book($b->url, $info);
+		}
+	}
 }
 $a = new Readhentaionline();
 $a->run();

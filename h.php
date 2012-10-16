@@ -585,7 +585,7 @@ function pururin($url) {
 
 function neechan($url) {
 // http://neechan.net/Crystal+Break/1/
-	$title = basename(dirname($url));
+	$title = basename(dirname($url)).'-'.basename($url);
 	$p = new Page($url);
 	$p->go_line('onclick="return wpm_nxt_pag(this, event);"> <img src="');
 	$src = $p->curr_line()->dup()->cut_between('onclick="return wpm_nxt_pag(this, event);"> <img src="', '"')->to_s();
