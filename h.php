@@ -561,6 +561,43 @@ function rule34xxx($url) {
 	} while ($continue);
 }
 
+function pururin($url) {
+// http://pururin.com/hentai-manga/1673/pai-zuri.html
+// http://pururin.com/hentai-manga/1673/gallery/pai-zuri_1.html gallery 
+// http://pururin.com/hentai-manga/1673/gallery/pai-zuri_2.html gallery next page
+// http://pururin.com/hentai-manga/1673/view/pai-zuri_1.html view full image
+	$base = 'http://pururin.com';
+	$title = substr(basename($url), 0, -5);
+	if (strpos($url, '_1.html') === false) {
+		$url = dirname($url) . '/gallery/' . str_replace('.html', '_1.html', basename($url));
+	}
+	// @TODO collect more than 100 images
+	$p = new Page($url);
+	$p->go_line('class="thumbnail_list"');
+	do { if ($p->curr_line()->contain('class="pageNumber"')) {
+		$href = $p->curr_line()->dup()->cut_between('href="', '"')->to_s();
+		$p2 = new Page($base . $href);
+		$p2->go_line('id="i1"');
+		$src = $p2->curr_line()->dup()->cut_between('src="', '"')->to_s();
+		echo "<a href='$base$src'>$title</a><br>\n";
+	}} while (!$p->next_line()->contain('class="clear"'));
+}
+
+function neechan($url) {
+// http://neechan.net/Crystal+Break/1/
+	$title = basename(dirname($url));
+	$p = new Page($url);
+	$p->go_line('onclick="return wpm_nxt_pag(this, event);"> <img src="');
+	$src = $p->curr_line()->dup()->cut_between('onclick="return wpm_nxt_pag(this, event);"> <img src="', '"')->to_s();
+	$dir = dirname($src) . '/';
+	$p2 = new Page($dir);
+	$p2->go_line('href="');
+	while ($p2->next_line()->contain('href="')) {
+		$fname = $p2->curr_line()->dup()->cut_between('href="', '"')->to_s();
+		echo "<a href='$dir$fname'>$title</a><br>\n";
+	}
+}
+
 ?>
 <html>
 <body>
@@ -614,6 +651,8 @@ if ($_POST) {
 			'yande.re' => 'yandere',
 			'hentaifromhell.net' => 'hentaifromhell',
 			'rule34.xxx' => 'rule34xxx',
+			'pururin.com' => 'pururin',
+			'neechan.net' => 'neechan',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
