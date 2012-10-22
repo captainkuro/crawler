@@ -33,6 +33,7 @@ CREATE TABLE `book` (
   `thumbs` text NOT NULL,
   `first_image` varchar NULL
 );
+sekarang thumbs menyimpan id dari manga
 */
 // include 'class/rb.php';
 include 'class/idiorm.php';
@@ -67,6 +68,7 @@ class Book extends Model {
 	}
 	
 	public function thumbnails() {
+		/*
 		if (is_null($this->_thumbs)) {
 			if (is_array($this->thumbs)) {
 				$this->_thumbs = $this->thumbs;
@@ -75,6 +77,15 @@ class Book extends Model {
 			}
 		}
 		return $this->_thumbs;
+		*/
+		// http://hentaimangaonline.com/wp-content/themes/snapshot/thumb.php?src=images/80564/a.jpg&w=160&h=250&zc=1&q=90
+		$id = $this->thumbs;
+		$n = min(8, $this->pages);
+		$thumbs = array();
+		for ($i=1; $i<=$n; $i++) {
+			$thumbs[] = "http://hentaimangaonline.com/wp-content/themes/snapshot/thumb.php?src=images/$id/$i.jpg&w=160&h=250&zc=1&q=90";
+		}
+		return $thumbs;
 	}
 	
 	public function image_links() {
@@ -117,7 +128,7 @@ class Post_Data {
 }
 
 class Readhentaionline {
-	public $base = 'http://hentaimangaonline.com/';
+	public $base = 'http://hentaimangaonline.com';
 	public $db = null;
 	
 	public function create_database() {
@@ -203,8 +214,9 @@ class Readhentaionline {
 			'slug' => rawurldecode($m[1]),
 		);
 		$p1 = new Page($chapter_url);
-		$p = new Page();
-		$p->fetch_text(str_replace('</', "\n", $p1->content()));
+		// $p = new Page();
+		// $p->fetch_text(str_replace('</', "\n", $p1->content()));
+		$p = $p1;
 		// title
 		$p->go_line('id="leftcontent"');
 		$p->go_line('<h2>');
@@ -212,7 +224,7 @@ class Readhentaionline {
 		$ret['title'] = html_entity_decode($m[1], ENT_COMPAT, 'UTF-8');
 		// submit date
 		$p->go_line('class="date"');
-		$m = $p->next_line()->regex_match('/strong> (.*)$/');
+		$m = $p->curr_line()->regex_match('/strong> (.*)</');
 		$ret['submit_date'] = date('Y-m-d', strtotime($m[1]));
 		// description
 		$p->go_line('Manga Info :<');
@@ -230,94 +242,37 @@ class Readhentaionline {
 		}
 		// tags
 		$p->go_line('<!-- /post -->');
-		$p->next_line();
+		$p->next_line(2);
 		$ret['tags'] = array();
+		$raw = $p->curr_line()->dup()->cut_until('<br/>');
+		foreach ($raw->extract_to_array('">', '<') as $tag) {
+			$ret['tags'][] = html_entity_decode($tag, ENT_COMPAT, 'UTF-8');
+		}
+		/*
 		do { if ($p->curr_line()->contain('href')) {
 			$m = $p->curr_line()->regex_match('/">(.*)$/');
 			$ret['tags'][] = html_entity_decode($m[1], ENT_COMPAT, 'UTF-8');
 		}} while (!$p->next_line()->contain('<br/>'));
+		*/
 		$p->go_line('id="gallery"');
 		// gallery url
-		$url = $this->base . $p->curr_line()->dup()
-			->cut_between('id="gallery"><h2><a href="', '"')
+		$url = $this->base . $p->next_line()->dup()
+			->cut_between('<h2><a href="', '"')
 		->to_s();
 		$ret['gallery_url'] = $url;
 		// # images
-		$m = $p->next_line(2)->regex_match('/Total No of Images in Gallery: (\d+)/');
-		$ret['pages'] = $m ? $m[1] : 0;
-		// thumbnails
-		$ret['thumbs'] = array();
-		do {
-			$ret['thumbs'][] = $p->curr_line()->dup()->cut_between('src="', '"')->to_s();
-		} while ($p->next_line()->contain('src="'));
-		// skip first image url, for faster crawling
-		$ret['first_image'] = null;
-		return $ret;
-	}
-	
-	public function extract_info_old($chapter_url) {
-		// slug
-		preg_match('/read-(.+)-hentai-manga-online/', $chapter_url, $m);
-		$ret = array(
-			'url' => $chapter_url,
-			'slug' => rawurldecode($m[1]),
-		);
-		$p = new Page($chapter_url);
-		// title
-		$p->go_line('id="leftcontent"');
-		$p->go_line('<h2>');
-		$m = $p->curr_line()->regex_match('/<h2>Read (.*) Hentai Manga Online<\/h2>/');
-		$ret['title'] = html_entity_decode($m[1], ENT_COMPAT, 'UTF-8');
-		// submit date
-		$p->go_line('class="date"');
-		$m = $p->curr_line()->regex_match('/<\/strong> (.*)<\/p>/');
-		$ret['submit_date'] = date('Y-m-d', strtotime($m[1]));
-		// description
-		$p->go_line('Manga Info :<');
-		$m = $p->curr_line()->regex_match('/Manga Info :(.*)$/');
-		if ($m) {
-			$part = $m[1];
-			while (strpos($part, '</p>') === false) {
-				$part .= $p->next_line()->to_s();
-			}
-			$ret['description'] = html_entity_decode(strip_tags($part), ENT_COMPAT, 'UTF-8');
-		} else {
-			$ret['description'] = '';
-			$p->reset_line();
-			$p->go_line('Author\'s Description');
-		}
-		// tags
-		$p->go_line('<!-- /post -->');
-		$p->next_line(2);
-		$ll = $p->curr_line()->dup();
-		$ll->regex_replace('/<h3>Related Manga<\/h3>.*$/', '');
-		$ll->regex_replace('/<h3>Other Chapters.*$/', '');
-		$tags = $ll->extract_to_array('">', '</');
-		if ($tags && count($tags) > 0) {
-			$ret['tags'] = array_map('html_entity_decode', $tags, array_fill(0, count($tags), ENT_COMPAT), array_fill(0, count($tags), 'UTF-8'));
-		} else {
-			$ret['tags'] = array();
-		}
-		// # images
-		$p->go_line('id="gallery"');
-		if ($p->curr_line()->contain('Total No of Images in Gallery')) {
-			$url = $this->base . $p->curr_line()->dup()
-				->cut_between('id="gallery"><h2><a href="', '"')
-			->to_s();
-		} else {
-			$url = $this->base . $p->next_line()->dup()
-				->cut_between('href="', '"')
-			->to_s();
-		}
 		$m = $p->curr_line()->regex_match('/Total No of Images in Gallery: (\d+)/');
 		$ret['pages'] = $m ? $m[1] : 0;
 		// thumbnails
-		$ret['thumbs'] = $p->curr_line()->extract_to_array('src="', '"');
-		// gallery url
-		$image_url = $this->base . $p->curr_line()->dup()
-			->cut_between('href="', '"')
-		->to_s();
-		$ret['gallery_url'] = $image_url;
+		// $ret['thumbs'] = $p->curr_line()->extract_to_array('src="', '"');
+		// do {
+			// $ret['thumbs'][] = $p->curr_line()->dup()->cut_between('src="', '"')->to_s();
+		// } while ($p->next_line()->contain('src="'));
+		// KINI thumbs MENYIMPAN ID
+		$p->reset_line();
+		$p->go_line("rel='shortlink'");
+		$ret['thumbs'] = $p->curr_line()->dup()->cut_between('?p=', "'")->to_s();
+		
 		// skip first image url, for faster crawling
 		$ret['first_image'] = null;
 		return $ret;
@@ -361,6 +316,7 @@ class Readhentaionline {
 		$book = Model::factory('Book')->create();
 		$book->hydrate($info);
 		$book->save();
+		return $book;
 	}
 	
 	public function add_or_edit_book($url, $info) {
@@ -370,6 +326,7 @@ class Readhentaionline {
 		}
 		$book->set_from_array($info);
 		$book->save();
+		return $book;
 	}
 	
 	public function url_already_exist($url) {
@@ -420,6 +377,10 @@ class Readhentaionline {
 			$books = $q->find_many();
 			
 			foreach ($books as $b) {
+				if (!$b->thumbs) {
+					$info = $this->extract_info($b->url);
+					$b = $this->add_or_edit_book($b->url, $info);
+				}
 			?>
 				<p>
 					<?php echo "{$b->title} | {$b->pages} pages | {$b->submit_date}"; ?> | 
@@ -432,7 +393,7 @@ class Readhentaionline {
 						echo "<td>$t</td>";
 					$i++; } ?></tr></table>
 					<?php foreach ($b->thumbnails() as $t) {
-						echo "<img src='{$t}' alt='{$b->slug}' />";
+						echo "<img src='{$t}' alt='{$b->slug}' width=160 height=250 />";
 					} ?>
 				</p>
 			<?php
@@ -505,12 +466,15 @@ class Readhentaionline {
 		}
 	}
 	
+	// all rho cache gone, so we need to retrieve the new thumbnails
 	public function stage_respider_all() {
-		$all = Model::factory('Book')->find_many();
+		// error: 6562, 7640, 12673
+		$all = Model::factory('Book')->where_gt('id', 7640)->find_many();
 		foreach ($all as $b) {
 			echo $b->id.' '.$b->url."<br>\n";
 			$info = $this->extract_info($b->url);
-			$this->add_or_edit_book($b->url, $info);
+			$b->set_from_array($info);
+			$b->save();
 		}
 	}
 }
