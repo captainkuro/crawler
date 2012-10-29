@@ -54,7 +54,8 @@ class Foolslide extends Manga_Crawler {
 	}
 	
 	public function url_is_single_chapter($url) {
-		return strpos($url, '/page/1') !== false;
+		// return strpos($url, '/page/1') !== false;
+		return (int)basename($url) > 0;
 	}
 }
 $f = new Foolslide();
