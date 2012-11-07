@@ -39,12 +39,11 @@ class Text {
 	}
 	
 	public function dup() { // duplicate
-		return new Text($this->s);
+		return new self($this->s);
 	}
 	
 	public function trim() {
-		$this->s = trim($this->s);
-		return $this;
+		return new self(trim($this->s));
 	}
 	
 	public function length() {
@@ -74,10 +73,8 @@ class Text {
 	public function exist($str) {
 		return $this->pos($str) !== false;
 	}
-	
-	public function contain($str) {
-		return $this->pos($str) !== false;
-	}
+	public function contain($str) {return $this->exist($str);}
+	public function contains($str) {return $this->exist($str);}
 	
 	/**
 	 * Get a portion of string
@@ -92,11 +89,10 @@ class Text {
 	 */
 	public function substring($start, $length = null) {
 		if ($length !== null) {
-			$this->s = substr($this->s, $start, $length);
+			return new self(substr($this->s, $start, $length));
 		} else {
-			$this->s = substr($this->s, $start);
+			return new self(substr($this->s, $start));
 		}
-		return $this;
 	}
 	
 	public function cut_before($str) {
@@ -140,9 +136,7 @@ class Text {
 	}
 	
 	public function cut_between($from, $to) {
-		$this->cut_after($from);
-		$this->cut_before($to);
-		return $this;
+		return $this->cut_after($from)->cut_before($to);
 	}
 	
 	/**
@@ -152,24 +146,21 @@ class Text {
 		if ($ischapter && ($this->pos('.') !== false)) {
 			$temp = $this->dup()->cut_before('.');
 			$temp->pad($length, $with, $pad_type, $ischapter);
-			$this->s = $temp->to_s() . $this->dup()->cut_from('.');
+			return new self($temp->to_s() . $this->cut_from('.'));
 		} else {
-			$this->s = str_pad($this->s, $length, $with, $pad_type);
+			return new self(str_pad($this->s, $length, $with, $pad_type));
 		}
-		return $this;
 	}
 	
 	/**
 	 * Repeat this string $multi times
 	 */
 	public function repeat($multi) {
-		$this->s = str_repeat($this->s, $multi);
-		return $this;
+		return new self(str_repeat($this->s, $multi));
 	}
 	
 	public function replace($search, $replace) {
-		$this->s = str_replace($search, $replace, $this->s);
-		return $this;
+		return new self(str_replace($search, $replace, $this->s));
 	}
 	
 	/**
@@ -189,8 +180,7 @@ class Text {
 	}
 	
 	public function regex_replace($pattern, $replace) {
-		$this->s = preg_replace($pattern, $replace, $this->s);
-		return $this;
+		return new self(preg_replace($pattern, $replace, $this->s));
 	}
 	
 	/**
@@ -200,14 +190,12 @@ class Text {
 	public function url_encode() {
 		$r = explode('/', $this->s);
 		$r = array_map('rawurlencode', $r);
-		$this->s = implode('/', $r);
-		return $this;
+		return new self(implode('/', $r));
 	}
 
 	// change 'asdf_1.jpg' to 'asdf_01.jpg'
 	public function fix_filename() {
-		$this->s = preg_replace('/(\\D)(\\d){1}\\./', '${1}0${2}.', $this->s);
-		return $this;
+		return new self(preg_replace('/(\\D)(\\d){1}\\./', '${1}0${2}.', $this->s));
 	}
 	
 	// convert text to array containing all text between $from and $to
@@ -224,9 +212,9 @@ class Text {
 	// fungsi2 string bawaan, parameter pertama adalah string ini
 	public function __call($name, $args) {
 		if (function_exists($name)) {
-			$this->s = call_user_func_array($name, array_merge(array($this->s), $args));
-		}
-		return $this;
+			return new self(call_user_func_array($name, array_merge(array($this->s), $args)));
+		} // else
+		return $this->dup();
 	}
 	
 	// ======================= STATIC FUNCTIONS ================================
