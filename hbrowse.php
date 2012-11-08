@@ -345,6 +345,16 @@ switch ($stage) {
 		}
 		break;
 	case 'search': // Database sudah ada, search isinya
+		$perpage = isset($_REQUEST['perpage']) ? $_REQUEST['perpage'] : 20;
+		$curpage = isset($_REQUEST['curpage']) ? $_REQUEST['curpage'] : 1;
+		$order = isset($_REQUEST['order']) ? $_REQUEST['order'] : 'added desc';
+		if (isset($_REQUEST['next'])) {
+			$curpage++;
+		} else if (isset($_REQUEST['prev'])) {
+			$curpage--;
+		}
+		if ($curpage < 1) $curpage = 1;
+		
 		if ($_POST) {
 			// Build condition query
 			$where = '1';
@@ -377,9 +387,9 @@ switch ($stage) {
 					}
 				}
 			}
-			$order = $_REQUEST['order'] ? $_REQUEST['order'] : false;
+			
 			if ($order) $where .= ' ORDER BY ' . $order;
-			if ($_POST['limit']) $where .= ' LIMIT ' . $_POST['limit'];
+			$where .= ' LIMIT '. (($curpage-1)*$perpage) .','. $perpage;
 			$query = "SELECT * FROM book WHERE " . $where;
 			
 			$result = G::$db->execute($query)->fetchAll();
@@ -429,6 +439,12 @@ switch ($stage) {
 					</div>
 				</div>
 			
+				<div class="span6">
+					<label class="control-label">Order</label>
+					<div class="controls">
+						<input name="order" type="text" value="<?php echo $order; ?>" />
+					</div>
+				</div>
 			</div>
 			<div class="control-group">
 				<div class="span6">
@@ -447,16 +463,16 @@ switch ($stage) {
 			</div>
 			<div class="control-group">
 				<div class="span6">
-					<label class="control-label">Limit</label>
+					<label class="control-label">Per page</label>
 					<div class="controls">
-						<input name="limit" type="text" value="<?php echo @$_REQUEST['limit']; ?>" />
+						<input name="perpage" type="text" value="<?php echo $perpage; ?>" />
 					</div>
 				</div>
 
 				<div class="span6">
-					<label class="control-label">Order</label>
+					<label class="control-label">Current page</label>
 					<div class="controls">
-						<input name="order" type="text" value="<?php echo @$_REQUEST['order'] ?>" />
+						<input name="curpage" type="text" value="<?php echo $curpage; ?>" />
 					</div>
 				</div>
 			</div>
@@ -464,17 +480,31 @@ switch ($stage) {
 				<div class="span6">
 					<label class="control-label">Exact Artist</label>
 					<div class="controls">
-						<select name="exact_artist"><option value="">-</option><option><?php echo implode('</option><option>', $artists) ?></option></select>
+						<select name="exact_artist"><option value="">-</option>
+							<?php foreach ($artists as $a) : ?>
+								<option <?php if (@$_REQUEST['exact_artist'] == $a) echo 'selected'; ?>><?php echo $a; ?></option>
+							<?php endforeach; ?>
+						</select>
 					</div>
 				</div>
 
 				<div class="span6">
 					<label class="control-label">Exact Origin</label>
 					<div class="controls">
-						<select name="exact_origin"><option value="">-</option><option><?php echo implode('</option><option>', $origins) ?></option></select>
+						<select name="exact_origin"><option value="">-</option>
+							<?php foreach ($origins as $a) : ?>
+								<option <?php if (@$_REQUEST['exact_origin'] == $a) echo 'selected'; ?>><?php echo $a; ?></option>
+							<?php endforeach; ?>
+						</select>
 					</div>
 				</div>
-			
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<button type="submit" class="btn" name="search">Search</button>
+					<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+				</div>
 			</div>
 
 			<table border="2">
