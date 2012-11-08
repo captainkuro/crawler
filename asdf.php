@@ -187,25 +187,25 @@ class Ippo {
 		return $result;
 	}
 }
-/**
+/* *
 $i = new Ippo();
 $list = $i->cache_volume_list();
 $i->move_pages_to_volumes($list);
 /**/
 
-/**/
+/* */
 require_once 'class/manga_crawler.php';
 // katekyo hitman reborn
 $list = array(
-	1=>array(1,7), 2=>array(8,16), 3=>array(17,25), 4=>array(26,33), 5=>array(34,42), 
+	1=>'1,7', '8,16', '17,25', /*4=>array(26,33), 5=>array(34,42), 
 	6=>array(43,51), 7=>array(52,60), 8=>array(61,70), 9=>array(71,79), 10=>array(80,89),
 	11=>array(90,98), 12=>array(99,107), 13=>array(108,116), 14=>array(117,125), 15=>array(126,134),
 	16=>array(135,143), 17=>array(144,153), 18=>array(154,164), 19=>array(165,174), 20=>array(175,185),
 	21=>array(186,195), 22=>array(196,205), 23=>array(206,215), 24=>array(216,226), 25=>array(227,237),
 	26=>array(238,247), 27=>array(248,258), 28=>array(259,268), 29=>array(269,278), 30=>array(279,288),
 	31=>array(289,299), 32=>array(300,310), 33=>array(311,320), 34=>array(321,330), 35=>array(331,341),
-	36=>array(342,351), 37=>array(352,361), 38=>array(362,999),
+	36=>array(342,351), 37=>array(352,361), 38=>array(362,999),*/
 );
-// Manga_Crawler::move_pages_to_volumes('D:\temp\bacaan\Katekyo Hitman Reborn\\', $list, 26);
+Manga_Crawler::move_pages_to_volumes('D:\temp\manga\\', $list, 1);
 // echo (Manga_Crawler::create_batch_zip('D:\temp\bacaan\Deadman Wonderland\\'));
 /**/
