@@ -358,7 +358,11 @@ abstract class Manga_Crawler {
 	// open folder of pages, parse filename, move to corresponding volumes
 	public static function move_pages_to_volumes($path, $list, $cur_vol = 1) {
 		// $path = 'D:\temp\Katekyo Hitman Reborn\\';//contoh
+		// $list = array(1=>'1,10', '11,20', '21,30', '31,40', 5=>'41-50'); // contoh
 		$cur_pages = array();
+		if (is_string($list[$cur_vol])) {
+			$list[$cur_vol] = explode(',', $list[$cur_vol]);
+		}
 		foreach (scandir($path) as $fname) {
 			if (preg_match('/-(\d{3})-/', $fname, $m)) {
 				$chap = (int)$m[1];
@@ -372,6 +376,10 @@ abstract class Manga_Crawler {
 						rename($path.$p, $path.$vname.'/'.$p);
 					}
 					$cur_vol++;
+					if (!isset($list[$cur_vol])) exit; // out of range
+					if (is_string($list[$cur_vol])) {
+						$list[$cur_vol] = explode(',', $list[$cur_vol]);
+					}
 					$cur_pages = array($fname);
 				}
 			}

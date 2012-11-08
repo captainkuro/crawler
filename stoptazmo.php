@@ -1,161 +1,56 @@
 <?php
-require 'crawler.php';
-extract($_POST);
+// http://stoptazmo.com/manga-series/katekyou_hitman_reborn/
+// http://stoptazmo.com/manga-reader/manga-series/katekyou_hitman_reborn/katekyou_hitman_reborn_346/page/1
+// var pages = [{"id":0,"add_resize":"1","chapter_id":"175","filename":"01.jpg","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"975","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"975","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/resize_img.php?url=http://read.stoptazmo.com/2c5f5751fdeea7e4648416032ae11012/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/01.jpg&width=975","thumb_url":"http://read.stoptazmo.com/resize_img.php?url=http://read.stoptazmo.com/2c5f5751fdeea7e4648416032ae11012/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/01.jpg&width=975"},{"id":1,"add_resize":"0","chapter_id":"175","filename":"02.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"821","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"821","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/5e55e530c150660673106f92589d0195/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/02.png","thumb_url":"http://read.stoptazmo.com/5e55e530c150660673106f92589d0195/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/02.png"},{"id":2,"add_resize":"0","chapter_id":"175","filename":"03.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"827","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"827","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/6520bc94c53143b7f196af8feceecc5d/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/03.png","thumb_url":"http://read.stoptazmo.com/6520bc94c53143b7f196af8feceecc5d/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/03.png"},{"id":3,"add_resize":"0","chapter_id":"175","filename":"04.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"827","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"827","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/fb192cb71e9c9701adebcaf8aed9abf6/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/04.png","thumb_url":"http://read.stoptazmo.com/fb192cb71e9c9701adebcaf8aed9abf6/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/04.png"},{"id":4,"add_resize":"0","chapter_id":"175","filename":"05.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"823","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"823","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/b6293de263b369008c9ba873370830f4/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/05.png","thumb_url":"http://read.stoptazmo.com/b6293de263b369008c9ba873370830f4/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/05.png"},{"id":5,"add_resize":"0","chapter_id":"175","filename":"06.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"826","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"826","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/d54b5699e19669902c095be00e069c1c/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/06.png","thumb_url":"http://read.stoptazmo.com/d54b5699e19669902c095be00e069c1c/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/06.png"},{"id":6,"add_resize":"0","chapter_id":"175","filename":"07.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"820","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"820","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/d3b82ca43c4d440689af24a50aa0f6b2/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/07.png","thumb_url":"http://read.stoptazmo.com/d3b82ca43c4d440689af24a50aa0f6b2/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/07.png"},{"id":7,"add_resize":"0","chapter_id":"175","filename":"08.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"825","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"825","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/f0efe292096483bddd30cb4026cf7e9e/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/08.png","thumb_url":"http://read.stoptazmo.com/f0efe292096483bddd30cb4026cf7e9e/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/08.png"},{"id":8,"add_resize":"0","chapter_id":"175","filename":"09.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"813","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"813","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/6e25518c3ad5d7fcd128b28995dcc540/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/09.png","thumb_url":"http://read.stoptazmo.com/6e25518c3ad5d7fcd128b28995dcc540/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/09.png"},{"id":9,"add_resize":"0","chapter_id":"175","filename":"10.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"817","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"817","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/33c7ec9757eb4eadfad52491884d4303/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/10.png","thumb_url":"http://read.stoptazmo.com/33c7ec9757eb4eadfad52491884d4303/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/10.png"},{"id":10,"add_resize":"0","chapter_id":"175","filename":"11.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"815","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"815","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/3c659dd21b105f9c18146c7e46ab5ded/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/11.png","thumb_url":"http://read.stoptazmo.com/3c659dd21b105f9c18146c7e46ab5ded/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/11.png"},{"id":11,"add_resize":"0","chapter_id":"175","filename":"12.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"810","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"810","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/97d9c268bbb3ad6ea57b3ff315f02731/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/12.png","thumb_url":"http://read.stoptazmo.com/97d9c268bbb3ad6ea57b3ff315f02731/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/12.png"},{"id":12,"add_resize":"0","chapter_id":"175","filename":"13.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"807","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"807","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/ee5849890b3b6fc3f78620a7b15a99d8/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/13.png","thumb_url":"http://read.stoptazmo.com/ee5849890b3b6fc3f78620a7b15a99d8/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/13.png"},{"id":13,"add_resize":"0","chapter_id":"175","filename":"14.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"823","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"823","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/b89bf815c1cab267fc3a012f5d1a9c13/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/14.png","thumb_url":"http://read.stoptazmo.com/b89bf815c1cab267fc3a012f5d1a9c13/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/14.png"},{"id":14,"add_resize":"1","chapter_id":"175","filename":"15-16.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"975","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"975","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/resize_img.php?url=http://read.stoptazmo.com/840d74578228629da47481585857b690/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/15-16.png&width=975","thumb_url":"http://read.stoptazmo.com/resize_img.php?url=http://read.stoptazmo.com/840d74578228629da47481585857b690/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/15-16.png&width=975"},{"id":15,"add_resize":"1","chapter_id":"175","filename":"17-18.png","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1200","width":"975","mime":"image\/png","grayscale":"0","thumbheight":"1200","thumbwidth":"975","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/resize_img.php?url=http://read.stoptazmo.com/11ee6fd9772a2410c0ea1888a08a9642/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/17-18.png&width=975","thumb_url":"http://read.stoptazmo.com/resize_img.php?url=http://read.stoptazmo.com/11ee6fd9772a2410c0ea1888a08a9642/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/17-18.png&width=975"},{"id":16,"add_resize":"0","chapter_id":"175","filename":"credits.jpg","hidden":"0","description":"im","thumbnail":"thumb_","created":"2012-07-19 04:28:04","lastseen":"0000-00-00 00:00:00","updated":"0000-00-00 00:00:00","creator":"6","editor":"6","height":"1000","width":"742","mime":"image\/png","grayscale":"0","thumbheight":"1000","thumbwidth":"742","size":"232509","thumbsize":"26279","url":"http://read.stoptazmo.com/b79e0bd5b0ab4c6e553b5064c12bfbaf/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/credits.jpg","thumb_url":"http://read.stoptazmo.com/b79e0bd5b0ab4c6e553b5064c12bfbaf/509b8caf//katekyou_hitman_reborn/katekyou_hitman_reborn_240/credits.jpg"}];
 
-function crawl_1_chapter($url, $chapter) {
-	global $sitename;
-	global $prefix;
-	$_series = Crawler::extract($url, 'series=', '&');
-	$_chapter = Crawler::cutafter($url, 'chapter=');
-	//echo $_series.'|'.$_chapter."<br/>\n";flush();return;
-	$c = new Crawler($url);
-	$c->go_to("name='pagesel1'");
-	$pages = array();
-	while ($line = $c->readline()) {
-		if (Crawler::is_there($line, '<option')) {
-			$pages[Crawler::extract($line, "value='", "'")] = trim(Crawler::cutafterlast($line, '>'));
-		} else if (Crawler::is_there($line, '</select>')) {
-			break;
+class Stoptazmo extends Manga_Crawler {
+	protected $enable_single_chapter = true;
+	protected $column_span = 3;
+
+	// need to be overridden, return array[desc,url,infix]
+	// $base is URL submitted
+	public function extract_info($base) {
+		$p = new Page($base);
+		$p->go_line('<!-- START FILE LOOP -->');
+		$list = array();
+		do {
+			if ($p->curr_line()->contain('href=')) {
+				$url = $p->curr_line()->cut_between("</td><td><a href='", "'");
+				$desc = $url->dirname()->dirname()->basename();
+				$ifx = $desc->substr(-3);
+				$list[] = array(
+					'url' => $url->to_s(),
+					'desc' => $desc->to_s(),
+					'infix' => $ifx->to_s(),
+				);
+			}
+		} while (!$p->next_line()->contain('<!-- END DOWNLOADS -->'));
+		return $list;
+	}
+
+	// must be overridden, echo html of links
+	// $v contain [url,desc,infix]
+	public function crawl_chapter($v) {
+		$ifx = Text::create($v['infix'])->pad(3)->to_s();
+		$p = new Page($v['url']);
+		$p->go_line('var pages');
+		$json = $p->curr_line()->cut_between(' = ', ';');
+		$list = json_decode($json);
+		foreach ($list as $page) {
+			$purl = new Text($page->url);
+			$name = new Text($page->filename);
+			if ($name->strlen() < 15) {
+				$name = $this->prefix .'-'. $ifx . '-' . $name;
+			}
+			if ($purl->contain('resize_img.php')) {
+				$purl = $purl->cut_between('resize_img.php?url=', '&width');
+			}
+			echo "<a href='$purl'>{$name}</a><br/>\n";
 		}
 	}
-	$c->close();
-	foreach ($pages as $key => $val) {
-		// WARNING: need high reliable connection
-		$post_data = 'manga_hid='.$_series.
-			'&chapter_hid='.$_chapter.
-			'&image_hid='.$key.
-			'&series='.$_series.
-			'&chapter='.$_chapter.
-			'&pagesel1=0';
-		//echo "<br/>POST:$post_data<br/>\n";
-		$c = new Crawler('http://stoptazmo.com/downloads/manga_viewer.php', 
-			array(/*
-				'Referer' => "http://stoptazmo.com/downloads/manga_viewer.php?series=$_series&chapter=$_chapter",
-				'Cookie' => 'bblastvisit=1281047101; bblastactivity=0; bbsessionhash=8e05ef2bcf531b0c45f0ce12b498717e',
-			*/), 
-			$post_data);
-		$c->go_to("style='border: none;margin-left:-6px;'");
-		$imgurl = Crawler::extract($c->curline, "<img src='", "'");
-		$c->close();
-		$filename = basename($imgurl);
-		echo '<a href="'.$imgurl.'">'.$prefix.'-'.Crawler::pad($chapter, 3).'-'.$filename.'</a><br/>'."\n";flush();
-	}
-	//print_r($pages);flush();
-}
-?>
-<html>
-<body>
-<script type="text/javascript">
-var global_check = false;
-function click_this() {
-    global_check = !global_check;
-    var tags = document.getElementsByTagName("input");
-    for (i in tags) {
-        if (tags[i].type == "checkbox") {
-            tags[i].checked = global_check;
-        }
-    }
-}
-</script>
-<fieldset>
-    <legend>Stage 1</legend>
-    <form method="POST" action="">
-        URL FOLDER: <input type="text" name="base" value="<?=$base;?>"/> kalo url chapter berarti shortcut<br />
-        Prefix: <input type="text" name="prefix" value="<?=$prefix;?>"/><br />
-		Infix: <input type="text" name="infiks" value="<?=$infiks?>" /> for shortcut<br/>
-        <input type="submit" name="stage1"/>
-    </form>
-</fieldset>
-<?php
-//http://stoptazmo.com/manga-series/one_piece/
-//http://stoptazmo.com/downloads/manga_viewer.php?series=one_piece&chapter=one_piece_360.zip
-$sitename = 'http://stoptazmo.com';
 
-if (Crawler::is_there($base, '/manga_viewer.php')) {	// shortcut, hanya 1 chapter
-	crawl_1_chapter($base, $infiks);
-	exit;
-}
-?>
-<br/><br/><br/>
-<fieldset>
-    <legend>Stage 2</legend>
-    <form method="POST" action="">
-        URL FOLDER: <input type="text" name="base" value="<?=$base;?>"><br />
-        Prefix: <input type="text" name="prefix" value="<?=$prefix;?>"><br />
-        <div>Choose volume/chapter to be downloaded:</div>
-        <input type="checkbox" name="all" value="all" onclick="click_this()"/>All<br/>
-		<table>
-			<tr>
-				<th>Chapter Name</th>
-				<th>Infix</th>
-			</tr>
-<?php flush();
-if ($stage1) {
-	echo '<tr><td colspan="2">Progress.. ';
-	$c = new Crawler($base);
-	$c->go_to('<!-- START DOWNLOADS -->');
-	$chapters = array();
-	$descriptions = array();
-	$infix = array();
-	while ($line = $c->readline()) {
-		if (Crawler::is_there($line, 'READ ONLINE')) {
-			$chapters[] = Crawler::extractlast($line, "href='", "'");
-			$desc = Crawler::extract($line, '<td>', '</td>');
-			$descriptions[] = $desc;
-			$ifx = Crawler::extractlast($desc, '_', '.');
-			$infix[] = $ifx;
-			echo $ifx.'.. '; flush();
-		} else if (Crawler::is_there($line, '</table>')) {
-			break;
-		}
+	public function url_is_single_chapter($url) {
+		return strpos($url, '/manga-reader/') !== false;
 	}
-	$c->close();
-	echo 'End</td></tr>';flush();
-
-	$chapters = array_reverse($chapters);
-	$descriptions = array_reverse($descriptions);
-	$infix = array_reverse($infix);
-	$i = 1;
-    foreach ($chapters as $key => $val) {
-	?><tr>
-        <td>
-			<input type="checkbox" name="chapters[<?=$i?>]" value="<?=$chapters[$key]?>" />
-			<?=$descriptions[$key]?>
-			<input type="hidden" name="descriptions[<?=$i?>]" value="<?=$descriptions[$key]?>" />
-		</td>
-		<td><input type="text" name="infix[<?=$i?>]" value="<?=$infix[$key]?>"/></td>
-	</tr><? flush(); $i++;
-    }
-} else if ($stage2) {
-    foreach ($chapters as $key => $val) {
-        ?><tr>
-			<td>
-				<input type="checkbox" name="chapters[<?=$key?>]" value="<?=$chapters[$key]?>" checked="checked"/>
-				<?=$descriptions[$key]?>
-				<input type="hidden" name="descriptions[<?=$key?>]" value="<?=$descriptions[$key]?>" />
-			</td>
-			<td><input type="text" name="infix[<?=$key?>]" value="<?=$infix[$key]?>"/></td>
-		</tr><? flush();
-    }
 }
-flush();
-?>
-		</table>
-        <input type="submit" name="stage2"/>
-    </form>
-</fieldset>
-<br/><br/><br/>
-<fieldset>
-    <legend>Stage 3</legend>
-    <div>Right-click and DownThemAll! with *text*\*name*.*ext* option</div>
-    <?php flush();
-    if ($stage2) {
-		$chapters = array_reverse($chapters, true);
-		//$descriptions = array_reverse($descriptions);
-		$infix = array_reverse($infix, true);
-        foreach ($chapters as $key => $val) {
-			$url = $val;
-			crawl_1_chapter($url, $infix[$key]);
-        }
-    }?>
-</fieldset>
+Stoptazmo::factory()->run();

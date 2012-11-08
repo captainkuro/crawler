@@ -212,7 +212,9 @@ class Text {
 	// fungsi2 string bawaan, parameter pertama adalah string ini
 	public function __call($name, $args) {
 		if (function_exists($name)) {
-			return new self(call_user_func_array($name, array_merge(array($this->s), $args)));
+			$ret = call_user_func_array($name, array_merge(array($this->s), $args));
+			if (is_string($ret)) return new self($ret);
+			return $ret;
 		} // else
 		return $this->dup();
 	}
