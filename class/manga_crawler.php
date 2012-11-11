@@ -221,7 +221,7 @@ abstract class Manga_Crawler {
 		echo
 		X::tr(array('onclick'=>'check_this_row(this)'),
 			X::td(
-				X::input(array('type'=>'checkbox','name'=>"info[$i][check]",'value'=>$i, 'id'=>'check-'.$v['infix'], 'onclick'=>'event.stopPropagation()'))
+				X::input(array('type'=>'checkbox','name'=>"info[$i][check]",'value'=>$i, 'id'=>'check-'.(int)$v['infix'], 'onclick'=>'event.stopPropagation()'))
 			),
 			X::td(
 				$v['desc'],
