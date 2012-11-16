@@ -571,16 +571,25 @@ function pururin($url) {
 	if (strpos($url, '_1.html') === false) {
 		$url = dirname($url) . '/gallery/' . str_replace('.html', '_1.html', basename($url));
 	}
-	// @TODO collect more than 100 images
-	$p = new Page($url);
-	$p->go_line('class="thumbnail_list"');
-	do { if ($p->curr_line()->contain('class="pageNumber"')) {
-		$href = $p->curr_line()->dup()->cut_between('href="', '"')->to_s();
-		$p2 = new Page($base . $href);
-		$p2->go_line('id="i1"');
-		$src = $p2->curr_line()->dup()->cut_between('src="', '"')->to_s();
-		echo "<a href='$base$src'>$title</a><br>\n";
-	}} while (!$p->next_line()->contain('class="clear"'));
+	// collect more than 100 images
+	$next = true;
+	$i = 1;
+	while ($next) {
+		$p = new Page($url);
+		$p->go_line('class="thumbnail_list"');
+		do { if ($p->curr_line()->contain('class="pageNumber"')) {
+			$href = $p->curr_line()->dup()->cut_between('href="', '"')->to_s();
+			$p2 = new Page($base . $href);
+			$p2->go_line('id="i1"');
+			$src = $p2->curr_line()->dup()->cut_between('src="', '"')->to_s();
+			echo "<a href='$base$src'>$title</a><br>\n";
+		}} while (!$p->next_line()->contain('class="clear"'));
+		if (strpos($p->content(), '">&rsaquo;</a>') === false) {
+			$next = false;
+		}
+		$url = str_replace('_'.$i.'.html', '_'.($i+1).'.html', $url);
+		$i++;
+	}
 }
 
 function neechan($url) {

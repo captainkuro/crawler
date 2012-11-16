@@ -105,6 +105,9 @@ class Book extends Model {
 			$this->save();
 		}
 		$img_dir = dirname($this->first_image);
+		if (strpos($img_dir, 'http://') === false) {
+			$img_dir = Readhentaionline::$DOMAIN . $img_dir;
+		}
 		for ($i=1; $i<=$this->pages; $i++) {
 			echo "<a href='$img_dir/$i.jpg'>{$this->slug}</a><br/>\n";
 		}
@@ -128,6 +131,7 @@ class Post_Data {
 }
 
 class Readhentaionline {
+	public static $DOMAIN = 'http://hentaimangaonline.com';
 	public $base = 'http://hentaimangaonline.com';
 	public $db = null;
 	

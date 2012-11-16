@@ -210,6 +210,14 @@ function page_all_thumbnail($link) {
 //print_r(get_ref());
 $stage = 'search';
 if ($_REQUEST && @$_REQUEST['stage']) $stage = $_REQUEST['stage'];
+$title = 'Hbrowse scraper';
+include '_header.php';
+?>
+<ul class="nav nav-tabs">
+	<li><a href="?stage=search">Search</a></li>
+	<li><a href="?stage=update">Update</a></li>
+</ul>
+<?php
 
 switch ($stage) {
 	case 'build': // Building reference
@@ -337,6 +345,16 @@ switch ($stage) {
 		}
 		break;
 	case 'search': // Database sudah ada, search isinya
+		$perpage = isset($_REQUEST['perpage']) ? $_REQUEST['perpage'] : 20;
+		$curpage = isset($_REQUEST['curpage']) ? $_REQUEST['curpage'] : 1;
+		$order = isset($_REQUEST['order']) ? $_REQUEST['order'] : 'added desc';
+		if (isset($_REQUEST['next'])) {
+			$curpage++;
+		} else if (isset($_REQUEST['prev'])) {
+			$curpage--;
+		}
+		if ($curpage < 1) $curpage = 1;
+		
 		if ($_POST) {
 			// Build condition query
 			$where = '1';
@@ -369,29 +387,39 @@ switch ($stage) {
 					}
 				}
 			}
-			$order = $_REQUEST['order'] ? $_REQUEST['order'] : false;
+			
 			if ($order) $where .= ' ORDER BY ' . $order;
-			if ($_POST['limit']) $where .= ' LIMIT ' . $_POST['limit'];
+			$where .= ' LIMIT '. (($curpage-1)*$perpage) .','. $perpage;
 			$query = "SELECT * FROM book WHERE " . $where;
-			echo $query;
+			
 			$result = G::$db->execute($query)->fetchAll();
 			$count = count($result);
 			$percolumn = (int)(($count-1) / 3) + 1;
 			$i = 0;
-			?>
-			Result: <?php echo $count ?>
-			<table>
-				<tr valign="top"><td>
-				<?php foreach ($result as $book) : $i++ ?>
-					<img src="<?php echo thumb_url($book['pic_1']) ?>" align="top"/>
-					<a href="?stage=display&amp;id=<?php echo $book['id'] ?>"><?php echo $book['title'].' | '.$book['artist'] ?></a><br/>
-					<?php if ($i % $percolumn == 0) : ?>
-				</td><td>
-					<?php endif ?>
-				<?php endforeach ?>
-				</td></tr>
-			</table>
-			<?php
+		?>
+			<div><?php echo $query.' = '.$count; ?></div>
+			<?php foreach ($result as $book) : $i++ ?>
+				<div class="span6 result">
+					<?php $pics = explode('#', $book['pic_all']); ?>
+					<a href="?stage=display&id=<?php echo $book['id']; ?>">
+						<img src="<?php echo $pics[1];?>" alt="th">
+						<img src="<?php echo $pics[2];?>" alt="th">
+					</a>
+
+					<dl class="dl-horizontal result">
+						<dt>Title</dt><dd><a href="?stage=display&id=<?php echo $book['id']; ?>"><?php echo $book['title']; ?></a></dd>
+						<dt>Series</dt><dd><?php echo $book['origin']; ?></dd>
+						<dt>Artist</dt><dd><?php echo $book['artist']; ?></dd>
+						<dt>Date</dt><dd><?php echo $book['added']; ?></dd>
+						<dt>Length</dt><dd><?php echo $book['length']; ?></dd>
+						<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $book['type']); ?></dd>
+						<dt><a href="?stage=display&id=<?php echo $book['id']; ?>">VIEW</a></dt>
+						<dd><a href="<?php echo $book['link']; ?>">ORIGIN</a></dd>
+					</dl>
+				</div>
+			<?php endforeach ?>
+			<div style="display:block;clear:both"></div>
+		<?php
 		}
 
 		$ref = get_ref();
@@ -402,14 +430,83 @@ switch ($stage) {
 		$origins = G::$db->execute($query)->fetchAll();
 		$origins = arr_to_flat($origins);
 		?>
-		<form method="post">
-			Title: <input name="title" type="text" value="<?php echo @$_REQUEST['title']; ?>" /><br/>
-			Artist: <input name="artist" type="text" value="<?php echo @$_REQUEST['artist']; ?>" /><br/>
-			Origin: <input name="origin" type="text" value="<?php echo @$_REQUEST['origin']; ?>" /><br/>
-			Limit: <input name="limit" type="text" value="<?php echo @$_REQUEST['limit']; ?>" /><br />
-			Order: <input name="order" type="text" value="<?php echo @$_REQUEST['order'] ?>" /><br />
-			Exact Artist: <select name="exact_artist"><option value="">-</option><option><?php echo implode('</option><option>', $artists) ?></option></select>
-			Exact Origin: <select name="exact_origin"><option value="">-</option><option><?php echo implode('</option><option>', $origins) ?></option></select>
+		<form method="post" class="form-horizontal">
+			<div class="control-group">
+				<div class="span6">
+					<label class="control-label">Title</label>
+					<div class="controls">
+						<input name="title" type="text" value="<?php echo @$_REQUEST['title']; ?>" />
+					</div>
+				</div>
+			
+				<div class="span6">
+					<label class="control-label">Order</label>
+					<div class="controls">
+						<input name="order" type="text" value="<?php echo $order; ?>" />
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="span6">
+					<label class="control-label">Artist</label>
+					<div class="controls">
+						<input name="artist" type="text" value="<?php echo @$_REQUEST['artist']; ?>" />
+					</div>
+				</div>
+
+				<div class="span6">
+					<label class="control-label">Origin</label>
+					<div class="controls">
+						<input name="origin" type="text" value="<?php echo @$_REQUEST['origin']; ?>" />
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="span6">
+					<label class="control-label">Per page</label>
+					<div class="controls">
+						<input name="perpage" type="text" value="<?php echo $perpage; ?>" />
+					</div>
+				</div>
+
+				<div class="span6">
+					<label class="control-label">Current page</label>
+					<div class="controls">
+						<input name="curpage" type="text" value="<?php echo $curpage; ?>" />
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="span6">
+					<label class="control-label">Exact Artist</label>
+					<div class="controls">
+						<select name="exact_artist"><option value="">-</option>
+							<?php foreach ($artists as $a) : ?>
+								<option <?php if (@$_REQUEST['exact_artist'] == $a) echo 'selected'; ?>><?php echo $a; ?></option>
+							<?php endforeach; ?>
+						</select>
+					</div>
+				</div>
+
+				<div class="span6">
+					<label class="control-label">Exact Origin</label>
+					<div class="controls">
+						<select name="exact_origin"><option value="">-</option>
+							<?php foreach ($origins as $a) : ?>
+								<option <?php if (@$_REQUEST['exact_origin'] == $a) echo 'selected'; ?>><?php echo $a; ?></option>
+							<?php endforeach; ?>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<button type="submit" class="btn" name="search">Search</button>
+					<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+				</div>
+			</div>
+
 			<table border="2">
 				<tr valign="top">
 				<?php $i = 0 ?>
@@ -550,4 +647,5 @@ switch ($stage) {
 		</form>
 		<?php
 }
+include '_footer.php';
 // mysql_close($db);

@@ -91,6 +91,7 @@ class Hmanga extends Model {
 			$post = '';
 		} else { // type 3
 			$pre = substr($sample, 0, -13);
+			$pre = str_replace('/t/manga/', '/t/images/manga/', $pre);
 			$post = '.thumb';
 		}
 		$ext = explode('#', $this->thumbs);
