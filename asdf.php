@@ -193,7 +193,7 @@ $list = $i->cache_volume_list();
 $i->move_pages_to_volumes($list);
 /**/
 
-/* */
+/* *
 require_once 'class/manga_crawler.php';
 // katekyo hitman reborn
 $list = array(
@@ -206,6 +206,7 @@ $list = array(
 	31=>array(289,299), 32=>array(300,310), 33=>array(311,320), 34=>array(321,330), 35=>array(331,341),
 	36=>array(342,351), 37=>array(352,361), 38=>array(362,999),*/
 );
-Manga_Crawler::move_pages_to_volumes('D:\temp\manga\\', $list, 1);
+// Manga_Crawler::move_pages_to_volumes('D:\temp\manga\\', $list, 1);
 // echo (Manga_Crawler::create_batch_zip('D:\temp\bacaan\Deadman Wonderland\\'));
 /**/
+
