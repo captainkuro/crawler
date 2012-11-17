@@ -152,7 +152,9 @@ class Readhentaionline {
 	}
 	
 	public function run() {
-		echo "<html><head><meta charset='utf-8'></head><body>";
+		// header
+		$title = 'Hentaimangaonline scraper';
+		include '_header.php'; // loaded with bootstrap
 		$dbpath = './sqlite/rho.db';
 		$empty_database = false;
 		if (!is_file($dbpath)) {
@@ -165,13 +167,20 @@ class Readhentaionline {
 		
 		$this->post = new Post_Data();
 		$stage = isset($_REQUEST['stage']) ? $_REQUEST['stage'] : '';
+	?>
+		<ul class="nav nav-tabs">
+			<li><a href="?stage=search">Search</a></li>
+			<li><a href="?stage=update">Update</a></li>
+		</ul>
+	<?php
 		$method = 'stage_'.$stage;
 		if (method_exists($this, $method)) {
 			$this->$method();
 		} else {
 			$this->_default();
 		}
-		echo "</body></html>";
+		// footer
+		include '_footer.php';
 	}
 	
 	public function _default() {
@@ -407,6 +416,8 @@ class Readhentaionline {
 			&lt;&lt; <input type="submit" name="page" value="<?php echo $this->post->page-1; ?>" />
 			<input type="submit" name="page" value="<?php echo $this->post->page+1; ?>" /> &gt;&gt;
 			<?php
+		} else {
+			$this->post->order_desc = 'id';
 		}
 		// search form
 		?>

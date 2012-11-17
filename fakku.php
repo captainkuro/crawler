@@ -82,7 +82,7 @@ class Hmanga extends Model {
 	// from thumbs and pages generate all thumbnail image urls
 	public function thumbnails() {
 		$thumbnails = array();
-		$sample = current(explode('#', $this->sample));
+		$sample = current(explode('#', str_replace('/t/manga/', '/t/images/manga/', $this->sample)));
 		if ($this->is_type_1()) {
 			$pre = dirname($sample) . '/thumbs/';
 			$post = '';
@@ -91,7 +91,6 @@ class Hmanga extends Model {
 			$post = '';
 		} else { // type 3
 			$pre = substr($sample, 0, -13);
-			$pre = str_replace('/t/manga/', '/t/images/manga/', $pre);
 			$post = '.thumb';
 		}
 		$ext = explode('#', $this->thumbs);
@@ -159,6 +158,11 @@ class Fakku {
 			`thumbs` text NULL,
 			`pattern` varchar NULL
 		)');
+	}
+	
+	public function fix_sample($sample) {
+		$sample = str_replace('cdn.fakku.net/8041E1/t/', 'www.fakku.net/', $sample);
+		return $sample;
 	}
 	
 	public function run() {
@@ -437,7 +441,7 @@ class Fakku {
 	?>
 		<?php foreach ($result as $hmanga) : ?>
 			<div class="span6 result">
-				<?php $samples = explode('#', $hmanga->sample); ?>
+				<?php $samples = explode('#', $this->fix_sample($hmanga->sample)); ?>
 				<a href="?action=view&id=<?php echo $hmanga->id; ?>">
 					<img src="<?php echo $samples[0];?>" alt="th">
 					<img src="<?php echo $samples[1];?>" alt="th">
