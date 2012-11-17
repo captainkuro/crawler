@@ -33,12 +33,12 @@ function crawl_album($url, $alias = false) {
 	*/
     if ($alias) {
         foreach ($hasil as $img) {
-            $img = str_replace('/s128/', '/', $img);
+            $img = str_replace('/s128/', '/d/', $img);
             echo "<a href='$img'>$alias</a><br/>\n";flush();
         }
     } else {
         foreach ($hasil as $img) {
-            $img = str_replace('/s128/', '/', $img);
+            $img = str_replace('/s128/', '/d/', $img);
             $basename = urldecode(basename($img));
             echo "<a href='$img'>$basename</a><br/>\n";flush();
         }
