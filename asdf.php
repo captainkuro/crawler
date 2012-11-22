@@ -204,9 +204,37 @@ $list = array(
 	21=>array(186,195), 22=>array(196,205), 23=>array(206,215), 24=>array(216,226), 25=>array(227,237),
 	26=>array(238,247), 27=>array(248,258), 28=>array(259,268), 29=>array(269,278), 30=>array(279,288),
 	31=>array(289,299), 32=>array(300,310), 33=>array(311,320), 34=>array(321,330), 35=>array(331,341),
-	36=>array(342,351), 37=>array(352,361), 38=>array(362,999),*/
-);
+	36=>array(342,351), 37=>array(352,361), 38=>array(362,999),
+);*/
 // Manga_Crawler::move_pages_to_volumes('D:\temp\manga\\', $list, 1);
 // echo (Manga_Crawler::create_batch_zip('D:\temp\bacaan\Deadman Wonderland\\'));
 /**/
 
+function disney_zip() {
+	$input = 'D:\Comic\!Disney';
+	$output = 'D:\Temp\Disney';
+	
+	$dir = new DirectoryIterator($input);
+	while ($dir->valid()) {
+		if ($dir->isDir() && !$dir->isDot()) {
+			$author = $dir->getFilename();
+			$author_path = $output.'/'.$author;
+			if (!is_dir($author_path)) {
+				mkdir($author_path);
+			}
+			$bat = "cd {$dir->getPathname()}".PHP_EOL;
+			$dir_comic = new DirectoryIterator($dir->getPathname());
+			while ($dir_comic->valid()) {
+				if ($dir_comic->isDir() && !$dir_comic->isDot()) {
+					$comic = $dir_comic->getFilename();
+					$comic_path = $author_path.'/'.$comic;
+					$bat .= "7z a \"{$comic_path}.zip\" \".\\{$comic}\\*\" -tzip -mx0".PHP_EOL;
+				}
+				$dir_comic->next();
+			}
+			echo $bat;
+		}
+		$dir->next();
+	}
+}
+// disney_zip();
