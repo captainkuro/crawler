@@ -179,12 +179,21 @@ class Page {
 	}
 	
 	public function go_line($search) {
-		if (is_array($search)) {
-			
-		} else {
-			while (!$this->end_of_line() && $this->current_line->pos($search) === false) {
-				$this->next_line();
+		while (!$this->end_of_line() && $this->current_line->pos($search) === false) {
+			$this->next_line();
+		}
+	}
+
+	public function go_line_or($searches) {
+		while (!$this->end_of_line()) {
+			$found = false;
+			foreach ($searches as $search) {
+				if ($this->current_line->contain($search)) {
+					$found = true;
+				}
 			}
+			if ($found) break;
+			$this->next_line();
 		}
 	}
 	
