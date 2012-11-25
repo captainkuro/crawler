@@ -487,8 +487,26 @@ function hentaifromhell($url) {
 					->regex_replace('/-\d+x\d+\./', '.')
 					->to_s();
 				echo "<a href='$src'>$name</a><br>\n";
+			} else if ($line->contain('class="gallery_pages_list"')) {
+				// grab last page
+				// iterate from page 2
+				$pages = $line->extract_to_array('">', '</');
+				$last = (int)end($pages);
+				for ($i=2; $i<=$last; $i++) {
+					$aurl = $url.'?galleryPage='.$i;
+					$ap = new Page($aurl);
+					$ap->go_line("id='gallery-1'");
+					do {
+						$line = $ap->curr_line();
+						if ($line->contain('src="')) {
+							$src = $line->cut_between('src="', '"')
+								->regex_replace('/-\d+x\d+\./', '.')
+								->to_s();
+							echo "<a href='$src'>$name</a><br>\n";
+					}} while (!$ap->next_line()->contain('</div>'));
+				}
 			}
-		} while (!$p->next_line()->contain('</div>'));
+		} while (!$p->next_line()->regex_match('/^<\/div>/'));
 		return;
 	}
 	echo "No gallery <a href='$url'>link</a>";
