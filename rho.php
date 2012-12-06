@@ -231,14 +231,12 @@ class Readhentaionline {
 		// $p->fetch_text(str_replace('</', "\n", $p1->content()));
 		$p = $p1;
 		// title
-		$p->go_line('id="leftcontent"');
-		$p->go_line('<h2>');
-		$m = $p->curr_line()->regex_match('/<h2>Read (.*) Hentai Manga Online/');
+		$p->go_line('<h3>Read ');
+		$m = $p->curr_line()->regex_match('/<h3>Read (.*) Hentai Manga Online/');
 		$ret['title'] = html_entity_decode($m[1], ENT_COMPAT, 'UTF-8');
 		// submit date
-		$p->go_line('class="date"');
-		$m = $p->curr_line()->regex_match('/strong> (.*)</');
-		$ret['submit_date'] = date('Y-m-d', strtotime($m[1]));
+		// currently no date is available
+		$ret['submit_date'] = date('Y-m-d');
 		// description
 		$p->go_line('Manga Info :<');
 		$m = $p->curr_line()->regex_match('/Manga Info :(.*)$/');
@@ -251,11 +249,9 @@ class Readhentaionline {
 		} else {
 			$ret['description'] = '';
 			$p->reset_line();
-			$p->go_line('Author\'s Description');
 		}
 		// tags
-		$p->go_line('<!-- /post -->');
-		$p->next_line(2);
+		$p->go_line('Tags: ');
 		$ret['tags'] = array();
 		$raw = $p->curr_line()->dup()->cut_until('<br/>');
 		foreach ($raw->extract_to_array('">', '<') as $tag) {
@@ -267,10 +263,10 @@ class Readhentaionline {
 			$ret['tags'][] = html_entity_decode($m[1], ENT_COMPAT, 'UTF-8');
 		}} while (!$p->next_line()->contain('<br/>'));
 		*/
-		$p->go_line('id="gallery"');
+		$p->go_line('id="images"');
 		// gallery url
 		$url = $this->base . $p->next_line()->dup()
-			->cut_between('<h2><a href="', '"')
+			->cut_between('<a href="', '"')
 		->to_s();
 		$ret['gallery_url'] = $url;
 		// # images
@@ -294,10 +290,9 @@ class Readhentaionline {
 	public function grab_chapter_urls($start_page_url, $check_database = false) {
 		$p = new Page($start_page_url);
 		// check if there are more pages
-		$p->go_line('id="postnav"');
-		$p->next_line(2);
+		$p->go_line("class='pages'");
 		if ($p->curr_line()->exist("class='pages'")) {
-			$m = $p->curr_line()->regex_match("/'>Page 1 of (\d+)<\//");
+			$m = $p->curr_line()->regex_match("/'>Page 1 \/ (\d+)<\//");
 			$tot_pages = $m[1];
 		} else {
 			$tot_pages = 1;
@@ -315,14 +310,14 @@ class Readhentaionline {
 			foreach ($raw as $e) {
 				if (preg_match('/^http:\/\/hentaimangaonline\.com\/read-[^\/]*-hentai-manga-online\/$/', $e)) {
 					if ($check_database) {
-						if ($this->url_already_exist($e)) return array_unique($chapters);
+						if ($this->url_already_exist($e)) return array_reverse(array_unique($chapters));
 					}
 					$chapters[] = $e;
 				}
 			}
 			// return $chapters;//DEBUG
 		}
-		return (array_unique($chapters));
+		return array_reverse(array_unique($chapters));
 	}
 	
 	public function add_book($info) {
