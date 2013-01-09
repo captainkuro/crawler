@@ -11,6 +11,7 @@ class Batoto extends Manga_Crawler {
 		// crawl chapters
 		$p = new Page($base);
 		$p->go_line('h3 class="maintitle"');
+		// print_r($p);exit;//debug
 		$list = array();
 		do {
 			if ($p->curr_line()->contain('book_open.png')) {
