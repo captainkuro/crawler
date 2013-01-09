@@ -375,7 +375,7 @@ function sankakucomplex($url) {
 			if ($page > $_GET['limit']) break;
 		}
 		$purl = $url.'&page='.$page;
-		$P = new Page($purl);
+		$P = new Page($purl, array('become_firefox'=>true));
 		$T = new Text($P->content());
 		$a = $T->extract_to_array('href="', '"');
 		foreach ($a as $i => $e) {
@@ -388,7 +388,7 @@ function sankakucomplex($url) {
 		foreach ($a as $i => $e) {
 			$E = new Text($e);
 			$kurl = $base . $e;
-			$P = new Page($kurl);
+			$P = new Page($kurl, array('become_firefox'=>true));
 			// $P->go_line('id="highres"');
 			$P->go_line('id="lowres"');
 			if ($P->end_of_line()) {
