@@ -409,6 +409,7 @@ class Readhentaionline {
 			// previous and next
 			?>
 			&lt;&lt; <input type="submit" name="page" value="<?php echo $this->post->page-1; ?>" />
+			<input type="submit" name="page" value="<?php echo $this->post->page; ?>" />
 			<input type="submit" name="page" value="<?php echo $this->post->page+1; ?>" /> &gt;&gt;
 			<?php
 		} else {

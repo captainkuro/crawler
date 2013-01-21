@@ -116,7 +116,14 @@ class Hmanga extends Model {
 		$p = new Page(Fakku::$base . $this->url . '/read');
 		// grab thumbs extension
 		$p->go_line('var data = {');
-		$json = $p->curr_line()->dup()->cut_between(' = ', ';')->to_s();
+		if ($p->curr_line()->contain('var data')) {
+			$json = $p->curr_line()->dup()->cut_between(' = ', ';')->to_s();
+		} else {
+			$p->reset_line();
+			$p->go_line('var data={');
+			$json = $p->curr_line()->dup()->cut_between('data=', ';')->to_s();
+		}
+
 		$obj = json_decode($json);
 		$thumbs = array();
 		foreach ($obj->thumbs as $tpath) {
@@ -394,6 +401,12 @@ class Fakku {
 						</label>
 						<label class="radio inline">
 							<input type="radio" name="order" value="title desc" <?php echo $order=='title desc'?'checked':''; ?>> title DESC
+						</label>
+						<label class="radio inline">
+							<input type="radio" name="order" value="id desc" <?php echo $order=='id desc'?'checked':''; ?>> ID DESC
+						</label>
+						<label class="radio inline">
+							<input type="radio" name="order" value="id asc" <?php echo $order=='id asc'?'checked':''; ?>> ID ASC
 						</label>
 					</div>
 				</div>
