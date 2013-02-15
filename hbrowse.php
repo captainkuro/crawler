@@ -183,7 +183,7 @@ function page_all_thumbnail($link) {
 	$c = new Crawler($link);
 	$c->go_to('class="listEntry"');
 	while ($line = $c->readline()) {
-		if (Crawler::is_there($line, '/thumbnails/')) {
+		if (Crawler::is_there($line, '/thumbnails/') /*&& strpos($line, '.jpg') === false*/) {
 			$link = Crawler::extract($line, 'class="thumbLink" href="', '"');
 			//echo "$link<br/>\n";
 			$x = new Crawler($link);
