@@ -133,14 +133,14 @@ function page_to_array($link) {
 			$arkey = str_replace(' ', '_', strtolower($key));
 			switch ($key) {
 				case 'Title':
-					$data['title'] = trim(Crawler::cutafter($line, ':'));
+					$data['title'] = trim(Crawler::extract($line, 'listLong">', '</'));
 					break;
 				case 'Artist':
 					$l = Crawler::extract($line, 'href="', '"');
 					$data['artist'] = basename($l);
 					break;
 				case 'Length':
-					$data['length'] = trim(Crawler::extract($line, ':', 'page'));
+					$data['length'] = trim(Crawler::extract($line, 'listLong">', 'page'));
 					break;
 				case 'Origin':
 					$l = Crawler::extract($line, 'href="', '"');
@@ -181,10 +181,10 @@ function update_book($id, $book) {
 function page_all_thumbnail($link) {
 	$thumbs = array();
 	$c = new Crawler($link);
-	$c->go_to('class="listEntry"');
+	$c->go_to('id="chapters"');
 	while ($line = $c->readline()) {
 		if (Crawler::is_there($line, '/thumbnails/') /*&& strpos($line, '.jpg') === false*/) {
-			$link = Crawler::extract($line, 'class="thumbLink" href="', '"');
+			$link = Crawler::extract($line, 'href="', '"');
 			//echo "$link<br/>\n";
 			$x = new Crawler($link);
 			$x->go_to('id="main"');
@@ -340,6 +340,7 @@ switch ($stage) {
 			// print_r($data);exit;
 			$data['pic_all'] = '#' . implode('#', page_all_thumbnail($link)) . '#';
 			// Masukkan ke database
+			// print_r($data);exit;//debug
 			insert_array_to_database($data);
 			//exit; // Testing, 1 aja dulu
 		}

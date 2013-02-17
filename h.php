@@ -586,14 +586,24 @@ function pururin($url) {
 // http://pururin.com/hentai-manga/1673/view/pai-zuri_1.html view full image
 	$base = 'http://pururin.com';
 	$title = substr(basename($url), 0, -5);
-	if (strpos($url, '_1.html') === false) {
-		$url = dirname($url) . '/gallery/' . str_replace('.html', '_1.html', basename($url));
-	}
+	// if (strpos($url, '_1.html') === false) {
+	// 	$url = dirname($url) . '/gallery/' . str_replace('.html', '_1.html', basename($url));
+	// }
+	$url = str_replace('/gallery/', '/thumbs/', $url);
 	// collect more than 100 images
 	$next = true;
 	$i = 1;
 	while ($next) {
 		$p = new Page($url);
+		$p->go_line('class="thumblist"');
+		$thumbs = $p->next_line()->extract_to_array('src="', '"');
+		foreach ($thumbs as $k => $v) {
+			$f = preg_replace('/([^-]+)t\//', '$1f/', $v);
+			echo "<a href='$base$f'>$title</a><br>\n";
+		}
+		//now all in 1 page
+		$next = false;
+		/*
 		$p->go_line('class="thumbnail_list"');
 		do { if ($p->curr_line()->contain('class="pageNumber"')) {
 			$href = $p->curr_line()->dup()->cut_between('href="', '"')->to_s();
@@ -605,6 +615,7 @@ function pururin($url) {
 		if (strpos($p->content(), '">&rsaquo;</a>') === false) {
 			$next = false;
 		}
+		*/
 		$url = str_replace('_'.$i.'.html', '_'.($i+1).'.html', $url);
 		$i++;
 	}

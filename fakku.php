@@ -429,6 +429,8 @@ class Fakku {
 			case 'date asc': $q->order_by_asc('date'); break;
 			case 'title asc': $q->order_by_asc('title'); break;
 			case 'title desc': $q->order_by_desc('title'); break;
+			case 'id asc': $q->order_by_asc('id'); break;
+			case 'id desc': $q->order_by_desc('id'); break;
 		}
 		// filter
 		foreach ($search['title'] as $term) { if ($term) {
