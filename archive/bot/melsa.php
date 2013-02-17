@@ -29,7 +29,7 @@ Expires: 0
 */
 //http://peopleschoice.imaginecup.com/ClientBin/isvData.ashx
 $username = 'captain_kuro%40melsahotspot.com';
-$password = 'fr33p4sc4l';
+$password = 'yomammasofat';
 $content = "dst=&popup=true&username={$username}&password={$password}";
 $length = strlen($content);
 
