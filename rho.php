@@ -488,6 +488,16 @@ class Readhentaionline {
 			$b->save();
 		}
 	}
+
+	public function stage_insert() {
+		$l = $_GET['url'];
+		try {
+			$info = $this->extract_info($l);
+			$this->add_book($info);
+		} catch (Exception $e) {
+			echo "Cancelled {$l}: <br/><pre>{$e}</pre>\n";
+		}
+	}
 }
 $a = new Readhentaionline();
 $a->run();

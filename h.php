@@ -390,7 +390,11 @@ function sankakucomplex($url) {
 			$kurl = $base . $e;
 			$P = new Page($kurl, array('become_firefox'=>true));
 			// $P->go_line('id="highres"');
-			$P->go_line('id="lowres"');
+			if (isset($_GET['hires'])) {
+				$P->go_line('id="highres"');
+			} else {
+				$P->go_line('id="lowres"');
+			}
 			if ($P->end_of_line()) {
 				$P->reset_line();
 				$P->go_line('id="highres"');
@@ -398,7 +402,7 @@ function sankakucomplex($url) {
 			$img = $P->curr_line()->cut_between('href="', '"')->to_s();
 			$P->reset_line();
 			$P->go_line('id="post_old_tags"');
-			$tag = $P->curr_line()->cut_between('value="', '"')->substr(0, 150)->to_s(); // max 100 karakter
+			$tag = $P->curr_line()->cut_between('value="', '"')->substring(0, 150)->to_s(); // max 100 karakter
 			echo "<a href='$img'>$tag</a><br />\n";
 		}
 		$page++;

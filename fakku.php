@@ -290,6 +290,7 @@ class Fakku {
 			while ($next) {
 				$p = new Page($starting_url . ($page > 1 ? '/page/'.$page : ''));
 				$infos = $this->extract_from_page($p);
+				if (strpos($p->content(), 'base64')) {print_r($p->content());print_r($infos);}//debug
 				foreach ($infos as $k => $info) {
 					if ($this->is_already_exist($info)) {
 						unset($infos[$k]);
