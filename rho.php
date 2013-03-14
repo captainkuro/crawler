@@ -186,13 +186,13 @@ class Readhentaionline {
 	public function _default() {
 		// print_r($this->extract_info('http://readhentaionline.com/read-a-corner-of-absolute-zero-hentai-manga-online/'));
 		
-		/**
+		/* *
 		$urls = $this->grab_chapter_urls('http://readhentaionline.com/category/hentai-manga/');
 		file_put_contents('rho.all_links', '<?php return '.var_export($urls, true).';');
 		/**/
 		
 		// recover
-		/**
+		/* *
 		$links = include 'rho.all_links';
 		$links = array_reverse(array_unique($links));
 		foreach ($links as $link) { //if (!$this->url_already_exist($link)) {
@@ -203,7 +203,7 @@ class Readhentaionline {
 		/**/
 		
 		// fix other mangas taken as tags
-		/**
+		/* *
 		$q = Model::factory('Book')->where_gt('pages', 0)->order_by_asc('id');
 		foreach ($q->find_many() as $b) {
 			echo 'Searching '.$b->id." {$b->slug}<br/>\n";

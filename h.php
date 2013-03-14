@@ -404,6 +404,7 @@ function sankakucomplex($url) {
 			$P->go_line('id="post_old_tags"');
 			$tag = $P->curr_line()->cut_between('value="', '"')->substring(0, 150)->to_s(); // max 100 karakter
 			echo "<a href='$img'>$tag</a><br />\n";
+			sleep(1); // 429 too many requests
 		}
 		$page++;
 	} while (true);

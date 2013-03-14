@@ -4,6 +4,7 @@
 class Batoto extends Manga_Crawler {
 	protected $enable_single_chapter = true;
 	protected $column_span = 3;
+	protected $reverse_download_chapters = true;
 	
 	// need to be overridden, return array[desc,url,infix]
 	// $base is URL submitted

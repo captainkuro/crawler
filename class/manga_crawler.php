@@ -7,6 +7,8 @@ abstract class Manga_Crawler {
 	//enable single chapter crawling
 	protected $enable_single_chapter = false;
 	protected $column_span = 4;
+	protected $reverse_choice_chapters = false;
+	protected $reverse_download_chapters = false;
 	
 	public static function factory() {
 		$class = get_called_class();
@@ -140,6 +142,9 @@ abstract class Manga_Crawler {
 		;
 		if (isset($this->stage1)) {
 			$list = $this->extract_info($this->base);
+			if ($this->reverse_choice_chapters) {
+				$list = array_reverse($list, true);
+			}
 			foreach ($list as $i => $v) {
 				$this->print_choice($i, $v);
 			}
@@ -167,6 +172,9 @@ abstract class Manga_Crawler {
 	public function display_stage_3() {
 		$i = 1;
 		echo "<div class='row-fluid'>\n";
+		if ($this->reverse_download_chapters) {
+			$this->info = array_reverse($this->info, true);
+		}
 		foreach ($this->info as $v) {
 			echo "<div class='span{$this->column_span}'>\n";
 			$this->crawl_chapter($v);
