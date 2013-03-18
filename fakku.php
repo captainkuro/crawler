@@ -134,8 +134,17 @@ class Hmanga extends Model {
 		// grab full image pattern
 		$p->go_line('function imgpath(');
 		$p->go_line('return \'');
-		$imgpath = $p->curr_line()->dup()->cut_between("return '", "';")->to_s();
-		$imgpath = str_replace("' + x + '", '?', $imgpath);
+		if ($p->curr_line()->contain('return \'')) {
+			$imgpath = $p->curr_line()->dup()->cut_between("return '", "';")->to_s();
+			$imgpath = str_replace("' + x + '", '?', $imgpath);
+		} else {
+			$p->reset_line();
+			$p->go_line('function imgpath(');
+			$p->go_line('return\'');
+			$imgpath = $p->curr_line()->dup()->cut_between("return'", "';")->to_s();
+			$imgpath = str_replace("'+x+'", '?', $imgpath);
+		}
+			
 		$this->pattern = $imgpath;
 		
 		$this->save();
@@ -237,7 +246,11 @@ class Fakku {
 				
 				$sample1 = $row->find('img.cover', 0);
 				$sample2 = $row->find('img.sample', 0);
-				$item['sample'] = array($sample1->src, $sample2->src);
+				if ($sample1->pagespeed_lazy_src) {
+					$item['sample'] = array($sample1->pagespeed_lazy_src, $sample2->pagespeed_lazy_src);
+				} else {
+					$item['sample'] = array($sample1->src, $sample2->src);
+				}
 				
 				$title = $row->find('h2 a', 0);
 				$item['url'] = rawurldecode($title->href);
@@ -264,10 +277,23 @@ class Fakku {
 				foreach ($tags->find('a') as $a) {
 					$item['tags'][] = $a->plaintext;
 				}
+				// if sample is cached cdn
+				foreach ($item['sample'] as $k => $surl) {
+					$sample = new Text($surl);
+					if ($sample->contain('http://1-ps.googleusercontent.com/h/www.fakku.net/')) {
+						$src = $sample->replace('http://1-ps.googleusercontent.com/h/www.fakku.net/', 'http://cdn.fakku.net/8041E1/t/images/')
+							->replace(',P20', '%20')
+							->replace('/x,', '/%')
+							->replace(',', '%')
+							->cut_before('.pagespeed.');
+						$item['sample'][$k] = $src->to_s();
+					}
+				}
 				$infos[] = $item;
+				// print_r($item);exit;
 			} catch (Exception $e) {
 				echo 'Cancelled '.$item['url'];
-				continue;
+				exit;
 			}
 		}
 		return $infos;
@@ -290,7 +316,8 @@ class Fakku {
 			while ($next) {
 				$p = new Page($starting_url . ($page > 1 ? '/page/'.$page : ''));
 				$infos = $this->extract_from_page($p);
-				if (strpos($p->content(), 'base64')) {print_r($p->content());print_r($infos);exit;}//debug
+				// if (strpos($p->content(), 'base64')) {print_r($p->content());print_r($infos);exit;}//debug
+				// if (strpos($p->content(), 'ps.googleusercontent.com')) {print_r($p->content());print_r($infos);exit;}//debug
 				foreach ($infos as $k => $info) {
 					if ($this->is_already_exist($info)) {
 						unset($infos[$k]);
