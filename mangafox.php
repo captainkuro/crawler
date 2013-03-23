@@ -3,6 +3,7 @@
 // http://mangafox.me/manga/fairy_tail/v34/c313/
 class Mangafox extends Manga_Crawler {
 	protected $enable_single_chapter = true;
+	protected $reverse_download_chapters = true;
 	
 	// need to be overridden, return array[desc,url,infix]
 	// $base is URL submitted
@@ -52,6 +53,10 @@ class Mangafox extends Manga_Crawler {
 			$name = basename($src);
 			echo "<a href='$src'>$prefix-$ifx-$name</a><br>\n";
 		}
+	}
+
+	public function url_is_single_chapter($url) {
+		return (bool)preg_match('/\/c\d+\//', $url);
 	}
 }
 Mangafox::factory()->run();

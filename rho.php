@@ -360,7 +360,7 @@ class Readhentaionline {
 	}
 	
 	public function stage_search() {
-		echo "<form method='post'>";
+		echo "<form method='post' class='form-horizontal'>";
 		// search result
 		if ($_POST) {
 			if (!$this->post->page) $this->post->page = 1;
@@ -408,23 +408,49 @@ class Readhentaionline {
 			}
 			// previous and next
 			?>
-			&lt;&lt; <input type="submit" name="page" value="<?php echo $this->post->page-1; ?>" />
-			<input type="submit" name="page" value="<?php echo $this->post->page; ?>" />
-			<input type="submit" name="page" value="<?php echo $this->post->page+1; ?>" /> &gt;&gt;
+			&lt;&lt; 
+			<button type="submit" name="page" class="btn"><?php echo $this->post->page-1; ?></button>
+			<button type="submit" name="page" class="btn"><?php echo $this->post->page; ?></button>
+			<button type="submit" name="page" class="btn"><?php echo $this->post->page+1; ?></button>
+			&gt;&gt;
 			<?php
 		} else {
 			$this->post->order_desc = 'id';
 		}
 		// search form
 		?>
-		<div>
-			Find: <input type="text" name="find" value="<?php echo $this->post->find; ?>" /><br/>
-			Without: <input type="text" name="without" value="<?php echo $this->post->without; ?>" /><br/>
-			Per Page: <input type="text" name="perpage" value="<?php echo $this->post->perpage; ?>" /><br/>
-			Order (ASC): <input type="text" name="order_asc" value="<?php echo $this->post->order_asc; ?>" /><br/>
-			Order (DESC): <input type="text" name="order_desc" value="<?php echo $this->post->order_desc; ?>" /><br/>
-			<input type="submit" name="page" value="1" />
+		<div class="control-group">
+			<label class="control-label">Find</label>
+			<div class="controls">
+				<input type="text" name="find" value="<?php echo $this->post->find; ?>" />
+			</div>
 		</div>
+		<div class="control-group">
+			<label class="control-label">Without</label>
+			<div class="controls">
+				<input type="text" name="without" value="<?php echo $this->post->without; ?>" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">Per Page</label>
+			<div class="controls">
+				<input type="text" name="perpage" value="<?php echo $this->post->perpage; ?>" /><br/>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">Order (ASC)</label>
+			<div class="controls">
+				<input type="text" name="order_asc" value="<?php echo $this->post->order_asc; ?>" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">Order (DESC)</label>
+			<div class="controls">
+				<input type="text" name="order_desc" value="<?php echo $this->post->order_desc; ?>" />
+			</div>
+		</div>
+
+		<button type="submit" name="page" class="btn">1</button>
 		<?php
 		echo "</form>";
 	}
