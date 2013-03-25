@@ -238,3 +238,7 @@ function disney_zip() {
 	}
 }
 // disney_zip();
+
+// $search = 'alpha -beta +gamma -tetha';
+// $a = Text::parse_search_term($search);
+// print_r($a);

@@ -240,4 +240,21 @@ class Text {
 		$email = "$user@$domain.$tld";
 		return $email;
 	}
+
+	// "alpha -beta +gamma -tetha" => array('include'=>array('alpha','gamma'), 'exclude'=>array('beta','tetha'))
+	public static function parse_search_term($search) {
+		$terms = explode(' ', $search);
+		$result = array();
+		foreach ($terms as $term) {
+			if (!$term) continue;
+			if ($term[0] == '-') {
+				$place = 'exclude';
+			} else {
+				$place = 'include';
+			}
+			$cterm = trim($term, '-+');
+			$result[$place][] = $cterm;
+		}
+		return $result;
+	}
 }
