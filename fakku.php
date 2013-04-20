@@ -246,7 +246,9 @@ class Fakku {
 				
 				$series = $row->find('div.left', 0)->find('a', 0);
 				if (!$series) { // malformed
-					throw new Exception('fail parsing $series');
+					echo 'Cancelled '.$item['url'].' fail parsing $series'."<br>\n";
+					continue;
+					// throw new Exception('fail parsing $series');
 				}
 				$item['series'] = html_entity_decode($series->plaintext, ENT_COMPAT, 'UTF-8');
 				
@@ -333,6 +335,7 @@ class Fakku {
 		} else if (isset($_POST['prev'])) {
 			$curpage--;
 		}
+		if ($curpage < 1) $curpage = 1;
 	?>
 		<form class="form-horizontal" method="post">
 			<div class="control-group">
@@ -463,6 +466,7 @@ class Fakku {
 					<dt>Series</dt><dd><?php echo $hmanga->series; ?></dd>
 					<dt>Artist</dt><dd><?php echo $hmanga->artist; ?></dd>
 					<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
+					<dt>Page</dt><dd><?php echo $hmanga->count(); ?></dd>
 					<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
 					<dt><a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a></dt>
 					<dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a></dd>
@@ -491,6 +495,7 @@ class Fakku {
 			<dt>Artist</dt><dd><?php echo $hmanga->artist; ?></dd>
 			<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
 			<dt>Description</dt><dd><?php echo $hmanga->desc; ?></dd>
+			<dt>Page</dt><dd><?php echo $hmanga->count(); ?></dd>
 			<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
 			<dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a></dd>
 		</dl>

@@ -10,31 +10,31 @@ migrasi database sqlite
 CREATE TABLE IF NOT EXISTS `book` (
   `id` integer NOT NULL CONSTRAINT pid PRIMARY KEY AUTOINCREMENT,
   `id_web` integer NOT NULL,
-  `title` text NOT NULL,
-  `artist` text NOT NULL,
-  `origin` text NOT NULL,
+  `title` varchar NOT NULL,
+  `artist` varchar NOT NULL,
+  `origin` varchar NOT NULL,
   `length` integer NOT NULL,
-  `added` text NOT NULL,
-  `link` text NOT NULL,
-  `pic_1` text NOT NULL,
+  `added` varchar NOT NULL,
+  `link` varchar NOT NULL,
+  `pic_1` varchar NOT NULL,
   `pic_all` text NOT NULL,
-  `genre` text NOT NULL,
-  `type` text NOT NULL,
-  `setting` text NOT NULL,
-  `fetish` text NOT NULL,
-  `role` text NOT NULL,
-  `relationship` text NOT NULL,
-  `male_body` text NOT NULL,
-  `female_body` text NOT NULL,
-  `grouping` text NOT NULL,
-  `scene` text NOT NULL,
-  `position` text NOT NULL
+  `genre` varchar NOT NULL,
+  `type` varchar NOT NULL,
+  `setting` varchar NOT NULL,
+  `fetish` varchar NOT NULL,
+  `role` varchar NOT NULL,
+  `relationship` varchar NOT NULL,
+  `male_body` varchar NOT NULL,
+  `female_body` varchar NOT NULL,
+  `grouping` varchar NOT NULL,
+  `scene` varchar NOT NULL,
+  `position` varchar NOT NULL
   
 );
 
 CREATE TABLE IF NOT EXISTS `reference` (
-  `id` text NOT NULL,
-  `val` text NOT NULL,
+  `id` varchar NOT NULL,
+  `val` varchar NOT NULL,
   PRIMARY KEY (`id`)
 );
 */
