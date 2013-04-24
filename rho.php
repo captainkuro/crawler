@@ -38,8 +38,6 @@ sekarang thumbs menyimpan id dari manga
 // include 'class/rb.php';
 include 'class/idiorm.php';
 include 'class/paris.php';
-include_once 'class/text.php';
-include_once 'class/page.php';
 
 class Book extends Model {
 	protected $_tags = null;
@@ -139,6 +137,7 @@ class Readhentaionline {
 		ORM::get_db()->query('CREATE TABLE `book` (
 		  `id` integer NOT NULL CONSTRAINT pid PRIMARY KEY AUTOINCREMENT,
 		  `url` varchar NOT NULL,
+		  `real_id` int NOT NULL,
 		  `slug` varchar NOT NULL,
 		  `title` varchar NOT NULL,
 		  `submit_date` varchar NOT NULL,
@@ -146,7 +145,6 @@ class Readhentaionline {
 		  `pages` integer NOT NULL,
 		  `gallery_url` varchar NOT NULL,
 		  `tags` text NOT NULL,
-		  `thumbs` text NOT NULL,
 		  `first_image` varchar NULL
 		)');
 	}

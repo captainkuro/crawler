@@ -111,7 +111,7 @@ class Hmanga extends Model {
 
 // Main program
 class Hbrowse {
-	public static $update = 'http://www.hbrowse.com/browse/title/date/ASC';
+	public static $update = 'http://www.hbrowse.com/browse/title/date/DESC';
 	public static $base = 'http://www.hbrowse.com';
 	
 	public static function create() {
@@ -268,6 +268,7 @@ class Hbrowse {
 			'added' => date('Y-m-d H:i:s'),
 		);
 		// Ambil gambar di hal ini -> pic_1
+		// echo $p->content();exit;
 		$p->go_line('class="pageImage"');
 		$data['pic_1'] = $p->next_line()->cut_between('src="', '"')->to_s();
 		// Ambil title, artist, length, origin, etc etc...
@@ -335,7 +336,7 @@ class Hbrowse {
 				$line = $p->curr_line();
 				if ($line->contain('class="browseDescription"')) {
 					$arr = $line->extract_to_array('href="', '"');
-					$href = end($arr);
+					$href = rtrim(end($arr), '/');
 					if ($this->is_already_exist($href)) {
 						$stop = true;
 						break;
@@ -356,7 +357,7 @@ class Hbrowse {
 		$links = array_reverse(array_unique($links));
 		// $links berisi link2 yg siap dimasukkan
 		foreach ($links as $link) {
-			echo $link."\n";flush(); // http://www.hbrowse.com/10001/c00001
+			echo $link."<br>\n";flush(); // http://www.hbrowse.com/10001/c00001
 			// Cek dah ada di DB belum
 			$p = new Page($link);
 			$data = $this->extract_from_page($p);
@@ -368,19 +369,21 @@ class Hbrowse {
 	public function action_view() {
 		$id = $_REQUEST['id'];
 		$hmanga = Model::factory('Hmanga')->find_one($id);
+		$thumbnails = $hmanga->thumbnails();
+		$pages = $hmanga->pages();
 		?>
 		<ul class="thumbnails">
-		<?php foreach ($hmanga->thumbnails() as $th) : ?>
-			<li><img src="<?php echo $th; ?>" alt="th"></li>
+		<?php foreach ($thumbnails as $i => $th) : ?>
+			<li>
+				<a href="<?php echo $pages[$i]; ?>">
+					<img src="<?php echo $th; ?>" alt="<?php echo $hmanga->title; ?>">
+				</a>
+			</li>
 		<?php endforeach; ?>
 		</ul>
 		
 		<pre><?php print_r($hmanga->details()) ?></pre>
 
-		<?php foreach ($hmanga->pages() as $pg) : ?>
-			<a href="<?php echo $pg; ?>"><?php echo $hmanga->title; ?></a>
-		<?php endforeach; ?>
-		
 		<?php
 	}
 	

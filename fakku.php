@@ -487,6 +487,8 @@ class Fakku {
 	public function action_view() {
 		$id = $_GET['id'];
 		$hmanga = Model::factory('Hmanga')->find_one($id);
+		$thumbnails = $hmanga->thumbnails();
+		$pages = $hmanga->pages();
 		?>
 		
 		<dl class="dl-horizontal">
@@ -501,15 +503,15 @@ class Fakku {
 		</dl>
 		
 		<ul class="thumbnails">
-		<?php foreach ($hmanga->thumbnails() as $th) : ?>
-			<li><img src="<?php echo $th; ?>" alt="th"></li>
+		<?php foreach ($thumbnails as $i => $th) : ?>
+			<li>
+				<a href="<?php echo $pages[$i]; ?>">
+					<img src="<?php echo $th; ?>" alt="<?php echo $hmanga->title; ?>">
+				</a>
+			</li>
 		<?php endforeach; ?>
 		</ul>
-		
-		<?php foreach ($hmanga->pages() as $pg) : ?>
-			<a href="<?php echo $pg; ?>"><?php echo $hmanga->title; ?></a>
-		<?php endforeach; ?>
-		
+
 		<?php
 	}
 	
