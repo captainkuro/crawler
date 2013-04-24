@@ -7,29 +7,29 @@ komik terdiri atas 2:
 	manga http://www.fakku.net/manga/english
 	doujinshi http://www.fakku.net/doujinshi/english
 sebenarnya keduanya sama:
-	judul
+	title
 	series
 	artist
 	date
 	desc
 	tags
-	sample (2 urls)
 	url
-	thumbs (null first, concatenated extension only)
-	pattern (null first, full image url pattern) e.g. http://cdn.fakku.net/8041E1/c/manga/t/tokubetsunakiminiainotewo_e/images/?.jpg
+	thumbs (null first, concatenated filename)
+	pattern (null first, full image url pattern) e.g. http://cdn.fakku.net/8041E1/c/manga/t/tokubetsunakiminiainotewo_e/images/%s.jpg
 	
 pada halaman list ada 2 thumbnail kecil:
-	http://cdn.fakku.net/8041E1/t/manga/m/mugitoazukouhenfixed_e/thumbs/[691] 2362 - Mugi to Azu Kouhen fixed (English) 001.thumb.jpg
-	http://cdn.fakku.net/8041E1/t/manga/m/mugitoazukouhenfixed_e/thumbs/[691] 2362 - Mugi to Azu Kouhen fixed (English) 008.thumb.png
-	atau
-	http://cdn.fakku.net/8041E1/t/manga/e/eldersister_e/cover.gif
-	http://cdn.fakku.net/8041E1/t/manga/e/eldersister_e/sample.gif
+	langsung ambil dari thumbnail lengkap
 
 pada halaman read online ada 2 informasi penting: 
 	url semua thumbnail
 		dalam bentuk json
 	url semua full image
 		dalam bentuk pattern
+
+cdn.fakku.net/8041E1/t/images/manga/p/penisclub_e/thumbs/%5B1655%5D%202361%20-%20Penis%20Club%20(English)%20001.thumb.jpg
+cdn.fakku.net/8041E1/c/manga/p/penisclub_e/images/001.jpg
+cdn.fakku.net/8041E1/t/images/manga/t/theworldisyours_e/thumbs/001.gif
+cdn.fakku.net/8041E1/c/manga/t/theworldisyours_e/images/001.jpg
 */
 include 'class/idiorm.php';
 include 'class/paris.php';
@@ -38,83 +38,52 @@ include_once 'class/page.php';
 include 'class/simple_html_dom.php';
 
 class Hmanga extends Model {
-	public function save() {
-		if (is_array($this->tags)) {
-			$this->tags = '#'.implode('#', $this->tags).'#';
-		}
-		if (is_array($this->sample)) {
-			$this->sample = implode('#', $this->sample);
-		}
-		if (is_array($this->thumbs)) {
-			$this->thumbs = implode('#', $this->thumbs);
-		}
-		parent::save();
-	}
-	
-	// how many pages are there
 	public function count() {
 		return substr_count($this->thumbs, '#')+1;
 	}
-	
-	// versi lama, nama thumbnail image hanya berupa 001.gif
-	// url sample tidak mengandung /thumbs/
-	public function is_type_1() {
-		$sample = current(explode('#', $this->sample));
-		return strpos($sample, '/thumbs/') === false;
+
+	public function thumb_src($filename) {
+		$pattern = new Text($this->pattern);
+		$thumb_pre = $pattern
+			->replace('/images/', '/thumbs/')
+			->replace('/c/manga/', '/t/images/manga/')
+			->dirname()
+			->to_s();
+		return $thumb_pre.'/'.$filename;
 	}
-	
-	// nama thumbnail image hanya berupa 001.jpg
-	// url sample mengandung /thumbs/ tapi filename tidak mengandung .thumb.
-	public function is_type_2() {
-		$sample = current(explode('#', $this->sample));
-		return strpos($sample, '/thumbs/') !== false 
-			&& strpos(basename($sample), '.thumb.') === false;
+
+	public function src($i) {
+		$padded = str_pad($i, 3, '0', STR_PAD_LEFT);
+		return sprintf($this->pattern, $padded);
 	}
-	
-	// versi terbaru, nama thumbnail image berupa [ARTIST] SERIES - TITLE (English) 001.thumb.jpg
-	// url sample mengandung /thumbs/ DAN filename mengandung .thumb.
-	public function is_type_3() {
-		$sample = current(explode('#', $this->sample));
-		return strpos($sample, '/thumbs/') !== false
-			&& strpos(basename($sample), '.thumb.') !== false;
-	}
-	
-	// from thumbs and pages generate all thumbnail image urls
+
 	public function thumbnails() {
-		$thumbnails = array();
-		$sample = current(explode('#', str_replace('/t/manga/', '/t/images/manga/', $this->sample)));
-		if ($this->is_type_1()) {
-			$pre = dirname($sample) . '/thumbs/';
-			$post = '';
-		} else if ($this->is_type_2()) {
-			$pre = substr($sample, 0, -7);
-			$post = '';
-		} else { // type 3
-			$pre = substr($sample, 0, -13);
-			$post = '.thumb';
+		if (!$this->thumbs) {
+			$this->get_detail();
 		}
-		$ext = explode('#', $this->thumbs);
-		for ($i=1, $n=$this->count(); $i<=$n; $i++) {
-			$val = str_pad($i, 3, '0', STR_PAD_LEFT);
-			$thumbnails[] = $pre . $val . $post . '.' . $ext[$i-1];
+		$thumbnails = array();
+		$filenames = explode('#', $this->thumbs);
+		foreach ($filenames as $filename) {
+			$thumbnails[] = $this->thumb_src($filename);
 		}
 		return $thumbnails;
 	}
-	
-	// from thumbs and pages generate all full image urls
+
 	public function pages() {
+		if (!$this->thumbs) {
+			$this->get_detail();
+		}
 		$pages = array();
 		for ($i=1, $n=$this->count(); $i<=$n; $i++) {
-			$val = str_pad($i, 3, '0', STR_PAD_LEFT);
-			$pages[] = str_replace('?', $val, $this->pattern);
+			$pages[] = $this->src($i);
 		}
 		return $pages;
 	}
-	
-	// get detailed information thumbs & pattern
+
+	// Fill thumbs and pattern
 	public function get_detail() {
 		$p = new Page(Fakku::$base . $this->url . '/read');
-		// grab thumbs extension
+		
 		$p->go_line('var data = {');
 		if ($p->curr_line()->contain('var data')) {
 			$json = $p->curr_line()->dup()->cut_between(' = ', ';')->to_s();
@@ -127,27 +96,31 @@ class Hmanga extends Model {
 		$obj = json_decode($json);
 		$thumbs = array();
 		foreach ($obj->thumbs as $tpath) {
-			$thumbs[] = substr(basename($tpath), -3);
+			$thumbs[] = basename($tpath);
 		}
-		$this->thumbs = $thumbs;
+		$this->thumbs = implode('#', $thumbs);
 		
 		// grab full image pattern
 		$p->go_line('function imgpath(');
 		$p->go_line('return \'');
 		if ($p->curr_line()->contain('return \'')) {
 			$imgpath = $p->curr_line()->dup()->cut_between("return '", "';")->to_s();
-			$imgpath = str_replace("' + x + '", '?', $imgpath);
+			$imgpath = str_replace("' + x + '", '%s', $imgpath);
 		} else {
 			$p->reset_line();
 			$p->go_line('function imgpath(');
 			$p->go_line('return\'');
 			$imgpath = $p->curr_line()->dup()->cut_between("return'", "';")->to_s();
-			$imgpath = str_replace("'+x+'", '?', $imgpath);
+			$imgpath = str_replace("'+x+'", '%s', $imgpath);
 		}
-			
 		$this->pattern = $imgpath;
 		
 		$this->save();
+	}
+
+	public function samples() {
+		$thumbs = $this->thumbnails();
+		return array($thumbs[0], $thumbs[1]);
 	}
 }
 
@@ -159,7 +132,21 @@ class Fakku {
 	public static function create() {
 		return new Fakku();
 	}
-	
+
+	public static function cdn_to_src($cdn) {
+		$sample = new Text($cdn);
+		if ($sample->contain('http://1-ps.googleusercontent.com/h/www.fakku.net/')) {
+			$src = $sample->replace('http://1-ps.googleusercontent.com/h/www.fakku.net/', 'http://cdn.fakku.net/8041E1/t/images/')
+				->replace(',P20', '%20')
+				->replace('/x,', '/%')
+				->replace(',', '%')
+				->cut_before('.pagespeed.');
+			return $src->to_s();
+		} else {
+			return $cdn;
+		}
+	}
+
 	public function create_database() {
 		ORM::get_db()->query('CREATE TABLE `hmanga` (
 			`id` integer NOT NULL CONSTRAINT pid PRIMARY KEY AUTOINCREMENT,
@@ -169,16 +156,10 @@ class Fakku {
 			`date` varchar NOT NULL,
 			`desc` varchar NULL,
 			`tags` varchar NULL,
-			`sample` text NOT NULL,
 			`url` varchar NOT NULL,
 			`thumbs` text NULL,
 			`pattern` varchar NULL
 		)');
-	}
-	
-	public function fix_sample($sample) {
-		$sample = str_replace('cdn.fakku.net/8041E1/t/', 'www.fakku.net/', $sample);
-		return $sample;
 	}
 	
 	public function run() {
@@ -217,13 +198,14 @@ class Fakku {
 	public function action_init() {
 		// hardcoded page number for quick'n'dirty
 		$data = array(
-			array('http://www.fakku.net/manga/english', 343),
-			array('http://www.fakku.net/doujinshi/english', 258)
+			array('http://www.fakku.net/manga/english', 392),
+			array('http://www.fakku.net/doujinshi/english', 303)
 		);
 		foreach ($data as $dd) {
 			$starting_url = $dd[0];
 			for ($page=$dd[1]; $page>=1; $page--) { // grab from last page
 				$p = new Page($starting_url . ($page > 1 ? '/page/'.$page : ''));
+				echo $p->url()."<br>\n";
 				$infos = $this->extract_from_page($p);
 				$infos = array_reverse($infos);
 				foreach ($infos as $info) {
@@ -239,27 +221,34 @@ class Fakku {
 		$infos = array();
 		$html = new simple_html_dom();
 		$html->load($p->content());
+		// echo $p->content();
 		$content = $html->find('#content', 0);
 		foreach ($content->find('div.content-row') as $row) {
 			try {
 				$item = array();
-				
+				/*
 				$sample1 = $row->find('img.cover', 0);
 				$sample2 = $row->find('img.sample', 0);
-				if ($sample1->pagespeed_lazy_src) {
-					$item['sample'] = array($sample1->pagespeed_lazy_src, $sample2->pagespeed_lazy_src);
-				} else {
-					$item['sample'] = array($sample1->src, $sample2->src);
+				$attributes = array('pagespeed_high_res_src', 'pagespeed_lazy_src', 'src');
+				foreach ($attributes as $attr) {
+					if ($sample1->$attr) {
+						$item['sample'] = array(
+							self::cdn_to_src($sample1->$attr), 
+							self::cdn_to_src($sample2->$attr),
+						);
+						break;
+					}
 				}
-				
+				*/
 				$title = $row->find('h2 a', 0);
 				$item['url'] = rawurldecode($title->href);
 				$item['title'] = html_entity_decode($title->plaintext, ENT_COMPAT, 'UTF-8');
 				
 				$series = $row->find('div.left', 0)->find('a', 0);
 				if (!$series) { // malformed
-					echo 'Cancelled '.$item['url']."<br>";
+					echo 'Cancelled '.$item['url'].' fail parsing $series'."<br>\n";
 					continue;
+					// throw new Exception('fail parsing $series');
 				}
 				$item['series'] = html_entity_decode($series->plaintext, ENT_COMPAT, 'UTF-8');
 				
@@ -275,27 +264,17 @@ class Fakku {
 				$tags = $row->find('div.short', 1);
 				$item['tags'] = array();
 				foreach ($tags->find('a') as $a) {
-					$item['tags'][] = $a->plaintext;
+					$item['tags'][] = basename($a->href);
 				}
-				// if sample is cached cdn
-				foreach ($item['sample'] as $k => $surl) {
-					$sample = new Text($surl);
-					if ($sample->contain('http://1-ps.googleusercontent.com/h/www.fakku.net/')) {
-						$src = $sample->replace('http://1-ps.googleusercontent.com/h/www.fakku.net/', 'http://cdn.fakku.net/8041E1/t/images/')
-							->replace(',P20', '%20')
-							->replace('/x,', '/%')
-							->replace(',', '%')
-							->cut_before('.pagespeed.');
-						$item['sample'][$k] = $src->to_s();
-					}
-				}
+				$item['tags'] = '#'.implode('#', $item['tags']).'#';
+
 				$infos[] = $item;
-				// print_r($item);exit;
 			} catch (Exception $e) {
-				echo 'Cancelled '.$item['url'];
+				echo 'Cancelled '.$item['url'].' '.$e."<br>\n";
 				exit;
 			}
 		}
+		
 		return $infos;
 	}
 	
@@ -315,6 +294,7 @@ class Fakku {
 			$to_add = array();
 			while ($next) {
 				$p = new Page($starting_url . ($page > 1 ? '/page/'.$page : ''));
+				echo $p->url()."<br>\n";
 				$infos = $this->extract_from_page($p);
 				// if (strpos($p->content(), 'base64')) {print_r($p->content());print_r($infos);exit;}//debug
 				// if (strpos($p->content(), 'ps.googleusercontent.com')) {print_r($p->content());print_r($infos);exit;}//debug
@@ -345,6 +325,8 @@ class Fakku {
 			'series' => explode(' ', @$_POST['series']),
 			'tags' => explode(' ', @$_POST['tags']),
 		);
+		$order_choices = array('date desc', 'date asc', 'title asc', 'title desc', 'id desc', 'id asc');
+
 		$perpage = isset($_POST['perpage']) ? (int)$_POST['perpage'] : 20;
 		$order = isset($_POST['order']) ? $_POST['order'] : 'date desc';
 		$curpage = isset($_POST['curpage']) ? (int)$_POST['curpage'] : 1;
@@ -353,6 +335,7 @@ class Fakku {
 		} else if (isset($_POST['prev'])) {
 			$curpage--;
 		}
+		if ($curpage < 1) $curpage = 1;
 	?>
 		<form class="form-horizontal" method="post">
 			<div class="control-group">
@@ -418,24 +401,11 @@ class Fakku {
 				<div class="span6">
 					<label class="control-label">Order</label>
 					<div class="controls">
-						<label class="radio inline">
-							<input type="radio" name="order" value="date desc" <?php echo $order=='date desc'?'checked':''; ?>> date DESC
-						</label>
-						<label class="radio inline">
-							<input type="radio" name="order" value="date asc" <?php echo $order=='date asc'?'checked':''; ?>> date ASC
-						</label>
-						<label class="radio inline">
-							<input type="radio" name="order" value="title asc" <?php echo $order=='title asc'?'checked':''; ?>> title ASC
-						</label>
-						<label class="radio inline">
-							<input type="radio" name="order" value="title desc" <?php echo $order=='title desc'?'checked':''; ?>> title DESC
-						</label>
-						<label class="radio inline">
-							<input type="radio" name="order" value="id desc" <?php echo $order=='id desc'?'checked':''; ?>> ID DESC
-						</label>
-						<label class="radio inline">
-							<input type="radio" name="order" value="id asc" <?php echo $order=='id asc'?'checked':''; ?>> ID ASC
-						</label>
+						<?php foreach ($order_choices as $choice) : ?>
+							<label class="radio inline">
+								<input type="radio" name="order" value="<?php echo $choice;?>" <?php echo $order==$choice?'checked':''; ?>> <?php echo $choice; ?>
+							</label>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
@@ -451,14 +421,15 @@ class Fakku {
 		$q = Model::factory('Hmanga')
 			->limit($perpage)
 			->offset(($curpage-1) * $perpage);
-		switch ($order) {
-			default:
-			case 'date desc': $q->order_by_desc('date'); break;
-			case 'date asc': $q->order_by_asc('date'); break;
-			case 'title asc': $q->order_by_asc('title'); break;
-			case 'title desc': $q->order_by_desc('title'); break;
-			case 'id asc': $q->order_by_asc('id'); break;
-			case 'id desc': $q->order_by_desc('id'); break;
+		foreach ($order_choices as $choice) {
+			if ($order == $choice) {
+				list($column, $direction) = explode(' ', $choice);
+				if ($direction == 'desc') {
+					$q->order_by_desc($column);
+				} else {
+					$q->order_by_asc($column);
+				}
+			}
 		}
 		// filter
 		foreach ($search['title'] as $term) { if ($term) {
@@ -484,7 +455,7 @@ class Fakku {
 	?>
 		<?php foreach ($result as $hmanga) : ?>
 			<div class="span6 result">
-				<?php $samples = explode('#', $this->fix_sample($hmanga->sample)); ?>
+				<?php $samples = $hmanga->samples(); ?>
 				<a href="?action=view&id=<?php echo $hmanga->id; ?>">
 					<img src="<?php echo $samples[0];?>" alt="th">
 					<img src="<?php echo $samples[1];?>" alt="th">
@@ -495,6 +466,7 @@ class Fakku {
 					<dt>Series</dt><dd><?php echo $hmanga->series; ?></dd>
 					<dt>Artist</dt><dd><?php echo $hmanga->artist; ?></dd>
 					<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
+					<dt>Page</dt><dd><?php echo $hmanga->count(); ?></dd>
 					<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
 					<dt><a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a></dt>
 					<dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a></dd>
@@ -515,9 +487,6 @@ class Fakku {
 	public function action_view() {
 		$id = $_GET['id'];
 		$hmanga = Model::factory('Hmanga')->find_one($id);
-		if (!$hmanga->thumbs || !$hmanga->pattern) {
-			$hmanga->get_detail();
-		}
 		?>
 		
 		<dl class="dl-horizontal">
@@ -526,6 +495,7 @@ class Fakku {
 			<dt>Artist</dt><dd><?php echo $hmanga->artist; ?></dd>
 			<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
 			<dt>Description</dt><dd><?php echo $hmanga->desc; ?></dd>
+			<dt>Page</dt><dd><?php echo $hmanga->count(); ?></dd>
 			<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
 			<dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a></dd>
 		</dl>

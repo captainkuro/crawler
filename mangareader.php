@@ -4,6 +4,7 @@ class Mangareader extends Manga_Crawler {
 	private $sitename = 'http://www.mangareader.net';
 	protected $enable_single_chapter = true;
 	protected $column_span = 3;
+	protected $reverse_choice_chapters = true;
 	protected $reverse_download_chapters = true;
 	
 	public function display_header() {

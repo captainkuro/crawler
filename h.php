@@ -553,8 +553,9 @@ function hfh_gal($gal) {
 }
 
 function rule34xxx($url) {
-// http://thumbs.rule34.xxx/r34/1040/thumbnail_c17cd03f02e1e4691a511219bc0e69e0.jpeg?1040147
-// http://img.rule34.xxx/rule34/images/1046/d23f51ac373a14012f5f85129189903f.jpeg?1046207
+// img2.rule34.xxx/rule34/thumbnails/1202/thumbnail_fc0d335a14ffbdbb861bdabb8afd8bd6.jpeg?1228439
+// http://img.rule34.xxx/rule34//images/1202/fc0d335a14ffbdbb861bdabb8afd8bd6.jpeg
+
 	$continue = true;
 	$base = 'http://rule34.xxx/index.php';
 	$tags = Text::create($url)->regex_match('/tags=([^&]+)/');
@@ -566,11 +567,13 @@ function rule34xxx($url) {
 		do { if ($p->curr_line()->contain('src="')) {
 			$src = $p->curr_line()->dup()
 				->cut_between('src="', '"')
-				->replace('/thumbs.', '/img.')
-				->replace('/r34/', '/rule34/images/')
+				->replace('img2.', 'img.')
+				->replace('/thumbnails/', '/images/')
 				->replace('/thumbnail_', '/')
+				->cut_before('?')
 				->to_s()
 			;
+
 			echo "<a href='$src'>$tags</a><br>\n";
 		}} while (!$p->next_line()->contain('<center>'));
 		$p->reset_line();
