@@ -33,8 +33,6 @@ cdn.fakku.net/8041E1/c/manga/t/theworldisyours_e/images/001.jpg
 */
 include 'class/idiorm.php';
 include 'class/paris.php';
-include_once 'class/text.php';
-include_once 'class/page.php';
 include 'class/simple_html_dom.php';
 
 class Hmanga extends Model {
@@ -456,7 +454,7 @@ class Fakku {
 		<?php foreach ($result as $hmanga) : ?>
 			<div class="span6 result">
 				<?php $samples = $hmanga->samples(); ?>
-				<a href="?action=view&id=<?php echo $hmanga->id; ?>">
+				<a href="?action=view&id=<?php echo $hmanga->id; ?>" title="<?php echo $hmanga->desc; ?>">
 					<img src="<?php echo $samples[0];?>" alt="th">
 					<img src="<?php echo $samples[1];?>" alt="th">
 				</a>

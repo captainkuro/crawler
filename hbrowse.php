@@ -10,7 +10,6 @@ parse all the data, insert to table 'hbrowse.book'
 */
 include 'class/idiorm.php';
 include 'class/paris.php';
-include 'class/simple_html_dom.php';
 
 class Hmanga extends Model {
 
@@ -374,9 +373,9 @@ class Hbrowse {
 		?>
 		<ul class="thumbnails">
 		<?php foreach ($thumbnails as $i => $th) : ?>
-			<li>
+			<li style="width:100px;height:150px">
 				<a href="<?php echo $pages[$i]; ?>">
-					<img src="<?php echo $th; ?>" alt="<?php echo $hmanga->title; ?>">
+					<img src="<?php echo $th; ?>" alt="<?php echo $hmanga->title; ?>"/>
 				</a>
 			</li>
 		<?php endforeach; ?>
