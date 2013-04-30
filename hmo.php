@@ -35,7 +35,7 @@ class Hmanga extends Model {
 
 	public function thumbnails() {
 		$id = $this->real_id;
-		$n = $this->pages;
+		$n = min($this->pages, 8);
 		$thumbs = array();
 		for ($i=1; $i<=$n; $i++) {
 			$thumbs[] = sprintf(self::$thumb_pattern, $id, $i);
@@ -57,6 +57,7 @@ class Hmanga extends Model {
 		$thumbs = array(
 			sprintf(self::$thumb_pattern, $id, 1),
 			sprintf(self::$thumb_pattern, $id, 2),
+			sprintf(self::$thumb_pattern, $id, 3),
 		);
 		return $thumbs;
 	}
@@ -204,6 +205,7 @@ class HentaiMangaOnline {
 			$description = $description->replace('<br>', "\n")->replace('<br/>', "\n")->replace('<br />', "\n");
 			$part = $description->cut_before("<div id='watch_action'>") . $description->cut_rafter('</div>');
 			$ret['description'] = html_entity_decode(strip_tags($part), ENT_COMPAT, 'UTF-8');
+			$p->reset_line();
 		} else {
 			$ret['description'] = '';
 			$p->reset_line();
@@ -211,11 +213,16 @@ class HentaiMangaOnline {
 		// tags
 		$p->go_line('Tags: ');
 		$ret['tags'] = array();
-		$raw = $p->curr_line()->dup()->cut_until('<br/>');
-		foreach ($raw->extract_to_array('">', '<') as $tag) {
-			$ret['tags'][] = html_entity_decode($tag, ENT_COMPAT, 'UTF-8');
+		if ($p->curr_line()->contain('Tags: ')) {
+			$raw = $p->curr_line()->cut_until('<br/>');
+			foreach ($raw->extract_to_array('">', '<') as $tag) {
+				$ret['tags'][] = html_entity_decode($tag, ENT_COMPAT, 'UTF-8');
+			}
+			$ret['tags'] = '#'.implode('#', $ret['tags']).'#';
+		} else {
+			$ret['tags'] = '##';
+			$p->reset_line();
 		}
-		$ret['tags'] = '#'.implode('#', $ret['tags']).'#';
 		
 		$p->go_line('id="images"');
 		// # images
@@ -242,7 +249,7 @@ class HentaiMangaOnline {
 		$stop = false;
 		$pre_infos = array();
 		while (!$stop) {
-			$p = new Page($start.($i>1 ? 'page/'.$i.'/':''));
+			$p = new Page($start.($page>1 ? 'page/'.$page.'/':''));
 			$chunk = $this->extract_from_list($p);
 			foreach ($chunk as $row) {
 				if ($this->is_already_exist($row)) {
@@ -265,11 +272,158 @@ class HentaiMangaOnline {
 	}
 	
 	public function action_search() {
+		$order_choices = array('date desc', 'date asc', 'title asc', 'title desc', 'id desc', 'id asc', 'pages asc', 'pages desc');
+		$order = isset($_POST['order']) ? $_POST['order'] : 'date desc';
+
+		$perpage = isset($_POST['perpage']) ? (int)$_POST['perpage'] : 20;
+		$curpage = isset($_POST['curpage']) ? (int)$_POST['curpage'] : 1;
+		if (isset($_POST['next'])) {
+			$curpage++;
+		} else if (isset($_POST['prev'])) {
+			$curpage--;
+		}
+		if ($curpage < 1) $curpage = 1;
+
+		$result = $this->search($perpage, $curpage, $order, @$_POST['any'], @$_POST['title']);
+	?>
+		<form class="form-horizontal" method="post">
+			<div class="control-group">
+				<div class="span6">
+					<label class="control-label">Any</label>
+					<div class="controls">
+						<input type="text" name="any" value="<?php echo @$_POST['any']; ?>">
+					</div>
+				</div>
+			
+				<div class="span6">
+					<label class="control-label">Title</label>
+					<div class="controls">
+						<input type="text" name="title" value="<?php echo @$_POST['title']; ?>">
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="span3">
+					<label class="control-label">Per Page</label>
+					<div class="controls">
+						<input type="text" name="perpage" value="<?php echo $perpage; ?>" class="input-mini">
+					</div>
+				</div>
+				
+				<div class="span3">
+					<label class="control-label">Page</label>
+					<div class="controls">
+						<input type="text" name="curpage" value="<?php echo $curpage; ?>" class="input-mini">
+					</div>
+				</div>
+				
+				<div class="span6">
+					<label class="control-label">Order</label>
+					<div class="controls">
+						<?php foreach ($order_choices as $choice) : ?>
+							<label class="radio inline">
+								<input type="radio" name="order" value="<?php echo $choice;?>" <?php echo $order==$choice?'checked':''; ?>> <?php echo $choice; ?>
+							</label>
+						<?php endforeach; ?>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<button type="submit" class="btn" name="search">Search</button>
+					<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+				</div>
+			</div>
 		
+			<?php foreach ($result as $hmanga) : ?>
+				<div class="span6 result" style="margin-bottom:10px">
+					<?php echo "{$hmanga->title} | {$hmanga->pages} pages | {$hmanga->date}"; ?>
+					<a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a>
+					<a href="<?php echo HentaiMangaOnline::$base.$hmanga->url; ?>">ORIGIN</a>
+					<br>
+					<?php $samples = $hmanga->samples(); ?>
+					<a href="?action=view&id=<?php echo $hmanga->id; ?>" title="<?php echo $hmanga->description; ?>">
+						<?php foreach ($samples as $img) : ?>
+							<img src="<?php echo $img;?>" alt="th" width="150" height="234">
+						<?php endforeach; ?>
+					</a>
+					<?php echo str_replace('#', ', ', trim($hmanga->tags, '#')); ?>
+				</div>
+			<?php endforeach; ?>
+
+			<div class="control-group" style="display:block;clear:both">
+				<div class="controls">
+					<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+				</div>
+			</div>
+		</form>
+		<?php
+	}
+
+	public function search($perpage, $curpage, $order, $any, $title) {
+		$q = Model::factory('Hmanga')
+			->limit($perpage)
+			->offset(($curpage-1) * $perpage);
+		list($column, $direction) = explode(' ', $order);
+		if ($direction == 'desc') {
+			$q->order_by_desc($column);
+		} else {
+			$q->order_by_asc($column);
+		}
+		// filter
+		$search_any = Text::parse_search_term($any);
+		foreach ($search_any['include'] as $term) {
+			$q->where_raw('(title LIKE ? OR description LIKE ? OR tags LIKE ?)', 
+				array("%{$term}%", "%{$term}%", "%{$term}%"));
+		}
+		foreach ($search_any['exclude'] as $term) {
+			$q->where_raw('(title NOT LIKE ? AND description NOT LIKE ? AND tags NOT LIKE ?)', 
+				array("%{$term}%", "%{$term}%", "%{$term}%"));
+		}
+
+		$search_title = Text::parse_search_term($title);
+		foreach ($search_title['include'] as $term) {
+			$q->where_like('title', "%{$term}%");
+		}
+		foreach ($search_title['exclude'] as $term) {
+			$q->where_not_like('title', "%{$term}%");
+		}
+		return $q->find_many();
 	}
 	
 	public function action_view() {
+		$id = $_GET['id'];
+		$hmanga = Model::factory('Hmanga')->find_one($id);
+		$thumbnails = $hmanga->thumbnails();
+		$pages = $hmanga->pages();
+
+		?>
 		
+		<dl class="dl-horizontal">
+			<dt>Title</dt><dd><a href="<?php echo HentaiMangaOnline::$base.$hmanga->url; ?>"><?php echo $hmanga->title; ?></a></dd>
+			<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
+			<dt>Description</dt><dd><?php echo $hmanga->description; ?></dd>
+			<dt>Page</dt><dd><?php echo $hmanga->pages; ?></dd>
+			<dt>Tags</dt><dd><?php echo str_replace('#', ', ', trim($hmanga->tags, '#')); ?></dd>
+			<dd><a href="<?php echo HentaiMangaOnline::$base.$hmanga->url; ?>">ORIGIN</a></dd>
+		</dl>
+		
+		<ul class="thumbnails">
+		<?php foreach ($thumbnails as $i => $th) : ?>
+			<li>
+				<a href="<?php echo $pages[$i]; ?>">
+					<img src="<?php echo $th; ?>" alt="<?php echo $hmanga->title; ?>">
+				</a>
+			</li>
+		<?php endforeach; ?>
+		</ul>
+		<?php for ($i=count($thumbnails), $n=count($pages); $i<$n; $i++) : ?>
+			<a href="<?php echo $pages[$i]; ?>"><?php echo $hmanga->title; ?></a>
+		<?php endfor; ?>
+
+		<?php
 	}
 	
 	public function action_test() {
@@ -288,6 +442,20 @@ class HentaiMangaOnline {
 				print_r($row->as_array());
 			}
 			echo "</pre>";
+		}
+	}
+
+	public function action_empty_tags() {
+		$empties = Model::factory('Hmanga')
+			->where('tags', '##')
+			->find_many();
+		foreach ($empties as $hmanga) {
+			$p = new Page(HentaiMangaOnline::$base.$hmanga->url);
+			echo $p->url().'<br>'.PHP_EOL;
+			$new_info = $this->extract_from_page($p);
+			echo $new_info['tags'].'<br><br>'.PHP_EOL;
+			$hmanga->tags = $new_info['tags'];
+			$hmanga->save();
 		}
 	}
 }

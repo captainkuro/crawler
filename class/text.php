@@ -244,7 +244,7 @@ class Text {
 	// "alpha -beta +gamma -tetha" => array('include'=>array('alpha','gamma'), 'exclude'=>array('beta','tetha'))
 	public static function parse_search_term($search) {
 		$terms = explode(' ', $search);
-		$result = array();
+		$result = array('include'=>array(), 'exclude'=>array());
 		foreach ($terms as $term) {
 			if (!$term) continue;
 			if ($term[0] == '-') {
