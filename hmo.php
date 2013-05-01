@@ -264,10 +264,16 @@ class HentaiMangaOnline {
 		$pre_infos = array_reverse($pre_infos);
 		foreach ($pre_infos as $info) {
 			echo $info['url']."<br>\n";flush();
+			if ($this->is_already_exist($info)) continue;
 			$p = new Page(self::$base.$info['url']);
-			$data = $this->extract_from_page($p);
-			$data = $info + $data;
-			$this->add_hmanga($data);
+			try {
+				$data = $this->extract_from_page($p);
+				$data = $info + $data;
+				$this->add_hmanga($data);
+			} catch (Exception $e) {
+				echo '<pre>'.$e."</pre><br>\n";die();
+			}
+				
 		}
 	}
 	
@@ -403,6 +409,7 @@ class HentaiMangaOnline {
 		
 		<dl class="dl-horizontal">
 			<dt>Title</dt><dd><a href="<?php echo HentaiMangaOnline::$base.$hmanga->url; ?>"><?php echo $hmanga->title; ?></a></dd>
+			<dt>Real ID</dt><dd><?php echo $hmanga->real_id; ?></dd>
 			<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
 			<dt>Description</dt><dd><?php echo $hmanga->description; ?></dd>
 			<dt>Page</dt><dd><?php echo $hmanga->pages; ?></dd>
@@ -456,6 +463,26 @@ class HentaiMangaOnline {
 			echo $new_info['tags'].'<br><br>'.PHP_EOL;
 			$hmanga->tags = $new_info['tags'];
 			$hmanga->save();
+		}
+	}
+
+	public function is_duplicate($hmanga) {
+		$n = ORM::for_table('hmanga')
+			->where('real_id', $hmanga->real_id)
+			->where_not_equal('id', $hmanga->id)
+			->count();
+		return $n > 0;
+	}
+
+	public function action_remove_duplicate() {
+		$all = Model::factory('Hmanga')
+			->order_by_desc('id')
+			->find_many();
+		foreach ($all as $hmanga) {
+			if ($this->is_duplicate($hmanga)) {
+				echo $hmanga->id.PHP_EOL;
+				$hmanga->delete();
+			}
 		}
 	}
 }
