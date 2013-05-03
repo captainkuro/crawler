@@ -656,27 +656,7 @@ function neechan($url) {
 if ($_POST) {
 	$parsed = parse_url($start_url);
 	// based on the $start_url, call appropriate function
-	if (preg_match('/fakku\.net/', $start_url)) {
-		require_once('class/spider_fakku.php'); 
-		$s = new Spider_Fakku($start_url);
-		$s->go();
-	} else if (preg_match('/lu\.scio\.us/', $start_url)) {
-		require_once 'class/spider_luscious.php';
-		$s = new Spider_Luscious($start_url);
-		$s->go();
-	} else if (preg_match('/gallery\.hentaifromhell\.net.*hfhgallery/', $start_url)) {
-		require_once 'class/spider_hfhgallery1.php';
-		$s = new Spider_Hfhgallery1($start_url);
-		$s->go();
-	} else if (preg_match('/gallery1?\.hentaifromhell\.net.*hfh/', $start_url)) {
-		require_once 'class/spider_hfhgallery1.php';
-		$s = new Spider_Hfhgallery1($start_url);
-		$s->go();
-	} else if (preg_match('/gallery\.hentaifromhell\.net.*level=album/', $start_url)) {
-		require_once 'class/spider_hfhgallery2.php';
-		$s = new Spider_Hfhgallery2($start_url);
-		$s->go();
-	} else if (preg_match('/hentairules\.net\/gal\//', $start_url)) {
+	if (preg_match('/hentairules\.net\/gal\//', $start_url)) {
 		hentairules_realm($start_url);
 	} else {
 		// Simple mapping host => function

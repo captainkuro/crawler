@@ -343,7 +343,7 @@ class HentaiMangaOnline {
 			</div>
 		
 			<?php foreach ($result as $hmanga) : ?>
-				<div class="span6 result" style="margin-bottom:10px">
+				<div class="span6 result" style="height:350px">
 					<?php echo "{$hmanga->title} | {$hmanga->pages} pages | {$hmanga->date}"; ?>
 					<a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a>
 					<a href="<?php echo HentaiMangaOnline::$base.$hmanga->url; ?>">ORIGIN</a>
