@@ -81,19 +81,28 @@ class Hmanga extends Model {
 	// Fill thumbs and pattern
 	public function get_detail() {
 		$p = new Page(Fakku::$base . $this->url . '/read');
+		$content = new Text($p->content());
 		
-		$p->go_line('var data = {');
-		if ($p->curr_line()->contain('var data')) {
+		if ($content->contain('var data = {')) {
+			$p->go_line('var data = {');
 			$json = $p->curr_line()->dup()->cut_between(' = ', ';')->to_s();
-		} else {
-			$p->reset_line();
+			$obj = json_decode($json);
+			$js_thumbs = $obj->thumbs;
+		} else if ($content->contain('var data={')) {
 			$p->go_line('var data={');
 			$json = $p->curr_line()->dup()->cut_between('data=', ';')->to_s();
+			$obj = json_decode($json);
+			$js_thumbs = $obj->thumbs;
+		} else if ($content->contain('window.params.thumbs')) {
+			$p->go_line('window.params.thumbs');
+			$json = $p->curr_line()->cut_between('=', ';')->to_s();
+			$js_thumbs = json_decode($json);
+		} else {
+			throw new Exception('where is thumbs?');
 		}
 
-		$obj = json_decode($json);
 		$thumbs = array();
-		foreach ($obj->thumbs as $tpath) {
+		foreach ($js_thumbs as $tpath) {
 			$thumbs[] = basename($tpath);
 		}
 		$this->thumbs = implode('#', $thumbs);
