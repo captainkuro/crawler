@@ -42,9 +42,13 @@ class Hmanga extends Model {
 
 	public function thumb_src($filename) {
 		$pattern = new Text($this->pattern);
+		// hack
+		$hack_search = 'http://cdn.fakku.net/8041E1/t/';
+		$hack_replace = 'http://www.fakku.net/';
 		$thumb_pre = $pattern
 			->replace('/images/', '/thumbs/')
 			->replace('/c/manga/', '/t/images/manga/')
+			->replace($hack_search, $hack_replace)
 			->dirname()
 			->to_s();
 		return $thumb_pre.'/'.$filename;
@@ -464,8 +468,8 @@ class Fakku {
 			<div class="span6 result">
 				<?php $samples = $hmanga->samples(); ?>
 				<a href="?action=view&id=<?php echo $hmanga->id; ?>" title="<?php echo $hmanga->desc; ?>">
-					<img src="<?php echo $samples[0];?>" alt="th">
-					<img src="<?php echo $samples[1];?>" alt="th">
+					<img src="<?php echo $samples[0];?>" alt="th" width="100" height="140">
+					<img src="<?php echo $samples[1];?>" alt="th" width="100" height="140">
 				</a>
 
 				<dl class="dl-horizontal result">

@@ -91,7 +91,7 @@ function bobx_realm($start_url) {
 		while ($line = $c->readline()) {
 			if (Crawler::is_there($line, '<img src="/thumbnail/')) {
 				$text = Crawler::extract($line, '<img src="', '"');
-				$text = str_replace('/thumbnail', '', $text);
+				$text = str_replace('/thumbnail/', '', $text);
 				$text = str_replace('-preview', '', $text);
 				$file = basename($text);
 				echo "<a href='{$base_url}{$text}'>{$file}</a><br />\n";
