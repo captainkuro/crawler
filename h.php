@@ -604,11 +604,18 @@ function pururin($url) {
 	while ($next) {
 		$p = new Page($url);
 		$p->go_line('class="thumblist"');
-		$thumbs = $p->next_line()->extract_to_array('src="', '"');
-		foreach ($thumbs as $k => $v) {
-			$f = preg_replace('/([^-]+)t\//', '$1f/', $v);
-			echo "<a href='$base$f'>$title</a><br>\n";
+		$hrefs = $p->next_line()->extract_to_array('href="', '"');
+		foreach ($hrefs as $href) {
+			$q = new Page($base.$href);
+			$q->go_line('class="b"');
+			$src = $q->curr_line()->cut_between('src="', '"');
+			echo "<a href='$base$src'>$title</a><br>\n";
 		}
+		// $thumbs = $p->next_line()->extract_to_array('src="', '"');
+		// foreach ($thumbs as $k => $v) {
+		// 	$f = preg_replace('/([^-]+)t\//', '$1f/', $v);
+		// 	echo "<a href='$base$f'>$title</a><br>\n";
+		// }
 		//now all in 1 page
 		$next = false;
 		/*
@@ -633,15 +640,22 @@ function neechan($url) {
 // http://neechan.net/Crystal+Break/1/
 	$title = basename(dirname($url)).'-'.basename($url);
 	$p = new Page($url);
-	$p->go_line('onclick="return wpm_nxt_pag(this, event);"> <img src="');
-	$src = $p->curr_line()->dup()->cut_between('onclick="return wpm_nxt_pag(this, event);"> <img src="', '"')->to_s();
-	$dir = dirname($src) . '/';
-	$p2 = new Page($dir);
-	$p2->go_line('href="');
-	while ($p2->next_line()->contain('href="')) {
-		$fname = $p2->curr_line()->dup()->cut_between('href="', '"')->to_s();
-		echo "<a href='$dir$fname'>$title</a><br>\n";
+	$p->go_line('Pages navigation:');
+	$part = $p->curr_line()->cut_after('Pages navigation:');
+	$pages = $part->extract_to_array('href="', '"');
+	foreach ($pages as $puri) {
+		$q = new Page($puri);
+		$q->go_line('onclick="return wpm_nxt_pag(this, event);"> <img src="');
+		$src = $q->curr_line()->dup()->cut_between('onclick="return wpm_nxt_pag(this, event);"> <img src="', '"')->to_s();
+		echo "<a href='$src'>$title</a><br>\n";
 	}
+	// $dir = dirname($src) . '/';
+	// $p2 = new Page($dir);
+	// $p2->go_line('href="');
+	// while ($p2->next_line()->contain('href="')) {
+	// 	$fname = $p2->curr_line()->dup()->cut_between('href="', '"')->to_s();
+	// 	echo "<a href='$dir$fname'>$title</a><br>\n";
+	// }
 }
 
 ?>

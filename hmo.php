@@ -271,7 +271,7 @@ class HentaiMangaOnline {
 				$data = $info + $data;
 				$this->add_hmanga($data);
 			} catch (Exception $e) {
-				echo '<pre>'.$e."</pre><br>\n";die();
+				echo '<pre>'.$e."</pre><br>\n";//die();
 			}
 				
 		}
