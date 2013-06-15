@@ -370,12 +370,14 @@ function sankakucomplex($url) {
 		$base = 'http://chan.sankakucomplex.com';
 	}
 	$page = 1;
+	$tag = uniqid();
 	do {
 		if (isset($_GET['limit'])) {
 			if ($page > $_GET['limit']) break;
 		}
 		$purl = $url.'&page='.$page;
 		$P = new Page($purl, array('become_firefox'=>true));
+		echo "$purl<br>\n";
 		$T = new Text($P->content());
 		$a = $T->extract_to_array('href="', '"');
 		foreach ($a as $i => $e) {
@@ -400,11 +402,11 @@ function sankakucomplex($url) {
 				$P->go_line('id="highres"');
 			}
 			$img = $P->curr_line()->cut_between('href="', '"')->to_s();
-			$P->reset_line();
-			$P->go_line('id="post_old_tags"');
-			$tag = $P->curr_line()->cut_between('value="', '"')->substring(0, 150)->to_s(); // max 100 karakter
+			// $P->reset_line();
+			// $P->go_line('id="post_old_tags"');
+			// $tag = $P->curr_line()->cut_between('value="', '"')->substring(0, 150)->to_s(); // max 100 karakter
 			echo "<a href='$img'>$tag</a><br />\n";
-			sleep(1); // 429 too many requests
+			sleep(2); // 429 too many requests
 		}
 		$page++;
 	} while (true);

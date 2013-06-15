@@ -43,7 +43,7 @@ class Hmanga extends Model {
 	public function thumb_src($filename) {
 		$pattern = new Text($this->pattern);
 		// hack
-		$hack_replace = 'http://www.fakku.net/';
+		$hack_replace = 'http://www.fakku.net/images/';
 		$thumb_pre = $pattern
 			->replace('/images/', '/thumbs/')
 			->replace('/c/manga/', '/t/images/manga/')
@@ -51,6 +51,7 @@ class Hmanga extends Model {
 			->replace('http://cdn.fakku.net/8041E1/t/', $hack_replace)
 			->replace('http://c.fakku.net/', $hack_replace)
 			->replace('http://img.fakku.net/', $hack_replace)
+			->replace('/images/images/', '/images/')
 			->dirname()
 			->to_s();
 		return $thumb_pre.'/'.$filename;
