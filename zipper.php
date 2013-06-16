@@ -36,7 +36,7 @@ include '_header.php'; // loaded with bootstrap
 <?php
 if ($_POST) {
 	$path = $_POST['path'];
-	$ext = $_POST['ext'] ? $_POST['ext'] : 'zip';
+	$ext = isset($_POST['ext']) ? $_POST['ext'] : 'zip';
 	echo $path.PHP_EOL;
 	$dir = new DirectoryIterator($path);
 	$batch = '';
