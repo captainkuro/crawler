@@ -1,239 +1,73 @@
 <?php
-include '_header.php';
-/**
- * Spider for mangastream.com
- *
- * Requirements:
- * - PHP > 5.1.6
- * - PHP GD extension (check your phpinfo())
- */
-require 'crawler.php';
-extract($_POST);
-?>
-
-<div class="container">
-	<form class="form-horizontal" method="POST" action="">
-		<fieldset>
-			<legend>Mangastream.com</legend>
-			<div class="control-group">
-				<label class="control-label">URL FOLDER</label>
-				<div class="controls">
-					<input type="text" name="base" value="<?php echo @$base;?>">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label">Prefix</label>
-				<div class="controls">
-					<input type="text" name="prefix" value="<?php echo @$prefix;?>">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label">Infix</label>
-				<div class="controls">
-					<input type="text" name="infix" value="<?php echo @$infix;?>">
-					<p class="help-block"> optional</p>
-				</div>
-			</div>
-			<div class="form-actions">
-				<button class="btn btn-primary">Submit</button>
-			</div>
-		</fieldset>
-	</form>
-<?php
-//http://mangastream.com/read/kekkaishi/33956873/1
-$base = @$_POST['base'];
-$prefix = @$_POST['prefix'];
-$sitename = "http://mangastream.com";
-$dir = 'd:/temp/manga/'; // CHANGEME
-$MODE = isset($_GET['mode']) ? $_GET['mode'] : 3; 
-/*
-	mode 1 itu jadul pisan, 
-	mode 2 itu yg gambar dipotong2, 
-	mode 3 itu 1 page 1 image, mulai 12 juli 2011
-*/
-
-if ($base) {
-	if ($MODE == 3) {
-		$P = new Page($base);
-		// RETRIEVE CHAPTER NAME
-		$P->go_line('id="top"');
-		$P->go_line('<h3>');
-		if (!$infix) {
-			$chapter = $P->next_line()->dup()
-				->cut_between('<strong>', '</s')->to_s();
-		} else {
-			$chapter = $infix;
-		}
-		// RETRIEVE PAGES
+// http://mangastream.com/manga/one_piece
+// http://mangastream.com/read/one_piece/713/1967/1
+class Mangastream extends Manga_Crawler {
+	protected $enable_single_chapter = true;
+	
+	// need to be overridden, return array[desc,url,infix]
+	// $base is URL submitted
+	public function extract_info($base) {
+		// crawl chapters
+		$p = new Page($base);
+		$p->go_line('<table class="table table-striped">');
+		// print_r($p);exit;//debug
+		$list = array();
+		do {
+			if ($p->curr_line()->contain('href="')) {
+				$line = $p->curr_line();
+				$href = $line->cut_between('href="', '"');
+				$desc = $line->cut_between('">', '</a');
+				$infix = $desc->regex_match('/(\d+)/');
+				$infix = $infix[1];
+				
+				$list[] = array(
+					'url' => $href->to_s(),
+					'desc' => $desc->to_s(),
+					'infix' => $infix,
+				);
+			}
+		} while (!$p->next_line()->contain('</table>'));
+		return $list;
+	}
+	
+	// must be overridden, echo html of links
+	// $v contain [url,desc,infix]
+	public function crawl_chapter($v) {
+		$ifx = Text::create($v['infix'])->pad(3)->to_s();
+		$p = new Page($v['url']);
+		// grab list of pages
+		$p->go_line('Page 1');
 		$pages = array();
-		$P->go_line('id="controls"');
-		do {if ($P->curr_line()->regex_match('/>\d+</')) {
-			$pages[] = $P->curr_line()->dup()->cut_between('href="', '"');
-		}} while(!$P->next_line()->contain('class="spacer"'));
+		while (!$p->next_line()->contain('</ul>')) {
+			$line = $p->curr_line();
+			if ($line->contain('href="')) {
+				$pages[] = $line->cut_between('href="', '"')->to_s();
+			}
+		}
+		// grab current image
+		$this->crawl_page($p, $ifx);
 		
-		// CYCLE THROUGH PAGES
-		$chatext = Crawler::n($chapter, 3);
-		$i = 0;
-		echo '<ul>';
-		foreach ($pages as $page) { $i++;
-			$Q = new Page($sitename . $page);
-			// echo $base.$page.'<br />'; // debug
-			$Q->go_line('id="p"');
-			// $Q->next_line();
-			$img = $Q->curr_line()->dup()
-				->cut_between('src="', '"')->to_s();
-			$text = Crawler::n($i, 3);
-			$ext = Crawler::cutafter(basename($img), '.');
-			echo "<li><a href='$img'>$prefix-$chatext-$text.$ext</a></li>";
+		array_shift($pages);
+		foreach ($pages as $purl) {
+			$p = new Page($purl);
+			$this->crawl_page($p, $ifx);
 		}
-		echo '</ul>';
-		exit;
-	}
-	// else, $MODE 2/1
-	
-    $c = new Crawler($base);
-	// echo $c->curline;
-	// RETRIEVE CHAPTER NAME
-	$c->go2linewhere('selected="selected"');
-	if (!$infix) {
-		$chapter = Crawler::extract($c->curline, 'selected="selected">', '<');
-	} else {
-		$chapter = $infix;
-	}
-	// Retrieving pages
-    $pages = array();
-	$c->go2linewhere('<select onchange="window.open(');
-	while ($line = $c->readline()) {
-		//print_r($line);
-		if (strpos($line, 'value="') !== false) {
-			$pages[] = Crawler::extract($line, 'value="', '"');
-		} else if (strpos($line, '</select>') !== false) {
-			break;
-		}
-	}
-    $c->close();
-    
-	function the_comp($a, $b) {
-		if ($a['zindex'] == $b['zindex']) return 0;
-		return ((int)$a['zindex'] < (int)$b['zindex']) ? -1 : 1;
+		/*
+		Manga_Crawler::multiProcess(4, $pages, array($this, 'crawl_page'), array($ifx));
+		*/
 	}
 	
-	$j = 0;
-    foreach ($pages as $page) { $j++; // if (!in_array($j, array(20))) continue; // uncomment if only for several page
-		$success = false;
-		$i = 0;
-		$chatext = Crawler::n($chapter, 3);
-		while (!$success) {
-			echo $sitename.$page . "<br />\n";flush();
-			$c = new Crawler($sitename.$page);
-			if ($MODE == 1) { // MODE 1 BEGIN
-				// Metode lama
-				$c->go2linewhere('id="p"');
-				//$c->readline();
-				$img = Crawler::extract($c->curline, 'src="', '"');
-				if (trim($img)) {
-					echo '<a href="'.$img.'">'.$prefix.'-'.Crawler::n($chapter, 3).'-'.basename($img).'</a><br/>'."\n";
-					flush();
-					$success = true;
-				} else {
-					echo $i++;
-				}
-				continue;
-			} // MODE 1 END
-			else if ($MODE == 2) { // MODE 2 BEGIN
-				// Metode baru: sejak Claymore 113 keluar
-				$imgs = array();
-				// Sekarang pake split, jadi pertama ambil data dari headstyle
-				// #p1f38d696250f92315cf517345ca297b2 {position:absolute;width:570px;height:392px;top:0px;left:337px}
-				// UPDATE: sejak Bleach 440 berubah lagi, pake inline CSS di <div> langsung
-				$reg1 = '/#.+position.+width.+height.+top.+left/';
-				$reg2 = '/<div .+position:relative.+width:(\\d+).+height:(\\d+)/';
-				$c->go_to(array($reg1, $reg2), 'OR', true);
-				$penentu = $c->curline;
-				//echo $penentu;exit;
-				if (preg_match($reg1, $penentu)) {
-					while ($line = $c->readline()) {
-						if (preg_match('/#(\\w+) .+width:(\\d+).*height:(\\d+).*top:(\\d+).*left:(\\d+)/', $line, $match)) {
-							list($all, $id, $width, $height, $top, $left) = $match;
-							if (preg_match('/z-index:(\\d+)/', $line, $match)) $zindex = $match[1]; else $zindex = 0;
-							$imgs[$id] = array('id'=>$id, 'zindex'=>$zindex, 'width'=>$width, 'height'=>$height, 'top'=>$top, 'left'=>$left);
-						} else if (Crawler::is_there($line, '-->')) {
-							break;
-						}
-					}
-					$c->go_to($reg2, '', true);
-				}
-				
-				// Sekarang ambil total width dan height
-				// <div style="position:relative;width:907px;height:1300px">
-				preg_match($reg2, $c->curline, $match);
-				list($all, $tot_width, $tot_height) = $match;
-				// Ambil satu2 bagian2 gambar
-				// <div id="p1f38d696250f92315cf517345ca297b2"><a href="/read/hajime_no_ippo/82193083/2"><img src="http://img.mangastream.com/m/25/82193083/6e009531b7afe043b6f9be330067bf5e.png" border="0" /></a></div>
-				while ($line = $c->readline()) {
-					if (preg_match('/<div id="([^"]+)".+src="([^"]+)"/', $line, $match)) {
-						list($all, $id, $src) = $match;
-						$imgs[$id]['src'] = $src;
-						$imgs[$id]['filename'] = basename($src);
-						$imgs[$id]['ext'] = strtolower(Crawler::cutafter(basename($src), '.'));
-					} else if (preg_match('/<div.+z-index:(\\d+).+width:(\\d+).*height:(\\d+).*top:(\\d+).*left:(\\d+).+img src="([^"]+)"/', $line, $match)) {
-						list($all, $zindex, $width, $height, $top, $left, $src) = $match;
-						
-						$imgs[] = array('zindex'=>$zindex, 'width'=>$width, 'height'=>$height, 
-							'top'=>$top, 'left'=>$left, 'src'=>$src,
-							'filename'=>basename($src), 'ext'=>strtolower(Crawler::cutafter(basename($src), '.')));
-					} else if (preg_match('/^\\s+<\\/div>/', $line)) {
-						break;
-					}
-				}
-				// Sort by z-index
-				usort($imgs, 'the_comp');
-				//print_r($imgs);exit;//debug
-				// Setelah semua data yg diperlukan tercapai, satukan jadi 1 gambar
-				
-				// Create canvas sebesar $tot_width x $tot_height
-				$canvas = imagecreatetruecolor($tot_width, $tot_height);
-				foreach ($imgs as $img) {
-					// Download semua gambar
-					do {
-						$repeat = false;
-						$imgcontent = file_get_contents($img['src']);
-						while (!$imgcontent) $imgcontent = file_get_contents($img['src']);
-						file_put_contents($dir . $img['filename'], $imgcontent);
-						if ($img['ext'] == 'png') {
-							$tmpimg = imagecreatefrompng($dir . $img['filename']);
-						} else { 
-							$tmpimg = imagecreatefromjpeg($dir . $img['filename']);
-						}
-						if ($tmpimg === false) $repeat = true;
-					} while ($repeat);
-					// Copy tiap gambar ke canvas besar
-					imagecopy($canvas, $tmpimg, 
-						$img['left'], $img['top'], 	// koordinat di canvas
-						0, 0,  // koordinat ambil dari potongan
-						$img['width'], $img['height'] // besar potongan yg di-copy
-					);
-					// Hapus gambar2 
-					unlink($dir . $img['filename']);
-				}
-				// Export jadi png/jpg
-				$itext = Crawler::n($j, 3);
-				$ext = $imgs[count($imgs)-1]['ext'];
-				$fulltext = "$dir$prefix-$chatext-$itext.$ext";
-				if ($ext == 'jpg') {
-					imagejpeg($canvas, $fulltext, 90);
-				} else {
-					imagepng($canvas, $fulltext, 9, PNG_NO_FILTER); // optional: set quality/compression level 0 - 9
-				}
-				$success = true;
-				echo $fulltext . "<br />\n";
-				//print_r($imgs);exit;//debug
-				
-			} // MODE 2 END
-			$c->close();
-		}
-    }
+	public function crawl_page($p, $ifx) {
+		$prefix = $this->prefix;
+		$p->go_line('id="manga-page"');
+		$img = $p->curr_line()->cut_between('src="', '"')->to_s();
+		$iname = urldecode(basename($img));
+		// 12 karakter aneh
+		echo "<li><a href='$img'>$prefix-$ifx-$iname</a></li>\n";
+	}
+	
+	public function url_is_single_chapter($url) {
+		return strpos($url, '/read/') !== false;
+	}
 }
-?>
-</div>
-<?php include '_footer.php'; ?>
+Mangastream::factory()->run();
