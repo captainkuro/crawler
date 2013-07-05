@@ -36,25 +36,15 @@ class Mangastream extends Manga_Crawler {
 		$ifx = Text::create($v['infix'])->pad(3)->to_s();
 		$p = new Page($v['url']);
 		// grab list of pages
-		$p->go_line('Page 1');
-		$pages = array();
-		while (!$p->next_line()->contain('</ul>')) {
-			$line = $p->curr_line();
-			if ($line->contain('href="')) {
-				$pages[] = $line->cut_between('href="', '"')->to_s();
-			}
-		}
+		$p->go_line('Last Page (');
+		$n = $p->curr_line()->cut_between('Last Page (', ')')->to_s();
+		$dir_url = dirname($v['url']);
 		// grab current image
 		$this->crawl_page($p, $ifx);
-		
-		array_shift($pages);
-		foreach ($pages as $purl) {
-			$p = new Page($purl);
+		for ($i=2; $i<$n; $i++) {
+			$p = new Page($dir_url.'/'.$i);
 			$this->crawl_page($p, $ifx);
 		}
-		/*
-		Manga_Crawler::multiProcess(4, $pages, array($this, 'crawl_page'), array($ifx));
-		*/
 	}
 	
 	public function crawl_page($p, $ifx) {
@@ -68,6 +58,11 @@ class Mangastream extends Manga_Crawler {
 	
 	public function url_is_single_chapter($url) {
 		return strpos($url, '/read/') !== false;
+	}
+
+	public function grab_chapter_infix($url) {
+		preg_match('/(\d+)\/\d+\/1$/', $url, $m);
+		return $m[1];
 	}
 }
 Mangastream::factory()->run();
