@@ -645,10 +645,12 @@ function neechan($url) {
 	$p->go_line('Pages navigation:');
 	$part = $p->curr_line()->cut_after('Pages navigation:');
 	$pages = $part->extract_to_array('href="', '"');
+	$pages = array_unique($pages);
 	foreach ($pages as $puri) {
+		if (strpos($puri, 'javascript') !== FALSE) continue;
 		$q = new Page($puri);
-		$q->go_line('onclick="return wpm_nxt_pag(this, event);"> <img src="');
-		$src = $q->curr_line()->dup()->cut_between('onclick="return wpm_nxt_pag(this, event);"> <img src="', '"')->to_s();
+		$q->go_line('id="img_mng_enl"');
+		$src = $q->curr_line()->dup()->cut_between('id="img_mng_enl" src="', '"')->to_s();
 		echo "<a href='$src'>$title</a><br>\n";
 	}
 	// $dir = dirname($src) . '/';
