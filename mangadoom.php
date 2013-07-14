@@ -59,6 +59,10 @@ class Mangadoom extends Manga_Crawler {
 		if ($name->contain('?')) {
 			$name = $name->cut_until('?');
 		}
+		if ($m = $name->regex_match('/(\d+)_\d+_\d+_\d+_\d+_/')) {
+			$ext = $name->cut_rafter('.');
+			$name = $m[1] . '.'.$ext;
+		}
 		echo "<a href='$src'>$prefix-$ifx-$name</a><br>\n";
 	}
 

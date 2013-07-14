@@ -41,7 +41,7 @@ class Mangastream extends Manga_Crawler {
 		$dir_url = dirname($v['url']);
 		// grab current image
 		$this->crawl_page($p, $ifx);
-		for ($i=2; $i<$n; $i++) {
+		for ($i=2; $i<=$n; $i++) {
 			$p = new Page($dir_url.'/'.$i);
 			$this->crawl_page($p, $ifx);
 		}

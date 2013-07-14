@@ -104,6 +104,9 @@ class Hmanga extends Model {
 			$p->go_line('window.params.thumbs');
 			$json = $p->curr_line()->cut_between('=', ';')->to_s();
 			$js_thumbs = json_decode($json);
+		} else if ($content->contain('This content has been disabled.')) {
+			return;
+			$js_thumbs = array();
 		} else {
 			throw new Exception('where is thumbs?');
 		}
