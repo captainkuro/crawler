@@ -108,6 +108,7 @@ class Hmanga extends Model {
 			return;
 			$js_thumbs = array();
 		} else {
+			echo $p->url();
 			throw new Exception('where is thumbs?');
 		}
 

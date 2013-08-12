@@ -196,14 +196,20 @@ class HentaiMangaOnline {
 		// description
 		$p->go_line('Manga Info :<');
 		$m = $p->curr_line()->regex_match('/Manga Info :(.*)$/');
-		if ($m) {
+		$also_has_fav = $p->curr_line()->contains('Add To Favorites');
+		if ($m && $also_has_fav) {
+			$description = $p->curr_line()->cut_between('Manga Info :', "<div class='watch-action'>");
+			$description = $description->replace('<br>', "\n")->replace('<br/>', "\n")->replace('<br />', "\n");
+			$ret['description'] = trim(html_entity_decode(strip_tags($description), ENT_COMPAT, 'UTF-8'));
+			$p->reset_line();
+		} else if ($m) {
 			$part = $m[1];
 			while (!$p->next_line()->contain('Add To Favorites')) {
 				$part .= $p->curr_line()->to_s();
 			}
 			$description = new Text($part);
 			$description = $description->replace('<br>', "\n")->replace('<br/>', "\n")->replace('<br />', "\n");
-			$part = $description->cut_before("<div id='watch_action'>") . $description->cut_rafter('</div>');
+			$part = $description->cut_before("<div class='watch-action'>") . $description->cut_rafter('</div>');
 			$ret['description'] = html_entity_decode(strip_tags($part), ENT_COMPAT, 'UTF-8');
 			$p->reset_line();
 		} else {
@@ -269,6 +275,7 @@ class HentaiMangaOnline {
 			try {
 				$data = $this->extract_from_page($p);
 				$data = $info + $data;
+				// echo '<pre>';print_r($data);exit;
 				$this->add_hmanga($data);
 			} catch (Exception $e) {
 				echo '<pre>'.$e."</pre><br>\n";//die();

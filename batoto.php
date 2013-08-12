@@ -79,5 +79,10 @@ class Batoto extends Manga_Crawler {
 	public function url_is_single_chapter($url) {
 		return strpos($url, '/read/_') !== false;
 	}
+
+	public function grab_chapter_infix($url) {
+		preg_match('/ch(\d+)/', $url, $m);
+		return $m[1];
+	}
 }
 Batoto::factory()->run();
