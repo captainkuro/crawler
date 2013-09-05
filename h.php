@@ -376,9 +376,12 @@ function sankakucomplex($url) {
 			if ($page > $_GET['limit']) break;
 		}
 		$purl = $url.'&page='.$page;
-		$P = new Page($purl, array('become_firefox'=>true));
 		echo "$purl<br>\n";
-		$T = new Text($P->content());
+		do {
+			$P = new Page($purl, array('become_firefox'=>true));
+			$T = new Text($P->content());
+			sleep(3); // 429 too many requests
+		} while ($T->contain('429 Too many requests'));
 		$a = $T->extract_to_array('href="', '"');
 		foreach ($a as $i => $e) {
 			$E = new Text($e);
@@ -390,25 +393,31 @@ function sankakucomplex($url) {
 		foreach ($a as $i => $e) {
 			$E = new Text($e);
 			$kurl = $base . $e;
+			echo "$kurl<br>\n";flush();
 			do {
 				$P = new Page($kurl, array('become_firefox'=>true));
-				// $P->go_line('id="highres"');
-				if (isset($_GET['hires'])) {
-					$P->go_line('id="highres"');
-				} else {
-					$P->go_line('id="lowres"');
-				}
-				if ($P->end_of_line()) {
-					$P->reset_line();
-					$P->go_line('id="highres"');
-				}
-				$img = $P->curr_line()->cut_between('href="', '"')->to_s();
-				sleep(2); // 429 too many requests
-			} while (!$img);
+				$T = new Text($P->content());
+				sleep(3); // 429 too many requests
+			} while ($T->contain('429 Too many requests'));
+			// $P->go_line('id="highres"');
+			if (isset($_GET['hires'])) {
+				$P->go_line('id="highres"');
+			} else {
+				$P->go_line('id="lowres"');
+			}
+			if ($P->end_of_line()) {
+				$P->reset_line();
+				$P->go_line('id="highres"');
+			}
+			$img = $P->curr_line()->cut_between('href="', '"')->to_s();
 			// $P->reset_line();
 			// $P->go_line('id="post_old_tags"');
 			// $tag = $P->curr_line()->cut_between('value="', '"')->substring(0, 150)->to_s(); // max 100 karakter
-			echo "<a href='$img'>$tag</a><br />\n";
+			if ($img) {
+				echo "<a href='$img'>$tag</a><br />\n";flush();
+			} else {
+				echo "This is flash<br />\n";
+			}
 		}
 		$page++;
 	} while (true);

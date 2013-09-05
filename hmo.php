@@ -217,18 +217,27 @@ class HentaiMangaOnline {
 			$p->reset_line();
 		}
 		// tags
-		$p->go_line('Tags: ');
+		$p->go_line('<a href="/tag/');
 		$ret['tags'] = array();
-		if ($p->curr_line()->contain('Tags: ')) {
-			$raw = $p->curr_line()->cut_until('<br/>');
-			foreach ($raw->extract_to_array('">', '<') as $tag) {
-				$ret['tags'][] = html_entity_decode($tag, ENT_COMPAT, 'UTF-8');
-			}
-			$ret['tags'] = '#'.implode('#', $ret['tags']).'#';
-		} else {
-			$ret['tags'] = '##';
-			$p->reset_line();
-		}
+		do {
+			$line = $p->curr_line();
+			$m = $line->regex_match('/href="[^"]*">([^<]*)</');
+			$ret['tags'][] = $m[1];
+		} while ( ! $p->next_line()->contain('<br/><br/>'));
+		$ret['tags'] = '#'.implode('#', $ret['tags']).'#';
+		if (empty($ret['tags'])) throw new Exception('empty tag?');
+		
+		// $p->go_line('Tags: ');
+		// if ($p->curr_line()->contain('Tags: ')) {
+		// 	$raw = $p->curr_line()->cut_until('<br/>');
+		// 	foreach ($raw->extract_to_array('">', '<') as $tag) {
+		// 		$ret['tags'][] = html_entity_decode($tag, ENT_COMPAT, 'UTF-8');
+		// 	}
+		// 	$ret['tags'] = '#'.implode('#', $ret['tags']).'#';
+		// } else {
+		// 	$ret['tags'] = '##';
+		// 	$p->reset_line();
+		// }
 		
 		$p->go_line('id="images"');
 		// # images
@@ -278,7 +287,7 @@ class HentaiMangaOnline {
 				// echo '<pre>';print_r($data);exit;
 				$this->add_hmanga($data);
 			} catch (Exception $e) {
-				echo '<pre>'.$e."</pre><br>\n";//die();
+				echo '<pre>'.$e."</pre><br>\n";die();
 			}
 				
 		}

@@ -43,15 +43,12 @@ class Hmanga extends Model {
 	public function thumb_src($filename) {
 		$pattern = new Text($this->pattern);
 		// hack
-		$hack_replace = 'http://www.fakku.net/images/';
+		// $hack_replace = 'http://c.fakku.net/';
+		$hack_replace = 'http://t.fakku.net/';
 		$thumb_pre = $pattern
 			->replace('/images/', '/thumbs/')
-			->replace('/c/manga/', '/t/images/manga/')
 			// hack
-			->replace('http://cdn.fakku.net/8041E1/t/', $hack_replace)
-			->replace('http://c.fakku.net/', $hack_replace)
-			->replace('http://img.fakku.net/', $hack_replace)
-			->replace('/images/images/', '/images/')
+			->replace('http://t.fakku.net/thumbs/', $hack_replace.'images/')
 			->dirname()
 			->to_s();
 		return $thumb_pre.'/'.$filename;
@@ -281,7 +278,7 @@ class Fakku {
 				
 				$tags = $row->find('div.short', 1);
 				$item['tags'] = array();
-				foreach ($tags->find('a') as $a) {
+				if ($tags) foreach ($tags->find('a') as $a) {
 					$item['tags'][] = basename($a->href);
 				}
 				$item['tags'] = '#'.implode('#', $item['tags']).'#';
@@ -487,7 +484,10 @@ class Fakku {
 					<dt>Page</dt><dd><?php echo $hmanga->count(); ?></dd>
 					<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
 					<dt><a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a></dt>
-					<dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a></dd>
+					<dd>
+						<a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a>
+						<a href="?action=dump&id=<?php echo $hmanga->id; ?>">DUMP</a>
+					</dd>
 				</dl>
 			</div>
 		<?php endforeach; ?>
@@ -532,7 +532,14 @@ class Fakku {
 
 		<?php
 	}
-	
+
+	public function action_dump() {
+		$id = $_GET['id'];
+		$hmanga = Model::factory('Hmanga')->find_one($id);
+		echo '<pre>';
+		print_r($hmanga->as_array());
+	}
+
 	public function is_already_exist($info) {
 		$n = ORM::for_table('hmanga')->where('url', $info['url'])->count();
 		return $n > 0;

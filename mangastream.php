@@ -52,12 +52,15 @@ class Mangastream extends Manga_Crawler {
 		$p->go_line('id="manga-page"');
 		$img = $p->curr_line()->cut_between('src="', '"')->to_s();
 		$iname = urldecode(basename($img));
+		if (preg_match('/^(\d{2})\d(.*)$/', $iname, $m)) {
+			$iname = $m[1].$m[2];
+		}
 		// 12 karakter aneh
 		echo "<li><a href='$img'>$prefix-$ifx-$iname</a></li>\n";
 	}
 	
 	public function url_is_single_chapter($url) {
-		return strpos($url, '/read/') !== false;
+		return strpos($url, '/r/') !== false;
 	}
 
 	public function grab_chapter_infix($url) {
