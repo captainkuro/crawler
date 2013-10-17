@@ -40,23 +40,23 @@ class Mangastream extends Manga_Crawler {
 		$n = $p->curr_line()->cut_between('Last Page (', ')')->to_s();
 		$dir_url = dirname($v['url']);
 		// grab current image
-		$this->crawl_page($p, $ifx);
+		$this->crawl_page($p, $ifx, 1);
 		for ($i=2; $i<=$n; $i++) {
 			$p = new Page($dir_url.'/'.$i);
-			$this->crawl_page($p, $ifx);
+			$this->crawl_page($p, $ifx, $i);
 		}
 	}
 	
-	public function crawl_page($p, $ifx) {
+	public function crawl_page($p, $ifx, $i) {
 		$prefix = $this->prefix;
 		$p->go_line('id="manga-page"');
 		$img = $p->curr_line()->cut_between('src="', '"')->to_s();
 		$iname = urldecode(basename($img));
-		if (preg_match('/^(\d{2})\d(.*)$/', $iname, $m)) {
-			$iname = $m[1].$m[2];
-		}
+		$ext = pathinfo($iname, PATHINFO_EXTENSION);
+		$iname = Text::create($i)->pad(3).'.'.$ext;
 		// 12 karakter aneh
 		echo "<li><a href='$img'>$prefix-$ifx-$iname</a></li>\n";
+		$this->prev_iname = $iname;
 	}
 	
 	public function url_is_single_chapter($url) {

@@ -401,13 +401,13 @@ function sankakucomplex($url) {
 			} while ($T->contain('429 Too many requests'));
 			// $P->go_line('id="highres"');
 			if (isset($_GET['hires'])) {
-				$P->go_line('id="highres"');
+				$P->go_line('id=highres');
 			} else {
-				$P->go_line('id="lowres"');
+				$P->go_line('id=lowres');
 			}
 			if ($P->end_of_line()) {
 				$P->reset_line();
-				$P->go_line('id="highres"');
+				$P->go_line('id=highres');
 			}
 			$img = $P->curr_line()->cut_between('href="', '"')->to_s();
 			// $P->reset_line();
@@ -570,22 +570,23 @@ function rule34xxx($url) {
 // http://img.rule34.xxx/rule34//images/1202/fc0d335a14ffbdbb861bdabb8afd8bd6.jpeg
 
 	$continue = true;
+	$domain = 'http://rule34.xxx/';
 	$base = 'http://rule34.xxx/index.php';
 	$tags = Text::create($url)->regex_match('/tags=([^&]+)/');
 	$tags = $tags[1];
 	do {
 		echo $url."<br>\n";
 		$p = new Page($url);
-		$p->go_line('END ExoClick.com');
-		do { if ($p->curr_line()->contain('src="')) {
-			$src = $p->curr_line()->dup()
-				->cut_between('src="', '"')
-				->replace('img2.', 'img.')
-				->replace('/thumbnails/', '/images/')
-				->replace('/thumbnail_', '/')
-				->cut_before('?')
-				->to_s()
-			;
+		$p->go_line('class="thumb"');
+		do { if ($p->curr_line()->contain('href="')) {
+			$href = $p->curr_line()
+				->cut_between('href="', '"')
+				->to_s();
+			$href = htmlspecialchars_decode($href);
+			$p2 = new Page($domain . $href);
+			$p2->go_line('Original image');
+			$src = $p2->curr_line()
+				->cut_between('href="http:', '"');
 
 			echo "<a href='$src'>$tags</a><br>\n";
 		}} while (!$p->next_line()->contain('<center>'));
