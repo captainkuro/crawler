@@ -222,6 +222,7 @@ class HentaiMangaOnline {
 		do {
 			$line = $p->curr_line();
 			$m = $line->regex_match('/href="[^"]*">([^<]*)</');
+
 			$ret['tags'][] = $m[1];
 		} while ( ! $p->next_line()->contain('<br/><br/>'));
 		$ret['tags'] = '#'.implode('#', $ret['tags']).'#';
