@@ -64,7 +64,7 @@ class Mangastream extends Manga_Crawler {
 	}
 
 	public function grab_chapter_infix($url) {
-		preg_match('/(\d+)\/\d+\/1$/', $url, $m);
+		preg_match('/(\d+)\/\d+\/1\??/', $url, $m);
 		return $m[1];
 	}
 }
