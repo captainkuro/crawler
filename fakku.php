@@ -35,6 +35,12 @@ include 'class/idiorm.php';
 include 'class/paris.php';
 include 'class/simple_html_dom.php';
 
+class Log {
+	public static function add($text) {
+		file_put_contents('fakku-'.date('Y-m-d').'.log', $text, FILE_APPEND);
+	}
+}
+
 class Hmanga extends Model {
 	public function count() {
 		return substr_count($this->thumbs, '#')+1;
@@ -209,12 +215,12 @@ class Fakku {
 		include '_footer.php';
 	}
 	
-	// initial database insert
+	// initial database insert/update
 	public function action_init() {
 		// hardcoded page number for quick'n'dirty
 		$data = array(
-			array('http://www.fakku.net/manga/english', 392),
-			array('http://www.fakku.net/doujinshi/english', 303)
+			array('http://www.fakku.net/manga/english', 0),
+			array('http://www.fakku.net/doujinshi/english', 14)
 		);
 		foreach ($data as $dd) {
 			$starting_url = $dd[0];
@@ -224,8 +230,8 @@ class Fakku {
 				$infos = $this->extract_from_page($p);
 				$infos = array_reverse($infos);
 				foreach ($infos as $info) {
-					echo $info['title']."<br>\n";
-					$this->add_hmanga($info);
+					echo $info['url']."<br>\n";
+					$this->edit_hmanga($info); // change to add/edit
 				}
 			}
 		}
@@ -267,8 +273,13 @@ class Fakku {
 				}
 				$item['series'] = html_entity_decode($series->plaintext, ENT_COMPAT, 'UTF-8');
 				
-				$artist = $row->find('div.left', 1)->find('a', 0);
-				$item['artist'] = html_entity_decode($artist->plaintext, ENT_COMPAT, 'UTF-8');
+				// $artist = $row->find('div.left', 1)->find('a', 0);
+				$artists = array();
+				$artist_els = $row->find('div.left', 1)->find('a');
+				foreach ($artist_els as $el) {
+					$artists[] = html_entity_decode($el->plaintext, ENT_COMPAT, 'UTF-8');
+				}
+				$item['artist'] = implode(', ', $artists);
 				
 				$date = $row->find('div.small', 0)->find('div.right', 0)->find('b', 0);
 				$item['date'] = date('Y-m-d', strtotime($date->plaintext));
@@ -297,6 +308,25 @@ class Fakku {
 		$hmanga = Model::factory('Hmanga')->create();
 		$hmanga->hydrate($data);
 		$hmanga->save();
+	}
+
+	public function edit_hmanga($data) {
+		$hmanga = ORM::for_table('hmanga')->where('url', $data['url'])->find_one();
+		if (!$hmanga) {
+			echo "Not found?";
+			Log::add($data['url']."\nNew manga!!!\n".json_encode($data)."\n");
+			$this->add_hmanga($data);
+			return;
+		}
+		$updated = FALSE;
+		foreach ($data as $key => $value) {
+			if ($hmanga->$key != $value) {
+				Log::add($data['url']." $key\nOld:{$hmanga->$key};\nNew:{$value};\n");
+				$updated = TRUE;
+				$hmanga->$key = $value;
+			}
+		}
+		if ($updated) $hmanga->save();
 	}
 	
 	public function action_update() {
@@ -546,7 +576,11 @@ class Fakku {
 	}
 	
 	public function action_test() {
-		
+		$p = new Page('http://www.fakku.net/doujinshi/english');
+		$infos = $this->extract_from_page($p);
+		echo '<pre>';
+		print_r($infos);
+		Log::add(json_encode($infos));
 	}
 }
 Fakku::create()->run();

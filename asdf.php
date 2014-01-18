@@ -243,3 +243,30 @@ function disney_zip() {
 // $a = Text::parse_search_term($search);
 // print_r($a);
 
+function othelloplus() {
+	$base = 'http://www.othelloplus.com/komikku/comics/005_Legenda_Naga/';
+	$name = 'Legenda_Naga';
+	$dir = 'D:\Download\manga\Legenda Naga\\';
+	$page_url = function($v, $i) use ($base) {
+		return $base . Text::create($v)->pad(2) . '/' . Text::create($i)->pad(3) . '.jpg';
+	};
+	$file_name = function($v, $i) use ($name, $dir) {
+		$basedir = $dir.'Vol '.Text::create($v)->pad(2).'\\';
+		if (!is_dir($basedir)) {
+			mkdir($basedir);
+		}
+		return $basedir.$name .'-'.Text::create($v)->pad(3) . '-' . Text::create($i)->pad(3) . '.jpg';
+	};
+	for ($vol=21; $vol<=37; $vol++) {
+		$i = 1;
+		do {
+			$url = $page_url($vol, $i);
+			$path = $file_name($vol, $i);
+			echo $url.' to '.$path."\n";
+			$response = file_get_contents($url);
+			if ($response) file_put_contents($path, $response);
+			$i++;
+		} while ($response);
+	}
+}
+// othelloplus();

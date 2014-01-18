@@ -25,7 +25,7 @@ include 'class/paris.php';
 include 'class/simple_html_dom.php';
 
 class Hmanga extends Model {
-	public static $thumb_pattern = "http://hentaimangaonline.com/wp-content/themes/snapshot/thumb.php?src=images/%s/%s.jpg&w=160&h=250&zc=1&q=90";
+	public static $thumb_pattern = "http://hentaimangaonline.com/wp-content/themes/rhobootstrap/thumb.php?src=images/%s/%s.jpg&w=160&h=250&zc=1&q=90";
 	public static $image_pattern = "http://hentaimangaonline.com/images/%s/%s.jpg";
 
 	public function slug() {
@@ -279,7 +279,7 @@ class HentaiMangaOnline {
 		}
 		$pre_infos = array_reverse($pre_infos);
 		foreach ($pre_infos as $info) {
-			echo $info['url']."<br>\n";flush();
+			echo HentaiMangaOnline::$base.$info['url']."<br>\n";flush();
 			if ($this->is_already_exist($info)) continue;
 			$p = new Page(self::$base.$info['url']);
 			try {
