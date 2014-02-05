@@ -413,6 +413,7 @@ class Hbrowse {
 			$curpage--;
 		}
 		if ($curpage < 1) $curpage = 1;
+		
 		function print_form_field($label, $name, $value, $width=6) {
 			?>
 			<div class="col-md-<?=$width;?>">
