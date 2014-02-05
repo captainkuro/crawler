@@ -198,7 +198,7 @@ class HentaiMangaOnline {
 		$m = $p->curr_line()->regex_match('/Manga Info :(.*)$/');
 		$also_has_fav = $p->curr_line()->contains('Add To Favorites');
 		if ($m && $also_has_fav) {
-			$description = $p->curr_line()->cut_between('Manga Info :', "<div class='watch-action'>");
+			$description = $p->curr_line()->cut_between('Manga Info :', '<span  id="favs"');
 			$description = $description->replace('<br>', "\n")->replace('<br/>', "\n")->replace('<br />', "\n");
 			$ret['description'] = trim(html_entity_decode(strip_tags($description), ENT_COMPAT, 'UTF-8'));
 			$p->reset_line();
@@ -209,7 +209,7 @@ class HentaiMangaOnline {
 			}
 			$description = new Text($part);
 			$description = $description->replace('<br>', "\n")->replace('<br/>', "\n")->replace('<br />', "\n");
-			$part = $description->cut_before("<div class='watch-action'>") . $description->cut_rafter('</div>');
+			$part = $description->cut_before('<span  id="favs"') . $description->cut_rafter('</div>');
 			$ret['description'] = html_entity_decode(strip_tags($part), ENT_COMPAT, 'UTF-8');
 			$p->reset_line();
 		} else {
@@ -221,7 +221,8 @@ class HentaiMangaOnline {
 		$ret['tags'] = array();
 		do {
 			$line = $p->curr_line();
-			$m = $line->regex_match('/href="[^"]*">([^<]*)</');
+			// echo htmlspecialchars($line->to_s())."<br>";
+			$m = $line->regex_match('/href="[^>]*>([^<]*)</');
 
 			$ret['tags'][] = $m[1];
 		} while ( ! $p->next_line()->contain('<br/><br/>'));
@@ -240,9 +241,10 @@ class HentaiMangaOnline {
 		// 	$p->reset_line();
 		// }
 		
-		$p->go_line('id="images"');
+		$p->reset_line();
+		$p->go_line('Total No of Images in Gallery');
 		// # images
-		$m = $p->next_line()->regex_match('/Total No of Images in Gallery: (\d+)/');
+		$m = $p->curr_line()->regex_match('/Total No of Images in Gallery: (\d+)/');
 		$ret['pages'] = $m ? $m[1] : 0;
 
 		return $ret;
@@ -414,6 +416,25 @@ class HentaiMangaOnline {
 			$q->where_not_like('title', "%{$term}%");
 		}
 		return $q->find_many();
+	}
+
+	public function action_redownload() {
+		$id = $_GET['id'];
+		$hmanga = Model::factory('Hmanga')->find_one($id);
+
+		$p = new Page(self::$base.$hmanga->url);
+		try {
+			$data = $this->extract_from_page($p);
+			foreach ($data as $key => $value) {
+				$hmanga->$key = $value;
+			}
+			print_r($data);
+			// echo '<pre>';print_r($data);exit;
+			$hmanga->save();
+			echo "<a href='?action=view&id={$hmanga->id}'>View</a>";
+		} catch (Exception $e) {
+			echo '<pre>'.$e."</pre><br>\n";die();
+		}
 	}
 	
 	public function action_view() {
