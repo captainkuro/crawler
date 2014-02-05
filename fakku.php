@@ -204,6 +204,7 @@ class Fakku {
 			<li><a href="?action=search">Search</a></li>
 			<li><a href="?action=update">Update</a></li>
 		</ul>
+		<div class="container">
 	<?php
 		$method = 'action_'.$action;
 		if (method_exists($this, $method)) {
@@ -211,6 +212,9 @@ class Fakku {
 		} else {
 			echo 'Choose something';
 		}
+	?>
+		</div>
+	<?php
 		// footer
 		include '_footer.php';
 	}
@@ -381,84 +385,59 @@ class Fakku {
 			$curpage--;
 		}
 		if ($curpage < 1) $curpage = 1;
+
+		function print_form_field($label, $name, $value, $width=6) {
+			?>
+			<div class="col-md-<?=$width;?>">
+				<div class="row">
+					<label class="col-sm-4 control-label"><?=$label;?></label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" name="<?=$name;?>" value="<?=$value;?>">
+					</div>
+				</div>
+			</div>
+			<?php
+		}
 	?>
-		<form class="form-horizontal" method="post">
-			<div class="control-group">
-				<div class="span6">
-					<label class="control-label">Any</label>
-					<div class="controls">
-						<input type="text" name="any" value="<?php echo @$_POST['any']; ?>">
-					</div>
-				</div>
+		<form class="form-horizontal" method="post" role="form">
+			<div class="form-group row">
+				<?php print_form_field('Any', 'any', @$_POST['any']); ?>
 			
-				<div class="span6">
-					<label class="control-label">Artist</label>
-					<div class="controls">
-						<input type="text" name="artist" value="<?php echo @$_POST['artist']; ?>">
-					</div>
-				</div>
+				<?php print_form_field('Artist', 'artist', @$_POST['artist']); ?>
 			</div>
-			<div class="control-group">
-				<div class="span6">
-					<label class="control-label">Title</label>
-					<div class="controls">
-						<input type="text" name="title" value="<?php echo @$_POST['title']; ?>">
-					</div>
-				</div>
-			
-				<div class="span6">
-					<label class="control-label">Desc</label>
-					<div class="controls">
-						<input type="text" name="desc" value="<?php echo @$_POST['desc']; ?>">
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<div class="span6">
-					<label class="control-label">Series</label>
-					<div class="controls">
-						<input type="text" name="series" value="<?php echo @$_POST['series']; ?>">
-					</div>
-				</div>
-			
-				<div class="span6">
-					<label class="control-label">Tags</label>
-					<div class="controls">
-						<input type="text" name="tags" value="<?php echo @$_POST['tags']; ?>">
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<div class="span3">
-					<label class="control-label">Per Page</label>
-					<div class="controls">
-						<input type="text" name="perpage" value="<?php echo $perpage; ?>" class="input-mini">
-					</div>
-				</div>
+			<div class="form-group row">
+				<?php print_form_field('Title', 'title', @$_POST['title']); ?>
 				
-				<div class="span3">
-					<label class="control-label">Page</label>
-					<div class="controls">
-						<input type="text" name="curpage" value="<?php echo $curpage; ?>" class="input-mini">
-					</div>
-				</div>
+				<?php print_form_field('Desc', 'desc', @$_POST['desc']); ?>
+			</div>
+			<div class="form-group row">
+				<?php print_form_field('Series', 'series', @$_POST['series']); ?>
+			
+				<?php print_form_field('Tags', 'tags', @$_POST['tags']); ?>
+			</div>
+			<div class="form-group row">
+				<?php print_form_field('Items', 'perpage', $perpage, 3); ?>
 				
-				<div class="span6">
-					<label class="control-label">Order</label>
-					<div class="controls">
-						<?php foreach ($order_choices as $choice) : ?>
-							<label class="radio inline">
-								<input type="radio" name="order" value="<?php echo $choice;?>" <?php echo $order==$choice?'checked':''; ?>> <?php echo $choice; ?>
-							</label>
-						<?php endforeach; ?>
+				<?php print_form_field('Page', 'curpage', $curpage, 3); ?>
+				
+				<div class="col-md-6">
+					<div class="row">
+						<label class="col-sm-4 control-label">Order</label>
+						<div class="col-sm-8">
+							<?php foreach ($order_choices as $choice) : ?>
+								<label class="radio-inline">
+									<input type="radio" name="order" value="<?php echo $choice;?>" <?php echo $order==$choice?'checked':''; ?>> <?php echo $choice; ?>
+								</label>
+							<?php endforeach; ?>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="control-group">
+			<div class="form-group row">
 				<div class="controls">
-					<button type="submit" class="btn" name="search">Search</button>
-					<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
-					<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+					<button type="submit" class="btn btn-primary" name="search">Search</button>
+					<button type="submit" class="btn btn-info" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn btn-info" name="next">Next &gt;&gt;</button>
 				</div>
 			</div>
 			
@@ -498,8 +477,9 @@ class Fakku {
 		}}
 		$result = $q->find_many();
 	?>
-		<?php foreach ($result as $hmanga) : ?>
-			<div class="span6 result">
+		<?php foreach ($result as $i => $hmanga) : ?>
+			<?php if ($i % 2 == 0) echo '<div class="row">'; ?>
+			<div class="col-md-6 result">
 				<?php $samples = $hmanga->samples(); ?>
 				<a href="?action=view&id=<?php echo $hmanga->id; ?>" title="<?php echo $hmanga->desc; ?>">
 					<img src="<?php echo $samples[0];?>" alt="th" width="100" height="140">
@@ -520,12 +500,13 @@ class Fakku {
 					</dd>
 				</dl>
 			</div>
+			<?php if ($i % 2 == 1) echo '</div>'; ?>
 		<?php endforeach; ?>
 		
-		<div class="control-group" style="display:block;clear:both">
+		<div class="form-group" style="display:block;clear:both">
 			<div class="controls">
-				<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
-				<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+				<button type="submit" class="btn btn-info" name="prev">&lt;&lt; Prev</button>
+				<button type="submit" class="btn btn-info" name="next">Next &gt;&gt;</button>
 			</div>
 		</div>
 	</form>

@@ -170,6 +170,7 @@ class Hbrowse {
 			<li><a href="?action=search">Search</a></li>
 			<li><a href="?action=update">Update</a></li>
 		</ul>
+		<div class="container">
 	<?php
 		$method = 'action_'.$action;
 		if (method_exists($this, $method)) {
@@ -177,6 +178,9 @@ class Hbrowse {
 		} else {
 			echo 'Choose something';
 		}
+	?>
+		</div>
+	<?php
 		// footer
 		include '_footer.php';
 	}
@@ -409,69 +413,53 @@ class Hbrowse {
 			$curpage--;
 		}
 		if ($curpage < 1) $curpage = 1;
+		function print_form_field($label, $name, $value, $width=6) {
+			?>
+			<div class="col-md-<?=$width;?>">
+				<div class="row">
+					<label class="col-sm-4 control-label"><?=$label;?></label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" name="<?=$name;?>" value="<?=$value;?>">
+					</div>
+				</div>
+			</div>
+			<?php
+		}
 		?>
 		<form method="post" class="form-horizontal" action="?action=search">
-			<div class="control-group">
-				<div class="span6">
-					<label class="control-label">Any</label>
-					<div class="controls">
-						<input name="any" type="text" value="<?php echo @$_REQUEST['any']; ?>" />
-					</div>
-				</div>
+			<div class="form-group row">
+				<?php print_form_field('Any', 'any', @$_REQUEST['any']); ?>
 			
-				<div class="span6">
-					<label class="control-label">Title</label>
-					<div class="controls">
-						<input name="title" type="text" value="<?php echo @$_REQUEST['title']; ?>" />
-					</div>
-				</div>
+				<?php print_form_field('Title', 'title', @$_REQUEST['title']); ?>
 			</div>
-			<div class="control-group">
-				<div class="span6">
-					<label class="control-label">Artist</label>
-					<div class="controls">
-						<input name="artist" type="text" value="<?php echo @$_REQUEST['artist']; ?>" />
-					</div>
-				</div>
+			<div class="form-group row">
+				<?php print_form_field('Artist', 'artist', @$_REQUEST['artist']); ?>
 
-				<div class="span6">
-					<label class="control-label">Origin</label>
-					<div class="controls">
-						<input name="origin" type="text" value="<?php echo @$_REQUEST['origin']; ?>" />
+				<?php print_form_field('Origin', 'origin', @$_REQUEST['origin']); ?>
+			</div>
+			<div class="form-group row">
+				<?php print_form_field('Items', 'perpage', $perpage, 3); ?>
+				
+				<?php print_form_field('Page', 'curpage', $curpage, 3); ?>
+				
+				<div class="col-md-6">
+					<div class="row">
+						<label class="col-sm-4 control-label">Order</label>
+						<div class="col-sm-8">
+							<?php foreach ($order_choices as $choice) : ?>
+								<label class="radio-inline">
+									<input type="radio" name="order" value="<?php echo $choice;?>" <?php echo $order==$choice?'checked':''; ?>> <?php echo $choice; ?>
+								</label>
+							<?php endforeach; ?>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="control-group">
-				<div class="span3">
-					<label class="control-label">Per Page</label>
-					<div class="controls">
-						<input type="text" name="perpage" value="<?php echo $perpage; ?>" class="input-mini">
-					</div>
-				</div>
-				
-				<div class="span3">
-					<label class="control-label">Page</label>
-					<div class="controls">
-						<input type="text" name="curpage" value="<?php echo $curpage; ?>" class="input-mini">
-					</div>
-				</div>
-				
-				<div class="span6">
-					<label class="control-label">Order</label>
-					<div class="controls">
-						<?php foreach ($order_choices as $choice) : ?>
-							<label class="radio inline">
-								<input type="radio" name="order" value="<?php echo $choice;?>" <?php echo $order==$choice?'checked':''; ?>> <?php echo $choice; ?>
-							</label>
-						<?php endforeach; ?>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
+			<div class="form-group row">
 				<div class="controls">
-					<button type="submit" class="btn" name="search">Search</button>
-					<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
-					<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+					<button type="submit" class="btn btn-primary" name="search">Search</button>
+					<button type="submit" class="btn btn-info" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn btn-info" name="next">Next &gt;&gt;</button>
 				</div>
 			</div>
 	<?php
@@ -520,8 +508,9 @@ class Hbrowse {
 		
 		$ref = $this->get_ref();
 		?>
-			<?php foreach ($result as $hmanga) : ?>
-				<div class="span6 result">
+			<?php foreach ($result as $i => $hmanga) : ?>
+				<?php if ($i % 2 == 0) echo '<div class="row">'; ?>
+				<div class="col-md-6 result">
 					<?php $samples = $hmanga->samples(); ?>
 					<a href="?action=view&id=<?php echo $hmanga->id; ?>">
 						<img src="<?php echo $samples[0];?>" alt="th">
@@ -539,13 +528,14 @@ class Hbrowse {
 						<dd><a href="<?php echo $hmanga->link; ?>">ORIGIN</a></dd>
 					</dl>
 				</div>
+				<?php if ($i % 2 == 1) echo '</div>'; ?>
 			<?php endforeach; ?>
 			
-			<div class="control-group" style="display:block;clear:both">
+			<div class="form-group row" style="display:block;clear:both">
 				<div class="controls">
-					<button type="submit" class="btn" name="search">Search</button>
-					<button type="submit" class="btn" name="prev">&lt;&lt; Prev</button>
-					<button type="submit" class="btn" name="next">Next &gt;&gt;</button>
+					<button type="submit" class="btn btn-primary" name="search">Search</button>
+					<button type="submit" class="btn btn-info" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn btn-info" name="next">Next &gt;&gt;</button>
 				</div>
 			</div>
 

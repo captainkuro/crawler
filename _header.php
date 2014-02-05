@@ -12,7 +12,7 @@
     <style>
 		dl.result {
 			display: inline-block;
-			width: 245px;
+			width: 238px;
 			height: 120px;
 		}
 		dl.result dt {
@@ -26,6 +26,9 @@
 			margin-right: -3px;
 			vertical-align: top;
 		}
+    div.result {
+      margin-bottom: 10px;
+    }
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
