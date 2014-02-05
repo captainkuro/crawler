@@ -4,7 +4,7 @@
  */
 
 // autoloading
-function __autoload($class)
+function kanwil_autoload($class)
 {
 	$tries = array(
 		'./class/' . strtolower($class) . '.php',
@@ -21,6 +21,7 @@ function __autoload($class)
 	// Class not found
 	throw new Exception("Class $class not found");
 }
+spl_autoload_register('kanwil_autoload');
  
 // Get base URL
 $base_url = str_replace(basename(__FILE__), '', $_SERVER['SCRIPT_NAME']);

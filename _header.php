@@ -12,7 +12,7 @@
     <style>
 		dl.result {
 			display: inline-block;
-			width: 238px;
+			width: 245px;
 			height: 120px;
 		}
 		dl.result dt {

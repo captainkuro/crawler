@@ -70,29 +70,29 @@ abstract class Manga_Crawler {
 		X::form(array('class'=>'form-horizontal', 'method'=>'post'),
 			X::fieldset(
 				X::legend('1'),
-				X::div(array('class'=>'control-group'),
-					X::label(array('class'=>'control-label'), 'Manga URL'),
-					X::div(array('class'=>'controls'),
-						X::input(array('type'=>'text','name'=>'base','value'=>@$this->base))
+				X::div(array('class'=>'form-group row'),
+					X::label(array('class'=>'col-sm-4 control-label'), 'Manga URL'),
+					X::div(array('class'=>'col-sm-8 controls'),
+						X::input(array('type'=>'text','class'=>'form-control','name'=>'base','value'=>@$this->base))
 					)
 				),
-				X::div(array('class'=>'control-group'),
-					X::label(array('class'=>'control-label'), 'Prefix'),
-					X::div(array('class'=>'controls'),
-						X::input(array('type'=>'text','name'=>'prefix','value'=>@$this->prefix))
+				X::div(array('class'=>'form-group row'),
+					X::label(array('class'=>'col-sm-4 control-label'), 'Prefix'),
+					X::div(array('class'=>'col-sm-4 controls'),
+						X::input(array('type'=>'text','class'=>'form-control','name'=>'prefix','value'=>@$this->prefix))
 					)
 				),
 				$this->enable_single_chapter 
-					? X::div(array('class'=>'control-group'),
-						X::label(array('class'=>'control-label'), 'Infix'),
-						X::div(array('class'=>'controls'),
-							X::input(array('type'=>'text','name'=>'singlefix','value'=>@$this->singlefix)),
+					? X::div(array('class'=>'form-group row'),
+						X::label(array('class'=>'col-sm-4 control-label'), 'Infix'),
+						X::div(array('class'=>'col-sm-4 controls'),
+							X::input(array('type'=>'text','class'=>'form-control','name'=>'singlefix','value'=>@$this->singlefix)),
 							X::p(array('class'=>'help-block'), 'only for single chapter')
 						)
 					)
 					: ''
 				,
-				X::div(array('class'=>'form-actions'),
+				X::div(array('class'=>'col-md-offset-4'),
 					X::button(array('class'=>'btn btn-primary','type'=>'submit','name'=>'stage1'), 'Submit')
 				)
 			)
@@ -105,26 +105,26 @@ abstract class Manga_Crawler {
 		X::_o('form', array('class'=>'form-horizontal', 'method'=>'post')),
 			X::_o('fieldset'),
 				X::legend('2'),
-				X::div(array('class'=>'control-group'),
-					X::label(array('class'=>'control-label'), 'Manga URL'),
-					X::div(array('class'=>'controls'),
-						X::input(array('type'=>'text','name'=>'base','value'=>@$this->base))
+				X::div(array('class'=>'form-group row'),
+					X::label(array('class'=>'col-sm-4 control-label'), 'Manga URL'),
+					X::div(array('class'=>'col-sm-8 controls'),
+						X::input(array('type'=>'text','class'=>'form-control','name'=>'base','value'=>@$this->base))
 					)
 				),
-				X::div(array('class'=>'control-group'),
-					X::label(array('class'=>'control-label'), 'Prefix'),
-					X::div(array('class'=>'controls'),
-						X::input(array('type'=>'text','name'=>'prefix','value'=>@$this->prefix))
+				X::div(array('class'=>'form-group row'),
+					X::label(array('class'=>'col-sm-4 control-label'), 'Prefix'),
+					X::div(array('class'=>'col-sm-4 controls'),
+						X::input(array('type'=>'text','class'=>'form-control','name'=>'prefix','value'=>@$this->prefix))
 					)
 				),
-				X::_o('div', array('class'=>'control-group')),
-					X::label(array('class'=>'control-label'), 'Choose chapter'),
-					X::_o('div', array('class'=>'controls')),
+				X::_o('div', array('class'=>'form-group row')),
+					X::label(array('class'=>'col-sm-4 control-label'), 'Choose chapter'),
+					X::_o('div', array('class'=>'col-sm-8 controls')),
 						X::label(array('class'=>'checkbox'),
 							X::input(array('type'=>'checkbox','name'=>'all','onclick'=>'click_this()')),' All'
 						),
 						X::div(array('class'=>'input-append'),
-							X::input(array('id'=>'parse_it', 'type'=>'text')),
+							X::input(array('id'=>'parse_it', 'class'=>'form-control','type'=>'text')),
 							X::button(array('type'=>'button','onclick'=>'check_it()','class'=>'btn'), 'Check'),
 							X::button(array('type'=>'button','onclick'=>'uncheck_it()','class'=>'btn'), 'Uncheck')
 						),
@@ -161,7 +161,7 @@ abstract class Manga_Crawler {
 						X::_c('table'),
 					X::_c('div'),
 				X::_c('div'),
-				X::div(array('class'=>'form-actions'),
+				X::div(array('class'=>'col-md-offset-4'),
 					X::button(array('class'=>'btn btn-primary','type'=>'submit','name'=>'stage2'), 'Submit')
 				),
 			X::_c('fieldset'),
