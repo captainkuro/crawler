@@ -176,7 +176,7 @@ abstract class Manga_Crawler {
 			$this->info = array_reverse($this->info, true);
 		}
 		foreach ($this->info as $v) {
-			echo "<div class='span{$this->column_span}'>\n";
+			echo "<div class='col-sm-{$this->column_span}'>\n";
 			$this->crawl_chapter($v);
 			echo "</div>\n";
 			$limit = (int)(12 / $this->column_span);
