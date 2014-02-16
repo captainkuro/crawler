@@ -1,8 +1,6 @@
 <?php
 $title = 'Manga Reader Crawler';
 
-include '_header.php';
-
 interface Manga_Crawler {
 
 	// bool
@@ -41,6 +39,16 @@ function get_crawler($url) {
 	throw new Exception('NOT SUPPORTED');
 }
 
+function print_pages($pages) {
+	echo '<div class="col-sm-4">';
+		echo '<ul>';
+	foreach ($pages as $name => $src) {
+		echo "<li><a href='$src'>$name</a></li>";
+	}
+		echo '</ul>';
+	echo '</div>';
+}
+
 class Manga_Pattern_Manager {
 
 	const FILE = 'manga.pattern.json';
@@ -59,8 +67,8 @@ class Manga_Pattern_Manager {
 	}
 
 	public function convert_and_add($patterns, $prefixes) {
-		$ar_pattern = explode("\n", $patterns);
-		$ar_prefix = explode("\n", $prefixes);
+		$ar_pattern = array_map('trim', explode("\n", $patterns));
+		$ar_prefix = array_map('trim', explode("\n", $prefixes));
 		foreach ($ar_pattern as $i => $pattern) {
 			$this->patterns[] = array(
 				'pattern' => $pattern,
@@ -90,20 +98,29 @@ class Manga_Pattern_Manager {
 }
 
 $stage_pattern = FALSE;
-$stage_1 = TRUE;
+$stage_1 = FALSE;
 $stage_2 = FALSE;
 $stage_3 = FALSE;
 
 if (@$_REQUEST['action'] === 'infix') {
+// AJAX: retrieve Infix
+
 	$url = $_REQUEST['url'];
 	$crawler = get_crawler($url);
 	echo $crawler->get_infix($url);
 	exit;
-} else if (@$_REQUEST['action'] === 'prefix') {
 
+} else if (@$_REQUEST['action'] === 'prefix') {
+// AJAX: retrieve Prefix
+
+	$manager = new Manga_Pattern_Manager();
+	$url = @$_REQUEST['url'];
+	echo $manager->get_prefix($url);
 	exit;
+
 } else if (@$_REQUEST['action'] === 'pattern') {
-	$stage_1 = FALSE;
+// Page: Pattern management
+
 	$stage_pattern = TRUE;
 
 	$manager = new Manga_Pattern_Manager();
@@ -116,10 +133,51 @@ if (@$_REQUEST['action'] === 'infix') {
 		$manager->convert_and_add($patterns, $prefixes);
 	}
 	$all_patterns = $manager->all();
+
 } else {
-	// run
+// Page: Manga crawling 
+
+	$stage_1 = TRUE;
 	
+	if (array_key_exists('stage1', $_POST)) {
+	// Display Stage 2
+	
+		$base = $_POST['base'];
+		$prefix = $_POST['prefix'];
+		$singlefix = $_POST['singlefix'];
+		$crawler = get_crawler($base);
+
+		if ($crawler->is_single_chapter($base)) {
+			$info = array(
+				array(
+					'url' => $base,
+					'desc' => 'Single chapter',
+					'infix' => $singlefix,
+				),
+			);
+		} else {
+			$stage_2 = TRUE;
+			$info = $crawler->get_info($base);
+		}
+
+	} else if (array_key_exists('stage2', $_POST)) {
+	// Display Stage 3
+		
+		$stage_2 = TRUE;
+		$stage_3 = TRUE;
+		$base = $_POST['base'];
+		$prefix = $_POST['prefix'];
+		$info = @$_POST['info'];
+		$crawler = get_crawler($base);
+		// filter check
+		$info = array_filter($info, function ($v) {
+			return isset($v['check']);
+		});
+	}
+
 }
+
+include '_header.php';
 
 ?>
 <script type="text/javascript">
@@ -166,6 +224,23 @@ function check_this_row(el) {
 
 document.addEventListener('DOMContentLoaded', function(){
 // When the URL is blurred = grab prefix and infix
+	var $base = $('input[name="base"]').first();
+	$base.on('blur', function(e) {
+		var url = $base.val();
+		// auto prefix
+		$.post('?action=prefix', {
+			url: url
+		}, function (data) {
+			$('input[name="prefix"]').val(data);
+		});
+
+		// auto infix
+		$.post('?action=infix', {
+			url: url
+		}, function (data) {
+			$('input[name="singlefix"]').val(data);
+		});
+	});
 });
 </script>
 
@@ -246,11 +321,21 @@ document.addEventListener('DOMContentLoaded', function(){
 							</tr>
 						</thead>
 						<tbody>
-						<?php
-						
-
-
-						?>
+						<?php foreach ($info as $i => $v): ?>
+							<tr onclick='check_this_row(this)'>
+								<td>
+									<input type='checkbox' name="info[<?=$i;?>][check]" value="<?=$i;?>" id="check-<?=(int)$v['infix'];?>" onclick='event.stopPropagation()' />
+								</td>
+								<td>
+									<?=$v['desc'];?>
+									<input type='hidden' name="info[<?=$i;?>][url]" value="<?=$v['url'];?>" />
+									<input type='hidden' name="info[<?=$i;?>][desc]" value="<?=$v['desc'];?>" />
+								</td>
+								<td>
+									<input class='col-md-1' type='text' name="info[<?=$i;?>][infix]" value="<?=$v['infix'];?>" onclick='event.stopPropagation()' />
+								</td>
+							</tr>
+						<?php endforeach; ?>
 						</tbody>
 					</table>
 				</div>
@@ -269,9 +354,10 @@ document.addEventListener('DOMContentLoaded', function(){
 		<legend>3</legend>
 	</fieldset>
 	<div class='row-fluid'>
-		<div class='col-sm-4'>
-			asdf
-		</div>
+		<?php foreach ($info as $v) {
+			$pages = $crawler->get_images($v['url'], $prefix, $v['infix']);
+			print_pages($pages);
+		} ?>
 	</div>
 	<?php endif; ?>
 	
