@@ -228,6 +228,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	var $base = $('input[name="base"]').first();
 	$base.on('blur', function(e) {
 		var url = $base.val();
+		if (!url) return;
 		// auto prefix
 		$.post('?action=prefix', {
 			url: url
@@ -284,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	<?php if ($stage_2): ?>
 	<form class='form-horizontal' method='post'>
 		<fieldset>
-			<legend>2</legend>
+			<legend>2 - <?php echo get_class($crawler); ?></legend>
 			<div class='form-group row'>
 				<label class='col-sm-3 control-label'>Manga URL</label>
 				<div class='col-sm-9 controls'>
@@ -352,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	<?php if ($stage_3): ?>
 	<fieldset>
-		<legend>3</legend>
+		<legend>3 - <?php echo get_class($crawler); ?></legend>
 	</fieldset>
 	<div class='row-fluid'>
 		<?php 
