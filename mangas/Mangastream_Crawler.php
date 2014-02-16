@@ -13,8 +13,11 @@ class Mangastream_Crawler implements Manga_Crawler {
 	}
 
 	public function get_infix($url) {
-		preg_match('/(\d+)\/\d+\/1\??/', $url, $m);
-		return $m[1];
+		if (preg_match('/(\d+)\/\d+\/1\??/', $url, $m)) {
+			return $m[1];
+		} else {
+			return '';
+		}
 	}
 
 	public function get_info($base) {

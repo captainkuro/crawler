@@ -23,7 +23,7 @@ interface Manga_Crawler {
 function get_crawler($url) {
 	// loop through classes
 	$scan = scandir('mangas');
-	$done = FALSE;
+	$done = false;
 
 	foreach ($scan as $entry) {
 		if ($pos = strpos($entry, '.php')) {
@@ -56,7 +56,7 @@ class Manga_Pattern_Manager {
 	public $patterns = array();
 
 	public function __construct() {
-		$json = json_decode(file_get_contents(self::FILE), TRUE);
+		$json = json_decode(file_get_contents(self::FILE), true);
 		if ($json) {
 			$this->patterns = $json;
 		}
@@ -89,7 +89,7 @@ class Manga_Pattern_Manager {
 
 	public function get_prefix($url) {
 		foreach ($this->patterns as $p) {
-			if (strpos($url, $p['pattern']) !== FALSE) {
+			if (strpos($url, $p['pattern']) !== false) {
 				return $p['prefix'];
 			}
 		}
@@ -97,10 +97,10 @@ class Manga_Pattern_Manager {
 	}
 }
 
-$stage_pattern = FALSE;
-$stage_1 = FALSE;
-$stage_2 = FALSE;
-$stage_3 = FALSE;
+$stage_pattern = false;
+$stage_1 = false;
+$stage_2 = false;
+$stage_3 = false;
 
 if (@$_REQUEST['action'] === 'infix') {
 // AJAX: retrieve Infix
@@ -121,7 +121,7 @@ if (@$_REQUEST['action'] === 'infix') {
 } else if (@$_REQUEST['action'] === 'pattern') {
 // Page: Pattern management
 
-	$stage_pattern = TRUE;
+	$stage_pattern = true;
 
 	$manager = new Manga_Pattern_Manager();
 	if (array_key_exists('del_id', $_REQUEST)) {
@@ -137,7 +137,7 @@ if (@$_REQUEST['action'] === 'infix') {
 } else {
 // Page: Manga crawling 
 
-	$stage_1 = TRUE;
+	$stage_1 = true;
 	
 	if (array_key_exists('stage1', $_POST)) {
 	// Display Stage 2
@@ -148,6 +148,7 @@ if (@$_REQUEST['action'] === 'infix') {
 		$crawler = get_crawler($base);
 
 		if ($crawler->is_single_chapter($base)) {
+			$stage_3 = true;
 			$info = array(
 				array(
 					'url' => $base,
@@ -156,15 +157,15 @@ if (@$_REQUEST['action'] === 'infix') {
 				),
 			);
 		} else {
-			$stage_2 = TRUE;
+			$stage_2 = true;
 			$info = $crawler->get_info($base);
 		}
 
 	} else if (array_key_exists('stage2', $_POST)) {
 	// Display Stage 3
 		
-		$stage_2 = TRUE;
-		$stage_3 = TRUE;
+		$stage_2 = true;
+		$stage_3 = true;
 		$base = $_POST['base'];
 		$prefix = $_POST['prefix'];
 		$info = @$_POST['info'];
@@ -332,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function(){
 									<input type='hidden' name="info[<?=$i;?>][desc]" value="<?=$v['desc'];?>" />
 								</td>
 								<td>
-									<input class='col-md-1' type='text' name="info[<?=$i;?>][infix]" value="<?=$v['infix'];?>" onclick='event.stopPropagation()' />
+									<input type='text' name="info[<?=$i;?>][infix]" value="<?=$v['infix'];?>" onclick='event.stopPropagation()' />
 								</td>
 							</tr>
 						<?php endforeach; ?>
@@ -354,10 +355,13 @@ document.addEventListener('DOMContentLoaded', function(){
 		<legend>3</legend>
 	</fieldset>
 	<div class='row-fluid'>
-		<?php foreach ($info as $v) {
+		<?php 
+		$info = array_reverse($info, true);
+		foreach ($info as $v) {
 			$pages = $crawler->get_images($v['url'], $prefix, $v['infix']);
 			print_pages($pages);
-		} ?>
+		} 
+		?>
 	</div>
 	<?php endif; ?>
 	
