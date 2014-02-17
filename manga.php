@@ -247,8 +247,8 @@ document.addEventListener('DOMContentLoaded', function(){
 </script>
 
 <ul class="nav nav-tabs">
-	<li><a href="?action=">Manga</a></li>
-	<li><a href="?action=pattern">Pattern</a></li>
+	<li><a href="?action=" tabindex="-1">Manga</a></li>
+	<li><a href="?action=pattern" tabindex="-1">Pattern</a></li>
 </ul>
 <div class='container'>
 	<?php if ($stage_1): ?>
