@@ -23,7 +23,6 @@ interface Manga_Crawler {
 function get_crawler($url) {
 	// loop through classes
 	$scan = scandir('mangas');
-	$done = false;
 
 	foreach ($scan as $entry) {
 		if ($pos = strpos($entry, '.php')) {
@@ -247,8 +246,8 @@ document.addEventListener('DOMContentLoaded', function(){
 </script>
 
 <ul class="nav nav-tabs">
-	<li><a href="?action=">Manga</a></li>
-	<li><a href="?action=pattern">Pattern</a></li>
+	<li><a href="?action=" tabindex="-1">Manga</a></li>
+	<li><a href="?action=pattern" tabindex="-1">Pattern</a></li>
 </ul>
 <div class='container'>
 	<?php if ($stage_1): ?>
@@ -318,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function(){
 						<thead>
 							<tr>
 								<th class='col-sm-1'>#</th>
-								<th class='col-sm-7'>Chapter Name</th>
+								<th class='col-sm-8'>Chapter Name</th>
 								<th>Infix</th>
 							</tr>
 						</thead>

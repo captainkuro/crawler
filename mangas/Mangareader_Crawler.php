@@ -43,7 +43,7 @@ class Mangareader_Crawler implements Manga_Crawler {
 				$list[] = array(
 					'url' => $sitename . $chp,
 					'infix' => $ifx,
-					'desc' => strip_tags(Crawler::extract($line, ': ', '</td>')),
+					'desc' => strip_tags(Crawler::extract($line, '">', '</td>')),
 				);
 			} else if (Crawler::is_there($line, '</table>')) {
 				break;
