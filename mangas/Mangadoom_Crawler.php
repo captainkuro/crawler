@@ -1,8 +1,8 @@
 <?php
 // http://mangadoom.com/One-Piece/
-// http://mangadoom.com/One-Piece/711/2/
+// http://mangadoom.com/One-Piece/710/
 class Mangadoom_Crawler implements Manga_Crawler {
-	
+
 	public function is_supported($url) {
 		return strpos($url, 'http://mangadoom.com/') !== false;
 	}
@@ -73,7 +73,10 @@ class Mangadoom_Crawler implements Manga_Crawler {
 			$ext = $name->cut_rafter('.');
 			$name = $m[1] . '.'.$ext;
 		}
+<<<<<<< HEAD
 		$name = urldecode($name);
+=======
+>>>>>>> 56099a4c5190be3fe985f2a05ab84fae05b2e73f
 		return array("$prefix-$ifx-$name" => $src);
 	}
 
