@@ -105,8 +105,12 @@ if (@$_REQUEST['action'] === 'infix') {
 // AJAX: retrieve Infix
 
 	$url = $_REQUEST['url'];
-	$crawler = get_crawler($url);
-	echo $crawler->get_infix($url);
+	try {
+		$crawler = get_crawler($url);
+		echo $crawler->get_infix($url);
+	} catch (Exception $e) {
+		echo 'NOT SUPPORTED';
+	}
 	exit;
 
 } else if (@$_REQUEST['action'] === 'prefix') {
