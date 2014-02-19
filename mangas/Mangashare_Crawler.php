@@ -23,7 +23,7 @@ class Mangashare_Crawler implements Manga_Crawler {
 		$p = new Page($base);
 		$h = new simple_html_dom();
 		$h->load($p->content());
-		print_r($p->content());
+
 		$data = $h->find('table.datalist', 0);
 
 		$list = array();
