@@ -43,18 +43,19 @@ class Mangahead_Crawler implements Manga_Crawler {
 
 		$sitename = "http://mangahead.com";
 		$pref = Text::create($chapter_url);
-		if (!$pref->contain('/index.php/')) {
-			$pref->replace($sitename.'/Manga', $sitename.'/index.php/Manga');
+		if (!$pref->contain('index.php')) {
+			$pref = $pref->replace($sitename.'/Manga', $sitename.'/index.php/Manga');
 		}
 		$finish = false;
 		if ($pref->contain('?page=')) {
-			$page = $pref->cut_after('?page=');
-			$pref = (int)$pref->cut_until('?page=')->to_s();
+			$page = (int)$pref->cut_after('?page=')->to_s();
+			$pref = $pref->cut_until('?page=');
 		} else {
 			$page = 1;
 		}
 		$pages = array();
 		while (!$finish) {
+			// file_put_contents('/tmp/head', $chapter_url."\n", FILE_APPEND);
 			$p = new Page($chapter_url);
 			$p->go_line('<blockquote>');
 			if ($p->curr_line()->contain('&nbsp;&nbsp;&rsaquo;')) {
