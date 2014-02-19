@@ -1,7 +1,6 @@
 <?php
 /**
  * My Personal Scraper/Crawler
- * http://pastebin.com/fHe7Wwys
  */
 class Crawler {
 	public $stream;
