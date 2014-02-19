@@ -7,30 +7,28 @@ include '_header.php'; // loaded with bootstrap
 	<li><a>Main</a></li>
 </ul>
 
-<form class="form-horizontal" method="post">
-	<div class="control-group">
-		<div class="span6">
-			<label class="control-label">Directory</label>
-			<div class="controls">
+<div class='container'>
+	<form class="form-horizontal" method="post">
+		<div class="form-group">
+			<label class="col-sm-1 control-label">Directory</label>
+			<div class="col-sm-6 controls">
 				<input type="text" name="path" value="">
 			</div>
 		</div>
-	</div>
-	<div class="control-group">
-		<div class="span6">
-			<label class="control-label">Ext</label>
-			<div class="controls">
+		<div class="form-group">
+			<label class="col-sm-1 control-label">Ext</label>
+			<div class="col-sm-6 controls">
 				<input type="radio" name="ext" value="zip" <?php if (@$_POST['ext']=='zip') echo 'checked'; ?>> ZIP
 				<input type="radio" name="ext" value="cbz" <?php if (@$_POST['ext']=='cbz') echo 'checked'; ?>> CBZ
 			</div>
 		</div>
-	</div>
-	<div class="control-group">
-		<div class="controls">
-			<button type="submit" class="btn" name="search">Zip it</button>
+		<div class="form-group">
+			<div class="col-sm-offset-1 controls">
+				<button type="submit" class="btn" name="search">Zip it</button>
+			</div>
 		</div>
-	</div>
-</form>
+	</form>
+</div>
 
 <pre>
 <?php
