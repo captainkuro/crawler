@@ -280,29 +280,17 @@ class HentaiMangaOnline implements Spider {
 
 		$result = $this->search($perpage, $curpage, $order, @$_POST['any'], @$_POST['title']);
 
-		function print_form_field($label, $name, $value, $width=6) {
-			?>
-			<div class="col-md-<?=$width;?>">
-				<div class="row">
-					<label class="col-sm-4 control-label"><?=$label;?></label>
-					<div class="col-sm-8">
-						<input type="text" class="form-control" name="<?=$name;?>" value="<?=$value;?>">
-					</div>
-				</div>
-			</div>
-			<?php
-		}
 	?>
 		<form class="form-horizontal" method="post">
 			<div class="form-group row">
-				<?php print_form_field('Any', 'any', @$_POST['any']); ?>
+				<?php HH::print_form_field('Any', 'any', @$_POST['any']); ?>
 			
-				<?php print_form_field('Title', 'title', @$_POST['title']); ?>
+				<?php HH::print_form_field('Title', 'title', @$_POST['title']); ?>
 			</div>
 			<div class="form-group row">
-				<?php print_form_field('Items', 'perpage', $perpage, 3); ?>
+				<?php HH::print_form_field('Items', 'perpage', $perpage, 3); ?>
 				
-				<?php print_form_field('Page', 'curpage', $curpage, 3); ?>
+				<?php HH::print_form_field('Page', 'curpage', $curpage, 3); ?>
 				
 				<div class="col-md-6">
 					<div class="row">

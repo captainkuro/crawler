@@ -380,34 +380,22 @@ class Hbrowse implements Spider {
 		}
 		if ($curpage < 1) $curpage = 1;
 		
-		function print_form_field($label, $name, $value, $width=6) {
-			?>
-			<div class="col-md-<?=$width;?>">
-				<div class="row">
-					<label class="col-sm-4 control-label"><?=$label;?></label>
-					<div class="col-sm-8">
-						<input type="text" class="form-control" name="<?=$name;?>" value="<?=$value;?>">
-					</div>
-				</div>
-			</div>
-			<?php
-		}
 		?>
 		<form method="post" class="form-horizontal">
 			<div class="form-group row">
-				<?php print_form_field('Any', 'any', @$_REQUEST['any']); ?>
+				<?php HH::print_form_field('Any', 'any', @$_REQUEST['any']); ?>
 			
-				<?php print_form_field('Title', 'title', @$_REQUEST['title']); ?>
+				<?php HH::print_form_field('Title', 'title', @$_REQUEST['title']); ?>
 			</div>
 			<div class="form-group row">
-				<?php print_form_field('Artist', 'artist', @$_REQUEST['artist']); ?>
+				<?php HH::print_form_field('Artist', 'artist', @$_REQUEST['artist']); ?>
 
-				<?php print_form_field('Origin', 'origin', @$_REQUEST['origin']); ?>
+				<?php HH::print_form_field('Origin', 'origin', @$_REQUEST['origin']); ?>
 			</div>
 			<div class="form-group row">
-				<?php print_form_field('Items', 'perpage', $perpage, 3); ?>
+				<?php HH::print_form_field('Items', 'perpage', $perpage, 3); ?>
 				
-				<?php print_form_field('Page', 'curpage', $curpage, 3); ?>
+				<?php HH::print_form_field('Page', 'curpage', $curpage, 3); ?>
 				
 				<div class="col-md-6">
 					<div class="row">
