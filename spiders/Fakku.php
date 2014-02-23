@@ -484,17 +484,8 @@ class Fakku implements Spider{
 			<dd><a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a></dd>
 		</dl>
 		
-		<ul class="thumbnails">
-		<?php foreach ($thumbnails as $i => $th) : ?>
-			<li>
-				<a href="<?php echo $pages[$i]; ?>">
-					<img src="<?php echo $th; ?>" alt="<?php echo $hmanga->title; ?>">
-				</a>
-			</li>
-		<?php endforeach; ?>
-		</ul>
-
 		<?php
+		HH::print_downloads($hmanga->title, $thumbnails, $pages);
 	}
 
 	public function action_dump() {

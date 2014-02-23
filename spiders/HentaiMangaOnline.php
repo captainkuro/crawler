@@ -409,20 +409,8 @@ class HentaiMangaOnline implements Spider {
 			<dd><a href="<?php echo self::$base.$hmanga->url; ?>">ORIGIN</a></dd>
 		</dl>
 		
-		<ul class="thumbnails">
-		<?php foreach ($thumbnails as $i => $th) : ?>
-			<li>
-				<a href="<?php echo $pages[$i]; ?>">
-					<img src="<?php echo $th; ?>" alt="<?php echo $hmanga->title; ?>">
-				</a>
-			</li>
-		<?php endforeach; ?>
-		</ul>
-		<?php for ($i=count($thumbnails), $n=count($pages); $i<$n; $i++) : ?>
-			<a href="<?php echo $pages[$i]; ?>"><?php echo $hmanga->title; ?></a>
-		<?php endfor; ?>
-
 		<?php
+		HH::print_downloads($hmanga->title, $thumbnails, $pages);
 	}
 	
 	public function action_test() {

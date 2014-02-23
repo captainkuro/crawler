@@ -74,7 +74,7 @@ class Spider_Manager {
 			<?php $this->print_menu('Fakku'); ?>
 			<?php $this->print_menu('Hbrowse'); ?>
 			<?php $this->print_menu('HentaiMangaOnline'); ?>
-			<?php $this->print_menu('Pururin'); ?>
+			<?php $this->print_menu('FreeHManga'); ?>
 		</ul>
 		<div class="container">
 	<?php
@@ -114,6 +114,23 @@ class HH {
 	public static function url($spider, $query) {
 		$name = get_class($spider);
 		return "?spider={$name}&{$query}";
+	}
+
+	public static function print_downloads($alt, $thumbnails, $pages, $style = '') {
+	?>
+		<ul class="thumbnails">
+		<?php foreach ($thumbnails as $i => $th) : ?>
+			<li style="<?php echo $style; ?>">
+				<a href="<?php echo $pages[$i]; ?>">
+					<img src="<?php echo $th; ?>" alt="<?php echo $alt; ?>">
+				</a>
+			</li>
+		<?php endforeach; ?>
+		</ul>
+		<?php for ($i=count($thumbnails), $n=count($pages); $i<$n; $i++) : ?>
+			<a href="<?php echo $pages[$i]; ?>"><?php echo $alt; ?></a>
+		<?php endfor; ?>
+	<?php
 	}
 }
 $s = new Spider_Manager();

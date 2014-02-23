@@ -340,16 +340,9 @@ class Hbrowse implements Spider {
 		$hmanga = Model::factory('Hmanga')->find_one($id);
 		$thumbnails = $hmanga->thumbnails();
 		$pages = $hmanga->pages();
+
+		HH::print_downloads($hmanga->title, $thumbnails, $pages, 'width:100px;height:150px');
 		?>
-		<ul class="thumbnails">
-		<?php foreach ($thumbnails as $i => $th) : ?>
-			<li style="width:100px;height:150px">
-				<a href="<?php echo $pages[$i]; ?>">
-					<img src="<?php echo $th; ?>" alt="<?php echo $hmanga->title; ?>"/>
-				</a>
-			</li>
-		<?php endforeach; ?>
-		</ul>
 		
 		<pre><?php print_r($hmanga->details()) ?></pre>
 
