@@ -31,9 +31,6 @@ cdn.fakku.net/8041E1/c/manga/p/penisclub_e/images/001.jpg
 cdn.fakku.net/8041E1/t/images/manga/t/theworldisyours_e/thumbs/001.gif
 cdn.fakku.net/8041E1/c/manga/t/theworldisyours_e/images/001.jpg
 */
-include 'class/idiorm.php';
-include 'class/paris.php';
-include 'class/simple_html_dom.php';
 
 class Log {
 	public static function add($text) {
@@ -146,12 +143,16 @@ class Hmanga extends Model {
 }
 
 // Main program
-class Fakku {
+class Fakku implements Spider{
 	public static $cdn = 'http://cdn.fakku.net/8041E1/t/';
 	public static $base = 'http://www.fakku.net';
 	
-	public static function create() {
-		return new Fakku();
+	public function get_title() {
+		return 'Fakku scraper';
+	}
+
+	public function get_db_path() {
+		return './sqlite/fakku.db';
 	}
 
 	public static function cdn_to_src($cdn) {
@@ -181,42 +182,6 @@ class Fakku {
 			`thumbs` text NULL,
 			`pattern` varchar NULL
 		)');
-	}
-	
-	public function run() {
-		// header
-		$title = 'Fakku scraper';
-		include '_header.php'; // loaded with bootstrap
-		// DB
-		$dbpath = './sqlite/fakku.db';
-		$empty_database = false;
-		if (!is_file($dbpath)) {
-			touch($dbpath);
-			$empty_database = true;
-		}
-		$dbpath = realpath($dbpath);
-		ORM::configure('sqlite:' . $dbpath);
-		if ($empty_database) $this->create_database();
-		// process
-		$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
-	?>
-		<ul class="nav nav-tabs">
-			<li><a href="?action=search">Search</a></li>
-			<li><a href="?action=update">Update</a></li>
-		</ul>
-		<div class="container">
-	<?php
-		$method = 'action_'.$action;
-		if (method_exists($this, $method)) {
-			$this->$method();
-		} else {
-			echo 'Choose something';
-		}
-	?>
-		</div>
-	<?php
-		// footer
-		include '_footer.php';
 	}
 	
 	// initial database insert/update
@@ -386,39 +351,27 @@ class Fakku {
 		}
 		if ($curpage < 1) $curpage = 1;
 
-		function print_form_field($label, $name, $value, $width=6) {
-			?>
-			<div class="col-md-<?=$width;?>">
-				<div class="row">
-					<label class="col-sm-4 control-label"><?=$label;?></label>
-					<div class="col-sm-8">
-						<input type="text" class="form-control" name="<?=$name;?>" value="<?=$value;?>">
-					</div>
-				</div>
-			</div>
-			<?php
-		}
 	?>
 		<form class="form-horizontal" method="post" role="form">
 			<div class="form-group row">
-				<?php print_form_field('Any', 'any', @$_POST['any']); ?>
+				<?php HH::print_form_field('Any', 'any', @$_POST['any']); ?>
 			
-				<?php print_form_field('Artist', 'artist', @$_POST['artist']); ?>
+				<?php HH::print_form_field('Artist', 'artist', @$_POST['artist']); ?>
 			</div>
 			<div class="form-group row">
-				<?php print_form_field('Title', 'title', @$_POST['title']); ?>
+				<?php HH::print_form_field('Title', 'title', @$_POST['title']); ?>
 				
-				<?php print_form_field('Desc', 'desc', @$_POST['desc']); ?>
+				<?php HH::print_form_field('Desc', 'desc', @$_POST['desc']); ?>
 			</div>
 			<div class="form-group row">
-				<?php print_form_field('Series', 'series', @$_POST['series']); ?>
+				<?php HH::print_form_field('Series', 'series', @$_POST['series']); ?>
 			
-				<?php print_form_field('Tags', 'tags', @$_POST['tags']); ?>
+				<?php HH::print_form_field('Tags', 'tags', @$_POST['tags']); ?>
 			</div>
 			<div class="form-group row">
-				<?php print_form_field('Items', 'perpage', $perpage, 3); ?>
+				<?php HH::print_form_field('Items', 'perpage', $perpage, 3); ?>
 				
-				<?php print_form_field('Page', 'curpage', $curpage, 3); ?>
+				<?php HH::print_form_field('Page', 'curpage', $curpage, 3); ?>
 				
 				<div class="col-md-6">
 					<div class="row">
@@ -481,22 +434,22 @@ class Fakku {
 			<?php if ($i % 2 == 0) echo '<div class="row">'; ?>
 			<div class="col-md-6 result">
 				<?php $samples = $hmanga->samples(); ?>
-				<a href="?action=view&id=<?php echo $hmanga->id; ?>" title="<?php echo $hmanga->desc; ?>">
+				<a href="<?php echo HH::url($this, "action=view&id={$hmanga->id}"); ?>" title="<?php echo $hmanga->desc; ?>">
 					<img src="<?php echo $samples[0];?>" alt="th" width="100" height="140">
 					<img src="<?php echo $samples[1];?>" alt="th" width="100" height="140">
 				</a>
 
 				<dl class="dl-horizontal result">
-					<dt>Title</dt><dd><a href="?action=view&id=<?php echo $hmanga->id; ?>"><?php echo $hmanga->title; ?></a></dd>
+					<dt>Title</dt><dd><a href="<?php echo HH::url($this, "action=view&id={$hmanga->id}"); ?>"><?php echo $hmanga->title; ?></a></dd>
 					<dt>Series</dt><dd><?php echo $hmanga->series; ?></dd>
 					<dt>Artist</dt><dd><?php echo $hmanga->artist; ?></dd>
 					<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
 					<dt>Page</dt><dd><?php echo $hmanga->count(); ?></dd>
 					<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->tags); ?></dd>
-					<dt><a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a></dt>
+					<dt><a href="<?php echo HH::url($this, "action=view&id={$hmanga->id}"); ?>">VIEW</a></dt>
 					<dd>
 						<a href="<?php echo Fakku::$base.$hmanga->url; ?>">ORIGIN</a>
-						<a href="?action=dump&id=<?php echo $hmanga->id; ?>">DUMP</a>
+						<a href="<?php echo HH::url("action=dump&id={$hmanga->id}"); ?>">DUMP</a>
 					</dd>
 				</dl>
 			</div>
@@ -564,4 +517,3 @@ class Fakku {
 		Log::add(json_encode($infos));
 	}
 }
-Fakku::create()->run();

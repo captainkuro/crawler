@@ -8,8 +8,6 @@ parse all the data, insert to table 'hbrowse.book'
 /zzz/
 
 */
-include 'class/idiorm.php';
-include 'class/paris.php';
 
 class Hmanga extends Model {
 
@@ -109,12 +107,16 @@ class Hmanga extends Model {
 }
 
 // Main program
-class Hbrowse {
+class Hbrowse implements Spider {
 	public static $update = 'http://www.hbrowse.com/browse/title/date/DESC';
 	public static $base = 'http://www.hbrowse.com';
 	
-	public static function create() {
-		return new Hbrowse();
+	public function get_title() {
+		return 'Hbrowse scraper';
+	}
+
+	public function get_db_path() {
+		return './sqlite/hbrowse.db';
 	}
 
 	public function create_database() {
@@ -147,42 +149,6 @@ class Hbrowse {
 		  `val` varchar NOT NULL,
 		  PRIMARY KEY (`id`)
 		)');
-	}
-	
-	public function run() {
-		// header
-		$title = 'Hbrowse scraper';
-		include '_header.php'; // loaded with bootstrap
-		// DB
-		$dbpath = './sqlite/hbrowse.db';
-		$empty_database = false;
-		if (!is_file($dbpath)) {
-			touch($dbpath);
-			$empty_database = true;
-		}
-		$dbpath = realpath($dbpath);
-		ORM::configure('sqlite:' . $dbpath);
-		if ($empty_database) $this->create_database();
-		// process
-		$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
-	?>
-		<ul class="nav nav-tabs">
-			<li><a href="?action=search">Search</a></li>
-			<li><a href="?action=update">Update</a></li>
-		</ul>
-		<div class="container">
-	<?php
-		$method = 'action_'.$action;
-		if (method_exists($this, $method)) {
-			$this->$method();
-		} else {
-			echo 'Choose something';
-		}
-	?>
-		</div>
-	<?php
-		// footer
-		include '_footer.php';
 	}
 	
 	public function action_fill_reference() {
@@ -427,7 +393,7 @@ class Hbrowse {
 			<?php
 		}
 		?>
-		<form method="post" class="form-horizontal" action="?action=search">
+		<form method="post" class="form-horizontal">
 			<div class="form-group row">
 				<?php print_form_field('Any', 'any', @$_REQUEST['any']); ?>
 			
@@ -513,19 +479,19 @@ class Hbrowse {
 				<?php if ($i % 2 == 0) echo '<div class="row">'; ?>
 				<div class="col-md-6 result">
 					<?php $samples = $hmanga->samples(); ?>
-					<a href="?action=view&id=<?php echo $hmanga->id; ?>">
+					<a href="<?php echo HH::url($this, "action=view&id={$hmanga->id}"); ?>">
 						<img src="<?php echo $samples[0];?>" alt="th">
 						<img src="<?php echo $samples[1];?>" alt="th">
 					</a>
 
 					<dl class="dl-horizontal result">
-						<dt>Title</dt><dd><a href="?action=view&id=<?php echo $hmanga->id; ?>"><?php echo $hmanga->title; ?></a></dd>
+						<dt>Title</dt><dd><a href="<?php echo HH::url($this, "action=view&id={$hmanga->id}"); ?>"><?php echo $hmanga->title; ?></a></dd>
 						<dt>Origin</dt><dd><?php echo $hmanga->origin; ?></dd>
 						<dt>Artist</dt><dd><?php echo $hmanga->artist; ?></dd>
 						<dt>Date</dt><dd><?php echo $hmanga->added; ?></dd>
 						<dt>Page</dt><dd><?php echo $hmanga->length; ?></dd>
 						<dt>Tags</dt><dd><?php echo str_replace('#', ' ', $hmanga->type); ?></dd>
-						<dt><a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a></dt>
+						<dt><a href="<?php echo HH::url($this, "action=view&id={$hmanga->id}"); ?>">VIEW</a></dt>
 						<dd><a href="<?php echo $hmanga->link; ?>">ORIGIN</a></dd>
 					</dl>
 				</div>
@@ -581,4 +547,3 @@ class Hbrowse {
 		exit;
 	}
 }
-Hbrowse::create()->run();

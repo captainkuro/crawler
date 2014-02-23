@@ -371,6 +371,10 @@ function sankakucomplex($url) {
 	}
 	$page = 1;
 	$tag = uniqid();
+	$Turl = Text::create($url);
+	if ($Turl->contain('tags=')) {
+		$tag = $Turl->cut_between('tags=', '&')->urldecode()->to_s();
+	}
 	do {
 		if (isset($_GET['limit'])) {
 			if ($page > $_GET['limit']) break;

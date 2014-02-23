@@ -20,9 +20,6 @@ Image full size mengikuti pola sederhana, cukup simpan url 1 image full size,
 sisanya tinggal for (i from 1 to #ofImages).jpg
 
 */
-include 'class/idiorm.php';
-include 'class/paris.php';
-include 'class/simple_html_dom.php';
 
 class Hmanga extends Model {
 	public static $thumb_pattern = "http://hentaimangaonline.com/wp-content/themes/rhobootstrap/thumb.php?src=images/%s/%s.jpg&w=160&h=250&zc=1&q=90";
@@ -64,12 +61,16 @@ class Hmanga extends Model {
 }
 
 // Main program
-class HentaiMangaOnline {
+class HentaiMangaOnline implements Spider {
 	public static $update = 'http://hentaimangaonline.com/category/hentai-manga/english-hentai-manga/';
 	public static $base = 'http://hentaimangaonline.com';
 	
-	public static function create() {
-		return new HentaiMangaOnline();
+	public function get_title() {
+		return 'HentaiMangaOnline scraper';
+	}
+
+	public function get_db_path() {
+		return './sqlite/hmo.db';
 	}
 
 	public function create_database() {
@@ -86,42 +87,6 @@ class HentaiMangaOnline {
 		)');
 	}
 	
-	public function run() {
-		// header
-		$title = 'HentaiMangaOnline scraper';
-		include '_header.php'; // loaded with bootstrap
-		// DB
-		$dbpath = './sqlite/hmo.db';
-		$empty_database = false;
-		if (!is_file($dbpath)) {
-			touch($dbpath);
-			$empty_database = true;
-		}
-		$dbpath = realpath($dbpath);
-		ORM::configure('sqlite:' . $dbpath);
-		if ($empty_database) $this->create_database();
-		// process
-		$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
-	?>
-		<ul class="nav nav-tabs">
-			<li><a href="?action=search">Search</a></li>
-			<li><a href="?action=update">Update</a></li>
-		</ul>
-		<div class="container">
-	<?php
-		$method = 'action_'.$action;
-		if (method_exists($this, $method)) {
-			$this->$method();
-		} else {
-			echo 'Choose something';
-		}
-	?>
-		</div>
-	<?php
-		// footer
-		include '_footer.php';
-	}
-
 	public function action_all_pages() {
 		$start = self::$update;
 		$stop = 256;
@@ -285,7 +250,7 @@ class HentaiMangaOnline {
 		}
 		$pre_infos = array_reverse($pre_infos);
 		foreach ($pre_infos as $info) {
-			echo HentaiMangaOnline::$base.$info['url']."<br>\n";flush();
+			echo self::$base.$info['url']."<br>\n";flush();
 			if ($this->is_already_exist($info)) continue;
 			$p = new Page(self::$base.$info['url']);
 			try {
@@ -364,11 +329,11 @@ class HentaiMangaOnline {
 				<?php if ($i % 2 == 0) echo '<div class="row">'; ?>
 				<div class="col-md-6 result">
 					<?php echo "{$hmanga->title} | {$hmanga->pages} pages | {$hmanga->date}"; ?>
-					<a href="?action=view&id=<?php echo $hmanga->id; ?>">VIEW</a>
-					<a href="<?php echo HentaiMangaOnline::$base.$hmanga->url; ?>">ORIGIN</a>
+					<a href="<?php echo HH::url($this, "action=view&id={$hmanga->id}"); ?>">VIEW</a>
+					<a href="<?php echo self::$base.$hmanga->url; ?>">ORIGIN</a>
 					<br>
 					<?php $samples = $hmanga->samples(); ?>
-					<a href="?action=view&id=<?php echo $hmanga->id; ?>" title="<?php echo $hmanga->description; ?>">
+					<a href="<?php echo HH::url($this, "action=view&id={$hmanga->id}"); ?>" title="<?php echo $hmanga->description; ?>">
 						<?php foreach ($samples as $img) : ?>
 							<img src="<?php echo $img;?>" alt="th" width="145" height="232">
 						<?php endforeach; ?>
@@ -432,7 +397,7 @@ class HentaiMangaOnline {
 			print_r($data);
 			// echo '<pre>';print_r($data);exit;
 			$hmanga->save();
-			echo "<a href='?action=view&id={$hmanga->id}'>View</a>";
+			echo "<a href='".HH::url($this, "action=view&id={$hmanga->id}")."'>View</a>";
 		} catch (Exception $e) {
 			echo '<pre>'.$e."</pre><br>\n";die();
 		}
@@ -447,13 +412,13 @@ class HentaiMangaOnline {
 		?>
 		
 		<dl class="dl-horizontal">
-			<dt>Title</dt><dd><a href="<?php echo HentaiMangaOnline::$base.$hmanga->url; ?>"><?php echo $hmanga->title; ?></a></dd>
+			<dt>Title</dt><dd><a href="<?php echo self::$base.$hmanga->url; ?>"><?php echo $hmanga->title; ?></a></dd>
 			<dt>Real ID</dt><dd><?php echo $hmanga->real_id; ?></dd>
 			<dt>Date</dt><dd><?php echo $hmanga->date; ?></dd>
 			<dt>Description</dt><dd><?php echo $hmanga->description; ?></dd>
 			<dt>Page</dt><dd><?php echo $hmanga->pages; ?></dd>
 			<dt>Tags</dt><dd><?php echo str_replace('#', ', ', trim($hmanga->tags, '#')); ?></dd>
-			<dd><a href="<?php echo HentaiMangaOnline::$base.$hmanga->url; ?>">ORIGIN</a></dd>
+			<dd><a href="<?php echo self::$base.$hmanga->url; ?>">ORIGIN</a></dd>
 		</dl>
 		
 		<ul class="thumbnails">
@@ -496,7 +461,7 @@ class HentaiMangaOnline {
 			->where('tags', '##')
 			->find_many();
 		foreach ($empties as $hmanga) {
-			$p = new Page(HentaiMangaOnline::$base.$hmanga->url);
+			$p = new Page(self::$base.$hmanga->url);
 			echo $p->url().'<br>'.PHP_EOL;
 			$new_info = $this->extract_from_page($p);
 			echo $new_info['tags'].'<br><br>'.PHP_EOL;
@@ -525,4 +490,3 @@ class HentaiMangaOnline {
 		}
 	}
 }
-HentaiMangaOnline::create()->run();

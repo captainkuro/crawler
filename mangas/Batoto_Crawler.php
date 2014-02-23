@@ -56,30 +56,32 @@ class Batoto_Crawler implements Manga_Crawler {
 		$pages = $p->next_line()->extract_to_array('value="', '"');
 		// grab current image
 		
-		$result = $this->crawl_page($p, $prefix, $ifx);
+		$result = $this->crawl_page($p, $prefix, $ifx, 1);
 		
 		array_shift($pages);
-		foreach ($pages as $purl) {
+		foreach ($pages as $i => $purl) {
 			$p = new Page($purl);
-			$result = $result + $this->crawl_page($p, $prefix, $ifx);
+			$result = $result + $this->crawl_page($p, $prefix, $ifx, $i+2);
 		}
 		return $result;
 	}
 	
-	public function crawl_page($p, $prefix, $ifx) {
+	public function crawl_page($p, $prefix, $ifx, $i) {
 		$p->go_line('id="full_image"');
 		$img = $p->next_line(3)->dup()->cut_between('src="', '"')->to_s();
 		$iname = urldecode(basename($img));
-		// 12 karakter aneh
-		if (preg_match('/[0-9a-z]{13}\.\w+$/', $iname)) {
-			$iname = preg_replace('/\w{13}\.(\w+)$/', '.$1', $iname);
-		}
-		if (preg_match('/_(\d+)_[a-zA-Z]+\.\w{3}$/', $iname, $m)) {
-			$iname = $m[1].substr($iname, -4);
-		} else {
-			// ambil last 3 character
-			$iname = substr($iname, -7);
-		}
+		$ext = pathinfo($iname, PATHINFO_EXTENSION);
+		// // 12 karakter aneh
+		// if (preg_match('/[0-9a-z]{13}\.\w+$/', $iname)) {
+		// 	$iname = preg_replace('/\w{13}\.(\w+)$/', '.$1', $iname);
+		// }
+		// if (preg_match('/_(\d+)_[a-zA-Z]+\.\w{3}$/', $iname, $m)) {
+		// 	$iname = $m[1].substr($iname, -4);
+		// } else {
+		// 	// ambil last 3 character
+		// 	$iname = substr($iname, -7);
+		// }
+		$iname = Text::create($i)->pad(3).'.'.$ext;
 		return array("$prefix-$ifx-$iname" => $img);
 	}
 	
