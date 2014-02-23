@@ -292,18 +292,7 @@ class HentaiMangaOnline implements Spider {
 				
 				<?php HH::print_form_field('Page', 'curpage', $curpage, 3); ?>
 				
-				<div class="col-md-6">
-					<div class="row">
-						<label class="col-sm-4 control-label">Order</label>
-						<div class="col-sm-8">
-							<?php foreach ($order_choices as $choice) : ?>
-								<label class="radio-inline">
-									<input type="radio" name="order" value="<?php echo $choice;?>" <?php echo $order==$choice?'checked':''; ?>> <?php echo $choice; ?>
-								</label>
-							<?php endforeach; ?>
-						</div>
-					</div>
-				</div>
+				<?php HH::print_radio_field('Order', 'order', $order_choices, $order); ?>
 			</div>
 			<div class="form-group row">
 				<div class="controls">

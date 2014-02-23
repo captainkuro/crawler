@@ -32,7 +32,7 @@ class Spider_Manager {
 	private function print_menu($spider) {
 	?>
 		<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="?spider=<?=$spider;?>">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="?spider=<?=$spider;?>" tabindex="-1">
 				<?=$spider;?> <span class="caret"></span>
 			</a>
 			<ul class="dropdown-menu">
@@ -111,6 +111,23 @@ class HH {
 		<?php
 	}
 
+	public static function print_radio_field($label, $name, $options, $value, $width=6) {
+		?>
+		<div class="col-md-<?=$width;?>">
+			<div class="row">
+				<label class="col-sm-4 control-label"><?=$label;?></label>
+				<div class="col-sm-8">
+					<?php foreach ($options as $choice) : ?>
+						<label class="radio-inline">
+							<input type="radio" name="<?=$name;?>" value="<?php echo $choice;?>" <?php echo $value==$choice?'checked':''; ?>> <?php echo $choice; ?>
+						</label>
+					<?php endforeach; ?>
+				</div>
+			</div>
+		</div>
+		<?php
+	}
+
 	public static function url($spider, $query) {
 		$name = get_class($spider);
 		return "?spider={$name}&{$query}";
@@ -131,6 +148,23 @@ class HH {
 			<a href="<?php echo $pages[$i]; ?>"><?php echo $alt; ?></a>
 		<?php endfor; ?>
 	<?php
+	}
+
+	public static function add_filter($q, $columns, $search) {
+		$parsed = Text::parse_search_term($search);
+		$partial_t = array(); // true condition
+		$partial_f = array(); // false condition
+		$n = count($columns);
+		foreach ($columns as $c) {
+			$partial_t[] = "$c LIKE ?";
+			$partial_f[] = "$c NOT LIKE ?";
+		}
+		foreach ($parsed['include'] as $term) {
+			$q->where_raw("(".implode(' OR ', $partial_t).")", array_fill(0, $n, "%{$term}%"));
+		}
+		foreach ($parsed['exclude'] as $term) {
+			$q->where_raw("(".implode(' AND ', $partial_f).")", array_fill(0, $n, "%{$term}%"));
+		}
 	}
 }
 $s = new Spider_Manager();

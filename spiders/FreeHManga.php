@@ -12,7 +12,7 @@ class Book extends Model {
 
 	public function samples() {
 		$thumbs = $this->thumbnails();
-		return array_slice($thumbs, 0, 2);
+		return array_slice($thumbs, 0, 3);
 	}
 
 	public function thumbnails() {
@@ -141,20 +141,161 @@ class FreeHManga implements Spider {
 		$grand_result = array();
 		foreach($to_surf as $url) {
 			$n = $this->get_last_page($url);
-			for ($i = $n; $i > $n-10; --$i) {
+			for ($i = $n; $i > 0; --$i) {
 				$page_url = $url . "page_$i.html";
+				echo "\n".$page_url."\n";
 				$scraps = $this->filter_scrap($this->scrap_page($page_url));
 				$this->add_scraps($scraps);
 			}
 		}
 	}
 
-	public function action_update() {
+	private function is_already_exist($info) {
+		$n = ORM::for_table('book')->where('url', $info['url'])->count();
+		return $n > 0;
+	}
 
+	public function action_update() {
+		echo '<pre>';
+		foreach ($this->sites as $starting_url) {
+			$page = 1;
+			$next = true;
+			$to_add = array();
+			while ($next) {
+				$page_url = $starting_url . ($page > 1 ? "$page/" : '');
+				echo "\n".$page_url."\n";
+				$scraps = $this->filter_scrap($this->scrap_page($page_url));
+				foreach ($scraps as $k => $info) {
+					if ($this->is_already_exist($info)) {
+						unset($scraps[$k]);
+						$next = false;
+					}
+				}
+				$to_add = array_merge($scraps, $to_add);
+				$page++;
+			}
+			$to_add = array_reverse($to_add);
+			// print_r($to_add);
+			// save
+			$this->add_scraps($to_add);
+		}
+	}
+
+	private function print_book($book) {
+		?>
+		<div class="col-md-6 result">
+			<?php echo "{$book->title} | {$book->pages} pages | {$book->date}"; ?>
+			<a href="<?php echo HH::url($this, "action=view&id={$book->id}"); ?>">VIEW</a>
+			<a href="<?php echo $book->url; ?>">ORIGIN</a>
+			<br>
+			<?php $samples = $book->samples(); ?>
+			<a href="<?php echo HH::url($this, "action=view&id={$book->id}"); ?>" title="<?php echo $book->title; ?>">
+				<?php foreach ($samples as $img) : ?>
+					<img src="<?php echo $img;?>" alt="th" width="150" />
+				<?php endforeach; ?>
+			</a>
+			<?php echo str_replace('#', ', ', trim($book->tags, '#')); ?>
+		</div>
+		<?php
+	}
+
+	private function get_order_choices() {
+		return array(
+			'date desc', 'date asc', 
+			'title asc', 'title desc', 
+			'id desc', 'id asc', 
+			'pages asc', 'pages desc',
+		);
+	}
+
+	public function search($perpage, $curpage, $order, $any, $title) {
+		$q = Model::factory('Book')
+			->limit($perpage)
+			->offset(($curpage-1) * $perpage);
+		list($column, $direction) = explode(' ', $order);
+		if ($direction == 'desc') {
+			$q->order_by_desc($column);
+		} else {
+			$q->order_by_asc($column);
+		}
+
+		HH::add_filter($q, array('title'), $title);
+		HH::add_filter($q, array('title', 'tags'), $any);
+		return $q->find_many();
 	}
 
 	public function action_search() {
 
+		$order = isset($_POST['order']) ? $_POST['order'] : 'date desc';
+		$perpage = isset($_POST['perpage']) ? (int)$_POST['perpage'] : 20;
+		$curpage = isset($_POST['curpage']) ? (int)$_POST['curpage'] : 1;
+		
+		if (isset($_POST['next'])) {
+			$curpage++;
+		} else if (isset($_POST['prev'])) {
+			$curpage--;
+		}
+		if ($curpage < 1) $curpage = 1;
+
+		// ORM::configure('logging', true);
+		$result = $this->search($perpage, $curpage, $order, @$_POST['any'], @$_POST['title']);
+		// echo ORM::get_last_query();
+		?>
+		<form class="form-horizontal" method="post" role="form">
+			<div class="form-group row">
+				<?php HH::print_form_field('Any', 'any', @$_POST['any']); ?>
+			
+				<?php HH::print_form_field('Title', 'title', @$_POST['title']); ?>
+			</div>
+			<div class="form-group row">
+				<?php HH::print_form_field('Items', 'perpage', $perpage, 3); ?>
+				
+				<?php HH::print_form_field('Page', 'curpage', $curpage, 3); ?>
+				
+				<?php HH::print_radio_field('Order', 'order', $this->get_order_choices(), $order); ?>
+			</div>
+			<div class="form-group row">
+				<div class="controls">
+					<button type="submit" class="btn btn-primary" name="search">Search</button>
+					<button type="submit" class="btn btn-info" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn btn-info" name="next">Next &gt;&gt;</button>
+				</div>
+			</div>
+
+			<?php foreach ($result as $i => $book) : ?>
+				<?php if ($i % 2 == 0) echo '<div class="row">'; ?>
+				<?php $this->print_book($book); ?>
+				<?php if ($i % 2 == 1) echo '</div>'; ?>
+			<?php endforeach; ?>
+
+			<div class="form-group" style="display:block;clear:both">
+				<div class="controls">
+					<button type="submit" class="btn btn-info" name="prev">&lt;&lt; Prev</button>
+					<button type="submit" class="btn btn-info" name="next">Next &gt;&gt;</button>
+				</div>
+			</div>
+		</form>
+
+		<?php
+	}
+
+	public function action_view() {
+		$id = $_GET['id'];
+		$book = Model::factory('Book')->find_one($id);
+		$thumbnails = $book->thumbnails();
+		$pages = $book->pages();
+		?>
+		
+		<dl class="dl-horizontal">
+			<dt>Title</dt><dd><a href="<?php echo $book->url; ?>"><?php echo $book->title; ?></a></dd>
+			<dt>Date</dt><dd><?php echo $book->date; ?></dd>
+			<dt>Page</dt><dd><?php echo $book->pages; ?></dd>
+			<dt>Tags</dt><dd><?php echo str_replace('#', ', ', trim($book->tags, '#')); ?></dd>
+			<dd><a href="<?php echo $book->url; ?>">ORIGIN</a></dd>
+		</dl>
+		
+		<?php
+		HH::print_downloads($book->title, $thumbnails, $pages);
 	}
 
 }
