@@ -30,8 +30,10 @@ class Spider_Manager {
 	}
 
 	private function print_menu($spider) {
+		$spider_name = isset($_REQUEST['spider']) ? $_REQUEST['spider'] : '';
+		$active = $spider == $spider_name ? 'active' : '';
 	?>
-		<li class="dropdown">
+		<li class="dropdown <?=$active;?>">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="?spider=<?=$spider;?>" tabindex="-1">
 				<?=$spider;?> <span class="caret"></span>
 			</a>
