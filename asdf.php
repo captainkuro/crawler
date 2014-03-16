@@ -270,3 +270,27 @@ function othelloplus() {
 	}
 }
 // othelloplus();
+
+function anuwap() {
+	$vid_dir = 'http://anuwap.com/indo-sex-video/';
+	for ($out = 3; $out <= 10; $out++) {
+		$outer = Text::create($out)->pad(2)->to_s();
+		$dir_url = "http://anuwap.com/indo-sex-video/?dir=/Indo%20Sex%20{$outer}&p=1&sort=1";
+		$p = new Page($dir_url, array('become_firefox' => true));
+		$p->go_line('Page 1 of');
+		$m = $p->curr_line()->regex_match('/Page 1 of (\d+)/');
+		$n = $m[1];
+		for ($i = 0; $i<$n; $i++) {
+			$page_url = $dir_url . '&page=' . $i;
+			echo '<br> '.$page_url;
+			$p2 = new Page($page_url, array('become_firefox' => true));
+			$p2->go_line('title2');
+			$arr = $p2->curr_line()->extract_to_array('file=', '&');
+			foreach ($arr as $f) {
+				echo "<a href='{$vid_dir}{$f}'>$outer</a>\n";
+			}
+		}
+		// exit;
+	}
+}
+anuwap();

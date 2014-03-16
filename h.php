@@ -18,7 +18,7 @@ function imagefap_realm($base) {
 	$sitename = "http://www.imagefap.com";
 	$finish = false;
 	$firstbase = $base;
-	$dir = basename($base);
+	$dir = urldecode(basename($base));
 	$i = 1;
 	while (!$finish) {
 		$c = new Crawler($base);
@@ -36,6 +36,7 @@ function imagefap_realm($base) {
 			if (Crawler::is_there($line, 'border=0')) {
 				$img = Crawler::extract($line, 'src="', '"');
 				$img = str_replace('/thumb/', '/full/', $img);
+				$img = preg_replace('/\/x\d\./', '/', $img);
 				$filename = basename($img);
 				$ext = Crawler::cutfromlast($filename, '.');
 				$text = Crawler::n($i++, 4);
@@ -678,6 +679,16 @@ function neechan($url) {
 	// }
 }
 
+function therief_sextgem($url) {
+	$p = new Page($url);
+	$p->go_line('gbr apm');
+	$ar = $p->curr_line()->extract_to_array('&url=', '"');
+	foreach ($ar as $key => $value) {
+		echo "<a href='$value'>therief</a><br>\n";
+	}
+
+}
+
 ?>
 <html>
 <body>
@@ -713,6 +724,7 @@ if ($_POST) {
 			'rule34.xxx' => 'rule34xxx',
 			'pururin.com' => 'pururin',
 			'neechan.net' => 'neechan',
+			'therief.sextgem.com' => 'therief_sextgem',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
