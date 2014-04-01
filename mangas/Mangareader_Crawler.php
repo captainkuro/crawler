@@ -50,7 +50,7 @@ class Mangareader_Crawler implements Manga_Crawler {
 			}
 		}
 		$c->close();
-		return $list;
+		return array_reverse($list);
 	}
 
 	public function get_images($chapter_url, $prefix, $infix) {

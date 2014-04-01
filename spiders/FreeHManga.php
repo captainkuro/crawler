@@ -36,7 +36,7 @@ class Book extends Model {
 class FreeHManga implements Spider {
 
 	private $sites = array(
-		'http://www.hcomicbook.com/tags/english/',
+		// 'http://www.hcomicbook.com/tags/english/',
 		'http://hentai4manga.com/tags/english/',
 	);
 

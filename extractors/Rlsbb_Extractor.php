@@ -18,43 +18,38 @@ class Rlsbb_Extractor implements Extractor {
 			foreach ($h->find('div.post') as $post) {
 				$item = array();
 
-				if (in_array('link', $columns)) {
-					$title_a = $post->find('.postTitle', 0)->find('a', 0);
-					$item['link'] = "<a href='{$title_a->href}'>link</a>";
+				$title_a = $post->find('.postTitle', 0)->find('a', 0);
+				$item['link'] = "<a href='{$title_a->href}'>link</a>";
+
+				$title_a = $post->find('.postTitle', 0)->find('a', 0);
+				$item['title'] = $title_a->innertext;
+
+				$subtitle = $post->find('.postSubTitle', 0);
+				$date = Text::create($subtitle->innertext)->regex_match('/Posted on (.*) in </');
+				$date = $date[1];
+				$item['date'] = $date;
+
+				$subtitle = $post->find('.postSubTitle', 0);
+				$categories = array();
+				foreach ($subtitle->find('a[rel=category tag]') as $c) {
+					$categories[] = $c->innertext;
 				}
-				if (in_array('title', $columns)) {
-					$title_a = $post->find('.postTitle', 0)->find('a', 0);
-					$item['title'] = $title_a->innertext;
+				$item['categories'] = implode(', ', $categories);
+
+				$content = $post->find('.postContent', 0);
+				if (!$content) {
+					$content = $post->find('.entry-content', 0);
 				}
-				if (in_array('date', $columns)) {
-					$subtitle = $post->find('.postSubTitle', 0);
-					$date = Text::create($subtitle->innertext)->regex_match('/Posted on (.*) in </');
-					$date = $date[1];
-					$item['date'] = $date;
+				$item['content'] = strip_tags($content->innertext, '<br>');
+
+				$content = $post->find('.postContent', 0);
+				if (!$content) {
+					$content = $post->find('.entry-content', 0);
 				}
-				if (in_array('category', $columns)) {
-					$subtitle = $post->find('.postSubTitle', 0);
-					$categories = array();
-					foreach ($subtitle->find('a[rel=category tag]') as $c) {
-						$categories[] = $c->innertext;
-					}
-					$item['categories'] = implode(', ', $categories);
-				}
-				if (in_array('content', $columns)) {
-					$content = $post->find('.postContent', 0);
-					if (!$content) {
-						$content = $post->find('.entry-content', 0);
-					}
-					$item['content'] = strip_tags($content->innertext, '<br>');
-				}
-				if (in_array('image', $columns)) {
-					$content = $post->find('.postContent', 0);
-					if (!$content) {
-						$content = $post->find('.entry-content', 0);
-					}
-					$img = $content->find('img', 0);
-					$item['image'] = $img ? $img->outertext() : '';
-				}
+				$img = $content->find('img', 0);
+				$item['image'] = $img ? $img->outertext() : '';
+				$img2 = $content->find('img', 1);
+				$item['image2'] = $img2 ? $img2->outertext() : '';
 
 				$result[] = $item;
 			}
