@@ -107,6 +107,9 @@ class Hmanga extends Model {
 		} else if ($content->contain('This content has been disabled.')) {
 			return;
 			$js_thumbs = array();
+		} else if ($content->contain('This content is not available in your country')) {
+			return;
+			$js_thumbs = array();
 		} else {
 			echo $p->url();
 			throw new Exception('where is thumbs?');
