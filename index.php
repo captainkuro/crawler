@@ -32,3 +32,5 @@ if (strpos($request, '?')) $request = substr($request, 0, strpos($request, '?'))
 if (is_file($request . '.php')) {
 	include $request.'.php';
 }
+
+define('KANWIL_AUTOLOADED', true);

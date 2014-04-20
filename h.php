@@ -374,7 +374,7 @@ function sankakucomplex($url) {
 	$tag = uniqid();
 	$Turl = Text::create($url);
 	if ($Turl->contain('tags=')) {
-		$tag = $Turl->cut_between('tags=', '&')->urldecode()->to_s();
+		$tag = $Turl->cut_after('tags=')->urldecode()->to_s();
 	}
 	do {
 		if (isset($_GET['limit'])) {
