@@ -2,7 +2,7 @@
 /*
 Extract a zipped manga
 Traverse in each directory, 1 directory is 1 volume
-Rename files using pattern <PREFIX>-<PART IN VOLUME>-<INCREMENTAL>.<FORMAT>
+Rename files using pattern <PREFIX>-v<VOL>p<PART IN VOLUME>-<INCREMENTAL>.<FORMAT>
 */ 
 
 if (!defined('KANWIL_AUTOLOADED')) {
@@ -51,15 +51,17 @@ class File_Renamer {
 	private $input_dir;
 	private $prefix;
 	private $output_dir;
+	private $is_copied;
 	
 	private $prev_subpath = '';
 	private $current_part = 0;
 	private $current_page = 1;
 
-	public function __construct($input_dirpath, $file_prefix, $output_dirpath) {
+	public function __construct($input_dirpath, $file_prefix, $output_dirpath, $copy = false) {
 		$this->input_dir = $input_dirpath;
 		$this->prefix = $file_prefix;
 		$this->output_dir = $output_dirpath;
+		$this->is_copied = $copy;
 	}
 
 	public function perform() {
@@ -101,7 +103,11 @@ class File_Renamer {
 
 	private function move($origin_path, $new_name) {
 		$new_path = rtrim($this->output_dir, '/') . '/' . $new_name;
-		rename($origin_path, $new_path);
+		if ($this->is_copied) {
+			copy($origin_path, $new_path);
+		} else {
+			rename($origin_path, $new_path);
+		}
 	}
 }
 
@@ -161,19 +167,38 @@ function remove_dir($dirPath) {
 	rmdir($dirPath);
 }
 
-class Main_Program {
+class Prefix_Generator {
+
+	private $prefix;
+	private $pattern;
+
+	public function __construct($prefix, $capture_pattern) {
+		$this->prefix = $prefix;
+		$this->pattern = $capture_pattern;
+	}
+
+	public function generate($dirname) {
+		preg_match($this->pattern, $dirname, $m);
+		$vol = Text::create($m[1])->pad(2)->to_s();
+		return $this->prefix . '-v' . $vol;
+	}
+}
+
+class Zip_To_Cbz {
 
 	private $source;
 	private $destination;
+	private $prefix_gen;
 	private $temp_dir = 'e:\Temp\unzip';
 
 	private $current_file;
 	private $unzip_dir;
 	private $moved_dir;
 
-	public function __construct($source_dir, $dest_dir) {
+	public function __construct($source_dir, $dest_dir, $prefix, $vol_pattern) {
 		$this->source = $source_dir;
 		$this->destination = $dest_dir;
+		$this->prefix_gen = new Prefix_Generator($prefix, $vol_pattern);
 	}
 
 	public function run() {
@@ -221,7 +246,8 @@ class Main_Program {
 		mkdir($new_dir);
 		$this->moved_dir = $new_dir;
 
-		$renamer = new File_Renamer($this->unzip_dir, '', $new_dir);
+		$prefix = $this->prefix_gen->generate($new_name);
+		$renamer = new File_Renamer($this->unzip_dir, $prefix, $new_dir);
 		$renamer->perform();
 	}
 
@@ -244,6 +270,90 @@ class Main_Program {
 	}
 }
 
+class Dir_To_Cbz {
+	
+	private $source;
+	private $destination;
+	private $prefix_gen;
+	private $temp_dir = 'e:\Temp\unzip';
+
+	private $current_dir;
+	private $moved_dir;
+
+	public function __construct($source_dir, $dest_dir, $prefix, $vol_pattern) {
+		$this->source = $source_dir;
+		$this->destination = $dest_dir;
+		$this->prefix_gen = new Prefix_Generator($prefix, $vol_pattern);
+	}
+
+	public function run() {
+		$dirs = $this->all_directories();
+		foreach ($dirs as $dir) {
+			$this->current_dir = $dir;
+			$this->create_new_directory();
+			if ($this->need_renaming()) {
+				$this->rename_them();
+			} else {
+				$this->copy_them();
+			}
+			$this->zip_them();
+			$this->cleanup();
+		}
+	}
+
+	private function all_directories() {
+		$dir = new DirectoryIterator($this->source);
+		$result = array();
+		foreach ($dir as $fileinfo) {
+			if ($fileinfo->isDir() && !$fileinfo->isDot()) {
+				$result[] = $fileinfo->getPathname();
+			}
+		}
+		return $result;
+	}
+
+	private function need_renaming() {
+		$validator = new Dir_Validator($this->current_dir);
+		return $validator->need_renaming();
+	}
+
+	private function create_new_directory() {
+		$new_name = basename($this->current_dir);
+		$new_dir = $this->temp_dir . '/' . $new_name;
+		mkdir($new_dir);
+		$this->moved_dir = $new_dir;
+	}
+
+	private function rename_them() {
+		$new_name = basename($this->current_dir);
+		$prefix = $this->prefix_gen->generate($new_name);
+		$renamer = new File_Renamer($this->current_dir, $prefix, $this->moved_dir, true);
+		$renamer->perform();
+	}
+
+	private function copy_them() {
+		$iterator = new RecursiveIteratorIterator(
+			new RecursiveDirectoryIterator($this->current_dir, FilesystemIterator::SKIP_DOTS)
+		);
+		while ($iterator->valid()) {
+			if ($iterator->isFile()) {
+				copy($iterator->getPathname(), $this->moved_dir . '/' . $iterator->getFilename());
+			}
+			$iterator->next();
+		}
+	}
+
+	private function zip_them() {
+		$zipper = new Directory_Zipper($this->moved_dir, $this->destination);
+		$zipper->perform();
+	}
+
+	private function cleanup() {
+		if ($this->moved_dir) remove_dir($this->moved_dir);
+		$this->moved_dir = true;
+	}
+}
+
 // Test run
 // $ex = new Zip_Extractor('E:\Temp Manga\Yu-Gi-Oh!\Yu-Gi-Oh! v07 c52-59.zip', 'E:\Temp');
 // $ex->perform();
@@ -254,5 +364,7 @@ class Main_Program {
 // $zi = new Directory_Zipper('E:\Temp\coba', 'E:\Temp');
 // $zi->perform();
 // remove_dir('E:\Temp\Yu-Gi-Oh! v01 c01-07');
-$program = new Main_Program('E:\Temp\input', 'E:\Temp\output');
-$program->run();
+// $program = new Dir_To_Cbz('E:\Temp\input', 'E:\Temp\output', 'Yu_Gi_Oh', '/v(\d+)/');
+// $program->run();
+// $gen = new Prefix_Generator('Yugioh', '/v(\d+)/');
+// echo $gen->generate('Yu-Gi-Oh! v08 c60-69');
