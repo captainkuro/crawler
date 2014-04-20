@@ -21,7 +21,7 @@ class Zip_Extractor {
 
 	public function new_directory_name() {
 		$new_name = Text::create($this->input_file)->basename()->cut_rbefore('.')->to_s();
-		return rtrim($this->output_dir, '/') . '/' . $new_name;
+		return rtrim($this->output_dir, '/') . '/' . $new_name . 'extract';
 	}
 
 	public function perform() {
@@ -67,7 +67,7 @@ class File_Renamer {
 		foreach ($all_files as $subpath => $files_in_dir) {
 			foreach ($files_in_dir as $filepath) {
 				$new_name = $this->new_name_for($subpath, $filepath);
-				echo $new_name.PHP_EOL;
+				$this->move($filepath, $new_name);
 			}
 		}
 	}
@@ -115,7 +115,6 @@ class Dir_Validator {
 
 	public function need_renaming() {
 		$count = $this->count_directory();
-		echo $count;
 		return $count > 2;
 	}
 
@@ -151,13 +150,109 @@ class Directory_Zipper {
 		$new_name = basename($source_dir) . '.cbz';
 		$dest_file = rtrim($this->output_dir, '/') . '/' . $new_name;
 		$command = "7z a \"{$dest_file}\" \"{$source_dir}\\*\" -tzip -mx0".PHP_EOL;
+		return $command;
+	}
+}
+
+function remove_dir($dirPath) {
+	foreach(new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dirPath, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::CHILD_FIRST) as $path) {
+	    $path->isFile() ? unlink($path->getPathname()) : rmdir($path->getPathname());
+	}
+	rmdir($dirPath);
+}
+
+class Main_Program {
+
+	private $source;
+	private $destination;
+	private $temp_dir = 'e:\Temp\unzip';
+
+	private $current_file;
+	private $unzip_dir;
+	private $moved_dir;
+
+	public function __construct($source_dir, $dest_dir) {
+		$this->source = $source_dir;
+		$this->destination = $dest_dir;
+	}
+
+	public function run() {
+		$to_extract = $this->all_archives();
+		foreach ($to_extract as $zip_file) {
+			$this->current_file = $zip_file;
+			$this->extract_file();
+			if ($this->need_renaming()) {
+				$this->rename_them();
+				$this->zip_them();
+			} else {
+				$this->directly_copy();
+			}
+			$this->cleanup();
+		}
+	}
+
+	public function all_archives() {
+		$dir = new DirectoryIterator($this->source);
+		$allowed = array('zip', 'rar');
+		$result = array();
+		foreach ($dir as $fileinfo) {
+			if ($fileinfo->isFile() && in_array($fileinfo->getExtension(), $allowed)) {
+				$result[] = $fileinfo->getPathname();
+			}
+		}
+		return $result;
+	}
+
+	private function extract_file() {
+		$extractor = new Zip_Extractor($this->current_file, $this->temp_dir);
+		$extractor->perform();
+		$this->unzip_dir = $extractor->new_directory_name();
+	}
+
+	private function need_renaming() {
+		$validator = new Dir_Validator($this->unzip_dir);
+		return $validator->need_renaming();
+	}
+
+	// them = files in unzip_dir
+	private function rename_them() {
+		$new_name = Text::create($this->current_file)->basename()->cut_rbefore('.')->to_s();
+		$new_dir = $this->temp_dir . '/' . $new_name;
+		mkdir($new_dir);
+		$this->moved_dir = $new_dir;
+
+		$renamer = new File_Renamer($this->unzip_dir, '', $new_dir);
+		$renamer->perform();
+	}
+
+	private function zip_them() {
+		$zipper = new Directory_Zipper($this->moved_dir, $this->destination);
+		$zipper->perform();
+	}
+
+	private function directly_copy() {
+		$filename = basename($this->current_file);
+		$destination = rtrim($this->destination, '/') . '/' . $filename;
+		copy($this->current_file, $destination);
+	}
+
+	private function cleanup() {
+		if ($this->unzip_dir) remove_dir($this->unzip_dir);
+		if ($this->moved_dir) remove_dir($this->moved_dir);
+		$this->unzip_dir = '';
+		$this->moved_dir = '';
 	}
 }
 
 // Test run
 // $ex = new Zip_Extractor('E:\Temp Manga\Yu-Gi-Oh!\Yu-Gi-Oh! v07 c52-59.zip', 'E:\Temp');
 // $ex->perform();
-$vd = new Dir_Validator('E:\Temp\Yu-Gi-Oh! v07 c52-59');
-var_dump($vd->need_renaming());
+// $vd = new Dir_Validator('E:\Temp\Yu-Gi-Oh! v07 c52-59');
+// var_dump($vd->need_renaming());
 // $ren = new File_Renamer('E:\Temp\Yu-Gi-Oh! v01 c01-07', 'Yu-Gi-Oh_v01', 'E:\Temp\coba');
 // $ren->perform();
+// $zi = new Directory_Zipper('E:\Temp\coba', 'E:\Temp');
+// $zi->perform();
+// remove_dir('E:\Temp\Yu-Gi-Oh! v01 c01-07');
+$program = new Main_Program('E:\Temp\input', 'E:\Temp\output');
+$program->run();
