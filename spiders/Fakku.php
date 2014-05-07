@@ -110,6 +110,9 @@ class Hmanga extends Model {
 		} else if ($content->contain('This content is not available in your country')) {
 			return;
 			$js_thumbs = array();
+		} else if ($content->contain('Content does not exist')) {
+			return;
+			$js_thumbs = array();
 		} else {
 			echo $p->url();
 			throw new Exception('where is thumbs?');
@@ -134,7 +137,17 @@ class Hmanga extends Model {
 			$imgpath = $p->curr_line()->dup()->cut_between("return'", "';")->to_s();
 			$imgpath = str_replace("'+x+'", '%s', $imgpath);
 		}
+		$imgpath = str_replace("https://", 'http://', $imgpath);
 		$this->pattern = $imgpath;
+
+		// update date
+		// $date_page = new Page(Fakku::$base . $this->url);
+		// $h = new simple_html_dom();
+		// $h->load($date_page->content());
+		// $date = $h->find('div.small', 0)
+		// 	->find('div.right', 0)
+		// 	->find('b', 0);
+		// $this->date = date('Y-m-d', strtotime($date->plaintext));
 		
 		$this->save();
 	}
@@ -255,6 +268,7 @@ class Fakku implements Spider{
 				
 				$date = $row->find('div.small', 0)->find('div.right', 0)->find('b', 0);
 				$item['date'] = date('Y-m-d', strtotime($date->plaintext));
+				// $item['date'] = date('Y-m-d');
 				
 				$desc = $row->find('div.short', 0);
 				$item['desc'] = trim($desc->plaintext);

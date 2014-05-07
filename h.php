@@ -689,6 +689,18 @@ function therief_sextgem($url) {
 
 }
 
+// http://hentai2read.com/temple_is_best/1/
+function hentai2read($url) {
+	$title = basename(dirname($url)).'-'.basename($url);
+	$p = new Page($url);
+	$p->go_line('wpm_mng_rdr_img_lst');
+	$json = $p->curr_line()->cut_between(' = ', ';')->to_s();
+	$images = json_decode($json);
+	foreach ($images as $src) {
+		echo "<a href='$src'>$title</a><br>\n";
+	}
+}
+
 ?>
 <html>
 <body>
@@ -725,6 +737,7 @@ if ($_POST) {
 			'pururin.com' => 'pururin',
 			'neechan.net' => 'neechan',
 			'therief.sextgem.com' => 'therief_sextgem',
+			'hentai2read.com' => 'hentai2read',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
