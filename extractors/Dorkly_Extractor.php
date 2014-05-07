@@ -27,12 +27,34 @@ class Dorkly_Extractor implements Extractor {
                 $h2 = new simple_html_dom();
                 $h2->load($p2->content());
 
-                $img = $h2->find('.the_comic', 0)->find('img', 0);
-                $item['image'] = $img->outertext();
+                $item['image'] = $this->extract_images($h2);
+                $content = $h2->find('.the_comic', 0)->find('.article-content', 0);
+                $pagination = $content->find('.pagination', 0);
+                if ($pagination) {
+                    foreach ($pagination->find('a') as $a) {
+                        if ($a->{'class'} == 'next') continue;
+                        $aurl = $domain . $a->href;
+                        $p3 = new Page($aurl);
+                        $h3 = new simple_html_dom();
+                        $h3->load($p3->content());
+                        $item['image'] = array_merge($item['image'], $this->extract_images($h3));
+                    }
+                }
+                $item['image'] = implode('<br>', $item['image']);
+
 
                 $result[] = $item;
             }
         }
         return $result;
+    }
+
+    private function extract_images($html) {
+        $images = array();
+        $content = $html->find('.the_comic', 0)->find('.article-content', 0);
+        foreach ($content->find('img') as $img) {
+            $images[] = $img->outertext();
+        }
+        return $images;
     }
 }
