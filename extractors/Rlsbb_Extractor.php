@@ -41,6 +41,7 @@ class Rlsbb_Extractor implements Extractor {
 					$content = $post->find('.entry-content', 0);
 				}
 				$item['content'] = strip_tags($content->innertext, '<br>');
+				$item['description'] = $item['content'];
 
 				$content = $post->find('.postContent', 0);
 				if (!$content) {
