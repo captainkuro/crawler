@@ -49,6 +49,30 @@ function imagefap_realm($base) {
 	}
 }
 
+function imagefap_list($base) {
+// http://www.imagefap.com/profile/jaichwieder/galleries?folderid=-1&page=
+	$sitename = "http://www.imagefap.com";
+	$p = new Page($base);
+	$h = new simple_html_dom();
+	$h->load($p->content());
+	$table = $h->find('table.blk_galleries', 1);
+	foreach ($table->find('a.blk_galleries') as $a) {
+		$gal = $sitename . $a->href;
+		if (strpos($gal, '/gallery/')) {
+			$gal = str_replace('/gallery/', '/pictures/', $gal) . '/' . urlencode($a->text()) . '/';
+			imagefap_realm($gal);
+		}
+	}
+}
+
+function imagefap_gate($base) {
+	if (strpos($base, '/profile/')) {
+		imagefap_list($base);
+	} else {
+		imagefap_realm($base);
+	}
+}
+
 function doujinmoe_realm($start_url) {
 	// http://www.doujin-moe.us/phpgraphy/index.php?dir=Artists%2FAmatarou%2FDaisy%20%28English%29
 	// http://www.doujin-moe.us/phpgraphy/pictures/Artists/Amatarou/Daisy%20(English)/.thumbs/lr_Daisy%20-%20001.jpg
@@ -718,7 +742,7 @@ if ($_POST) {
 	} else {
 		// Simple mapping host => function
 		$map = array(
-			'imagefap.com' => 'imagefap_realm',
+			'imagefap.com' => 'imagefap_gate',
 			'doujin-moe.us' => 'doujinmoe_realm',
 			'bobx.com' => 'bobx_realm',
 			'imagearn.com' => 'imagearn_realm',
