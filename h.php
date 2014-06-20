@@ -725,6 +725,26 @@ function hentai2read($url) {
 	}
 }
 
+// http://www.fakku.net/manga/a-sacrifice-to-the-lustbug-english/read
+// http://www.fakku.net/manga/a-sacrifice-to-the-lustbug-english
+// https://t.fakku.net/images/manga/a/%5BFan_no_Hitori%5D_Original_Work_-_A_Sacrifice_to_the_Lustbug/thumbs/001.thumb.jpg
+// https://t.fakku.net/images/manga/a/%5BFan_no_Hitori%5D_Original_Work_-_A_Sacrifice_to_the_Lustbug/images/001.jpg
+function fakku($url) {
+	if (!preg_match('/\/read$/', $url)) {
+		$url .= '/read';
+	}
+	$title = basename(dirname($url));
+	$p = new Page($url);
+	$content = new Text($p->content());
+	$p->go_line('window.params.thumbs');
+	$json = $p->curr_line()->cut_between('=', ';')->to_s();
+	$js_thumbs = json_decode($json);
+	foreach ($js_thumbs as $thumb) {
+		$src = Text::create($thumb)->replace('.thumb.', '.')->replace('/thumbs/', '/images/')->to_s();
+		echo "<a href='$src'>$title</a><br>\n";
+	}
+}
+
 ?>
 <html>
 <body>
@@ -762,6 +782,7 @@ if ($_POST) {
 			'neechan.net' => 'neechan',
 			'therief.sextgem.com' => 'therief_sextgem',
 			'hentai2read.com' => 'hentai2read',
+			'fakku.net' => 'fakku',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
