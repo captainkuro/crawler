@@ -46,6 +46,8 @@ class Scnsrc_Extractor implements Extractor {
 					$content = $post->find('.storycontent', 0);
 					$img = $content->find('img', 0);
 					$item['image'] = $img ? $img->outertext() : '';
+					$img2 = $content->find('img', 1);
+					$item['image2'] = $img2 ? $img2->outertext() : '';
 				}
 
 				$result[] = $item;
