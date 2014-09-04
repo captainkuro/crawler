@@ -9,7 +9,9 @@ class Foolslide_Crawler implements Manga_Crawler {
 	
 	public function is_supported($url) {
 		return strpos($url, '/reader/series/') !== false
-			|| strpos($url, '/reader/read/') !== false;
+			|| strpos($url, '/reader/read/') !== false
+			|| preg_match('/reader\.[^\/]+\/series\//', $url)
+			|| preg_match('/reader\.[^\/]+\/read\//', $url);
 	}
 
 	public function is_single_chapter($url) {
@@ -18,6 +20,9 @@ class Foolslide_Crawler implements Manga_Crawler {
 
 	public function get_infix($url) {
 		if (preg_match('/\/0\/([\d\/]*)/', $url, $m)) {
+			$chunk = trim($m[1], '/');
+			return str_replace('/', '.', $chunk);
+		} else if (preg_match('/\/en\/\d+\/([\d\/]*)/', $url, $m)) {
 			$chunk = trim($m[1], '/');
 			return str_replace('/', '.', $chunk);
 		} else {
