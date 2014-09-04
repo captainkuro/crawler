@@ -13,7 +13,16 @@ class LimberoJl8_extractor implements Extractor {
 			$h = new simple_html_dom();
 			$h->load($p->content());
 
-			$item = array('image' => $h->find('#nav', 0)->find('img', 0)->src);
+			$nav = $h->find('#nav', 0);
+			$images = '';
+			foreach ($nav->find('img') as $img) {
+				$images .= $img->outertext().'<br>';
+			}
+			$item = array(
+				'image' => $nav->find('img', 0)->outertext(),
+				'images' => $images,
+				'link' => "<a href='$purl'>Link</a>",
+			);
 			$result[] = $item;
 		}
 		return $result;
