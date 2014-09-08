@@ -51,6 +51,8 @@ class Rlsbb_Extractor implements Extractor {
 				$item['image'] = $img ? $img->outertext() : '';
 				$img2 = $content->find('img', 1);
 				$item['image2'] = $img2 ? $img2->outertext() : '';
+				$img3 = $content->find('img', 2);
+				$item['image3'] = $img3 ? $img3->outertext() : '';
 
 				$result[] = $item;
 			}
