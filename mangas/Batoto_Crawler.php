@@ -4,7 +4,8 @@
 class Batoto_Crawler implements Manga_Crawler {
 
 	public function is_supported($url) {
-		return strpos($url, 'http://www.batoto.net/') !== false;
+		return strpos($url, 'http://www.batoto.net/') !== false
+			|| strpos($url, 'http://bato.to/') !== false;
 	}
 
 	public function is_single_chapter($url) {
