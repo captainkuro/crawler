@@ -250,33 +250,50 @@ class Fakku implements Spider{
 				$item['url'] = rawurldecode($title->href);
 				$item['title'] = html_entity_decode($title->plaintext, ENT_COMPAT, 'UTF-8');
 				
-				$series = $row->find('div.left', 0)->find('a', 0);
+				$series = $row->find('div.right', 0)->find('a', 0);
 				if (!$series) { // malformed
+					throw new Exception($item['url'] . ' fail parsing $series');
 					echo 'Cancelled '.$item['url'].' fail parsing $series'."<br>\n";
 					continue;
-					// throw new Exception('fail parsing $series');
 				}
 				$item['series'] = html_entity_decode($series->plaintext, ENT_COMPAT, 'UTF-8');
 				
 				// $artist = $row->find('div.left', 1)->find('a', 0);
 				$artists = array();
-				$artist_els = $row->find('div.left', 1)->find('a');
+				$artist_els = $row->find('div.right', 1)->find('a');
 				foreach ($artist_els as $el) {
 					$artists[] = html_entity_decode($el->plaintext, ENT_COMPAT, 'UTF-8');
 				}
 				$item['artist'] = implode(', ', $artists);
 				
-				$date = $row->find('div.small', 0)->find('div.right', 0)->find('b', 0);
+				$date = $row->find('.content-time', 0);
 				$item['date'] = date('Y-m-d', strtotime($date->plaintext));
-				// $item['date'] = date('Y-m-d');
 				
-				$desc = $row->find('div.short', 0);
-				$item['desc'] = trim($desc->plaintext);
+				// find description
+				$right = null;
+				foreach ($row->find('div.left') as $left) {
+					if ($left->plaintext === 'Description') {
+						$right = $left->next_sibling();
+					}
+				}
+				if (!$right) {
+					throw new Exception($item['url'] . 'fail parsing $desription');
+					echo 'Cancelled '.$item['url'].' fail parsing $description'."<br>\n";
+					continue;
+				}
+				$item['desc'] = trim($right->plaintext);
 				
-				$tags = $row->find('div.short', 1);
+				$tags = $row->find('div.tags', 0);
 				$item['tags'] = array();
 				if ($tags) foreach ($tags->find('a') as $a) {
-					$item['tags'][] = basename($a->href);
+					if ($a->plaintext != '...') {
+						$item['tags'][] = basename($a->href);
+					}
+				}
+				$THRESHOLD = 7;
+				if (count($item['tags']) >= $THRESHOLD) {
+					// there may be another tags
+					$item['tags'] = $this->grab_all_tags($item['url']);
 				}
 				$item['tags'] = '#'.implode('#', $item['tags']).'#';
 
@@ -288,6 +305,22 @@ class Fakku implements Spider{
 		}
 		
 		return $infos;
+	}
+
+	private function grab_all_tags($url) {
+		$real_url = self::$base . $url;
+		$p = new Page($real_url);
+		$html = new simple_html_dom();
+		$html->load($p->content());
+
+		$tags = $html->find('div.tags', 0);
+		$result = array();
+		foreach ($tags->find('a') as $a) {
+			if ($a->plaintext != '+') {
+				$result[] = basename($a->href);
+			}
+		}
+		return $result;
 	}
 	
 	public function add_hmanga($data) {
@@ -339,6 +372,7 @@ class Fakku implements Spider{
 				$page++;
 			}
 			$to_add = array_reverse($to_add);
+			// echo '<pre>';print_r($to_add);continue;
 			// save
 			foreach ($to_add as $info) {
 				echo $info['url']."<br>\n";
