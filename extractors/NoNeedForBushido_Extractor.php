@@ -11,12 +11,18 @@ class NoNeedForBushido_extractor implements Extractor {
 		for ($i=$s; $i<=$n; $i++) {
 			$purl = sprintf($pattern_url, $i);
 			$p = new Page($purl);
+
 			$p->go_line('"og:image"');
 			$src = $p->curr_line()->cut_between('content="', '"')->to_s();
+			
+			$p->reset_line();
+			$p->go_line("link rel='next'");
+			$next = $p->curr_line()->cut_between("href='", "'")->to_s();
 
 			$item = array(
 				'image' => "<img src='$src'>",
 				'link' => "<a href='$purl'>Link</a>",
+				'next' => "<a href='$next'>Next</a>",
 			);
 			$result[] = $item;
 		}
