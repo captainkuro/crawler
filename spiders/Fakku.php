@@ -47,11 +47,11 @@ class Hmanga extends Model {
 		$pattern = new Text($this->pattern);
 		// hack
 		// $hack_replace = 'http://c.fakku.net/';
-		$hack_replace = 'http://t.fakku.net/';
+		$hack_replace = 't.fakku.net/';
 		$thumb_pre = $pattern
 			->replace('/images/', '/thumbs/')
 			// hack
-			->replace('http://t.fakku.net/thumbs/', $hack_replace.'images/')
+			->replace('t.fakku.net/thumbs/', $hack_replace.'images/')
 			->dirname()
 			->to_s();
 		return $thumb_pre.'/'.$filename;
@@ -161,7 +161,7 @@ class Hmanga extends Model {
 // Main program
 class Fakku implements Spider{
 	public static $cdn = 'http://cdn.fakku.net/8041E1/t/';
-	public static $base = 'http://www.fakku.net';
+	public static $base = 'https://www.fakku.net';
 	
 	public function get_title() {
 		return 'Fakku scraper';
@@ -350,8 +350,8 @@ class Fakku implements Spider{
 	
 	public function action_update() {
 		foreach (array(
-			'http://www.fakku.net/manga/english', 
-			'http://www.fakku.net/doujinshi/english'
+			'https://www.fakku.net/manga/english', 
+			'https://www.fakku.net/doujinshi/english'
 		) as $starting_url) {
 			$page = 1;
 			$next = true;

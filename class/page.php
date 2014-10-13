@@ -59,6 +59,7 @@ class Page {
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_ENCODING, "");
 		curl_setopt($ch, CURLOPT_TIMEOUT, 150);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		// CURLOPT_COOKIE, CURLOPT_REFERER, CURLOPT_USERAGENT
 		if (self::$use_proxy) {
 			curl_setopt($ch, CURLOPT_PROXY, self::$proxy['name']);

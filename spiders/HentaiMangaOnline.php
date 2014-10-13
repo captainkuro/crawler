@@ -122,13 +122,11 @@ class HentaiMangaOnline implements Spider {
 		// grab all chapter in this page
 		$html = new simple_html_dom();
 		$html->load($p->content());
-		$table = $html->find('table.table-condensed', 0);
-		foreach ($table->find('tr') as $tr) {
-			if (count($tr->find('td')) < 2) continue;
+		$list = $html->find('ul.media-list', 0);
+		foreach ($list->find('li') as $li) {
 			$info = array();
 			// date
-			$td_date = $tr->find('td', 0);
-			$date = trim($td_date->plaintext);
+			$date = $li->find('span.label', 0)->plaintext;
 			if ($date == 'Today') {
 				$date = date('Y-m-d');
 			} else if ($date == 'Yesterday') {
@@ -141,21 +139,21 @@ class HentaiMangaOnline implements Spider {
 				$date = $time->format('Y-m-d');
 			}
 			$info['date'] = $date;
-			// other
-			$td_other = $tr->find('td', 1);
-			$gallery = $td_other->find('a', 0)->href;
-			$info['gallery_url'] = str_replace(self::$base, '', $gallery);
-
-			$download = new Text($td_other->find('a', 1)->href);
+			// gallery
+			$read = $li->find('a.read_link_in_list', 0);
+			$info['gallery_url'] = str_replace(self::$base, '', $read->href);
+			// read_id
+			$download = new Text($li->find('a.download_in_list', 0)->href);
 			$info['real_id'] = $download->cut_after('id=')->to_s();
-
-			$a_page = $td_other->find('a', 2);
-			$url = $a_page->href;
-			$info['url'] = str_replace(self::$base, '', $url);
-			$info['title'] = html_entity_decode($a_page->title, ENT_COMPAT, 'UTF-8');
-
+			// url
+			$a_page = $li->find('h4.media-heading', 0)->find('a', 0);
+			$info['url'] = str_replace(self::$base, '', $a_page->href);
+			// title
+			$info['title'] = html_entity_decode($a_page->plaintext, ENT_COMPAT, 'UTF-8');
+			
 			$chapters[] = $info;
 		}
+		
 		return $chapters;
 	}
 	
@@ -163,28 +161,8 @@ class HentaiMangaOnline implements Spider {
 	public function extract_from_page($p) {
 		$ret = array();
 		// description
-		$p->go_line('Manga Info :<');
-		$m = $p->curr_line()->regex_match('/Manga Info :(.*)$/');
-		$also_has_fav = $p->curr_line()->contains('Add To Favorites');
-		if ($m && $also_has_fav) {
-			$description = $p->curr_line()->cut_between('Manga Info :', '<span  id="favs"');
-			$description = $description->replace('<br>', "\n")->replace('<br/>', "\n")->replace('<br />', "\n");
-			$ret['description'] = trim(html_entity_decode(strip_tags($description), ENT_COMPAT, 'UTF-8'));
-			$p->reset_line();
-		} else if ($m) {
-			$part = $m[1];
-			while (!$p->next_line()->contain('Add To Favorites')) {
-				$part .= $p->curr_line()->to_s();
-			}
-			$description = new Text($part);
-			$description = $description->replace('<br>', "\n")->replace('<br/>', "\n")->replace('<br />', "\n");
-			$part = $description->cut_before('<span  id="favs"') . $description->cut_rafter('</div>');
-			$ret['description'] = html_entity_decode(strip_tags($part), ENT_COMPAT, 'UTF-8');
-			$p->reset_line();
-		} else {
-			$ret['description'] = '';
-			$p->reset_line();
-		}
+		$ret['description'] = $this->extract_description($p);
+		
 		// tags
 		$p->go_line('<a href="/tag/');
 		$ret['tags'] = array();
@@ -218,6 +196,32 @@ class HentaiMangaOnline implements Spider {
 
 		return $ret;
 	}
+
+	private function extract_description($p) {
+		$p->go_line('Manga Info :<');
+		$m = $p->curr_line()->regex_match('/Manga Info :(.*)$/');
+		$also_has_fav = $p->curr_line()->contains('Add To Favorites');
+		if ($m && $also_has_fav) {
+			$description = $p->curr_line()->cut_between('Manga Info :', '<span id="favs"');
+			$description = $description->replace('<br>', "\n")->replace('<br/>', "\n")->replace('<br />', "\n");
+			$result = trim(html_entity_decode(strip_tags($description), ENT_COMPAT, 'UTF-8'));
+			$p->reset_line();
+		} else if ($m) {
+			$part = $m[1];
+			while (!$p->next_line()->contain('Add To Favorites')) {
+				$part .= $p->curr_line()->to_s();
+			}
+			$description = new Text($part);
+			$description = $description->replace('<br>', "\n")->replace('<br/>', "\n")->replace('<br />', "\n");
+			$part = $description->cut_before('<span id="favs"') . $description->cut_rafter('</div>');
+			$result = html_entity_decode(strip_tags($part), ENT_COMPAT, 'UTF-8');
+			$p->reset_line();
+		} else {
+			$result = '';
+			$p->reset_line();
+		}
+		return $result;
+	}
 	
 	public function add_hmanga($data) {
 		$hmanga = Model::factory('Hmanga')->create();
@@ -238,6 +242,7 @@ class HentaiMangaOnline implements Spider {
 		while (!$stop) {
 			$p = new Page($start.($page>1 ? 'page/'.$page.'/':''));
 			$chunk = $this->extract_from_list($p);
+			// print_r($chunk);exit;
 			foreach ($chunk as $row) {
 				if ($this->is_already_exist($row)) {
 					$stop = true;
