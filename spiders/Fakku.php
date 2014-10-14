@@ -39,6 +39,8 @@ class Log {
 }
 
 class Hmanga extends Model {
+	public $is_deleted = false;
+
 	public function count() {
 		return substr_count($this->thumbs, '#')+1;
 	}
@@ -89,6 +91,12 @@ class Hmanga extends Model {
 	public function get_detail() {
 		$p = new Page(Fakku::$base . $this->url . '/read');
 		$content = new Text($p->content());
+		
+		// hack: sometimes old urls gone
+		if ($content->contain('<title>Error Message</title>')) {
+			$this->is_deleted = true;
+			throw new Exception($this->url.' url is gone');
+		}
 		
 		if ($content->contain('var data = {')) {
 			$p->go_line('var data = {');
@@ -153,7 +161,17 @@ class Hmanga extends Model {
 	}
 
 	public function samples() {
-		$thumbs = $this->thumbnails();
+		try {
+			$thumbs = $this->thumbnails();
+		} catch (Exception $e) {
+			if ($this->is_deleted) {
+				file_put_contents('spiders/Fakku.log', $this->url.' url is gone', FILE_APPEND);
+				$this->delete();
+				return array();
+			} else {
+				throw $e;
+			}
+		}
 		return array($thumbs[0], $thumbs[1]);
 	}
 }
@@ -471,9 +489,11 @@ class Fakku implements Spider{
 		$result = $q->find_many();
 	?>
 		<?php foreach ($result as $i => $hmanga) : ?>
+			<?php $samples = $hmanga->samples(); ?>
+			<?php if ($hmanga->is_deleted) continue; ?>
+
 			<?php if ($i % 2 == 0) echo '<div class="row">'; ?>
 			<div class="col-md-6 result">
-				<?php $samples = $hmanga->samples(); ?>
 				<a href="<?php echo HH::url($this, "action=view&id={$hmanga->id}"); ?>" title="<?php echo $hmanga->desc; ?>">
 					<img src="<?php echo $samples[0];?>" alt="th" width="100" height="140">
 					<img src="<?php echo $samples[1];?>" alt="th" width="100" height="140">
