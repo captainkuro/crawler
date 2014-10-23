@@ -49,7 +49,7 @@ function print_result($cols, $result) {
 		</thead>
 		<tbody>
 			<?php foreach ($result as $i => $row): ?>
-				<tr>
+				<tr id="row<?=$i;?>">
 					<td><?=$i+1;?></td>
 					<?php foreach ($cols as $col): ?>
 						<td><?=$row[$col];?></td>
@@ -135,5 +135,25 @@ if ($_POST) {
 
 </div>
 
+<script>
+var item = -1;
+function jump(n) {
+	var url = location.href;
+	location.href = "#row"+n;
+	history.replaceState(null, null, url);
+}
+
+document.addEventListener('keyup', function (e) {
+	if (e.target instanceof HTMLBodyElement) {
+		var c = String.fromCharCode(e.which);
+		console.log(item);
+		if (c == 'J') {
+			jump(++item);
+		} else if (c == 'K' && item > 0) {
+			jump(--item);
+		}
+	}
+});
+</script>
 <?php
 include '_footer.php';

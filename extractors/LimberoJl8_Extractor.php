@@ -1,6 +1,6 @@
 <?php
 // http://limbero.org/jl8/5
-class LimberoJl8_extractor implements Extractor {
+class LimberoJl8_Extractor implements Extractor {
 	public function can_extract($url) {
 		return strpos($url, 'http://limbero.org/jl8') === 0;
 	}
