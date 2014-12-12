@@ -612,11 +612,12 @@ function rule34xxx($url) {
 				->cut_between('href="', '"')
 				->to_s();
 			$href = htmlspecialchars_decode($href);
+			echo "$domain$href<br>\n";
 			$p2 = new Page($domain . $href);
 			$p2->go_line('Original image');
 			$src = $p2->curr_line()
 				->cut_between('href="http:', '"');
-
+// echo '<pre>'.htmlspecialchars($p2->curr_line()).'</pre>';
 			echo "<a href='$src'>$tags</a><br>\n";
 		}} while (!$p->next_line()->contain('<center>'));
 		$p->reset_line();

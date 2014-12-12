@@ -165,7 +165,8 @@ class Hmanga extends Model {
 			$thumbs = $this->thumbnails();
 		} catch (Exception $e) {
 			if ($this->is_deleted) {
-				file_put_contents('spiders/Fakku.log', $this->url." url is gone\n", FILE_APPEND);
+				$time = date('Y-m-d H:i:s');
+				file_put_contents('spiders/Fakku.log', $time.' '.$this->url." url is gone\n", FILE_APPEND);
 				$this->delete();
 				return array();
 			} else {
