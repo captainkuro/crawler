@@ -49,7 +49,7 @@ function print_result($cols, $result) {
 		</thead>
 		<tbody>
 			<?php foreach ($result as $i => $row): ?>
-				<tr id="row<?=$i;?>">
+				<tr id="row<?=$i;?>" class="item-row">
 					<td><?=$i+1;?></td>
 					<?php foreach ($cols as $col): ?>
 						<td><?=$row[$col];?></td>
@@ -146,13 +146,20 @@ function jump(n) {
 document.addEventListener('keyup', function (e) {
 	if (e.target instanceof HTMLBodyElement) {
 		var c = String.fromCharCode(e.which);
-		console.log(item);
 		if (c == 'J') {
 			jump(++item);
 		} else if (c == 'K' && item > 0) {
 			jump(--item);
 		}
 	}
+});
+
+var rows = document.querySelectorAll('.item-row');
+Array.prototype.forEach.call(rows, function (row) {
+	row.addEventListener('click', function (e) {
+		item = parseInt(row.getAttribute('id').substr(3), 10);
+		jump(item);
+	});
 });
 </script>
 <?php
