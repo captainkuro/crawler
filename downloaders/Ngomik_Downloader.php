@@ -55,6 +55,7 @@ class Ngomik_Downloader implements ADownloader {
 					$src = $img->src;
 					$src = str_replace('https:', 'http:', $src);
 					$src = preg_replace('/\/150x200\//', '/600x0/', $src);
+					$src = preg_replace('/\/160x90\//', '/1200x0/', $src);
 					$filename = Text::create($i++)->pad(3)->to_s();
 					$outpath = $episode_dir . $filename . '.jpg';
 					download_it($src, $outpath);
