@@ -1,15 +1,21 @@
 <?php
 
 class FacebookAlbum_Downloader implements ADownloader {
-	private $graph_url = 'https://graph.facebook.com/v1.0/406507987653/photos?pretty=0&limit=50';
-	private $dir = '/home/khandar-gdp/tmp/kostum/';
+	private $graph_url = 'https://graph.facebook.com/v1.0/{ID}/photos?pretty=0&limit=50';
+	private $dir;
 
 	public function display() {
-		return 'Facebook Album - KOSTUM';
+		return 'Facebook Album';
 	}
 
 	public function download () {
-		$current_url = $this->graph_url;
+		echo "Album URL: ";
+		$album_url = trim(fgets(STDIN));
+		echo "Save Dir: ";
+		$this->dir = trim(fgets(STDIN));
+		$this->dir = rtrim($this->dir, '/') . '/';
+
+		$current_url = $this->album_to_gallery($album_url);
 		$active	= true;
 		while ($active) {
 			echo "Opening {$current_url}...\n";
@@ -17,11 +23,21 @@ class FacebookAlbum_Downloader implements ADownloader {
 			$json = json_decode($p->content());
 
             $this->download_images($json);
-            if ($json->paging->next) {
+            if (isset($json->paging->next)) {
             	$current_url = $json->paging->next;
             } else {
             	$active = false;
             }
+		}
+	}
+
+	private function album_to_gallery($album_url) {
+		if (preg_match('/\?set=a\.(\d+)/', $album_url, $match)) {
+			$id = $match[1];
+			$gallery = str_replace('{ID}', $id, $this->graph_url);
+			return $gallery;
+		} else {
+			throw new Exception("Unrecognized Album URL");
 		}
 	}
 

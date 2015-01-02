@@ -10,7 +10,7 @@ class EH_Downloader implements ADownloader {
 	public function download () {
 		echo "Gallery URL: ";
 		$gallery_url = trim(fgets(STDIN));
-		echo "Save Dir: ";
+		echo "Save Dir [{$this->default_dir}]: ";
 		$dir = trim(fgets(STDIN));
 
 		$dir = $this->prepare_dir($dir, $gallery_url);

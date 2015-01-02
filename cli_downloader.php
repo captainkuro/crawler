@@ -38,7 +38,7 @@ class MainProgram {
 			$text .= "[$i] {$downloader->display()}\n";
 			$i++;
 		}
-		$text .= "[exit]\n\n";
+		$text .= "[q]/[exit] Close\n\n";
 		$text .= 'Choose: ';
 		echo $text;
 	}
@@ -47,7 +47,7 @@ class MainProgram {
 		echo "You chose [{$input}]\n\n";
 
 		$downloader = $this->search_downloader($input);
-		if ($input === 'exit') {
+		if ($input === 'exit' || $input === 'q') {
 			$this->active = false;
 			echo "Goodbye\n";
 			return;
