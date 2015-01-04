@@ -390,9 +390,9 @@ function rule34($url) {
 
 function sankakucomplex($url) {
 	if (strpos($url, '/idol.')) {
-		$base = 'http://idol.sankakucomplex.com';
+		$base = 'https://idol.sankakucomplex.com';
 	} else {
-		$base = 'http://chan.sankakucomplex.com';
+		$base = 'https://chan.sankakucomplex.com';
 	}
 	$page = 1;
 	$tag = uniqid();
