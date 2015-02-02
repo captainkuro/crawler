@@ -300,11 +300,7 @@ class HentaiMangaOnline implements Spider {
 				<?php HH::print_radio_field('Order', 'order', $order_choices, $order); ?>
 			</div>
 			<div class="form-group row">
-				<div class="controls">
-					<button type="submit" class="btn btn-primary" name="search">Search</button>
-					<button type="submit" class="btn btn-info" name="prev">&lt;&lt; Prev</button>
-					<button type="submit" class="btn btn-info" name="next">Next &gt;&gt;</button>
-				</div>
+				<?php HH::print_submit_buttons(); ?>
 			</div>
 		
 			<?php foreach ($result as $i => $hmanga) : ?>
@@ -326,10 +322,7 @@ class HentaiMangaOnline implements Spider {
 			<?php endforeach; ?>
 
 			<div class="form-group row" style="display:block;clear:both">
-				<div class="controls">
-					<button type="submit" class="btn btn-info" name="prev">&lt;&lt; Prev</button>
-					<button type="submit" class="btn btn-info" name="next">Next &gt;&gt;</button>
-				</div>
+				<?php HH::print_submit_buttons(): ?>
 			</div>
 		</form>
 		<?php
