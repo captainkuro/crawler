@@ -6,7 +6,8 @@
 class Mangahead_Crawler implements Manga_Crawler {
 
 	public function is_supported($url) {
-		return strpos($url, 'http://mangahead.com/') !== false;
+		return strpos($url, 'http://mangahead.com/') !== false
+			|| strpos($url, 'http://www.mangahead.com/') !== false;
 	}
 
 	public function is_single_chapter($url) {

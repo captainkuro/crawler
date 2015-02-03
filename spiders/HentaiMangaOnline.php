@@ -126,8 +126,11 @@ class HentaiMangaOnline implements Spider {
 		foreach ($list->find('li') as $li) {
 			$info = array();
 			// date
+			$text_p = $li->find('p', 0)->text();
 			$date = $li->find('span.label', 0)->plaintext;
-			if ($date == 'Today') {
+			if (preg_match('/(\d{4}-\d{2}-\d{2})/', $text_p, $m)) {
+				$date = $m[1];
+			} else if ($date == 'Today') {
 				$date = date('Y-m-d');
 			} else if ($date == 'Yesterday') {
 				$time = new DateTime();

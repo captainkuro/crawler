@@ -312,11 +312,11 @@ class Hbrowse implements Spider {
 					}
 					$links[] = $href;
 				}
-			} while (!$p->next_line()->contain('Next 50 Results'));
+			} while (!$p->next_line()->contain('jump to next page'));
 
 			$line = $p->curr_line();
 			// Cek ada next/tidak
-			if ($line->contain('>Next 50 Results<')) {
+			if ($line->contain('"jump to next page')) {
 				$arr = $line->extract_to_array('href="', '"');
 				$start = end($arr);
 			} else {
@@ -341,7 +341,7 @@ class Hbrowse implements Spider {
 		$thumbnails = $hmanga->thumbnails();
 		$pages = $hmanga->pages();
 
-		HH::print_downloads($hmanga->title, $thumbnails, $pages, 'width:100px;height:150px');
+		HH::print_downloads($hmanga->title, $thumbnails, $pages, 'width:200px;height:300px');
 		?>
 		
 		<pre><?php print_r($hmanga->details()) ?></pre>

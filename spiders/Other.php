@@ -11,6 +11,10 @@ http://hentaibeer.com/
 http://www.doujinlife.com/tags/english/
 http://hentaifromhell.org/category/manga-doujinshi/
 http://www.mangaray.com/
+http://pururin.com/browse/6/10/english.html
+http://manga.hentai.ms/
+http://www.perveden.com/en-directory/?order=3
+http://www.hentai2read.com/
  */
 
 class Book extends Model {
