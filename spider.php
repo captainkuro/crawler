@@ -130,6 +130,16 @@ class HH {
 		<?php
 	}
 
+	public static function print_submit_buttons($name_search = 'search', $name_prev = 'prev', $name_next = 'next') {
+		?>
+		<div class="controls">
+			<button type="submit" class="btn btn-primary" name="<?php echo $name_search;?>">Search</button>
+			<button type="submit" class="btn btn-info" name="<?php echo $name_prev;?>">&lt;&lt; Prev</button>
+			<button type="submit" class="btn btn-info" name="<?php echo $name_next;?>">Next &gt;&gt;</button>
+		</div>
+		<?php
+	}
+
 	public static function url($spider, $query) {
 		$name = get_class($spider);
 		return "?spider={$name}&{$query}";
