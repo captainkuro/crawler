@@ -393,7 +393,7 @@ class Hbrowse implements Spider {
 				<?php HH::print_radio_field('Order', 'order', $order_choices, $order); ?>
 			</div>
 			<div class="form-group row">
-				<?php HH::print_submit_buttons(): ?>
+				<?php HH::print_submit_buttons(); ?>
 			</div>
 	<?php
 		$q = Model::factory('Hmanga')
@@ -465,7 +465,7 @@ class Hbrowse implements Spider {
 			<?php endforeach; ?>
 			
 			<div class="form-group row" style="display:block;clear:both">
-				<?php HH::print_submit_buttons(): ?>
+				<?php HH::print_submit_buttons(); ?>
 			</div>
 
 			<table border="2">

@@ -325,7 +325,7 @@ class HentaiMangaOnline implements Spider {
 			<?php endforeach; ?>
 
 			<div class="form-group row" style="display:block;clear:both">
-				<?php HH::print_submit_buttons(): ?>
+				<?php HH::print_submit_buttons(); ?>
 			</div>
 		</form>
 		<?php

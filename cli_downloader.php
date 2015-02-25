@@ -2,10 +2,10 @@
 
 require '_autoload.php';
 
-function download_it($img_url, $output_file) {
+function download_it($img_url, $output_file, $options='') {
 	$dir = dirname($output_file) . '\\';
 	//exec("mkdir \"$dir\"");
-	exec("wget -t 0 --retry-connrefused --no-check-certificate -O \"$output_file\" \"$img_url\"");
+	exec("wget -t 0 --retry-connrefused --no-check-certificate -O \"$output_file\" \"$img_url\" $options");
 }
 
 interface ADownloader {

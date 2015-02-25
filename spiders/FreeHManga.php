@@ -36,7 +36,7 @@ class Book extends Model {
 class FreeHManga implements Spider {
 
 	private $sites = array(
-		'http://www.hcomicbook.com/tags/english/',
+		// 'http://www.hcomicbook.com/tags/english/',
 		'http://hentai4manga.com/tags/english/',
 	);
 
@@ -255,7 +255,7 @@ class FreeHManga implements Spider {
 				<?php HH::print_radio_field('Order', 'order', $this->get_order_choices(), $order); ?>
 			</div>
 			<div class="form-group row">
-				<?php HH::print_submit_buttons(): ?>
+				<?php HH::print_submit_buttons(); ?>
 			</div>
 
 			<?php foreach ($result as $i => $book) : ?>
@@ -265,7 +265,7 @@ class FreeHManga implements Spider {
 			<?php endforeach; ?>
 
 			<div class="form-group" style="display:block;clear:both">
-				<?php HH::print_submit_buttons(): ?>
+				<?php HH::print_submit_buttons(); ?>
 			</div>
 		</form>
 
