@@ -1,7 +1,7 @@
 <?php
 
 class EH_Downloader implements ADownloader {
-	private $default_dir = '/home/khandar-gdp/tmp';
+	private $default_dir = 'D:\Temp\onion';
 
 	public function display() {
 		return 'E-H Gallery';
