@@ -19,6 +19,7 @@ class EH_Downloader implements ADownloader {
 	}
 
 	private function create_dom($url) {
+		echo "Opening {$url}\n";
 		$p = new Page($url, array(CURLOPT_COOKIE => 'nw=1'));
 		$h = new simple_html_dom();
 		$h->load($p->content());
@@ -30,7 +31,8 @@ class EH_Downloader implements ADownloader {
 		$h = $this->create_dom($gallery_url);
 		
 		$title = $h->find('title', 0)->innertext;
-		$filtered = preg_replace('/[^\w ]/', '', $title);
+		$filtered = preg_replace('/[^\w \-]/', '', $title);
+		$filtered = str_replace(' - E-Hentai Galleries', '', $filtered);
 		$filtered = substr(trim($filtered), 0, 100);
 		$new_dir = rtrim($dir, '/') . '/' . $filtered . '/';
 		if (!is_dir($new_dir)) {
@@ -43,7 +45,6 @@ class EH_Downloader implements ADownloader {
 		$images = array();
 		$active = true;
 		while ($active) {
-			echo "Opening {$gallery_url}\n";
 			$h = $this->create_dom($gallery_url);
 
 			$thumbnails = $h->find('.gdtm');
@@ -66,13 +67,20 @@ class EH_Downloader implements ADownloader {
 
 	private function download_images($images, $dir) {
 		foreach ($images as $filename => $page_url) {
+			$name_only = Text::create($filename)
+				->cut_rbefore('.')
+				->pad(3)
+				->substring(0, 50)
+				->to_s();
+			$ext = Text::create($filename)->cut_rafter('.')->to_s();
+			$filename = "$name_only.$ext";
 			$outpath = $dir . $filename;
 			if (!is_file($outpath)) {
 				$retry = false;
 				do {
 					$image_src = $this->get_image_src($page_url);
 					download_it($image_src, $outpath);
-					$retry = filesize($outpath) === 0;
+					$retry = filesize($outpath) === 0/* || filesize($outpath) === 925*/;
 				} while ($retry);
 			}
 		}
@@ -82,6 +90,6 @@ class EH_Downloader implements ADownloader {
 		$h = $this->create_dom($page_url);
 		
 		$img = $h->find('#img', 0);
-		return $img->src;
+		return htmlspecialchars_decode($img->src);
 	}
 }

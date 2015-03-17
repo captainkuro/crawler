@@ -327,8 +327,12 @@ class Fakku implements Spider{
 	}
 
 	private function grab_all_tags($url) {
-		$real_url = self::$base . $url;
-		$p = new Page($real_url);
+		if (!is_a($url, 'Page')) {
+			$real_url = self::$base . $url;
+			$p = new Page($real_url);
+		} else {
+			$p = $url;
+		}
 		$html = new simple_html_dom();
 		$html->load($p->content());
 
@@ -554,11 +558,33 @@ class Fakku implements Spider{
 		return $n > 0;
 	}
 	
-	public function action_test() {
-		$p = new Page('http://www.fakku.net/doujinshi/english');
-		$infos = $this->extract_from_page($p);
-		echo '<pre>';
-		print_r($infos);
-		Log::add(json_encode($infos));
+	public function action_update_tags() {
+		$hundred_mangas = Model::factory('Hmanga')
+			->order_by_asc('id')
+			->find_many();
+		foreach ($hundred_mangas as $m) {
+			echo "ID: {$m->id} URL is: {$m->url}<br>\n";
+			echo "Old tags: {$m->tags}<br>\n";
+
+			$real_url = self::$base . $m->url;
+			$p = new Page($real_url);
+			$content = new Text($p->content());
+		
+			// hack: sometimes old urls gone
+			if ($content->contain('<title>Error Message</title>')) {
+				$m->delete();
+				echo "DELETED {$m->url} is gone<br>\n";
+				continue;
+			}
+
+			$tags = $this->grab_all_tags($p);
+			$tags = '#'.implode('#', $tags).'#';
+			echo "New tags: {$tags}<br>\n";
+			if ($tags !== $m->tags) {
+				echo "Tags are different! Save!<br>\n";
+				$m->tags = $tags;
+				$m->save();
+			}
+		}
 	}
 }

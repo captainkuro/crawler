@@ -1,12 +1,12 @@
 <?php
 /*
-Spider for hentaimangaonline.com
+Spider for mangafap.com
 
 Halaman utama berisi daftar hentai manga sort by submitted descending
-http://hentaimangaonline.com/category/hentai-manga/english-hentai-manga/
+http://mangafap.com/category/hentai-manga/english-hentai-manga/
 
 Di dalam satu halaman info manga, contoh
-http://hentaimangaonline.com/read-nectar-ch-8-english-hentai-manga-online/
+http://mangafap.com/read-nectar-ch-8-english-hentai-manga-online/
 terdapat:
 	1. judul
 	2. slug
@@ -22,8 +22,8 @@ sisanya tinggal for (i from 1 to #ofImages).jpg
 */
 
 class Hmanga extends Model {
-	public static $thumb_pattern = "http://hentaimangaonline.com/wp-content/themes/rhobootstrap/thumb.php?src=images/%s/%s.jpg&w=160&h=250&zc=1&q=90";
-	public static $image_pattern = "http://hentaimangaonline.com/images/%s/%s.jpg";
+	public static $thumb_pattern = "http://mangafap.com/wp-content/themes/rhobootstrap/thumb.php?src=images/%s/%s.jpg&w=160&h=250&zc=1&q=90";
+	public static $image_pattern = "http://mangafap.com/images/%s/%s.jpg";
 
 	public function slug() {
 		preg_match('/read-(.+)-hentai-manga-online/', $this->url, $m);
@@ -62,8 +62,8 @@ class Hmanga extends Model {
 
 // Main program
 class HentaiMangaOnline implements Spider {
-	public static $update = 'http://hentaimangaonline.com/category/hentai-manga/english-hentai-manga/';
-	public static $base = 'http://hentaimangaonline.com';
+	public static $update = 'http://mangafap.com/category/hentai-manga/english-hentai-manga/';
+	public static $base = 'http://mangafap.com';
 	
 	public function get_title() {
 		return 'HentaiMangaOnline scraper';
@@ -89,13 +89,19 @@ class HentaiMangaOnline implements Spider {
 	
 	public function action_all_pages() {
 		$start = self::$update;
-		$stop = 256;
-		$pre_infos = array();
 
+		// what is the last page?
+		$p = new Page($start);
+		$p->go_line('Page 1 / ');
+		$stop = (int) $p->curr_line()->cut_between('Page 1 / ', '<')->to_s();
+
+		$pre_infos = array();
+		
 		for ($i=$stop; $i>=1; $i--) {
-			//echo $start."\n";
+			// file_put_contents('mangafap.links', "//Page {$i}\n", FILE_APPEND);
 			$p = new Page($start.($i>1 ? 'page/'.$i.'/':''));
 			$chunk = array_reverse($this->extract_from_list($p));
+			// file_put_contents('mangafap.links', "\$links[] = ".var_export($chunk, true).";\n", FILE_APPEND);
 			$pre_infos = array_merge($pre_infos, $chunk);
 		}
 		// Now we have complete books' links
@@ -119,9 +125,13 @@ class HentaiMangaOnline implements Spider {
 	public function extract_from_list($p) {
 		$chapters = array();
 		echo "Grabbing ".$p->url()."<br/>\n";
+		// HACK! I don't know why {HMedia] break html
+		$content = $p->content();
+		$content = str_replace('{HMedia]', 'HMedia', $content);
+		$content = str_replace('{hmedia]', 'hmedia', $content);
 		// grab all chapter in this page
 		$html = new simple_html_dom();
-		$html->load($p->content());
+		$html->load($content);
 		$list = $html->find('ul.media-list', 0);
 		foreach ($list->find('li') as $li) {
 			$info = array();
@@ -156,7 +166,7 @@ class HentaiMangaOnline implements Spider {
 			
 			$chapters[] = $info;
 		}
-		
+		// echo '<pre>';print_r($chapters);exit;
 		return $chapters;
 	}
 	
