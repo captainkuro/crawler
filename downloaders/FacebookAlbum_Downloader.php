@@ -44,7 +44,8 @@ class FacebookAlbum_Downloader implements ADownloader {
 	private function download_images($json) {
 		foreach ($json->data as $post) {
 			$output = $this->output_path($post);
-			$image_url = $post->source;
+			// try hires
+			$image_url = isset($post->images[0]) ? $post->images[0]->source : $post->source;
 			if (!is_file($output)) {
 				echo "Downloading {$image_url}\n";
 				download_it($image_url, $output);

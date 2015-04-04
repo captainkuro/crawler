@@ -148,15 +148,6 @@ class Hmanga extends Model {
 		$imgpath = str_replace("https://", 'http://', $imgpath);
 		$this->pattern = $imgpath;
 
-		// update date
-		// $date_page = new Page(Fakku::$base . $this->url);
-		// $h = new simple_html_dom();
-		// $h->load($date_page->content());
-		// $date = $h->find('div.small', 0)
-		// 	->find('div.right', 0)
-		// 	->find('b', 0);
-		// $this->date = date('Y-m-d', strtotime($date->plaintext));
-		
 		$this->save();
 	}
 
@@ -285,9 +276,6 @@ class Fakku implements Spider{
 				}
 				$item['artist'] = implode(', ', $artists);
 				
-				$date = $row->find('.content-time', 0);
-				$item['date'] = date('Y-m-d', strtotime($date->plaintext));
-				
 				// find description
 				$right = null;
 				foreach ($row->find('div.left') as $left) {
@@ -302,6 +290,7 @@ class Fakku implements Spider{
 				}
 				$item['desc'] = trim($right->plaintext);
 				
+				/* because date is not shown directly, grabs both every time
 				$tags = $row->find('div.tags', 0);
 				$item['tags'] = array();
 				if ($tags) foreach ($tags->find('a') as $a) {
@@ -314,6 +303,11 @@ class Fakku implements Spider{
 					// there may be another tags
 					$item['tags'] = $this->grab_all_tags($item['url']);
 				}
+				*/
+
+				$tagsNdate = $this->grab_all_tags_and_date($item['url']);
+				$item['date'] = $tagsNdate['date'];
+				$item['tags'] = $tagsNdate['tags'];
 				$item['tags'] = '#'.implode('#', $item['tags']).'#';
 
 				$infos[] = $item;
@@ -326,13 +320,22 @@ class Fakku implements Spider{
 		return $infos;
 	}
 
-	private function grab_all_tags($url) {
+	private function grab_all_tags_and_date($url) {
 		if (!is_a($url, 'Page')) {
 			$real_url = self::$base . $url;
 			$p = new Page($real_url);
 		} else {
 			$p = $url;
 		}
+		// HACK: for some reason it might error
+		$content = new Text($p->content());
+		if ($content->contain('<title>Error Message</title>')) {
+			return array(
+				'tags' => array(),
+				'date' => date('Y-m-d'),
+			);
+		}
+
 		$html = new simple_html_dom();
 		$html->load($p->content());
 
@@ -343,7 +346,21 @@ class Fakku implements Spider{
 				$result[] = basename($a->href);
 			}
 		}
-		return $result;
+
+		// find date
+		$date = date('Y-m-d');
+		foreach ($html->find('div.left') as $left) {
+			if ($left->text() == 'Uploader') {
+				$right = $left->next_sibling();
+				$raw = Text::create($right->text())->cut_after(' on ')->to_s();
+				$date = date('Y-m-d', strtotime($raw));
+				break;
+			}
+		}
+		return array(
+			'tags' => $result,
+			'date' => $date,
+		);
 	}
 	
 	public function add_hmanga($data) {
@@ -391,6 +408,7 @@ class Fakku implements Spider{
 						$next = false;
 					}
 				}
+				// echo '<pre>';print_r($infos);exit;
 				$to_add = array_merge($to_add, $infos);
 				$page++;
 			}
