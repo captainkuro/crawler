@@ -71,6 +71,7 @@ class EH_Downloader implements ADownloader {
 				->cut_rbefore('.')
 				->pad(3)
 				->substring(0, 50)
+				->replace(':', '')
 				->to_s();
 			$ext = Text::create($filename)->cut_rafter('.')->to_s();
 			$filename = "$name_only.$ext";
