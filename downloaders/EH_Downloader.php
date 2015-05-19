@@ -31,7 +31,8 @@ class EH_Downloader implements ADownloader {
 		$h = $this->create_dom($gallery_url);
 		
 		$title = $h->find('title', 0)->innertext;
-		$filtered = preg_replace('/[^\w \-]/', '', $title);
+		$filtered = preg_replace('/[^\w \-]/', ' ', $title);
+		$filtered = preg_replace('/  +/', ' ', $filtered);
 		$filtered = str_replace(' - E-Hentai Galleries', '', $filtered);
 		$filtered = substr(trim($filtered), 0, 100);
 		$new_dir = rtrim($dir, '/') . '/' . $filtered . '/';

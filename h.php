@@ -746,6 +746,23 @@ function fakku($url) {
 	}
 }
 
+// http://nhentai.net/g/113127/
+function nhentai($url) {
+	$p = new Page($url);
+	$h = new simple_html_dom();
+	$h->load($p->content());
+
+	$title = $h->find('#info', 0)->find('h1', 0);
+	$title = html_entity_decode($title->innertext());
+
+	$container = $h->find('#thumbnail-container', 0);
+	foreach ($container->find('.spinner') as $spinner) {
+		$src = $spinner->getAttribute('data-src');
+		$src = Text::create($src)->replace('t.', '.')->to_s();
+		echo "<a href='$src'>$title</a><br>\n";
+	}
+}
+
 ?>
 <html>
 <body>
@@ -784,6 +801,7 @@ if ($_POST) {
 			'therief.sextgem.com' => 'therief_sextgem',
 			'hentai2read.com' => 'hentai2read',
 			'fakku.net' => 'fakku',
+			'nhentai.net' => 'nhentai',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {

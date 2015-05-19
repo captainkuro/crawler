@@ -185,7 +185,7 @@ class HentaiMangaOnline implements Spider {
 			$m = $line->regex_match('/href="[^>]*>([^<]*)</');
 
 			$ret['tags'][] = $m[1];
-		} while ( ! $p->next_line()->contain('<br/><br/>'));
+		} while ( ! $p->next_line()->contain('<br/>	    <br/>'));
 		$ret['tags'] = '#'.implode('#', $ret['tags']).'#';
 		if (empty($ret['tags'])) throw new Exception('empty tag?');
 		

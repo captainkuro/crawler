@@ -65,8 +65,11 @@ class Mangaeden_Crawler implements Manga_Crawler {
 	}
 	
 	public function crawl_page($p, $prefix, $ifx, $i) {
-		$p->go_line('id="mainImg"');
-		$img = $p->curr_line()->dup()->cut_between('src="', '"')->to_s();
+		$h = new simple_html_dom();
+		$h->load($p->content());
+		$main_img = $h->find('#mainImg', 0);
+		
+		$img = $main_img->src;
 		$iname = Text::create($i)->pad(3)->to_s();
 		preg_match('/\.(\w+)$/', $img, $m);
 		$iname = $iname.'.'.$m[1];
