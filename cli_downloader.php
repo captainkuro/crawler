@@ -13,6 +13,17 @@ interface ADownloader {
 	public function download();
 }
 
+class DConfig {
+	private static $v = null;
+	
+	public static function __callStatic($name, $arguments) {
+		if (self::$v === null) {
+			self::$v = parse_ini_file(__DIR__.'/downloaders/config.ini');
+		}
+		return isset(self::$v[$name]) ? self::$v[$name] : '';
+	}
+}
+
 class MainProgram {
 	private $downloaders;
 	private $active;

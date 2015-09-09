@@ -1,7 +1,7 @@
 <?php
 
 class Sankakucomplex_Downloader implements ADownloader {
-	private $default_dir = 'D:\Temp\onion';
+	private $default_dir;
 	private $page_from = 1;
 	private $page_to = 10;
 
@@ -10,6 +10,8 @@ class Sankakucomplex_Downloader implements ADownloader {
 	}
 
 	public function download () {
+		$this->default_dir = DConfig::p_folder();
+
 		echo "List URL: ";
 		$list_url = trim(fgets(STDIN));
 		echo "Save Dir [{$this->default_dir}]: ";
