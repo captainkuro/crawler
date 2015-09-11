@@ -6,7 +6,7 @@ class Sankakucomplex_Downloader implements ADownloader {
 	private $page_to = 10;
 
 	public function display() {
-		return 'Sankakucomplex Downloader';
+		return 'Sankakucomplex Chan/Idol';
 	}
 
 	public function download () {
