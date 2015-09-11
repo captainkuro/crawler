@@ -1,13 +1,15 @@
 <?php
 
 class EH_Downloader implements ADownloader {
-	private $default_dir = 'D:\Temp\onion';
+	private $default_dir;
 
 	public function display() {
 		return 'E-H Gallery';
 	}
 
 	public function download () {
+		$this->default_dir = DConfig::p_folder();
+		
 		echo "Gallery URL: ";
 		$gallery_url = trim(fgets(STDIN));
 		echo "Save Dir [{$this->default_dir}]: ";
