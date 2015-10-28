@@ -89,17 +89,7 @@ class Sankakucomplex_Downloader implements ADownloader {
 				if ($img->contain('.webm')) {
 					echo "This is WEBM\n";
 				} else if ($img->to_s()) {
-					if ($img->pos('//') === 0) {
-						$src = 'https:' . $img->to_s();
-					} else {
-						$src = $img->to_s();
-					}
-					$filename = $img->cut_rafter('/')->cut_before('?')->to_s();
-					$outpath = $dir . Text::create($id)->pad(3)->to_s() . '-' . $filename;
-					if (!is_file($outpath)) {
-						sleep(3);
-						download_it($src, $outpath, "--header=\"User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20100101 Firefox/6.0.2\"");
-					}
+					$this->download_if_not_exist($img, $dir, $id);
 					$id++;
 				} else {
 					echo "No id=highres\n";
@@ -107,6 +97,34 @@ class Sankakucomplex_Downloader implements ADownloader {
 			}
 			$page++;
 		} while (true);
+	}
+
+	private function download_if_not_exist($img, $dir, $id) {
+		if ($img->pos('//') === 0) {
+			$src = 'https:' . $img->to_s();
+		} else {
+			$src = $img->to_s();
+		}
+		$filename = $img->cut_rafter('/')->cut_before('?');
+		$outpath = $dir . Text::create($id)->pad(3)->to_s() . '-' . $filename->to_s();
+
+		$hash = $filename->cut_rbefore('.')->to_s();
+		if (!in_array($hash, $this->existing_hashes($dir)) && !is_file($outpath)) {
+			sleep(3);
+			download_it($src, $outpath, "--header=\"User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20100101 Firefox/6.0.2\"");
+		}
+	}
+
+	private function existing_hashes($dir) {
+		$result = array();
+		foreach (glob($dir.'*.*') as $f) {
+			$filename = Text::create($f);
+			$match = $filename->regex_match('/\d+-(\w+)\./');
+			if ($match) {
+				$result[] = $match[1];
+			}
+		}
+		return $result;
 	}
 }
 

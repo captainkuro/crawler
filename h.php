@@ -750,15 +750,20 @@ function fakku($url) {
 function nhentai($url) {
 	$p = new Page($url);
 	$h = new simple_html_dom();
+	// echo htmlspecialchars($p->content());exit;
 	$h->load($p->content());
 
 	$title = $h->find('#info', 0)->find('h1', 0);
 	$title = html_entity_decode($title->innertext());
+	$title = substr($title, 0, 100);
 
 	$container = $h->find('#thumbnail-container', 0);
-	foreach ($container->find('.spinner') as $spinner) {
+	foreach ($container->find('.lazyload') as $spinner) {
 		$src = $spinner->getAttribute('data-src');
-		$src = Text::create($src)->replace('t.', '.')->to_s();
+		$src = Text::create($src)
+			->regex_replace('#t\.(.{3})$#', '.${1}')
+			->replace('t.nhentai.net', 'i.nhentai.net')
+			->to_s();
 		echo "<a href='$src'>$title</a><br>\n";
 	}
 }
