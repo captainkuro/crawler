@@ -86,9 +86,9 @@ class Sankakucomplex_Downloader implements ADownloader {
 				$P->go_line('id=highres');
 				$img = $P->curr_line()->cut_between('href="', '"');
 				
-				if ($img->contain('.webm')) {
+				/*if ($img->contain('.webm')) {
 					echo "This is WEBM\n";
-				} else if ($img->to_s()) {
+				} else*/ if ($img->to_s()) {
 					$this->download_if_not_exist($img, $dir, $id);
 					$id++;
 				} else {
