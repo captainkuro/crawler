@@ -69,24 +69,22 @@ class EH_Downloader implements ADownloader {
 	}
 
 	private function download_images($images, $dir) {
-		foreach ($images as $filename => $page_url) {
-			$name_only = Text::create($filename)
-				->cut_rbefore('.')
-				->pad(3)
-				->substring(0, 50)
-				->replace(':', '')
-				->to_s();
-			$ext = Text::create($filename)->cut_rafter('.')->to_s();
-			$filename = "$name_only.$ext";
+		$i = 1;
+		$dir = substr($dir, 0, 120);
+		foreach ($images as $page_url) {
+			$ext = '.jpg';
+			$filename = Text::create($i)->pad(3)->to_s() . $ext;
 			$outpath = $dir . $filename;
 			if (!is_file($outpath)) {
 				$retry = false;
 				do {
 					$image_src = $this->get_image_src($page_url);
+					// $ext = Text::create($image_src)->cut_rafter('.')->to_s();
 					download_it($image_src, $outpath);
 					$retry = filesize($outpath) === 0/* || filesize($outpath) === 925*/;
 				} while ($retry);
 			}
+			$i++;
 		}
 	}
 

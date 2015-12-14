@@ -681,6 +681,21 @@ function deviantart($gal) {
 // deviantart('http://thedurrrrian.deviantart.com/gallery/?catpath=/');
 // deviantart('http://ganassa.deviantart.com/gallery/?offset=0');
 
+function gravuregirlz($url, $n) {
+	for ($i=1; $i<=$n; $i++) {
+		$now_url = $url.$i.'/';
+		$p = new Page($now_url);
+		$p->go_line('data-recalc-dims=');
+		do {
+			$srcs = $p->curr_line()->extract_to_array('src="', '"');
+			foreach ($srcs as $src) {
+				echo "<a href='$src'>asdf</a><br>\n";
+			}
+		} while($p->next_line()->contain('data-recalc-dims='));
+	}
+}
+// gravuregirlz('http://gravuregirlz.com/145136/zhao-wei-yi-%E8%B5%B5%E6%83%9F%E4%BE%9D-naked-chinese-model-uncensored-pictures-zwy001/', 6);
+
 function dx_show_weight($category_url) {
 	$p = new Page($category_url);
 	$h = new simple_html_dom();
