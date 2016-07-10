@@ -695,3 +695,37 @@ function gravuregirlz($url, $n) {
 	}
 }
 // gravuregirlz('http://gravuregirlz.com/145136/zhao-wei-yi-%E8%B5%B5%E6%83%9F%E4%BE%9D-naked-chinese-model-uncensored-pictures-zwy001/', 6);
+
+function dx_show_weight($category_url) {
+	$p = new Page($category_url);
+	$h = new simple_html_dom();
+	$h->load($p->content());
+
+	$result = array();
+	$div = $h->find('#category_product_list', 0);
+	foreach ($div->find('.product') as $product) {
+		$cover = $product->find('.cover_img', 0);
+		$product_url = $cover->find('a', 0)->href;
+		$title = $cover->find('img', 0)->title;
+		$img = $cover->find('img', 0)->src;
+		$price = $product->find('.currency_price', 0)->innertext();
+
+		$p2 = new Page($product_url);
+		$h2 = new simple_html_dom();
+		$h2->load($p2->content());
+		$spec = $h2->find('#specification', 0)->innertext();
+
+		$result[] = array($product_url, $title, $img, $spec, $price);
+	}
+
+	foreach ($result as $row) {
+		list($product_url, $title, $img, $spec, $price) = $row;
+		echo "<tr><td><img src='$img'></td><td><a href='$product_url'>$title</a><br>Rp $price<br>$spec</td></tr>";
+	}
+}
+
+// echo '<table><tr><th>IMG</th><th>DESC</th></tr>';
+// for ($page=1; $page<=14; $page++) {
+// 	dx_show_weight('http://www.dealextreme.co.id/category/android-tablets-14391/page/'.$page);
+// }
+// echo '</table>';
