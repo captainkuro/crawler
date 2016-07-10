@@ -32,8 +32,9 @@ class Page {
 	const REG_SRC = 'src=["\']([^"\']+)["\']';
 	
 	public function __construct($url = null, $opts = null) {
+		if (is_array($opts)) $this->opts = $opts;
 		if (isset($url)) {
-			$this->fetch_url($url, $opts);
+			$this->fetch_url($url, null);
 		}
 	}
 	

@@ -35,7 +35,7 @@ class Mangastreamto_Crawler implements Manga_Crawler {
 				'infix' => $desc,
 			);
 		}
-		return $list;
+		return array_reverse($list);
 	}
 
 	public function get_images($chapter_url, $prefix, $infix) {
@@ -60,7 +60,7 @@ class Mangastreamto_Crawler implements Manga_Crawler {
 			list($img_name, $img_url) = $this->crawl_page($p, $prefix, $ifx, $i);
 			$result[$img_name] = $img_url;
 		}
-		return array_reverse($result);
+		return $result;
 	}
 
 	public function crawl_page($p, $prefix, $ifx, $i) {

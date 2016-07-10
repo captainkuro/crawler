@@ -56,9 +56,13 @@ class Mangastream_Crawler implements Manga_Crawler {
 		list($img_name, $img_url) = $this->crawl_page($p, $prefix, $ifx, 1);
 		$result[$img_name] = $img_url;
 		for ($i=2; $i<=$n; $i++) {
-			$p = new Page($dir_url.'/'.$i);
-			list($img_name, $img_url) = $this->crawl_page($p, $prefix, $ifx, $i);
-			$result[$img_name] = $img_url;
+			try {
+				$p = new Page($dir_url.'/'.$i);
+				list($img_name, $img_url) = $this->crawl_page($p, $prefix, $ifx, $i);
+				$result[$img_name] = $img_url;
+			} catch (Exception $e) {
+				echo "Unable to open: $dir_url/$i<br>";
+			}
 		}
 		return $result;
 	}
