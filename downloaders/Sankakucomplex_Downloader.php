@@ -52,7 +52,7 @@ class Sankakucomplex_Downloader implements ADownloader {
 			$base = 'https://chan.sankakucomplex.com';
 		}
 		$page = $this->page_from;
-		$id = 1;
+		$id = ($page-1) * 24 + 1;
 		
 		$Turl = Text::create($url);
 		do {

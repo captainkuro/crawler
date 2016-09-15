@@ -5,7 +5,7 @@ class Batoto_Crawler implements Manga_Crawler {
 
 	public function __construct() {
 		$this->p = new Page(null, array(
-			CURLOPT_COOKIE => '__utma=189888568.1356019654.1410059876.1445863685.1446122346.45; __utmz=189888568.1431084154.28.5.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __qca=P0-1331457606-1410059879371; sfc=1437837187; sfct=billy; member_id=198664; rteStatus=rte; pass_hash=fbee5aeac594cfff77f167cf42dcd164; ipsconnect_d8874f8d538b1279c8106e636bf7afe9=1; session_id=9980f7eecf91ace98f7586f88dc7cdfd',
+			CURLOPT_COOKIE => '__utma=189888568.1356019654.1410059876.1445863685.1446122346.45; member_id=198664; rteStatus=rte; __cfduid=d5edb75f49e1a1970bc16ceebb025976b1473944788; session_id=38e60bd30871d110cedaa2e17681fc8f; pass_hash=777f3e373d129c43e73e9be86c594df8; ipsconnect_d8874f8d538b1279c8106e636bf7afe9=1; coppa=0',
 			CURLOPT_REFERER => 'https://bato.to/reader',
 		));
 	}
@@ -49,7 +49,10 @@ class Batoto_Crawler implements Manga_Crawler {
 				'infix' => $infix,
 			);
 		}
-		
+		$p->close();
+		unset($a); unset($href); unset($desc); unset($infix); unset($group);
+		unset($table); unset($tr); unset($h);
+		gc_collect_cycles();
 		$this->p = $p;
 		return $list;
 	}
