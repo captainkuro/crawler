@@ -768,6 +768,32 @@ function nhentai($url) {
 	}
 }
 
+// http://www.tsumino.com/Book/Info/164/1/toaru-majutsu-no-kyousei-jusei-1-1
+function tsumino($url) {
+	$domain = 'http://www.tsumino.com';
+	$optionUrl = 'http://www.tsumino.com/Read/Load?q=';
+	$imageUrl = 'http://www.tsumino.com/Image/Object?name=';
+
+	$p = new Page($url);
+	$body = $p->content();
+
+	preg_match('#/Info/([^/]+)/#', $url, $m);
+	$id = $m[1];
+	preg_match('#/Info/[^/]+/1/(.+)$#', $url, $m);
+	$title = $m[1];
+
+	preg_match("#baseReaderUrl = '([^']+)'#", $body, $m);
+	$baseReaderUrl = $m[1];
+	preg_match("#replace = '([^']+)'#", $body, $m);
+	$replace = $m[1];
+
+	$objects = json_decode(file_get_contents($optionUrl . $id), true);
+	foreach ($objects['reader_page_urls'] as $name) {
+		$src = $imageUrl . urlencode($name);
+		echo "<a href='$src'>$title</a><br>\n";
+	}
+}
+
 ?>
 <html>
 <body>
@@ -807,6 +833,7 @@ if ($_POST) {
 			'hentai2read.com' => 'hentai2read',
 			'fakku.net' => 'fakku',
 			'nhentai.net' => 'nhentai',
+			'tsumino.com' => 'tsumino',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {

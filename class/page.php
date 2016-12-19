@@ -32,8 +32,9 @@ class Page {
 	const REG_SRC = 'src=["\']([^"\']+)["\']';
 	
 	public function __construct($url = null, $opts = null) {
+		if (is_array($opts)) $this->opts = $opts;
 		if (isset($url)) {
-			$this->fetch_url($url, $opts);
+			$this->fetch_url($url, null);
 		}
 	}
 	
@@ -114,6 +115,11 @@ class Page {
 	
 	public function __destruct() {
 		if ($this->ch) curl_close($this->ch);
+	}
+
+	public function close() {
+		curl_close($this->ch);
+		$this->ch = null;
 	}
 	
 	// go to the line indicating next url

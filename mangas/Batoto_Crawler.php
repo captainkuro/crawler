@@ -3,6 +3,13 @@
 // http://www.batoto.net/read/_/27286/xblade_ch41_by_twilight-dreams-scans
 class Batoto_Crawler implements Manga_Crawler {
 
+	public function __construct() {
+		$this->p = new Page(null, array(
+			CURLOPT_COOKIE => '__utma=189888568.1356019654.1410059876.1445863685.1446122346.45; member_id=198664; rteStatus=rte; __cfduid=d5edb75f49e1a1970bc16ceebb025976b1473944788; session_id=38e60bd30871d110cedaa2e17681fc8f; pass_hash=777f3e373d129c43e73e9be86c594df8; ipsconnect_d8874f8d538b1279c8106e636bf7afe9=1; coppa=0',
+			CURLOPT_REFERER => 'https://bato.to/reader',
+		));
+	}
+
 	public function is_supported($url) {
 		return strpos($url, 'http://www.batoto.net/') !== false
 			|| strpos($url, 'http://bato.to/') !== false;
@@ -22,47 +29,62 @@ class Batoto_Crawler implements Manga_Crawler {
 
 	public function get_info($base) {
 		// crawl chapters
-		$p = new Page($base);
-		$p->go_line('h3 class="maintitle"');
-		
+		$p = $this->p;
+		$p->fetch_url($base);
+		$h = new simple_html_dom();
+		$h->load($p->content());
+
+		$table = $h->find('.chapters_list', 0);
 		$list = array();
-		do {
-			if ($p->curr_line()->contain('book_open.png')) {
-				$line = $p->curr_line()->dup();
-				$href = $line->dup()->cut_between('href="', '"')->to_s();
-				$desc = $line->dup()->cut_between('/>', '</a')->to_s();
-				preg_match('/h\.(\d+):?/', $desc, $m);
-				$infix = $m[1];
-				preg_match('/_by_(.*)$/', $href, $m);
-				$group = $m[1];
-				// cek bahasa
-				$lang = $p->next_line(2);
-				if ($lang->contain('English')) {
-					$list[] = array(
-						'url' => $href,
-						'desc' => $desc.' by '.$group,
-						'infix' => $infix,
-					);
-				}
-			}
-		} while (!$p->next_line()->contain('</table>'));
+		foreach ($table->find('.lang_English') as $tr) {
+			$a = $tr->find('a', 0);
+			$href = $a->href;
+			$desc = $a->text();
+			preg_match('/h\.(\d+):?/', $desc, $m);
+			$infix = $m[1];
+			$group = $tr->find('td', 2)->text();
+			$list[] = array(
+				'url' => $href,
+				'desc' => $desc.' by '.$group,
+				'infix' => $infix,
+			);
+		}
+		$p->close();
+		unset($a); unset($href); unset($desc); unset($infix); unset($group);
+		unset($table); unset($tr); unset($h);
+		gc_collect_cycles();
+		$this->p = $p;
 		return $list;
 	}
 
 	public function get_images($chapter_url, $prefix, $infix) {
+		$urls = $this->get_areader($chapter_url);
 		$ifx = Text::create($infix)->pad(3)->to_s();
-		$p = new Page($chapter_url);
-		// grab list of pages
-		$p->go_line('id="page_select"');
-		$pages = $p->next_line()->extract_to_array('value="', '"');
-		// grab current image
-		
-		$result = $this->crawl_page($p, $prefix, $ifx, 1);
-		
-		array_shift($pages);
-		foreach ($pages as $i => $purl) {
-			$p = new Page($purl);
-			$result = $result + $this->crawl_page($p, $prefix, $ifx, $i+2);
+
+		$result = array();
+		foreach ($urls as $i => $page_url) {
+			$this->p->fetch_url($page_url);
+			$result = $result + $this->crawl_page($this->p, $prefix, $ifx, $i+1);
+		}
+
+		return $result;
+	}
+
+	private function get_areader($chapter_url) {
+		$id = parse_url($chapter_url, PHP_URL_FRAGMENT);
+		$url_pattern = "https://bato.to/areader?id={$id}&p=%s";
+		$this->p->fetch_url(sprintf($url_pattern, 1));
+
+		$h = new simple_html_dom();
+		$h->load($this->p->content());
+
+		$m = Text::create($h->find('#page_select', 0)->last_child()->text())
+			->regex_match('#page (\d+)#');
+		$n = $m[1];
+
+		$result = array();
+		for ($i=1; $i<=$n; $i++) {
+			$result[] = sprintf($url_pattern, $i);
 		}
 		return $result;
 	}

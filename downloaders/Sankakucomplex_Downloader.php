@@ -36,7 +36,7 @@ class Sankakucomplex_Downloader implements ADownloader {
 		$query = parse_url($list_url, PHP_URL_QUERY);
 		parse_str($query, $params);
 		$tags = urldecode($params['tags']);
-		$tags = preg_replace('#[^\w )(]#', '', $tags);
+		$tags = preg_replace('#[^\w -)(]#', '', $tags);
 
 		$new_dir = rtrim($dir, '/') . '/' . $tags . '/';
 		if (!is_dir($new_dir)) {
@@ -52,7 +52,7 @@ class Sankakucomplex_Downloader implements ADownloader {
 			$base = 'https://chan.sankakucomplex.com';
 		}
 		$page = $this->page_from;
-		$id = 1;
+		$id = ($page-1) * 24 + 1;
 		
 		$Turl = Text::create($url);
 		do {

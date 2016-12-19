@@ -275,7 +275,7 @@ class Dir_To_Cbz {
 	private $source;
 	private $destination;
 	private $prefix_gen;
-	private $temp_dir = 'e:\Temp\unzip';
+	private $temp_dir = 'e:\Temp\unzip'; // make sure this exists!
 
 	private $current_dir;
 	private $moved_dir;
@@ -355,16 +355,5 @@ class Dir_To_Cbz {
 }
 
 // Test run
-// $ex = new Zip_Extractor('E:\Temp Manga\Yu-Gi-Oh!\Yu-Gi-Oh! v07 c52-59.zip', 'E:\Temp');
-// $ex->perform();
-// $vd = new Dir_Validator('E:\Temp\Yu-Gi-Oh! v07 c52-59');
-// var_dump($vd->need_renaming());
-// $ren = new File_Renamer('E:\Temp\Yu-Gi-Oh! v01 c01-07', 'Yu-Gi-Oh_v01', 'E:\Temp\coba');
-// $ren->perform();
-// $zi = new Directory_Zipper('E:\Temp\coba', 'E:\Temp');
-// $zi->perform();
-// remove_dir('E:\Temp\Yu-Gi-Oh! v01 c01-07');
-// $program = new Dir_To_Cbz('E:\Temp\input', 'E:\Temp\output', 'Yu_Gi_Oh', '/v(\d+)/');
-// $program->run();
-// $gen = new Prefix_Generator('Yugioh', '/v(\d+)/');
-// echo $gen->generate('Yu-Gi-Oh! v08 c60-69');
+// $x = new Dir_To_Cbz('D:\Download\manga\Sho', 'D:\Download\manga\tes', 'Shokugeki_no_Soma', '# v(\d{2}) #');
+// $x->run();
