@@ -5,7 +5,7 @@ class Batoto_Crawler implements Manga_Crawler {
 
 	public function __construct() {
 		$this->p = new Page(null, array(
-			CURLOPT_COOKIE => '__utma=189888568.1356019654.1410059876.1445863685.1446122346.45; member_id=198664; rteStatus=rte; __cfduid=d5edb75f49e1a1970bc16ceebb025976b1473944788; session_id=38e60bd30871d110cedaa2e17681fc8f; pass_hash=777f3e373d129c43e73e9be86c594df8; ipsconnect_d8874f8d538b1279c8106e636bf7afe9=1; coppa=0',
+			CURLOPT_COOKIE => '__cfduid=d465669ccb6295c41a5a2bd907adc7a561483287224; member_id=198664; pass_hash=5c09d8412d5f76312d73bf62eab23ba5; ipsconnect_d8874f8d538b1279c8106e636bf7afe9=1; coppa=0; session_id=f17b602ff23fd7f26e89a99806f37a14',
 			CURLOPT_REFERER => 'https://bato.to/reader',
 		));
 	}

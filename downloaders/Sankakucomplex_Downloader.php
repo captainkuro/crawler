@@ -36,7 +36,7 @@ class Sankakucomplex_Downloader implements ADownloader {
 		$query = parse_url($list_url, PHP_URL_QUERY);
 		parse_str($query, $params);
 		$tags = urldecode($params['tags']);
-		$tags = preg_replace('#[^\w -)(]#', '', $tags);
+		$tags = preg_replace('#[^\w \-)(]#', '', $tags);
 
 		$new_dir = rtrim($dir, '/') . '/' . $tags . '/';
 		if (!is_dir($new_dir)) {
