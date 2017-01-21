@@ -794,6 +794,23 @@ function tsumino($url) {
 	}
 }
 
+// http://www.porncomix.info/shadbase-overwatch/
+function porncomix($url) {
+	$p = new Page($url);
+	$h = new simple_html_dom();
+	$h->load($p->content());
+
+	$title = $h->find('.post-title', 0)->innertext;
+
+	foreach ($h->find('.attachment-thumbnail') as $img) {
+		$src = $img->getAttribute('data-lazy-src');
+		if (!$src) continue;
+		$tsrc = new Text($src);
+		$src = $tsrc->regex_replace('#-\d+x\d+\.#', '.')->to_s();
+		echo "<a href='$src'>$title</a><br>\n";
+	}
+}
+
 ?>
 <html>
 <body>
@@ -834,6 +851,7 @@ if ($_POST) {
 			'fakku.net' => 'fakku',
 			'nhentai.net' => 'nhentai',
 			'tsumino.com' => 'tsumino',
+			'porncomix.info' => 'porncomix',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
