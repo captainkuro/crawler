@@ -1,0 +1,12 @@
+Create script to:
+1. convert 
+http://www.seputarforex.com/saham/daftar_emiten/
+into table 
+Stock: Code | Name | Bidang | Index
+
+2. convert dwsec-id.com/hmpg/quote/quoteMain-finan.do
+into table
+Financial: Code | Year | Period | Amount1, 2... ...
+
+
+Cek reksadana saham, apa saham2nya
