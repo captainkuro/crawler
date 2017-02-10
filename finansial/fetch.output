@@ -436,14 +436,14 @@ function openPop(uid, m_para) {
     	if($('#stcdYn').val()=="N"){
 			alert('Stock Code not found.');
 		}
-		if("" == "Y"){
+		if("Y" == "Y"){
 			var position=$('#quoteTab1').offset(); // 위치값
 			$('html,body').animate({scrollTop:position.top},1500); // 이동
 		}
     	
-    	if(""!=null){
-    		if(""!=""){
-        		var tabFlag = "";
+    	if("01"!=null){
+    		if("01"!=""){
+        		var tabFlag = "01";
         		
         		$("#tabQuoteFlag").val(tabFlag);
         		
@@ -785,7 +785,7 @@ function openPop(uid, m_para) {
             	<div class="overhidden mb5">
                         <div style="float:right;">
                             <div style="float:left; padding-top:4px; margin-right:5px;">
-                            <input  id="load_01"  type="radio" name="loadM_01" checked="checked" value="1" onclick="fnClickRadio1()" />&nbsp;<label for="load_01" style="color:#000;">
+                            <input  id="load_01"  type="radio" name="loadM_01"  value="1" onclick="fnClickRadio1()" />&nbsp;<label for="load_01" style="color:#000;">
                             
 								
 								Quarter
@@ -793,7 +793,7 @@ function openPop(uid, m_para) {
 								
 							                            
                             </label>&nbsp;&nbsp;
-                            <input  id="load_02"  type="radio" name="loadM_01"  value="2" onclick="fnClickRadio1() "/>&nbsp;<label for="load_02" style="color:#000;">
+                            <input  id="load_02"  type="radio" name="loadM_01" checked="checked" value="2" onclick="fnClickRadio1() "/>&nbsp;<label for="load_02" style="color:#000;">
                             
 								
 								Year
@@ -804,18 +804,18 @@ function openPop(uid, m_para) {
                             </div>
                             <div class="select open" id="qList" style="width:104px; float:left; margin:0 5px;">
                                 <select name="searchQuart" id="searchQuart1">
-									<option value="1" selected="selected">1'st Qtr</option>
+									<option value="1" >1'st Qtr</option>
 									<option value="2" >2'nd Qtr</option>
-									<option value="3" >3'rd Qtr</option>
+									<option value="3" selected="selected">3'rd Qtr</option>
 									<option value="4" >4'th Qtr</option>
 								</select>
                             </div>
                             <div class="select open" id="yList" style="width:104px; float:left; margin:0 5px;">
                                 <select name="searchYear" id="searchYear1">
                                 					
-									<option value="2017" selected="selected">2017</option>			                    
+									<option value="2017" >2017</option>			                    
 			                    
-			                    	<option value="2016" >2016</option>
+			                    	<option value="2016" selected="selected">2016</option>
 			                    
 			                    	<option value="2015" >2015</option>
 			                    
@@ -991,9 +991,9 @@ function openPop(uid, m_para) {
 											
 									</th>
 									<td  class=" bot_solid">1st Quarter 2016</td>
-									<td  class=" bot_solid">1st Quarter 2015</td>
-									<td  class=" bot_solid">1st Quarter 2014</td>
-									<td class="last bot_solid">1st Quarter 2013</td>
+									<td  class=" bot_solid">2rd Quarter 2016</td>
+									<td  class=" bot_solid">3rd Quarter 2016</td>
+									<td class="last bot_solid"></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1018,7 +1018,7 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    3,233,359,000,000</span>
+									    6,344,601,000,000</span>
 									</td>
 									<td>
 										
@@ -1026,15 +1026,15 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    3,725,866,000,000</span>
+									    9,587,103,000,000</span>
 									</td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    2,723,647,000,000</span>
+									    </span>
 									</td>
 								</tr>
 								<tr>
@@ -1059,21 +1059,21 @@ function openPop(uid, m_para) {
 				                        
 				                        
 				                        
-									    -2,469,738,000,000</span></td>
+									    -5,010,331,000,000</span></td>
 									<td>
 										
 		                        		<span class="tb_down">
 				                        
 				                        
 				                        
-									    -2,516,855,000,000</span></td>
+									    -7,474,013,000,000</span></td>
 									<td class="last" >
 										
-		                        		<span class="tb_down">
+		                        		
 				                        
+				                        <span class="tb_mid">
 				                        
-				                        
-									    -2,009,357,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1097,21 +1097,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    763,621,000,000</span></td>
+									    1,334,270,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    1,209,011,000,000</span></td>
+									    2,113,090,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    714,290,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1135,21 +1135,21 @@ function openPop(uid, m_para) {
 				                        
 				                        
 				                        
-									    -312,366,000,000</span></td>
+									    -514,586,000,000</span></td>
 									<td>
 										
 		                        		<span class="tb_down">
 				                        
 				                        
 				                        
-									    -278,750,000,000</span></td>
+									    -755,980,000,000</span></td>
 									<td class="last" >
 										
-		                        		<span class="tb_down">
+		                        		
 				                        
+				                        <span class="tb_mid">
 				                        
-				                        
-									    -252,445,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">EBIT</th>
@@ -1166,21 +1166,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    930,261,000,000</span></td>
+									    1,357,110,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    930,261,000,000</span></td>
+									    1,357,110,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    461,845,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1200,25 +1200,25 @@ function openPop(uid, m_para) {
 									    231,626,000,000</span></td>
 									<td>
 										
-		                        		<span class="tb_down">
+		                        		
+				                        <span class="tb_up">
 				                        
 				                        
-				                        
-									    -226,944,000,000</span></td>
+									    259,821,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    196,952,000,000</span></td>
+									    266,894,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    16,067,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1242,21 +1242,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    224,311,000,000</span></td>
+									    1,079,505,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    1,127,213,000,000</span></td>
+									    1,624,004,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    477,912,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1280,21 +1280,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    167,746,000,000</span></td>
+									    814,882,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    810,431,000,000</span></td>
+									    1,192,399,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    371,470,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1318,21 +1318,21 @@ function openPop(uid, m_para) {
 				                        
 				                        
 				                        
-									    -11,655,000,000</span></td>
+									    -22,743,000,000</span></td>
 									<td>
 										
 		                        		<span class="tb_down">
 				                        
 				                        
 				                        
-									    -25,824,000,000</span></td>
+									    -47,050,000,000</span></td>
 									<td class="last" >
 										
-		                        		<span class="tb_down">
+		                        		
 				                        
+				                        <span class="tb_mid">
 				                        
-				                        
-									    -15,108,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1356,21 +1356,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    156,091,000,000</span></td>
+									    792,139,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    784,607,000,000</span></td>
+									    1,145,349,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    356,362,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1394,21 +1394,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    99</span></td>
+									    492</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    498</span></td>
+									    668</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    226</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1432,21 +1432,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    7,366</span></td>
+									    9,971</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    6,768</span></td>
+									    9,444</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    5,951</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1470,21 +1470,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    24,300</span></td>
+									    14,700</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    26,000</span></td>
+									    14,825</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    18,500</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1508,21 +1508,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    61.3</span></td>
+									    14.9</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    13.0</span></td>
+									    16.6</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    20.4</span></td>
+									    0.0</span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">
@@ -1546,21 +1546,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    3.3</span></td>
+									    1.5</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    3.8</span></td>
+									    1.6</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    3.1</span></td>
+									    0.0</span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_b last_solid">
@@ -1598,9 +1598,9 @@ function openPop(uid, m_para) {
 								<tr>
 									<th scope="col" class=" bot_solid last_solid">Quarter/year</th>
 									<th scope="col" class="bot_solid">1st Quarter 2016</th>
-									<th scope="col" class="bot_solid">1st Quarter 2015</th>
-									<th scope="col" class="bot_solid">1st Quarter 2014</th>
-									<th scope="col" class="last bot_solid">1st Quarter 2013</th>
+									<th scope="col" class="bot_solid">2rd Quarter 2016</th>
+									<th scope="col" class="bot_solid">3rd Quarter 2016</th>
+									<th scope="col" class="last bot_solid"></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -1626,21 +1626,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    513,478,000,000</span></td>
+									    3,285,860,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    546,868,000,000</span></td>
+									    344,161,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    247,263,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Account Receivable</th>
@@ -1657,21 +1657,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    22,558,000,000</span></td>
+									    95,246,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    46,477,000,000</span></td>
+									    197,816,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    13,414,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Inventories</th>
@@ -1688,21 +1688,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    1,600,444,000,000</span></td>
+									    1,558,357,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    1,359,223,000,000</span></td>
+									    1,758,963,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    1,137,317,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Other Current Assets</th>
@@ -1719,21 +1719,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    605,716,000,000</span></td>
+									    960,762,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    388,009,000,000</span></td>
+									    810,309,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    409,199,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Total Current Assets</th>
@@ -1750,21 +1750,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    2,742,196,000,000</span></td>
+									    5,900,225,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    2,340,577,000,000</span></td>
+									    3,111,249,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    1,807,193,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Fixed Assets</th>
@@ -1781,21 +1781,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    8,596,670,000,000</span></td>
+									    9,595,179,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    6,831,141,000,000</span></td>
+									    9,717,978,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    5,118,373,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Other Non-Curr.Assets</th>
@@ -1812,21 +1812,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    8,604,404,000,000</span></td>
+									    9,912,851,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    7,004,772,000,000</span></td>
+									    10,123,899,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    6,044,244,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Tot.Non-Cuttent Assets</th>
@@ -1843,21 +1843,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    17,201,074,000,000</span></td>
+									    19,508,030,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    13,835,913,000,000</span></td>
+									    19,841,877,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    11,162,617,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="bot_solid last_solid">Total Assets</th>
@@ -1874,21 +1874,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    19,943,270,000,000</span></td>
+									    25,408,255,000,000</span></td>
 									<td class="bot_solid">
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    16,176,490,000,000</span></td>
+									    22,953,126,000,000</span></td>
 									<td class="last bot_solid" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    12,969,810,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="bot_solid last_solid">Liablities</th>
@@ -1912,21 +1912,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    4,601,218,000,000</span></td>
+									    3,324,755,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    4,294,997,000,000</span></td>
+									    3,326,777,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    2,757,863,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Long Term Liabilties</th>
@@ -1943,21 +1943,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    3,313,650,000,000</span></td>
+									    5,660,178,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    823,248,000,000</span></td>
+									    3,042,239,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    488,740,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Total Libilitie</th>
@@ -1974,21 +1974,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    7,914,868,000,000</span></td>
+									    8,984,933,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    5,118,245,000,000</span></td>
+									    6,369,016,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    3,246,603,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Total Equity</th>
@@ -2005,21 +2005,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    11,600,300,000,000</span></td>
+									    16,047,836,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    10,659,164,000,000</span></td>
+									    16,186,824,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    9,372,465,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Minority Interest</th>
@@ -2036,21 +2036,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    428,102,000,000</span></td>
+									    375,486,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    399,081,000,000</span></td>
+									    397,286,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    350,742,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_b last_solid">Tot. Liabilities &amp; Equity</th>
@@ -2067,21 +2067,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    19,943,270,000,000</span></td>
+									    25,408,255,000,000</span></td>
 									<td  class="last_b">
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    16,176,490,000,000</span></td>
+									    22,953,126,000,000</span></td>
 									<td class="last last_b"  >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    12,969,810,000,000</span></td>
+									    </span></td>
 								</tr>
 
 							</tbody>
@@ -2106,9 +2106,9 @@ function openPop(uid, m_para) {
 								<tr>
 									<th scope="col" class=" bot_solid last_solid">Quarter/year</th>
 									<th scope="col" class="bot_solid">1st Quarter 2016</th>
-									<th scope="col" class="bot_solid">1st Quarter 2015</th>
-									<th scope="col" class="bot_solid">1st Quarter 2014</th>
-									<th scope="col" class="last bot_solid">1st Quarter 2013</th>
+									<th scope="col" class="bot_solid">2rd Quarter 2016</th>
+									<th scope="col" class="bot_solid">3rd Quarter 2016</th>
+									<th scope="col" class="last bot_solid"></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -2134,21 +2134,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    242,558,000,000</span></td>
+									    835,471,000,000</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    616,895,000,000</span></td>
+									    1,818,194,000,000</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    623,541,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Investing Activities</th>
@@ -2165,21 +2165,21 @@ function openPop(uid, m_para) {
 				                        
 				                        
 				                        
-									    -745,874,000,000</span></td>
+									    -1,107,715,000,000</span></td>
 									<td>
 										
 		                        		<span class="tb_down">
 				                        
 				                        
 				                        
-									    -716,826,000,000</span></td>
+									    -1,678,755,000,000</span></td>
 									<td class="last" >
 										
-		                        		<span class="tb_down">
+		                        		
 				                        
+				                        <span class="tb_mid">
 				                        
-				                        
-									    -598,676,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">Financing Activities</th>
@@ -2196,21 +2196,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    400,326,000,000</span></td>
+									    3,290,228,000,000</span></td>
 									<td>
 										
 		                        		<span class="tb_down">
 				                        
 				                        
 				                        
-									    -59,583,000,000</span></td>
+									    -86,826,000,000</span></td>
 									<td class="last" >
 										
-		                        		<span class="tb_down">
+		                        		
 				                        
+				                        <span class="tb_mid">
 				                        
-				                        
-									    -7,525,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="bot_solid last_solid">Net Cash Flow Activities</th>
@@ -2223,25 +2223,25 @@ function openPop(uid, m_para) {
 									    -61,667,000,000</span></td>
 									<td class="bot_solid tb_right">
 										
-		                        		<span class="tb_down">
+		                        		
+				                        <span class="tb_up">
 				                        
 				                        
-				                        
-									    -102,990,000,000</span></td>
+									    3,017,984,000,000</span></td>
 									<td class="bot_solid tb_right">
-										
-		                        		<span class="tb_down">
-				                        
-				                        
-				                        
-									    -159,514,000,000</span></td>
-									<td class="last bot_solid tb_right">
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    17,340,000,000</span></td>
+									    52,613,000,000</span></td>
+									<td class="last bot_solid tb_right">
+										
+		                        		
+				                        
+				                        <span class="tb_mid">
+				                        
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="bot_solid last_solid">Cash &amp; Cash Equivalent</th>
@@ -2265,21 +2265,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    513,478,000,000</span></td>
+									    3,285,860,000,000</span></td>
 									<td class="bot_solid tb_right">
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    546,868,000,000</span></td>
+									    344,161,000,000</span></td>
 									<td class="last bot_solid tb_right">
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    247,263,000,000</span></td>
+									    </span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="bot_solid last_solid">Key Ratios</th>
@@ -2303,21 +2303,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    61.3</span></td>
+									    14.9</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    13.0</span></td>
+									    16.6</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    20.4</span></td>
+									    0.0</span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">PBV (X) (ClosePrice/BV)</th>
@@ -2334,21 +2334,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    3.3</span></td>
+									    1.5</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    3.8</span></td>
+									    1.6</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    3.1</span></td>
+									    0.0</span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">DER (X) (T.Liab/T.Eq)</th>
@@ -2365,21 +2365,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    0.7</span></td>
+									    1.0</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    0.5</span></td>
+									    0.4</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    0.3</span></td>
+									    0.0</span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">ROA (X) (NI*/T.Assrts)</th>
@@ -2396,21 +2396,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    3.1</span></td>
+									    6.2</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    19.4</span></td>
+									    6.7</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    11.0</span></td>
+									    0.0</span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_solid">ROE (X) (NI*/T.Equity)</th>
@@ -2427,21 +2427,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    5.4</span></td>
+									    9.9</span></td>
 									<td>
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    29.4</span></td>
+									    9.4</span></td>
 									<td class="last" >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    15.2</span></td>
+									    0.0</span></td>
 								</tr>
 								<tr>
 									<th scope="row" class="last_b last_solid">Op.Margin (%) (EBIT/Sales)</th>
@@ -2458,21 +2458,21 @@ function openPop(uid, m_para) {
 				                        <span class="tb_up">
 				                        
 				                        
-									    14.0</span></td>
+									    13.0</span></td>
 									<td  class="last_b">
 										
 		                        		
 				                        <span class="tb_up">
 				                        
 				                        
-									    25.0</span></td>
+									    14.2</span></td>
 									<td class="last last_b"  >
 										
 		                        		
-				                        <span class="tb_up">
 				                        
+				                        <span class="tb_mid">
 				                        
-									    17.0</span></td>
+									    0.0</span></td>
 								</tr>
 
 							</tbody>
@@ -2704,5 +2704,5 @@ function openPop(uid, m_para) {
     <!-- // footer -->
     <!-- // footer -->
 </div>
-<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs2.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKdnRNUnIeRvU6CSVXW1RWUGKLXQ%2f0PbQgFCxqjUrXCPAhWiY4P2ql%2bhcbiWdNFKzihSWbrcm0macKpiTPl32iVkbONqCnotYJ%2fXRtQ42QgVCFeRP7%2fWis%2bU7KnfWSqA3puRYHv2lwbu59066qp7SDwkL3Pofnm0qJ8iZBWprDvoNC59Vg8sV98UOuByknzk1rSAKkCoe1qe6YSu5%2bSCQ%2bB6thb9QzlwomUswf%2b9P4VeKD9ewGoG2nCUsX1%2fCZeIYo81oUYWd4LyOgFkHMYBc0gYprEfWSwUlb3cKj3%2fDEbkft8%2bSygQfowTRgq%2fNzrH4yhaO%2bxU1ULhYUgt7OJfkaNyXS3t7OSEddI3D65hPm5S2K%2fw1cueoPOQvdb%2f19GVjkLuBoQBEONwgRddqSMZxWUWKu3jiQaA8pj4HPO0yBF%2baURMDmXgpS5c%2bqdpRhhVkKnEd2HgEpAxghlynip%2bDiFxvImHFW%2fzTmzroaa%2fN4h5TNQMRwPbr%2bodNZZFGdoev3KGcVpH7DQvb0imVeq%2bD9lHD9RuW7UMlRWqnLVlxE7kyOLWNCWxN8zrnyeAgvJM%2b69i6CG5INYKgGAFmYUOIGMtGMys0S4pO1g53yIY9RWAW81jEmKjcxI6Gm0dvvVLTuZ8QHVQeVrJTQM2ijBVaMa0C0JbgFL6P8%2fEvZeh9%2b%2fqkkazC0jJfyNFpLXFrpx6%2bEHmltuXvWzsTwRYKILKsEW2XIh3lFwJCzSenq6kmjHeAdlKxpzYsiGudeTyxWbAz7Mf5ICuQoyJw6IXtNmErcCn6Wf4K%2bSc%2bwIee20UOYbWW6F%2b8%2fkqjjKAQ3mvqd5nAqyJ%2fD%2bIJ0LZyc7xko86fm3g%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs2.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKEwwWmMd0xnKW2QDAefRe624iBnB%2f8QeKIrpu6WwhndrSMYdGFwLjRUoJZhiFjeh0o%2bkO0iJaaJ2yqtjW9XVhLNCdF1DibUi%2fDeYw7zo4wXkqH4MF35wy3BUYtGUMngmLWddFUX0QrMLFG%2b%2bKxBevAgzW6DR5Bj1KkVF3O3p%2bQu5hAa88syWhu%2bvG2LkryL7E6s5oM915UiXS8xYUHZu3FOb%2bkeAQ9OcBwvGfC%2bUjNQcOKvWGRr%2bptIE6fdW4VG2yaSz8kWnjKxs5mAROrCI9otKNZQ0xtVpH7Uez2rx9i3bQPawsyiVJmPbIzgjTkkOv8F3ZNn%2bdPg5JPqPrWr4e6LFP4Xl%2bVVb6%2bbYoqBv5o1h4PYpgZIglbCnG6QgzJ%2ba4iGIdUhyG91kxxS9DiolmTdqcHQ%2byVxLmrZLCVJtuGXy%2fbP6I8gaCdQ%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
 </html>
