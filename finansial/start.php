@@ -72,5 +72,16 @@ function fetch_html($code, $year) {
 	]);
 	return $p->content();
 }
-$text = fetch_html('AALI', 2016);
-print_r(extract_fin($text));
+// $text = fetch_html('AALI', 2016);
+// print_r(extract_fin($text));
+
+$codes = get_all_codes();
+$year = 2016;
+$result = [];
+foreach ($codes as $row) {
+	$code = $row['code'];
+	echo "$code $year\n";
+	$text = fetch_html($code, $year);
+	$result[$code] = extract_fin($text);
+}
+file_put_contents('finan_2016.out', var_export($result, true));
