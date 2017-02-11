@@ -76,7 +76,7 @@ function fetch_html($code, $year) {
 // print_r(extract_fin($text));
 
 $codes = get_all_codes();
-$year = 2016;
+$year = 2014;
 $result = [];
 foreach ($codes as $row) {
 	$code = $row['code'];
@@ -84,4 +84,4 @@ foreach ($codes as $row) {
 	$text = fetch_html($code, $year);
 	$result[$code] = extract_fin($text);
 }
-file_put_contents('finan_2016.out', var_export($result, true));
+file_put_contents('finan_2014.out', var_export($result, true));
