@@ -1,3754 +1,3754 @@
-array (
-  0 => 
+<?php return array (
+  'AALI' => 
   array (
     'code' => 'AALI',
     'name' => 'Astra Agro Lestari Tbk',
     'sector' => 'AGRI',
     'index' => 'LQ45,KOMPAS100',
   ),
-  1 => 
+  'ABBA' => 
   array (
     'code' => 'ABBA',
     'name' => 'Mahaka Media Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  2 => 
+  'ABDA' => 
   array (
     'code' => 'ABDA',
     'name' => 'Asuransi Bina Dana Arta Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  3 => 
+  'ABMM' => 
   array (
     'code' => 'ABMM',
     'name' => 'ABM Investama Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  4 => 
+  'ACES' => 
   array (
     'code' => 'ACES',
     'name' => 'Ace Hardware Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100,PEFINDO25',
   ),
-  5 => 
+  'ACST' => 
   array (
     'code' => 'ACST',
     'name' => 'Acset Indonusa Tbk',
     'sector' => 'PROPERTY',
     'index' => 'PEFINDO25',
   ),
-  6 => 
+  'ADES' => 
   array (
     'code' => 'ADES',
     'name' => 'Akasha Wira International Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  7 => 
+  'ADHI' => 
   array (
     'code' => 'ADHI',
     'name' => 'Adhi Karya (Persero) Tbk',
     'sector' => 'PROPERTY',
     'index' => 'LQ45,KOMPAS100',
   ),
-  8 => 
+  'ADMF' => 
   array (
     'code' => 'ADMF',
     'name' => 'Adira Dinamika Multi Finance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  9 => 
+  'ADMG' => 
   array (
     'code' => 'ADMG',
     'name' => 'Polychem Indonesia Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  10 => 
+  'ADRO' => 
   array (
     'code' => 'ADRO',
     'name' => 'Adaro Energy Tbk',
     'sector' => 'MINING',
     'index' => 'LQ45,KOMPAS100',
   ),
-  11 => 
+  'AGRO' => 
   array (
     'code' => 'AGRO',
     'name' => 'Bank Rakyat Indonesia Agroniaga Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  12 => 
+  'AGRS' => 
   array (
     'code' => 'AGRS',
     'name' => 'Bank Agris Tbk.',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  13 => 
+  'AHAP' => 
   array (
     'code' => 'AHAP',
     'name' => 'Asuransi Harta Aman Pratama Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  14 => 
+  'AIMS' => 
   array (
     'code' => 'AIMS',
     'name' => 'Akbar Indo Makmur Stimec Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  15 => 
+  'AISA' => 
   array (
     'code' => 'AISA',
     'name' => 'Tiga Pilar Sejahtera Food Tbk.',
     'sector' => 'CONSUMER',
     'index' => 'KOMPAS100',
   ),
-  16 => 
+  'AKKU' => 
   array (
     'code' => 'AKKU',
     'name' => 'Alam Karya Unggul Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  17 => 
+  'AKPI' => 
   array (
     'code' => 'AKPI',
     'name' => 'Argha Karya Prima Industry Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  18 => 
+  'AKRA' => 
   array (
     'code' => 'AKRA',
     'name' => 'AKR Corporindo Tbk',
     'sector' => 'TRADE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  19 => 
+  'AKSI' => 
   array (
     'code' => 'AKSI',
     'name' => 'Majapahit Securities Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  20 => 
+  'ALDO' => 
   array (
     'code' => 'ALDO',
     'name' => 'Alkindo Naratama Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  21 => 
+  'ALKA' => 
   array (
     'code' => 'ALKA',
     'name' => 'Alakasa Industrindo Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  22 => 
+  'ALMI' => 
   array (
     'code' => 'ALMI',
     'name' => 'Alumindo Light Metal Industry Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  23 => 
+  'ALTO' => 
   array (
     'code' => 'ALTO',
     'name' => 'Tri Banyan Tirta Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  24 => 
+  'AMAG' => 
   array (
     'code' => 'AMAG',
     'name' => 'Asuransi Multi Artha Guna Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  25 => 
+  'AMFG' => 
   array (
     'code' => 'AMFG',
     'name' => 'Asahimas Flat Glass Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  26 => 
+  'AMIN' => 
   array (
     'code' => 'AMIN',
     'name' => 'Ateliers Mecaniques D Indonesia Tbk.',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  27 => 
+  'AMRT' => 
   array (
     'code' => 'AMRT',
     'name' => 'Sumber Alfaria Trijaya Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  28 => 
+  'ANJT' => 
   array (
     'code' => 'ANJT',
     'name' => 'Austindo Nusantara Jaya Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  29 => 
+  'ANTM' => 
   array (
     'code' => 'ANTM',
     'name' => 'Aneka Tambang (Persero) Tbk',
     'sector' => 'MINING',
     'index' => 'LQ45,KOMPAS100',
   ),
-  30 => 
+  'APEX' => 
   array (
     'code' => 'APEX',
     'name' => 'Apexindo Pratama Duta Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  31 => 
+  'APIC' => 
   array (
     'code' => 'APIC',
     'name' => 'Pacific Strategic Financial Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  32 => 
+  'APII' => 
   array (
     'code' => 'APII',
     'name' => 'Arita Prima Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  33 => 
+  'APLI' => 
   array (
     'code' => 'APLI',
     'name' => 'Asiaplast Industries Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  34 => 
+  'APLN' => 
   array (
     'code' => 'APLN',
     'name' => 'Agung Podomoro Land Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  35 => 
+  'APOL' => 
   array (
     'code' => 'APOL',
     'name' => 'Arpeni Pratama Ocean Line Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  36 => 
+  'ARGO' => 
   array (
     'code' => 'ARGO',
     'name' => 'Argo Pantes Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  37 => 
+  'ARII' => 
   array (
     'code' => 'ARII',
     'name' => 'Atlas Resources Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  38 => 
+  'ARNA' => 
   array (
     'code' => 'ARNA',
     'name' => 'Arwana Citramulia Tbk',
     'sector' => 'BASIC-IND',
     'index' => 'PEFINDO25',
   ),
-  39 => 
+  'ARTA' => 
   array (
     'code' => 'ARTA',
     'name' => 'Arthavest Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  40 => 
+  'ARTI' => 
   array (
     'code' => 'ARTI',
     'name' => 'Ratu Prabu Energi Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  41 => 
+  'ARTO' => 
   array (
     'code' => 'ARTO',
     'name' => 'Bank Artos Indonesia Tbk.',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  42 => 
+  'ASBI' => 
   array (
     'code' => 'ASBI',
     'name' => 'Asuransi Bintang Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  43 => 
+  'ASDM' => 
   array (
     'code' => 'ASDM',
     'name' => 'Asuransi Dayin Mitra Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  44 => 
+  'ASGR' => 
   array (
     'code' => 'ASGR',
     'name' => 'Astra Graphia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  45 => 
+  'ASII' => 
   array (
     'code' => 'ASII',
     'name' => 'Astra International Tbk',
     'sector' => 'MISC-IND',
     'index' => 'LQ45,KOMPAS100',
   ),
-  46 => 
+  'ASJT' => 
   array (
     'code' => 'ASJT',
     'name' => 'Asuransi Jasa Tania Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  47 => 
+  'ASMI' => 
   array (
     'code' => 'ASMI',
     'name' => 'Asuransi Mitra Maparya Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  48 => 
+  'ASRI' => 
   array (
     'code' => 'ASRI',
     'name' => 'Alam Sutera Realty Tbk',
     'sector' => 'PROPERTY',
     'index' => 'LQ45,KOMPAS100',
   ),
-  49 => 
+  'ASRM' => 
   array (
     'code' => 'ASRM',
     'name' => 'Asuransi Ramayana Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  50 => 
+  'ASSA' => 
   array (
     'code' => 'ASSA',
     'name' => 'Adi Sarana Armada Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'PEFINDO25',
   ),
-  51 => 
+  'ATIC' => 
   array (
     'code' => 'ATIC',
     'name' => 'Anabatic Technologies Tbk.',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  52 => 
+  'ATPK' => 
   array (
     'code' => 'ATPK',
     'name' => 'ATPK Resources Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  53 => 
+  'AUTO' => 
   array (
     'code' => 'AUTO',
     'name' => 'Astra Otoparts Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  54 => 
+  'BABP' => 
   array (
     'code' => 'BABP',
     'name' => 'Bank ICB Bumiputera Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  55 => 
+  'BACA' => 
   array (
     'code' => 'BACA',
     'name' => 'Bank Capital Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  56 => 
+  'BAJA' => 
   array (
     'code' => 'BAJA',
     'name' => 'Saranacentral Bajatama Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  57 => 
+  'BALI' => 
   array (
     'code' => 'BALI',
     'name' => 'Bali Towerindo Sentra Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  58 => 
+  'BAPA' => 
   array (
     'code' => 'BAPA',
     'name' => 'Bekasi Asri Pemula Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  59 => 
+  'BATA' => 
   array (
     'code' => 'BATA',
     'name' => 'Sepatu Bata Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  60 => 
+  'BAYU' => 
   array (
     'code' => 'BAYU',
     'name' => 'Bayu Buana Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  61 => 
+  'BBCA' => 
   array (
     'code' => 'BBCA',
     'name' => 'Bank Central Asia Tbk',
     'sector' => 'FINANCE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  62 => 
+  'BBHI' => 
   array (
     'code' => 'BBHI',
     'name' => 'Bank Harda Internasional Tbk.',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  63 => 
+  'BBKP' => 
   array (
     'code' => 'BBKP',
     'name' => 'Bank Bukopin Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  64 => 
+  'BBLD' => 
   array (
     'code' => 'BBLD',
     'name' => 'Buana Finance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  65 => 
+  'BBMD' => 
   array (
     'code' => 'BBMD',
     'name' => 'Bank Mestika Dharma Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  66 => 
+  'BBNI' => 
   array (
     'code' => 'BBNI',
     'name' => 'Bank Negara Indonesia (Persero) Tbk',
     'sector' => 'FINANCE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  67 => 
+  'BBNP' => 
   array (
     'code' => 'BBNP',
     'name' => 'Bank Nusantara Parahyangan Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  68 => 
+  'BBRI' => 
   array (
     'code' => 'BBRI',
     'name' => 'Bank Rakyat Indonesia (Persero) Tbk',
     'sector' => 'FINANCE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  69 => 
+  'BBRM' => 
   array (
     'code' => 'BBRM',
     'name' => 'Pelayaran Nasional Bina Buana Raya Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  70 => 
+  'BBTN' => 
   array (
     'code' => 'BBTN',
     'name' => 'Bank Tabungan Negara (Persero) Tbk',
     'sector' => 'FINANCE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  71 => 
+  'BBYB' => 
   array (
     'code' => 'BBYB',
     'name' => 'Bank Yudha Bhakti Tbk.',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  72 => 
+  'BCAP' => 
   array (
     'code' => 'BCAP',
     'name' => 'MNC Kapital Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  73 => 
+  'BCIC' => 
   array (
     'code' => 'BCIC',
     'name' => 'Bank Mutiara Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  74 => 
+  'BCIP' => 
   array (
     'code' => 'BCIP',
     'name' => 'Bumi Citra Permai Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  75 => 
+  'BDMN' => 
   array (
     'code' => 'BDMN',
     'name' => 'Bank Danamon Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => 'KOMPAS100',
   ),
-  76 => 
+  'BEKS' => 
   array (
     'code' => 'BEKS',
     'name' => 'PT BPD Banten',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  77 => 
+  'BEST' => 
   array (
     'code' => 'BEST',
     'name' => 'Bekasi Fajar Industrial Estate Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100,PEFINDO25',
   ),
-  78 => 
+  'BFIN' => 
   array (
     'code' => 'BFIN',
     'name' => 'BFI Finance Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  79 => 
+  'BGTG' => 
   array (
     'code' => 'BGTG',
     'name' => 'Bank Ganesha Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  80 => 
+  'BHIT' => 
   array (
     'code' => 'BHIT',
     'name' => 'MNC Investama Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100',
   ),
-  81 => 
+  'BIKA' => 
   array (
     'code' => 'BIKA',
     'name' => 'Binakarya Jaya Abadi Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  82 => 
+  'BIMA' => 
   array (
     'code' => 'BIMA',
     'name' => 'Primarindo Asia Infrastructure Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  83 => 
+  'BINA' => 
   array (
     'code' => 'BINA',
     'name' => 'Bank Ina Perdana Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  84 => 
+  'BIPI' => 
   array (
     'code' => 'BIPI',
     'name' => 'Benakat Integra Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  85 => 
+  'BIPP' => 
   array (
     'code' => 'BIPP',
     'name' => 'Bhuwanatala Indah Permai Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  86 => 
+  'BIRD' => 
   array (
     'code' => 'BIRD',
     'name' => 'Blue Bird Tbk.',
     'sector' => 'INFRASTRUC',
     'index' => 'KOMPAS100',
   ),
-  87 => 
+  'BISI' => 
   array (
     'code' => 'BISI',
     'name' => 'BISI International Tbk',
     'sector' => 'AGRI',
     'index' => 'PEFINDO25',
   ),
-  88 => 
+  'BJBR' => 
   array (
     'code' => 'BJBR',
     'name' => 'Bank Pembangunan Daerah Jawa Barat dan Banten Tbk',
     'sector' => 'FINANCE',
     'index' => 'KOMPAS100',
   ),
-  89 => 
+  'BJTM' => 
   array (
     'code' => 'BJTM',
     'name' => 'Bank Pembangunan Daerah Jawa Timur Tbk',
     'sector' => 'FINANCE',
     'index' => 'KOMPAS100',
   ),
-  90 => 
+  'BKDP' => 
   array (
     'code' => 'BKDP',
     'name' => 'Bukit Darmo Property Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  91 => 
+  'BKSL' => 
   array (
     'code' => 'BKSL',
     'name' => 'Sentul City Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  92 => 
+  'BKSW' => 
   array (
     'code' => 'BKSW',
     'name' => 'Bank QNB Kesawan Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  93 => 
+  'BLTA' => 
   array (
     'code' => 'BLTA',
     'name' => 'Berlian Laju Tanker Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  94 => 
+  'BLTZ' => 
   array (
     'code' => 'BLTZ',
     'name' => 'Graha Layar Prima Tbk.',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  95 => 
+  'BMAS' => 
   array (
     'code' => 'BMAS',
     'name' => 'Bank Maspion Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  96 => 
+  'BMRI' => 
   array (
     'code' => 'BMRI',
     'name' => 'Bank Mandiri (Persero) Tbk',
     'sector' => 'FINANCE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  97 => 
+  'BMSR' => 
   array (
     'code' => 'BMSR',
     'name' => 'Bintang Mitra Semestaraya Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  98 => 
+  'BMTR' => 
   array (
     'code' => 'BMTR',
     'name' => 'Global Mediacom Tbk',
     'sector' => 'TRADE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  99 => 
+  'BNBA' => 
   array (
     'code' => 'BNBA',
     'name' => 'Bank Bumi Arta Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  100 => 
+  'BNBR' => 
   array (
     'code' => 'BNBR',
     'name' => 'Bakrie Brothers Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  101 => 
+  'BNGA' => 
   array (
     'code' => 'BNGA',
     'name' => 'Bank CIMB Niaga Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  102 => 
+  'BNII' => 
   array (
     'code' => 'BNII',
     'name' => 'Bank Internasional Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  103 => 
+  'BNLI' => 
   array (
     'code' => 'BNLI',
     'name' => 'Bank Permata Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  104 => 
+  'BOLT' => 
   array (
     'code' => 'BOLT',
     'name' => 'Garuda Metalindo Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  105 => 
+  'BORN' => 
   array (
     'code' => 'BORN',
     'name' => 'Borneo Lumbung Energi Metal Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  106 => 
+  'BPFI' => 
   array (
     'code' => 'BPFI',
     'name' => 'Batavia Prosperindo Finance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  107 => 
+  'BPII' => 
   array (
     'code' => 'BPII',
     'name' => 'Batavia Prosperindo Internasional Tbk.',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  108 => 
+  'BRAM' => 
   array (
     'code' => 'BRAM',
     'name' => 'Indo Kordsa Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  109 => 
+  'BRAU' => 
   array (
     'code' => 'BRAU',
     'name' => 'Berau Coal Energy Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  110 => 
+  'BRMS' => 
   array (
     'code' => 'BRMS',
     'name' => 'Bumi Resources Minerals Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  111 => 
+  'BRNA' => 
   array (
     'code' => 'BRNA',
     'name' => 'Berlina Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  112 => 
+  'BRPT' => 
   array (
     'code' => 'BRPT',
     'name' => 'Barito Pacific Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  113 => 
+  'BSDE' => 
   array (
     'code' => 'BSDE',
     'name' => 'Bumi Serpong Damai Tbk',
     'sector' => 'PROPERTY',
     'index' => 'LQ45,KOMPAS100',
   ),
-  114 => 
+  'BSIM' => 
   array (
     'code' => 'BSIM',
     'name' => 'Bank Sinarmas Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  115 => 
+  'BSSR' => 
   array (
     'code' => 'BSSR',
     'name' => 'Baramulti Suksessarana Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  116 => 
+  'BSWD' => 
   array (
     'code' => 'BSWD',
     'name' => 'Bank Of India Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  117 => 
+  'BTEK' => 
   array (
     'code' => 'BTEK',
     'name' => 'Bumi Teknokultura Unggul Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  118 => 
+  'BTEL' => 
   array (
     'code' => 'BTEL',
     'name' => 'Bakrie Telecom Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  119 => 
+  'BTON' => 
   array (
     'code' => 'BTON',
     'name' => 'Betonjaya Manunggal Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  120 => 
+  'BTPN' => 
   array (
     'code' => 'BTPN',
     'name' => 'Bank Tabungan Pensiunan Nasional Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  121 => 
+  'BUDI' => 
   array (
     'code' => 'BUDI',
     'name' => 'Budi Starch Sweetener Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  122 => 
+  'BUKK' => 
   array (
     'code' => 'BUKK',
     'name' => 'Bukaka Teknik Utama Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  123 => 
+  'BULL' => 
   array (
     'code' => 'BULL',
     'name' => 'Buana Listya Tama Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  124 => 
+  'BUMI' => 
   array (
     'code' => 'BUMI',
     'name' => 'Bumi Resources Tbk',
     'sector' => 'MINING',
     'index' => 'KOMPAS100',
   ),
-  125 => 
+  'BUVA' => 
   array (
     'code' => 'BUVA',
     'name' => 'Bukit Uluwatu Villa Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  126 => 
+  'BVIC' => 
   array (
     'code' => 'BVIC',
     'name' => 'Bank Victoria International Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  127 => 
+  'BWPT' => 
   array (
     'code' => 'BWPT',
     'name' => 'BW Plantation Tbk',
     'sector' => 'AGRI',
     'index' => 'KOMPAS100',
   ),
-  128 => 
+  'BYAN' => 
   array (
     'code' => 'BYAN',
     'name' => 'Bayan Resources Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  129 => 
+  'CANI' => 
   array (
     'code' => 'CANI',
     'name' => 'Capitol Nusantara Indonesia Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  130 => 
+  'CASA' => 
   array (
     'code' => 'CASA',
     'name' => 'Capital Financial Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  131 => 
+  'CASS' => 
   array (
     'code' => 'CASS',
     'name' => 'Cardig Aero Services Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  132 => 
+  'CEKA' => 
   array (
     'code' => 'CEKA',
     'name' => 'Wilmar Cahaya Indonesia Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  133 => 
+  'CENT' => 
   array (
     'code' => 'CENT',
     'name' => 'Centrin Online Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  134 => 
+  'CFIN' => 
   array (
     'code' => 'CFIN',
     'name' => 'Clipan Finance Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  135 => 
+  'CINT' => 
   array (
     'code' => 'CINT',
     'name' => 'Chitose Internasional Tbk.',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  136 => 
+  'CITA' => 
   array (
     'code' => 'CITA',
     'name' => 'Cita Mineral Investindo Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  137 => 
+  'CKRA' => 
   array (
     'code' => 'CKRA',
     'name' => 'Cakra Mineral Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  138 => 
+  'CLPI' => 
   array (
     'code' => 'CLPI',
     'name' => 'Colorpak Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  139 => 
+  'CMNP' => 
   array (
     'code' => 'CMNP',
     'name' => 'Citra Marga Nusaphala Persada Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  140 => 
+  'CMPP' => 
   array (
     'code' => 'CMPP',
     'name' => 'Centris Multipersada Pratama Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  141 => 
+  'CNKO' => 
   array (
     'code' => 'CNKO',
     'name' => 'Exploitasi Energi Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  142 => 
+  'CNTB' => 
   array (
     'code' => 'CNTB',
     'name' => 'Saham Seri B ( Centex Tbk )',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  143 => 
+  'CNTX' => 
   array (
     'code' => 'CNTX',
     'name' => 'Century Textile Industry Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  144 => 
+  'COWL' => 
   array (
     'code' => 'COWL',
     'name' => 'Cowell Development Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  145 => 
+  'CPGT' => 
   array (
     'code' => 'CPGT',
     'name' => 'Cipaganti Citra Graha Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  146 => 
+  'CPIN' => 
   array (
     'code' => 'CPIN',
     'name' => 'Charoen Pokphand Indonesia Tbk',
     'sector' => 'BASIC-IND',
     'index' => 'LQ45,KOMPAS100',
   ),
-  147 => 
+  'CPRO' => 
   array (
     'code' => 'CPRO',
     'name' => 'Central Proteinaprima Tbk',
     'sector' => 'AGRI',
     'index' => 'KOMPAS100',
   ),
-  148 => 
+  'CSAP' => 
   array (
     'code' => 'CSAP',
     'name' => 'Catur Sentosa Adiprana Tbk',
     'sector' => 'TRADE',
     'index' => 'PEFINDO25',
   ),
-  149 => 
+  'CTBN' => 
   array (
     'code' => 'CTBN',
     'name' => 'Citra Tubindo Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  150 => 
+  'CTRA' => 
   array (
     'code' => 'CTRA',
     'name' => 'Ciputra Development Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  151 => 
+  'CTRP' => 
   array (
     'code' => 'CTRP',
     'name' => 'Ciputra Property Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  152 => 
+  'CTRS' => 
   array (
     'code' => 'CTRS',
     'name' => 'Ciputra Surya Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  153 => 
+  'CTTH' => 
   array (
     'code' => 'CTTH',
     'name' => 'Citatah Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  154 => 
+  'DAJK' => 
   array (
     'code' => 'DAJK',
     'name' => 'Dwi Aneka Jaya Kemasindo Tbk.',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  155 => 
+  'DART' => 
   array (
     'code' => 'DART',
     'name' => 'Duta Anggada Realty Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  156 => 
+  'DAYA' => 
   array (
     'code' => 'DAYA',
     'name' => 'Duta Intidaya Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  157 => 
+  'DEFI' => 
   array (
     'code' => 'DEFI',
     'name' => 'Danasupra Erapacific Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  158 => 
+  'DEWA' => 
   array (
     'code' => 'DEWA',
     'name' => 'Darma Henwa Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  159 => 
+  'DGIK' => 
   array (
     'code' => 'DGIK',
     'name' => 'Nusa Konstruksi Enjiniring Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  160 => 
+  'DILD' => 
   array (
     'code' => 'DILD',
     'name' => 'Intiland Development Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  161 => 
+  'DKFT' => 
   array (
     'code' => 'DKFT',
     'name' => 'Central Omega Resources Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  162 => 
+  'DLTA' => 
   array (
     'code' => 'DLTA',
     'name' => 'Delta Djakarta Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  163 => 
+  'DMAS' => 
   array (
     'code' => 'DMAS',
     'name' => 'Puradelta Lestari Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  164 => 
+  'DNAR' => 
   array (
     'code' => 'DNAR',
     'name' => 'Bank Dinar Indonesia Tbk.',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  165 => 
+  'DNET' => 
   array (
     'code' => 'DNET',
     'name' => 'Indoritel Makmur Internasional Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  166 => 
+  'DOID' => 
   array (
     'code' => 'DOID',
     'name' => 'Delta Dunia Makmur Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  167 => 
+  'DPNS' => 
   array (
     'code' => 'DPNS',
     'name' => 'Duta Pertiwi Nusantara Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  168 => 
+  'DPUM' => 
   array (
     'code' => 'DPUM',
     'name' => 'Dua Putra Utama Makmur Tbk.',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  169 => 
+  'DSFI' => 
   array (
     'code' => 'DSFI',
     'name' => 'Dharma Samudera Fishing Industries Tbk',
     'sector' => 'AGRI',
     'index' => 'KOMPAS100',
   ),
-  170 => 
+  'DSNG' => 
   array (
     'code' => 'DSNG',
     'name' => 'Dharma Satya Nusantara Tbk',
     'sector' => 'AGRI',
     'index' => 'KOMPAS100',
   ),
-  171 => 
+  'DSSA' => 
   array (
     'code' => 'DSSA',
     'name' => 'Dian Swastatika Sentosa Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  172 => 
+  'DUTI' => 
   array (
     'code' => 'DUTI',
     'name' => 'Duta Pertiwi Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  173 => 
+  'DVLA' => 
   array (
     'code' => 'DVLA',
     'name' => 'Darya-Varia Laboratoria Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  174 => 
+  'DYAN' => 
   array (
     'code' => 'DYAN',
     'name' => 'Dyandra Media International Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  175 => 
+  'ECII' => 
   array (
     'code' => 'ECII',
     'name' => 'Electronic City Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  176 => 
+  'EKAD' => 
   array (
     'code' => 'EKAD',
     'name' => 'Ekadharma International Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  177 => 
+  'ELSA' => 
   array (
     'code' => 'ELSA',
     'name' => 'Elnusa Tbk',
     'sector' => 'MINING',
     'index' => 'PEFINDO25,KOMPAS100',
   ),
-  178 => 
+  'ELTY' => 
   array (
     'code' => 'ELTY',
     'name' => 'Bakrieland Development Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  179 => 
+  'EMDE' => 
   array (
     'code' => 'EMDE',
     'name' => 'Megapolitan Developments Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  180 => 
+  'EMTK' => 
   array (
     'code' => 'EMTK',
     'name' => 'Elang Mahkota Teknologi Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  181 => 
+  'ENRG' => 
   array (
     'code' => 'ENRG',
     'name' => 'Energi Mega Persada Tbk',
     'sector' => 'MINING',
     'index' => 'KOMPAS100',
   ),
-  182 => 
+  'EPMT' => 
   array (
     'code' => 'EPMT',
     'name' => 'Enseval Putera Megatrading Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  183 => 
+  'ERAA' => 
   array (
     'code' => 'ERAA',
     'name' => 'Erajaya Swasembada Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100',
   ),
-  184 => 
+  'ERTX' => 
   array (
     'code' => 'ERTX',
     'name' => 'Eratex Djaja Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  185 => 
+  'ESSA' => 
   array (
     'code' => 'ESSA',
     'name' => 'Surya Esa Perkasa Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  186 => 
+  'ESTI' => 
   array (
     'code' => 'ESTI',
     'name' => 'Ever Shine Tex Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  187 => 
+  'ETWA' => 
   array (
     'code' => 'ETWA',
     'name' => 'Eterindo Wahanatama Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  188 => 
+  'EXCL' => 
   array (
     'code' => 'EXCL',
     'name' => 'XL Axiata Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'KOMPAS100',
   ),
-  189 => 
+  'FAST' => 
   array (
     'code' => 'FAST',
     'name' => 'Fast Food Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  190 => 
+  'FASW' => 
   array (
     'code' => 'FASW',
     'name' => 'Fajar Surya Wisesa Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  191 => 
+  'FISH' => 
   array (
     'code' => 'FISH',
     'name' => 'FKS Multi Agro Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  192 => 
+  'FMII' => 
   array (
     'code' => 'FMII',
     'name' => 'Fortune Mate Indonesia Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  193 => 
+  'FORU' => 
   array (
     'code' => 'FORU',
     'name' => 'Fortune Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  194 => 
+  'FPNI' => 
   array (
     'code' => 'FPNI',
     'name' => 'Lotte Chemical Titan Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  195 => 
+  'FREN' => 
   array (
     'code' => 'FREN',
     'name' => 'Smartfren Telecom Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  196 => 
+  'GAMA' => 
   array (
     'code' => 'GAMA',
     'name' => 'Gading Development Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  197 => 
+  'GDST' => 
   array (
     'code' => 'GDST',
     'name' => 'Gunawan Dianjaya Steel Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  198 => 
+  'GDYR' => 
   array (
     'code' => 'GDYR',
     'name' => 'Goodyear Indonesia Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  199 => 
+  'GEMA' => 
   array (
     'code' => 'GEMA',
     'name' => 'Gema Grahasarana Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  200 => 
+  'GEMS' => 
   array (
     'code' => 'GEMS',
     'name' => 'Golden Energy Mines Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  201 => 
+  'GGRM' => 
   array (
     'code' => 'GGRM',
     'name' => 'Gudang Garam Tbk',
     'sector' => 'CONSUMER',
     'index' => 'LQ45,KOMPAS100',
   ),
-  202 => 
+  'GIAA' => 
   array (
     'code' => 'GIAA',
     'name' => 'Garuda Indonesia (Persero) Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'KOMPAS100',
   ),
-  203 => 
+  'GJTL' => 
   array (
     'code' => 'GJTL',
     'name' => 'Gajah Tunggal Tbk',
     'sector' => 'MISC-IND',
     'index' => 'KOMPAS100',
   ),
-  204 => 
+  'GLOB' => 
   array (
     'code' => 'GLOB',
     'name' => 'Global Teleshop Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  205 => 
+  'GMCW' => 
   array (
     'code' => 'GMCW',
     'name' => 'Grahamas Citrawisata Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  206 => 
+  'GMTD' => 
   array (
     'code' => 'GMTD',
     'name' => 'Gowa Makassar Tourism Development Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  207 => 
+  'GOLD' => 
   array (
     'code' => 'GOLD',
     'name' => 'Golden Retailindo Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  208 => 
+  'GOLL' => 
   array (
     'code' => 'GOLL',
     'name' => 'Golden Plantation Tbk.',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  209 => 
+  'GPRA' => 
   array (
     'code' => 'GPRA',
     'name' => 'Perdana Gapuraprima Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  210 => 
+  'GREN' => 
   array (
     'code' => 'GREN',
     'name' => 'Evergreen Invesco Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  211 => 
+  'GSMF' => 
   array (
     'code' => 'GSMF',
     'name' => 'Equity Development Investment Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  212 => 
+  'GTBO' => 
   array (
     'code' => 'GTBO',
     'name' => 'Garda Tujuh Buana Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  213 => 
+  'GWSA' => 
   array (
     'code' => 'GWSA',
     'name' => 'Greenwood Sejahtera Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  214 => 
+  'GZCO' => 
   array (
     'code' => 'GZCO',
     'name' => 'Gozco Plantations Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  215 => 
+  'HADE' => 
   array (
     'code' => 'HADE',
     'name' => 'HD Capital Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  216 => 
+  'HDFA' => 
   array (
     'code' => 'HDFA',
     'name' => 'HD Finance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  217 => 
+  'HDTX' => 
   array (
     'code' => 'HDTX',
     'name' => 'Panasia Indo Resources Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  218 => 
+  'HERO' => 
   array (
     'code' => 'HERO',
     'name' => 'Hero Supermarket Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  219 => 
+  'HEXA' => 
   array (
     'code' => 'HEXA',
     'name' => 'Hexindo Adiperkasa Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  220 => 
+  'HITS' => 
   array (
     'code' => 'HITS',
     'name' => 'Humpuss Intermoda Transportasi Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  221 => 
+  'HMSP' => 
   array (
     'code' => 'HMSP',
     'name' => 'HM Sampoerna Tbk',
     'sector' => 'CONSUMER',
     'index' => 'LQ45,KOMPAS100',
   ),
-  222 => 
+  'HOME' => 
   array (
     'code' => 'HOME',
     'name' => 'Hotel Mandarine Regency Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  223 => 
+  'HOTL' => 
   array (
     'code' => 'HOTL',
     'name' => 'Saraswati Griya Lestari Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  224 => 
+  'HRUM' => 
   array (
     'code' => 'HRUM',
     'name' => 'Harum Energy Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  225 => 
+  'IATA' => 
   array (
     'code' => 'IATA',
     'name' => 'Indonesia Air Transport Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  226 => 
+  'IBFN' => 
   array (
     'code' => 'IBFN',
     'name' => 'Intan Baruprana Finance Tbk.',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  227 => 
+  'IBST' => 
   array (
     'code' => 'IBST',
     'name' => 'Inti Bangun Sejahtera Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  228 => 
+  'ICBP' => 
   array (
     'code' => 'ICBP',
     'name' => 'Indofood CBP Sukses Makmur Tbk',
     'sector' => 'CONSUMER',
     'index' => 'LQ45,KOMPAS100',
   ),
-  229 => 
+  'ICON' => 
   array (
     'code' => 'ICON',
     'name' => 'Island Concepts Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  230 => 
+  'IDPR' => 
   array (
     'code' => 'IDPR',
     'name' => 'Indonesia Pondasi Raya Tbk.',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  231 => 
+  'IGAR' => 
   array (
     'code' => 'IGAR',
     'name' => 'Champion Pacific Indonesia Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  232 => 
+  'IIKP' => 
   array (
     'code' => 'IIKP',
     'name' => 'Inti Agri Resources Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  233 => 
+  'IKAI' => 
   array (
     'code' => 'IKAI',
     'name' => 'Intikeramik Alamasri Industri Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  234 => 
+  'IKBI' => 
   array (
     'code' => 'IKBI',
     'name' => 'Sumi Indo Kabel Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  235 => 
+  'IMAS' => 
   array (
     'code' => 'IMAS',
     'name' => 'Indomobil Sukses Internasional Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  236 => 
+  'IMJS' => 
   array (
     'code' => 'IMJS',
     'name' => 'Indomobil Multi Jasa Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  237 => 
+  'IMPC' => 
   array (
     'code' => 'IMPC',
     'name' => 'Impack Pratama Industri Tbk.',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  238 => 
+  'INAF' => 
   array (
     'code' => 'INAF',
     'name' => 'Indofarma Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  239 => 
+  'INAI' => 
   array (
     'code' => 'INAI',
     'name' => 'Indal Aluminium Industry Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  240 => 
+  'INCI' => 
   array (
     'code' => 'INCI',
     'name' => 'Intanwijaya Internasional Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  241 => 
+  'INCO' => 
   array (
     'code' => 'INCO',
     'name' => 'Vale Indonesia Tbk',
     'sector' => 'MINING',
     'index' => 'LQ45,KOMPAS100',
   ),
-  242 => 
+  'INDF' => 
   array (
     'code' => 'INDF',
     'name' => 'Indofood Sukses Makmur Tbk',
     'sector' => 'CONSUMER',
     'index' => 'LQ45,KOMPAS100',
   ),
-  243 => 
+  'INDR' => 
   array (
     'code' => 'INDR',
     'name' => 'Indo-Rama Synthetics Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  244 => 
+  'INDS' => 
   array (
     'code' => 'INDS',
     'name' => 'Indospring Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  245 => 
+  'INDX' => 
   array (
     'code' => 'INDX',
     'name' => 'Tanah Laut Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  246 => 
+  'INDY' => 
   array (
     'code' => 'INDY',
     'name' => 'Indika Energy Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  247 => 
+  'INKP' => 
   array (
     'code' => 'INKP',
     'name' => 'Indah Kiat Pulp Paper Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  248 => 
+  'INPC' => 
   array (
     'code' => 'INPC',
     'name' => 'Bank Artha Graha Internasional Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  249 => 
+  'INPP' => 
   array (
     'code' => 'INPP',
     'name' => 'Indonesian Paradise Property Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  250 => 
+  'INRU' => 
   array (
     'code' => 'INRU',
     'name' => 'Toba Pulp Lestari Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  251 => 
+  'INTA' => 
   array (
     'code' => 'INTA',
     'name' => 'Intraco Penta Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  252 => 
+  'INTD' => 
   array (
     'code' => 'INTD',
     'name' => 'Inter Delta Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  253 => 
+  'INTP' => 
   array (
     'code' => 'INTP',
     'name' => 'Indocement Tunggal Prakasa Tbk',
     'sector' => 'BASIC-IND',
     'index' => 'LQ45,KOMPAS100',
   ),
-  254 => 
+  'INVS' => 
   array (
     'code' => 'INVS',
     'name' => 'Inovisi Infracom Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  255 => 
+  'IPOL' => 
   array (
     'code' => 'IPOL',
     'name' => 'Indopoly Swakarsa Industry Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  256 => 
+  'ISAT' => 
   array (
     'code' => 'ISAT',
     'name' => 'Indosat Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'KOMPAS100',
   ),
-  257 => 
+  'ISSP' => 
   array (
     'code' => 'ISSP',
     'name' => 'Steel Pipe Industry of Indonesia Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  258 => 
+  'ITMA' => 
   array (
     'code' => 'ITMA',
     'name' => 'Sumber Energi Andalan Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  259 => 
+  'ITMG' => 
   array (
     'code' => 'ITMG',
     'name' => 'Indo Tambangraya Megah Tbk',
     'sector' => 'MINING',
     'index' => 'KOMPAS100',
   ),
-  260 => 
+  'ITTG' => 
   array (
     'code' => 'ITTG',
     'name' => 'Leo Investments Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  261 => 
+  'JAWA' => 
   array (
     'code' => 'JAWA',
     'name' => 'Jaya Agra Wattie Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  262 => 
+  'JECC' => 
   array (
     'code' => 'JECC',
     'name' => 'Jembo Cable Company Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  263 => 
+  'JGLE' => 
   array (
     'code' => 'JGLE',
     'name' => 'Graha Andrasentra Propertindo Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  264 => 
+  'JIHD' => 
   array (
     'code' => 'JIHD',
     'name' => 'Jakarta International Hotels Development Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  265 => 
+  'JKON' => 
   array (
     'code' => 'JKON',
     'name' => 'Jaya Konstruksi Manggala Pratama Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  266 => 
+  'JKSW' => 
   array (
     'code' => 'JKSW',
     'name' => 'Jakarta Kyoei Steel Works Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  267 => 
+  'JPFA' => 
   array (
     'code' => 'JPFA',
     'name' => 'Japfa Comfeed Indonesia Tbk',
     'sector' => 'BASIC-IND',
     'index' => 'KOMPAS100',
   ),
-  268 => 
+  'JPRS' => 
   array (
     'code' => 'JPRS',
     'name' => 'Jaya Pari Steel Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  269 => 
+  'JRPT' => 
   array (
     'code' => 'JRPT',
     'name' => 'Jaya Real Property Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  270 => 
+  'JSMR' => 
   array (
     'code' => 'JSMR',
     'name' => 'Jasa Marga (Persero) Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'LQ45,KOMPAS100',
   ),
-  271 => 
+  'JSPT' => 
   array (
     'code' => 'JSPT',
     'name' => 'Jakarta Setiabudi Internasional Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  272 => 
+  'JTPE' => 
   array (
     'code' => 'JTPE',
     'name' => 'Jasuindo Tiga Perkasa Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  273 => 
+  'KAEF' => 
   array (
     'code' => 'KAEF',
     'name' => 'Kimia Farma Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  274 => 
+  'KARW' => 
   array (
     'code' => 'KARW',
     'name' => 'ICTSI Jasa Prima Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  275 => 
+  'KBLI' => 
   array (
     'code' => 'KBLI',
     'name' => 'KMI Wire Cable Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  276 => 
+  'KBLM' => 
   array (
     'code' => 'KBLM',
     'name' => 'Kabelindo Murni Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  277 => 
+  'KBLV' => 
   array (
     'code' => 'KBLV',
     'name' => 'First Media Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  278 => 
+  'KBRI' => 
   array (
     'code' => 'KBRI',
     'name' => 'Kertas Basuki Rachmat Indonesia Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  279 => 
+  'KDSI' => 
   array (
     'code' => 'KDSI',
     'name' => 'Kedawung Setia Industrial Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  280 => 
+  'KIAS' => 
   array (
     'code' => 'KIAS',
     'name' => 'Keramika Indonesia Assosiasi Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  281 => 
+  'KICI' => 
   array (
     'code' => 'KICI',
     'name' => 'Kedaung Indah Can Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  282 => 
+  'KIJA' => 
   array (
     'code' => 'KIJA',
     'name' => 'Kawasan Industri Jababeka Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  283 => 
+  'KINO' => 
   array (
     'code' => 'KINO',
     'name' => 'Kino Indonesia Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  284 => 
+  'KKGI' => 
   array (
     'code' => 'KKGI',
     'name' => 'Resource Alam Indonesia Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  285 => 
+  'KLBF' => 
   array (
     'code' => 'KLBF',
     'name' => 'Kalbe Farma Tbk',
     'sector' => 'CONSUMER',
     'index' => 'LQ45,KOMPAS100',
   ),
-  286 => 
+  'KOBX' => 
   array (
     'code' => 'KOBX',
     'name' => 'Kobexindo Tractors Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  287 => 
+  'KOIN' => 
   array (
     'code' => 'KOIN',
     'name' => 'Kokoh Inti Arebama Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  288 => 
+  'KONI' => 
   array (
     'code' => 'KONI',
     'name' => 'Perdana Bangun Pusaka Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  289 => 
+  'KOPI' => 
   array (
     'code' => 'KOPI',
     'name' => 'Mitra Energi Persada Tbk.',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  290 => 
+  'KPIG' => 
   array (
     'code' => 'KPIG',
     'name' => 'MNC Land Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  291 => 
+  'KRAH' => 
   array (
     'code' => 'KRAH',
     'name' => 'Grand Kartech Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  292 => 
+  'KRAS' => 
   array (
     'code' => 'KRAS',
     'name' => 'Krakatau Steel (Persero) Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  293 => 
+  'KREN' => 
   array (
     'code' => 'KREN',
     'name' => 'Kresna Graha Sekurindo Tbk',
     'sector' => 'FINANCE',
     'index' => 'KOMPAS100',
   ),
-  294 => 
+  'LAMI' => 
   array (
     'code' => 'LAMI',
     'name' => 'Lamicitra Nusantara Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  295 => 
+  'LAPD' => 
   array (
     'code' => 'LAPD',
     'name' => 'Leyand International Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  296 => 
+  'LCGP' => 
   array (
     'code' => 'LCGP',
     'name' => 'Eureka Prima Jakarta Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  297 => 
+  'LEAD' => 
   array (
     'code' => 'LEAD',
     'name' => 'Logindo Samudramakmur Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  298 => 
+  'LINK' => 
   array (
     'code' => 'LINK',
     'name' => 'Link Net Tbk.',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100,PEFINDO25',
   ),
-  299 => 
+  'LION' => 
   array (
     'code' => 'LION',
     'name' => 'Lion Metal Works Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  300 => 
+  'LMAS' => 
   array (
     'code' => 'LMAS',
     'name' => 'Limas Centric Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  301 => 
+  'LMPI' => 
   array (
     'code' => 'LMPI',
     'name' => 'Langgeng Makmur Industri Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  302 => 
+  'LMSH' => 
   array (
     'code' => 'LMSH',
     'name' => 'Lionmesh Prima Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  303 => 
+  'LPCK' => 
   array (
     'code' => 'LPCK',
     'name' => 'Lippo Cikarang Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100,PEFINDO25',
   ),
-  304 => 
+  'LPGI' => 
   array (
     'code' => 'LPGI',
     'name' => 'Lippo General Insurance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  305 => 
+  'LPIN' => 
   array (
     'code' => 'LPIN',
     'name' => 'Multi Prima Sejahtera Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  306 => 
+  'LPKR' => 
   array (
     'code' => 'LPKR',
     'name' => 'Lippo Karawaci Tbk',
     'sector' => 'PROPERTY',
     'index' => 'LQ45,KOMPAS100',
   ),
-  307 => 
+  'LPLI' => 
   array (
     'code' => 'LPLI',
     'name' => 'Star Pacific Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  308 => 
+  'LPPF' => 
   array (
     'code' => 'LPPF',
     'name' => 'Matahari Department Store Tbk',
     'sector' => 'TRADE',
     'index' => 'LQ45,KOMPAS100,PEFINDO25',
   ),
-  309 => 
+  'LPPS' => 
   array (
     'code' => 'LPPS',
     'name' => 'Lippo Securities Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  310 => 
+  'LRNA' => 
   array (
     'code' => 'LRNA',
     'name' => 'Eka Sari Lorena Transport Tbk.',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  311 => 
+  'LSIP' => 
   array (
     'code' => 'LSIP',
     'name' => 'PP London Sumatra Indonesia Tbk',
     'sector' => 'AGRI',
     'index' => 'LQ45,KOMPAS100',
   ),
-  312 => 
+  'LTLS' => 
   array (
     'code' => 'LTLS',
     'name' => 'Lautan Luas Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  313 => 
+  'MAGP' => 
   array (
     'code' => 'MAGP',
     'name' => 'Multi Agro Gemilang Plantation Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  314 => 
+  'MAIN' => 
   array (
     'code' => 'MAIN',
     'name' => 'Malindo Feedmill Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  315 => 
+  'MAMI' => 
   array (
     'code' => 'MAMI',
     'name' => 'Mas Murni Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  316 => 
+  'MAMIP' => 
   array (
     'code' => 'MAMIP',
     'name' => 'Mas Murni Tbk (Saham Preferen)',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  317 => 
+  'MAPI' => 
   array (
     'code' => 'MAPI',
     'name' => 'Mitra Adiperkasa Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100',
   ),
-  318 => 
+  'MARI' => 
   array (
     'code' => 'MARI',
     'name' => 'Mahaka Radio Integra Tbk.',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  319 => 
+  'MASA' => 
   array (
     'code' => 'MASA',
     'name' => 'Multistrada Arah Sarana Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  320 => 
+  'MAYA' => 
   array (
     'code' => 'MAYA',
     'name' => 'Bank Mayapada Internasional Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  321 => 
+  'MBAP' => 
   array (
     'code' => 'MBAP',
     'name' => 'Mitrabara Adiperdana Tbk.',
     'sector' => 'MINING',
     'index' => '',
   ),
-  322 => 
+  'MBSS' => 
   array (
     'code' => 'MBSS',
     'name' => 'Mitrabahtera Segara Sejati Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  323 => 
+  'MBTO' => 
   array (
     'code' => 'MBTO',
     'name' => 'Martina Berto Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  324 => 
+  'MCOR' => 
   array (
     'code' => 'MCOR',
     'name' => 'Bank Windu Kentjana International Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  325 => 
+  'MDIA' => 
   array (
     'code' => 'MDIA',
     'name' => 'Intermedia Capital Tbk.',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  326 => 
+  'MDKA' => 
   array (
     'code' => 'MDKA',
     'name' => 'Merdeka Copper Gold Tbk.',
     'sector' => 'MINING',
     'index' => '',
   ),
-  327 => 
+  'MDLN' => 
   array (
     'code' => 'MDLN',
     'name' => 'Modernland Realty Ltd Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  328 => 
+  'MDRN' => 
   array (
     'code' => 'MDRN',
     'name' => 'Modern Internasional Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  329 => 
+  'MEDC' => 
   array (
     'code' => 'MEDC',
     'name' => 'Medco Energi International Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  330 => 
+  'MEGA' => 
   array (
     'code' => 'MEGA',
     'name' => 'Bank Mega Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  331 => 
+  'MERK' => 
   array (
     'code' => 'MERK',
     'name' => 'Merck Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  332 => 
+  'META' => 
   array (
     'code' => 'META',
     'name' => 'Nusantara Infrastructure Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'KOMPAS100',
   ),
-  333 => 
+  'MFIN' => 
   array (
     'code' => 'MFIN',
     'name' => 'Mandala Multifinance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  334 => 
+  'MFMI' => 
   array (
     'code' => 'MFMI',
     'name' => 'Multifiling Mitra Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  335 => 
+  'MGNA' => 
   array (
     'code' => 'MGNA',
     'name' => 'Magna Finance Tbk.',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  336 => 
+  'MICE' => 
   array (
     'code' => 'MICE',
     'name' => 'Multi Indocitra Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  337 => 
+  'MIDI' => 
   array (
     'code' => 'MIDI',
     'name' => 'Midi Utama Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  338 => 
+  'MIKA' => 
   array (
     'code' => 'MIKA',
     'name' => 'Mitra Keluarga Karyasehat Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100,PEFINDO25',
   ),
-  339 => 
+  'MIRA' => 
   array (
     'code' => 'MIRA',
     'name' => 'Mitra International Resources Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  340 => 
+  'MITI' => 
   array (
     'code' => 'MITI',
     'name' => 'Mitra Investindo Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  341 => 
+  'MKNT' => 
   array (
     'code' => 'MKNT',
     'name' => 'Mitra Komunikasi Nusantara',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  342 => 
+  'MKPI' => 
   array (
     'code' => 'MKPI',
     'name' => 'Metropolitan Kentjana Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  343 => 
+  'MLBI' => 
   array (
     'code' => 'MLBI',
     'name' => 'Multi Bintang Indonesia Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  344 => 
+  'MLIA' => 
   array (
     'code' => 'MLIA',
     'name' => 'Mulia Industrindo Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  345 => 
+  'MLPL' => 
   array (
     'code' => 'MLPL',
     'name' => 'Multipolar Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100',
   ),
-  346 => 
+  'MLPT' => 
   array (
     'code' => 'MLPT',
     'name' => 'Multipolar Technology Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  347 => 
+  'MMLP' => 
   array (
     'code' => 'MMLP',
     'name' => 'Mega Manunggal Property Tbk.',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  348 => 
+  'MNCN' => 
   array (
     'code' => 'MNCN',
     'name' => 'Media Nusantara Citra Tbk',
     'sector' => 'TRADE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  349 => 
+  'MPMX' => 
   array (
     'code' => 'MPMX',
     'name' => 'Mitra Pinasthika Mustika Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  350 => 
+  'MPPA' => 
   array (
     'code' => 'MPPA',
     'name' => 'Matahari Putra Prima Tbk',
     'sector' => 'TRADE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  351 => 
+  'MRAT' => 
   array (
     'code' => 'MRAT',
     'name' => 'Mustika Ratu Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  352 => 
+  'MREI' => 
   array (
     'code' => 'MREI',
     'name' => 'Maskapai Reasuransi Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  353 => 
+  'MSKY' => 
   array (
     'code' => 'MSKY',
     'name' => 'MNC Sky Vision Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  354 => 
+  'MTDL' => 
   array (
     'code' => 'MTDL',
     'name' => 'Metrodata Electronics Tbk',
     'sector' => 'TRADE',
     'index' => 'PEFINDO25',
   ),
-  355 => 
+  'MTFN' => 
   array (
     'code' => 'MTFN',
     'name' => 'Capitalinc Investment Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  356 => 
+  'MTLA' => 
   array (
     'code' => 'MTLA',
     'name' => 'Metropolitan Land Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  357 => 
+  'MTRA' => 
   array (
     'code' => 'MTRA',
     'name' => 'Mitra Pemuda Tbk.',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  358 => 
+  'MTSM' => 
   array (
     'code' => 'MTSM',
     'name' => 'Metro Realty Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  359 => 
+  'MYOH' => 
   array (
     'code' => 'MYOH',
     'name' => 'Samindo Resources Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  360 => 
+  'MYOR' => 
   array (
     'code' => 'MYOR',
     'name' => 'Mayora Indah Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  361 => 
+  'MYRX' => 
   array (
     'code' => 'MYRX',
     'name' => 'Hanson International Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100,LQ45',
   ),
-  362 => 
+  'MYRXP' => 
   array (
     'code' => 'MYRXP',
     'name' => 'Saham Seri B Hanson International Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  363 => 
+  'MYTX' => 
   array (
     'code' => 'MYTX',
     'name' => 'Apac Citra Centertex Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  364 => 
+  'NAGA' => 
   array (
     'code' => 'NAGA',
     'name' => 'Bank Mitraniaga Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  365 => 
+  'NELY' => 
   array (
     'code' => 'NELY',
     'name' => 'Pelayaran Nelly Dwi Putri Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  366 => 
+  'NIKL' => 
   array (
     'code' => 'NIKL',
     'name' => 'Pelat Timah Nusantara Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  367 => 
+  'NIPS' => 
   array (
     'code' => 'NIPS',
     'name' => 'Nipress Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  368 => 
+  'NIRO' => 
   array (
     'code' => 'NIRO',
     'name' => 'Nirvana Development Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  369 => 
+  'NISP' => 
   array (
     'code' => 'NISP',
     'name' => 'Bank OCBC NISP Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  370 => 
+  'NOBU' => 
   array (
     'code' => 'NOBU',
     'name' => 'Bank Nationalnobu Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  371 => 
+  'NRCA' => 
   array (
     'code' => 'NRCA',
     'name' => 'Nusa Raya Cipta Tbk',
     'sector' => 'PROPERTY',
     'index' => 'PEFINDO25',
   ),
-  372 => 
+  'OASA' => 
   array (
     'code' => 'OASA',
     'name' => 'Protech Mitra Perkasa Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  373 => 
+  'OCAP' => 
   array (
     'code' => 'OCAP',
     'name' => 'Onix Capital Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  374 => 
+  'OKAS' => 
   array (
     'code' => 'OKAS',
     'name' => 'Ancora Indonesia Resources Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  375 => 
+  'OMRE' => 
   array (
     'code' => 'OMRE',
     'name' => 'Indonesia Prima Property Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  376 => 
+  'PADI' => 
   array (
     'code' => 'PADI',
     'name' => 'Minna Padi Investama Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  377 => 
+  'PALM' => 
   array (
     'code' => 'PALM',
     'name' => 'Provident Agro Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  378 => 
+  'PANR' => 
   array (
     'code' => 'PANR',
     'name' => 'Panorama Sentrawisata Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  379 => 
+  'PANS' => 
   array (
     'code' => 'PANS',
     'name' => 'Panin Sekuritas Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  380 => 
+  'PBRX' => 
   array (
     'code' => 'PBRX',
     'name' => 'Pan Brothers Tbk',
     'sector' => 'MISC-IND',
     'index' => 'KOMPAS100',
   ),
-  381 => 
+  'PDES' => 
   array (
     'code' => 'PDES',
     'name' => 'Destinasi Tirta Nusantara Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  382 => 
+  'PEGE' => 
   array (
     'code' => 'PEGE',
     'name' => 'Panca Global Securities Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  383 => 
+  'PGAS' => 
   array (
     'code' => 'PGAS',
     'name' => 'Perusahaan Gas Negara (Persero) Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'LQ45,KOMPAS100',
   ),
-  384 => 
+  'PGLI' => 
   array (
     'code' => 'PGLI',
     'name' => 'Pembangunan Graha Lestari Indah Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  385 => 
+  'PICO' => 
   array (
     'code' => 'PICO',
     'name' => 'Pelangi Indah Canindo Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  386 => 
+  'PJAA' => 
   array (
     'code' => 'PJAA',
     'name' => 'Pembangunan Jaya Ancol Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  387 => 
+  'PKPK' => 
   array (
     'code' => 'PKPK',
     'name' => 'Perdana Karya Perkasa Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  388 => 
+  'PLAS' => 
   array (
     'code' => 'PLAS',
     'name' => 'Polaris Investama Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100',
   ),
-  389 => 
+  'PLIN' => 
   array (
     'code' => 'PLIN',
     'name' => 'Plaza Indonesia Realty Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  390 => 
+  'PNBN' => 
   array (
     'code' => 'PNBN',
     'name' => 'Bank Pan Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => 'KOMPAS100',
   ),
-  391 => 
+  'PNBS' => 
   array (
     'code' => 'PNBS',
     'name' => 'Bank Panin Syariah Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  392 => 
+  'PNIN' => 
   array (
     'code' => 'PNIN',
     'name' => 'Panin Insurance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  393 => 
+  'PNLF' => 
   array (
     'code' => 'PNLF',
     'name' => 'Panin Financial Tbk',
     'sector' => 'FINANCE',
     'index' => 'KOMPAS100',
   ),
-  394 => 
+  'PNSE' => 
   array (
     'code' => 'PNSE',
     'name' => 'Pudjiadi Sons Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  395 => 
+  'POLY' => 
   array (
     'code' => 'POLY',
     'name' => 'Asia Pacific Fibers Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  396 => 
+  'POOL' => 
   array (
     'code' => 'POOL',
     'name' => 'Pool Advista Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  397 => 
+  'POWR' => 
   array (
     'code' => 'POWR',
     'name' => 'Cikarang Listrindo Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  398 => 
+  'PPRO' => 
   array (
     'code' => 'PPRO',
     'name' => 'PP Property Tbk.',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  399 => 
+  'PRAS' => 
   array (
     'code' => 'PRAS',
     'name' => 'Prima Alloy Steel Universal Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  400 => 
+  'PSAB' => 
   array (
     'code' => 'PSAB',
     'name' => 'J Resources Asia Pasifik Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  401 => 
+  'PSDN' => 
   array (
     'code' => 'PSDN',
     'name' => 'Prasidha Aneka Niaga Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  402 => 
+  'PSKT' => 
   array (
     'code' => 'PSKT',
     'name' => 'Pusako Tarinka Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  403 => 
+  'PTBA' => 
   array (
     'code' => 'PTBA',
     'name' => 'Tambang Batubara Bukit Asam (Persero) Tbk',
     'sector' => 'MINING',
     'index' => 'LQ45,KOMPAS100',
   ),
-  404 => 
+  'PTIS' => 
   array (
     'code' => 'PTIS',
     'name' => 'Indo Straits Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  405 => 
+  'PTPP' => 
   array (
     'code' => 'PTPP',
     'name' => 'PP (Persero) Tbk',
     'sector' => 'PROPERTY',
     'index' => 'LQ45,KOMPAS100',
   ),
-  406 => 
+  'PTRO' => 
   array (
     'code' => 'PTRO',
     'name' => 'Petrosea Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  407 => 
+  'PTSN' => 
   array (
     'code' => 'PTSN',
     'name' => 'Sat Nusapersada Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  408 => 
+  'PTSP' => 
   array (
     'code' => 'PTSP',
     'name' => 'Pioneerindo Gourmet International Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  409 => 
+  'PUDP' => 
   array (
     'code' => 'PUDP',
     'name' => 'Pudjiadi Prestige Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  410 => 
+  'PWON' => 
   array (
     'code' => 'PWON',
     'name' => 'Pakuwon Jati Tbk',
     'sector' => 'PROPERTY',
     'index' => 'LQ45,KOMPAS100',
   ),
-  411 => 
+  'PYFA' => 
   array (
     'code' => 'PYFA',
     'name' => 'Pyridam Farma Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  412 => 
+  'RAJA' => 
   array (
     'code' => 'RAJA',
     'name' => 'Rukun Raharja Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'PEFINDO25',
   ),
-  413 => 
+  'RALS' => 
   array (
     'code' => 'RALS',
     'name' => 'Ramayana Lestari Sentosa Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100,PEFINDO25',
   ),
-  414 => 
+  'RANC' => 
   array (
     'code' => 'RANC',
     'name' => 'Supra Boga Lestari Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  415 => 
+  'RBMS' => 
   array (
     'code' => 'RBMS',
     'name' => 'Ristia Bintang Mahkotasejati Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  416 => 
+  'RDTX' => 
   array (
     'code' => 'RDTX',
     'name' => 'Roda Vivatex Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  417 => 
+  'RELI' => 
   array (
     'code' => 'RELI',
     'name' => 'Reliance Securities Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  418 => 
+  'RICY' => 
   array (
     'code' => 'RICY',
     'name' => 'Ricky Putra Globalindo Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  419 => 
+  'RIGS' => 
   array (
     'code' => 'RIGS',
     'name' => 'Rig Tenders Indonesia Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  420 => 
+  'RIMO' => 
   array (
     'code' => 'RIMO',
     'name' => 'Rimo Catur Lestari Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  421 => 
+  'RMBA' => 
   array (
     'code' => 'RMBA',
     'name' => 'Bentoel Internasional Investama Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  422 => 
+  'RODA' => 
   array (
     'code' => 'RODA',
     'name' => 'Pikko Land Development Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  423 => 
+  'ROTI' => 
   array (
     'code' => 'ROTI',
     'name' => 'Nippon Indosari Corpindo Tbk',
     'sector' => 'CONSUMER',
     'index' => 'PEFINDO25',
   ),
-  424 => 
+  'RUIS' => 
   array (
     'code' => 'RUIS',
     'name' => 'Radiant Utama Interinsco Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  425 => 
+  'SAFE' => 
   array (
     'code' => 'SAFE',
     'name' => 'Steady Safe Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  426 => 
+  'SAME' => 
   array (
     'code' => 'SAME',
     'name' => 'Sarana Meditama Metropolitan Tbk',
     'sector' => 'TRADE',
     'index' => 'PEFINDO25',
   ),
-  427 => 
+  'SCBD' => 
   array (
     'code' => 'SCBD',
     'name' => 'Danayasa Arthatama Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  428 => 
+  'SCCO' => 
   array (
     'code' => 'SCCO',
     'name' => 'Supreme Cable Manufacturing Commerce Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  429 => 
+  'SCMA' => 
   array (
     'code' => 'SCMA',
     'name' => 'Surya Citra Media Tbk',
     'sector' => 'TRADE',
     'index' => 'LQ45,KOMPAS100,PEFINDO25',
   ),
-  430 => 
+  'SCPI' => 
   array (
     'code' => 'SCPI',
     'name' => 'Merck Sharp Dohme Pharma Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  431 => 
+  'SDMU' => 
   array (
     'code' => 'SDMU',
     'name' => 'Sidomulyo Selaras Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  432 => 
+  'SDPC' => 
   array (
     'code' => 'SDPC',
     'name' => 'Millennium Pharmacon International Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  433 => 
+  'SDRA' => 
   array (
     'code' => 'SDRA',
     'name' => 'Bank Himpunan Saudara Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  434 => 
+  'SGRO' => 
   array (
     'code' => 'SGRO',
     'name' => 'Sampoerna Agro Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  435 => 
+  'SHID' => 
   array (
     'code' => 'SHID',
     'name' => 'Hotel Sahid Jaya International Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  436 => 
+  'SHIP' => 
   array (
     'code' => 'SHIP',
     'name' => 'Sillo Maritime Perdana Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  437 => 
+  'SIAP' => 
   array (
     'code' => 'SIAP',
     'name' => 'Sekawan Intipratama Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  438 => 
+  'SIDO' => 
   array (
     'code' => 'SIDO',
     'name' => 'Industri Jamu dan Farmasi Sido Muncul Tbk',
     'sector' => 'CONSUMER',
     'index' => 'PEFINDO25,KOMPAS100',
   ),
-  439 => 
+  'SILO' => 
   array (
     'code' => 'SILO',
     'name' => 'Siloam International Hospitals Tbk',
     'sector' => 'TRADE',
     'index' => 'LQ45,KOMPAS100,PEFINDO25',
   ),
-  440 => 
+  'SIMA' => 
   array (
     'code' => 'SIMA',
     'name' => 'Siwani Makmur Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  441 => 
+  'SIMP' => 
   array (
     'code' => 'SIMP',
     'name' => 'Salim Ivomas Pratama Tbk',
     'sector' => 'AGRI',
     'index' => 'KOMPAS100',
   ),
-  442 => 
+  'SIPD' => 
   array (
     'code' => 'SIPD',
     'name' => 'Sierad Produce Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  443 => 
+  'SKBM' => 
   array (
     'code' => 'SKBM',
     'name' => 'Sekar Bumi Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  444 => 
+  'SKLT' => 
   array (
     'code' => 'SKLT',
     'name' => 'Sekar Laut Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  445 => 
+  'SKYB' => 
   array (
     'code' => 'SKYB',
     'name' => 'Skybee Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  446 => 
+  'SMAR' => 
   array (
     'code' => 'SMAR',
     'name' => 'Smart Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  447 => 
+  'SMBR' => 
   array (
     'code' => 'SMBR',
     'name' => 'Semen Baturaja (Persero) Tbk',
     'sector' => 'BASIC-IND',
     'index' => 'PEFINDO25',
   ),
-  448 => 
+  'SMCB' => 
   array (
     'code' => 'SMCB',
     'name' => 'Holcim Indonesia Tbk',
     'sector' => 'BASIC-IND',
     'index' => 'KOMPAS100',
   ),
-  449 => 
+  'SMDM' => 
   array (
     'code' => 'SMDM',
     'name' => 'Suryamas Dutamakmur Tbk',
     'sector' => 'PROPERTY',
     'index' => '',
   ),
-  450 => 
+  'SMDR' => 
   array (
     'code' => 'SMDR',
     'name' => 'Samudera Indonesia Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  451 => 
+  'SMGR' => 
   array (
     'code' => 'SMGR',
     'name' => 'Semen Indonesia (Persero) Tbk',
     'sector' => 'BASIC-IND',
     'index' => 'LQ45,KOMPAS100',
   ),
-  452 => 
+  'SMMA' => 
   array (
     'code' => 'SMMA',
     'name' => 'Sinarmas Multiartha Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  453 => 
+  'SMMT' => 
   array (
     'code' => 'SMMT',
     'name' => 'Golden Eagle Energy Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  454 => 
+  'SMRA' => 
   array (
     'code' => 'SMRA',
     'name' => 'Summarecon Agung Tbk',
     'sector' => 'PROPERTY',
     'index' => 'LQ45,KOMPAS100',
   ),
-  455 => 
+  'SMRU' => 
   array (
     'code' => 'SMRU',
     'name' => 'SMR Utama Tbk',
     'sector' => 'MINING',
     'index' => 'KOMPAS100',
   ),
-  456 => 
+  'SMSM' => 
   array (
     'code' => 'SMSM',
     'name' => 'Selamat Sempurna Tbk',
     'sector' => 'MISC-IND',
     'index' => 'PEFINDO25',
   ),
-  457 => 
+  'SOBI' => 
   array (
     'code' => 'SOBI',
     'name' => 'Sorini Agro Asia Corporindo Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  458 => 
+  'SOCI' => 
   array (
     'code' => 'SOCI',
     'name' => 'Soechi Lines Tbk.',
     'sector' => 'INFRASTRUC',
     'index' => 'KOMPAS100',
   ),
-  459 => 
+  'SONA' => 
   array (
     'code' => 'SONA',
     'name' => 'Sona Topas Tourism Industry Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  460 => 
+  'SPMA' => 
   array (
     'code' => 'SPMA',
     'name' => 'Suparma Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  461 => 
+  'SQBB' => 
   array (
     'code' => 'SQBB',
     'name' => 'Taisho Pharmaceutical Indonesia Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  462 => 
+  'SQBI' => 
   array (
     'code' => 'SQBI',
     'name' => 'Taisho Pharmaceutical Indonesia Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  463 => 
+  'SQMI' => 
   array (
     'code' => 'SQMI',
     'name' => 'Renuka Coalindo Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  464 => 
+  'SRAJ' => 
   array (
     'code' => 'SRAJ',
     'name' => 'Sejahteraraya Anugrahjaya Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  465 => 
+  'SRIL' => 
   array (
     'code' => 'SRIL',
     'name' => 'Sri Rejeki Isman Tbk',
     'sector' => 'MISC-IND',
     'index' => 'KOMPAS100,LQ45',
   ),
-  466 => 
+  'SRSN' => 
   array (
     'code' => 'SRSN',
     'name' => 'Indo Acidatama Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  467 => 
+  'SRTG' => 
   array (
     'code' => 'SRTG',
     'name' => 'Saratoga Investama Sedaya Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  468 => 
+  'SSIA' => 
   array (
     'code' => 'SSIA',
     'name' => 'Surya Semesta Internusa Tbk',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  469 => 
+  'SSMS' => 
   array (
     'code' => 'SSMS',
     'name' => 'Sawit Sumbermas Sarana Tbk',
     'sector' => 'AGRI',
     'index' => 'LQ45,KOMPAS100',
   ),
-  470 => 
+  'SSTM' => 
   array (
     'code' => 'SSTM',
     'name' => 'Sunson Textile Manufacture Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  471 => 
+  'STAR' => 
   array (
     'code' => 'STAR',
     'name' => 'Star Petrochem Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  472 => 
+  'STTP' => 
   array (
     'code' => 'STTP',
     'name' => 'Siantar Top Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  473 => 
+  'SUGI' => 
   array (
     'code' => 'SUGI',
     'name' => 'Sugih Energy Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100',
   ),
-  474 => 
+  'SULI' => 
   array (
     'code' => 'SULI',
     'name' => 'SLJ Global Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  475 => 
+  'SUPR' => 
   array (
     'code' => 'SUPR',
     'name' => 'Solusi Tunas Pratama Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  476 => 
+  'TALF' => 
   array (
     'code' => 'TALF',
     'name' => 'Tunas Alfin Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  477 => 
+  'TARA' => 
   array (
     'code' => 'TARA',
     'name' => 'Sitara Propertindo Tbk.',
     'sector' => 'PROPERTY',
     'index' => 'KOMPAS100',
   ),
-  478 => 
+  'TAXI' => 
   array (
     'code' => 'TAXI',
     'name' => 'Express Transindo Utama Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  479 => 
+  'TBIG' => 
   array (
     'code' => 'TBIG',
     'name' => 'Tower Bersama Infrastructure Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'LQ45,KOMPAS100',
   ),
-  480 => 
+  'TBLA' => 
   array (
     'code' => 'TBLA',
     'name' => 'Tunas Baru Lampung Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  481 => 
+  'TBMS' => 
   array (
     'code' => 'TBMS',
     'name' => 'Tembaga Mulia Semanan Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  482 => 
+  'TCID' => 
   array (
     'code' => 'TCID',
     'name' => 'Mandom Indonesia Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  483 => 
+  'TELE' => 
   array (
     'code' => 'TELE',
     'name' => 'Tiphone Mobile Indonesia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  484 => 
+  'TFCO' => 
   array (
     'code' => 'TFCO',
     'name' => 'Tifico Fiber Indonesia Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  485 => 
+  'TGKA' => 
   array (
     'code' => 'TGKA',
     'name' => 'Tigaraksa Satria Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  486 => 
+  'TIFA' => 
   array (
     'code' => 'TIFA',
     'name' => 'Tifa Finance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  487 => 
+  'TINS' => 
   array (
     'code' => 'TINS',
     'name' => 'Timah (Persero) Tbk',
     'sector' => 'MINING',
     'index' => 'KOMPAS100',
   ),
-  488 => 
+  'TIRA' => 
   array (
     'code' => 'TIRA',
     'name' => 'Tira Austenite Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  489 => 
+  'TIRT' => 
   array (
     'code' => 'TIRT',
     'name' => 'Tirta Mahakam Resources Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  490 => 
+  'TKGA' => 
   array (
     'code' => 'TKGA',
     'name' => 'Permata Prima Sakti Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  491 => 
+  'TKIM' => 
   array (
     'code' => 'TKIM',
     'name' => 'Pabrik Kertas Tjiwi Kimia Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  492 => 
+  'TLKM' => 
   array (
     'code' => 'TLKM',
     'name' => 'Telekomunikasi Indonesia (Persero) Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'LQ45,KOMPAS100',
   ),
-  493 => 
+  'TMAS' => 
   array (
     'code' => 'TMAS',
     'name' => 'Pelayaran Tempuran Emas Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  494 => 
+  'TMPI' => 
   array (
     'code' => 'TMPI',
     'name' => 'Sigmagold Inti Perkasa Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  495 => 
+  'TMPO' => 
   array (
     'code' => 'TMPO',
     'name' => 'Tempo Intimedia Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  496 => 
+  'TOBA' => 
   array (
     'code' => 'TOBA',
     'name' => 'Toba Bara Sejahtra Tbk',
     'sector' => 'MINING',
     'index' => '',
   ),
-  497 => 
+  'TOTL' => 
   array (
     'code' => 'TOTL',
     'name' => 'Total Bangun Persada Tbk',
     'sector' => 'PROPERTY',
     'index' => 'PEFINDO25',
   ),
-  498 => 
+  'TOTO' => 
   array (
     'code' => 'TOTO',
     'name' => 'Surya Toto Indonesia Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  499 => 
+  'TOWR' => 
   array (
     'code' => 'TOWR',
     'name' => 'Sarana Menara Nusantara Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  500 => 
+  'TPIA' => 
   array (
     'code' => 'TPIA',
     'name' => 'Chandra Asri Petrochemical Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  501 => 
+  'TPMA' => 
   array (
     'code' => 'TPMA',
     'name' => 'Trans Power Marine Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  502 => 
+  'TRAM' => 
   array (
     'code' => 'TRAM',
     'name' => 'Trada Maritime Tbk',
     'sector' => 'INFRASTRUC',
     'index' => 'KOMPAS100',
   ),
-  503 => 
+  'TRIL' => 
   array (
     'code' => 'TRIL',
     'name' => 'Triwira Insanlestari Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  504 => 
+  'TRIM' => 
   array (
     'code' => 'TRIM',
     'name' => 'Trimegah Securities Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  505 => 
+  'TRIO' => 
   array (
     'code' => 'TRIO',
     'name' => 'Trikomsel Oke Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  506 => 
+  'TRIS' => 
   array (
     'code' => 'TRIS',
     'name' => 'Trisula International Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  507 => 
+  'TRST' => 
   array (
     'code' => 'TRST',
     'name' => 'Trias Sentosa Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  508 => 
+  'TRUB' => 
   array (
     'code' => 'TRUB',
     'name' => 'Truba Alam Manunggal Engineering Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  509 => 
+  'TRUS' => 
   array (
     'code' => 'TRUS',
     'name' => 'Trust Finance Indonesia Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  510 => 
+  'TSPC' => 
   array (
     'code' => 'TSPC',
     'name' => 'Tempo Scan Pacific Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  511 => 
+  'TURI' => 
   array (
     'code' => 'TURI',
     'name' => 'Tunas Ridean Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  512 => 
+  'ULTJ' => 
   array (
     'code' => 'ULTJ',
     'name' => 'Ultra Jaya Milk Industry Trading Company Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  513 => 
+  'UNIC' => 
   array (
     'code' => 'UNIC',
     'name' => 'Unggul Indah Cahaya Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  514 => 
+  'UNIT' => 
   array (
     'code' => 'UNIT',
     'name' => 'Nusantara Inti Corpora Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  515 => 
+  'UNSP' => 
   array (
     'code' => 'UNSP',
     'name' => 'Bakrie Sumatra Plantations Tbk',
     'sector' => 'AGRI',
     'index' => '',
   ),
-  516 => 
+  'UNTR' => 
   array (
     'code' => 'UNTR',
     'name' => 'United Tractors Tbk',
     'sector' => 'TRADE',
     'index' => 'LQ45,KOMPAS100',
   ),
-  517 => 
+  'UNVR' => 
   array (
     'code' => 'UNVR',
     'name' => 'Unilever Indonesia Tbk',
     'sector' => 'CONSUMER',
     'index' => 'LQ45,KOMPAS100',
   ),
-  518 => 
+  'VICO' => 
   array (
     'code' => 'VICO',
     'name' => 'Victoria Investama Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  519 => 
+  'VINS' => 
   array (
     'code' => 'VINS',
     'name' => 'Victoria Insurance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  520 => 
+  'VIVA' => 
   array (
     'code' => 'VIVA',
     'name' => 'Visi Media Asia Tbk',
     'sector' => 'TRADE',
     'index' => 'KOMPAS100',
   ),
-  521 => 
+  'VOKS' => 
   array (
     'code' => 'VOKS',
     'name' => 'Voksel Electric Tbk',
     'sector' => 'MISC-IND',
     'index' => '',
   ),
-  522 => 
+  'VRNA' => 
   array (
     'code' => 'VRNA',
     'name' => 'Verena Multi Finance Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  523 => 
+  'WAPO' => 
   array (
     'code' => 'WAPO',
     'name' => 'Wahana Pronatural Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  524 => 
+  'WEHA' => 
   array (
     'code' => 'WEHA',
     'name' => 'Panorama Transportasi Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  525 => 
+  'WICO' => 
   array (
     'code' => 'WICO',
     'name' => 'Wicaksana Overseas International Tbk',
     'sector' => 'TRADE',
     'index' => '',
   ),
-  526 => 
+  'WIIM' => 
   array (
     'code' => 'WIIM',
     'name' => 'Wismilak Inti Makmur Tbk',
     'sector' => 'CONSUMER',
     'index' => '',
   ),
-  527 => 
+  'WIKA' => 
   array (
     'code' => 'WIKA',
     'name' => 'Wijaya Karya (Persero) Tbk',
     'sector' => 'PROPERTY',
     'index' => 'LQ45,KOMPAS100',
   ),
-  528 => 
+  'WINS' => 
   array (
     'code' => 'WINS',
     'name' => 'Wintermar Offshore Marine Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-  529 => 
+  'WOMF' => 
   array (
     'code' => 'WOMF',
     'name' => 'Wahana Ottomitra Multiartha Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  530 => 
+  'WSBP' => 
   array (
     'code' => 'WSBP',
     'name' => 'PT Waskita Beton Precast Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  531 => 
+  'WSKT' => 
   array (
     'code' => 'WSKT',
     'name' => 'Waskita Karya (Persero) Tbk',
     'sector' => 'PROPERTY',
     'index' => 'LQ45,KOMPAS100',
   ),
-  532 => 
+  'WTON' => 
   array (
     'code' => 'WTON',
     'name' => 'Wijaya Karya Beton Tbk.',
     'sector' => 'BASIC-IND',
     'index' => 'KOMPAS100,PEFINDO25',
   ),
-  533 => 
+  'YPAS' => 
   array (
     'code' => 'YPAS',
     'name' => 'Yanaprima Hastapersada Tbk',
     'sector' => 'BASIC-IND',
     'index' => '',
   ),
-  534 => 
+  'YULE' => 
   array (
     'code' => 'YULE',
     'name' => 'Yulie Sekurindo Tbk',
     'sector' => 'FINANCE',
     'index' => '',
   ),
-  535 => 
+  'ZBRA' => 
   array (
     'code' => 'ZBRA',
     'name' => 'Zebra Nusantara Tbk',
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
-)
+);

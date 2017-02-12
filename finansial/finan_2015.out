@@ -1,4 +1,4 @@
-array (
+<?php return array (
   'AALI' => 
   array (
     '1st Quarter 2015' => 
@@ -39987,4 +39987,4 @@ array (
       'Public Accountant' => '',
     ),
   ),
-)
+);
