@@ -1,0 +1,991 @@
+Array
+(
+    [0] => Array
+        (
+            [code] => SCPI
+            [name] => Merck Sharp Dohme Pharma Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => SCPI
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 1,860,753,222,000
+            [Cost of Good Sold] => -1,609,063,841,000
+            [Gross Profit] => 251,689,381,000
+            [Operation Expenses] => -62,723,662,000
+            [EBIT] => 188,965,719,000
+            [Other Income/Expenses] => 41,801,699,000
+            [Earning Before Tax] => 230,767,418,000
+            [Net Income After Tax] => 172,599,538,000
+            [Minority Interest] => 0
+            [Net Income(NI)] => 172,599,538,000
+            [Earning Per Share(EPS)] => 47,944
+            [Book Value Per Share(BV)] => 75,964
+            [Close Price] => 29,000
+            [PER(Close Price/EPS*)] => 0.5
+            [PBV(Close Price/BV)] => 0.4
+        )
+
+    [1] => Array
+        (
+            [code] => SQBB
+            [name] => Taisho Pharmaceutical Indonesia Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => SQBB
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 423,207,537,000
+            [Cost of Good Sold] => -185,874,417,000
+            [Gross Profit] => 237,333,120,000
+            [Operation Expenses] => -83,115,024,000
+            [EBIT] => 154,218,096,000
+            [Other Income/Expenses] => 9,395,771,000
+            [Earning Before Tax] => 163,613,867,000
+            [Net Income After Tax] => 123,053,015,000
+            [Minority Interest] => 0
+            [Net Income(NI)] => 107,501,015,000
+            [Earning Per Share(EPS)] => 11,599
+            [Book Value Per Share(BV)] => 33,795
+            [Close Price] => 10,500
+            [PER(Close Price/EPS*)] => 0.7
+            [PBV(Close Price/BV)] => 0.3
+        )
+
+    [2] => Array
+        (
+            [code] => GGRM
+            [name] => Gudang Garam Tbk
+            [sector] => CONSUMER
+            [index] => LQ45,KOMPAS100
+            [Code] => GGRM
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 56,211,870,000,000
+            [Cost of Good Sold] => -44,174,787,000,000
+            [Gross Profit] => 12,037,083,000,000
+            [Operation Expenses] => -5,067,880,000,000
+            [EBIT] => 6,969,203,000,000
+            [Other Income/Expenses] => -818,402,000,000
+            [Earning Before Tax] => 6,150,801,000,000
+            [Net Income After Tax] => 4,597,751,000,000
+            [Minority Interest] => 3,640,000,000
+            [Net Income(NI)] => 4,601,391,000,000
+            [Earning Per Share(EPS)] => 2391
+            [Book Value Per Share(BV)] => 19,489
+            [Close Price] => 62,000
+            [PER(Close Price/EPS*)] => 19.4
+            [PBV(Close Price/BV)] => 3.2
+        )
+
+    [3] => Array
+        (
+            [code] => TCID
+            [name] => Mandom Indonesia Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => TCID
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 1,908,960,427,242
+            [Cost of Good Sold] => -1,162,250,681,257
+            [Gross Profit] => 746,709,745,985
+            [Operation Expenses] => -543,788,642,754
+            [EBIT] => 202,921,103,231
+            [Other Income/Expenses] => -5,966,094,945
+            [Earning Before Tax] => 196,955,008,286
+            [Net Income After Tax] => 144,273,964,930
+            [Minority Interest] => 0
+            [Net Income(NI)] => 144,273,964,930
+            [Earning Per Share(EPS)] => 717
+            [Book Value Per Share(BV)] => 8688
+            [Close Price] => 13,500
+            [PER(Close Price/EPS*)] => 14.1
+            [PBV(Close Price/BV)] => 1.6
+        )
+
+    [4] => Array
+        (
+            [code] => UNVR
+            [name] => Unilever Indonesia Tbk
+            [sector] => CONSUMER
+            [index] => LQ45,KOMPAS100
+            [Code] => UNVR
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 30,101,448,000,000
+            [Cost of Good Sold] => -14,798,699,000,000
+            [Gross Profit] => 15,302,749,000,000
+            [Operation Expenses] => -8,826,743,000,000
+            [EBIT] => 6,476,006,000,000
+            [Other Income/Expenses] => -111,705,000,000
+            [Earning Before Tax] => 6,364,301,000,000
+            [Net Income After Tax] => 4,750,551,000,000
+            [Minority Interest] => 0
+            [Net Income(NI)] => 4,750,551,000,000
+            [Earning Per Share(EPS)] => 622
+            [Book Value Per Share(BV)] => 831
+            [Close Price] => 44,550
+            [PER(Close Price/EPS*)] => 53.7
+            [PBV(Close Price/BV)] => 53.6
+        )
+
+    [5] => Array
+        (
+            [code] => INDF
+            [name] => Indofood Sukses Makmur Tbk
+            [sector] => CONSUMER
+            [index] => LQ45,KOMPAS100
+            [Code] => INDF
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 49,865,934,000,000
+            [Cost of Good Sold] => -35,304,012,000,000
+            [Gross Profit] => 14,561,922,000,000
+            [Operation Expenses] => -8,629,782,000,000
+            [EBIT] => 5,932,140,000,000
+            [Other Income/Expenses] => -474,348,000,000
+            [Earning Before Tax] => 5,457,792,000,000
+            [Net Income After Tax] => 3,830,184,000,000
+            [Minority Interest] => -859,678,000,000
+            [Net Income(NI)] => 3,240,078,000,000
+            [Earning Per Share(EPS)] => 369
+            [Book Value Per Share(BV)] => 3268
+            [Close Price] => 8700
+            [PER(Close Price/EPS*)] => 17.7
+            [PBV(Close Price/BV)] => 2.7
+        )
+
+    [6] => Array
+        (
+            [code] => CEKA
+            [name] => Wilmar Cahaya Indonesia Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => CEKA
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 2,927,093,178,986
+            [Cost of Good Sold] => -2,580,299,122,747
+            [Gross Profit] => 346,794,056,239
+            [Operation Expenses] => -81,204,095,478
+            [EBIT] => 265,589,960,761
+            [Other Income/Expenses] => -31,156,280,158
+            [Earning Before Tax] => 234,433,680,603
+            [Net Income After Tax] => 216,282,725,025
+            [Minority Interest] => 0
+            [Net Income(NI)] => 216,282,725,025
+            [Earning Per Share(EPS)] => 363
+            [Book Value Per Share(BV)] => 1438
+            [Close Price] => 1250
+            [PER(Close Price/EPS*)] => 2.6
+            [PBV(Close Price/BV)] => 0.9
+        )
+
+    [7] => Array
+        (
+            [code] => MLBI
+            [name] => Multi Bintang Indonesia Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => MLBI
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 2,297,675,000,000
+            [Cost of Good Sold] => -796,224,000,000
+            [Gross Profit] => 1,501,451,000,000
+            [Operation Expenses] => -535,329,000,000
+            [EBIT] => 966,122,000,000
+            [Other Income/Expenses] => -44,763,000,000
+            [Earning Before Tax] => 921,359,000,000
+            [Net Income After Tax] => 679,191,000,000
+            [Minority Interest] => -269,000,000
+            [Net Income(NI)] => 678,922,000,000
+            [Earning Per Share(EPS)] => 322
+            [Book Value Per Share(BV)] => 247
+            [Close Price] => 13,000
+            [PER(Close Price/EPS*)] => 30.3
+            [PBV(Close Price/BV)] => 52.6
+        )
+
+    [8] => Array
+        (
+            [code] => MERK
+            [name] => Merck Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => MERK
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 807,333,970,000
+            [Cost of Good Sold] => -392,565,361,000
+            [Gross Profit] => 414,768,609,000
+            [Operation Expenses] => -246,889,282,000
+            [EBIT] => 167,879,327,000
+            [Other Income/Expenses] => 1,279,184,000
+            [Earning Before Tax] => 169,158,511,000
+            [Net Income After Tax] => 125,448,684,000
+            [Minority Interest] => 0
+            [Net Income(NI)] => 125,448,684,000
+            [Earning Per Share(EPS)] => 280
+            [Book Value Per Share(BV)] => 1237
+            [Close Price] => 9175
+            [PER(Close Price/EPS*)] => 24.6
+            [PBV(Close Price/BV)] => 7.4
+        )
+
+    [9] => Array
+        (
+            [code] => ICBP
+            [name] => Indofood CBP Sukses Makmur Tbk
+            [sector] => CONSUMER
+            [index] => LQ45,KOMPAS100
+            [Code] => ICBP
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 26,471,260,000,000
+            [Cost of Good Sold] => -18,011,198,000,000
+            [Gross Profit] => 8,460,062,000,000
+            [Operation Expenses] => -4,491,153,000,000
+            [EBIT] => 3,968,909,000,000
+            [Other Income/Expenses] => 11,438,000,000
+            [Earning Before Tax] => 3,980,347,000,000
+            [Net Income After Tax] => 2,951,469,000,000
+            [Minority Interest] => -119,389,000,000
+            [Net Income(NI)] => 2,832,080,000,000
+            [Earning Per Share(EPS)] => 243
+            [Book Value Per Share(BV)] => 1439
+            [Close Price] => 9475
+            [PER(Close Price/EPS*)] => 29.2
+            [PBV(Close Price/BV)] => 6.6
+        )
+
+    [10] => Array
+        (
+            [code] => DLTA
+            [name] => Delta Djakarta Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => DLTA
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 539,605,878,000
+            [Cost of Good Sold] => -170,883,539,000
+            [Gross Profit] => 368,722,339,000
+            [Operation Expenses] => -175,550,459,000
+            [EBIT] => 193,171,880,000
+            [Other Income/Expenses] => 27,141,784,000
+            [Earning Before Tax] => 220,313,664,000
+            [Net Income After Tax] => 169,789,648,000
+            [Minority Interest] => 210,485,000
+            [Net Income(NI)] => 170,000,133,000
+            [Earning Per Share(EPS)] => 212
+            [Book Value Per Share(BV)] => 1140
+            [Close Price] => 5500
+            [PER(Close Price/EPS*)] => 19.4
+            [PBV(Close Price/BV)] => 4.8
+        )
+
+    [11] => Array
+        (
+            [code] => ULTJ
+            [name] => Ultra Jaya Milk Industry Trading Company Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => ULTJ
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 3,453,416,205,614
+            [Cost of Good Sold] => -2,262,440,961,144
+            [Gross Profit] => 1,190,975,244,470
+            [Operation Expenses] => -509,026,252,885
+            [EBIT] => 681,948,991,585
+            [Other Income/Expenses] => 36,736,926,527
+            [Earning Before Tax] => 718,685,918,112
+            [Net Income After Tax] => 555,093,362,516
+            [Minority Interest] => -8,699,722,447
+            [Net Income(NI)] => 546,393,640,069
+            [Earning Per Share(EPS)] => 189
+            [Book Value Per Share(BV)] => 1151
+            [Close Price] => 4340
+            [PER(Close Price/EPS*)] => 17.2
+            [PBV(Close Price/BV)] => 3.8
+        )
+
+    [12] => Array
+        (
+            [code] => KINO
+            [name] => Kino Indonesia Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => KINO
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 2,700,167,769,288
+            [Cost of Good Sold] => -1,597,770,639,220
+            [Gross Profit] => 1,102,397,130,068
+            [Operation Expenses] => -863,420,069,546
+            [EBIT] => 238,977,060,522
+            [Other Income/Expenses] => -12,766,336,862
+            [Earning Before Tax] => 226,210,723,660
+            [Net Income After Tax] => 184,654,791,045
+            [Minority Interest] => -13,071,749
+            [Net Income(NI)] => 184,641,719,296
+            [Earning Per Share(EPS)] => 129
+            [Book Value Per Share(BV)] => 1330
+            [Close Price] => 4200
+            [PER(Close Price/EPS*)] => 24.4
+            [PBV(Close Price/BV)] => 3.2
+        )
+
+    [13] => Array
+        (
+            [code] => DVLA
+            [name] => Darya-Varia Laboratoria Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => DVLA
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 1,151,362,806,000
+            [Cost of Good Sold] => -544,903,686,000
+            [Gross Profit] => 606,459,120,000
+            [Operation Expenses] => -428,283,627,000
+            [EBIT] => 178,175,493,000
+            [Other Income/Expenses] => 9,075,522,000
+            [Earning Before Tax] => 187,251,015,000
+            [Net Income After Tax] => 137,390,737,000
+            [Minority Interest] => 0
+            [Net Income(NI)] => 137,390,737,000
+            [Earning Per Share(EPS)] => 122
+            [Book Value Per Share(BV)] => 954
+            [Close Price] => 1655
+            [PER(Close Price/EPS*)] => 10.1
+            [PBV(Close Price/BV)] => 1.7
+        )
+
+    [14] => Array
+        (
+            [code] => AISA
+            [name] => Tiga Pilar Sejahtera Food Tbk.
+            [sector] => CONSUMER
+            [index] => KOMPAS100
+            [Code] => AISA
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 4,978,804,000,000
+            [Cost of Good Sold] => -3,724,008,000,000
+            [Gross Profit] => 1,254,796,000,000
+            [Operation Expenses] => -420,456,000,000
+            [EBIT] => 834,340,000,000
+            [Other Income/Expenses] => -268,826,000,000
+            [Earning Before Tax] => 565,514,000,000
+            [Net Income After Tax] => 410,380,000,000
+            [Minority Interest] => -65,315,000,000
+            [Net Income(NI)] => 345,064,000,000
+            [Earning Per Share(EPS)] => 107
+            [Book Value Per Share(BV)] => 1149
+            [Close Price] => 1950
+            [PER(Close Price/EPS*)] => 13.6
+            [PBV(Close Price/BV)] => 1.7
+        )
+
+    [15] => Array
+        (
+            [code] => TSPC
+            [name] => Tempo Scan Pacific Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => TSPC
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 6,804,189,510,160
+            [Cost of Good Sold] => -4,187,161,933,811
+            [Gross Profit] => 2,617,027,576,349
+            [Operation Expenses] => -2,088,934,829,293
+            [EBIT] => 528,092,747,056
+            [Other Income/Expenses] => 38,691,259,829
+            [Earning Before Tax] => 566,784,006,885
+            [Net Income After Tax] => 467,596,805,680
+            [Minority Interest] => -8,934,837,611
+            [Net Income(NI)] => 458,661,968,069
+            [Earning Per Share(EPS)] => 101
+            [Book Value Per Share(BV)] => 1002
+            [Close Price] => 2250
+            [PER(Close Price/EPS*)] => 16.6
+            [PBV(Close Price/BV)] => 2.2
+        )
+
+    [16] => Array
+        (
+            [code] => STTP
+            [name] => Siantar Top Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => STTP
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 1,921,879,861,333
+            [Cost of Good Sold] => -1,550,214,769,832
+            [Gross Profit] => 371,665,091,501
+            [Operation Expenses] => -191,521,927,709
+            [EBIT] => 180,143,163,792
+            [Other Income/Expenses] => -51,879,533,014
+            [Earning Before Tax] => 128,263,630,778
+            [Net Income After Tax] => 103,393,245,509
+            [Minority Interest] => 101,353,690
+            [Net Income(NI)] => 103,494,599,199
+            [Earning Per Share(EPS)] => 79
+            [Book Value Per Share(BV)] => 827
+            [Close Price] => 3090
+            [PER(Close Price/EPS*)] => 29.3
+            [PBV(Close Price/BV)] => 3.7
+        )
+
+    [17] => Array
+        (
+            [code] => HMSP
+            [name] => HM Sampoerna Tbk
+            [sector] => CONSUMER
+            [index] => LQ45,KOMPAS100
+            [Code] => HMSP
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 70,275,468,000,000
+            [Cost of Good Sold] => -53,094,525,000,000
+            [Gross Profit] => 17,180,943,000,000
+            [Operation Expenses] => -5,842,383,000,000
+            [EBIT] => 11,338,560,000,000
+            [Other Income/Expenses] => 740,127,000,000
+            [Earning Before Tax] => 12,078,687,000,000
+            [Net Income After Tax] => 9,081,364,000,000
+            [Minority Interest] => 0
+            [Net Income(NI)] => 9,081,364,000,000
+            [Earning Per Share(EPS)] => 78
+            [Book Value Per Share(BV)] => 264
+            [Close Price] => 3950
+            [PER(Close Price/EPS*)] => 37.9
+            [PBV(Close Price/BV)] => 15
+        )
+
+    [18] => Array
+        (
+            [code] => KDSI
+            [name] => Kedawung Setia Industrial Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => KDSI
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 1,450,545,637,230
+            [Cost of Good Sold] => -1,253,777,790,659
+            [Gross Profit] => 196,767,846,571
+            [Operation Expenses] => -124,145,891,848
+            [EBIT] => 72,621,954,723
+            [Other Income/Expenses] => -32,423,484,665
+            [Earning Before Tax] => 40,198,470,058
+            [Net Income After Tax] => 29,263,568,508
+            [Minority Interest] => 0
+            [Net Income(NI)] => 29,263,568,508
+            [Earning Per Share(EPS)] => 72
+            [Book Value Per Share(BV)] => 999
+            [Close Price] => 300
+            [PER(Close Price/EPS*)] => 3.1
+            [PBV(Close Price/BV)] => 0.3
+        )
+
+    [19] => Array
+        (
+            [code] => ADES
+            [name] => Akasha Wira International Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => ADES
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 658,279,000,000
+            [Cost of Good Sold] => -318,184,000,000
+            [Gross Profit] => 340,095,000,000
+            [Operation Expenses] => -280,858,000,000
+            [EBIT] => 59,237,000,000
+            [Other Income/Expenses] => -16,488,000,000
+            [Earning Before Tax] => 42,749,000,000
+            [Net Income After Tax] => 31,817,000,000
+            [Minority Interest] => 0
+            [Net Income(NI)] => 31,817,000,000
+            [Earning Per Share(EPS)] => 53
+            [Book Value Per Share(BV)] => 610
+            [Close Price] => 1300
+            [PER(Close Price/EPS*)] => 18.1
+            [PBV(Close Price/BV)] => 2.1
+        )
+
+    [20] => Array
+        (
+            [code] => ROTI
+            [name] => Nippon Indosari Corpindo Tbk
+            [sector] => CONSUMER
+            [index] => PEFINDO25
+            [Code] => ROTI
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 1,837,251,049,506
+            [Cost of Good Sold] => -886,917,847,745
+            [Gross Profit] => 950,333,201,761
+            [Operation Expenses] => -626,480,565,965
+            [EBIT] => 323,852,635,796
+            [Other Income/Expenses] => -55,054,035,280
+            [Earning Before Tax] => 268,798,600,516
+            [Net Income After Tax] => 203,907,034,959
+            [Minority Interest] => -213,803,952
+            [Net Income(NI)] => 203,693,231,007
+            [Earning Per Share(EPS)] => 40
+            [Book Value Per Share(BV)] => 264
+            [Close Price] => 1690
+            [PER(Close Price/EPS*)] => 31.5
+            [PBV(Close Price/BV)] => 6.4
+        )
+
+    [21] => Array
+        (
+            [code] => MYOR
+            [name] => Mayora Indah Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => MYOR
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 13,315,494,057,171
+            [Cost of Good Sold] => -9,782,770,623,630
+            [Gross Profit] => 3,532,723,433,541
+            [Operation Expenses] => -1,874,204,903,231
+            [EBIT] => 1,658,518,530,310
+            [Other Income/Expenses] => -436,590,219,044
+            [Earning Before Tax] => 1,221,928,311,266
+            [Net Income After Tax] => 921,138,083,096
+            [Minority Interest] => -23,291,355,511
+            [Net Income(NI)] => 897,846,727,585
+            [Earning Per Share(EPS)] => 40
+            [Book Value Per Share(BV)] => 251
+            [Close Price] => 1495
+            [PER(Close Price/EPS*)] => 27.9
+            [PBV(Close Price/BV)] => 5.9
+        )
+
+    [22] => Array
+        (
+            [code] => WIIM
+            [name] => Wismilak Inti Makmur Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => WIIM
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 1,289,192,772,718
+            [Cost of Good Sold] => -893,972,465,061
+            [Gross Profit] => 395,220,307,657
+            [Operation Expenses] => -286,995,377,727
+            [EBIT] => 108,224,929,930
+            [Other Income/Expenses] => -2,899,366,150
+            [Earning Before Tax] => 105,325,563,780
+            [Net Income After Tax] => 79,155,372,550
+            [Minority Interest] => -107,792,471
+            [Net Income(NI)] => 79,047,580,079
+            [Earning Per Share(EPS)] => 37
+            [Book Value Per Share(BV)] => 459
+            [Close Price] => 410
+            [PER(Close Price/EPS*)] => 8.2
+            [PBV(Close Price/BV)] => 0.9
+        )
+
+    [23] => Array
+        (
+            [code] => KLBF
+            [name] => Kalbe Farma Tbk
+            [sector] => CONSUMER
+            [index] => LQ45,KOMPAS100
+            [Code] => KLBF
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 14,376,149,975,011
+            [Cost of Good Sold] => -7,341,962,254,819
+            [Gross Profit] => 7,034,187,720,192
+            [Operation Expenses] => -4,811,984,890,930
+            [EBIT] => 2,222,202,829,262
+            [Other Income/Expenses] => 57,424,368,605
+            [Earning Before Tax] => 2,279,627,197,867
+            [Net Income After Tax] => 1,736,689,306,369
+            [Minority Interest] => -34,021,505,484
+            [Net Income(NI)] => 1,702,667,800,885
+            [Earning Per Share(EPS)] => 36
+            [Book Value Per Share(BV)] => 241
+            [Close Price] => 1715
+            [PER(Close Price/EPS*)] => 35.4
+            [PBV(Close Price/BV)] => 7.1
+        )
+
+    [24] => Array
+        (
+            [code] => KAEF
+            [name] => Kimia Farma Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => KAEF
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 3,967,742,064,772
+            [Cost of Good Sold] => -2,709,991,952,778
+            [Gross Profit] => 1,257,750,111,994
+            [Operation Expenses] => -981,261,830,083
+            [EBIT] => 276,488,281,911
+            [Other Income/Expenses] => -35,252,746,125
+            [Earning Before Tax] => 241,235,535,786
+            [Net Income After Tax] => 177,489,365,692
+            [Minority Interest] => -3,663,872,099
+            [Net Income(NI)] => 173,825,493,594
+            [Earning Per Share(EPS)] => 31
+            [Book Value Per Share(BV)] => 411
+            [Close Price] => 2470
+            [PER(Close Price/EPS*)] => 59.2
+            [PBV(Close Price/BV)] => 6
+        )
+
+    [25] => Array
+        (
+            [code] => SKBM
+            [name] => Sekar Bumi Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => SKBM
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 1,040,134,170,500
+            [Cost of Good Sold] => -907,166,509,325
+            [Gross Profit] => 132,967,661,175
+            [Operation Expenses] => -92,694,907,289
+            [EBIT] => 40,272,753,886
+            [Other Income/Expenses] => -13,576,092,367
+            [Earning Before Tax] => 26,696,661,519
+            [Net Income After Tax] => 20,382,532,237
+            [Minority Interest] => 3,907,711,072
+            [Net Income(NI)] => 24,290,243,309
+            [Earning Per Share(EPS)] => 25
+            [Book Value Per Share(BV)] => 325
+            [Close Price] => 625
+            [PER(Close Price/EPS*)] => 18.1
+            [PBV(Close Price/BV)] => 1.9
+        )
+
+    [26] => Array
+        (
+            [code] => SIDO
+            [name] => Industri Jamu dan Farmasi Sido Muncul Tbk
+            [sector] => CONSUMER
+            [index] => PEFINDO25,KOMPAS100
+            [Code] => SIDO
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 1,891,353,000,000
+            [Cost of Good Sold] => -1,112,623,000,000
+            [Gross Profit] => 778,730,000,000
+            [Operation Expenses] => -338,401,000,000
+            [EBIT] => 440,329,000,000
+            [Other Income/Expenses] => 39,021,000,000
+            [Earning Before Tax] => 479,350,000,000
+            [Net Income After Tax] => 351,929,000,000
+            [Minority Interest] => 0
+            [Net Income(NI)] => 351,929,000,000
+            [Earning Per Share(EPS)] => 24
+            [Book Value Per Share(BV)] => 175
+            [Close Price] => 535
+            [PER(Close Price/EPS*)] => 16.6
+            [PBV(Close Price/BV)] => 3.1
+        )
+
+    [27] => Array
+        (
+            [code] => SKLT
+            [name] => Sekar Laut Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => SKLT
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 622,043,024,088
+            [Cost of Good Sold] => -466,090,036,583
+            [Gross Profit] => 155,952,987,505
+            [Operation Expenses] => -134,113,658,739
+            [EBIT] => 21,839,328,766
+            [Other Income/Expenses] => -3,469,421,394
+            [Earning Before Tax] => 18,369,907,372
+            [Net Income After Tax] => 15,010,452,570
+            [Minority Interest] => -47,177
+            [Net Income(NI)] => 15,010,405,393
+            [Earning Per Share(EPS)] => 21
+            [Book Value Per Share(BV)] => 241
+            [Close Price] => 625
+            [PER(Close Price/EPS*)] => 21.6
+            [PBV(Close Price/BV)] => 2.6
+        )
+
+    [28] => Array
+        (
+            [code] => MBTO
+            [name] => Martina Berto Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => MBTO
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 490,306,512,667
+            [Cost of Good Sold] => -237,379,266,853
+            [Gross Profit] => 252,927,245,814
+            [Operation Expenses] => -235,023,605,627
+            [EBIT] => 17,903,640,187
+            [Other Income/Expenses] => -9,599,737,948
+            [Earning Before Tax] => 8,303,902,239
+            [Net Income After Tax] => 8,704,945,665
+            [Minority Interest] => -180,776
+            [Net Income(NI)] => 8,704,764,889
+            [Earning Per Share(EPS)] => 8
+            [Book Value Per Share(BV)] => 414
+            [Close Price] => 164
+            [PER(Close Price/EPS*)] => 15.1
+            [PBV(Close Price/BV)] => 0.4
+        )
+
+    [29] => Array
+        (
+            [code] => CINT
+            [name] => Chitose Internasional Tbk.
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => CINT
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 234,912,941,224
+            [Cost of Good Sold] => -166,665,730,226
+            [Gross Profit] => 68,247,210,998
+            [Operation Expenses] => -53,007,953,793
+            [EBIT] => 15,239,257,205
+            [Other Income/Expenses] => 1,967,677,367
+            [Earning Before Tax] => 17,206,934,572
+            [Net Income After Tax] => 12,965,488,516
+            [Minority Interest] => -1,050,440,184
+            [Net Income(NI)] => 11,915,048,332
+            [Earning Per Share(EPS)] => 8
+            [Book Value Per Share(BV)] => 209
+            [Close Price] => 326
+            [PER(Close Price/EPS*)] => 30.5
+            [PBV(Close Price/BV)] => 1.6
+        )
+
+    [30] => Array
+        (
+            [code] => PYFA
+            [name] => Pyridam Farma Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => PYFA
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 160,054,232,728
+            [Cost of Good Sold] => -59,396,149,668
+            [Gross Profit] => 100,658,083,060
+            [Operation Expenses] => -94,290,442,009
+            [EBIT] => 6,367,641,051
+            [Other Income/Expenses] => -2,448,789,928
+            [Earning Before Tax] => 3,918,851,123
+            [Net Income After Tax] => 2,841,374,329
+            [Minority Interest] => 0
+            [Net Income(NI)] => 2,841,374,329
+            [Earning Per Share(EPS)] => 5
+            [Book Value Per Share(BV)] => 194
+            [Close Price] => 147
+            [PER(Close Price/EPS*)] => 20.8
+            [PBV(Close Price/BV)] => 0.8
+        )
+
+    [31] => Array
+        (
+            [code] => ALTO
+            [name] => Tri Banyan Tirta Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => ALTO
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 245,010,469,734
+            [Cost of Good Sold] => -170,182,184,944
+            [Gross Profit] => 74,828,284,790
+            [Operation Expenses] => -33,738,326,907
+            [EBIT] => 41,089,957,883
+            [Other Income/Expenses] => -34,395,599,686
+            [Earning Before Tax] => 6,694,358,197
+            [Net Income After Tax] => 3,226,197,271
+            [Minority Interest] => 41,539,901
+            [Net Income(NI)] => 3,267,737,172
+            [Earning Per Share(EPS)] => 1
+            [Book Value Per Share(BV)] => 227
+            [Close Price] => 330
+            [PER(Close Price/EPS*)] => 165.6
+            [PBV(Close Price/BV)] => 1.5
+        )
+
+    [32] => Array
+        (
+            [code] => LMPI
+            [name] => Langgeng Makmur Industri Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => LMPI
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 304,575,433,349
+            [Cost of Good Sold] => -233,280,384,349
+            [Gross Profit] => 71,295,049,000
+            [Operation Expenses] => -46,590,879,326
+            [EBIT] => 24,704,169,674
+            [Other Income/Expenses] => -21,917,247,867
+            [Earning Before Tax] => 2,786,921,807
+            [Net Income After Tax] => 2,005,432,218
+            [Minority Interest] => 0
+            [Net Income(NI)] => 2,005,432,218
+            [Earning Per Share(EPS)] => 1
+            [Book Value Per Share(BV)] => 399
+            [Close Price] => 153
+            [PER(Close Price/EPS*)] => 57.7
+            [PBV(Close Price/BV)] => 0.4
+        )
+
+    [33] => Array
+        (
+            [code] => KICI
+            [name] => Kedaung Indah Can Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => KICI
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 72,911,026,990
+            [Cost of Good Sold] => -60,265,445,318
+            [Gross Profit] => 12,645,581,672
+            [Operation Expenses] => -12,231,763,091
+            [EBIT] => 413,818,581
+            [Other Income/Expenses] => -649,690,156
+            [Earning Before Tax] => -235,871,575
+            [Net Income After Tax] => -243,525,010
+            [Minority Interest] => 0
+            [Net Income(NI)] => -243,525,010
+            [Earning Per Share(EPS)] => 0
+            [Book Value Per Share(BV)] => 337
+            [Close Price] => 130
+            [PER(Close Price/EPS*)] => -110.5
+            [PBV(Close Price/BV)] => 0.4
+        )
+
+    [34] => Array
+        (
+            [code] => INAF
+            [name] => Indofarma Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => INAF
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 868,627,447,103
+            [Cost of Good Sold] => -641,181,305,536
+            [Gross Profit] => 227,446,141,567
+            [Operation Expenses] => -228,762,463,482
+            [EBIT] => -1,316,321,915
+            [Other Income/Expenses] => -35,593,797,558
+            [Earning Before Tax] => -36,910,119,473
+            [Net Income After Tax] => -30,408,846,932
+            [Minority Interest] => 933,255
+            [Net Income(NI)] => -30,407,913,678
+            [Earning Per Share(EPS)] => -9
+            [Book Value Per Share(BV)] => 181
+            [Close Price] => 2490
+            [PER(Close Price/EPS*)] => -190.3
+            [PBV(Close Price/BV)] => 13.7
+        )
+
+    [35] => Array
+        (
+            [code] => PSDN
+            [name] => Prasidha Aneka Niaga Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => PSDN
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 686,253,542,364
+            [Cost of Good Sold] => -602,997,150,313
+            [Gross Profit] => 83,256,392,051
+            [Operation Expenses] => -68,408,247,607
+            [EBIT] => 14,848,144,444
+            [Other Income/Expenses] => -9,729,481,348
+            [Earning Before Tax] => 5,118,663,096
+            [Net Income After Tax] => -6,142,749,779
+            [Minority Interest] => -10,494,998,915
+            [Net Income(NI)] => -16,637,748,694
+            [Earning Per Share(EPS)] => -11
+            [Book Value Per Share(BV)] => 160
+            [Close Price] => 143
+            [PER(Close Price/EPS*)] => -9.2
+            [PBV(Close Price/BV)] => 0.9
+        )
+
+    [36] => Array
+        (
+            [code] => MRAT
+            [name] => Mustika Ratu Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => MRAT
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 259,963,410,738
+            [Cost of Good Sold] => -112,187,040,892
+            [Gross Profit] => 147,776,369,846
+            [Operation Expenses] => -152,387,696,140
+            [EBIT] => -4,611,326,294
+            [Other Income/Expenses] => -2,835,425,222
+            [Earning Before Tax] => -7,446,751,516
+            [Net Income After Tax] => -5,606,296,344
+            [Minority Interest] => 0
+            [Net Income(NI)] => -5,606,296,344
+            [Earning Per Share(EPS)] => -13
+            [Book Value Per Share(BV)] => 866
+            [Close Price] => 210
+            [PER(Close Price/EPS*)] => -12
+            [PBV(Close Price/BV)] => 0.2
+        )
+
+    [37] => Array
+        (
+            [code] => RMBA
+            [name] => Bentoel Internasional Investama Tbk
+            [sector] => CONSUMER
+            [index] => 
+            [Code] => RMBA
+            [Year] => 2016
+            [Q] => 3
+            [Total Sales] => 14,300,597,000,000
+            [Cost of Good Sold] => -12,751,501,000,000
+            [Gross Profit] => 1,549,096,000,000
+            [Operation Expenses] => -2,326,633,000,000
+            [EBIT] => -777,537,000,000
+            [Other Income/Expenses] => -639,905,000,000
+            [Earning Before Tax] => -1,417,442,000,000
+            [Net Income After Tax] => -1,644,571,000,000
+            [Minority Interest] => 0
+            [Net Income(NI)] => -1,644,571,000,000
+            [Earning Per Share(EPS)] => -137
+            [Book Value Per Share(BV)] => 822
+            [Close Price] => 468
+            [PER(Close Price/EPS*)] => -2.5
+            [PBV(Close Price/BV)] => 0.6
+        )
+
+)

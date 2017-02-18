@@ -73,11 +73,11 @@ $f->setStocks($stocks);
 $f->setFinancials($financials);
 
 $f->filter(function ($p, $r) {
-	return $p['sector'] == 'CONSUMER'
+	return $p['sector'] == 'CONSUMER' 
 		&& $r['year'] == 2016
 		&& $r['quarter'] == 3;
 });
 $f->sort(function ($a, $b) {
-	return ($a['net_income'] > $b['net_income']) ? -1 : 1;
+	return ($a['eps'] > $b['eps']) ? -1 : 1;
 });
-$f->save('sort-by-net-income-desc.out');
+$f->save('sort-by-eps-desc-CONSUMER.out');
