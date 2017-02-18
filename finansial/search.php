@@ -48,7 +48,23 @@ class Filtrasi {
 	}
 
 	public function save($file) {
-		file_put_contents($file, print_r($this->financials, true));
+		global $map;
+		$formatted = [];
+		foreach ($this->financials as $row) {
+			$item = $this->stocks[$row['code']];
+			foreach ($row as $key => $value) {
+				if (preg_match('#\d{5,}#', $value)) {
+					$value = number_format($value);
+				}
+				if (isset($map[$key])) {
+					$item[$map[$key]] = $value;
+				} else {
+					$item[$key] = $value;
+				}
+			}
+			$formatted[] = $item;
+		}
+		file_put_contents($file, print_r($formatted, true));
 	}
 }
 
@@ -57,11 +73,11 @@ $f->setStocks($stocks);
 $f->setFinancials($financials);
 
 $f->filter(function ($p, $r) {
-	return $r['year'] == 2016
-		&& $r['per'] > 0
+	return $p['sector'] == 'CONSUMER'
+		&& $r['year'] == 2016
 		&& $r['quarter'] == 3;
 });
 $f->sort(function ($a, $b) {
-	return ($a['per'] < $b['per']) ? -1 : 1;
+	return ($a['net_income'] > $b['net_income']) ? -1 : 1;
 });
-$f->save('sort-by-per-asc.out');
+$f->save('sort-by-net-income-desc.out');
