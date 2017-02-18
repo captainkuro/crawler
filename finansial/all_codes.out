@@ -3751,4 +3751,25 @@
     'sector' => 'INFRASTRUC',
     'index' => '',
   ),
+  'AGII' => 
+  array (
+    'code' => 'AGII',
+    'name' => 'Aneka Gas Industri Tbk',
+    'sector' => '',
+    'index' => '',
+  ),
+  'PBSA' => 
+  array (
+    'code' => 'PBSA',
+    'name' => 'Paramita Bangun Sarana Tbk',
+    'sector' => '',
+    'index' => '',
+  ),
+  'PRDA' => 
+  array (
+    'code' => 'PRDA',
+    'name' => 'Prodia Widyahusada Tbk',
+    'sector' => '',
+    'index' => '',
+  ),
 );
