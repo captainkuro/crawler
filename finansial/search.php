@@ -21,6 +21,12 @@ $map = array(
 	'close_price' => 'Close Price',
 	'per' => 'PER(Close Price/EPS*)',
 	'pbv' => 'PBV(Close Price/BV)',
+	'per2' => 'PER (X) (ClostPrice/EPS*)',
+	'pbv2' => 'PBV (X) (ClosePrice/BV)',
+	'der' => 'DER (X) (T.Liab/T.Eq)',
+	'roa' => 'ROA (X) (NI*/T.Assrts)',
+	'roe' => 'ROE (X) (NI*/T.Equity)',
+	'op_margin' => 'Op.Margin (%) (EBIT/Sales)',
 );
 
 class Filtrasi {
@@ -73,11 +79,11 @@ $f->setStocks($stocks);
 $f->setFinancials($financials);
 
 $f->filter(function ($p, $r) {
-	return $p['sector'] == 'CONSUMER' 
-		&& $r['year'] == 2016
+	return /*$p['sector'] == 'CONSUMER' 
+		&& */$r['year'] == 2016
 		&& $r['quarter'] == 3;
 });
 $f->sort(function ($a, $b) {
-	return ($a['eps'] > $b['eps']) ? -1 : 1;
+	return ($a['roe'] > $b['roe']) ? -1 : 1;
 });
-$f->save('sort-by-eps-desc-CONSUMER.out');
+$f->save('sort-by-roe-desc-CONSUMER.out');

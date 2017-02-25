@@ -57,21 +57,35 @@ function extract_fin($text) {
 		}
 	}
 
-	$row = 2;
-	$result = [];
-	while ($dataTr = $table->find('tr', $row++)) {
+	// Given table, extract data into array
+	$crawl_table = function ($table, $row) use ($periods) {
+		$result = [];
+		while ($dataTr = $table->find('tr', $row++)) {
 		$label = trim($dataTr->find('th', 0)->text());
-		for ($i=0; $i<=3; $i++) {
-			$td = $dataTr->find('td', $i);
-			$amount = trim($td->text());
-			if (isset($periods[$i])) $result[$periods[$i]][$label] = $amount;
+			for ($i=0; $i<=3; $i++) {
+				$td = $dataTr->find('td', $i);
+				$amount = trim($td->text());
+				if (isset($periods[$i])) $result[$periods[$i]][$label] = $amount;
+			}
 		}
-	}
+		return $result;
+	};
+
+	$row = 2;
+	$result = $crawl_table($table, $row);
+
+
+	// Key Ratios
+	$table = $h->find('.align07', 2);
+	$row = 9;
+	$result = array_merge_recursive($result, $crawl_table($table, $row));
+
 	return $result;
 }
 // $text = file_get_contents('view-source_dwsec-id.com_hmpg_quote_quoteMain-finan.do.html');
 // $x = extract_fin($text);
 // print_r($x);
+// exit;
 
 function fetch_html($code, $year) {
 	$url = 'http://dwsec-id.com/hmpg/quote/quoteMain-finan.do';
@@ -97,8 +111,10 @@ function fin_in_year($year) {
 	return $result;
 }
 
-$result = fin_in_year(2016);
-exporte('finan_2016.out', $result);
+// for ($y=2014; $y<=2016; $y++) {
+// 	$result = fin_in_year($y);
+// 	exporte("finan_$y.out", $result);
+// }
 
 // show chart http://dwsec-id.com/js/dwsComplex/complex.htm?StockCode=DEWA&periodBit=I
 // get data http://dwsec-id.com/tr/cpstChartAjaxTR.do?StockCode=DEWA&periodBit=I
@@ -116,21 +132,27 @@ function get_all_financials() {
 
 function extract_to_normalized($stock, $data) {
 	$map = array(
-      'Total Sales' => 'total_sales',
-      'Cost of Good Sold' => 'cost_of_good_sold',
-      'Gross Profit' => 'gross_profit',
-      'Operation Expenses' => 'operation_expenses',
-      'EBIT' => 'ebit',
-      'Other Income/Expenses' => 'other_income_expenses',
-      'Earning Before Tax' => 'earning_before_tax',
-      'Net Income After Tax' => 'net_income_after_tax',
-      'Minority Interest' => 'minority_interest',
-      'Net Income(NI)' => 'net_income',
-      'Earning Per Share(EPS)' => 'eps',
-      'Book Value Per Share(BV)' => 'bv',
-      'Close Price' => 'close_price',
-      'PER(Colse Price/EPS*)' => 'per',
-      'PBV(Close Price/BV)' => 'pbv',
+		'Total Sales' => 'total_sales',
+		'Cost of Good Sold' => 'cost_of_good_sold',
+		'Gross Profit' => 'gross_profit',
+		'Operation Expenses' => 'operation_expenses',
+		'EBIT' => 'ebit',
+		'Other Income/Expenses' => 'other_income_expenses',
+		'Earning Before Tax' => 'earning_before_tax',
+		'Net Income After Tax' => 'net_income_after_tax',
+		'Minority Interest' => 'minority_interest',
+		'Net Income(NI)' => 'net_income',
+		'Earning Per Share(EPS)' => 'eps',
+		'Book Value Per Share(BV)' => 'bv',
+		'Close Price' => 'close_price',
+		'PER(Colse Price/EPS*)' => 'per',
+		'PBV(Close Price/BV)' => 'pbv',
+		'PER (X) (ClostPrice/EPS*)' => 'per2',
+		'PBV (X) (ClosePrice/BV)' => 'pbv2',
+		'DER (X) (T.Liab/T.Eq)' => 'der',
+		'ROA (X) (NI*/T.Assrts)' => 'roa',
+		'ROE (X) (NI*/T.Equity)' => 'roe',
+		'Op.Margin (%) (EBIT/Sales)' => 'op_margin',
     );
     $database = [];
 	foreach ($data as $period => $financials) {
@@ -166,4 +188,4 @@ function save_standard_financials() {
 	}
 	exporte('all_standardized.out', $result);
 }
-// save_standard_financials();
+save_standard_financials();

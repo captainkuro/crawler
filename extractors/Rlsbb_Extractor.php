@@ -15,7 +15,11 @@ class Rlsbb_Extractor implements Extractor {
 		for ($i=$s; $i<=$n; $i++) {
 			$purl = rtrim($url, '/') . '/';
 			if ($i > 1) $purl .= 'page/'.$i.'/';
-			$p = new Page($purl);
+			$p = new Page($purl, array(
+				'become_firefox' => true,
+				CURLOPT_COOKIE => 'PHPSESSID=gmifpuqrlkv13a4vepvp6r44r2; __cfduid=d9659d2c94757690c1f48ba9fc701336b1488039627; cf_clearance=1d4007285c9411d83f69fb34d3657b4f60a10628-1488039631-1800',
+			));
+			var_dump($p->content());
 			$h = new simple_html_dom();
 			$h->load($p->content());
 

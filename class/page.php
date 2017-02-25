@@ -57,6 +57,7 @@ class Page {
 			$ch = $this->ch;
 		}
 		curl_setopt($ch, CURLOPT_HEADER, 0);
+		// curl_setopt($ch, CURLINFO_HEADER_OUT, 1);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_ENCODING, "");
 		curl_setopt($ch, CURLOPT_TIMEOUT, 150);
@@ -70,7 +71,7 @@ class Page {
 			curl_setopt($ch, CURLOPT_PROXYUSERPWD, self::$proxy['user'] . ":" . self::$proxy['pass']); 
 		}
 		if (@$this->opts['become_firefox']) {
-			curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20100101 Firefox/6.0.2');
+			curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0');
 			unset($this->opts['become_firefox']);
 		}
 		if (@$this->opts['login_first']) {
@@ -93,6 +94,7 @@ class Page {
 		while (!$this->content && $retry--) {
 			$this->content = curl_exec($ch);
 		}
+		// file_put_contents('anu', print_r(curl_getinfo($ch), true));
 		if (!$this->content) throw new Exception("Unable to retrieve $url");
 		$this->ch = $ch;
 		

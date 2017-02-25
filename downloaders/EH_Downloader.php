@@ -73,13 +73,17 @@ class EH_Downloader implements ADownloader {
 		$dir = substr($dir, 0, 120);
 		foreach ($images as $page_url) {
 			$ext = '.jpg';
-			$filename = Text::create($i)->pad(3)->to_s() . $ext;
+			$filename = Text::create($i)->pad(3)->to_s().$ext;
 			$outpath = $dir . $filename;
 			if (!is_file($outpath)) {
 				$retry = false;
 				do {
 					$image_src = $this->get_image_src($page_url);
-					// $ext = Text::create($image_src)->cut_rafter('.')->to_s();
+					// $ext2 = Text::create($image_src)->cut_rafter('.')->to_s();
+					// if (strlen($ext2) == 3) {
+					// 	$outpath = $dir . $filename . '.' . $ext2;
+					// }
+
 					download_it($image_src, $outpath);
 					$retry = filesize($outpath) === 0/* || filesize($outpath) === 925*/;
 				} while ($retry);
@@ -91,7 +95,12 @@ class EH_Downloader implements ADownloader {
 	private function get_image_src($page_url) {
 		$h = $this->create_dom($page_url);
 		
-		$img = $h->find('#img', 0);
-		return htmlspecialchars_decode($img->src);
+		$srcs = Text::create($h->innertext)->extract_to_array('src="', '"');
+		uasort($srcs, function ($a, $b) {
+			return (strlen($a) > strlen($b)) ? -1 : 1;
+		});
+		return htmlspecialchars_decode(reset($srcs));
+		// $img = $h->find('#img', 0);
+		// return htmlspecialchars_decode($img->src);
 	}
 }

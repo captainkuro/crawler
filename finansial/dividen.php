@@ -110,4 +110,4 @@ function search_dividen() {
 	});
 	return $dividens;
 }
-exporte('search_dividen.out', search_dividen());
+exporte('dividen.search_dividen.out', search_dividen());

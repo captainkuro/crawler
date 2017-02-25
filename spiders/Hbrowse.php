@@ -192,20 +192,21 @@ class Hbrowse implements Spider {
 		$links = array();
 		
 		while (!$stop) {
-			//echo $start."\n";
+			echo $start."<br>\n";
 			$p = new Page($start);
 			$p->go_line('id="main"');
 			do {
 				$line = $p->curr_line();
-				if ($line->contain('class="browseDescription"')) {
+				if ($line->contain('class="thumbImg"')) {
 					$arr = $line->extract_to_array('href="', '"');
 					$href = rtrim(end($arr), '/');
 					$links[] = $href;
 					echo "$href<br>\n";
 				}
-			} while (!$p->next_line()->contain('Next 50 Results'));
+				$p->next_line();
+			} while (!$p->curr_line()->contain('>Next<') && !$p->curr_line()->contain('> | Next'));
 			// Cek ada next/tidak
-			if ($line->contain('>Next 50 Results<')) {
+			if ($line->contain('>Next<')) {
 				$arr = $line->extract_to_array('href="', '"');
 				$start = end($arr);
 			} else {
@@ -221,10 +222,12 @@ class Hbrowse implements Spider {
 	// initial database insert
 	public function action_init() {
 		include 'hbrowse.links';
+		$links = array_reverse($links);
 		foreach ($links as $link) {
 			echo $link."<br>\n";flush(); // http://www.hbrowse.com/10001/c00001
-			$p = new Page($link);
+			$p = new Page($link.'?');
 			$data = $this->extract_from_page($p);
+			// print_r($data);exit;//debug
 			$this->add_hmanga($data);
 		}
 	}
@@ -303,7 +306,7 @@ class Hbrowse implements Spider {
 			$p->go_line('id="main"');
 			do {
 				$line = $p->curr_line();
-				if ($line->contain('class="browseDescription"')) {
+				if ($line->contain('class="thumbImg"')) {
 					$arr = $line->extract_to_array('href="', '"');
 					$href = rtrim(end($arr), '/');
 					if ($this->is_already_exist($href)) {
@@ -312,11 +315,11 @@ class Hbrowse implements Spider {
 					}
 					$links[] = $href;
 				}
-			} while (!$p->next_line()->contain('jump to next page'));
+			} while (!$p->next_line()->contain('>Next<'));
 
 			$line = $p->curr_line();
 			// Cek ada next/tidak
-			if ($line->contain('"jump to next page')) {
+			if ($line->contain('">Next<')) {
 				$arr = $line->extract_to_array('href="', '"');
 				$start = end($arr);
 			} else {
