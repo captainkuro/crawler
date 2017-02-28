@@ -71,7 +71,7 @@ class Page {
 			curl_setopt($ch, CURLOPT_PROXYUSERPWD, self::$proxy['user'] . ":" . self::$proxy['pass']); 
 		}
 		if (@$this->opts['become_firefox']) {
-			curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0');
+			curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36');
 			unset($this->opts['become_firefox']);
 		}
 		if (@$this->opts['login_first']) {

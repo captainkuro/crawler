@@ -16,10 +16,12 @@ class Rlsbb_Extractor implements Extractor {
 			$purl = rtrim($url, '/') . '/';
 			if ($i > 1) $purl .= 'page/'.$i.'/';
 			$p = new Page($purl, array(
-				'become_firefox' => true,
-				CURLOPT_COOKIE => 'PHPSESSID=gmifpuqrlkv13a4vepvp6r44r2; __cfduid=d9659d2c94757690c1f48ba9fc701336b1488039627; cf_clearance=1d4007285c9411d83f69fb34d3657b4f60a10628-1488039631-1800',
+				CURLOPT_HTTPHEADER => [
+					'Cookie: __cfduid=d9659d2c94757690c1f48ba9fc701336b1488039627; cf_clearance=e6bef035a909c752d7641cf3d971efe49a54fc67-1488298023-1800; PHPSESSID=d8ck2ritjs5ph4amiu48p7mf03',
+					'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+				],
 			));
-			var_dump($p->content());
+			// var_dump($p->content());
 			$h = new simple_html_dom();
 			$h->load($p->content());
 
