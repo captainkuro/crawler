@@ -86,6 +86,15 @@ class Page {
 			
 			unset($this->opts['login_first']);
 		}
+		if (@$this->opts['bypass_cloudflare']) {
+			$agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36';
+			cloudflare::useUserAgent($agent);
+			$clearanceCookie = cloudflare::bypass($url);
+			
+			curl_setopt($ch, CURLOPT_USERAGENT, $agent);
+			curl_setopt($ch, CURLOPT_COOKIE, $clearanceCookie);
+			unset($this->opts['bypass_cloudflare']);
+		}
 		if ($this->opts) curl_setopt_array($ch, $this->opts);
 		// Load the page specified by $url
 		curl_setopt($ch, CURLOPT_URL, $url);
