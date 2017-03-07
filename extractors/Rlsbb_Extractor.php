@@ -4,7 +4,9 @@ class Rlsbb_Extractor implements Extractor {
 	
 	public function can_extract($url) {
 		return strpos($url, 'http://www.rlsbb.com') === 0
-			|| strpos($url, 'http://rlsbb.com') === 0;
+			|| strpos($url, 'http://rlsbb.com') === 0
+			|| strpos($url, 'http://www.rlsbb.ru') === 0
+			|| strpos($url, 'http://rlsbb.ru') === 0;
 	}
 
 	public function extract($columns, $s, $n, $url) {
@@ -16,7 +18,7 @@ class Rlsbb_Extractor implements Extractor {
 			$purl = rtrim($url, '/') . '/';
 			if ($i > 1) $purl .= 'page/'.$i.'/';
 			$p = new Page($purl, array(
-				'bypass_cloudflare' => true,
+				'bypass_cloudflare' => strpos($url, 'http://rlsbb.com') === 0,
 			));
 			// var_dump($p->content());
 			$h = new simple_html_dom();
