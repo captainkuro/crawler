@@ -729,3 +729,8 @@ function dx_show_weight($category_url) {
 // 	dx_show_weight('http://www.dealextreme.co.id/category/android-tablets-14391/page/'.$page);
 // }
 // echo '</table>';
+
+
+cloudflare::useUserAgent('chrome');
+$clearanceCookie = cloudflare::bypass('http://horriblesubs.info');
+print_r($clearanceCookie);

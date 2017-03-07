@@ -17,8 +17,8 @@ class Rlsbb_Extractor implements Extractor {
 			if ($i > 1) $purl .= 'page/'.$i.'/';
 			$p = new Page($purl, array(
 				CURLOPT_HTTPHEADER => [
-					'Cookie: __cfduid=d9659d2c94757690c1f48ba9fc701336b1488039627; cf_clearance=e6bef035a909c752d7641cf3d971efe49a54fc67-1488298023-1800; PHPSESSID=d8ck2ritjs5ph4amiu48p7mf03',
-					'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+					'Cookie: _ga=GA1.2.2044102360.1464591787; __utma=206753872.2044102360.1464591787.1476793796.1477882656.11; __utmz=206753872.1476105159.9.2.utmcsr=localhost|utmccn=(referral)|utmcmd=referral|utmcct=/crawler/extractor; __cfduid=d27ee0f5fee6c461b2f6361c55a2e685f1488182382; cf_clearance=952ff3fea4291746b318e2d0d54fdeebcc4104ec-1488877806-3600',
+					'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
 				],
 			));
 			// var_dump($p->content());
