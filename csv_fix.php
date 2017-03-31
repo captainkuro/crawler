@@ -10,11 +10,13 @@ function something($number)
 
 function fixit($file) {
 	$in = fopen($file, 'r');
-	$out = fopen($file.'-out', 'w');
+	$out = fopen($file.'-out.csv', 'w');
 	while ($data = fgetcsv($in)) {
 		foreach ($data as $key => $value) {
 			if (preg_match('#^\d\.\d+E\d$#', $value)) {
 				$data[$key] = something((float)$value);
+			} else if (preg_match('#^\d{4,}\.\d\d$#', $value)) {
+				$data[$key] = str_replace('.', ',', $value);
 			}
 		}
 		fputcsv($out, $data);
@@ -23,5 +25,5 @@ function fixit($file) {
 	fclose($out);
 }
 setlocale(LC_ALL, 'id');
-fixit('C:/MINE/mutasi-jan-2017.CSV');
+fixit('C:\MINE\Download\KHANDARW0705_1016306113.CSV');
 // print_r(localeconv());
