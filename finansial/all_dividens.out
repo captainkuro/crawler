@@ -24,20 +24,20 @@
     'id' => 101280,
     'name' => 'Acset Indonusa Tbk',
     'code' => 'ACST',
+    2016 => '-',
     2015 => '31.95',
     2014 => '40.06',
     2013 => '37.67',
-    2012 => '-',
   ),
   'Adaro Energy Tbk' => 
   array (
     'id' => 101281,
     'name' => 'Adaro Energy Tbk',
     'code' => 'ADRO',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Adhi Karya Persero Tbk' => 
   array (
@@ -64,10 +64,10 @@
     'id' => 101284,
     'name' => 'Adira Dinamika Multi Finance',
     'code' => 'ADMF',
+    2016 => '-',
     2015 => '332.5',
     2014 => '396',
     2013 => '709',
-    2012 => '792',
   ),
   'Agung Podomoro Land Tbk' => 
   array (
@@ -104,10 +104,10 @@
     'id' => 101289,
     'name' => 'Akr Corporindo Tbk',
     'code' => 'AKRA',
+    2016 => '-',
     2015 => '120',
     2014 => '80',
     2013 => '65',
-    2012 => '65',
   ),
   'Alakasa Industrindo Tbk' => 
   array (
@@ -174,20 +174,20 @@
     'id' => 991135,
     'name' => 'Aneka Gas Industri Tbk PT',
     'code' => 'AGII',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    '' => '-',
   ),
   'Aneka Tambang Persero Tbk' => 
   array (
     'id' => 101294,
     'name' => 'Aneka Tambang Persero Tbk',
     'code' => 'ANTM',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '8.12',
-    2012 => '39.55',
   ),
   'Apac Citra Centertex Tbk' => 
   array (
@@ -264,10 +264,10 @@
     'id' => 101298,
     'name' => 'Arwana Citramulia Tbk',
     'code' => 'ARNA',
+    2016 => '-',
     2015 => '5',
     2014 => '12',
     2013 => '16',
-    2012 => '40',
   ),
   'Asahimas Flat Glass Tbk' => 
   array (
@@ -304,50 +304,50 @@
     'id' => 101305,
     'name' => 'Astra Agro Lestari Tbk',
     'code' => 'AALI',
+    2016 => '-',
     2015 => '-',
     2014 => '682.24',
     2013 => '490.72',
-    2012 => '652.7',
   ),
   'Astra Graphia Tbk' => 
   array (
     'id' => 101306,
     'name' => 'Astra Graphia Tbk',
     'code' => 'ASGR',
+    2016 => '-',
     2015 => '118',
     2014 => '77',
     2013 => '62',
-    2012 => '76',
   ),
   'Astra International Tbk' => 
   array (
     'id' => 101307,
     'name' => 'Astra International Tbk',
     'code' => 'ASII',
+    2016 => '-',
     2015 => '177',
     2014 => '216',
     2013 => '216',
-    2012 => '216',
   ),
   'Astra Otoparts Tbk' => 
   array (
     'id' => 101308,
     'name' => 'Astra Otoparts Tbk',
     'code' => 'AUTO',
+    2016 => '-',
     2015 => '27',
     2014 => '72',
     2013 => '83.5',
-    2012 => '83.65',
   ),
   'Asuransi Bina Dana Arta Tbk' => 
   array (
     'id' => 102973,
     'name' => 'Asuransi Bina Dana Arta Tbk',
     'code' => 'ABDA',
+    2016 => '-',
     2015 => '130',
     2014 => '85',
     2013 => '75',
-    2012 => '40',
   ),
   'Asuransi Bintang Tbk' => 
   array (
@@ -424,20 +424,20 @@
     'id' => 101210,
     'name' => 'Austindo Nusantara Jaya Tbk',
     'code' => 'ANJT',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bakrie & Brothers Tbk' => 
   array (
     'id' => 101312,
     'name' => 'Bakrie & Brothers Tbk',
     'code' => 'BNBR',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bakrie Sumatera Plantations' => 
   array (
@@ -524,10 +524,10 @@
     'id' => 101211,
     'name' => 'Bank Bumi Arta Tbk',
     'code' => 'BNBA',
+    2016 => '-',
     2015 => '6.2',
     2014 => '5.61',
     2013 => '6.1',
-    2012 => '4.65',
   ),
   'Bank Capital Indonesia Tbk' => 
   array (
@@ -544,40 +544,40 @@
     'id' => 101354,
     'name' => 'Bank Central Asia Tbk',
     'code' => 'BBCA',
+    2016 => '-',
     2015 => '160',
     2014 => '148',
     2013 => '120',
-    2012 => '113.5',
   ),
   'Bank Danamon Indonesia Tbk' => 
   array (
     'id' => 101320,
     'name' => 'Bank Danamon Indonesia Tbk',
     'code' => 'BDMN',
+    2016 => '-',
     2015 => '74.9',
     2014 => '163',
     2013 => '125.58',
-    2012 => '104.43',
   ),
   'Bank Dinar Indonesia Tbk' => 
   array (
     'id' => 943661,
     'name' => 'Bank Dinar Indonesia Tbk',
     'code' => 'DNAR',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bank Ganesha Tbk PT' => 
   array (
     'id' => 978769,
     'name' => 'Bank Ganesha Tbk PT',
     'code' => 'BGTG',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bank Harda Internasional Tbk PT' => 
   array (
@@ -644,10 +644,10 @@
     'id' => 101327,
     'name' => 'Bank Mega Tbk',
     'code' => 'MEGA',
+    2016 => '-',
     2015 => '75.58',
     2014 => '14.36',
     2013 => '-',
-    2012 => '-',
   ),
   'Bank Mestika Dharma Tbk' => 
   array (
@@ -674,10 +674,10 @@
     'id' => 101322,
     'name' => 'Bank Mnc Internasional Tbk',
     'code' => 'BABP',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bank Nationalnobu Tbk' => 
   array (
@@ -704,10 +704,10 @@
     'id' => 101215,
     'name' => 'Bank Nusantara Parahyangan Tbk',
     'code' => 'BBNP',
-    2015 => '-',
+    2016 => '-',
+    2015 => '9',
     2014 => '14',
     2013 => '16',
-    2012 => '16.22',
   ),
   'Bank Ocbc Nisp Tbk' => 
   array (
@@ -744,20 +744,20 @@
     'id' => 101332,
     'name' => 'Bank Panin Syariah Tbk',
     'code' => 'PNBS',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bank Pembangunan Barat Dan Banten' => 
   array (
     'id' => 101330,
     'name' => 'Bank Pembangunan Barat Dan Banten',
     'code' => 'BJBR',
+    2016 => '-',
     2015 => '84.8',
     2014 => '71.6',
     2013 => '78.1',
-    2012 => '61.07',
   ),
   'Bank Pembangunan Daerah Banten Tbk PT' => 
   array (
@@ -854,10 +854,10 @@
     'id' => 101340,
     'name' => 'Bank Victoria International',
     'code' => 'BVIC',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bank Windu Kentjana Int' => 
   array (
@@ -874,20 +874,20 @@
     'id' => 101321,
     'name' => 'Bank Woori Saudara Indonesia 1906',
     'code' => 'SDRA',
+    2016 => '-',
     2015 => '8',
     2014 => '5',
     2013 => '11',
-    2012 => '11',
   ),
   'Bank Yudha Bhakti Tbk' => 
   array (
     'id' => 945176,
     'name' => 'Bank Yudha Bhakti Tbk',
     'code' => 'BBYB',
+    2016 => '-',
     2015 => '1.39',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bara Jaya Internasional Tbk PT' => 
   array (
@@ -914,10 +914,10 @@
     'id' => 101343,
     'name' => 'Barito Pacific Tbk',
     'code' => 'BRPT',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Batavia Prosperindo Finance' => 
   array (
@@ -934,10 +934,10 @@
     'id' => 943658,
     'name' => 'Batavia Prosperindo Int',
     'code' => 'BPII',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bayan Resources Tbk' => 
   array (
@@ -1173,30 +1173,30 @@
     'id' => 101363,
     'name' => 'Bumi Resources Tbk',
     'code' => 'BUMI',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bumi Resources Minerals Tbk' => 
   array (
     'id' => 101362,
     'name' => 'Bumi Resources Minerals Tbk',
     'code' => 'BRMS',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Bumi Serpong Damai Tbk' => 
   array (
     'id' => 101364,
     'name' => 'Bumi Serpong Damai Tbk',
     'code' => 'BSDE',
+    2016 => '-',
     2015 => '5',
     2014 => '15',
     2013 => '15',
-    2012 => '10',
   ),
   'Bumi Teknokultura Unggul Tbk' => 
   array (
@@ -1253,10 +1253,10 @@
     'id' => 101369,
     'name' => 'Cardig Aero Services Tbk',
     'code' => 'CASS',
+    2016 => '-',
     2015 => '11.32',
     2014 => '21',
     2013 => '20.89',
-    2012 => '14.38',
   ),
   'Catur Sentosa Adiprana Tbk' => 
   array (
@@ -1313,10 +1313,10 @@
     'id' => 101375,
     'name' => 'Chandra Asri Petrochemical Tbk',
     'code' => 'TPIA',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Charoen Pokphand Indonesia TBK PT' => 
   array (
@@ -1343,10 +1343,10 @@
     'id' => 985288,
     'name' => 'Cikarang Listrindo Tbk PT',
     'code' => 'POWR',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    '' => '-',
   ),
   'Ciputra Development Tbk' => 
   array (
@@ -1453,10 +1453,10 @@
     'id' => 101386,
     'name' => 'Darma Henwa Tbk',
     'code' => 'DEWA',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Darya-Varia Laboratoria Tbk' => 
   array (
@@ -1483,10 +1483,10 @@
     'id' => 101388,
     'name' => 'Delta Dunia Makmur Tbk',
     'code' => 'DOID',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Destinasi Tirta Nusantara Tbk' => 
   array (
@@ -1513,10 +1513,10 @@
     'id' => 101390,
     'name' => 'Dharma Satya Nusantara Tbk',
     'code' => 'DSNG',
+    2016 => '-',
     2015 => '5',
     2014 => '10',
     2013 => '-',
-    2012 => '-',
   ),
   'Dian Swastatika Sentosa Tbk' => 
   array (
@@ -1562,10 +1562,10 @@
     'id' => 101393,
     'name' => 'Duta Pertiwi Tbk',
     'code' => 'DUTI',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Duta Pertiwi Nusantara Tbk' => 
   array (
@@ -1782,10 +1782,10 @@
     'id' => 101231,
     'name' => 'Fast Food Indonesia Tbk',
     'code' => 'FAST',
+    2016 => '-',
     2015 => '20',
     2014 => '30',
     2013 => '30',
-    2012 => '23.02',
   ),
   'First Media Tbk' => 
   array (
@@ -1842,10 +1842,10 @@
     'id' => 101410,
     'name' => 'Gajah Tunggal Tbk',
     'code' => 'GJTL',
+    2016 => '-',
     2015 => '-',
     2014 => '10',
     2013 => '10',
-    2012 => '27',
   ),
   'Garda Tujuh Buana Tbk' => 
   array (
@@ -1862,16 +1862,17 @@
     'id' => 101412,
     'name' => 'Garuda Indonesia Persero Tbk',
     'code' => 'GIAA',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Garuda Metalindo Tbk PT' => 
   array (
     'id' => 955953,
     'name' => 'Garuda Metalindo Tbk PT',
     'code' => 'BOLT',
+    2016 => '-',
     2015 => '25.01',
     '' => '-',
   ),
@@ -1920,10 +1921,10 @@
     'id' => 101233,
     'name' => 'Golden Energy Mines Tbk',
     'code' => 'GEMS',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Golden Plantation Tbk' => 
   array (
@@ -1950,10 +1951,10 @@
     'id' => 101418,
     'name' => 'Gowa Makassar Tourism Develop',
     'code' => 'GMTD',
+    2016 => '-',
     2015 => '45',
     2014 => '65',
     2013 => '50',
-    2012 => '38',
   ),
   'Gozco Plantations Tbk' => 
   array (
@@ -2069,10 +2070,10 @@
     'id' => 101428,
     'name' => 'Hero Supermarket Tbk',
     'code' => 'HERO',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Hexindo Adiperkasa Tbk' => 
   array (
@@ -2089,10 +2090,10 @@
     'id' => 943648,
     'name' => 'Hm Sampoerna Tbk',
     'code' => 'HMSP',
+    2016 => '-',
     2015 => '89',
     2014 => '110.99',
     2013 => '90.1',
-    2012 => '90.1',
   ),
   'Holcim Indonesia Tbk' => 
   array (
@@ -2129,10 +2130,10 @@
     'id' => 943656,
     'name' => 'Humpuss Intermoda Transportasi',
     'code' => 'HITS',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Ictsi Jasa Prima Tbk' => 
   array (
@@ -2179,10 +2180,10 @@
     'id' => 101437,
     'name' => 'Indika Energy Tbk',
     'code' => 'INDY',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '0.01',
   ),
   'Indo Acidatama Tbk' => 
   array (
@@ -2219,20 +2220,20 @@
     'id' => 101439,
     'name' => 'Indo Tambangraya Megah Tbk',
     'code' => 'ITMG',
+    2016 => '-',
     2015 => '0.06',
     2014 => '0.14',
     2013 => '0.16',
-    2012 => '0.32',
   ),
   'Indocement Tunggal Prakarsa' => 
   array (
     'id' => 101440,
     'name' => 'Indocement Tunggal Prakarsa',
     'code' => 'INTP',
+    2016 => '415',
     2015 => '415',
     2014 => '1350',
     2013 => '900',
-    2012 => '450',
   ),
   'Indofarma Tbk' => 
   array (
@@ -2249,20 +2250,20 @@
     'id' => 101443,
     'name' => 'Indofood Sukses Makmur Tbk',
     'code' => 'INDF',
+    2016 => '-',
     2015 => '168',
     2014 => '220',
     2013 => '142',
-    2012 => '185',
   ),
   'Indofood Cbp Sukses Makmur Tbk' => 
   array (
     'id' => 101442,
     'name' => 'Indofood Cbp Sukses Makmur Tbk',
     'code' => 'ICBP',
+    2016 => '-',
     2015 => '128',
     2014 => '111',
     2013 => '95',
-    2012 => '93',
   ),
   'Indomobil Multi Jasa Tbk' => 
   array (
@@ -2359,10 +2360,10 @@
     'id' => 101448,
     'name' => 'Indosat Tbk',
     'code' => 'ISAT',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '76.83',
   ),
   'Indospring Tbk' => 
   array (
@@ -2469,10 +2470,10 @@
     'id' => 101457,
     'name' => 'Intraco Penta Tbk',
     'code' => 'INTA',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Island Concepts Indonesia Tbk' => 
   array (
@@ -2489,10 +2490,10 @@
     'id' => 101459,
     'name' => 'J Resources Asia Pasifik Tbk',
     'code' => 'PSAB',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Jakarta Int Hotels & Dev' => 
   array (
@@ -2539,10 +2540,10 @@
     'id' => 101461,
     'name' => 'Japfa Comfeed Indonesia Tbk',
     'code' => 'JPFA',
+    2016 => '-',
     2015 => '-',
     2014 => '15',
     2013 => '-',
-    2012 => '15',
   ),
   'Jasa Marga Tbk' => 
   array (
@@ -2649,10 +2650,10 @@
     'id' => 101239,
     'name' => 'Kedaung Indah Can Tbk',
     'code' => 'KICI',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Kedawung Setia Industrial Tbk' => 
   array (
@@ -2689,10 +2690,10 @@
     'id' => 101474,
     'name' => 'Kimia Farma Persero Tbk',
     'code' => 'KAEF',
+    2016 => '-',
     2015 => '8.96',
     2014 => '8.45',
     2013 => '9.66',
-    2012 => '5.54',
   ),
   'Kino Indonesia Tbk PT' => 
   array (
@@ -2739,10 +2740,10 @@
     'id' => 101477,
     'name' => 'Krakatau Steel Persero Tbk',
     'code' => 'KRAS',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Kresna Graha Investama Tbk PT' => 
   array (
@@ -2809,10 +2810,10 @@
     'id' => 102980,
     'name' => 'Link Net Tbk',
     'code' => 'LINK',
+    2016 => '-',
     2015 => '42',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Lion Metal Works Tbk' => 
   array (
@@ -2839,10 +2840,10 @@
     'id' => 101483,
     'name' => 'Lippo Cikarang Tbk',
     'code' => 'LPCK',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Lippo General Insurance Tbk' => 
   array (
@@ -2859,10 +2860,10 @@
     'id' => 101485,
     'name' => 'Lippo Karawaci Tbk',
     'code' => 'LPKR',
+    2016 => '-',
     2015 => '3.5',
     2014 => '16.68',
     2013 => '14.05',
-    2012 => '7.79',
   ),
   'Lippo Securities Tbk' => 
   array (
@@ -2879,10 +2880,10 @@
     'id' => 101487,
     'name' => 'Logindo Samudramakmur Tbk',
     'code' => 'LEAD',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Lotte Chemical Titan Tbk' => 
   array (
@@ -2919,10 +2920,10 @@
     'id' => 963746,
     'name' => 'Mahaka Radio Integra Tbk PT',
     'code' => 'MARI',
+    2016 => '-',
     2015 => '5.1',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Malindo Feedmill Tbk' => 
   array (
@@ -2949,10 +2950,10 @@
     'id' => 101491,
     'name' => 'Mandom Indonesia Tbk',
     'code' => 'TCID',
+    2016 => '-',
     2015 => '410',
     2014 => '390',
     2013 => '370',
-    2012 => '370',
   ),
   'Martina Berto Tbk' => 
   array (
@@ -2989,30 +2990,30 @@
     'id' => 101493,
     'name' => 'Matahari Department Store Tbk',
     'code' => 'LPPF',
+    2016 => '-',
     2015 => '427.3',
     2014 => '291.8',
     2013 => '157.7',
-    2012 => '-',
   ),
   'Matahari Putra Prima Tbk' => 
   array (
     'id' => 101494,
     'name' => 'Matahari Putra Prima Tbk',
     'code' => 'MPPA',
+    2016 => '-',
     2015 => '33',
     2014 => '36',
     2013 => '186',
-    2012 => '186',
   ),
   'Mayora Indah Tbk' => 
   array (
     'id' => 101495,
     'name' => 'Mayora Indah Tbk',
     'code' => 'MYOR',
+    2016 => '-',
     2015 => '12',
     2014 => '6.4',
     2013 => '9.2',
-    2012 => '4.45',
   ),
   'Medco Energi Internasional Tbk' => 
   array (
@@ -3039,6 +3040,7 @@
     'id' => 954961,
     'name' => 'Mega Manunggal Property TBK PT',
     'code' => 'MMLP',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     '' => '-',
@@ -3058,10 +3060,10 @@
     'id' => 945178,
     'name' => 'Merck Tbk',
     'code' => 'MERK',
+    2016 => '-',
     2015 => '265',
     2014 => '325',
     2013 => '312.5',
-    2012 => '178.5',
   ),
   'Merdeka Copper Gold TBK PT' => 
   array (
@@ -3128,10 +3130,10 @@
     'id' => 101502,
     'name' => 'Millennium Pharmacon International',
     'code' => 'SDPC',
+    2016 => '-',
     2015 => '3',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Minna Padi Investama Tbk' => 
   array (
@@ -3188,10 +3190,10 @@
     'id' => 948393,
     'name' => 'Mitra Keluarga Karyasehat Tbk PT',
     'code' => 'MIKA',
+    2016 => '-',
     2015 => '25',
     2014 => '20',
     2013 => '-',
-    2012 => '-',
   ),
   'Mitra Komunikasi Nusantara Tbk PT' => 
   array (
@@ -3226,16 +3228,17 @@
     'id' => 101508,
     'name' => 'Mitrabahtera Segara Sejati Tbk',
     'code' => 'MBSS',
+    2016 => '-',
     2015 => '-',
     2014 => '0.01',
     2013 => '0.01',
-    2012 => '0.01',
   ),
   'Mitrabara Adiperdana Tbk' => 
   array (
     'id' => 943662,
     'name' => 'Mitrabara Adiperdana Tbk',
     'code' => 'MBAP',
+    2016 => '-',
     2015 => '0.01',
     2014 => '-',
     '' => '-',
@@ -3295,10 +3298,10 @@
     'id' => 101514,
     'name' => 'Modernland Realty Ltd Tbk',
     'code' => 'MDLN',
+    2016 => '-',
     2015 => '-',
     2014 => '12',
     2013 => '-',
-    2012 => '-',
   ),
   'Mulia Industrindo Tbk' => 
   array (
@@ -3335,10 +3338,10 @@
     'id' => 101517,
     'name' => 'Multi Bintang Indonesia Tbk',
     'code' => 'MLBI',
+    2016 => '-',
     2015 => '344',
     2014 => '257',
     2013 => '701.42',
-    2012 => '310.24',
   ),
   'Multi Indocitra Tbk' => 
   array (
@@ -3365,10 +3368,10 @@
     'id' => 101248,
     'name' => 'Multifiling Mitra Indonesia',
     'code' => 'MFMI',
+    2016 => '-',
     2015 => '2.2',
     2014 => '1.8',
     2013 => '1.6',
-    2012 => '1.5',
   ),
   'Multipolar Tbk' => 
   array (
@@ -3385,10 +3388,10 @@
     'id' => 101521,
     'name' => 'Multipolar Technology Tbk',
     'code' => 'MLPT',
+    2016 => '-',
     2015 => '7',
     2014 => '5.71',
     2013 => '1.6',
-    2012 => '-',
   ),
   'Multistrada Arah Sarana Tbk' => 
   array (
@@ -3515,10 +3518,10 @@
     'id' => 101533,
     'name' => 'Pakuwon Jati Tbk',
     'code' => 'PWON',
+    2016 => '-',
     2015 => '4.5',
     2014 => '4.5',
     2013 => '4.5',
-    2012 => '1.45',
   ),
   'Pan Brothers Tbk' => 
   array (
@@ -3565,10 +3568,10 @@
     'id' => 101537,
     'name' => 'Panin Sekuritas Tbk',
     'code' => 'PANS',
+    2016 => '-',
     2015 => '80',
     2014 => '420',
     2013 => '165',
-    2012 => '100',
   ),
   'Paninvest Tbk' => 
   array (
@@ -3615,20 +3618,20 @@
     'id' => 101541,
     'name' => 'Pelat Timah Nusantara Tbk',
     'code' => 'NIKL',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Pelayaran Nasional Bina Buana Raya' => 
   array (
     'id' => 101542,
     'name' => 'Pelayaran Nasional Bina Buana Raya',
     'code' => 'BBRM',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Pelayaran Nelly Dwi Putri Tbk' => 
   array (
@@ -3705,20 +3708,20 @@
     'id' => 101530,
     'name' => 'Perusahaan Gas Negara Persero',
     'code' => 'PGAS',
+    2016 => '-',
     2015 => '0.01',
     2014 => '0.01',
     2013 => '0.02',
-    2012 => '0.02',
   ),
   'Petrosea Tbk' => 
   array (
     'id' => 101546,
     'name' => 'Petrosea Tbk',
     'code' => 'PTRO',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '0.01',
-    2012 => '0.01',
   ),
   'Pikko Land Development Tbk' => 
   array (
@@ -3745,10 +3748,10 @@
     'id' => 101256,
     'name' => 'Plaza Indonesia Realty Tbk',
     'code' => 'PLIN',
+    2016 => '-',
     2015 => '43',
     2014 => '70',
     2013 => '42.5',
-    2012 => '84.5',
   ),
   'Polaris Investama Tbk' => 
   array (
@@ -3785,10 +3788,10 @@
     'id' => 101488,
     'name' => 'PP London Sumatra Indonesia',
     'code' => 'LSIP',
+    2016 => '-',
     2015 => '37',
     2014 => '53',
     2013 => '46',
-    2012 => '66',
   ),
   'Pp Persero Tbk' => 
   array (
@@ -3845,10 +3848,10 @@
     'id' => 994054,
     'name' => 'Prodia Widyahusada Tbk PT',
     'code' => 'PRDA',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    '' => '-',
   ),
   'Protech Mitra Perkasa Tbk PT' => 
   array (
@@ -3865,10 +3868,10 @@
     'id' => 101259,
     'name' => 'Provident Agro Tbk',
     'code' => 'PALM',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Pudjiadi & Sons Tbk' => 
   array (
@@ -3935,10 +3938,10 @@
     'id' => 101554,
     'name' => 'Ramayana Lestari Sentosa Tbk',
     'code' => 'RALS',
+    2016 => '-',
     2015 => '30',
     2014 => '27',
     2013 => '30',
-    2012 => '30',
   ),
   'Ratu Prabu Energi Tbk' => 
   array (
@@ -3955,10 +3958,10 @@
     'id' => 950067,
     'name' => 'Red Planet Indonesia Tbk',
     'code' => 'PSKT',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Reliance Securities Tbk' => 
   array (
@@ -4055,30 +4058,30 @@
     'id' => 101561,
     'name' => 'Salim Ivomas Pratama Tbk',
     'code' => 'SIMP',
+    2016 => '-',
     2015 => '5',
     2014 => '16',
     2013 => '10',
-    2012 => '22',
   ),
   'Samindo Resources Tbk' => 
   array (
     'id' => 101562,
     'name' => 'Samindo Resources Tbk',
     'code' => 'MYOH',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Sampoerna Agro Tbk' => 
   array (
     'id' => 101563,
     'name' => 'Sampoerna Agro Tbk',
     'code' => 'SGRO',
+    2016 => '-',
     2015 => '25',
     2014 => '36',
     2013 => '15',
-    2012 => '45',
   ),
   'Samudera Indonesia Tbk' => 
   array (
@@ -4095,20 +4098,20 @@
     'id' => 101564,
     'name' => 'Sarana Meditama Metropolitan',
     'code' => 'SAME',
+    2016 => '-',
     2015 => '7',
     2014 => '7',
     2013 => '-',
-    2012 => '-',
   ),
   'Sarana Menara Nusantara Tbk' => 
   array (
     'id' => 101565,
     'name' => 'Sarana Menara Nusantara Tbk',
     'code' => 'TOWR',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Saranacentral Bajatama Tbk' => 
   array (
@@ -4215,10 +4218,10 @@
     'id' => 101573,
     'name' => 'Semen Baturaja Persero Tbk',
     'code' => 'SMBR',
+    2016 => '-',
     2015 => '9',
     2014 => '8.34',
     2013 => '7.93',
-    2012 => '-',
   ),
   'Semen Indonesia Persero Tbk' => 
   array (
@@ -4295,20 +4298,20 @@
     'id' => 985738,
     'name' => 'Sillo Maritime Perdana Tbk PT',
     'code' => 'SHIP',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    '' => '-',
   ),
   'Siloam International Hospitals' => 
   array (
     'id' => 101579,
     'name' => 'Siloam International Hospitals',
     'code' => 'SILO',
+    2016 => '-',
     2015 => '-',
-    2014 => '5.2',
+    2014 => '5.12',
     2013 => '-',
-    2012 => '-',
   ),
   'Sinar Mas Multiartha Tbk' => 
   array (
@@ -4425,10 +4428,10 @@
     'id' => 101586,
     'name' => 'Sri Rejeki Isman Tbk',
     'code' => 'SRIL',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Star Pacific Tbk' => 
   array (
@@ -4615,10 +4618,10 @@
     'id' => 101599,
     'name' => 'Tambang Batubara Bukit Asam',
     'code' => 'PTBA',
+    2016 => '-',
     2015 => '289.73',
     2014 => '324.57',
     2013 => '461.97',
-    2012 => '720.75',
   ),
   'Tanah Laut Tbk' => 
   array (
@@ -4635,10 +4638,10 @@
     'id' => 101600,
     'name' => 'Telekomunikasi Indonesia Persero',
     'code' => 'TLKM',
+    2016 => '-',
     2015 => '94.64',
     2014 => '74.55',
     2013 => '80.46',
-    2012 => '74.45',
   ),
   'Tembaga Mulia Semanan Tbk' => 
   array (
@@ -4715,10 +4718,10 @@
     'id' => 101605,
     'name' => 'Timah Persero Tbk',
     'code' => 'TINS',
+    2016 => '-',
     2015 => '4.09',
     2014 => '25.7',
     2013 => '38.04',
-    2012 => '28.97',
   ),
   'Tiphone Mobile Indonesia Tbk' => 
   array (
@@ -4775,20 +4778,20 @@
     'id' => 101611,
     'name' => 'Total Bangun Persada Tbk',
     'code' => 'TOTL',
+    2016 => '-',
     2015 => '40',
     2014 => '30',
     2013 => '35',
-    2012 => '29.33',
   ),
   'Tower Bersama Infrastructure' => 
   array (
     'id' => 101612,
     'name' => 'Tower Bersama Infrastructure',
     'code' => 'TBIG',
+    2016 => '-',
     2015 => '57.07',
     2014 => '-',
     2013 => '121',
-    2012 => '-',
   ),
   'Trada Maritime Tbk' => 
   array (
@@ -4805,10 +4808,10 @@
     'id' => 101275,
     'name' => 'Trans Power Marine Tbk',
     'code' => 'TPMA',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2011 => '-',
   ),
   'Tri Banyan Tirta Tbk' => 
   array (
@@ -4905,10 +4908,10 @@
     'id' => 101620,
     'name' => 'Tunas Ridean Tbk',
     'code' => 'TURI',
+    2016 => '-',
     2015 => '16',
     2014 => '14',
     2013 => '16',
-    2012 => '23',
   ),
   'Ultra Jaya Milk Industry Tbk' => 
   array (
@@ -4935,20 +4938,20 @@
     'id' => 101622,
     'name' => 'Unilever Indonesia Tbk',
     'code' => 'UNVR',
+    2016 => '-',
     2015 => '766',
     2014 => '752',
     2013 => '701',
-    2012 => '634',
   ),
   'United Tractors Tbk' => 
   array (
     'id' => 101623,
     'name' => 'United Tractors Tbk',
     'code' => 'UNTR',
+    2016 => '-',
     2015 => '691',
     2014 => '740',
     2013 => '515',
-    2012 => '620',
   ),
   'Vale Indonesia Tbk' => 
   array (
@@ -4965,10 +4968,10 @@
     'id' => 101625,
     'name' => 'Verena Multi Finance Tbk',
     'code' => 'VRNA',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Victoria Insurance Tbk PT' => 
   array (
@@ -5025,10 +5028,10 @@
     'id' => 101629,
     'name' => 'Wahana Ottomitra Multiartha',
     'code' => 'WOMF',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Wahana Pronatural' => 
   array (
@@ -5115,10 +5118,10 @@
     'id' => 101636,
     'name' => 'Wintermar Offshore Marine Tbk',
     'code' => 'WINS',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '-',
-    2012 => '-',
   ),
   'Wismilak Inti Makmur Tbk' => 
   array (
@@ -5135,10 +5138,10 @@
     'id' => 101638,
     'name' => 'Xl Axiata Tbk',
     'code' => 'EXCL',
+    2016 => '-',
     2015 => '-',
     2014 => '-',
     2013 => '64.12',
-    2012 => '133.16',
   ),
   'Yanaprima Hastapersada Tbk' => 
   array (

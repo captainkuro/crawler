@@ -111,10 +111,11 @@ function fin_in_year($year) {
 	return $result;
 }
 
-// for ($y=2014; $y<=2016; $y++) {
+// for ($y=2016; $y<=2016; $y++) {
 // 	$result = fin_in_year($y);
 // 	exporte("finan_$y.out", $result);
 // }
+// exit;
 
 // show chart http://dwsec-id.com/js/dwsComplex/complex.htm?StockCode=DEWA&periodBit=I
 // get data http://dwsec-id.com/tr/cpstChartAjaxTR.do?StockCode=DEWA&periodBit=I

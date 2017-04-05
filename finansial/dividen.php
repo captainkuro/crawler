@@ -35,6 +35,7 @@ function all_pairs() {
 // exporte('all_pairs.out', all_pairs());
 
 function all_dividens() {
+	// @TODO ambil dividen info dari halaman lain
 	$pairs = include 'all_pairs.out';
 	$result = [];
 	foreach ($pairs as $id => $name) {
@@ -78,6 +79,7 @@ function all_dividens() {
 	return $result;
 }
 // exporte('all_dividens.out', all_dividens());
+// exit;
 
 function standardize_dividen() {
 	$dividens = include 'all_dividens.out';
@@ -85,18 +87,20 @@ function standardize_dividen() {
 	$result = [];
 	foreach ($dividens as $name => $data) {
 		$finan = $financials[$data['code']];
-		if (isset($data[2015]) && $data[2015] != '-' && isset($finan['3rd Quarter 2016'])) {
+		if (isset($data[2015]) && $data[2015] != '-' && isset($finan['4th Quarter 2016'])) {
 			$item = [
 				'Name' => $name,
 				'Code' => $data['code'],
 				'Dividen 2015' => $data[2015],
 			];
-			$item = $item + $finan['3rd Quarter 2016'];
+			$item = $item + $finan['4th Quarter 2016'];
 			$item['Rasio Dividen'] = sprintf('%.2f', 
-				floatval(str_replace(',', '', $item['Close Price'])) 
+				floatval(str_replace(',', '', $data[2015]) * 100
 				/ 
-				floatval(str_replace(',', '', $data[2015]))
+				floatval(str_replace(',', '', $item['Close Price'])) 
+				)
 			);
+			$item['History Dividen'] = "2016:$data[2016]/2015:$data[2015]/2014:$data[2014]/2013:$data[2013]";
 			$result[] = $item;
 		}
 	}
@@ -106,7 +110,7 @@ function standardize_dividen() {
 function search_dividen() {
 	$dividens = standardize_dividen();
 	usort($dividens, function ($a, $b) {
-		return (floatval($a['Rasio Dividen']) < floatval($b['Rasio Dividen'])) ? -1 : 1;
+		return (floatval($a['Rasio Dividen']) > floatval($b['Rasio Dividen'])) ? -1 : 1;
 	});
 	return $dividens;
 }
