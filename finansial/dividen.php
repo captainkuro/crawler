@@ -12,6 +12,7 @@ require 'vendor/autoload.php';
 // 5. sumber lebih reliable: http://akses.ksei.co.id/corporate_actions/downloads
 // 6. Parse xls, group by year and saham
 // 7. compile into list
+// HATI2 SAMA STOCK SPLIT!
 
 function exporte($file, $value) {
 	file_put_contents($file, '<?php return '.var_export($value, true).';');
@@ -70,13 +71,14 @@ function standardize_dividen() {
 	$dividens = include 'all_dividens.out';
 	$financials = include 'finan_2016.out';
 	$result = [];
-	foreach ($dividens as $name => $data) {
-		$finan = $financials[$data['code']];
+	foreach ($dividens as $code => $data) {
+		$name = $data['name'];
+		$finan = $financials[$code];
 		if (isset($data['dividen'][2016]) && isset($finan['4th Quarter 2016'])) {
 			$dividen = array_sum($data['dividen'][2016]);
 			$item = [
 				'Name' => $name,
-				'Code' => $data['code'],
+				'Code' => $code,
 			];
 			$item = $item + $finan['4th Quarter 2016'];
 			$item['Dividen 2016'] = $dividen;

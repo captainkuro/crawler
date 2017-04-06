@@ -1,7 +1,7 @@
 <?php return array (
   0 => 
   array (
-    'Name' => 'SQBB',
+    'Name' => 'TAISHO PHARMACEUTICAL INDONESIA Tbk SERI B',
     'Code' => 'SQBB',
     'Total Sales' => '566,565,662,000',
     'Cost of Good Sold' => '-249,333,669,000',
@@ -31,7 +31,7 @@
   ),
   1 => 
   array (
-    'Name' => 'HMSP',
+    'Name' => 'HANJAYA MANDALA SAMPOERNA Tbk',
     'Code' => 'HMSP',
     'Total Sales' => '95,466,657,000,000',
     'Cost of Good Sold' => '-71,611,981,000,000',
@@ -61,7 +61,7 @@
   ),
   2 => 
   array (
-    'Name' => 'HEXA',
+    'Name' => 'HEXINDO ADIPERKASA Tbk',
     'Code' => 'HEXA',
     'Total Sales' => '2,703,507,541,920',
     'Cost of Good Sold' => '-2,196,759,746,056',
@@ -91,7 +91,7 @@
   ),
   3 => 
   array (
-    'Name' => 'MYOR',
+    'Name' => 'MAYORA INDAH Tbk',
     'Code' => 'MYOR',
     'Total Sales' => '18,349,959,898,358',
     'Cost of Good Sold' => '-13,449,537,442,446',
@@ -121,7 +121,7 @@
   ),
   4 => 
   array (
-    'Name' => 'SMSM',
+    'Name' => 'SELAMAT SEMPURNA Tbk',
     'Code' => 'SMSM',
     'Total Sales' => '2,879,876,000,000',
     'Cost of Good Sold' => '-1,945,735,000,000',
@@ -151,7 +151,7 @@
   ),
   5 => 
   array (
-    'Name' => 'TOTO',
+    'Name' => 'SURYA TOTO INDONESIA Tbk',
     'Code' => 'TOTO',
     'Total Sales' => '2,069,017,634,710',
     'Cost of Good Sold' => '-1,625,425,378,349',
@@ -181,7 +181,7 @@
   ),
   6 => 
   array (
-    'Name' => 'SONA',
+    'Name' => 'SONA TOPAS TOURISM INDUSTRY Tbk',
     'Code' => 'SONA',
     'Total Sales' => '1,429,794,539,022',
     'Cost of Good Sold' => '-786,432,295,714',
@@ -211,7 +211,7 @@
   ),
   7 => 
   array (
-    'Name' => 'PALM',
+    'Name' => 'PROVIDENT AGRO Tbk',
     'Code' => 'PALM',
     'Total Sales' => '1,169,777,700,000',
     'Cost of Good Sold' => '-835,338,065,000',
@@ -241,7 +241,7 @@
   ),
   8 => 
   array (
-    'Name' => 'IKBI',
+    'Name' => 'SUMI INDO KABEL Tbk',
     'Code' => 'IKBI',
     'Total Sales' => '1,316,623,387,304',
     'Cost of Good Sold' => '-1,188,157,182,756',
@@ -271,7 +271,7 @@
   ),
   9 => 
   array (
-    'Name' => 'MYOH',
+    'Name' => 'SAMINDO RESOURCES Tbk',
     'Code' => 'MYOH',
     'Total Sales' => '2,554,270,329,380',
     'Cost of Good Sold' => '-2,071,378,420,236',
@@ -301,7 +301,7 @@
   ),
   10 => 
   array (
-    'Name' => 'BJTM',
+    'Name' => 'BANK PEMBANGUNAN DAERAH JAWA TIMUR Tbk',
     'Code' => 'BJTM',
     'Total Sales' => '4,904,378,000,000',
     'Cost of Good Sold' => '-1,446,372,000,000',
@@ -331,7 +331,7 @@
   ),
   11 => 
   array (
-    'Name' => 'TALF',
+    'Name' => 'TUNAS ALFIN Tbk',
     'Code' => 'TALF',
     'Total Sales' => '569,419,992,907',
     'Cost of Good Sold' => '-494,725,404,379',
@@ -361,7 +361,7 @@
   ),
   12 => 
   array (
-    'Name' => 'INAI',
+    'Name' => 'INDAL ALUMINIUM INDUSTRY Tbk',
     'Code' => 'INAI',
     'Total Sales' => '1,284,510,320,664',
     'Cost of Good Sold' => '-1,111,377,175,714',
@@ -391,7 +391,7 @@
   ),
   13 => 
   array (
-    'Name' => 'SMDR',
+    'Name' => 'SAMUDERA INDONESIA Tbk',
     'Code' => 'SMDR',
     'Total Sales' => '5,460,897,380,588',
     'Cost of Good Sold' => '-4,620,247,208,896',
@@ -421,7 +421,7 @@
   ),
   14 => 
   array (
-    'Name' => 'KKGI',
+    'Name' => 'RESOURCE ALAM INDONESIA Tbk',
     'Code' => 'KKGI',
     'Total Sales' => '1,244,665,680,064',
     'Cost of Good Sold' => '-924,092,084,956',
@@ -451,7 +451,7 @@
   ),
   15 => 
   array (
-    'Name' => 'ASBI',
+    'Name' => 'ASURANSI BINTANG Tbk',
     'Code' => 'ASBI',
     'Total Sales' => '213,891,077,000',
     'Cost of Good Sold' => '0',
@@ -481,7 +481,7 @@
   ),
   16 => 
   array (
-    'Name' => 'ASGR',
+    'Name' => 'ASTRA GRAPHIA Tbk',
     'Code' => 'ASGR',
     'Total Sales' => '2,712,784,000,000',
     'Cost of Good Sold' => '-1,959,766,000,000',
@@ -511,7 +511,7 @@
   ),
   17 => 
   array (
-    'Name' => 'BFIN',
+    'Name' => 'BFI FINANCE INDONESIA Tbk',
     'Code' => 'BFIN',
     'Total Sales' => '3,227,109,000,000',
     'Cost of Good Sold' => '0',
@@ -541,7 +541,7 @@
   ),
   18 => 
   array (
-    'Name' => 'JECC',
+    'Name' => 'JEMBO CABLE COMPANY Tbk',
     'Code' => 'JECC',
     'Total Sales' => '2,037,784,842,000',
     'Cost of Good Sold' => '-1,689,088,200,000',
@@ -571,7 +571,7 @@
   ),
   19 => 
   array (
-    'Name' => 'WIIM',
+    'Name' => 'WISMILAK INTI MAKMUR Tbk',
     'Code' => 'WIIM',
     'Total Sales' => '1,685,795,530,617',
     'Cost of Good Sold' => '-1,176,493,799,658',
@@ -601,7 +601,7 @@
   ),
   20 => 
   array (
-    'Name' => 'NELY',
+    'Name' => 'PELAYARAN NELLY DWI PUTRI Tbk',
     'Code' => 'NELY',
     'Total Sales' => '160,609,018,764',
     'Cost of Good Sold' => '-116,757,531,020',
@@ -631,7 +631,7 @@
   ),
   21 => 
   array (
-    'Name' => 'TOTL',
+    'Name' => 'TOTAL BANGUN PERSADA Tbk',
     'Code' => 'TOTL',
     'Total Sales' => '2,379,016,258,000',
     'Cost of Good Sold' => '-1,958,867,647,000',
@@ -661,7 +661,7 @@
   ),
   22 => 
   array (
-    'Name' => 'BBKP',
+    'Name' => 'BANK BUKOPIN Tbk',
     'Code' => 'BBKP',
     'Total Sales' => '9,408,677,000,000',
     'Cost of Good Sold' => '-5,815,627,000,000',
@@ -691,7 +691,7 @@
   ),
   23 => 
   array (
-    'Name' => 'ADMF',
+    'Name' => 'ADIRA DINAMIKA MULTI FINANCE Tbk',
     'Code' => 'ADMF',
     'Total Sales' => '8,413,074,000,000',
     'Cost of Good Sold' => '0',
@@ -721,7 +721,7 @@
   ),
   24 => 
   array (
-    'Name' => 'NRCA',
+    'Name' => 'NUSA RAYA CIPTA Tbk',
     'Code' => 'NRCA',
     'Total Sales' => '2,476,348,809,009',
     'Cost of Good Sold' => '-2,223,271,266,338',
@@ -751,7 +751,7 @@
   ),
   25 => 
   array (
-    'Name' => 'MBAP',
+    'Name' => 'MITRABARA ADIPERDANA Tbk',
     'Code' => 'MBAP',
     'Total Sales' => '2,514,625,597,520',
     'Cost of Good Sold' => '-1,601,480,842,900',
@@ -781,7 +781,7 @@
   ),
   26 => 
   array (
-    'Name' => 'SIDO',
+    'Name' => 'INDUSTRI JAMU DAN FARMASI SIDO MUNCUL Tbk',
     'Code' => 'SIDO',
     'Total Sales' => '2,561,806,000,000',
     'Cost of Good Sold' => '-1,494,142,000,000',
@@ -811,7 +811,7 @@
   ),
   27 => 
   array (
-    'Name' => 'DMAS',
+    'Name' => 'PURADELTA LESTARI Tbk',
     'Code' => 'DMAS',
     'Total Sales' => '1,593,793,682,966',
     'Cost of Good Sold' => '-697,941,651,438',
@@ -841,7 +841,7 @@
   ),
   28 => 
   array (
-    'Name' => 'TIFA',
+    'Name' => 'TIFA FINANCE Tbk',
     'Code' => 'TIFA',
     'Total Sales' => '173,761,095,000',
     'Cost of Good Sold' => '0',
@@ -871,7 +871,7 @@
   ),
   29 => 
   array (
-    'Name' => 'BPFI',
+    'Name' => 'BATAVIA PROSPERINDO FINANCE Tbk',
     'Code' => 'BPFI',
     'Total Sales' => '248,042,760,480',
     'Cost of Good Sold' => '0',
@@ -901,7 +901,7 @@
   ),
   30 => 
   array (
-    'Name' => 'CLPI',
+    'Name' => 'COLORPAK INDONESIA Tbk',
     'Code' => 'CLPI',
     'Total Sales' => '649,070,715,297',
     'Cost of Good Sold' => '-516,754,276,876',
@@ -931,7 +931,7 @@
   ),
   31 => 
   array (
-    'Name' => 'GGRM',
+    'Name' => 'GUDANG GARAM Tbk',
     'Code' => 'GGRM',
     'Total Sales' => '76,274,147,000,000',
     'Cost of Good Sold' => '-59,657,431,000,000',
@@ -961,7 +961,7 @@
   ),
   32 => 
   array (
-    'Name' => 'GEMA',
+    'Name' => 'GEMA GRAHASARANA Tbk',
     'Code' => 'GEMA',
     'Total Sales' => '942,776,150,083',
     'Cost of Good Sold' => '-736,346,426,676',
@@ -991,7 +991,7 @@
   ),
   33 => 
   array (
-    'Name' => 'LION',
+    'Name' => 'LION METAL WORKS Tbk',
     'Code' => 'LION',
     'Total Sales' => '379,137,149,036',
     'Cost of Good Sold' => '-224,172,295,542',
@@ -1021,7 +1021,7 @@
   ),
   34 => 
   array (
-    'Name' => 'MLBI',
+    'Name' => 'MULTI BINTANG INDONESIA Tbk',
     'Code' => 'MLBI',
     'Total Sales' => '3,263,311,000,000',
     'Cost of Good Sold' => '-1,115,567,000,000',
@@ -1051,7 +1051,7 @@
   ),
   35 => 
   array (
-    'Name' => 'PJAA',
+    'Name' => 'PEMBANGUNAN JAYA ANCOL Tbk',
     'Code' => 'PJAA',
     'Total Sales' => '1,283,534,956,671',
     'Cost of Good Sold' => '-703,295,055,756',
@@ -1081,7 +1081,7 @@
   ),
   36 => 
   array (
-    'Name' => 'PGAS',
+    'Name' => 'PERUSAHAAN GAS NEGARA (PERSERO) Tbk',
     'Code' => 'PGAS',
     'Total Sales' => '39,431,686,747,560',
     'Cost of Good Sold' => '-27,514,761,727,156',
@@ -1111,7 +1111,7 @@
   ),
   37 => 
   array (
-    'Name' => 'ERAA',
+    'Name' => 'ERAJAYA SWASEMBADA Tbk',
     'Code' => 'ERAA',
     'Total Sales' => '20,547,128,076,480',
     'Cost of Good Sold' => '-18,754,819,501,826',
@@ -1141,7 +1141,7 @@
   ),
   38 => 
   array (
-    'Name' => 'SMGR',
+    'Name' => 'SEMEN INDONESIA (PERSERO) Tbk',
     'Code' => 'SMGR',
     'Total Sales' => '26,134,306,138,000',
     'Cost of Good Sold' => '-16,278,433,690,000',
@@ -1171,7 +1171,7 @@
   ),
   39 => 
   array (
-    'Name' => 'MPMX',
+    'Name' => 'MITRA PINASTHIKA MUSTIKA Tbk',
     'Code' => 'MPMX',
     'Total Sales' => '17,722,543,000,000',
     'Cost of Good Sold' => '-15,091,592,000,000',
@@ -1201,7 +1201,7 @@
   ),
   40 => 
   array (
-    'Name' => 'TCID',
+    'Name' => 'MANDOM INDONESIA Tbk',
     'Code' => 'TCID',
     'Total Sales' => '2,526,776,164,168',
     'Cost of Good Sold' => '-1,543,337,042,469',
@@ -1231,7 +1231,7 @@
   ),
   41 => 
   array (
-    'Name' => 'INCI',
+    'Name' => 'INTANWIJAYA INTERNASIONAL Tbk',
     'Code' => 'INCI',
     'Total Sales' => '176,067,561,639',
     'Cost of Good Sold' => '-133,771,586,731',
@@ -1261,7 +1261,7 @@
   ),
   42 => 
   array (
-    'Name' => 'TGKA',
+    'Name' => 'TIGARAKSA SATRIA Tbk',
     'Code' => 'TGKA',
     'Total Sales' => '9,614,723,240,597',
     'Cost of Good Sold' => '-8,555,714,069,880',
@@ -1291,7 +1291,7 @@
   ),
   43 => 
   array (
-    'Name' => 'SDPC',
+    'Name' => 'MILLENNIUM PHARMACON INTERNATIONAL Tbk',
     'Code' => 'SDPC',
     'Total Sales' => '1,970,114,275,524',
     'Cost of Good Sold' => '-1,800,872,527,909',
@@ -1321,7 +1321,7 @@
   ),
   44 => 
   array (
-    'Name' => 'RUIS',
+    'Name' => 'RADIANT UTAMA INTERINSCO Tbk',
     'Code' => 'RUIS',
     'Total Sales' => '1,315,633,714,236',
     'Cost of Good Sold' => '-1,086,563,504,724',
@@ -1351,7 +1351,7 @@
   ),
   45 => 
   array (
-    'Name' => 'BATA',
+    'Name' => 'SEPATU BATA Tbk',
     'Code' => 'BATA',
     'Total Sales' => '999,802,379,000',
     'Cost of Good Sold' => '-568,351,159,000',
@@ -1381,7 +1381,7 @@
   ),
   46 => 
   array (
-    'Name' => 'BOLT',
+    'Name' => 'GARUDA METALINDO Tbk',
     'Code' => 'BOLT',
     'Total Sales' => '888,942,483,000',
     'Cost of Good Sold' => '-656,787,228,000',
@@ -1411,7 +1411,7 @@
   ),
   47 => 
   array (
-    'Name' => 'BNBA',
+    'Name' => 'BANK BUMI ARTA Tbk',
     'Code' => 'BNBA',
     'Total Sales' => '717,419,000,000',
     'Cost of Good Sold' => '-373,903,000,000',
@@ -1441,7 +1441,7 @@
   ),
   48 => 
   array (
-    'Name' => 'SCCO',
+    'Name' => 'SUPREME CABLE MANUFACTURING AND COMMERCE Tbk',
     'Code' => 'SCCO',
     'Total Sales' => '3,742,637,722,322',
     'Cost of Good Sold' => '-3,182,423,577,751',
@@ -1471,7 +1471,7 @@
   ),
   49 => 
   array (
-    'Name' => 'ICBP',
+    'Name' => 'INDOFOOD CBP SUKSES MAKMUR Tbk',
     'Code' => 'ICBP',
     'Total Sales' => '34,466,069,000,000',
     'Cost of Good Sold' => '-23,606,755,000,000',
@@ -1501,7 +1501,7 @@
   ),
   50 => 
   array (
-    'Name' => 'SCMA',
+    'Name' => 'SURYA CITRA MEDIA Tbk',
     'Code' => 'SCMA',
     'Total Sales' => '4,524,135,762,000',
     'Cost of Good Sold' => '0',
@@ -1531,7 +1531,7 @@
   ),
   51 => 
   array (
-    'Name' => 'MEGA',
+    'Name' => 'BANK MEGA Tbk',
     'Code' => 'MEGA',
     'Total Sales' => '6,151,919,000,000',
     'Cost of Good Sold' => '-2,664,285,000,000',
@@ -1561,7 +1561,7 @@
   ),
   52 => 
   array (
-    'Name' => 'ITMG',
+    'Name' => 'INDO TAMBANGRAYA MEGAH Tbk',
     'Code' => 'ITMG',
     'Total Sales' => '18,373,703,128,000',
     'Cost of Good Sold' => '-13,930,431,364,000',
@@ -1591,7 +1591,7 @@
   ),
   53 => 
   array (
-    'Name' => 'PUDP',
+    'Name' => 'PUDJIADI PRESTIGE Tbk',
     'Code' => 'PUDP',
     'Total Sales' => '144,016,776,007',
     'Cost of Good Sold' => '-82,089,224,591',
@@ -1621,7 +1621,7 @@
   ),
   54 => 
   array (
-    'Name' => 'TLKM',
+    'Name' => 'TELEKOMUNIKASI INDONESIA Tbk',
     'Code' => 'TLKM',
     'Total Sales' => '116,333,000,000,000',
     'Cost of Good Sold' => '0',
@@ -1651,7 +1651,7 @@
   ),
   55 => 
   array (
-    'Name' => 'LPPF',
+    'Name' => 'MATAHARI DEPARTMENT STORE Tbk',
     'Code' => 'LPPF',
     'Total Sales' => '9,897,046,000,000',
     'Cost of Good Sold' => '-3,685,279,000,000',
@@ -1681,7 +1681,7 @@
   ),
   56 => 
   array (
-    'Name' => 'UNTR',
+    'Name' => 'UNITED TRACTORS Tbk',
     'Code' => 'UNTR',
     'Total Sales' => '45,539,238,000,000',
     'Cost of Good Sold' => '-35,878,274,000,000',
@@ -1711,7 +1711,7 @@
   ),
   57 => 
   array (
-    'Name' => 'INTP',
+    'Name' => 'INDOCEMENT TUNGGAL PRAKARSA Tbk',
     'Code' => 'INTP',
     'Total Sales' => '15,361,894,000,000',
     'Cost of Good Sold' => '-9,030,433,000,000',
@@ -1741,7 +1741,7 @@
   ),
   58 => 
   array (
-    'Name' => 'BBRI',
+    'Name' => 'BANK RAKYAT INDONESIA (PERSERO) Tbk',
     'Code' => 'BBRI',
     'Total Sales' => '94,787,989,000,000',
     'Cost of Good Sold' => '-27,211,975,000,000',
@@ -1771,7 +1771,7 @@
   ),
   59 => 
   array (
-    'Name' => 'INKP',
+    'Name' => 'INDAH KIAT PULP AND PAPER Tbk',
     'Code' => 'INKP',
     'Total Sales' => '36,552,275,228,000',
     'Cost of Good Sold' => '-28,742,385,252,000',
@@ -1801,7 +1801,7 @@
   ),
   60 => 
   array (
-    'Name' => 'TBIG',
+    'Name' => 'TOWER BERSAMA INFRASTRUCTURE Tbk',
     'Code' => 'TBIG',
     'Total Sales' => '3,711,174,000,000',
     'Cost of Good Sold' => '-417,665,000,000',
@@ -1831,7 +1831,7 @@
   ),
   61 => 
   array (
-    'Name' => 'KBLI',
+    'Name' => 'KMI Wire and Cable Tbk',
     'Code' => 'KBLI',
     'Total Sales' => '2,812,196,217,447',
     'Cost of Good Sold' => '-2,278,127,648,753',
@@ -1861,7 +1861,7 @@
   ),
   62 => 
   array (
-    'Name' => 'TSPC',
+    'Name' => 'TEMPO SCAN PACIFIC Tbk',
     'Code' => 'TSPC',
     'Total Sales' => '9,138,238,993,842',
     'Cost of Good Sold' => '-5,653,874,822,666',
@@ -1891,7 +1891,7 @@
   ),
   63 => 
   array (
-    'Name' => 'CINT',
+    'Name' => 'CHITOSE INTERNASIONAL Tbk',
     'Code' => 'CINT',
     'Total Sales' => '327,426,146,630',
     'Cost of Good Sold' => '-230,796,313,016',
@@ -1921,7 +1921,7 @@
   ),
   64 => 
   array (
-    'Name' => 'RALS',
+    'Name' => 'RAMAYANA LESTARI SENTOSA Tbk',
     'Code' => 'RALS',
     'Total Sales' => '5,857,037,000,000',
     'Cost of Good Sold' => '-3,654,539,000,000',
@@ -1951,7 +1951,7 @@
   ),
   65 => 
   array (
-    'Name' => 'BJBR',
+    'Name' => 'BANK JABAR BANTEN Tbk',
     'Code' => 'BJBR',
     'Total Sales' => '10,677,875,000,000',
     'Cost of Good Sold' => '-4,599,263,000,000',
@@ -1981,7 +1981,7 @@
   ),
   66 => 
   array (
-    'Name' => 'ELSA',
+    'Name' => 'ELNUSA Tbk',
     'Code' => 'ELSA',
     'Total Sales' => '3,620,570,000,000',
     'Cost of Good Sold' => '-3,005,985,000,000',
@@ -2011,7 +2011,7 @@
   ),
   67 => 
   array (
-    'Name' => 'TBLA',
+    'Name' => 'TUNAS BARU LAMPUNG Tbk',
     'Code' => 'TBLA',
     'Total Sales' => '6,513,980,000,000',
     'Cost of Good Sold' => '-4,888,655,000,000',
@@ -2041,7 +2041,7 @@
   ),
   68 => 
   array (
-    'Name' => 'DLTA',
+    'Name' => 'DELTA DJAKARTA Tbk',
     'Code' => 'DLTA',
     'Total Sales' => '774,968,268,000',
     'Cost of Good Sold' => '-234,086,288,000',
@@ -2071,7 +2071,7 @@
   ),
   69 => 
   array (
-    'Name' => 'JRPT',
+    'Name' => 'JAYA REAL PROPERTY Tbk',
     'Code' => 'JRPT',
     'Total Sales' => '2,381,022,659,000',
     'Cost of Good Sold' => '-942,653,475,000',
@@ -2101,7 +2101,7 @@
   ),
   70 => 
   array (
-    'Name' => 'TRIS',
+    'Name' => 'TRISULA INTERNATIONAL Tbk',
     'Code' => 'TRIS',
     'Total Sales' => '901,909,000,000',
     'Cost of Good Sold' => '-686,698,000,000',
@@ -2131,7 +2131,7 @@
   ),
   71 => 
   array (
-    'Name' => 'TMAS',
+    'Name' => 'PELAYARAN TEMPURAN EMAS Tbk',
     'Code' => 'TMAS',
     'Total Sales' => '1,671,905,016,010',
     'Cost of Good Sold' => '-1,227,850,405,646',
@@ -2161,7 +2161,7 @@
   ),
   72 => 
   array (
-    'Name' => 'PTBA',
+    'Name' => 'TAMBANG BATUBARA BUKIT ASAM (PERSERO) Tbk',
     'Code' => 'PTBA',
     'Total Sales' => '14,058,869,000,000',
     'Cost of Good Sold' => '-9,657,400,000,000',
@@ -2191,7 +2191,7 @@
   ),
   73 => 
   array (
-    'Name' => 'BMRI',
+    'Name' => 'BANK MANDIRI ( PERSERO ) Tbk',
     'Code' => 'BMRI',
     'Total Sales' => '76,709,888,000,000',
     'Cost of Good Sold' => '-24,884,519,000,000',
@@ -2221,7 +2221,7 @@
   ),
   74 => 
   array (
-    'Name' => 'SOCI',
+    'Name' => 'SOECHI LINES Tbk',
     'Code' => 'SOCI',
     'Total Sales' => '1,750,550,159,184',
     'Cost of Good Sold' => '-1,104,617,697,260',
@@ -2251,7 +2251,7 @@
   ),
   75 => 
   array (
-    'Name' => 'SSIA',
+    'Name' => 'SURYA SEMESTA INTERNUSA Tbk',
     'Code' => 'SSIA',
     'Total Sales' => '3,796,963,231,798',
     'Cost of Good Sold' => '-2,728,012,339,086',
@@ -2281,7 +2281,7 @@
   ),
   76 => 
   array (
-    'Name' => 'BBNI',
+    'Name' => 'BANK NEGARA INDONESIA Tbk',
     'Code' => 'BBNI',
     'Total Sales' => '43,768,439,000,000',
     'Cost of Good Sold' => '-13,773,377,000,000',
@@ -2311,7 +2311,7 @@
   ),
   77 => 
   array (
-    'Name' => 'CTBN',
+    'Name' => 'CITRA TUBINDO Tbk',
     'Code' => 'CTBN',
     'Total Sales' => '1,323,245,413,956',
     'Cost of Good Sold' => '-1,078,151,719,744',
@@ -2341,7 +2341,7 @@
   ),
   78 => 
   array (
-    'Name' => 'BIRD',
+    'Name' => 'BLUE BIRD Tbk',
     'Code' => 'BIRD',
     'Total Sales' => '4,796,096,000,000',
     'Cost of Good Sold' => '-3,426,203,000,000',
@@ -2371,7 +2371,7 @@
   ),
   79 => 
   array (
-    'Name' => 'BBLD',
+    'Name' => 'BUANA FINANCE Tbk',
     'Code' => 'BBLD',
     'Total Sales' => '479,074,000,000',
     'Cost of Good Sold' => '0',
@@ -2401,7 +2401,7 @@
   ),
   80 => 
   array (
-    'Name' => 'LSIP',
+    'Name' => 'PP LONDON SUMATRA INDONESIA Tbk',
     'Code' => 'LSIP',
     'Total Sales' => '3,847,869,000,000',
     'Cost of Good Sold' => '-2,737,084,000,000',
@@ -2431,7 +2431,7 @@
   ),
   81 => 
   array (
-    'Name' => 'INDF',
+    'Name' => 'INDOFOOD SUKSES MAKMUR Tbk',
     'Code' => 'INDF',
     'Total Sales' => '66,750,317,000,000',
     'Cost of Good Sold' => '-47,321,877,000,000',
@@ -2461,7 +2461,7 @@
   ),
   82 => 
   array (
-    'Name' => 'UNVR',
+    'Name' => 'UNILEVER INDONESIA Tbk',
     'Code' => 'UNVR',
     'Total Sales' => '40,053,732,000,000',
     'Cost of Good Sold' => '-19,594,636,000,000',
@@ -2491,7 +2491,7 @@
   ),
   83 => 
   array (
-    'Name' => 'ASSA',
+    'Name' => 'ADI SARANA ARMADA Tbk',
     'Code' => 'ASSA',
     'Total Sales' => '1,570,388,327,917',
     'Cost of Good Sold' => '-1,114,310,969,038',
@@ -2521,7 +2521,7 @@
   ),
   84 => 
   array (
-    'Name' => 'PANS',
+    'Name' => 'PANIN SEKURITAS Tbk',
     'Code' => 'PANS',
     'Total Sales' => '547,799,403,195',
     'Cost of Good Sold' => '0',
@@ -2551,7 +2551,7 @@
   ),
   85 => 
   array (
-    'Name' => 'ASII',
+    'Name' => 'ASTRA INTERNATIONAL Tbk',
     'Code' => 'ASII',
     'Total Sales' => '181,084,000,000,000',
     'Cost of Good Sold' => '-144,652,000,000,000',
@@ -2581,7 +2581,7 @@
   ),
   86 => 
   array (
-    'Name' => 'BDMN',
+    'Name' => 'BANK DANAMON INDONESIA Tbk',
     'Code' => 'BDMN',
     'Total Sales' => '20,654,674,000,000',
     'Cost of Good Sold' => '-6,875,653,000,000',
@@ -2611,7 +2611,7 @@
   ),
   87 => 
   array (
-    'Name' => 'BBTN',
+    'Name' => 'BANK TABUNGAN NEGARA (PERSERO) Tbk',
     'Code' => 'BBTN',
     'Total Sales' => '17,852,066,000,000',
     'Cost of Good Sold' => '-9,600,294,000,000',
@@ -2641,7 +2641,7 @@
   ),
   88 => 
   array (
-    'Name' => 'DVLA',
+    'Name' => 'DARYA - VARIA LABORATORIA Tbk',
     'Code' => 'DVLA',
     'Total Sales' => '1,451,356,680,000',
     'Cost of Good Sold' => '-649,918,928,000',
@@ -2671,7 +2671,7 @@
   ),
   89 => 
   array (
-    'Name' => 'IMPC',
+    'Name' => 'IMPACK PRATAMA INDUSTRI Tbk',
     'Code' => 'IMPC',
     'Total Sales' => '1,135,296,191,546',
     'Cost of Good Sold' => '-729,267,950,819',
@@ -2701,7 +2701,7 @@
   ),
   90 => 
   array (
-    'Name' => 'SKLT',
+    'Name' => 'SEKAR LAUT Tbk',
     'Code' => 'SKLT',
     'Total Sales' => '833,850,372,883',
     'Cost of Good Sold' => '-619,332,040,650',
@@ -2731,7 +2731,7 @@
   ),
   91 => 
   array (
-    'Name' => 'MIKA',
+    'Name' => 'MITRA KELUARGA KARYASEHAT Tbk',
     'Code' => 'MIKA',
     'Total Sales' => '2,435,465,884,784',
     'Cost of Good Sold' => '-1,279,666,995,162',
@@ -2761,7 +2761,7 @@
   ),
   92 => 
   array (
-    'Name' => 'RICY',
+    'Name' => 'RICKY PUTRA GLOBALINDO Tbk',
     'Code' => 'RICY',
     'Total Sales' => '1,221,519,096,811',
     'Cost of Good Sold' => '-946,369,710,149',
@@ -2791,7 +2791,7 @@
   ),
   93 => 
   array (
-    'Name' => 'ABDA',
+    'Name' => 'ASURANSI BINA DANA ARTA Tbk',
     'Code' => 'ABDA',
     'Total Sales' => '1,316,372,163,000',
     'Cost of Good Sold' => '0',
@@ -2821,7 +2821,7 @@
   ),
   94 => 
   array (
-    'Name' => 'ADRO',
+    'Name' => 'ADARO ENERGY Tbk',
     'Code' => 'ADRO',
     'Total Sales' => '33,915,675,204,000',
     'Cost of Good Sold' => '-24,708,306,868,000',
@@ -2851,7 +2851,7 @@
   ),
   95 => 
   array (
-    'Name' => 'BRAM',
+    'Name' => 'INDO KORDSA Tbk',
     'Code' => 'BRAM',
     'Total Sales' => '2,959,936,813,124',
     'Cost of Good Sold' => '-2,353,269,825,088',
@@ -2881,7 +2881,7 @@
   ),
   96 => 
   array (
-    'Name' => 'MIDI',
+    'Name' => 'MIDI UTAMA INDONESIA Tbk',
     'Code' => 'MIDI',
     'Total Sales' => '8,493,119,000,000',
     'Cost of Good Sold' => '-6,316,597,000,000',
@@ -2911,7 +2911,7 @@
   ),
   97 => 
   array (
-    'Name' => 'ACES',
+    'Name' => 'ACE HARDWARE INDONESIA Tbk',
     'Code' => 'ACES',
     'Total Sales' => '4,935,902,893,025',
     'Cost of Good Sold' => '-2,584,146,388,181',
@@ -2941,7 +2941,7 @@
   ),
   98 => 
   array (
-    'Name' => 'BSSR',
+    'Name' => 'BARAMULTI SUKSESSARANA Tbk',
     'Code' => 'BSSR',
     'Total Sales' => '3,259,553,916,260',
     'Cost of Good Sold' => '-2,222,461,819,792',
@@ -2971,7 +2971,7 @@
   ),
   99 => 
   array (
-    'Name' => 'ANJT',
+    'Name' => 'AUSTINDO NUSANTARA JAYA Tbk',
     'Code' => 'ANJT',
     'Total Sales' => '1,806,380,407,212',
     'Cost of Good Sold' => '-1,197,914,741,856',
@@ -3001,7 +3001,7 @@
   ),
   100 => 
   array (
-    'Name' => 'MPPA',
+    'Name' => 'MATAHARI PUTRA PRIMA Tbk',
     'Code' => 'MPPA',
     'Total Sales' => '13,527,323,000,000',
     'Cost of Good Sold' => '-11,233,284,000,000',
@@ -3031,7 +3031,7 @@
   ),
   101 => 
   array (
-    'Name' => 'BISI',
+    'Name' => 'BISI INTERNATIONAL Tbk',
     'Code' => 'BISI',
     'Total Sales' => '1,852,079,000,000',
     'Cost of Good Sold' => '-1,048,130,000,000',
@@ -3061,7 +3061,7 @@
   ),
   102 => 
   array (
-    'Name' => 'BUKK',
+    'Name' => 'BUKAKA TEKNIK UTAMA Tbk',
     'Code' => 'BUKK',
     'Total Sales' => '1,605,432,899,000',
     'Cost of Good Sold' => '-1,353,488,230,000',
@@ -3091,7 +3091,7 @@
   ),
   103 => 
   array (
-    'Name' => 'TURI',
+    'Name' => 'TUNAS RIDEAN Tbk',
     'Code' => 'TURI',
     'Total Sales' => '12,453,772,000,000',
     'Cost of Good Sold' => '-11,337,289,000,000',
@@ -3121,7 +3121,7 @@
   ),
   104 => 
   array (
-    'Name' => 'EKAD',
+    'Name' => 'EKADHARMA INTERNATIONAL Tbk',
     'Code' => 'EKAD',
     'Total Sales' => '568,638,832,579',
     'Cost of Good Sold' => '-370,430,890,081',
@@ -3151,7 +3151,7 @@
   ),
   105 => 
   array (
-    'Name' => 'TRST',
+    'Name' => 'TRIAS SENTOSA Tbk',
     'Code' => 'TRST',
     'Total Sales' => '2,249,418,846,803',
     'Cost of Good Sold' => '-2,052,139,045,365',
@@ -3181,7 +3181,7 @@
   ),
   106 => 
   array (
-    'Name' => 'SMCB',
+    'Name' => 'HOLCIM INDONESIA Tbk',
     'Code' => 'SMCB',
     'Total Sales' => '9,458,403,000,000',
     'Cost of Good Sold' => '-7,527,537,000,000',
@@ -3211,7 +3211,7 @@
   ),
   107 => 
   array (
-    'Name' => 'PGLI',
+    'Name' => 'PEMBANGUNAN GRAHA LESTARI INDAH Tbk',
     'Code' => 'PGLI',
     'Total Sales' => '24,458,603,650',
     'Cost of Good Sold' => '-11,575,488,594',
@@ -3241,7 +3241,7 @@
   ),
   108 => 
   array (
-    'Name' => 'ACST',
+    'Name' => 'ACSET INDONUSA Tbk',
     'Code' => 'ACST',
     'Total Sales' => '1,794,002,000,000',
     'Cost of Good Sold' => '-1,514,363,000,000',
@@ -3271,7 +3271,7 @@
   ),
   109 => 
   array (
-    'Name' => 'TELE',
+    'Name' => 'TIPHONE MOBILE INDONESIA Tbk',
     'Code' => 'TELE',
     'Total Sales' => '27,310,057,000,000',
     'Cost of Good Sold' => '-25,729,180,000,000',
@@ -3301,7 +3301,7 @@
   ),
   110 => 
   array (
-    'Name' => 'AKRA',
+    'Name' => 'AKR CORPORINDO Tbk',
     'Code' => 'AKRA',
     'Total Sales' => '15,212,590,884,000',
     'Cost of Good Sold' => '-13,337,656,837,000',
@@ -3331,7 +3331,7 @@
   ),
   111 => 
   array (
-    'Name' => 'EMDE',
+    'Name' => 'MEGAPOLITAN DEVELOPMENTS Tbk',
     'Code' => 'EMDE',
     'Total Sales' => '330,444,925,707',
     'Cost of Good Sold' => '-137,709,146,845',
@@ -3361,7 +3361,7 @@
   ),
   112 => 
   array (
-    'Name' => 'GEMS',
+    'Name' => 'GOLDEN ENERGY MINES Tbk',
     'Code' => 'GEMS',
     'Total Sales' => '5,163,990,036,496',
     'Cost of Good Sold' => '-3,307,110,409,848',
@@ -3391,7 +3391,7 @@
   ),
   113 => 
   array (
-    'Name' => 'FAST',
+    'Name' => 'FAST FOOD INDONESIA Tbk',
     'Code' => 'FAST',
     'Total Sales' => '4,883,307,267,000',
     'Cost of Good Sold' => '-1,829,228,917,000',
@@ -3421,7 +3421,7 @@
   ),
   114 => 
   array (
-    'Name' => 'SGRO',
+    'Name' => 'SAMPOERNA AGRO Tbk',
     'Code' => 'SGRO',
     'Total Sales' => '2,915,224,840,000',
     'Cost of Good Sold' => '-2,274,535,127,000',
@@ -3451,7 +3451,7 @@
   ),
   115 => 
   array (
-    'Name' => 'SRIL',
+    'Name' => 'SRI REJEKI ISMAN Tbk',
     'Code' => 'SRIL',
     'Total Sales' => '9,135,666,987,640',
     'Cost of Good Sold' => '-7,182,731,126,308',
@@ -3481,7 +3481,7 @@
   ),
   116 => 
   array (
-    'Name' => 'AUTO',
+    'Name' => 'ASTRA OTOPARTS Tbk',
     'Code' => 'AUTO',
     'Total Sales' => '12,806,867,000,000',
     'Cost of Good Sold' => '-10,954,051,000,000',
@@ -3511,7 +3511,7 @@
   ),
   117 => 
   array (
-    'Name' => 'MKPI',
+    'Name' => 'METROPOLITAN KENTJANA Tbk',
     'Code' => 'MKPI',
     'Total Sales' => '2,564,831,067,149',
     'Cost of Good Sold' => '-1,115,507,380,190',
@@ -3541,7 +3541,7 @@
   ),
   118 => 
   array (
-    'Name' => 'ADHI',
+    'Name' => 'ADHI KARYA (PERSERO) Tbk',
     'Code' => 'ADHI',
     'Total Sales' => '11,063,942,850,707',
     'Cost of Good Sold' => '-9,948,797,443,385',
@@ -3571,7 +3571,7 @@
   ),
   119 => 
   array (
-    'Name' => 'FISH',
+    'Name' => 'FKS MULTI AGRO Tbk',
     'Code' => 'FISH',
     'Total Sales' => '12,173,404,273,528',
     'Cost of Good Sold' => '-11,470,448,043,696',
@@ -3601,7 +3601,7 @@
   ),
   120 => 
   array (
-    'Name' => 'KBLM',
+    'Name' => 'KABELINDO MURNI Tbk',
     'Code' => 'KBLM',
     'Total Sales' => '987,409,109,474',
     'Cost of Good Sold' => '-884,704,931,071',
@@ -3631,7 +3631,7 @@
   ),
   121 => 
   array (
-    'Name' => 'DPNS',
+    'Name' => 'DUTA PERTIWI NUSANTARA',
     'Code' => 'DPNS',
     'Total Sales' => '115,940,711,050',
     'Cost of Good Sold' => '-86,448,407,274',
@@ -3661,7 +3661,7 @@
   ),
   122 => 
   array (
-    'Name' => 'CASS',
+    'Name' => 'CARDIG AERO SERVICES Tbk',
     'Code' => 'CASS',
     'Total Sales' => '1,778,033,680,000',
     'Cost of Good Sold' => '0',
@@ -3691,7 +3691,7 @@
   ),
   123 => 
   array (
-    'Name' => 'AMFG',
+    'Name' => 'ASAHIMAS FLAT GLASS Tbk',
     'Code' => 'AMFG',
     'Total Sales' => '3,724,075,000,000',
     'Cost of Good Sold' => '-2,939,551,000,000',
@@ -3721,7 +3721,7 @@
   ),
   124 => 
   array (
-    'Name' => 'BBCA',
+    'Name' => 'BANK CENTRAL ASIA Tbk',
     'Code' => 'BBCA',
     'Total Sales' => '50,561,692,000,000',
     'Cost of Good Sold' => '-10,346,736,000,000',
@@ -3751,7 +3751,7 @@
   ),
   125 => 
   array (
-    'Name' => 'MERK',
+    'Name' => 'MERCK Tbk',
     'Code' => 'MERK',
     'Total Sales' => '1,034,806,890,000',
     'Cost of Good Sold' => '-492,613,670,000',
@@ -3781,7 +3781,7 @@
   ),
   126 => 
   array (
-    'Name' => 'JPFA',
+    'Name' => 'JAPFA COMFEED INDONESIA Tbk',
     'Code' => 'JPFA',
     'Total Sales' => '27,063,310,000,000',
     'Cost of Good Sold' => '-21,584,412,000,000',
@@ -3811,7 +3811,7 @@
   ),
   127 => 
   array (
-    'Name' => 'AHAP',
+    'Name' => 'ASURANSI HARTA AMAN PRATAMA Tbk',
     'Code' => 'AHAP',
     'Total Sales' => '224,259,266,000',
     'Cost of Good Sold' => '0',
@@ -3841,7 +3841,7 @@
   ),
   128 => 
   array (
-    'Name' => 'SIMP',
+    'Name' => 'SALIM IVOMAS PRATAMA Tbk',
     'Code' => 'SIMP',
     'Total Sales' => '14,530,938,000,000',
     'Cost of Good Sold' => '-11,080,998,000,000',
@@ -3871,7 +3871,7 @@
   ),
   129 => 
   array (
-    'Name' => 'AKPI',
+    'Name' => 'ARGHA KARYA PRIMA INDUSTRY Tbk',
     'Code' => 'AKPI',
     'Total Sales' => '2,047,218,639,000',
     'Cost of Good Sold' => '-1,798,077,316,000',
@@ -3901,7 +3901,7 @@
   ),
   130 => 
   array (
-    'Name' => 'JSMR',
+    'Name' => 'JASA MARGA (PERSERO) Tbk',
     'Code' => 'JSMR',
     'Total Sales' => '16,661,402,998,000',
     'Cost of Good Sold' => '-11,805,011,676,000',
@@ -3931,7 +3931,7 @@
   ),
   131 => 
   array (
-    'Name' => 'DILD',
+    'Name' => 'INTILAND DEVELOPMENT Tbk',
     'Code' => 'DILD',
     'Total Sales' => '2,276,459,607,316',
     'Cost of Good Sold' => '-1,240,056,494,396',
@@ -3961,7 +3961,7 @@
   ),
   132 => 
   array (
-    'Name' => 'BBMD',
+    'Name' => 'BANK MESTIKA DHARMA Tbk',
     'Code' => 'BBMD',
     'Total Sales' => '1,025,309,000,000',
     'Cost of Good Sold' => '-333,745,000,000',
@@ -3991,7 +3991,7 @@
   ),
   133 => 
   array (
-    'Name' => 'IGAR',
+    'Name' => 'CHAMPION PACIFIC INDONESIA Tbk',
     'Code' => 'IGAR',
     'Total Sales' => '792,794,834,768',
     'Cost of Good Sold' => '-651,717,629,066',
@@ -4021,7 +4021,7 @@
   ),
   134 => 
   array (
-    'Name' => 'ARNA',
+    'Name' => 'ARWANA CITRAMULIA Tbk',
     'Code' => 'ARNA',
     'Total Sales' => '1,511,978,367,218',
     'Cost of Good Sold' => '-1,182,892,442,278',
@@ -4051,7 +4051,7 @@
   ),
   135 => 
   array (
-    'Name' => 'ECII',
+    'Name' => 'ELECTRONIC CITY INDONESIA Tbk',
     'Code' => 'ECII',
     'Total Sales' => '1,659,849,583,812',
     'Cost of Good Sold' => '-1,410,865,130,396',
@@ -4081,7 +4081,7 @@
   ),
   136 => 
   array (
-    'Name' => 'APII',
+    'Name' => 'ARITA PRIMA INDONESIA Tbk',
     'Code' => 'APII',
     'Total Sales' => '170,213,172,087',
     'Cost of Good Sold' => '-66,810,329,122',
@@ -4111,7 +4111,7 @@
   ),
   137 => 
   array (
-    'Name' => 'CPIN',
+    'Name' => 'CHAROEN POKPHAND INDONESIA Tbk',
     'Code' => 'CPIN',
     'Total Sales' => '38,256,857,000,000',
     'Cost of Good Sold' => '-31,743,222,000,000',
@@ -4141,7 +4141,7 @@
   ),
   138 => 
   array (
-    'Name' => 'DSNG',
+    'Name' => 'DHARMA SATYA NUSANTARA Tbk',
     'Code' => 'DSNG',
     'Total Sales' => '3,942,024,000,000',
     'Cost of Good Sold' => '-2,993,149,000,000',
@@ -4171,7 +4171,7 @@
   ),
   139 => 
   array (
-    'Name' => 'MTLA',
+    'Name' => 'METROPOLITAN LAND Tbk',
     'Code' => 'MTLA',
     'Total Sales' => '1,143,372,190,000',
     'Cost of Good Sold' => '-422,161,078,000',
@@ -4201,7 +4201,7 @@
   ),
   140 => 
   array (
-    'Name' => 'PLIN',
+    'Name' => 'PLAZA INDONESIA REALTY Tbk',
     'Code' => 'PLIN',
     'Total Sales' => '1,659,204,584,000',
     'Cost of Good Sold' => '-600,218,097,000',
@@ -4231,7 +4231,7 @@
   ),
   141 => 
   array (
-    'Name' => 'WIKA',
+    'Name' => 'WIJAYA KARYA (PERSERO) Tbk',
     'Code' => 'WIKA',
     'Total Sales' => '15,668,832,513,000',
     'Cost of Good Sold' => '-13,441,729,089,000',
@@ -4261,7 +4261,7 @@
   ),
   142 => 
   array (
-    'Name' => 'TPIA',
+    'Name' => 'CHANDRA ASRI PETROCHEMICAL Tbk',
     'Code' => 'TPIA',
     'Total Sales' => '25,935,994,496,000',
     'Cost of Good Sold' => '-19,294,337,848,000',
@@ -4291,7 +4291,7 @@
   ),
   143 => 
   array (
-    'Name' => 'LMSH',
+    'Name' => 'LIONMESH PRIMA Tbk',
     'Code' => 'LMSH',
     'Total Sales' => '157,855,084,036',
     'Cost of Good Sold' => '-139,395,429,411',
@@ -4321,7 +4321,7 @@
   ),
   144 => 
   array (
-    'Name' => 'LINK',
+    'Name' => 'LINK NET Tbk',
     'Code' => 'LINK',
     'Total Sales' => '2,954,161,000,000',
     'Cost of Good Sold' => '-637,174,000,000',
@@ -4351,7 +4351,7 @@
   ),
   145 => 
   array (
-    'Name' => 'PWON',
+    'Name' => 'PAKUWON JATI Tbk',
     'Code' => 'PWON',
     'Total Sales' => '4,841,104,813,000',
     'Cost of Good Sold' => '-2,087,578,959,000',
@@ -4381,7 +4381,7 @@
   ),
   146 => 
   array (
-    'Name' => 'PTPP',
+    'Name' => 'PP (PERSERO) Tbk',
     'Code' => 'PTPP',
     'Total Sales' => '16,458,884,219,698',
     'Cost of Good Sold' => '-14,003,354,538,043',
@@ -4411,7 +4411,7 @@
   ),
   147 => 
   array (
-    'Name' => 'WTON',
+    'Name' => 'WIJAYA KARYA BETON Tbk',
     'Code' => 'WTON',
     'Total Sales' => '3,481,731,506,128',
     'Cost of Good Sold' => '-2,977,298,901,593',
@@ -4441,7 +4441,7 @@
   ),
   148 => 
   array (
-    'Name' => 'IMAS',
+    'Name' => 'INDOMOBIL SUKSES INTERNASIONAL Tbk',
     'Code' => 'IMAS',
     'Total Sales' => '15,097,569,486,140',
     'Cost of Good Sold' => '-12,432,192,828,833',
@@ -4471,7 +4471,7 @@
   ),
   149 => 
   array (
-    'Name' => 'RDTX',
+    'Name' => 'RODA VIVATEX Tbk',
     'Code' => 'RDTX',
     'Total Sales' => '406,872,943,034',
     'Cost of Good Sold' => '-105,142,580,069',
@@ -4501,7 +4501,7 @@
   ),
   150 => 
   array (
-    'Name' => 'MAYA',
+    'Name' => 'BANK MAYAPADA INTERNASIONAL Tbk',
     'Code' => 'MAYA',
     'Total Sales' => '6,029,020,000,000',
     'Cost of Good Sold' => '-3,518,036,000,000',
@@ -4531,7 +4531,7 @@
   ),
   151 => 
   array (
-    'Name' => 'SDRA',
+    'Name' => 'BANK WOORI SAUDARA INDONESIA 1906 Tbk',
     'Code' => 'SDRA',
     'Total Sales' => '1,773,721,000,000',
     'Cost of Good Sold' => '-868,476,000,000',
@@ -4561,7 +4561,7 @@
   ),
   152 => 
   array (
-    'Name' => 'EMTK',
+    'Name' => 'ELANG MAHKOTA TEKNOLOGI Tbk',
     'Code' => 'EMTK',
     'Total Sales' => '7,368,822,314,000',
     'Cost of Good Sold' => '-4,168,676,393,000',
@@ -4591,7 +4591,7 @@
   ),
   153 => 
   array (
-    'Name' => 'AMRT',
+    'Name' => 'SUMBER ALFARIA TRIJAYA Tbk',
     'Code' => 'AMRT',
     'Total Sales' => '56,107,056,000,000',
     'Cost of Good Sold' => '-45,234,558,000,000',
@@ -4621,7 +4621,7 @@
   ),
   154 => 
   array (
-    'Name' => 'TKIM',
+    'Name' => 'PABRIK KERTAS TJIWI KIMIA Tbk',
     'Code' => 'TKIM',
     'Total Sales' => '13,394,375,272,000',
     'Cost of Good Sold' => '-11,914,587,976,000',
@@ -4651,7 +4651,7 @@
   ),
   155 => 
   array (
-    'Name' => 'ROTI',
+    'Name' => 'NIPPON INDOSARI CORPINDO Tbk',
     'Code' => 'ROTI',
     'Total Sales' => '2,521,920,968,213',
     'Cost of Good Sold' => '-1,220,832,597,005',
@@ -4681,7 +4681,7 @@
   ),
   156 => 
   array (
-    'Name' => 'POWR',
+    'Name' => 'CIKARANG LISTRINDO Tbk',
     'Code' => 'POWR',
     'Total Sales' => '7,401,304,279,408',
     'Cost of Good Sold' => '-4,872,892,445,676',
@@ -4711,7 +4711,7 @@
   ),
   157 => 
   array (
-    'Name' => 'GMTD',
+    'Name' => 'GOWA MAKASSAR TOURISM DEVELOPMENT Tbk',
     'Code' => 'GMTD',
     'Total Sales' => '276,272,327,000',
     'Cost of Good Sold' => '-141,983,995,000',
@@ -4741,7 +4741,7 @@
   ),
   158 => 
   array (
-    'Name' => 'PANR',
+    'Name' => 'PANORAMA SENTRAWISATA Tbk',
     'Code' => 'PANR',
     'Total Sales' => '2,133,213,970,000',
     'Cost of Good Sold' => '-1,691,788,479,000',
@@ -4771,7 +4771,7 @@
   ),
   159 => 
   array (
-    'Name' => 'TOBA',
+    'Name' => 'TOBA BARA SEJAHTRA Tbk',
     'Code' => 'TOBA',
     'Total Sales' => '3,470,137,231,036',
     'Cost of Good Sold' => '-2,754,162,350,236',
@@ -4801,7 +4801,7 @@
   ),
   160 => 
   array (
-    'Name' => 'WSKT',
+    'Name' => 'WASKITA KARYA (PERSERO) Tbk',
     'Code' => 'WSKT',
     'Total Sales' => '23,788,323,000,000',
     'Cost of Good Sold' => '-19,820,484,000,000',
@@ -4831,7 +4831,7 @@
   ),
   161 => 
   array (
-    'Name' => 'AALI',
+    'Name' => 'ASTRA AGRO LESTARI Tbk',
     'Code' => 'AALI',
     'Total Sales' => '14,121,374,000,000',
     'Cost of Good Sold' => '-10,445,360,000,000',
@@ -4861,7 +4861,7 @@
   ),
   162 => 
   array (
-    'Name' => 'FASW',
+    'Name' => 'FAJAR SURYA WISESA Tbk',
     'Code' => 'FASW',
     'Total Sales' => '5,874,745,032,615',
     'Cost of Good Sold' => '-4,696,162,163,506',
@@ -4891,7 +4891,7 @@
   ),
   163 => 
   array (
-    'Name' => 'MDIA',
+    'Name' => 'INTERMEDIA CAPITAL Tbk',
     'Code' => 'MDIA',
     'Total Sales' => '1,756,614,281,000',
     'Cost of Good Sold' => '0',
@@ -4921,7 +4921,7 @@
   ),
   164 => 
   array (
-    'Name' => 'INPP',
+    'Name' => 'INDONESIAN PARADISE PROPERTY Tbk',
     'Code' => 'INPP',
     'Total Sales' => '547,492,009,881',
     'Cost of Good Sold' => '-158,148,133,180',
@@ -4951,7 +4951,7 @@
   ),
   165 => 
   array (
-    'Name' => 'MARI',
+    'Name' => 'MAHAKA RADIO INTEGRA Tbk',
     'Code' => 'MARI',
     'Total Sales' => '111,646,695,355',
     'Cost of Good Sold' => '0',
@@ -4981,7 +4981,7 @@
   ),
   166 => 
   array (
-    'Name' => 'LPKR',
+    'Name' => 'LIPPO KARAWACI Tbk',
     'Code' => 'LPKR',
     'Total Sales' => '10,324,633,000,000',
     'Cost of Good Sold' => '-6,020,661,000,000',
@@ -5011,7 +5011,7 @@
   ),
   167 => 
   array (
-    'Name' => 'BEST',
+    'Name' => 'BEKASI FAJAR INDUSTRIAL ESTATE Tbk',
     'Code' => 'BEST',
     'Total Sales' => '824,408,087,980',
     'Cost of Good Sold' => '-211,141,861,204',
@@ -5041,7 +5041,7 @@
   ),
   168 => 
   array (
-    'Name' => 'CSAP',
+    'Name' => 'CATUR SENTOSA ADIPRANA Tbk',
     'Code' => 'CSAP',
     'Total Sales' => '7,967,920,271,000',
     'Cost of Good Sold' => '-6,868,590,227,000',
@@ -5071,7 +5071,7 @@
   ),
   169 => 
   array (
-    'Name' => 'BBNP',
+    'Name' => 'BANK NUSANTARA PARAHYANGAN Tbk',
     'Code' => 'BBNP',
     'Total Sales' => '905,311,266,000',
     'Cost of Good Sold' => '-419,598,008,000',
@@ -5101,7 +5101,7 @@
   ),
   170 => 
   array (
-    'Name' => 'CTRA',
+    'Name' => 'CIPUTRA DEVELOPMENT Tbk',
     'Code' => 'CTRA',
     'Total Sales' => '6,739,315,000,000',
     'Cost of Good Sold' => '-3,449,611,000,000',
@@ -5131,7 +5131,7 @@
   ),
   171 => 
   array (
-    'Name' => 'PBRX',
+    'Name' => 'PAN BROTHERS Tbk',
     'Code' => 'PBRX',
     'Total Sales' => '6,478,895,080,324',
     'Cost of Good Sold' => '-5,602,060,443,904',
@@ -5161,7 +5161,7 @@
   ),
   172 => 
   array (
-    'Name' => 'IDPR',
+    'Name' => 'INDONESIA PONDASI RAYA Tbk',
     'Code' => 'IDPR',
     'Total Sales' => '1,006,188,995,206',
     'Cost of Good Sold' => '-750,723,244,209',
@@ -5191,7 +5191,7 @@
   ),
   173 => 
   array (
-    'Name' => 'MLPT',
+    'Name' => 'MULTIPOLAR TECHNOLOGY Tbk',
     'Code' => 'MLPT',
     'Total Sales' => '1,927,502,605,000',
     'Cost of Good Sold' => '-1,681,038,011,000',
@@ -5221,7 +5221,7 @@
   ),
   174 => 
   array (
-    'Name' => 'PNSE',
+    'Name' => 'PUDJIADI AND SONS Tbk',
     'Code' => 'PNSE',
     'Total Sales' => '224,829,147,655',
     'Cost of Good Sold' => '-90,342,823,866',
@@ -5251,7 +5251,7 @@
   ),
   175 => 
   array (
-    'Name' => 'SMRA',
+    'Name' => 'SUMMARECON AGUNG Tbk',
     'Code' => 'SMRA',
     'Total Sales' => '5,397,948,907,000',
     'Cost of Good Sold' => '-2,799,538,204,000',
@@ -5281,7 +5281,7 @@
   ),
   176 => 
   array (
-    'Name' => 'TINS',
+    'Name' => 'TIMAH Tbk',
     'Code' => 'TINS',
     'Total Sales' => '6,968,294,000,000',
     'Cost of Good Sold' => '-5,873,406,000,000',
@@ -5311,7 +5311,7 @@
   ),
   177 => 
   array (
-    'Name' => 'AGRO',
+    'Name' => 'BANK RAKYAT INDONESIA AGRONIAGA Tbk',
     'Code' => 'AGRO',
     'Total Sales' => '965,085,260,000',
     'Cost of Good Sold' => '-543,413,124,000',
@@ -5341,7 +5341,7 @@
   ),
   178 => 
   array (
-    'Name' => 'BBYB',
+    'Name' => 'BANK YUDHA BHAKTI Tbk',
     'Code' => 'BBYB',
     'Total Sales' => '508,785,259,204',
     'Cost of Good Sold' => '-261,397,125,538',
@@ -5371,7 +5371,7 @@
   ),
   179 => 
   array (
-    'Name' => 'KAEF',
+    'Name' => 'KIMIA FARMA (PERSERO) Tbk',
     'Code' => 'KAEF',
     'Total Sales' => '5,811,502,656,431',
     'Cost of Good Sold' => '-3,947,606,932,563',
@@ -5401,7 +5401,7 @@
   ),
   180 => 
   array (
-    'Name' => 'SMBR',
+    'Name' => 'SEMEN BATURAJA (PERSERO) Tbk',
     'Code' => 'SMBR',
     'Total Sales' => '1,522,808,093,000',
     'Cost of Good Sold' => '-1,011,809,686,000',
@@ -5431,7 +5431,7 @@
   ),
   181 => 
   array (
-    'Name' => 'PPRO',
+    'Name' => 'PP Properti Tbk',
     'Code' => 'PPRO',
     'Total Sales' => '2,150,061,072,104',
     'Cost of Good Sold' => '-1,564,157,282,532',
@@ -5461,7 +5461,7 @@
   ),
   182 => 
   array (
-    'Name' => 'MFMI',
+    'Name' => 'MULTIFILING MITRA INDONESIA Tbk',
     'Code' => 'MFMI',
     'Total Sales' => '100,148,148,695',
     'Cost of Good Sold' => '0',
@@ -5491,7 +5491,7 @@
   ),
   183 => 
   array (
-    'Name' => 'BSDE',
+    'Name' => 'BUMI SERPONG DAMAI Tbk',
     'Code' => 'BSDE',
     'Total Sales' => '6,521,770,000,000',
     'Cost of Good Sold' => '-1,840,304,000,000',
@@ -5521,7 +5521,7 @@
   ),
   184 => 
   array (
-    'Name' => 'SAME',
+    'Name' => 'SARANA MEDITAMA METROPOLITAN Tbk',
     'Code' => 'SAME',
     'Total Sales' => '635,020,760,619',
     'Cost of Good Sold' => '-339,256,161,486',
@@ -5551,7 +5551,7 @@
   ),
   185 => 
   array (
-    'Name' => 'DNET',
+    'Name' => 'INDORITEL MAKMUR INTERNASIONAL Tbk',
     'Code' => 'DNET',
     'Total Sales' => '22,658,206,779',
     'Cost of Good Sold' => '0',
@@ -5581,7 +5581,7 @@
   ),
   186 => 
   array (
-    'Name' => 'EPMT',
+    'Name' => 'ENSEVAL PUTERA MEGATRADING Tbk',
     'Code' => 'EPMT',
     'Total Sales' => '18,936,240,950,891',
     'Cost of Good Sold' => '-16,758,998,925,440',
