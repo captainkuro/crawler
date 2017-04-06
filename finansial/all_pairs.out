@@ -1,522 +1,2632 @@
 <?php return array (
-  101278 => 'Abm Investama Tbk',
-  101279 => 'Ace Hardware Indonesia Tbk',
-  101280 => 'Acset Indonusa Tbk',
-  101281 => 'Adaro Energy Tbk',
-  101282 => 'Adhi Karya Persero Tbk',
-  101283 => 'Adi Sarana Armada Tbk',
-  101284 => 'Adira Dinamika Multi Finance',
-  101286 => 'Agung Podomoro Land Tbk',
-  101287 => 'Akasha Wira International Tbk',
-  101288 => 'Akbar Indomakmur Stimec Tbk',
-  101289 => 'Akr Corporindo Tbk',
-  953124 => 'Alakasa Industrindo Tbk',
-  101290 => 'Alam Sutera Realty Tbk',
-  101291 => 'Alkindo Naratama Tbk',
-  101292 => 'Alumindo Light Metal Industry',
-  955951 => 'Anabatic Technologies Tbk PT',
-  101293 => 'Ancora Indonesia Resources Tbk',
-  991135 => 'Aneka Gas Industri Tbk PT',
-  101294 => 'Aneka Tambang Persero Tbk',
-  101208 => 'Apac Citra Centertex Tbk',
-  101295 => 'Apexindo Pratama Duta Tbk',
-  101209 => 'Argha Karya Prima Ind Tbk',
-  953931 => 'Argo Pantes Tbk',
-  101296 => 'Arita Prima Indonesia Tbk',
-  102130 => 'Arpeni Pratama Ocean Line Tbk',
-  101297 => 'Arthavest Tbk',
-  101298 => 'Arwana Citramulia Tbk',
-  101302 => 'Asahimas Flat Glass Tbk',
-  101303 => 'Asia Pacific Fibers Tbk',
-  101304 => 'Asiaplast Industries Tbk',
-  101305 => 'Astra Agro Lestari Tbk',
-  101306 => 'Astra Graphia Tbk',
-  101307 => 'Astra International Tbk',
-  101308 => 'Astra Otoparts Tbk',
-  102973 => 'Asuransi Bina Dana Arta Tbk',
-  102978 => 'Asuransi Bintang Tbk',
-  101299 => 'Asuransi Dayin Mitra Tbk',
-  943651 => 'Asuransi Jasa Tania Tbk',
-  101309 => 'Asuransi Kresna Mitra Tbk PT',
-  101301 => 'Asuransi Ramayana Tbk',
-  962000 => 'Ateliers Mecaniques D’Indonesie Tbk PT',
-  101310 => 'Atlas Resources Tbk',
-  101210 => 'Austindo Nusantara Jaya Tbk',
-  101312 => 'Bakrie & Brothers Tbk',
-  101313 => 'Bakrie Sumatera Plantations',
-  101314 => 'Bakrie Telecom Tbk',
-  101315 => 'Bakrieland Development Tbk',
-  102131 => 'Bali Towerindo Sentra Tbk',
-  943645 => 'Bank Agris Tbk',
-  101316 => 'Bank Artha Graha Internasional',
-  962597 => 'Bank Artos Indonesia Tbk PT',
-  101318 => 'Bank Bukopin Tbk',
-  101211 => 'Bank Bumi Arta Tbk',
-  101319 => 'Bank Capital Indonesia Tbk',
-  101354 => 'Bank Central Asia Tbk',
-  101320 => 'Bank Danamon Indonesia Tbk',
-  943661 => 'Bank Dinar Indonesia Tbk',
-  978769 => 'Bank Ganesha Tbk PT',
-  958362 => 'Bank Harda Internasional Tbk PT',
-  101323 => 'Bank Ina Perdana Tbk',
-  101325 => 'Bank Mandiri Persero Tbk',
-  101213 => 'Bank Maspion Indonesia Tbk',
-  101326 => 'Bank Mayapada Internasional',
-  101324 => 'Bank Maybank Indonesia Tbk PT',
-  101327 => 'Bank Mega Tbk',
-  101328 => 'Bank Mestika Dharma Tbk',
-  101214 => 'Bank Mitraniaga Tbk',
-  101322 => 'Bank Mnc Internasional Tbk',
-  101329 => 'Bank Nationalnobu Tbk',
-  101317 => 'Bank Negara Indonesia Tbk',
-  101215 => 'Bank Nusantara Parahyangan Tbk',
-  101216 => 'Bank Ocbc Nisp Tbk',
-  101217 => 'Bank Of India Indonesia Tbk',
-  101331 => 'Bank Pan Indonesia Tbk',
-  101332 => 'Bank Panin Syariah Tbk',
-  101330 => 'Bank Pembangunan Barat Dan Banten',
-  101335 => 'Bank Pembangunan Daerah Banten Tbk PT',
-  101333 => 'Bank Pembangunan Timur Tbk',
-  101334 => 'Bank Permata Tbk',
-  101218 => 'Bank Qnb Indonesia Tbk',
-  101356 => 'Bank Rakyat Indonesia Agroniaga',
-  101336 => 'Bank Rakyat Indonesia Persero',
-  101337 => 'Bank Sinarmas Tbk',
-  101339 => 'Bank Tabungan Pensiunan Nasional',
-  101338 => 'Bank Tabungan Negara Persero',
-  101340 => 'Bank Victoria International',
-  101341 => 'Bank Windu Kentjana Int',
-  101321 => 'Bank Woori Saudara Indonesia 1906',
-  945176 => 'Bank Yudha Bhakti Tbk',
-  101311 => 'Bara Jaya Internasional Tbk PT',
-  101342 => 'Baramulti Suksessarana Tbk',
-  101343 => 'Barito Pacific Tbk',
-  102974 => 'Batavia Prosperindo Finance',
-  943658 => 'Batavia Prosperindo Int',
-  101344 => 'Bayan Resources Tbk',
-  101219 => 'Bayu Buana Tbk',
-  101345 => 'Bekasi Asri Pemula Tbk',
-  101346 => 'Bekasi Fajar Industrial Estate',
-  101347 => 'Benakat Integra Tbk',
-  101220 => 'Bentoel International Investama',
-  101348 => 'Berau Coal Energy Tbk',
-  101349 => 'Berlina Tbk',
-  101350 => 'Betonjaya Manunggal Tbk',
-  101351 => 'BFI Finance Indonesia Tbk',
-  101352 => 'Bhuwanatala Indah Permai Tbk',
-  955952 => 'Binakarya Jaya Abadi Tbk PT',
-  945724 => 'Bintang Mitra Semestaraya Tbk',
-  994431 => 'Bintang Oto Global Tbk PT',
-  101353 => 'Bisi International Tbk',
-  943663 => 'Blue Bird Tbk',
-  101355 => 'Borneo Lumbung Energi & Metal',
-  101221 => 'Buana Finance Tbk',
-  101357 => 'Buana Listya Tama Tbk PT',
-  101358 => 'Budi Starch & Sweetener Tbk',
-  955767 => 'Bukaka Teknik Utama Tbk Pt',
-  101359 => 'Bukit Darmo Property Tbk',
-  101360 => 'Bukit Uluwatu Villa Tbk',
-  101361 => 'Bumi Citra Permai Tbk',
-  101363 => 'Bumi Resources Tbk',
-  101362 => 'Bumi Resources Minerals Tbk',
-  101364 => 'Bumi Serpong Damai Tbk',
-  101365 => 'Bumi Teknokultura Unggul Tbk',
-  101222 => 'Cakra Mineral Tbk',
-  986048 => 'Capital Financial Indonesia Tbk PT',
-  101367 => 'Capitalinc Investment Tbk',
-  101368 => 'Capitol Nusantara Indonesia',
-  101369 => 'Cardig Aero Services Tbk',
-  101370 => 'Catur Sentosa Adiprana Tbk',
-  102969 => 'Centex Tbk Prf',
-  101371 => 'Central Proteina Prima Tbk',
-  101372 => 'Centratama Telekomunikasi Ind',
-  101374 => 'Champion Pacific Indonesia Tbk',
-  101375 => 'Chandra Asri Petrochemical Tbk',
-  101376 => 'Charoen Pokphand Indonesia TBK PT',
-  102979 => 'Chitose Internasional Tbk',
-  985288 => 'Cikarang Listrindo Tbk PT',
-  101378 => 'Ciputra Development Tbk',
-  101381 => 'Citatah Tbk',
-  101377 => 'Citra Maharlika Nusantara Corpora Tbk PT',
-  101382 => 'Citra Marga Nusaphala Persada',
-  945180 => 'Citra Tubindo Tbk',
-  101383 => 'Clipan Finance Indonesia Tbk',
-  101384 => 'Colorpak Indonesia Tbk',
-  101385 => 'Cowell Development Tbk',
-  945182 => 'Danasupra Erapacific Tbk',
-  101223 => 'Danayasa Arthatama Tbk',
-  101386 => 'Darma Henwa Tbk',
-  101387 => 'Darya-Varia Laboratoria Tbk',
-  101224 => 'Delta Djakarta Tbk',
-  101388 => 'Delta Dunia Makmur Tbk',
-  101225 => 'Destinasi Tirta Nusantara Tbk',
-  101389 => 'Dharma Samudera Fishing Tbk',
-  101390 => 'Dharma Satya Nusantara Tbk',
-  102977 => 'Dian Swastatika Sentosa Tbk',
-  962002 => 'Dua Putra Utama Makmur PT',
-  101392 => 'Duta Anggada Realty Tbk',
-  985737 => 'Duta Intidaya Tbk PT',
-  101393 => 'Duta Pertiwi Tbk',
-  101391 => 'Duta Pertiwi Nusantara Tbk',
-  102132 => 'Dwi Aneka Jaya Kemasindo Tbk',
-  101394 => 'Dyandra Media International',
-  101366 => 'Eagle High Plantations Tbk',
-  102133 => 'Eka Sari Lorena Transport Tbk',
-  101395 => 'Ekadharma International Tbk',
-  101226 => 'Elang Mahkota Teknologi Tbk',
-  101396 => 'Electronic City Indonesia Tbk',
-  101397 => 'Elnusa Tbk',
-  101398 => 'Energi Mega Persada Tbk',
-  101227 => 'Enseval Putra Megatrading Tbk',
-  101228 => 'Equity Development Investment',
-  101399 => 'Erajaya Swasembada Tbk',
-  101229 => 'Eratex Djaja Tbk',
-  101400 => 'Eterindo Wahanatama Tbk',
-  101401 => 'Eureka Prima Jakarta Tbk',
-  101230 => 'Ever Shine Textile Industry',
-  101402 => 'Evergreen Invesco Tbk',
-  101403 => 'Exploitasi Energi Indonesia',
-  101404 => 'Express Transindo Utama Tbk',
-  101405 => 'Fajar Surya Wisesa Tbk',
-  101231 => 'Fast Food Indonesia Tbk',
-  101406 => 'First Media Tbk',
-  101232 => 'Fks Multi Agro Tbk',
-  101407 => 'Fortune Indonesia Tbk',
-  101408 => 'Fortune Mate Indonesia Tbk',
-  101409 => 'Gading Development Tbk',
-  101410 => 'Gajah Tunggal Tbk',
-  101411 => 'Garda Tujuh Buana Tbk',
-  101412 => 'Garuda Indonesia Persero Tbk',
-  955953 => 'Garuda Metalindo Tbk PT',
-  101413 => 'Gema Grahasarana Tbk',
-  101414 => 'Global Mediacom Tbk',
-  101415 => 'Global Teleshop Tbk',
-  101416 => 'Golden Eagle Energy Tbk',
-  101233 => 'Golden Energy Mines Tbk',
-  943646 => 'Golden Plantation Tbk',
-  943650 => 'Goodyear Indonesia Tbk',
-  101418 => 'Gowa Makassar Tourism Develop',
-  101419 => 'Gozco Plantations Tbk',
-  985853 => 'Graha Andrasentra Propertindo Tbk PT',
-  101420 => 'Graha Layar Prima Tbk',
-  101421 => 'Grand Kartech Tbk',
-  101422 => 'Greenwood Sejahtera Tbk',
-  101423 => 'Gudang Garam Tbk',
-  101424 => 'Gunawan Dianjaya Steel Tbk',
-  101425 => 'Hanson International Tbk',
-  101426 => 'Hanson International Tbk Prf',
-  101207 => 'Asuransi Harta Aman Pratama Tbk PT',
-  101427 => 'Harum Energy Tbk',
-  943655 => 'Hd Capital Tbk',
-  101428 => 'Hero Supermarket Tbk',
-  101429 => 'Hexindo Adiperkasa Tbk',
-  943648 => 'Hm Sampoerna Tbk',
-  101430 => 'Holcim Indonesia Tbk',
-  101431 => 'Hotel Mandarine Regency Tbk PT',
-  101432 => 'Hotel Sahid Jaya Tbk',
-  943656 => 'Humpuss Intermoda Transportasi',
-  101433 => 'Ictsi Jasa Prima Tbk',
-  943664 => 'Impack Pratama Industri Tbk',
-  101435 => 'Indah Kiat Pulp & Paper Tbk',
-  101436 => 'Indal Aluminium Industry Tbk',
-  101437 => 'Indika Energy Tbk',
-  101438 => 'Indo Acidatama Tbk',
-  101234 => 'Indo Kordsa Tbk',
-  101235 => 'Indo Straits Tbk',
-  101439 => 'Indo Tambangraya Megah Tbk',
-  101440 => 'Indocement Tunggal Prakarsa',
-  101441 => 'Indofarma Tbk',
-  101443 => 'Indofood Sukses Makmur Tbk',
-  101442 => 'Indofood Cbp Sukses Makmur Tbk',
-  101444 => 'Indomobil Multi Jasa Tbk',
-  101445 => 'Indomobil Sukses Internasional',
-  962003 => 'Indonesia Pondasi Raya Tbk PT',
-  943994 => 'Indonesia Prima Property Tbk',
-  101434 => 'Indonesia Transport & Infrastructure',
-  102970 => 'Indonesian Paradise Property',
-  101446 => 'Indopoly Swakarsa Industry Tbk',
-  101236 => 'Indorama Synthetics Tbk',
-  101447 => 'Indoritel Makmur Internasional',
-  101448 => 'Indosat Tbk',
-  101449 => 'Indospring Tbk',
-  101451 => 'Inovisi Infracom Tbk',
-  943644 => 'Intan Baruprana Finance Tbk',
-  101452 => 'Intanwijaya Internasional Tbk',
-  946578 => 'Inter-Delta Tbk',
-  101453 => 'Intermedia Capital Tbk',
-  101454 => 'Inti Bangun Sejahtera Tbk',
-  945183 => 'Inti Kapuas Arowana Tbk',
-  101455 => 'Intikeramik Alamasri Industri',
-  101456 => 'Intiland Development Tbk',
-  101457 => 'Intraco Penta Tbk',
-  101458 => 'Island Concepts Indonesia Tbk',
-  101459 => 'J Resources Asia Pasifik Tbk',
-  101468 => 'Jakarta Int Hotels & Dev',
-  101237 => 'Jakarta Kyoei Steel Works Tbk',
-  945179 => 'Jakarta Setiabudi Internasional',
-  101450 => 'Industri Jamu dan Farmasi Sido Muncul Tbk PT',
-  101461 => 'Japfa Comfeed Indonesia Tbk',
-  101462 => 'Jasa Marga Tbk',
-  101463 => 'Jasuindo Tiga Perkasa Tbk',
-  101460 => 'Jaya Agra Wattie Tbk',
-  101464 => 'Jaya Konstruksi Manggala Pratama',
-  101465 => 'Jaya Pari Steel Tbk',
-  101466 => 'Jaya Real Property Tbk',
-  101467 => 'Jembo Cable Company Tbk',
-  101238 => 'Kabelindo Murni Tbk',
-  101470 => 'Kalbe Farma Tbk',
-  101469 => 'Kawasan Industri Jababeka Tbk',
-  101239 => 'Kedaung Indah Can Tbk',
-  101471 => 'Kedawung Setia Industrial Tbk',
-  101472 => 'Keramika Indonesia Assosiasi',
-  101473 => 'Kertas Basuki Rachmat Indonesia',
-  101474 => 'Kimia Farma Persero Tbk',
-  962004 => 'Kino Indonesia Tbk PT',
-  101475 => 'Kmi Wire And Cable Tbk',
-  101476 => 'Kobexindo Tractors Tbk',
-  101240 => 'Kokoh Inti Arebama Tbk',
-  101477 => 'Krakatau Steel Persero Tbk',
-  101478 => 'Kresna Graha Investama Tbk PT',
-  101479 => 'Lamicitra Nusantara Tbk',
-  101480 => 'Langgeng Makmur Industri Tbk',
-  101481 => 'Lautan Luas Tbk',
-  101482 => 'Leyand International Tbk',
-  101241 => 'Limas Indonesia Makmur Tbk',
-  102980 => 'Link Net Tbk',
-  102975 => 'Lion Metal Works Tbk',
-  101242 => 'Lionmesh Prima Tbk',
-  101483 => 'Lippo Cikarang Tbk',
-  101484 => 'Lippo General Insurance Tbk',
-  101485 => 'Lippo Karawaci Tbk',
-  101486 => 'Lippo Securities Tbk',
-  101487 => 'Logindo Samudramakmur Tbk',
-  101243 => 'Lotte Chemical Titan Tbk',
-  943659 => 'Magna Finance Tbk',
-  101489 => 'Mahaka Media Tbk',
-  963746 => 'Mahaka Radio Integra Tbk PT',
-  101490 => 'Malindo Feedmill Tbk',
-  101244 => 'Mandala Multifinance Tbk',
-  101491 => 'Mandom Indonesia Tbk',
-  101492 => 'Martina Berto Tbk',
-  943649 => 'Mas Murni Indonesia Tbk',
-  101245 => 'Maskapai Reasuransi Indonesia',
-  101493 => 'Matahari Department Store Tbk',
-  101494 => 'Matahari Putra Prima Tbk',
-  101495 => 'Mayora Indah Tbk',
-  101496 => 'Medco Energi Internasional Tbk',
-  101497 => 'Media Nusantara Citra Tbk',
-  954961 => 'Mega Manunggal Property TBK PT',
-  101498 => 'Megapolitan Developments Tbk',
-  945178 => 'Merck Tbk',
-  954960 => 'Merdeka Copper Gold TBK PT',
-  101246 => 'Metro Realty Tbk',
-  101499 => 'Metrodata Electronics Tbk',
-  101247 => 'Metropolitan Kentjana Tbk',
-  101500 => 'Metropolitan Land Tbk',
-  101501 => 'Midi Utama Indonesia Tbk',
-  101502 => 'Millennium Pharmacon International',
-  101503 => 'Minna Padi Investama Tbk',
-  101504 => 'Mitra Adiperkasa Tbk',
-  951639 => 'Mitra Energi Persada Tbk PT',
-  101505 => 'Mitra International Resources',
-  101506 => 'Mitra Investindo Tbk',
-  948393 => 'Mitra Keluarga Karyasehat Tbk PT',
-  960819 => 'Mitra Komunikasi Nusantara Tbk PT',
-  963747 => 'Mitra Pemuda Tbk PT',
-  101507 => 'Mitra Pinasthika Mustika',
-  101508 => 'Mitrabahtera Segara Sejati Tbk',
-  943662 => 'Mitrabara Adiperdana Tbk',
-  101509 => 'Mnc Investama Tbk',
-  101510 => 'Mnc Kapital Indonesia Tbk',
-  101511 => 'Mnc Land Tbk',
-  101512 => 'Mnc Sky Vision Tbk',
-  101513 => 'Modern Internasional Tbk',
-  101514 => 'Modernland Realty Ltd Tbk',
-  101515 => 'Mulia Industrindo Tbk',
-  101516 => 'Multi Agro Gemilang Plantation Tbk PT',
-  101300 => 'Asuransi Multi Artha Guna Tbk PT',
-  101517 => 'Multi Bintang Indonesia Tbk',
-  101518 => 'Multi Indocitra Tbk',
-  101519 => 'Multi Prima Sejahtera Tbk',
-  101248 => 'Multifiling Mitra Indonesia',
-  101520 => 'Multipolar Tbk',
-  101521 => 'Multipolar Technology Tbk',
-  101522 => 'Multistrada Arah Sarana Tbk',
-  101523 => 'Mustika Ratu Tbk',
-  101524 => 'Nippon Indosari Corpindo Tbk',
-  101525 => 'Nipress Tbk',
-  101526 => 'Nirvana Development Tbk',
-  101527 => 'Nusa Konstruksi Enjiniring Tbk',
-  101528 => 'Nusa Raya Cipta Tbk',
-  101529 => 'Nusantara Infrastructure Tbk',
-  102971 => 'Nusantara Inti Corpora Tbk',
-  101249 => 'Onix Capital Tbk',
-  101608 => 'Pabrik Kertas Tjiwi Kimia Tbk',
-  101532 => 'Pacific Strategic Financial',
-  101533 => 'Pakuwon Jati Tbk',
-  101534 => 'Pan Brothers Tbk',
-  101252 => 'Panasia Indo Resources Tbk',
-  943654 => 'Panca Global Securities Tbk',
-  101535 => 'Panin Financial Tbk',
-  101537 => 'Panin Sekuritas Tbk',
-  101536 => 'Paninvest Tbk',
-  101538 => 'Panorama Sentrawisata Tbk',
-  991136 => 'Paramita Bangun Sarana Tbk PT',
-  101540 => 'Pelangi Indah Canindo Tbk',
-  101541 => 'Pelat Timah Nusantara Tbk',
-  101542 => 'Pelayaran Nasional Bina Buana Raya',
-  101253 => 'Pelayaran Nelly Dwi Putri Tbk',
-  101251 => 'Pelayaran Tempuran Emas Tbk',
-  101250 => 'Pembangunan Graha Lestari Tbk',
-  101531 => 'Pembangunan Jaya Ancol Tbk',
-  101543 => 'Perdana Gapura Prima Tbk',
-  101544 => 'Perdana Karya Perkasa Tbk',
-  101545 => 'Permata Prima Sakti Tbk',
-  101530 => 'Perusahaan Gas Negara Persero',
-  101546 => 'Petrosea Tbk',
-  101254 => 'Pikko Land Development Tbk',
-  101255 => 'Pioneerindo Gourmet International',
-  101256 => 'Plaza Indonesia Realty Tbk',
-  101547 => 'Polaris Investama Tbk',
-  101548 => 'Polychem Indonesia Tbk',
-  101257 => 'Pool Advista Indonesia Tbk',
-  101488 => 'PP London Sumatra Indonesia',
-  101549 => 'Pp Persero Tbk',
-  953597 => 'PP Properti Tbk PT',
-  101258 => 'Prasidha Aneka Niaga Tbk',
-  101550 => 'Prima Alloy Steel Universal',
-  962001 => 'Primarindo Asia Infrastructure Tbk PT',
-  994054 => 'Prodia Widyahusada Tbk PT',
-  986049 => 'Protech Mitra Perkasa Tbk PT',
-  101259 => 'Provident Agro Tbk',
-  101260 => 'Pudjiadi & Sons Tbk',
-  101551 => 'Pudjiadi Prestige Tbk',
-  953932 => 'Puradelta Lestari Tbk Pt',
-  101552 => 'Pyridam Farma Tbk',
-  953933 => 'Radana Bhaskara Finance Tbk',
-  101553 => 'Radiant Utama Interinsco Tbk',
-  101554 => 'Ramayana Lestari Sentosa Tbk',
-  101555 => 'Ratu Prabu Energi Tbk',
-  950067 => 'Red Planet Indonesia Tbk',
-  101261 => 'Reliance Securities Tbk',
-  101556 => 'Renuka Coalindo Tbk',
-  101557 => 'Resource Alam Indonesia Tbk',
-  101262 => 'Ricky Putra Globalindo Tbk',
-  101263 => 'Rig Tenders Tbk',
-  101373 => 'Rimau Multi Putra Pratama',
-  101559 => 'Ristia Bintang Mahkotasejati',
-  945177 => 'Roda Vivatex Tbk',
-  101560 => 'Rukun Raharja Tbk',
-  101561 => 'Salim Ivomas Pratama Tbk',
-  101562 => 'Samindo Resources Tbk',
-  101563 => 'Sampoerna Agro Tbk',
-  101264 => 'Samudera Indonesia Tbk',
-  101564 => 'Sarana Meditama Metropolitan',
-  101565 => 'Sarana Menara Nusantara Tbk',
-  101566 => 'Saranacentral Bajatama Tbk',
-  101567 => 'Saraswati Griya Lestari Tbk',
-  101568 => 'Saratoga Investama Sedaya',
-  101569 => 'Sat Nusapersada Tbk',
-  101570 => 'Sawit Sumbermas Sarana Tbk',
-  101571 => 'Sejahteraraya Anugrahjaya Tbk',
-  101265 => 'Sekar Bumi Tbk',
-  945181 => 'Sekar Laut Tbk',
-  943657 => 'Sekawan Intipratama Tbk',
-  101572 => 'Selamat Sempurna Tbk',
-  101573 => 'Semen Baturaja Persero Tbk',
-  101574 => 'Semen Indonesia Persero Tbk',
-  101575 => 'Sentul City Tbk',
-  101266 => 'Sepatu Bata Tbk',
-  101576 => 'Siantar Top Tbk',
-  101577 => 'Sidomulyo Selaras Tbk',
-  101578 => 'Sierad Produce Tbk',
-  101285 => 'Sigmagold Inti Perkasa Tbk',
-  985738 => 'Sillo Maritime Perdana Tbk PT',
-  101579 => 'Siloam International Hospitals',
-  101580 => 'Sinar Mas Multiartha Tbk',
-  943660 => 'Sitara Propertindo Tbk',
-  943995 => 'Siwani Makmur Tbk',
-  101581 => 'Slj Global Tbk',
-  101582 => 'Smart Tbk',
-  101583 => 'Smartfren Telecom Tbk',
-  101267 => 'Smr Utama Tbk',
-  942839 => 'Soechi Lines Tbk',
-  101584 => 'Solusi Tunas Pratama Tbk',
-  101268 => 'Sona Topas Tourism Industry',
-  101585 => 'Sorini Agro Asia Corporindo',
-  101586 => 'Sri Rejeki Isman Tbk',
-  101587 => 'Star Pacific Tbk',
-  101588 => 'Star Petrcohem Tbk',
-  954962 => 'Steady Safe TBK PT',
-  101589 => 'Steel Pipe Industry Of Indonesia',
-  101590 => 'Sugih Energy Tbk',
-  101591 => 'Sumber Alfaria Trijaya Tbk',
-  102976 => 'Sumi Indo Kabel Tbk',
-  101592 => 'Summarecon Agung Tbk',
-  101270 => 'Sunson Textile Manufacturer',
-  101593 => 'Suparma Tbk',
-  101594 => 'Supra Boga Lestari Tbk',
-  101269 => 'Supreme Cable Manufacturing Corp',
-  101595 => 'Surya Citra Media Tbk',
-  101596 => 'Surya Esa Perkasa Tbk',
-  101597 => 'Surya Semesta Internusa Tbk',
-  101271 => 'Surya Toto Indonesia Tbk',
-  101272 => 'Suryamas Dutamakmur Tbk',
-  945184 => 'Taisho Pharmaceutical Ind',
-  101599 => 'Tambang Batubara Bukit Asam',
-  101598 => 'Tanah Laut Tbk',
-  101600 => 'Telekomunikasi Indonesia Persero',
-  943647 => 'Tembaga Mulia Semanan Tbk',
-  101601 => 'Tempo Inti Media Tbk',
-  101602 => 'Tempo Scan Pacific Tbk',
-  101603 => 'Tifa Finance Tbk',
-  101273 => 'Tifico Fiber Indonesia Tbk',
-  101604 => 'Tiga Pilar Sejahtera Food Tbk',
-  101274 => 'Tigaraksa Satria Tbk',
-  101605 => 'Timah Persero Tbk',
-  101606 => 'Tiphone Mobile Indonesia Tbk',
-  946577 => 'Tira Austenite Tbk',
-  101607 => 'Tirta Mahakam Resources Tbk',
-  101609 => 'Toba Bara Sejahtra Tbk',
-  101610 => 'Toba Pulp Lestari Tbk',
-  101611 => 'Total Bangun Persada Tbk',
-  101612 => 'Tower Bersama Infrastructure',
-  101613 => 'Trada Maritime Tbk',
-  101275 => 'Trans Power Marine Tbk',
-  101614 => 'Tri Banyan Tirta Tbk',
-  101276 => 'Trias Sentosa Tbk',
-  101277 => 'Trikomsel Oke Tbk',
-  101615 => 'Trimegah Securities Tbk',
-  101616 => 'Trisula International Tbk',
-  101617 => 'Triwira Insanlestari Tbk',
-  945723 => 'Trust Finance Indonesia Tbk',
-  101618 => 'Tunas Alfin Tbk',
-  101619 => 'Tunas Baru Lampung Tbk',
-  101620 => 'Tunas Ridean Tbk',
-  101621 => 'Ultra Jaya Milk Industry Tbk',
-  102972 => 'Unggul Indah Cahaya Tbk',
-  101622 => 'Unilever Indonesia Tbk',
-  101623 => 'United Tractors Tbk',
-  101624 => 'Vale Indonesia Tbk',
-  101625 => 'Verena Multi Finance Tbk',
-  959126 => 'Victoria Insurance Tbk PT',
-  101626 => 'Victoria Investama Tbk',
-  101627 => 'Visi Media Asia Tbk',
-  101417 => 'Visi Telekomunikasi Infrastruktur Tbk PT',
-  101628 => 'Voksel Electric Tbk',
-  101629 => 'Wahana Ottomitra Multiartha',
-  101630 => 'Wahana Pronatural',
-  989631 => 'Waskita Beton Precast Tbk PT',
-  101631 => 'Waskita Karya Persero Tbk',
-  101539 => 'Weha Transportasi Indonesia TBK',
-  101632 => 'Wicaksana Overseas International',
-  101633 => 'Wijaya Karya Tbk',
-  101634 => 'Wijaya Karya Beton',
-  101635 => 'Wilmar Cahaya Indonesia Tbk',
-  101636 => 'Wintermar Offshore Marine Tbk',
-  101637 => 'Wismilak Inti Makmur Tbk',
-  101638 => 'Xl Axiata Tbk',
-  101639 => 'Yanaprima Hastapersada Tbk',
-  943653 => 'Yulie Sekurindo Tbk',
-  101640 => 'Zebra Nusantara Tbk',
+  101278 => 
+  array (
+    0 => 'Abm Investama Tbk',
+    1 => 'https://id.investing.com/equities/abm-investama',
+  ),
+  101279 => 
+  array (
+    0 => 'Ace Hardware Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/ace-hardware-i',
+  ),
+  101280 => 
+  array (
+    0 => 'Acset Indonusa Tbk',
+    1 => 'https://id.investing.com/equities/acset-indonusa',
+  ),
+  101281 => 
+  array (
+    0 => 'Adaro Energy Tbk',
+    1 => 'https://id.investing.com/equities/adaro-energy-t',
+  ),
+  101282 => 
+  array (
+    0 => 'Adhi Karya Persero Tbk',
+    1 => 'https://id.investing.com/equities/adhi-karya-tbk',
+  ),
+  101283 => 
+  array (
+    0 => 'Adi Sarana Armada Tbk',
+    1 => 'https://id.investing.com/equities/adi-sarana-arm',
+  ),
+  101284 => 
+  array (
+    0 => 'Adira Dinamika Multi Finance',
+    1 => 'https://id.investing.com/equities/adira-finance',
+  ),
+  101286 => 
+  array (
+    0 => 'Agung Podomoro Land Tbk',
+    1 => 'https://id.investing.com/equities/agung-podomoro',
+  ),
+  101287 => 
+  array (
+    0 => 'Akasha Wira International Tbk',
+    1 => 'https://id.investing.com/equities/akasha-wira-in',
+  ),
+  101288 => 
+  array (
+    0 => 'Akbar Indomakmur Stimec Tbk',
+    1 => 'https://id.investing.com/equities/akbar-indo-mak',
+  ),
+  101289 => 
+  array (
+    0 => 'Akr Corporindo Tbk',
+    1 => 'https://id.investing.com/equities/akr-corporindo',
+  ),
+  953124 => 
+  array (
+    0 => 'Alakasa Industrindo Tbk',
+    1 => 'https://id.investing.com/equities/alakasa-industrindo-tbk',
+  ),
+  101290 => 
+  array (
+    0 => 'Alam Sutera Realty Tbk',
+    1 => 'https://id.investing.com/equities/alam-sutera-re',
+  ),
+  101291 => 
+  array (
+    0 => 'Alkindo Naratama Tbk',
+    1 => 'https://id.investing.com/equities/alkindo-narata',
+  ),
+  101292 => 
+  array (
+    0 => 'Alumindo Light Metal Industry',
+    1 => 'https://id.investing.com/equities/alumindo-light',
+  ),
+  955951 => 
+  array (
+    0 => 'Anabatic Technologies Tbk PT',
+    1 => 'https://id.investing.com/equities/anabatic-technologies-tbk',
+  ),
+  101293 => 
+  array (
+    0 => 'Ancora Indonesia Resources Tbk',
+    1 => 'https://id.investing.com/equities/ancora-indones',
+  ),
+  991135 => 
+  array (
+    0 => 'Aneka Gas Industri Tbk PT',
+    1 => 'https://id.investing.com/equities/aneka-gas-industri-tbk-pt',
+  ),
+  101294 => 
+  array (
+    0 => 'Aneka Tambang Persero Tbk',
+    1 => 'https://id.investing.com/equities/aneka-tambang',
+  ),
+  998092 => 
+  array (
+    0 => 'Anugerah Kagum Karya Utama Tbk PT',
+    1 => 'https://id.investing.com/equities/anugerah-kagum-karya-utama-tbk-pt',
+  ),
+  101208 => 
+  array (
+    0 => 'Apac Citra Centertex Tbk',
+    1 => 'https://id.investing.com/equities/apac-citra-cen',
+  ),
+  101295 => 
+  array (
+    0 => 'Apexindo Pratama Duta Tbk',
+    1 => 'https://id.investing.com/equities/apexindo-prata',
+  ),
+  101209 => 
+  array (
+    0 => 'Argha Karya Prima Ind Tbk',
+    1 => 'https://id.investing.com/equities/arkaprin',
+  ),
+  953931 => 
+  array (
+    0 => 'Argo Pantes Tbk',
+    1 => 'https://id.investing.com/equities/argo-pantes-tbk',
+  ),
+  101296 => 
+  array (
+    0 => 'Arita Prima Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/arita-prima-in',
+  ),
+  102130 => 
+  array (
+    0 => 'Arpeni Pratama Ocean Line Tbk',
+    1 => 'https://id.investing.com/equities/arpeni-pratama',
+  ),
+  101297 => 
+  array (
+    0 => 'Arthavest Tbk',
+    1 => 'https://id.investing.com/equities/arthavest-tbk',
+  ),
+  101298 => 
+  array (
+    0 => 'Arwana Citramulia Tbk',
+    1 => 'https://id.investing.com/equities/arwana-citramu',
+  ),
+  101302 => 
+  array (
+    0 => 'Asahimas Flat Glass Tbk',
+    1 => 'https://id.investing.com/equities/asahimas-flat',
+  ),
+  101303 => 
+  array (
+    0 => 'Asia Pacific Fibers Tbk',
+    1 => 'https://id.investing.com/equities/asia-pacific-f',
+  ),
+  101304 => 
+  array (
+    0 => 'Asiaplast Industries Tbk',
+    1 => 'https://id.investing.com/equities/asiaplast-indu',
+  ),
+  101305 => 
+  array (
+    0 => 'Astra Agro Lestari Tbk',
+    1 => 'https://id.investing.com/equities/astra-agro-les',
+  ),
+  101306 => 
+  array (
+    0 => 'Astra Graphia Tbk',
+    1 => 'https://id.investing.com/equities/astra-graphia',
+  ),
+  101307 => 
+  array (
+    0 => 'Astra International Tbk',
+    1 => 'https://id.investing.com/equities/astra-intl-tbk',
+  ),
+  101308 => 
+  array (
+    0 => 'Astra Otoparts Tbk',
+    1 => 'https://id.investing.com/equities/astra-otoparts',
+  ),
+  102973 => 
+  array (
+    0 => 'Asuransi Bina Dana Arta Tbk',
+    1 => 'https://id.investing.com/equities/as-bina-dana-a',
+  ),
+  102978 => 
+  array (
+    0 => 'Asuransi Bintang Tbk',
+    1 => 'https://id.investing.com/equities/asuransi-binta',
+  ),
+  101299 => 
+  array (
+    0 => 'Asuransi Dayin Mitra Tbk',
+    1 => 'https://id.investing.com/equities/as-dayin-mitra',
+  ),
+  943651 => 
+  array (
+    0 => 'Asuransi Jasa Tania Tbk',
+    1 => 'https://id.investing.com/equities/as-jasa-tania',
+  ),
+  101309 => 
+  array (
+    0 => 'Asuransi Kresna Mitra Tbk PT',
+    1 => 'https://id.investing.com/equities/asuransi-mitra',
+  ),
+  101301 => 
+  array (
+    0 => 'Asuransi Ramayana Tbk',
+    1 => 'https://id.investing.com/equities/as-ramayana',
+  ),
+  962000 => 
+  array (
+    0 => 'Ateliers Mecaniques D’Indonesie Tbk PT',
+    1 => 'https://id.investing.com/equities/ateliers-mecaniques-d-indonesie-tbk',
+  ),
+  101310 => 
+  array (
+    0 => 'Atlas Resources Tbk',
+    1 => 'https://id.investing.com/equities/atlas-resource',
+  ),
+  101210 => 
+  array (
+    0 => 'Austindo Nusantara Jaya Tbk',
+    1 => 'https://id.investing.com/equities/austindo-nusan',
+  ),
+  101312 => 
+  array (
+    0 => 'Bakrie & Brothers Tbk',
+    1 => 'https://id.investing.com/equities/bakrie-brother',
+  ),
+  101313 => 
+  array (
+    0 => 'Bakrie Sumatera Plantations',
+    1 => 'https://id.investing.com/equities/bakrie-sumater',
+  ),
+  101314 => 
+  array (
+    0 => 'Bakrie Telecom Tbk',
+    1 => 'https://id.investing.com/equities/bakrie-telecom',
+  ),
+  101315 => 
+  array (
+    0 => 'Bakrieland Development Tbk',
+    1 => 'https://id.investing.com/equities/bakrieland-dev',
+  ),
+  102131 => 
+  array (
+    0 => 'Bali Towerindo Sentra Tbk',
+    1 => 'https://id.investing.com/equities/bali-towerindo',
+  ),
+  943645 => 
+  array (
+    0 => 'Bank Agris Tbk',
+    1 => 'https://id.investing.com/equities/bank-agris-pt',
+  ),
+  101316 => 
+  array (
+    0 => 'Bank Artha Graha Internasional',
+    1 => 'https://id.investing.com/equities/bank-artha-gra',
+  ),
+  962597 => 
+  array (
+    0 => 'Bank Artos Indonesia Tbk PT',
+    1 => 'https://id.investing.com/equities/bank-artos-indonesia-tbk-pt',
+  ),
+  101318 => 
+  array (
+    0 => 'Bank Bukopin Tbk',
+    1 => 'https://id.investing.com/equities/bank-bukopin',
+  ),
+  101211 => 
+  array (
+    0 => 'Bank Bumi Arta Tbk',
+    1 => 'https://id.investing.com/equities/bank-bumi-arta',
+  ),
+  101319 => 
+  array (
+    0 => 'Bank Capital Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/bank-capital-i',
+  ),
+  101354 => 
+  array (
+    0 => 'Bank Central Asia Tbk',
+    1 => 'https://id.investing.com/equities/bnk-central-as',
+  ),
+  101320 => 
+  array (
+    0 => 'Bank Danamon Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/bank-danamon-t',
+  ),
+  943661 => 
+  array (
+    0 => 'Bank Dinar Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/bank-dinar-ind',
+  ),
+  978769 => 
+  array (
+    0 => 'Bank Ganesha Tbk PT',
+    1 => 'https://id.investing.com/equities/bank-ganesha-tbk-pt',
+  ),
+  958362 => 
+  array (
+    0 => 'Bank Harda Internasional Tbk PT',
+    1 => 'https://id.investing.com/equities/bank-harda-internasional-tbk-pt',
+  ),
+  101323 => 
+  array (
+    0 => 'Bank Ina Perdana Tbk',
+    1 => 'https://id.investing.com/equities/bank-ina-perda',
+  ),
+  101325 => 
+  array (
+    0 => 'Bank Mandiri Persero Tbk',
+    1 => 'https://id.investing.com/equities/bank-mandiri-t',
+  ),
+  101213 => 
+  array (
+    0 => 'Bank Maspion Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/bank-maspion-i',
+  ),
+  101326 => 
+  array (
+    0 => 'Bank Mayapada Internasional',
+    1 => 'https://id.investing.com/equities/bank-mayapada',
+  ),
+  101324 => 
+  array (
+    0 => 'Bank Maybank Indonesia Tbk PT',
+    1 => 'https://id.investing.com/equities/bank-intl-indo',
+  ),
+  101327 => 
+  array (
+    0 => 'Bank Mega Tbk',
+    1 => 'https://id.investing.com/equities/bank-mega-tbk',
+  ),
+  101328 => 
+  array (
+    0 => 'Bank Mestika Dharma Tbk',
+    1 => 'https://id.investing.com/equities/bank-mestika-d',
+  ),
+  101214 => 
+  array (
+    0 => 'Bank Mitraniaga Tbk',
+    1 => 'https://id.investing.com/equities/bank-mitraniag',
+  ),
+  101322 => 
+  array (
+    0 => 'Bank Mnc Internasional Tbk',
+    1 => 'https://id.investing.com/equities/bank-icb-bumip',
+  ),
+  101329 => 
+  array (
+    0 => 'Bank Nationalnobu Tbk',
+    1 => 'https://id.investing.com/equities/bank-nationaln',
+  ),
+  101317 => 
+  array (
+    0 => 'Bank Negara Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/bank-bni-tbk',
+  ),
+  101215 => 
+  array (
+    0 => 'Bank Nusantara Parahyangan Tbk',
+    1 => 'https://id.investing.com/equities/bank-nusantara',
+  ),
+  101216 => 
+  array (
+    0 => 'Bank Ocbc Nisp Tbk',
+    1 => 'https://id.investing.com/equities/bank-ocbc-nisp',
+  ),
+  101217 => 
+  array (
+    0 => 'Bank Of India Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/bank-of-india-jk',
+  ),
+  101331 => 
+  array (
+    0 => 'Bank Pan Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/bank-panin',
+  ),
+  101332 => 
+  array (
+    0 => 'Bank Panin Syariah Tbk',
+    1 => 'https://id.investing.com/equities/bank-panin-sya',
+  ),
+  101330 => 
+  array (
+    0 => 'Bank Pembangunan Barat Dan Banten',
+    1 => 'https://id.investing.com/equities/bank-p-jawa-ba',
+  ),
+  101335 => 
+  array (
+    0 => 'Bank Pembangunan Daerah Banten Tbk PT',
+    1 => 'https://id.investing.com/equities/bank-pundi',
+  ),
+  101333 => 
+  array (
+    0 => 'Bank Pembangunan Timur Tbk',
+    1 => 'https://id.investing.com/equities/bank-pembangun',
+  ),
+  101334 => 
+  array (
+    0 => 'Bank Permata Tbk',
+    1 => 'https://id.investing.com/equities/bank-permata-t',
+  ),
+  101218 => 
+  array (
+    0 => 'Bank Qnb Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/bank-qnb-kesaw',
+  ),
+  101356 => 
+  array (
+    0 => 'Bank Rakyat Indonesia Agroniaga',
+    1 => 'https://id.investing.com/equities/bri-agroniaga',
+  ),
+  101336 => 
+  array (
+    0 => 'Bank Rakyat Indonesia Persero',
+    1 => 'https://id.investing.com/equities/bank-rakyat-in',
+  ),
+  101337 => 
+  array (
+    0 => 'Bank Sinarmas Tbk',
+    1 => 'https://id.investing.com/equities/bank-sinarmas',
+  ),
+  101339 => 
+  array (
+    0 => 'Bank Tabungan Pensiunan Nasional',
+    1 => 'https://id.investing.com/equities/bank-tab-pensi',
+  ),
+  101338 => 
+  array (
+    0 => 'Bank Tabungan Negara Persero',
+    1 => 'https://id.investing.com/equities/bank-tab-negar',
+  ),
+  101340 => 
+  array (
+    0 => 'Bank Victoria International',
+    1 => 'https://id.investing.com/equities/bank-victoria',
+  ),
+  101341 => 
+  array (
+    0 => 'Bank Windu Kentjana Int',
+    1 => 'https://id.investing.com/equities/bank-windu-k-i',
+  ),
+  101321 => 
+  array (
+    0 => 'Bank Woori Saudara Indonesia 1906',
+    1 => 'https://id.investing.com/equities/bank-hmp-sauda',
+  ),
+  945176 => 
+  array (
+    0 => 'Bank Yudha Bhakti Tbk',
+    1 => 'https://id.investing.com/equities/bank-yudha-bhakti-pt',
+  ),
+  101311 => 
+  array (
+    0 => 'Bara Jaya Internasional Tbk PT',
+    1 => 'https://id.investing.com/equities/atpk-resources',
+  ),
+  101342 => 
+  array (
+    0 => 'Baramulti Suksessarana Tbk',
+    1 => 'https://id.investing.com/equities/baramulti-suks',
+  ),
+  101343 => 
+  array (
+    0 => 'Barito Pacific Tbk',
+    1 => 'https://id.investing.com/equities/barito-pacific',
+  ),
+  102974 => 
+  array (
+    0 => 'Batavia Prosperindo Finance',
+    1 => 'https://id.investing.com/equities/batavia-prospe',
+  ),
+  943658 => 
+  array (
+    0 => 'Batavia Prosperindo Int',
+    1 => 'https://id.investing.com/equities/batavia-prosperindo-inter-tbk-pt',
+  ),
+  101344 => 
+  array (
+    0 => 'Bayan Resources Tbk',
+    1 => 'https://id.investing.com/equities/bayan-resource',
+  ),
+  101219 => 
+  array (
+    0 => 'Bayu Buana Tbk',
+    1 => 'https://id.investing.com/equities/bayu-buana-tbk',
+  ),
+  101345 => 
+  array (
+    0 => 'Bekasi Asri Pemula Tbk',
+    1 => 'https://id.investing.com/equities/bekasi-asri-pe',
+  ),
+  101346 => 
+  array (
+    0 => 'Bekasi Fajar Industrial Estate',
+    1 => 'https://id.investing.com/equities/bekasi-fajar-i',
+  ),
+  101347 => 
+  array (
+    0 => 'Benakat Integra Tbk',
+    1 => 'https://id.investing.com/equities/benakat-integr',
+  ),
+  101220 => 
+  array (
+    0 => 'Bentoel International Investama',
+    1 => 'https://id.investing.com/equities/bentoel-int-in',
+  ),
+  101348 => 
+  array (
+    0 => 'Berau Coal Energy Tbk',
+    1 => 'https://id.investing.com/equities/berau-coal-ene',
+  ),
+  101349 => 
+  array (
+    0 => 'Berlina Tbk',
+    1 => 'https://id.investing.com/equities/berlina-tbk',
+  ),
+  101350 => 
+  array (
+    0 => 'Betonjaya Manunggal Tbk',
+    1 => 'https://id.investing.com/equities/betonjaya-manu',
+  ),
+  101351 => 
+  array (
+    0 => 'BFI Finance Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/bfi-finance-in',
+  ),
+  101352 => 
+  array (
+    0 => 'Bhuwanatala Indah Permai Tbk',
+    1 => 'https://id.investing.com/equities/bhuwanatala-i',
+  ),
+  955952 => 
+  array (
+    0 => 'Binakarya Jaya Abadi Tbk PT',
+    1 => 'https://id.investing.com/equities/binakarya-jaya-abadi-tbk-pt',
+  ),
+  945724 => 
+  array (
+    0 => 'Bintang Mitra Semestaraya Tbk',
+    1 => 'https://id.investing.com/equities/bintang-mitra-semestaraya',
+  ),
+  994431 => 
+  array (
+    0 => 'Bintang Oto Global Tbk PT',
+    1 => 'https://id.investing.com/equities/bintang-oto-global-tbk-pt',
+  ),
+  101353 => 
+  array (
+    0 => 'Bisi International Tbk',
+    1 => 'https://id.investing.com/equities/bisi-internati',
+  ),
+  943663 => 
+  array (
+    0 => 'Blue Bird Tbk',
+    1 => 'https://id.investing.com/equities/blue-bird',
+  ),
+  101355 => 
+  array (
+    0 => 'Borneo Lumbung Energi & Metal',
+    1 => 'https://id.investing.com/equities/borneo-lumbung',
+  ),
+  101221 => 
+  array (
+    0 => 'Buana Finance Tbk',
+    1 => 'https://id.investing.com/equities/buana-finance',
+  ),
+  101357 => 
+  array (
+    0 => 'Buana Listya Tama Tbk PT',
+    1 => 'https://id.investing.com/equities/buana-listya-t',
+  ),
+  101358 => 
+  array (
+    0 => 'Budi Starch & Sweetener Tbk',
+    1 => 'https://id.investing.com/equities/budi-starch--',
+  ),
+  955767 => 
+  array (
+    0 => 'Bukaka Teknik Utama Tbk Pt',
+    1 => 'https://id.investing.com/equities/bukaka-teknik-utama',
+  ),
+  101359 => 
+  array (
+    0 => 'Bukit Darmo Property Tbk',
+    1 => 'https://id.investing.com/equities/bukit-darmo-pr',
+  ),
+  101360 => 
+  array (
+    0 => 'Bukit Uluwatu Villa Tbk',
+    1 => 'https://id.investing.com/equities/bukit-uluwatu',
+  ),
+  101361 => 
+  array (
+    0 => 'Bumi Citra Permai Tbk',
+    1 => 'https://id.investing.com/equities/bumi-citra-per',
+  ),
+  101363 => 
+  array (
+    0 => 'Bumi Resources Tbk',
+    1 => 'https://id.investing.com/equities/bumi-resources',
+  ),
+  101362 => 
+  array (
+    0 => 'Bumi Resources Minerals Tbk',
+    1 => 'https://id.investing.com/equities/bumi-r-mineral',
+  ),
+  101364 => 
+  array (
+    0 => 'Bumi Serpong Damai Tbk',
+    1 => 'https://id.investing.com/equities/bumi-serpong-d',
+  ),
+  101365 => 
+  array (
+    0 => 'Bumi Teknokultura Unggul Tbk',
+    1 => 'https://id.investing.com/equities/bumi-teknokult',
+  ),
+  101222 => 
+  array (
+    0 => 'Cakra Mineral Tbk',
+    1 => 'https://id.investing.com/equities/cakra-mineral',
+  ),
+  986048 => 
+  array (
+    0 => 'Capital Financial Indonesia Tbk PT',
+    1 => 'https://id.investing.com/equities/capital-financial-indonesia-tbk-pt',
+  ),
+  101367 => 
+  array (
+    0 => 'Capitalinc Investment Tbk',
+    1 => 'https://id.investing.com/equities/capitalinc-inv',
+  ),
+  101368 => 
+  array (
+    0 => 'Capitol Nusantara Indonesia',
+    1 => 'https://id.investing.com/equities/capitol-nusant',
+  ),
+  101369 => 
+  array (
+    0 => 'Cardig Aero Services Tbk',
+    1 => 'https://id.investing.com/equities/cardig-aero-se',
+  ),
+  101370 => 
+  array (
+    0 => 'Catur Sentosa Adiprana Tbk',
+    1 => 'https://id.investing.com/equities/catur-sentosa',
+  ),
+  102969 => 
+  array (
+    0 => 'Centex Tbk Prf',
+    1 => 'https://id.investing.com/equities/centex-tbk-sp',
+  ),
+  998093 => 
+  array (
+    0 => 'Central Omega Resources Tbk PT',
+    1 => 'https://id.investing.com/equities/central-omega-resources-tbk-pt',
+  ),
+  101371 => 
+  array (
+    0 => 'Central Proteina Prima Tbk',
+    1 => 'https://id.investing.com/equities/central-protei',
+  ),
+  101372 => 
+  array (
+    0 => 'Centratama Telekomunikasi Ind',
+    1 => 'https://id.investing.com/equities/centrin-online',
+  ),
+  101374 => 
+  array (
+    0 => 'Champion Pacific Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/champion-pasif',
+  ),
+  101375 => 
+  array (
+    0 => 'Chandra Asri Petrochemical Tbk',
+    1 => 'https://id.investing.com/equities/chandra-asri-p',
+  ),
+  101376 => 
+  array (
+    0 => 'Charoen Pokphand Indonesia TBK PT',
+    1 => 'https://id.investing.com/equities/charoen-pokpha',
+  ),
+  102979 => 
+  array (
+    0 => 'Chitose Internasional Tbk',
+    1 => 'https://id.investing.com/equities/chitose-intern',
+  ),
+  985288 => 
+  array (
+    0 => 'Cikarang Listrindo Tbk PT',
+    1 => 'https://id.investing.com/equities/cikarang-listrindo-tbk-pt',
+  ),
+  101378 => 
+  array (
+    0 => 'Ciputra Development Tbk',
+    1 => 'https://id.investing.com/equities/ciputra-develo',
+  ),
+  101381 => 
+  array (
+    0 => 'Citatah Tbk',
+    1 => 'https://id.investing.com/equities/citatah-indust',
+  ),
+  101377 => 
+  array (
+    0 => 'Citra Maharlika Nusantara Corpora Tbk PT',
+    1 => 'https://id.investing.com/equities/cipaganti-citr',
+  ),
+  101382 => 
+  array (
+    0 => 'Citra Marga Nusaphala Persada',
+    1 => 'https://id.investing.com/equities/citra-marga-n',
+  ),
+  945180 => 
+  array (
+    0 => 'Citra Tubindo Tbk',
+    1 => 'https://id.investing.com/equities/citra-tubindo-tbk-pt',
+  ),
+  101383 => 
+  array (
+    0 => 'Clipan Finance Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/clipan-finance',
+  ),
+  101384 => 
+  array (
+    0 => 'Colorpak Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/colorpak-indon',
+  ),
+  101385 => 
+  array (
+    0 => 'Cowell Development Tbk',
+    1 => 'https://id.investing.com/equities/cowell-develop',
+  ),
+  945182 => 
+  array (
+    0 => 'Danasupra Erapacific Tbk',
+    1 => 'https://id.investing.com/equities/danasupra-erapacific-tbk-pt',
+  ),
+  101223 => 
+  array (
+    0 => 'Danayasa Arthatama Tbk',
+    1 => 'https://id.investing.com/equities/danayasa-artha',
+  ),
+  101386 => 
+  array (
+    0 => 'Darma Henwa Tbk',
+    1 => 'https://id.investing.com/equities/darma-henwa-tb',
+  ),
+  101387 => 
+  array (
+    0 => 'Darya-Varia Laboratoria Tbk',
+    1 => 'https://id.investing.com/equities/darya-varia-la',
+  ),
+  101224 => 
+  array (
+    0 => 'Delta Djakarta Tbk',
+    1 => 'https://id.investing.com/equities/delta-jakarta',
+  ),
+  101388 => 
+  array (
+    0 => 'Delta Dunia Makmur Tbk',
+    1 => 'https://id.investing.com/equities/delta-dunia-ma',
+  ),
+  101225 => 
+  array (
+    0 => 'Destinasi Tirta Nusantara Tbk',
+    1 => 'https://id.investing.com/equities/destinasi-tirt',
+  ),
+  101389 => 
+  array (
+    0 => 'Dharma Samudera Fishing Tbk',
+    1 => 'https://id.investing.com/equities/dharma-samuder',
+  ),
+  101390 => 
+  array (
+    0 => 'Dharma Satya Nusantara Tbk',
+    1 => 'https://id.investing.com/equities/dharma-satya-n',
+  ),
+  102977 => 
+  array (
+    0 => 'Dian Swastatika Sentosa Tbk',
+    1 => 'https://id.investing.com/equities/dian-swastatik',
+  ),
+  962002 => 
+  array (
+    0 => 'Dua Putra Utama Makmur PT',
+    1 => 'https://id.investing.com/equities/dua-putra-utama-makmur-pt',
+  ),
+  101392 => 
+  array (
+    0 => 'Duta Anggada Realty Tbk',
+    1 => 'https://id.investing.com/equities/duta-anggada-r',
+  ),
+  985737 => 
+  array (
+    0 => 'Duta Intidaya Tbk PT',
+    1 => 'https://id.investing.com/equities/duta-intidaya-tbk-pt',
+  ),
+  101393 => 
+  array (
+    0 => 'Duta Pertiwi Tbk',
+    1 => 'https://id.investing.com/equities/duta-pertiwi-t',
+  ),
+  101391 => 
+  array (
+    0 => 'Duta Pertiwi Nusantara Tbk',
+    1 => 'https://id.investing.com/equities/dt-pertiwi-nus',
+  ),
+  102132 => 
+  array (
+    0 => 'Dwi Aneka Jaya Kemasindo Tbk',
+    1 => 'https://id.investing.com/equities/dwi-aneka-jaya',
+  ),
+  101394 => 
+  array (
+    0 => 'Dyandra Media International',
+    1 => 'https://id.investing.com/equities/dyandra-media',
+  ),
+  101366 => 
+  array (
+    0 => 'Eagle High Plantations Tbk',
+    1 => 'https://id.investing.com/equities/bw-plantation',
+  ),
+  102133 => 
+  array (
+    0 => 'Eka Sari Lorena Transport Tbk',
+    1 => 'https://id.investing.com/equities/eka-sari-loren',
+  ),
+  101395 => 
+  array (
+    0 => 'Ekadharma International Tbk',
+    1 => 'https://id.investing.com/equities/ekadharma-inte',
+  ),
+  101226 => 
+  array (
+    0 => 'Elang Mahkota Teknologi Tbk',
+    1 => 'https://id.investing.com/equities/elang-mahkota',
+  ),
+  101396 => 
+  array (
+    0 => 'Electronic City Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/electronic-cit',
+  ),
+  101397 => 
+  array (
+    0 => 'Elnusa Tbk',
+    1 => 'https://id.investing.com/equities/elnusa-tbk',
+  ),
+  101398 => 
+  array (
+    0 => 'Energi Mega Persada Tbk',
+    1 => 'https://id.investing.com/equities/energi-mega-pe',
+  ),
+  101227 => 
+  array (
+    0 => 'Enseval Putra Megatrading Tbk',
+    1 => 'https://id.investing.com/equities/enseval-putera',
+  ),
+  101228 => 
+  array (
+    0 => 'Equity Development Investment',
+    1 => 'https://id.investing.com/equities/equity-develop',
+  ),
+  101399 => 
+  array (
+    0 => 'Erajaya Swasembada Tbk',
+    1 => 'https://id.investing.com/equities/erajaya-swasem',
+  ),
+  101229 => 
+  array (
+    0 => 'Eratex Djaja Tbk',
+    1 => 'https://id.investing.com/equities/eratex-djaja-t',
+  ),
+  101400 => 
+  array (
+    0 => 'Eterindo Wahanatama Tbk',
+    1 => 'https://id.investing.com/equities/eterindo-wahan',
+  ),
+  101401 => 
+  array (
+    0 => 'Eureka Prima Jakarta Tbk',
+    1 => 'https://id.investing.com/equities/eureka-prima',
+  ),
+  101230 => 
+  array (
+    0 => 'Ever Shine Textile Industry',
+    1 => 'https://id.investing.com/equities/ever-shine-tex',
+  ),
+  101402 => 
+  array (
+    0 => 'Evergreen Invesco Tbk',
+    1 => 'https://id.investing.com/equities/evergreen-inve',
+  ),
+  101403 => 
+  array (
+    0 => 'Exploitasi Energi Indonesia',
+    1 => 'https://id.investing.com/equities/exploitasi-ene',
+  ),
+  101404 => 
+  array (
+    0 => 'Express Transindo Utama Tbk',
+    1 => 'https://id.investing.com/equities/express-transi',
+  ),
+  101405 => 
+  array (
+    0 => 'Fajar Surya Wisesa Tbk',
+    1 => 'https://id.investing.com/equities/fajar-surya-wi',
+  ),
+  101231 => 
+  array (
+    0 => 'Fast Food Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/fast-food-indo',
+  ),
+  101406 => 
+  array (
+    0 => 'First Media Tbk',
+    1 => 'https://id.investing.com/equities/first-media-tb',
+  ),
+  101232 => 
+  array (
+    0 => 'Fks Multi Agro Tbk',
+    1 => 'https://id.investing.com/equities/fks-multi-agro',
+  ),
+  101407 => 
+  array (
+    0 => 'Fortune Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/fortune-indone',
+  ),
+  101408 => 
+  array (
+    0 => 'Fortune Mate Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/fortune-mate-i',
+  ),
+  101409 => 
+  array (
+    0 => 'Gading Development Tbk',
+    1 => 'https://id.investing.com/equities/gading-develop',
+  ),
+  101410 => 
+  array (
+    0 => 'Gajah Tunggal Tbk',
+    1 => 'https://id.investing.com/equities/gajah-tunggal',
+  ),
+  101411 => 
+  array (
+    0 => 'Garda Tujuh Buana Tbk',
+    1 => 'https://id.investing.com/equities/garda-tujuh-bu',
+  ),
+  101412 => 
+  array (
+    0 => 'Garuda Indonesia Persero Tbk',
+    1 => 'https://id.investing.com/equities/garuda-indones',
+  ),
+  955953 => 
+  array (
+    0 => 'Garuda Metalindo Tbk PT',
+    1 => 'https://id.investing.com/equities/garuda-metalindo-tbk',
+  ),
+  101413 => 
+  array (
+    0 => 'Gema Grahasarana Tbk',
+    1 => 'https://id.investing.com/equities/gema-grahasara',
+  ),
+  101414 => 
+  array (
+    0 => 'Global Mediacom Tbk',
+    1 => 'https://id.investing.com/equities/global-mediaco',
+  ),
+  101415 => 
+  array (
+    0 => 'Global Teleshop Tbk',
+    1 => 'https://id.investing.com/equities/global-telesho',
+  ),
+  101416 => 
+  array (
+    0 => 'Golden Eagle Energy Tbk',
+    1 => 'https://id.investing.com/equities/golden-eagle-e',
+  ),
+  101233 => 
+  array (
+    0 => 'Golden Energy Mines Tbk',
+    1 => 'https://id.investing.com/equities/golden-energy',
+  ),
+  943646 => 
+  array (
+    0 => 'Golden Plantation Tbk',
+    1 => 'https://id.investing.com/equities/golden-plantation-pt',
+  ),
+  943650 => 
+  array (
+    0 => 'Goodyear Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/goodyear-indon',
+  ),
+  101418 => 
+  array (
+    0 => 'Gowa Makassar Tourism Develop',
+    1 => 'https://id.investing.com/equities/gowa-makassar',
+  ),
+  101419 => 
+  array (
+    0 => 'Gozco Plantations Tbk',
+    1 => 'https://id.investing.com/equities/gozco-plantati',
+  ),
+  985853 => 
+  array (
+    0 => 'Graha Andrasentra Propertindo Tbk PT',
+    1 => 'https://id.investing.com/equities/graha-andrasentra-propertindo',
+  ),
+  101420 => 
+  array (
+    0 => 'Graha Layar Prima Tbk',
+    1 => 'https://id.investing.com/equities/graha-layar-pr',
+  ),
+  101421 => 
+  array (
+    0 => 'Grand Kartech Tbk',
+    1 => 'https://id.investing.com/equities/grand-kartech',
+  ),
+  101422 => 
+  array (
+    0 => 'Greenwood Sejahtera Tbk',
+    1 => 'https://id.investing.com/equities/greenwood-seja',
+  ),
+  101423 => 
+  array (
+    0 => 'Gudang Garam Tbk',
+    1 => 'https://id.investing.com/equities/gudang-garam-t',
+  ),
+  101424 => 
+  array (
+    0 => 'Gunawan Dianjaya Steel Tbk',
+    1 => 'https://id.investing.com/equities/gunawan-dianja',
+  ),
+  101425 => 
+  array (
+    0 => 'Hanson International Tbk',
+    1 => 'https://id.investing.com/equities/hanson-int-sb',
+  ),
+  101426 => 
+  array (
+    0 => 'Hanson International Tbk Prf',
+    1 => 'https://id.investing.com/equities/hanson-int-sp',
+  ),
+  101207 => 
+  array (
+    0 => 'Asuransi Harta Aman Pratama Tbk PT',
+    1 => 'https://id.investing.com/equities/ahap-tbk',
+  ),
+  101427 => 
+  array (
+    0 => 'Harum Energy Tbk',
+    1 => 'https://id.investing.com/equities/harum-energy',
+  ),
+  943655 => 
+  array (
+    0 => 'Hd Capital Tbk',
+    1 => 'https://id.investing.com/equities/hd-capital',
+  ),
+  101428 => 
+  array (
+    0 => 'Hero Supermarket Tbk',
+    1 => 'https://id.investing.com/equities/hero-super-mar',
+  ),
+  101429 => 
+  array (
+    0 => 'Hexindo Adiperkasa Tbk',
+    1 => 'https://id.investing.com/equities/hexindo-adiper',
+  ),
+  943648 => 
+  array (
+    0 => 'Hm Sampoerna Tbk',
+    1 => 'https://id.investing.com/equities/h-m-sampoerna',
+  ),
+  101430 => 
+  array (
+    0 => 'Holcim Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/holcim-indones',
+  ),
+  101431 => 
+  array (
+    0 => 'Hotel Mandarine Regency Tbk PT',
+    1 => 'https://id.investing.com/equities/hotel-mandarin',
+  ),
+  101432 => 
+  array (
+    0 => 'Hotel Sahid Jaya Tbk',
+    1 => 'https://id.investing.com/equities/hotel-sahid-ja',
+  ),
+  943656 => 
+  array (
+    0 => 'Humpuss Intermoda Transportasi',
+    1 => 'https://id.investing.com/equities/humpuss-interm',
+  ),
+  101433 => 
+  array (
+    0 => 'Ictsi Jasa Prima Tbk',
+    1 => 'https://id.investing.com/equities/ictsi-jasa-pri',
+  ),
+  943664 => 
+  array (
+    0 => 'Impack Pratama Industri Tbk',
+    1 => 'https://id.investing.com/equities/impack-pratama',
+  ),
+  101435 => 
+  array (
+    0 => 'Indah Kiat Pulp & Paper Tbk',
+    1 => 'https://id.investing.com/equities/indah-kiat-pul',
+  ),
+  101436 => 
+  array (
+    0 => 'Indal Aluminium Industry Tbk',
+    1 => 'https://id.investing.com/equities/indal-aluminiu',
+  ),
+  101437 => 
+  array (
+    0 => 'Indika Energy Tbk',
+    1 => 'https://id.investing.com/equities/indika-energy',
+  ),
+  101438 => 
+  array (
+    0 => 'Indo Acidatama Tbk',
+    1 => 'https://id.investing.com/equities/indo-acidatama',
+  ),
+  101234 => 
+  array (
+    0 => 'Indo Kordsa Tbk',
+    1 => 'https://id.investing.com/equities/indo-kordsa-tb',
+  ),
+  101235 => 
+  array (
+    0 => 'Indo Straits Tbk',
+    1 => 'https://id.investing.com/equities/indo-straits',
+  ),
+  101439 => 
+  array (
+    0 => 'Indo Tambangraya Megah Tbk',
+    1 => 'https://id.investing.com/equities/indo-tambangra',
+  ),
+  101440 => 
+  array (
+    0 => 'Indocement Tunggal Prakarsa',
+    1 => 'https://id.investing.com/equities/indocement-t-p',
+  ),
+  101441 => 
+  array (
+    0 => 'Indofarma Tbk',
+    1 => 'https://id.investing.com/equities/indofarma-tbk',
+  ),
+  101443 => 
+  array (
+    0 => 'Indofood Sukses Makmur Tbk',
+    1 => 'https://id.investing.com/equities/indofood-s-m-t',
+  ),
+  101442 => 
+  array (
+    0 => 'Indofood Cbp Sukses Makmur Tbk',
+    1 => 'https://id.investing.com/equities/indofood-cbp',
+  ),
+  101444 => 
+  array (
+    0 => 'Indomobil Multi Jasa Tbk',
+    1 => 'https://id.investing.com/equities/indomobil-mult',
+  ),
+  101445 => 
+  array (
+    0 => 'Indomobil Sukses Internasional',
+    1 => 'https://id.investing.com/equities/indomobil-suks',
+  ),
+  962003 => 
+  array (
+    0 => 'Indonesia Pondasi Raya Tbk PT',
+    1 => 'https://id.investing.com/equities/indonesia-pondasi-raya-tbk-pt',
+  ),
+  943994 => 
+  array (
+    0 => 'Indonesia Prima Property Tbk',
+    1 => 'https://id.investing.com/equities/indo-prima-prope',
+  ),
+  101434 => 
+  array (
+    0 => 'Indonesia Transport & Infrastructure',
+    1 => 'https://id.investing.com/equities/ind-air-transp',
+  ),
+  102970 => 
+  array (
+    0 => 'Indonesian Paradise Property',
+    1 => 'https://id.investing.com/equities/indonesian-p-p',
+  ),
+  101446 => 
+  array (
+    0 => 'Indopoly Swakarsa Industry Tbk',
+    1 => 'https://id.investing.com/equities/indopoly-swaka',
+  ),
+  101236 => 
+  array (
+    0 => 'Indorama Synthetics Tbk',
+    1 => 'https://id.investing.com/equities/indorama-synte',
+  ),
+  101447 => 
+  array (
+    0 => 'Indoritel Makmur Internasional',
+    1 => 'https://id.investing.com/equities/indoritel-makm',
+  ),
+  101448 => 
+  array (
+    0 => 'Indosat Tbk',
+    1 => 'https://id.investing.com/equities/indosat-tbk',
+  ),
+  101449 => 
+  array (
+    0 => 'Indospring Tbk',
+    1 => 'https://id.investing.com/equities/indospring-tbk',
+  ),
+  101451 => 
+  array (
+    0 => 'Inovisi Infracom Tbk',
+    1 => 'https://id.investing.com/equities/inovisi-infrac',
+  ),
+  943644 => 
+  array (
+    0 => 'Intan Baruprana Finance Tbk',
+    1 => 'https://id.investing.com/equities/intan-baruprana-finance-tbk-pt',
+  ),
+  101452 => 
+  array (
+    0 => 'Intanwijaya Internasional Tbk',
+    1 => 'https://id.investing.com/equities/intanwijaya-in',
+  ),
+  946578 => 
+  array (
+    0 => 'Inter-Delta Tbk',
+    1 => 'https://id.investing.com/equities/inter-delta-tbk-pt',
+  ),
+  101453 => 
+  array (
+    0 => 'Intermedia Capital Tbk',
+    1 => 'https://id.investing.com/equities/intermedia-cap',
+  ),
+  101454 => 
+  array (
+    0 => 'Inti Bangun Sejahtera Tbk',
+    1 => 'https://id.investing.com/equities/inti-bangun-se',
+  ),
+  945183 => 
+  array (
+    0 => 'Inti Kapuas Arowana Tbk',
+    1 => 'https://id.investing.com/equities/inti-agri-resources-tbk-pt',
+  ),
+  101455 => 
+  array (
+    0 => 'Intikeramik Alamasri Industri',
+    1 => 'https://id.investing.com/equities/intikeramik-al',
+  ),
+  101456 => 
+  array (
+    0 => 'Intiland Development Tbk',
+    1 => 'https://id.investing.com/equities/intiland-devel',
+  ),
+  101457 => 
+  array (
+    0 => 'Intraco Penta Tbk',
+    1 => 'https://id.investing.com/equities/intraco-penta',
+  ),
+  101458 => 
+  array (
+    0 => 'Island Concepts Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/island-concept',
+  ),
+  101459 => 
+  array (
+    0 => 'J Resources Asia Pasifik Tbk',
+    1 => 'https://id.investing.com/equities/j-resources-as',
+  ),
+  101468 => 
+  array (
+    0 => 'Jakarta Int Hotels & Dev',
+    1 => 'https://id.investing.com/equities/jkt-intl-hotel',
+  ),
+  101237 => 
+  array (
+    0 => 'Jakarta Kyoei Steel Works Tbk',
+    1 => 'https://id.investing.com/equities/jkt-kyoei-stee',
+  ),
+  945179 => 
+  array (
+    0 => 'Jakarta Setiabudi Internasional',
+    1 => 'https://id.investing.com/equities/jakarta-setiabudi-int',
+  ),
+  101450 => 
+  array (
+    0 => 'Industri Jamu dan Farmasi Sido Muncul Tbk PT',
+    1 => 'https://id.investing.com/equities/industri-jamu',
+  ),
+  101461 => 
+  array (
+    0 => 'Japfa Comfeed Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/japfa-comfeed',
+  ),
+  101462 => 
+  array (
+    0 => 'Jasa Marga Tbk',
+    1 => 'https://id.investing.com/equities/jasa-marga',
+  ),
+  101463 => 
+  array (
+    0 => 'Jasuindo Tiga Perkasa Tbk',
+    1 => 'https://id.investing.com/equities/jasuindo-tiga',
+  ),
+  101460 => 
+  array (
+    0 => 'Jaya Agra Wattie Tbk',
+    1 => 'https://id.investing.com/equities/j.a.-wattie',
+  ),
+  101464 => 
+  array (
+    0 => 'Jaya Konstruksi Manggala Pratama',
+    1 => 'https://id.investing.com/equities/jaya-konstruks',
+  ),
+  101465 => 
+  array (
+    0 => 'Jaya Pari Steel Tbk',
+    1 => 'https://id.investing.com/equities/jaya-pari-stee',
+  ),
+  101466 => 
+  array (
+    0 => 'Jaya Real Property Tbk',
+    1 => 'https://id.investing.com/equities/jaya-real-prop',
+  ),
+  101467 => 
+  array (
+    0 => 'Jembo Cable Company Tbk',
+    1 => 'https://id.investing.com/equities/jembo-cable-co',
+  ),
+  101238 => 
+  array (
+    0 => 'Kabelindo Murni Tbk',
+    1 => 'https://id.investing.com/equities/kabelindo-murn',
+  ),
+  101470 => 
+  array (
+    0 => 'Kalbe Farma Tbk',
+    1 => 'https://id.investing.com/equities/kalbe-farma-tb',
+  ),
+  101469 => 
+  array (
+    0 => 'Kawasan Industri Jababeka Tbk',
+    1 => 'https://id.investing.com/equities/k-i-jababeka',
+  ),
+  101239 => 
+  array (
+    0 => 'Kedaung Indah Can Tbk',
+    1 => 'https://id.investing.com/equities/kedaung-indah',
+  ),
+  101471 => 
+  array (
+    0 => 'Kedawung Setia Industrial Tbk',
+    1 => 'https://id.investing.com/equities/kedawung-setia',
+  ),
+  101472 => 
+  array (
+    0 => 'Keramika Indonesia Assosiasi',
+    1 => 'https://id.investing.com/equities/keramika-indon',
+  ),
+  101473 => 
+  array (
+    0 => 'Kertas Basuki Rachmat Indonesia',
+    1 => 'https://id.investing.com/equities/kertas-basuki',
+  ),
+  101474 => 
+  array (
+    0 => 'Kimia Farma Persero Tbk',
+    1 => 'https://id.investing.com/equities/kimia-farma',
+  ),
+  962004 => 
+  array (
+    0 => 'Kino Indonesia Tbk PT',
+    1 => 'https://id.investing.com/equities/kino-indonesia-tbk-pt',
+  ),
+  101475 => 
+  array (
+    0 => 'Kmi Wire And Cable Tbk',
+    1 => 'https://id.investing.com/equities/kmi-wire-n-cab',
+  ),
+  101476 => 
+  array (
+    0 => 'Kobexindo Tractors Tbk',
+    1 => 'https://id.investing.com/equities/kobexindo-trac',
+  ),
+  101240 => 
+  array (
+    0 => 'Kokoh Inti Arebama Tbk',
+    1 => 'https://id.investing.com/equities/kokoh-inti-are',
+  ),
+  101477 => 
+  array (
+    0 => 'Krakatau Steel Persero Tbk',
+    1 => 'https://id.investing.com/equities/krakatau-steel',
+  ),
+  101478 => 
+  array (
+    0 => 'Kresna Graha Investama Tbk PT',
+    1 => 'https://id.investing.com/equities/kresna-graha-s',
+  ),
+  101479 => 
+  array (
+    0 => 'Lamicitra Nusantara Tbk',
+    1 => 'https://id.investing.com/equities/lamicitra-nusa',
+  ),
+  101480 => 
+  array (
+    0 => 'Langgeng Makmur Industri Tbk',
+    1 => 'https://id.investing.com/equities/langgeng-makmu',
+  ),
+  101481 => 
+  array (
+    0 => 'Lautan Luas Tbk',
+    1 => 'https://id.investing.com/equities/lautan-luas-tb',
+  ),
+  101482 => 
+  array (
+    0 => 'Leyand International Tbk',
+    1 => 'https://id.investing.com/equities/leyand-interna',
+  ),
+  101241 => 
+  array (
+    0 => 'Limas Indonesia Makmur Tbk',
+    1 => 'https://id.investing.com/equities/limas-centric',
+  ),
+  102980 => 
+  array (
+    0 => 'Link Net Tbk',
+    1 => 'https://id.investing.com/equities/link-net',
+  ),
+  102975 => 
+  array (
+    0 => 'Lion Metal Works Tbk',
+    1 => 'https://id.investing.com/equities/lion-metal-wor',
+  ),
+  101242 => 
+  array (
+    0 => 'Lionmesh Prima Tbk',
+    1 => 'https://id.investing.com/equities/lionmesh-prima',
+  ),
+  101483 => 
+  array (
+    0 => 'Lippo Cikarang Tbk',
+    1 => 'https://id.investing.com/equities/lippo-cikarang',
+  ),
+  101484 => 
+  array (
+    0 => 'Lippo General Insurance Tbk',
+    1 => 'https://id.investing.com/equities/lippo-general',
+  ),
+  101485 => 
+  array (
+    0 => 'Lippo Karawaci Tbk',
+    1 => 'https://id.investing.com/equities/lippo-karawaci',
+  ),
+  101486 => 
+  array (
+    0 => 'Lippo Securities Tbk',
+    1 => 'https://id.investing.com/equities/lippo-securiti',
+  ),
+  101487 => 
+  array (
+    0 => 'Logindo Samudramakmur Tbk',
+    1 => 'https://id.investing.com/equities/logindo-samudr',
+  ),
+  101243 => 
+  array (
+    0 => 'Lotte Chemical Titan Tbk',
+    1 => 'https://id.investing.com/equities/lotte-chemical',
+  ),
+  943659 => 
+  array (
+    0 => 'Magna Finance Tbk',
+    1 => 'https://id.investing.com/equities/magna-finance',
+  ),
+  101489 => 
+  array (
+    0 => 'Mahaka Media Tbk',
+    1 => 'https://id.investing.com/equities/mahaka-media-t',
+  ),
+  963746 => 
+  array (
+    0 => 'Mahaka Radio Integra Tbk PT',
+    1 => 'https://id.investing.com/equities/mahaka-radio-integra-tbk-pt',
+  ),
+  101490 => 
+  array (
+    0 => 'Malindo Feedmill Tbk',
+    1 => 'https://id.investing.com/equities/malindo-feedmi',
+  ),
+  101244 => 
+  array (
+    0 => 'Mandala Multifinance Tbk',
+    1 => 'https://id.investing.com/equities/mandala-multif',
+  ),
+  101491 => 
+  array (
+    0 => 'Mandom Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/mandom-indones',
+  ),
+  101492 => 
+  array (
+    0 => 'Martina Berto Tbk',
+    1 => 'https://id.investing.com/equities/martina-berto',
+  ),
+  943649 => 
+  array (
+    0 => 'Mas Murni Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/mas-murni-sb',
+  ),
+  101245 => 
+  array (
+    0 => 'Maskapai Reasuransi Indonesia',
+    1 => 'https://id.investing.com/equities/marein-tbk',
+  ),
+  101493 => 
+  array (
+    0 => 'Matahari Department Store Tbk',
+    1 => 'https://id.investing.com/equities/matahari-depar',
+  ),
+  101494 => 
+  array (
+    0 => 'Matahari Putra Prima Tbk',
+    1 => 'https://id.investing.com/equities/matahari-putra',
+  ),
+  101495 => 
+  array (
+    0 => 'Mayora Indah Tbk',
+    1 => 'https://id.investing.com/equities/mayora-indah-t',
+  ),
+  101496 => 
+  array (
+    0 => 'Medco Energi Internasional Tbk',
+    1 => 'https://id.investing.com/equities/medco-energi-i',
+  ),
+  101497 => 
+  array (
+    0 => 'Media Nusantara Citra Tbk',
+    1 => 'https://id.investing.com/equities/media-nusantar',
+  ),
+  954961 => 
+  array (
+    0 => 'Mega Manunggal Property TBK PT',
+    1 => 'https://id.investing.com/equities/mega-manunggal-property',
+  ),
+  101498 => 
+  array (
+    0 => 'Megapolitan Developments Tbk',
+    1 => 'https://id.investing.com/equities/megapolitan-de',
+  ),
+  945178 => 
+  array (
+    0 => 'Merck Tbk',
+    1 => 'https://id.investing.com/equities/merck-tbk-pt',
+  ),
+  954960 => 
+  array (
+    0 => 'Merdeka Copper Gold TBK PT',
+    1 => 'https://id.investing.com/equities/merdeka-copper-gold-tbk-pt',
+  ),
+  101246 => 
+  array (
+    0 => 'Metro Realty Tbk',
+    1 => 'https://id.investing.com/equities/metro-realty',
+  ),
+  101499 => 
+  array (
+    0 => 'Metrodata Electronics Tbk',
+    1 => 'https://id.investing.com/equities/metrodata-elec',
+  ),
+  101247 => 
+  array (
+    0 => 'Metropolitan Kentjana Tbk',
+    1 => 'https://id.investing.com/equities/metropolitan-k',
+  ),
+  101500 => 
+  array (
+    0 => 'Metropolitan Land Tbk',
+    1 => 'https://id.investing.com/equities/metropolitan-l',
+  ),
+  101501 => 
+  array (
+    0 => 'Midi Utama Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/midi-utama',
+  ),
+  101502 => 
+  array (
+    0 => 'Millennium Pharmacon International',
+    1 => 'https://id.investing.com/equities/millennium-p-i',
+  ),
+  101503 => 
+  array (
+    0 => 'Minna Padi Investama Tbk',
+    1 => 'https://id.investing.com/equities/minna-padi-inv',
+  ),
+  101504 => 
+  array (
+    0 => 'Mitra Adiperkasa Tbk',
+    1 => 'https://id.investing.com/equities/mitra-adiperka',
+  ),
+  951639 => 
+  array (
+    0 => 'Mitra Energi Persada Tbk PT',
+    1 => 'https://id.investing.com/equities/mitra-energi-persada-tbk-pt',
+  ),
+  101505 => 
+  array (
+    0 => 'Mitra International Resources',
+    1 => 'https://id.investing.com/equities/mitra-internat',
+  ),
+  101506 => 
+  array (
+    0 => 'Mitra Investindo Tbk',
+    1 => 'https://id.investing.com/equities/mitra-investin',
+  ),
+  948393 => 
+  array (
+    0 => 'Mitra Keluarga Karyasehat Tbk PT',
+    1 => 'https://id.investing.com/equities/mitra-keluarga-karyasehat',
+  ),
+  960819 => 
+  array (
+    0 => 'Mitra Komunikasi Nusantara Tbk PT',
+    1 => 'https://id.investing.com/equities/mitra-komunikasi-nusantara-tbk-pt',
+  ),
+  963747 => 
+  array (
+    0 => 'Mitra Pemuda Tbk PT',
+    1 => 'https://id.investing.com/equities/mitra-pemuda-tbk-pt',
+  ),
+  101507 => 
+  array (
+    0 => 'Mitra Pinasthika Mustika',
+    1 => 'https://id.investing.com/equities/mitra-pinasthi',
+  ),
+  101508 => 
+  array (
+    0 => 'Mitrabahtera Segara Sejati Tbk',
+    1 => 'https://id.investing.com/equities/mitrabahtera-s',
+  ),
+  943662 => 
+  array (
+    0 => 'Mitrabara Adiperdana Tbk',
+    1 => 'https://id.investing.com/equities/mitrabara-adip',
+  ),
+  101509 => 
+  array (
+    0 => 'Mnc Investama Tbk',
+    1 => 'https://id.investing.com/equities/mnc-investama',
+  ),
+  101510 => 
+  array (
+    0 => 'Mnc Kapital Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/mnc-kapital',
+  ),
+  101511 => 
+  array (
+    0 => 'Mnc Land Tbk',
+    1 => 'https://id.investing.com/equities/mnc-land-tbk',
+  ),
+  101512 => 
+  array (
+    0 => 'Mnc Sky Vision Tbk',
+    1 => 'https://id.investing.com/equities/mnc-sky-vision',
+  ),
+  101513 => 
+  array (
+    0 => 'Modern Internasional Tbk',
+    1 => 'https://id.investing.com/equities/modern-interna',
+  ),
+  101514 => 
+  array (
+    0 => 'Modernland Realty Ltd Tbk',
+    1 => 'https://id.investing.com/equities/modernland-rea',
+  ),
+  101515 => 
+  array (
+    0 => 'Mulia Industrindo Tbk',
+    1 => 'https://id.investing.com/equities/mulia-industri',
+  ),
+  101516 => 
+  array (
+    0 => 'Multi Agro Gemilang Plantation Tbk PT',
+    1 => 'https://id.investing.com/equities/multi-agro-gem',
+  ),
+  101300 => 
+  array (
+    0 => 'Asuransi Multi Artha Guna Tbk PT',
+    1 => 'https://id.investing.com/equities/as-multi-artha',
+  ),
+  101517 => 
+  array (
+    0 => 'Multi Bintang Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/multi-bintang',
+  ),
+  101518 => 
+  array (
+    0 => 'Multi Indocitra Tbk',
+    1 => 'https://id.investing.com/equities/multi-indocitr',
+  ),
+  101519 => 
+  array (
+    0 => 'Multi Prima Sejahtera Tbk',
+    1 => 'https://id.investing.com/equities/multi-prima-se',
+  ),
+  101248 => 
+  array (
+    0 => 'Multifiling Mitra Indonesia',
+    1 => 'https://id.investing.com/equities/multifiling-mi',
+  ),
+  101520 => 
+  array (
+    0 => 'Multipolar Tbk',
+    1 => 'https://id.investing.com/equities/multipolar-tbk',
+  ),
+  101521 => 
+  array (
+    0 => 'Multipolar Technology Tbk',
+    1 => 'https://id.investing.com/equities/multipolar-tec',
+  ),
+  101522 => 
+  array (
+    0 => 'Multistrada Arah Sarana Tbk',
+    1 => 'https://id.investing.com/equities/multistrada-ar',
+  ),
+  101523 => 
+  array (
+    0 => 'Mustika Ratu Tbk',
+    1 => 'https://id.investing.com/equities/mustika-ratu-t',
+  ),
+  101524 => 
+  array (
+    0 => 'Nippon Indosari Corpindo Tbk',
+    1 => 'https://id.investing.com/equities/nippon-indosar',
+  ),
+  101525 => 
+  array (
+    0 => 'Nipress Tbk',
+    1 => 'https://id.investing.com/equities/nipress-tbk',
+  ),
+  101526 => 
+  array (
+    0 => 'Nirvana Development Tbk',
+    1 => 'https://id.investing.com/equities/nirvana-develo',
+  ),
+  101527 => 
+  array (
+    0 => 'Nusa Konstruksi Enjiniring Tbk',
+    1 => 'https://id.investing.com/equities/nusa-konstruks',
+  ),
+  101528 => 
+  array (
+    0 => 'Nusa Raya Cipta Tbk',
+    1 => 'https://id.investing.com/equities/nusa-raya-cipt',
+  ),
+  101529 => 
+  array (
+    0 => 'Nusantara Infrastructure Tbk',
+    1 => 'https://id.investing.com/equities/nusantara-infr',
+  ),
+  102971 => 
+  array (
+    0 => 'Nusantara Inti Corpora Tbk',
+    1 => 'https://id.investing.com/equities/nusantara-inti',
+  ),
+  997895 => 
+  array (
+    0 => 'Nusantara Pelabuhan Handal Tbk PT',
+    1 => 'https://id.investing.com/equities/nusantara-pelabuhan-handal-tbk-pt',
+  ),
+  101249 => 
+  array (
+    0 => 'Onix Capital Tbk',
+    1 => 'https://id.investing.com/equities/onix-capital',
+  ),
+  101608 => 
+  array (
+    0 => 'Pabrik Kertas Tjiwi Kimia Tbk',
+    1 => 'https://id.investing.com/equities/tjiwi-kimia-tb',
+  ),
+  101532 => 
+  array (
+    0 => 'Pacific Strategic Financial',
+    1 => 'https://id.investing.com/equities/pacific-strate',
+  ),
+  101533 => 
+  array (
+    0 => 'Pakuwon Jati Tbk',
+    1 => 'https://id.investing.com/equities/pakuwon-jati-t',
+  ),
+  101534 => 
+  array (
+    0 => 'Pan Brothers Tbk',
+    1 => 'https://id.investing.com/equities/pan-brothers-t',
+  ),
+  101252 => 
+  array (
+    0 => 'Panasia Indo Resources Tbk',
+    1 => 'https://id.investing.com/equities/panasia-indo-r',
+  ),
+  943654 => 
+  array (
+    0 => 'Panca Global Securities Tbk',
+    1 => 'https://id.investing.com/equities/panca-global-s',
+  ),
+  101535 => 
+  array (
+    0 => 'Panin Financial Tbk',
+    1 => 'https://id.investing.com/equities/panin-financia',
+  ),
+  101537 => 
+  array (
+    0 => 'Panin Sekuritas Tbk',
+    1 => 'https://id.investing.com/equities/panin-sekurita',
+  ),
+  101536 => 
+  array (
+    0 => 'Paninvest Tbk',
+    1 => 'https://id.investing.com/equities/paninvest',
+  ),
+  101538 => 
+  array (
+    0 => 'Panorama Sentrawisata Tbk',
+    1 => 'https://id.investing.com/equities/panorama-sentr',
+  ),
+  991136 => 
+  array (
+    0 => 'Paramita Bangun Sarana Tbk PT',
+    1 => 'https://id.investing.com/equities/paramita-bangun-sarana-tbk-pt',
+  ),
+  101540 => 
+  array (
+    0 => 'Pelangi Indah Canindo Tbk',
+    1 => 'https://id.investing.com/equities/pelangi-indah',
+  ),
+  101541 => 
+  array (
+    0 => 'Pelat Timah Nusantara Tbk',
+    1 => 'https://id.investing.com/equities/pelat-timah-nu',
+  ),
+  101542 => 
+  array (
+    0 => 'Pelayaran Nasional Bina Buana Raya',
+    1 => 'https://id.investing.com/equities/pelayaran-nasi',
+  ),
+  101253 => 
+  array (
+    0 => 'Pelayaran Nelly Dwi Putri Tbk',
+    1 => 'https://id.investing.com/equities/pelayaran-nell',
+  ),
+  101251 => 
+  array (
+    0 => 'Pelayaran Tempuran Emas Tbk',
+    1 => 'https://id.investing.com/equities/p-tempuran-ema',
+  ),
+  101250 => 
+  array (
+    0 => 'Pembangunan Graha Lestari Tbk',
+    1 => 'https://id.investing.com/equities/p-graha-lestar',
+  ),
+  101531 => 
+  array (
+    0 => 'Pembangunan Jaya Ancol Tbk',
+    1 => 'https://id.investing.com/equities/p-jaya-ancol',
+  ),
+  998095 => 
+  array (
+    0 => 'Perdana Bangun Pusaka Tbk PT',
+    1 => 'https://id.investing.com/equities/perdana-bangun-pusaka-tbk-pt',
+  ),
+  101543 => 
+  array (
+    0 => 'Perdana Gapura Prima Tbk',
+    1 => 'https://id.investing.com/equities/perdana-gapura',
+  ),
+  101544 => 
+  array (
+    0 => 'Perdana Karya Perkasa Tbk',
+    1 => 'https://id.investing.com/equities/perdana-karya',
+  ),
+  101545 => 
+  array (
+    0 => 'Permata Prima Sakti Tbk',
+    1 => 'https://id.investing.com/equities/permata-prima',
+  ),
+  101530 => 
+  array (
+    0 => 'Perusahaan Gas Negara Persero',
+    1 => 'https://id.investing.com/equities/p-gas-negara-t',
+  ),
+  101546 => 
+  array (
+    0 => 'Petrosea Tbk',
+    1 => 'https://id.investing.com/equities/petrosea-tbk',
+  ),
+  101254 => 
+  array (
+    0 => 'Pikko Land Development Tbk',
+    1 => 'https://id.investing.com/equities/pikko-land-dev',
+  ),
+  101255 => 
+  array (
+    0 => 'Pioneerindo Gourmet International',
+    1 => 'https://id.investing.com/equities/pioneerindo-go',
+  ),
+  101256 => 
+  array (
+    0 => 'Plaza Indonesia Realty Tbk',
+    1 => 'https://id.investing.com/equities/plaza-indonesi',
+  ),
+  101547 => 
+  array (
+    0 => 'Polaris Investama Tbk',
+    1 => 'https://id.investing.com/equities/polaris-invest',
+  ),
+  101548 => 
+  array (
+    0 => 'Polychem Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/polychem-indon',
+  ),
+  101257 => 
+  array (
+    0 => 'Pool Advista Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/pool-advista-i',
+  ),
+  101488 => 
+  array (
+    0 => 'PP London Sumatra Indonesia',
+    1 => 'https://id.investing.com/equities/london-sumatra',
+  ),
+  101549 => 
+  array (
+    0 => 'Pp Persero Tbk',
+    1 => 'https://id.investing.com/equities/pp-persero',
+  ),
+  953597 => 
+  array (
+    0 => 'PP Properti Tbk PT',
+    1 => 'https://id.investing.com/equities/pp-properti-tbk-pt',
+  ),
+  101258 => 
+  array (
+    0 => 'Prasidha Aneka Niaga Tbk',
+    1 => 'https://id.investing.com/equities/prasidha-aneka',
+  ),
+  101550 => 
+  array (
+    0 => 'Prima Alloy Steel Universal',
+    1 => 'https://id.investing.com/equities/prima-alloy-st',
+  ),
+  962001 => 
+  array (
+    0 => 'Primarindo Asia Infrastructure Tbk PT',
+    1 => 'https://id.investing.com/equities/primarindo-asia-infrastructure-tbk',
+  ),
+  994054 => 
+  array (
+    0 => 'Prodia Widyahusada Tbk PT',
+    1 => 'https://id.investing.com/equities/prodia-widyahusada-tbk-pt',
+  ),
+  986049 => 
+  array (
+    0 => 'Protech Mitra Perkasa Tbk PT',
+    1 => 'https://id.investing.com/equities/protech-mitra-perkasa-tbk-pt',
+  ),
+  101259 => 
+  array (
+    0 => 'Provident Agro Tbk',
+    1 => 'https://id.investing.com/equities/provident-agro',
+  ),
+  101260 => 
+  array (
+    0 => 'Pudjiadi & Sons Tbk',
+    1 => 'https://id.investing.com/equities/pudjiadi---son',
+  ),
+  101551 => 
+  array (
+    0 => 'Pudjiadi Prestige Tbk',
+    1 => 'https://id.investing.com/equities/pudjiadi-prest',
+  ),
+  953932 => 
+  array (
+    0 => 'Puradelta Lestari Tbk Pt',
+    1 => 'https://id.investing.com/equities/puradelta-lestari-tbk-pt',
+  ),
+  101552 => 
+  array (
+    0 => 'Pyridam Farma Tbk',
+    1 => 'https://id.investing.com/equities/pyridam-farma',
+  ),
+  953933 => 
+  array (
+    0 => 'Radana Bhaskara Finance Tbk',
+    1 => 'https://id.investing.com/equities/radana-bhaskara-finance-tbk',
+  ),
+  101553 => 
+  array (
+    0 => 'Radiant Utama Interinsco Tbk',
+    1 => 'https://id.investing.com/equities/radiant-utama',
+  ),
+  101554 => 
+  array (
+    0 => 'Ramayana Lestari Sentosa Tbk',
+    1 => 'https://id.investing.com/equities/ramayana-lesta',
+  ),
+  101555 => 
+  array (
+    0 => 'Ratu Prabu Energi Tbk',
+    1 => 'https://id.investing.com/equities/ratu-prabu-ene',
+  ),
+  950067 => 
+  array (
+    0 => 'Red Planet Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/red-planet-indonesia-tbk',
+  ),
+  101261 => 
+  array (
+    0 => 'Reliance Securities Tbk',
+    1 => 'https://id.investing.com/equities/reliance-secur',
+  ),
+  101556 => 
+  array (
+    0 => 'Renuka Coalindo Tbk',
+    1 => 'https://id.investing.com/equities/renuka-coalind',
+  ),
+  101557 => 
+  array (
+    0 => 'Resource Alam Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/resource-alam',
+  ),
+  101262 => 
+  array (
+    0 => 'Ricky Putra Globalindo Tbk',
+    1 => 'https://id.investing.com/equities/ricky-putra-gl',
+  ),
+  101263 => 
+  array (
+    0 => 'Rig Tenders Tbk',
+    1 => 'https://id.investing.com/equities/rig-tender-ind',
+  ),
+  101373 => 
+  array (
+    0 => 'Rimau Multi Putra Pratama',
+    1 => 'https://id.investing.com/equities/centris-multi',
+  ),
+  101558 => 
+  array (
+    0 => 'Rimo International Lestari Tbk PT',
+    1 => 'https://id.investing.com/equities/rimo-catur-les',
+  ),
+  101559 => 
+  array (
+    0 => 'Ristia Bintang Mahkotasejati',
+    1 => 'https://id.investing.com/equities/ristia-bintang',
+  ),
+  945177 => 
+  array (
+    0 => 'Roda Vivatex Tbk',
+    1 => 'https://id.investing.com/equities/roda-vivatex-tbk-pt',
+  ),
+  101560 => 
+  array (
+    0 => 'Rukun Raharja Tbk',
+    1 => 'https://id.investing.com/equities/rukun-raharja',
+  ),
+  101561 => 
+  array (
+    0 => 'Salim Ivomas Pratama Tbk',
+    1 => 'https://id.investing.com/equities/salim-ivomas-p',
+  ),
+  101562 => 
+  array (
+    0 => 'Samindo Resources Tbk',
+    1 => 'https://id.investing.com/equities/samindo-resour',
+  ),
+  101563 => 
+  array (
+    0 => 'Sampoerna Agro Tbk',
+    1 => 'https://id.investing.com/equities/sampoerna-agro',
+  ),
+  101264 => 
+  array (
+    0 => 'Samudera Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/samudera-indon',
+  ),
+  101564 => 
+  array (
+    0 => 'Sarana Meditama Metropolitan',
+    1 => 'https://id.investing.com/equities/sarana-meditam',
+  ),
+  101565 => 
+  array (
+    0 => 'Sarana Menara Nusantara Tbk',
+    1 => 'https://id.investing.com/equities/sarana-menara',
+  ),
+  101566 => 
+  array (
+    0 => 'Saranacentral Bajatama Tbk',
+    1 => 'https://id.investing.com/equities/saranacentral',
+  ),
+  101567 => 
+  array (
+    0 => 'Saraswati Griya Lestari Tbk',
+    1 => 'https://id.investing.com/equities/saraswati-griy',
+  ),
+  101568 => 
+  array (
+    0 => 'Saratoga Investama Sedaya',
+    1 => 'https://id.investing.com/equities/saratoga-inves',
+  ),
+  101569 => 
+  array (
+    0 => 'Sat Nusapersada Tbk',
+    1 => 'https://id.investing.com/equities/sat-nusapersad',
+  ),
+  101570 => 
+  array (
+    0 => 'Sawit Sumbermas Sarana Tbk',
+    1 => 'https://id.investing.com/equities/sawit-sumberma',
+  ),
+  101571 => 
+  array (
+    0 => 'Sejahteraraya Anugrahjaya Tbk',
+    1 => 'https://id.investing.com/equities/sejahteraraya',
+  ),
+  101265 => 
+  array (
+    0 => 'Sekar Bumi Tbk',
+    1 => 'https://id.investing.com/equities/sekar-bumi',
+  ),
+  945181 => 
+  array (
+    0 => 'Sekar Laut Tbk',
+    1 => 'https://id.investing.com/equities/sekar-laut-tbk-pt',
+  ),
+  943657 => 
+  array (
+    0 => 'Sekawan Intipratama Tbk',
+    1 => 'https://id.investing.com/equities/sekawan-intipr',
+  ),
+  101572 => 
+  array (
+    0 => 'Selamat Sempurna Tbk',
+    1 => 'https://id.investing.com/equities/selamat-sempur',
+  ),
+  101573 => 
+  array (
+    0 => 'Semen Baturaja Persero Tbk',
+    1 => 'https://id.investing.com/equities/semen-baturaja',
+  ),
+  101574 => 
+  array (
+    0 => 'Semen Indonesia Persero Tbk',
+    1 => 'https://id.investing.com/equities/semen-indonesi',
+  ),
+  101575 => 
+  array (
+    0 => 'Sentul City Tbk',
+    1 => 'https://id.investing.com/equities/sentul-city-tb',
+  ),
+  101266 => 
+  array (
+    0 => 'Sepatu Bata Tbk',
+    1 => 'https://id.investing.com/equities/sepatu-bata-tb',
+  ),
+  101576 => 
+  array (
+    0 => 'Siantar Top Tbk',
+    1 => 'https://id.investing.com/equities/siantar-top-tb',
+  ),
+  101577 => 
+  array (
+    0 => 'Sidomulyo Selaras Tbk',
+    1 => 'https://id.investing.com/equities/sidomulyo-sela',
+  ),
+  101578 => 
+  array (
+    0 => 'Sierad Produce Tbk',
+    1 => 'https://id.investing.com/equities/sierad-produce',
+  ),
+  101285 => 
+  array (
+    0 => 'Sigmagold Inti Perkasa Tbk',
+    1 => 'https://id.investing.com/equities/agis-tbk',
+  ),
+  985738 => 
+  array (
+    0 => 'Sillo Maritime Perdana Tbk PT',
+    1 => 'https://id.investing.com/equities/sillo-maritime-perdana-tbk-pt',
+  ),
+  101579 => 
+  array (
+    0 => 'Siloam International Hospitals',
+    1 => 'https://id.investing.com/equities/siloam-interna',
+  ),
+  101580 => 
+  array (
+    0 => 'Sinar Mas Multiartha Tbk',
+    1 => 'https://id.investing.com/equities/sinar-mas-mult',
+  ),
+  943660 => 
+  array (
+    0 => 'Sitara Propertindo Tbk',
+    1 => 'https://id.investing.com/equities/sitara-propert',
+  ),
+  943995 => 
+  array (
+    0 => 'Siwani Makmur Tbk',
+    1 => 'https://id.investing.com/equities/siwani-makmur',
+  ),
+  101581 => 
+  array (
+    0 => 'Slj Global Tbk',
+    1 => 'https://id.investing.com/equities/slj-global',
+  ),
+  101582 => 
+  array (
+    0 => 'Smart Tbk',
+    1 => 'https://id.investing.com/equities/smart-tbk',
+  ),
+  101583 => 
+  array (
+    0 => 'Smartfren Telecom Tbk',
+    1 => 'https://id.investing.com/equities/smartfren-tele',
+  ),
+  101267 => 
+  array (
+    0 => 'Smr Utama Tbk',
+    1 => 'https://id.investing.com/equities/smr-utama',
+  ),
+  942839 => 
+  array (
+    0 => 'Soechi Lines Tbk',
+    1 => 'https://id.investing.com/equities/soechi-lines-tbk-pt',
+  ),
+  101584 => 
+  array (
+    0 => 'Solusi Tunas Pratama Tbk',
+    1 => 'https://id.investing.com/equities/solusi-tunas-p',
+  ),
+  101268 => 
+  array (
+    0 => 'Sona Topas Tourism Industry',
+    1 => 'https://id.investing.com/equities/sona-topas-tou',
+  ),
+  101585 => 
+  array (
+    0 => 'Sorini Agro Asia Corporindo',
+    1 => 'https://id.investing.com/equities/sorini-agro-as',
+  ),
+  101586 => 
+  array (
+    0 => 'Sri Rejeki Isman Tbk',
+    1 => 'https://id.investing.com/equities/sri-rejeki-ism',
+  ),
+  101587 => 
+  array (
+    0 => 'Star Pacific Tbk',
+    1 => 'https://id.investing.com/equities/star-pacific',
+  ),
+  101588 => 
+  array (
+    0 => 'Star Petrcohem Tbk',
+    1 => 'https://id.investing.com/equities/star-petrochem',
+  ),
+  954962 => 
+  array (
+    0 => 'Steady Safe TBK PT',
+    1 => 'https://id.investing.com/equities/steady-safe-tbk-pt',
+  ),
+  101589 => 
+  array (
+    0 => 'Steel Pipe Industry Of Indonesia',
+    1 => 'https://id.investing.com/equities/steel-pipe-ind',
+  ),
+  101590 => 
+  array (
+    0 => 'Sugih Energy Tbk',
+    1 => 'https://id.investing.com/equities/sugih-energy',
+  ),
+  101591 => 
+  array (
+    0 => 'Sumber Alfaria Trijaya Tbk',
+    1 => 'https://id.investing.com/equities/sumber-alfaria',
+  ),
+  998094 => 
+  array (
+    0 => 'Sumber Energi Andalan Tbk PT',
+    1 => 'https://id.investing.com/equities/sumber-energi-andalan-tbk-pt',
+  ),
+  102976 => 
+  array (
+    0 => 'Sumi Indo Kabel Tbk',
+    1 => 'https://id.investing.com/equities/sumi-indo-kabe',
+  ),
+  101592 => 
+  array (
+    0 => 'Summarecon Agung Tbk',
+    1 => 'https://id.investing.com/equities/summarecon-agu',
+  ),
+  101270 => 
+  array (
+    0 => 'Sunson Textile Manufacturer',
+    1 => 'https://id.investing.com/equities/sunson-textil',
+  ),
+  101593 => 
+  array (
+    0 => 'Suparma Tbk',
+    1 => 'https://id.investing.com/equities/suparma-tbk',
+  ),
+  101594 => 
+  array (
+    0 => 'Supra Boga Lestari Tbk',
+    1 => 'https://id.investing.com/equities/supra-boga-les',
+  ),
+  101269 => 
+  array (
+    0 => 'Supreme Cable Manufacturing Corp',
+    1 => 'https://id.investing.com/equities/sucaco',
+  ),
+  101595 => 
+  array (
+    0 => 'Surya Citra Media Tbk',
+    1 => 'https://id.investing.com/equities/surya-citra-me',
+  ),
+  101596 => 
+  array (
+    0 => 'Surya Esa Perkasa Tbk',
+    1 => 'https://id.investing.com/equities/surya-esa-perk',
+  ),
+  101597 => 
+  array (
+    0 => 'Surya Semesta Internusa Tbk',
+    1 => 'https://id.investing.com/equities/surya-semesta',
+  ),
+  101271 => 
+  array (
+    0 => 'Surya Toto Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/surya-toto-ind',
+  ),
+  101272 => 
+  array (
+    0 => 'Suryamas Dutamakmur Tbk',
+    1 => 'https://id.investing.com/equities/suryamas-dutam',
+  ),
+  945184 => 
+  array (
+    0 => 'Taisho Pharmaceutical Ind',
+    1 => 'https://id.investing.com/equities/taisho-pharmaceutical-ind',
+  ),
+  101599 => 
+  array (
+    0 => 'Tambang Batubara Bukit Asam',
+    1 => 'https://id.investing.com/equities/tb-bukit-asam',
+  ),
+  101598 => 
+  array (
+    0 => 'Tanah Laut Tbk',
+    1 => 'https://id.investing.com/equities/tanah-laut',
+  ),
+  101600 => 
+  array (
+    0 => 'Telekomunikasi Indonesia Persero',
+    1 => 'https://id.investing.com/equities/telkom-indones',
+  ),
+  943647 => 
+  array (
+    0 => 'Tembaga Mulia Semanan Tbk',
+    1 => 'https://id.investing.com/equities/tembaga-mulia',
+  ),
+  101601 => 
+  array (
+    0 => 'Tempo Inti Media Tbk',
+    1 => 'https://id.investing.com/equities/tempo-inti-med',
+  ),
+  101602 => 
+  array (
+    0 => 'Tempo Scan Pacific Tbk',
+    1 => 'https://id.investing.com/equities/tempo-scan-pac',
+  ),
+  101603 => 
+  array (
+    0 => 'Tifa Finance Tbk',
+    1 => 'https://id.investing.com/equities/tifa-finance',
+  ),
+  101273 => 
+  array (
+    0 => 'Tifico Fiber Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/tifico-fiber',
+  ),
+  101604 => 
+  array (
+    0 => 'Tiga Pilar Sejahtera Food Tbk',
+    1 => 'https://id.investing.com/equities/tiga-pilar-sej',
+  ),
+  101274 => 
+  array (
+    0 => 'Tigaraksa Satria Tbk',
+    1 => 'https://id.investing.com/equities/tigaraksa-satr',
+  ),
+  101605 => 
+  array (
+    0 => 'Timah Persero Tbk',
+    1 => 'https://id.investing.com/equities/timah-tbk',
+  ),
+  101606 => 
+  array (
+    0 => 'Tiphone Mobile Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/tiphone-mobile',
+  ),
+  946577 => 
+  array (
+    0 => 'Tira Austenite Tbk',
+    1 => 'https://id.investing.com/equities/tira-austenite-tbk-pt',
+  ),
+  101607 => 
+  array (
+    0 => 'Tirta Mahakam Resources Tbk',
+    1 => 'https://id.investing.com/equities/tirta-mahakam',
+  ),
+  101609 => 
+  array (
+    0 => 'Toba Bara Sejahtra Tbk',
+    1 => 'https://id.investing.com/equities/toba-bara-seja',
+  ),
+  101610 => 
+  array (
+    0 => 'Toba Pulp Lestari Tbk',
+    1 => 'https://id.investing.com/equities/toba-pulp-lest',
+  ),
+  101611 => 
+  array (
+    0 => 'Total Bangun Persada Tbk',
+    1 => 'https://id.investing.com/equities/total-bangun-p',
+  ),
+  101612 => 
+  array (
+    0 => 'Tower Bersama Infrastructure',
+    1 => 'https://id.investing.com/equities/tower-bersama',
+  ),
+  101613 => 
+  array (
+    0 => 'Trada Maritime Tbk',
+    1 => 'https://id.investing.com/equities/trada-maritime',
+  ),
+  101275 => 
+  array (
+    0 => 'Trans Power Marine Tbk',
+    1 => 'https://id.investing.com/equities/trans-power-ma',
+  ),
+  101614 => 
+  array (
+    0 => 'Tri Banyan Tirta Tbk',
+    1 => 'https://id.investing.com/equities/tri-banyan-tir',
+  ),
+  101276 => 
+  array (
+    0 => 'Trias Sentosa Tbk',
+    1 => 'https://id.investing.com/equities/trias-sentosa',
+  ),
+  101277 => 
+  array (
+    0 => 'Trikomsel Oke Tbk',
+    1 => 'https://id.investing.com/equities/trikomsel-oke',
+  ),
+  101615 => 
+  array (
+    0 => 'Trimegah Securities Tbk',
+    1 => 'https://id.investing.com/equities/trimegah-secur',
+  ),
+  101616 => 
+  array (
+    0 => 'Trisula International Tbk',
+    1 => 'https://id.investing.com/equities/trisula-intern',
+  ),
+  101617 => 
+  array (
+    0 => 'Triwira Insanlestari Tbk',
+    1 => 'https://id.investing.com/equities/triwira-insanl',
+  ),
+  945723 => 
+  array (
+    0 => 'Trust Finance Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/trust-finance-indonesia-tbk-pt',
+  ),
+  101618 => 
+  array (
+    0 => 'Tunas Alfin Tbk',
+    1 => 'https://id.investing.com/equities/tunas-alfin',
+  ),
+  101619 => 
+  array (
+    0 => 'Tunas Baru Lampung Tbk',
+    1 => 'https://id.investing.com/equities/tunas-b-lampun',
+  ),
+  101620 => 
+  array (
+    0 => 'Tunas Ridean Tbk',
+    1 => 'https://id.investing.com/equities/tunas-ridean-t',
+  ),
+  101621 => 
+  array (
+    0 => 'Ultra Jaya Milk Industry Tbk',
+    1 => 'https://id.investing.com/equities/ultrajaya-milk',
+  ),
+  102972 => 
+  array (
+    0 => 'Unggul Indah Cahaya Tbk',
+    1 => 'https://id.investing.com/equities/unggul-indah-c',
+  ),
+  101622 => 
+  array (
+    0 => 'Unilever Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/unilever-indon',
+  ),
+  101623 => 
+  array (
+    0 => 'United Tractors Tbk',
+    1 => 'https://id.investing.com/equities/united-tractor',
+  ),
+  101624 => 
+  array (
+    0 => 'Vale Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/vale-indonesia',
+  ),
+  101625 => 
+  array (
+    0 => 'Verena Multi Finance Tbk',
+    1 => 'https://id.investing.com/equities/verena-multi-f',
+  ),
+  959126 => 
+  array (
+    0 => 'Victoria Insurance Tbk PT',
+    1 => 'https://id.investing.com/equities/victoria-insurance-tbk-pt',
+  ),
+  101626 => 
+  array (
+    0 => 'Victoria Investama Tbk',
+    1 => 'https://id.investing.com/equities/victoria-inves',
+  ),
+  101627 => 
+  array (
+    0 => 'Visi Media Asia Tbk',
+    1 => 'https://id.investing.com/equities/visi-media-asi',
+  ),
+  101417 => 
+  array (
+    0 => 'Visi Telekomunikasi Infrastruktur Tbk PT',
+    1 => 'https://id.investing.com/equities/golden-retail',
+  ),
+  101628 => 
+  array (
+    0 => 'Voksel Electric Tbk',
+    1 => 'https://id.investing.com/equities/voksel-electri',
+  ),
+  101629 => 
+  array (
+    0 => 'Wahana Ottomitra Multiartha',
+    1 => 'https://id.investing.com/equities/wahana-ottomit',
+  ),
+  101630 => 
+  array (
+    0 => 'Wahana Pronatural',
+    1 => 'https://id.investing.com/equities/wahana-pronatu',
+  ),
+  989631 => 
+  array (
+    0 => 'Waskita Beton Precast Tbk PT',
+    1 => 'https://id.investing.com/equities/waskita-beton-precast-tbk-pt',
+  ),
+  101631 => 
+  array (
+    0 => 'Waskita Karya Persero Tbk',
+    1 => 'https://id.investing.com/equities/waskita-karya',
+  ),
+  101539 => 
+  array (
+    0 => 'Weha Transportasi Indonesia TBK',
+    1 => 'https://id.investing.com/equities/panorama-trans',
+  ),
+  101632 => 
+  array (
+    0 => 'Wicaksana Overseas International',
+    1 => 'https://id.investing.com/equities/wicaksana-oves',
+  ),
+  101633 => 
+  array (
+    0 => 'Wijaya Karya Tbk',
+    1 => 'https://id.investing.com/equities/wijaya-karya',
+  ),
+  101634 => 
+  array (
+    0 => 'Wijaya Karya Beton',
+    1 => 'https://id.investing.com/equities/wijaya-karya-b',
+  ),
+  101635 => 
+  array (
+    0 => 'Wilmar Cahaya Indonesia Tbk',
+    1 => 'https://id.investing.com/equities/wilmar-cahaya',
+  ),
+  101636 => 
+  array (
+    0 => 'Wintermar Offshore Marine Tbk',
+    1 => 'https://id.investing.com/equities/wintermar-offs',
+  ),
+  101637 => 
+  array (
+    0 => 'Wismilak Inti Makmur Tbk',
+    1 => 'https://id.investing.com/equities/wismilak-inti',
+  ),
+  101638 => 
+  array (
+    0 => 'Xl Axiata Tbk',
+    1 => 'https://id.investing.com/equities/xl-axiata',
+  ),
+  101639 => 
+  array (
+    0 => 'Yanaprima Hastapersada Tbk',
+    1 => 'https://id.investing.com/equities/yanaprima-hast',
+  ),
+  943653 => 
+  array (
+    0 => 'Yulie Sekurindo Tbk',
+    1 => 'https://id.investing.com/equities/yulie-sekurind',
+  ),
+  101640 => 
+  array (
+    0 => 'Zebra Nusantara Tbk',
+    1 => 'https://id.investing.com/equities/zebra-nusantar',
+  ),
 );
