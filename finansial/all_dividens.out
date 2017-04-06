@@ -1,4399 +1,5009 @@
 <?php return array (
-  'Ace Hardware Indonesia Tbk' =>
+  'PGLI' => 
   array (
-    'id' => 101279,
-    'name' => 'Ace Hardware Indonesia Tbk',
-    'code' => 'ACES',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '15,4',
-      ),
-      2015 =>
-      array (
-        0 => '16',
-      ),
-    ),
-  ),
-  'Acset Indonusa Tbk' =>
-  array (
-    'id' => 101280,
-    'name' => 'Acset Indonusa Tbk',
-    'code' => 'ACST',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '26,97',
-        1 => '31,95',
-      ),
-      2015 =>
-      array (
-        0 => '42',
-      ),
-    ),
-  ),
-  'Adaro Energy Tbk' =>
-  array (
-    'id' => 101281,
-    'name' => 'Adaro Energy Tbk',
-    'code' => 'ADRO',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '34,03',
-        1 => '31',
-      ),
-      2015 =>
-      array (
-        0 => '34,68',
-        1 => '30,62',
-      ),
-    ),
-  ),
-  'Adhi Karya Persero Tbk' =>
-  array (
-    'id' => 101282,
-    'name' => 'Adhi Karya Persero Tbk',
-    'code' => 'ADHI',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '26,41',
-      ),
-      2016 =>
-      array (
-        0 => '26,23',
-      ),
-      2015 =>
-      array (
-        0 => '30,53',
-      ),
-    ),
-  ),
-  'Adi Sarana Armada Tbk' =>
-  array (
-    'id' => 101283,
-    'name' => 'Adi Sarana Armada Tbk',
-    'code' => 'ASSA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '4',
-      ),
-      2015 =>
-      array (
-        0 => '5',
-      ),
-    ),
-  ),
-  'Adira Dinamika Multi Finance' =>
-  array (
-    'id' => 101284,
-    'name' => 'Adira Dinamika Multi Finance',
-    'code' => 'ADMF',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '332,5',
-      ),
-      2015 =>
-      array (
-        0 => '396',
-      ),
-    ),
-  ),
-  'Agung Podomoro Land Tbk' =>
-  array (
-    'id' => 101286,
-    'name' => 'Agung Podomoro Land Tbk',
-    'code' => 'APLN',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '6',
-      ),
-    ),
-  ),
-  'Akr Corporindo Tbk' =>
-  array (
-    'id' => 101289,
-    'name' => 'Akr Corporindo Tbk',
-    'code' => 'AKRA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '90',
-        1 => '120',
-      ),
-      2015 =>
-      array (
-        0 => '130',
-      ),
-    ),
-  ),
-  'Alam Sutera Realty Tbk' =>
-  array (
-    'id' => 101290,
-    'name' => 'Alam Sutera Realty Tbk',
-    'code' => 'ASRI',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '7',
-      ),
-    ),
-  ),
-  'Alkindo Naratama Tbk' =>
-  array (
-    'id' => 101291,
-    'name' => 'Alkindo Naratama Tbk',
-    'code' => 'ALDO',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '1,5',
-      ),
-    ),
-  ),
-  'Anabatic Technologies Tbk PT' =>
-  array (
-    'id' => 955951,
-    'name' => 'Anabatic Technologies Tbk PT',
-    'code' => 'ATIC',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '6',
-      ),
-    ),
-  ),
-  'Argha Karya Prima Ind Tbk' =>
-  array (
-    'id' => 101209,
-    'name' => 'Argha Karya Prima Ind Tbk',
-    'code' => 'AKPI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '9',
-      ),
-      2015 =>
-      array (
-        0 => '8',
-      ),
-    ),
-  ),
-  'Arita Prima Indonesia Tbk' =>
-  array (
-    'id' => 101296,
-    'name' => 'Arita Prima Indonesia Tbk',
-    'code' => 'APII',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '2,84',
-      ),
-      2015 =>
-      array (
-        0 => '5,94',
-      ),
-    ),
-  ),
-  'Arwana Citramulia Tbk' =>
-  array (
-    'id' => 101298,
-    'name' => 'Arwana Citramulia Tbk',
-    'code' => 'ARNA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '12',
-      ),
-    ),
-  ),
-  'Asahimas Flat Glass Tbk' =>
-  array (
-    'id' => 101302,
-    'name' => 'Asahimas Flat Glass Tbk',
-    'code' => 'AMFG',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '80',
-      ),
-      2015 =>
-      array (
-        0 => '80',
-      ),
-    ),
-  ),
-  'Astra Agro Lestari Tbk' =>
-  array (
-    'id' => 101305,
-    'name' => 'Astra Agro Lestari Tbk',
-    'code' => 'AALI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '99',
-      ),
-      2015 =>
-      array (
-        0 => '682,24',
-      ),
-    ),
-  ),
-  'Astra Graphia Tbk' =>
-  array (
-    'id' => 101306,
-    'name' => 'Astra Graphia Tbk',
-    'code' => 'ASGR',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '120',
-        1 => '118',
-      ),
-      2015 =>
-      array (
-        0 => '77',
-      ),
-    ),
-  ),
-  'Astra International Tbk' =>
-  array (
-    'id' => 101307,
-    'name' => 'Astra International Tbk',
-    'code' => 'ASII',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '168',
-        1 => '177',
-      ),
-      2015 =>
-      array (
-        0 => '216',
-      ),
-    ),
-  ),
-  'Astra Otoparts Tbk' =>
-  array (
-    'id' => 101308,
-    'name' => 'Astra Otoparts Tbk',
-    'code' => 'AUTO',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '26',
-        1 => '27',
-      ),
-      2015 =>
-      array (
-        0 => '58',
-      ),
-    ),
-  ),
-  'Asuransi Bina Dana Arta Tbk' =>
-  array (
-    'id' => 102973,
-    'name' => 'Asuransi Bina Dana Arta Tbk',
-    'code' => 'ABDA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '130',
-      ),
-      2015 =>
-      array (
-        0 => '85',
-      ),
-    ),
-  ),
-  'Asuransi Bintang Tbk' =>
-  array (
-    'id' => 102978,
-    'name' => 'Asuransi Bintang Tbk',
-    'code' => 'ASBI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '12,5',
-      ),
-      2015 =>
-      array (
-        0 => '20',
-      ),
-    ),
-  ),
-  'Asuransi Dayin Mitra Tbk' =>
-  array (
-    'id' => 101299,
-    'name' => 'Asuransi Dayin Mitra Tbk',
-    'code' => 'ASDM',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '68',
-      ),
-      2015 =>
-      array (
-        0 => '65',
-      ),
-    ),
-  ),
-  'Asuransi Jasa Tania Tbk' =>
-  array (
-    'id' => 943651,
-    'name' => 'Asuransi Jasa Tania Tbk',
-    'code' => 'ASJT',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '10,39',
-      ),
-      2015 =>
-      array (
-        0 => '8,77',
-      ),
-    ),
-  ),
-  'Asuransi Ramayana Tbk' =>
-  array (
-    'id' => 101301,
-    'name' => 'Asuransi Ramayana Tbk',
-    'code' => 'ASRM',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '95',
-      ),
-      2015 =>
-      array (
-        0 => '85',
-      ),
-    ),
-  ),
-  'Ateliers Mecaniques D’Indonesie Tbk PT' =>
-  array (
-    'id' => 962000,
-    'name' => 'Ateliers Mecaniques D’Indonesie Tbk PT',
-    'code' => 'AMIN',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '8',
-      ),
-    ),
-  ),
-  'Austindo Nusantara Jaya Tbk' =>
-  array (
-    'id' => 101210,
-    'name' => 'Austindo Nusantara Jaya Tbk',
-    'code' => 'ANJT',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '35',
-      ),
-      2015 =>
-      array (
-        0 => '35',
-      ),
-    ),
-  ),
-  'Bali Towerindo Sentra Tbk' =>
-  array (
-    'id' => 102131,
-    'name' => 'Bali Towerindo Sentra Tbk',
-    'code' => 'BALI',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '7',
-      ),
-    ),
-  ),
-  'Bank Bukopin Tbk' =>
-  array (
-    'id' => 101318,
-    'name' => 'Bank Bukopin Tbk',
-    'code' => 'BBKP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '31,71',
-      ),
-      2015 =>
-      array (
-        0 => '23,92',
-      ),
-    ),
-  ),
-  'Bank Bumi Arta Tbk' =>
-  array (
-    'id' => 101211,
-    'name' => 'Bank Bumi Arta Tbk',
-    'code' => 'BNBA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '6,2',
-      ),
-      2015 =>
-      array (
-        0 => '5,61',
-      ),
-    ),
-  ),
-  'Bank Central Asia Tbk' =>
-  array (
-    'id' => 101354,
-    'name' => 'Bank Central Asia Tbk',
-    'code' => 'BBCA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '175',
-        1 => '160',
-      ),
-      2015 =>
-      array (
-        0 => '169,67',
-        1 => '148',
-      ),
-    ),
-  ),
-  'Bank Danamon Indonesia Tbk' =>
-  array (
-    'id' => 101320,
-    'name' => 'Bank Danamon Indonesia Tbk',
-    'code' => 'BDMN',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '74,9',
-      ),
-      2015 =>
-      array (
-        0 => '81,5',
-      ),
-    ),
-  ),
-  'Bank Mandiri Persero Tbk' =>
-  array (
-    'id' => 101325,
-    'name' => 'Bank Mandiri Persero Tbk',
-    'code' => 'BMRI',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '266,27',
-      ),
-      2016 =>
-      array (
-        0 => '261,45',
-      ),
-      2015 =>
-      array (
-        0 => '212,91',
-      ),
-    ),
-  ),
-  'Bank Maspion Indonesia Tbk' =>
-  array (
-    'id' => 101213,
-    'name' => 'Bank Maspion Indonesia Tbk',
-    'code' => 'BMAS',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '3,21',
-      ),
-    ),
-  ),
-  'Bank Mayapada Internasional' =>
-  array (
-    'id' => 101326,
-    'name' => 'Bank Mayapada Internasional',
-    'code' => 'MAYA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '21,59',
-      ),
-    ),
-  ),
-  'Bank Maybank Indonesia Tbk PT' =>
-  array (
-    'id' => 101324,
-    'name' => 'Bank Maybank Indonesia Tbk PT',
-    'code' => 'BNII',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '5,75',
-      ),
-    ),
-  ),
-  'Bank Mega Tbk' =>
-  array (
-    'id' => 101327,
-    'name' => 'Bank Mega Tbk',
-    'code' => 'MEGA',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '83,14',
-      ),
-      2016 =>
-      array (
-        0 => '75,58',
-      ),
-      2015 =>
-      array (
-        0 => '14,36',
-      ),
-    ),
-  ),
-  'Bank Mestika Dharma Tbk' =>
-  array (
-    'id' => 101328,
-    'name' => 'Bank Mestika Dharma Tbk',
-    'code' => 'BBMD',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '14,67',
-      ),
-      2015 =>
-      array (
-        0 => '12,22',
-      ),
-    ),
-  ),
-  'Bank Negara Indonesia Tbk' =>
-  array (
-    'id' => 101317,
-    'name' => 'Bank Negara Indonesia Tbk',
-    'code' => 'BBNI',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '212,81',
-      ),
-      2016 =>
-      array (
-        0 => '122,53',
-      ),
-      2015 =>
-      array (
-        0 => '144,55',
-      ),
-    ),
-  ),
-  'Bank Nusantara Parahyangan Tbk' =>
-  array (
-    'id' => 101215,
-    'name' => 'Bank Nusantara Parahyangan Tbk',
-    'code' => 'BBNP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '9',
-      ),
-      2015 =>
-      array (
-        0 => '14',
-      ),
-    ),
-  ),
-  'Bank Pembangunan Barat Dan Banten' =>
-  array (
-    'id' => 101330,
-    'name' => 'Bank Pembangunan Barat Dan Banten',
-    'code' => 'BJBR',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '89',
-      ),
-      2016 =>
-      array (
-        0 => '84,8',
-      ),
-      2015 =>
-      array (
-        0 => '71,6',
-      ),
-    ),
-  ),
-  'Bank Pembangunan Timur Tbk' =>
-  array (
-    'id' => 101333,
-    'name' => 'Bank Pembangunan Timur Tbk',
-    'code' => 'BJTM',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '43,64',
-      ),
-      2016 =>
-      array (
-        0 => '43',
-      ),
-      2015 =>
-      array (
-        0 => '41,86',
-      ),
-    ),
-  ),
-  'Bank Permata Tbk' =>
-  array (
-    'id' => 101334,
-    'name' => 'Bank Permata Tbk',
-    'code' => 'BNLI',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '12,71',
-      ),
-    ),
-  ),
-  'Bank Rakyat Indonesia Agroniaga' =>
-  array (
-    'id' => 101356,
-    'name' => 'Bank Rakyat Indonesia Agroniaga',
-    'code' => 'AGRO',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '1,11',
-      ),
-      2015 =>
-      array (
-        0 => '0,82',
-      ),
-    ),
-  ),
-  'Bank Rakyat Indonesia Persero' =>
-  array (
-    'id' => 101336,
-    'name' => 'Bank Rakyat Indonesia Persero',
-    'code' => 'BBRI',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '428,61',
-      ),
-      2016 =>
-      array (
-        0 => '311,66',
-      ),
-      2015 =>
-      array (
-        0 => '294,8',
-      ),
-    ),
-  ),
-  'Bank Tabungan Pensiunan Nasional' =>
-  array (
-    'id' => 101339,
-    'name' => 'Bank Tabungan Pensiunan Nasional',
-    'code' => 'BTPN',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '100',
-      ),
-    ),
-  ),
-  'Bank Tabungan Negara Persero' =>
-  array (
-    'id' => 101338,
-    'name' => 'Bank Tabungan Negara Persero',
-    'code' => 'BBTN',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '49,46',
-      ),
-      2016 =>
-      array (
-        0 => '34,96',
-      ),
-      2015 =>
-      array (
-        0 => '21,11',
-      ),
-    ),
-  ),
-  'Bank Victoria International' =>
-  array (
-    'id' => 101340,
-    'name' => 'Bank Victoria International',
-    'code' => 'BVIC',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '4,9',
-      ),
-    ),
-  ),
-  'Bank Woori Saudara Indonesia 1906' =>
-  array (
-    'id' => 101321,
-    'name' => 'Bank Woori Saudara Indonesia 1906',
-    'code' => 'SDRA',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '10,5',
-      ),
-      2016 =>
-      array (
-        0 => '8',
-      ),
-      2015 =>
-      array (
-        0 => '5',
-      ),
-    ),
-  ),
-  'Bank Yudha Bhakti Tbk' =>
-  array (
-    'id' => 945176,
-    'name' => 'Bank Yudha Bhakti Tbk',
-    'code' => 'BBYB',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '1,39',
-      ),
-    ),
-  ),
-  'Baramulti Suksessarana Tbk' =>
-  array (
-    'id' => 101342,
-    'name' => 'Baramulti Suksessarana Tbk',
-    'code' => 'BSSR',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '178,3',
-      ),
-      2016 =>
-      array (
-        0 => '75,59',
-      ),
-      2015 =>
-      array (
-        0 => '57,3',
-      ),
-    ),
-  ),
-  'Batavia Prosperindo Finance' =>
-  array (
-    'id' => 102974,
-    'name' => 'Batavia Prosperindo Finance',
-    'code' => 'BPFI',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '20,71',
-      ),
-      2016 =>
-      array (
-        0 => '22,05',
-      ),
-    ),
-  ),
-  'Bekasi Fajar Industrial Estate' =>
-  array (
-    'id' => 101346,
-    'name' => 'Bekasi Fajar Industrial Estate',
-    'code' => 'BEST',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '1,23',
-      ),
-      2015 =>
-      array (
-        0 => '2,28',
-      ),
-    ),
-  ),
-  'Benakat Integra Tbk' =>
-  array (
-    'id' => 101347,
-    'name' => 'Benakat Integra Tbk',
-    'code' => 'BIPI',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '1',
-      ),
-    ),
-  ),
-  'Berlina Tbk' =>
-  array (
-    'id' => 101349,
-    'name' => 'Berlina Tbk',
-    'code' => 'BRNA',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '17,39',
-      ),
-    ),
-  ),
-  'Betonjaya Manunggal Tbk' =>
-  array (
-    'id' => 101350,
-    'name' => 'Betonjaya Manunggal Tbk',
-    'code' => 'BTON',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '5',
-      ),
-    ),
-  ),
-  'BFI Finance Indonesia Tbk' =>
-  array (
-    'id' => 101351,
-    'name' => 'BFI Finance Indonesia Tbk',
-    'code' => 'BFIN',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '220',
-        1 => '208',
-      ),
-      2015 =>
-      array (
-        0 => '192',
-        1 => '192',
-      ),
-    ),
-  ),
-  'Bisi International Tbk' =>
-  array (
-    'id' => 101353,
-    'name' => 'Bisi International Tbk',
-    'code' => 'BISI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '33',
-      ),
-      2015 =>
-      array (
-        0 => '21',
-      ),
-    ),
-  ),
-  'Blue Bird Tbk' =>
-  array (
-    'id' => 943663,
-    'name' => 'Blue Bird Tbk',
-    'code' => 'BIRD',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '66',
-      ),
-      2015 =>
-      array (
-        0 => '42,83',
-      ),
-    ),
-  ),
-  'Buana Finance Tbk' =>
-  array (
-    'id' => 101221,
-    'name' => 'Buana Finance Tbk',
-    'code' => 'BBLD',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '18',
-      ),
-      2015 =>
-      array (
-        0 => '60',
-      ),
-    ),
-  ),
-  'Bumi Serpong Damai Tbk' =>
-  array (
-    'id' => 101364,
-    'name' => 'Bumi Serpong Damai Tbk',
-    'code' => 'BSDE',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '15',
-      ),
-    ),
-  ),
-  'Cardig Aero Services Tbk' =>
-  array (
-    'id' => 101369,
-    'name' => 'Cardig Aero Services Tbk',
-    'code' => 'CASS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '11,32',
-      ),
-      2015 =>
-      array (
-        0 => '21',
-      ),
-    ),
-  ),
-  'Catur Sentosa Adiprana Tbk' =>
-  array (
-    'id' => 101370,
-    'name' => 'Catur Sentosa Adiprana Tbk',
-    'code' => 'CSAP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '2,48',
-      ),
-      2015 =>
-      array (
-        0 => '5',
-      ),
-    ),
-  ),
-  'Champion Pacific Indonesia Tbk' =>
-  array (
-    'id' => 101374,
-    'name' => 'Champion Pacific Indonesia Tbk',
-    'code' => 'IGAR',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-    ),
-  ),
-  'Chandra Asri Petrochemical Tbk' =>
-  array (
-    'id' => 101375,
-    'name' => 'Chandra Asri Petrochemical Tbk',
-    'code' => 'TPIA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '154,12',
-        1 => '43,05',
-      ),
-      2015 =>
-      array (
-        0 => '18,24',
-      ),
-    ),
-  ),
-  'Charoen Pokphand Indonesia TBK PT' =>
-  array (
-    'id' => 101376,
-    'name' => 'Charoen Pokphand Indonesia TBK PT',
-    'code' => 'CPIN',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '29',
-      ),
-      2015 =>
-      array (
-        0 => '18',
-      ),
-    ),
-  ),
-  'Chitose Internasional Tbk' =>
-  array (
-    'id' => 102979,
-    'name' => 'Chitose Internasional Tbk',
-    'code' => 'CINT',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '8',
-      ),
-      2015 =>
-      array (
-        0 => '6',
-      ),
-    ),
-  ),
-  'Ciputra Development Tbk' =>
-  array (
-    'id' => 101378,
-    'name' => 'Ciputra Development Tbk',
-    'code' => 'CTRA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '9,07',
-        1 => '8,25',
-      ),
-      2015 =>
-      array (
-        0 => '6,21',
-      ),
-    ),
-  ),
-  'Citra Tubindo Tbk' =>
-  array (
-    'id' => 945180,
-    'name' => 'Citra Tubindo Tbk',
-    'code' => 'CTBN',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '114,69',
-      ),
-      2015 =>
-      array (
-        0 => '332,62',
-      ),
-    ),
-  ),
-  'Colorpak Indonesia Tbk' =>
-  array (
-    'id' => 101384,
-    'name' => 'Colorpak Indonesia Tbk',
-    'code' => 'CLPI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '39,7',
-      ),
-      2015 =>
-      array (
-        0 => '53,46',
-      ),
-    ),
-  ),
-  'Darya-Varia Laboratoria Tbk' =>
-  array (
-    'id' => 101387,
-    'name' => 'Darya-Varia Laboratoria Tbk',
-    'code' => 'DVLA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '65',
-      ),
-      2015 =>
-      array (
-        0 => '50',
-      ),
-    ),
-  ),
-  'Delta Djakarta Tbk' =>
-  array (
-    'id' => 101224,
-    'name' => 'Delta Djakarta Tbk',
-    'code' => 'DLTA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '120',
-      ),
-      2015 =>
-      array (
-        0 => '120',
-      ),
-    ),
-  ),
-  'Dharma Satya Nusantara Tbk' =>
-  array (
-    'id' => 101390,
-    'name' => 'Dharma Satya Nusantara Tbk',
-    'code' => 'DSNG',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '5',
-      ),
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Duta Anggada Realty Tbk' =>
-  array (
-    'id' => 101392,
-    'name' => 'Duta Anggada Realty Tbk',
-    'code' => 'DART',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '28',
-      ),
-    ),
-  ),
-  'Duta Pertiwi Nusantara Tbk' =>
-  array (
-    'id' => 101391,
-    'name' => 'Duta Pertiwi Nusantara Tbk',
-    'code' => 'DPNS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '15',
-      ),
-    ),
-  ),
-  'Dwi Aneka Jaya Kemasindo Tbk' =>
-  array (
-    'id' => 102132,
-    'name' => 'Dwi Aneka Jaya Kemasindo Tbk',
-    'code' => 'DAJK',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '7',
-      ),
-    ),
-  ),
-  'Dyandra Media International' =>
-  array (
-    'id' => 101394,
-    'name' => 'Dyandra Media International',
-    'code' => 'DYAN',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '3',
-      ),
-    ),
-  ),
-  'Eagle High Plantations Tbk' =>
-  array (
-    'id' => 101366,
-    'name' => 'Eagle High Plantations Tbk',
-    'code' => 'BWPT',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '4,99',
-      ),
-    ),
-  ),
-  'Ekadharma International Tbk' =>
-  array (
-    'id' => 101395,
-    'name' => 'Ekadharma International Tbk',
-    'code' => 'EKAD',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '10',
-      ),
-      2015 =>
-      array (
-        0 => '9',
-      ),
-    ),
-  ),
-  'Elang Mahkota Teknologi Tbk' =>
-  array (
-    'id' => 101226,
-    'name' => 'Elang Mahkota Teknologi Tbk',
-    'code' => 'EMTK',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '70',
-        1 => '90',
-      ),
-      2015 =>
-      array (
-        0 => '215',
-        1 => '350',
-      ),
-    ),
-  ),
-  'Electronic City Indonesia Tbk' =>
-  array (
-    'id' => 101396,
-    'name' => 'Electronic City Indonesia Tbk',
-    'code' => 'ECII',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5,52',
-      ),
-      2015 =>
-      array (
-        0 => '9,7',
-      ),
-    ),
-  ),
-  'Elnusa Tbk' =>
-  array (
-    'id' => 101397,
-    'name' => 'Elnusa Tbk',
-    'code' => 'ELSA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '10,29',
-      ),
-      2015 =>
-      array (
-        0 => '39,56',
-      ),
-    ),
-  ),
-  'Enseval Putra Megatrading Tbk' =>
-  array (
-    'id' => 101227,
-    'name' => 'Enseval Putra Megatrading Tbk',
-    'code' => 'EPMT',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '5',
-      ),
-    ),
-  ),
-  'Erajaya Swasembada Tbk' =>
-  array (
-    'id' => 101399,
-    'name' => 'Erajaya Swasembada Tbk',
-    'code' => 'ERAA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '20',
-      ),
-      2015 =>
-      array (
-        0 => '20',
-      ),
-    ),
-  ),
-  'Express Transindo Utama Tbk' =>
-  array (
-    'id' => 101404,
-    'name' => 'Express Transindo Utama Tbk',
-    'code' => 'TAXI',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '12',
-      ),
-    ),
-  ),
-  'Fajar Surya Wisesa Tbk' =>
-  array (
-    'id' => 101405,
-    'name' => 'Fajar Surya Wisesa Tbk',
-    'code' => 'FASW',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '24',
-      ),
-      2015 =>
-      array (
-        0 => '15',
-      ),
-    ),
-  ),
-  'Fast Food Indonesia Tbk' =>
-  array (
-    'id' => 101231,
-    'name' => 'Fast Food Indonesia Tbk',
-    'code' => 'FAST',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '20',
-      ),
-      2015 =>
-      array (
-        0 => '30',
-      ),
-    ),
-  ),
-  'Fks Multi Agro Tbk' =>
-  array (
-    'id' => 101232,
-    'name' => 'Fks Multi Agro Tbk',
-    'code' => 'FISH',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '50',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Fortune Indonesia Tbk' =>
-  array (
-    'id' => 101407,
-    'name' => 'Fortune Indonesia Tbk',
-    'code' => 'FORU',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Gajah Tunggal Tbk' =>
-  array (
-    'id' => 101410,
-    'name' => 'Gajah Tunggal Tbk',
-    'code' => 'GJTL',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Garuda Metalindo Tbk PT' =>
-  array (
-    'id' => 955953,
-    'name' => 'Garuda Metalindo Tbk PT',
-    'code' => 'BOLT',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '27,77',
-      ),
-      2016 =>
-      array (
-        0 => '25,01',
-      ),
-    ),
-  ),
-  'Gema Grahasarana Tbk' =>
-  array (
-    'id' => 101413,
-    'name' => 'Gema Grahasarana Tbk',
-    'code' => 'GEMA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '16',
-      ),
-      2015 =>
-      array (
-        0 => '7',
-      ),
-    ),
-  ),
-  'Global Mediacom Tbk' =>
-  array (
-    'id' => 101414,
-    'name' => 'Global Mediacom Tbk',
-    'code' => 'BMTR',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '25',
-      ),
-    ),
-  ),
-  'Golden Energy Mines Tbk' =>
-  array (
-    'id' => 101233,
-    'name' => 'Golden Energy Mines Tbk',
-    'code' => 'GEMS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '32,9',
-        1 => '6,81',
-      ),
-      2015 =>
-      array (
-        0 => '3,4',
-      ),
-    ),
-  ),
-  'Goodyear Indonesia Tbk' =>
-  array (
-    'id' => 943650,
-    'name' => 'Goodyear Indonesia Tbk',
-    'code' => 'GDYR',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '30',
-      ),
-    ),
-  ),
-  'Gowa Makassar Tourism Develop' =>
-  array (
-    'id' => 101418,
-    'name' => 'Gowa Makassar Tourism Develop',
-    'code' => 'GMTD',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '25',
-      ),
-      2016 =>
-      array (
-        0 => '45',
-      ),
-      2015 =>
-      array (
-        0 => '65',
-      ),
-    ),
-  ),
-  'Gudang Garam Tbk' =>
-  array (
-    'id' => 101423,
-    'name' => 'Gudang Garam Tbk',
-    'code' => 'GGRM',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '2',
-      ),
-      2015 =>
-      array (
-        0 => '800',
-      ),
-    ),
-  ),
-  'Asuransi Harta Aman Pratama Tbk PT' =>
-  array (
-    'id' => 101207,
-    'name' => 'Asuransi Harta Aman Pratama Tbk PT',
-    'code' => 'AHAP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '2',
-      ),
-      2015 =>
-      array (
-        0 => '7',
-      ),
-    ),
-  ),
-  'Harum Energy Tbk' =>
-  array (
-    'id' => 101427,
-    'name' => 'Harum Energy Tbk',
-    'code' => 'HRUM',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '110',
-      ),
-    ),
-  ),
-  'Hexindo Adiperkasa Tbk' =>
-  array (
-    'id' => 101429,
-    'name' => 'Hexindo Adiperkasa Tbk',
-    'code' => 'HEXA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '1',
-      ),
-      2015 =>
-      array (
-        0 => '115,96',
-      ),
-    ),
-  ),
-  'Hm Sampoerna Tbk' =>
-  array (
-    'id' => 943648,
-    'name' => 'Hm Sampoerna Tbk',
-    'code' => 'HMSP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '89',
-      ),
-      2015 =>
-      array (
-        0 => '2',
-      ),
-    ),
-  ),
-  'Holcim Indonesia Tbk' =>
-  array (
-    'id' => 101430,
-    'name' => 'Holcim Indonesia Tbk',
-    'code' => 'SMCB',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '15',
-      ),
-      2015 =>
-      array (
-        0 => '65',
-      ),
-    ),
-  ),
-  'Impack Pratama Industri Tbk' =>
-  array (
-    'id' => 943664,
-    'name' => 'Impack Pratama Industri Tbk',
-    'code' => 'IMPC',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '2',
-      ),
-    ),
-  ),
-  'Indah Kiat Pulp & Paper Tbk' =>
-  array (
-    'id' => 101435,
-    'name' => 'Indah Kiat Pulp & Paper Tbk',
-    'code' => 'INKP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '25',
-      ),
-      2015 =>
-      array (
-        0 => '25',
-      ),
-    ),
-  ),
-  'Indal Aluminium Industry Tbk' =>
-  array (
-    'id' => 101436,
-    'name' => 'Indal Aluminium Industry Tbk',
-    'code' => 'INAI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '45',
-      ),
-      2015 =>
-      array (
-        0 => '35',
-      ),
-    ),
-  ),
-  'Indo Kordsa Tbk' =>
-  array (
-    'id' => 101234,
-    'name' => 'Indo Kordsa Tbk',
-    'code' => 'BRAM',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '125',
-      ),
-      2015 =>
-      array (
-        0 => '100',
-      ),
-    ),
-  ),
-  'Indo Tambangraya Megah Tbk' =>
-  array (
-    'id' => 101439,
-    'name' => 'Indo Tambangraya Megah Tbk',
-    'code' => 'ITMG',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '1',
-      ),
-      2016 =>
-      array (
-        0 => '494,88',
-        1 => '812,56',
-      ),
-      2015 =>
-      array (
-        0 => '1',
-      ),
-    ),
-  ),
-  'Indocement Tunggal Prakarsa' =>
-  array (
-    'id' => 101440,
-    'name' => 'Indocement Tunggal Prakarsa',
-    'code' => 'INTP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '415',
-      ),
-      2015 =>
-      array (
-        0 => '1',
-      ),
-    ),
-  ),
-  'Indofood Sukses Makmur Tbk' =>
-  array (
-    'id' => 101443,
-    'name' => 'Indofood Sukses Makmur Tbk',
-    'code' => 'INDF',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '168',
-      ),
-      2015 =>
-      array (
-        0 => '220',
-      ),
-    ),
-  ),
-  'Indofood Cbp Sukses Makmur Tbk' =>
-  array (
-    'id' => 101442,
-    'name' => 'Indofood Cbp Sukses Makmur Tbk',
-    'code' => 'ICBP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '128',
-      ),
-      2015 =>
-      array (
-        0 => '222',
-      ),
-    ),
-  ),
-  'Indomobil Multi Jasa Tbk' =>
-  array (
-    'id' => 101444,
-    'name' => 'Indomobil Multi Jasa Tbk',
-    'code' => 'IMJS',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '5,8',
-      ),
-    ),
-  ),
-  'Indomobil Sukses Internasional' =>
-  array (
-    'id' => 101445,
-    'name' => 'Indomobil Sukses Internasional',
-    'code' => 'IMAS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '10',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Indonesia Pondasi Raya Tbk PT' =>
-  array (
-    'id' => 962003,
-    'name' => 'Indonesia Pondasi Raya Tbk PT',
-    'code' => 'IDPR',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-    ),
-  ),
-  'Indonesian Paradise Property' =>
-  array (
-    'id' => 102970,
-    'name' => 'Indonesian Paradise Property',
-    'code' => 'INPP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '1,5',
-      ),
-    ),
-  ),
-  'Indopoly Swakarsa Industry Tbk' =>
-  array (
-    'id' => 101446,
-    'name' => 'Indopoly Swakarsa Industry Tbk',
-    'code' => 'IPOL',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '1',
-      ),
-    ),
-  ),
-  'Indoritel Makmur Internasional' =>
-  array (
-    'id' => 101447,
-    'name' => 'Indoritel Makmur Internasional',
-    'code' => 'DNET',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '2',
-      ),
-      2015 =>
-      array (
-        0 => '2',
-      ),
-    ),
-  ),
-  'Indospring Tbk' =>
-  array (
-    'id' => 101449,
-    'name' => 'Indospring Tbk',
-    'code' => 'INDS',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '55',
-      ),
-    ),
-  ),
-  'Intan Baruprana Finance Tbk' =>
-  array (
-    'id' => 943644,
-    'name' => 'Intan Baruprana Finance Tbk',
-    'code' => 'IBFN',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '1',
-      ),
-    ),
-  ),
-  'Intanwijaya Internasional Tbk' =>
-  array (
-    'id' => 101452,
-    'name' => 'Intanwijaya Internasional Tbk',
-    'code' => 'INCI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Intermedia Capital Tbk' =>
-  array (
-    'id' => 101453,
-    'name' => 'Intermedia Capital Tbk',
-    'code' => 'MDIA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '10',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Intiland Development Tbk' =>
-  array (
-    'id' => 101456,
-    'name' => 'Intiland Development Tbk',
-    'code' => 'DILD',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Island Concepts Indonesia Tbk' =>
-  array (
-    'id' => 101458,
-    'name' => 'Island Concepts Indonesia Tbk',
-    'code' => 'ICON',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '0,25',
-      ),
-    ),
-  ),
-  'Jakarta Setiabudi Internasional' =>
-  array (
-    'id' => 945179,
-    'name' => 'Jakarta Setiabudi Internasional',
-    'code' => 'JSPT',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '17',
-      ),
-      2015 =>
-      array (
-        0 => '16',
-      ),
-    ),
-  ),
-  'Industri Jamu dan Farmasi Sido Muncul Tbk PT' =>
-  array (
-    'id' => 101450,
-    'name' => 'Industri Jamu dan Farmasi Sido Muncul Tbk PT',
-    'code' => 'SIDO',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '25',
-      ),
-      2015 =>
-      array (
-        0 => '24',
-      ),
-    ),
-  ),
-  'Japfa Comfeed Indonesia Tbk' =>
-  array (
-    'id' => 101461,
-    'name' => 'Japfa Comfeed Indonesia Tbk',
-    'code' => 'JPFA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '15',
-      ),
-      2014 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Jasa Marga Tbk' =>
-  array (
-    'id' => 101462,
-    'name' => 'Jasa Marga Tbk',
-    'code' => 'JSMR',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '78,09',
-      ),
-      2016 =>
-      array (
-        0 => '43,03',
-      ),
-      2015 =>
-      array (
-        0 => '72,24',
-      ),
-    ),
-  ),
-  'Jasuindo Tiga Perkasa Tbk' =>
-  array (
-    'id' => 101463,
-    'name' => 'Jasuindo Tiga Perkasa Tbk',
-    'code' => 'JTPE',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '14',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Jaya Agra Wattie Tbk' =>
-  array (
-    'id' => 101460,
-    'name' => 'Jaya Agra Wattie Tbk',
-    'code' => 'JAWA',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '1,34',
-      ),
-    ),
-  ),
-  'Jaya Konstruksi Manggala Pratama' =>
-  array (
-    'id' => 101464,
-    'name' => 'Jaya Konstruksi Manggala Pratama',
-    'code' => 'JKON',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '4,5',
-      ),
-      2015 =>
-      array (
-        0 => '4,3',
-      ),
-    ),
-  ),
-  'Jaya Real Property Tbk' =>
-  array (
-    'id' => 101466,
-    'name' => 'Jaya Real Property Tbk',
-    'code' => 'JRPT',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '21',
-      ),
-      2015 =>
-      array (
-        0 => '17,5',
-      ),
-    ),
-  ),
-  'Jembo Cable Company Tbk' =>
-  array (
-    'id' => 101467,
-    'name' => 'Jembo Cable Company Tbk',
-    'code' => 'JECC',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '200',
-      ),
-      2015 =>
-      array (
-        0 => '60',
-      ),
-    ),
-  ),
-  'Kabelindo Murni Tbk' =>
-  array (
-    'id' => 101238,
-    'name' => 'Kabelindo Murni Tbk',
-    'code' => 'KBLM',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '3',
-      ),
-      2015 =>
-      array (
-        0 => '5',
-      ),
-    ),
-  ),
-  'Kalbe Farma Tbk' =>
-  array (
-    'id' => 101470,
-    'name' => 'Kalbe Farma Tbk',
-    'code' => 'KLBF',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '19',
-      ),
-      2015 =>
-      array (
-        0 => '19',
-      ),
-    ),
-  ),
-  'Kawasan Industri Jababeka Tbk' =>
-  array (
-    'id' => 101469,
-    'name' => 'Kawasan Industri Jababeka Tbk',
-    'code' => 'KIJA',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '1,39',
-      ),
-      2014 =>
-      array (
-        0 => '0,34',
-      ),
-    ),
-  ),
-  'Keramika Indonesia Assosiasi' =>
-  array (
-    'id' => 101472,
-    'name' => 'Keramika Indonesia Assosiasi',
-    'code' => 'KIAS',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '1,55',
-      ),
-    ),
-  ),
-  'Kimia Farma Persero Tbk' =>
-  array (
-    'id' => 101474,
-    'name' => 'Kimia Farma Persero Tbk',
-    'code' => 'KAEF',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '8,96',
-      ),
-      2015 =>
-      array (
-        0 => '8,45',
-      ),
-    ),
-  ),
-  'Kino Indonesia Tbk PT' =>
-  array (
-    'id' => 962004,
-    'name' => 'Kino Indonesia Tbk PT',
-    'code' => 'KINO',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '37',
-      ),
-    ),
-  ),
-  'Kmi Wire And Cable Tbk' =>
-  array (
-    'id' => 101475,
-    'name' => 'Kmi Wire And Cable Tbk',
-    'code' => 'KBLI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '7',
-      ),
-      2015 =>
-      array (
-        0 => '4',
-      ),
-    ),
-  ),
-  'Kresna Graha Investama Tbk PT' =>
-  array (
-    'id' => 101478,
-    'name' => 'Kresna Graha Investama Tbk PT',
-    'code' => 'KREN',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '0,45',
-      ),
-    ),
-  ),
-  'Lautan Luas Tbk' =>
-  array (
-    'id' => 101481,
-    'name' => 'Lautan Luas Tbk',
-    'code' => 'LTLS',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '31,5',
-      ),
-    ),
-  ),
-  'Link Net Tbk' =>
-  array (
-    'id' => 102980,
-    'name' => 'Link Net Tbk',
-    'code' => 'LINK',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '42',
-      ),
-    ),
-  ),
-  'Lion Metal Works Tbk' =>
-  array (
-    'id' => 102975,
-    'name' => 'Lion Metal Works Tbk',
-    'code' => 'LION',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '40',
-      ),
-      2015 =>
-      array (
-        0 => '40',
-      ),
-    ),
-  ),
-  'Lionmesh Prima Tbk' =>
-  array (
-    'id' => 101242,
-    'name' => 'Lionmesh Prima Tbk',
-    'code' => 'LMSH',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Lippo General Insurance Tbk' =>
-  array (
-    'id' => 101484,
-    'name' => 'Lippo General Insurance Tbk',
-    'code' => 'LPGI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '165',
-      ),
-      2015 =>
-      array (
-        0 => '180',
-      ),
-    ),
-  ),
-  'Lippo Karawaci Tbk' =>
-  array (
-    'id' => 101485,
-    'name' => 'Lippo Karawaci Tbk',
-    'code' => 'LPKR',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '1,94',
-      ),
-      2016 =>
-      array (
-        0 => '3,5',
-      ),
-      2015 =>
-      array (
-        0 => '16,68',
-      ),
-    ),
-  ),
-  'Logindo Samudramakmur Tbk' =>
-  array (
-    'id' => 101487,
-    'name' => 'Logindo Samudramakmur Tbk',
-    'code' => 'LEAD',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Mahaka Radio Integra Tbk PT' =>
-  array (
-    'id' => 963746,
-    'name' => 'Mahaka Radio Integra Tbk PT',
-    'code' => 'MARI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5,1',
-      ),
-    ),
-  ),
-  'Mandala Multifinance Tbk' =>
-  array (
-    'id' => 101244,
-    'name' => 'Mandala Multifinance Tbk',
-    'code' => 'MFIN',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '19',
-      ),
-      2015 =>
-      array (
-        0 => '23',
-      ),
-    ),
-  ),
-  'Mandom Indonesia Tbk' =>
-  array (
-    'id' => 101491,
-    'name' => 'Mandom Indonesia Tbk',
-    'code' => 'TCID',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '410',
-      ),
-      2015 =>
-      array (
-        0 => '390',
-      ),
-    ),
-  ),
-  'Maskapai Reasuransi Indonesia' =>
-  array (
-    'id' => 101245,
-    'name' => 'Maskapai Reasuransi Indonesia',
-    'code' => 'MREI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '50',
-      ),
-      2015 =>
-      array (
-        0 => '40',
-      ),
-    ),
-  ),
-  'Matahari Department Store Tbk' =>
-  array (
-    'id' => 101493,
-    'name' => 'Matahari Department Store Tbk',
-    'code' => 'LPPF',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '427,3',
-      ),
-      2015 =>
-      array (
-        0 => '291,8',
-      ),
-    ),
-  ),
-  'Matahari Putra Prima Tbk' =>
-  array (
-    'id' => 101494,
-    'name' => 'Matahari Putra Prima Tbk',
-    'code' => 'MPPA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '33',
-      ),
-      2015 =>
-      array (
-        0 => '25',
-        1 => '36',
-      ),
-    ),
-  ),
-  'Mayora Indah Tbk' =>
-  array (
-    'id' => 101495,
-    'name' => 'Mayora Indah Tbk',
-    'code' => 'MYOR',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '12',
-      ),
-      2015 =>
-      array (
-        0 => '160',
-      ),
-    ),
-  ),
-  'Medco Energi Internasional Tbk' =>
-  array (
-    'id' => 101496,
-    'name' => 'Medco Energi Internasional Tbk',
-    'code' => 'MEDC',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '15,6',
-      ),
-    ),
-  ),
-  'Media Nusantara Citra Tbk' =>
-  array (
-    'id' => 101497,
-    'name' => 'Media Nusantara Citra Tbk',
-    'code' => 'MNCN',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '42',
-      ),
-      2015 =>
-      array (
-        0 => '63',
-      ),
-    ),
-  ),
-  'Megapolitan Developments Tbk' =>
-  array (
-    'id' => 101498,
-    'name' => 'Megapolitan Developments Tbk',
-    'code' => 'EMDE',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '2',
-      ),
-      2015 =>
-      array (
-        0 => '1',
-      ),
-    ),
-  ),
-  'Merck Tbk' =>
-  array (
-    'id' => 945178,
-    'name' => 'Merck Tbk',
-    'code' => 'MERK',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '265',
-      ),
-      2015 =>
-      array (
-        0 => '327,5',
-        1 => '6',
-      ),
-    ),
-  ),
-  'Metrodata Electronics Tbk' =>
-  array (
-    'id' => 101499,
-    'name' => 'Metrodata Electronics Tbk',
-    'code' => 'MTDL',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5,35',
-      ),
-      2015 =>
-      array (
-        0 => '5',
-      ),
-      2014 =>
-      array (
-        0 => '12,15',
-      ),
-    ),
-  ),
-  'Metropolitan Kentjana Tbk' =>
-  array (
-    'id' => 101247,
-    'name' => 'Metropolitan Kentjana Tbk',
-    'code' => 'MKPI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '327',
-      ),
-      2015 =>
-      array (
-        0 => '223,7',
-      ),
-    ),
-  ),
-  'Metropolitan Land Tbk' =>
-  array (
-    'id' => 101500,
-    'name' => 'Metropolitan Land Tbk',
-    'code' => 'MTLA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '4,19',
-      ),
-      2015 =>
-      array (
-        0 => '2,72',
-      ),
-    ),
-  ),
-  'Midi Utama Indonesia Tbk' =>
-  array (
-    'id' => 101501,
-    'name' => 'Midi Utama Indonesia Tbk',
-    'code' => 'MIDI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '15',
-      ),
-      2015 =>
-      array (
-        0 => '14,5',
-      ),
-    ),
-  ),
-  'Millennium Pharmacon International' =>
-  array (
-    'id' => 101502,
-    'name' => 'Millennium Pharmacon International',
-    'code' => 'SDPC',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '2',
-      ),
-      2016 =>
-      array (
-        0 => '3',
-      ),
-    ),
-  ),
-  'Minna Padi Investama Tbk' =>
-  array (
-    'id' => 101503,
-    'name' => 'Minna Padi Investama Tbk',
-    'code' => 'PADI',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '0,23',
-      ),
-    ),
-  ),
-  'Mitra Keluarga Karyasehat Tbk PT' =>
-  array (
-    'id' => 948393,
-    'name' => 'Mitra Keluarga Karyasehat Tbk PT',
-    'code' => 'MIKA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '25',
-      ),
-      2015 =>
-      array (
-        0 => '20',
-      ),
-    ),
-  ),
-  'Mitra Pinasthika Mustika' =>
-  array (
-    'id' => 101507,
-    'name' => 'Mitra Pinasthika Mustika',
-    'code' => 'MPMX',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '18,5',
-        1 => '17',
-      ),
-      2015 =>
-      array (
-        0 => '7',
-      ),
-    ),
-  ),
-  'Mitrabahtera Segara Sejati Tbk' =>
-  array (
-    'id' => 101508,
-    'name' => 'Mitrabahtera Segara Sejati Tbk',
-    'code' => 'MBSS',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '119,41',
-      ),
-    ),
-  ),
-  'Mitrabara Adiperdana Tbk' =>
-  array (
-    'id' => 943662,
-    'name' => 'Mitrabara Adiperdana Tbk',
-    'code' => 'MBAP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '151,16',
-      ),
-      2015 =>
-      array (
-        0 => '64,75',
-        1 => '29',
-      ),
-    ),
-  ),
-  'Mnc Investama Tbk' =>
-  array (
-    'id' => 101509,
-    'name' => 'Mnc Investama Tbk',
-    'code' => 'BHIT',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '3',
-      ),
-    ),
-  ),
-  'Mnc Kapital Indonesia Tbk' =>
-  array (
-    'id' => 101510,
-    'name' => 'Mnc Kapital Indonesia Tbk',
-    'code' => 'BCAP',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '4,94',
-      ),
-    ),
-  ),
-  'Mnc Land Tbk' =>
-  array (
-    'id' => 101511,
-    'name' => 'Mnc Land Tbk',
-    'code' => 'KPIG',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '6',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Modern Internasional Tbk' =>
-  array (
-    'id' => 101513,
-    'name' => 'Modern Internasional Tbk',
-    'code' => 'MDRN',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '2',
-      ),
-    ),
-  ),
-  'Modernland Realty Ltd Tbk' =>
-  array (
-    'id' => 101514,
-    'name' => 'Modernland Realty Ltd Tbk',
-    'code' => 'MDLN',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '12',
-      ),
-    ),
-  ),
-  'Asuransi Multi Artha Guna Tbk PT' =>
-  array (
-    'id' => 101300,
-    'name' => 'Asuransi Multi Artha Guna Tbk PT',
-    'code' => 'AMAG',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Multi Bintang Indonesia Tbk' =>
-  array (
-    'id' => 101517,
-    'name' => 'Multi Bintang Indonesia Tbk',
-    'code' => 'MLBI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '267',
-        1 => '344',
-      ),
-      2015 =>
-      array (
-        0 => '257',
-      ),
-    ),
-  ),
-  'Multi Indocitra Tbk' =>
-  array (
-    'id' => 101518,
-    'name' => 'Multi Indocitra Tbk',
-    'code' => 'MICE',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Multifiling Mitra Indonesia' =>
-  array (
-    'id' => 101248,
-    'name' => 'Multifiling Mitra Indonesia',
-    'code' => 'MFMI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '2,2',
-      ),
-      2015 =>
-      array (
-        0 => '1,8',
-      ),
-    ),
-  ),
-  'Multipolar Tbk' =>
-  array (
-    'id' => 101520,
-    'name' => 'Multipolar Tbk',
-    'code' => 'MLPL',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '9,4',
-      ),
-    ),
-  ),
-  'Multipolar Technology Tbk' =>
-  array (
-    'id' => 101521,
-    'name' => 'Multipolar Technology Tbk',
-    'code' => 'MLPT',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '7',
-      ),
-      2015 =>
-      array (
-        0 => '5,71',
-      ),
-    ),
-  ),
-  'Multistrada Arah Sarana Tbk' =>
-  array (
-    'id' => 101522,
-    'name' => 'Multistrada Arah Sarana Tbk',
-    'code' => 'MASA',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '2',
-      ),
-    ),
-  ),
-  'Nippon Indosari Corpindo Tbk' =>
-  array (
-    'id' => 101524,
-    'name' => 'Nippon Indosari Corpindo Tbk',
-    'code' => 'ROTI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '10,61',
-      ),
-      2015 =>
-      array (
-        0 => '5,53',
-      ),
-    ),
-  ),
-  'Nusa Konstruksi Enjiniring Tbk' =>
-  array (
-    'id' => 101527,
-    'name' => 'Nusa Konstruksi Enjiniring Tbk',
-    'code' => 'DGIK',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '3,35',
-      ),
-    ),
-  ),
-  'Nusa Raya Cipta Tbk' =>
-  array (
-    'id' => 101528,
-    'name' => 'Nusa Raya Cipta Tbk',
-    'code' => 'NRCA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '16,38',
-      ),
-      2015 =>
-      array (
-        0 => '30,04',
-      ),
-    ),
-  ),
-  'Pabrik Kertas Tjiwi Kimia Tbk' =>
-  array (
-    'id' => 101608,
-    'name' => 'Pabrik Kertas Tjiwi Kimia Tbk',
-    'code' => 'TKIM',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Pakuwon Jati Tbk' =>
-  array (
-    'id' => 101533,
-    'name' => 'Pakuwon Jati Tbk',
-    'code' => 'PWON',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '4,5',
-      ),
-      2015 =>
-      array (
-        0 => '4,5',
-      ),
-    ),
-  ),
-  'Pan Brothers Tbk' =>
-  array (
-    'id' => 101534,
-    'name' => 'Pan Brothers Tbk',
-    'code' => 'PBRX',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '2',
-      ),
-      2015 =>
-      array (
-        0 => '1',
-      ),
-    ),
-  ),
-  'Panca Global Securities Tbk' =>
-  array (
-    'id' => 943654,
-    'name' => 'Panca Global Securities Tbk',
-    'code' => 'PEGE',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '10',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Panin Sekuritas Tbk' =>
-  array (
-    'id' => 101537,
-    'name' => 'Panin Sekuritas Tbk',
-    'code' => 'PANS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '80',
-      ),
-      2015 =>
-      array (
-        0 => '420',
-      ),
-    ),
-  ),
-  'Panorama Sentrawisata Tbk' =>
-  array (
-    'id' => 101538,
-    'name' => 'Panorama Sentrawisata Tbk',
-    'code' => 'PANR',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '4,08',
-      ),
-      2015 =>
-      array (
-        0 => '6,07',
-      ),
-    ),
-  ),
-  'Pelayaran Nelly Dwi Putri Tbk' =>
-  array (
-    'id' => 101253,
-    'name' => 'Pelayaran Nelly Dwi Putri Tbk',
-    'code' => 'NELY',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '4',
-      ),
-      2015 =>
-      array (
-        0 => '3',
-      ),
-    ),
-  ),
-  'Pelayaran Tempuran Emas Tbk' =>
-  array (
-    'id' => 101251,
-    'name' => 'Pelayaran Tempuran Emas Tbk',
-    'code' => 'TMAS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '41,7',
-      ),
-      2015 =>
-      array (
-        0 => '17,81',
-      ),
-    ),
-  ),
-  'Pembangunan Graha Lestari Tbk' =>
-  array (
-    'id' => 101250,
-    'name' => 'Pembangunan Graha Lestari Tbk',
+    'name' => 'PEMBANGUNAN GRAHA LESTARI INDAH Tbk',
     'code' => 'PGLI',
-    'dividen' =>
+    'dividen' => 
     array (
-      2016 =>
+      2014 => 
       array (
-        0 => '0,9',
+        0 => 2,
       ),
-      2015 =>
+      2015 => 
       array (
-        0 => '2',
+        0 => 2,
       ),
-    ),
-  ),
-  'Pembangunan Jaya Ancol Tbk' =>
-  array (
-    'id' => 101531,
-    'name' => 'Pembangunan Jaya Ancol Tbk',
-    'code' => 'PJAA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '69',
-      ),
-      2015 =>
-      array (
-        0 => '65',
-      ),
-    ),
-  ),
-  'Perdana Gapura Prima Tbk' =>
-  array (
-    'id' => 101543,
-    'name' => 'Perdana Gapura Prima Tbk',
-    'code' => 'GPRA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '2,5',
-      ),
-    ),
-  ),
-  'Perusahaan Gas Negara Persero' =>
-  array (
-    'id' => 101530,
-    'name' => 'Perusahaan Gas Negara Persero',
-    'code' => 'PGAS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '91,32',
-      ),
-      2015 =>
-      array (
-        0 => '144,84',
-      ),
-    ),
-  ),
-  'Petrosea Tbk' =>
-  array (
-    'id' => 101546,
-    'name' => 'Petrosea Tbk',
-    'code' => 'PTRO',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '21,66',
-      ),
-    ),
-  ),
-  'Plaza Indonesia Realty Tbk' =>
-  array (
-    'id' => 101256,
-    'name' => 'Plaza Indonesia Realty Tbk',
-    'code' => 'PLIN',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '43',
-      ),
-      2015 =>
-      array (
-        0 => '70',
-      ),
-    ),
-  ),
-  'Pool Advista Indonesia Tbk' =>
-  array (
-    'id' => 101257,
-    'name' => 'Pool Advista Indonesia Tbk',
-    'code' => 'POOL',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '3,11',
-      ),
-    ),
-  ),
-  'PP London Sumatra Indonesia' =>
-  array (
-    'id' => 101488,
-    'name' => 'PP London Sumatra Indonesia',
-    'code' => 'LSIP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '37',
-      ),
-      2015 =>
-      array (
-        0 => '53',
-      ),
-    ),
-  ),
-  'Pp Persero Tbk' =>
-  array (
-    'id' => 101549,
-    'name' => 'Pp Persero Tbk',
-    'code' => 'PTPP',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '49,52',
-      ),
-      2016 =>
-      array (
-        0 => '29,07',
-      ),
-      2015 =>
-      array (
-        0 => '21,97',
-      ),
-    ),
-  ),
-  'PP Properti Tbk PT' =>
-  array (
-    'id' => 953597,
-    'name' => 'PP Properti Tbk PT',
-    'code' => 'PPRO',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '1,3',
-      ),
-      2016 =>
-      array (
-        0 => '1,07',
-      ),
-    ),
-  ),
-  'Provident Agro Tbk' =>
-  array (
-    'id' => 101259,
-    'name' => 'Provident Agro Tbk',
-    'code' => 'PALM',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '42',
-      ),
-    ),
-  ),
-  'Pudjiadi & Sons Tbk' =>
-  array (
-    'id' => 101260,
-    'name' => 'Pudjiadi & Sons Tbk',
-    'code' => 'PNSE',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '3,5',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Pudjiadi Prestige Tbk' =>
-  array (
-    'id' => 101551,
-    'name' => 'Pudjiadi Prestige Tbk',
-    'code' => 'PUDP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '11',
-      ),
-      2015 =>
-      array (
-        0 => '12',
-      ),
-    ),
-  ),
-  'Puradelta Lestari Tbk Pt' =>
-  array (
-    'id' => 953932,
-    'name' => 'Puradelta Lestari Tbk Pt',
-    'code' => 'DMAS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '11',
-      ),
-      2015 =>
-      array (
-        0 => '12',
-      ),
-    ),
-  ),
-  'Radana Bhaskara Finance Tbk' =>
-  array (
-    'id' => 953933,
-    'name' => 'Radana Bhaskara Finance Tbk',
-    'code' => 'HDFA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '3,5',
-      ),
-    ),
-  ),
-  'Radiant Utama Interinsco Tbk' =>
-  array (
-    'id' => 101553,
-    'name' => 'Radiant Utama Interinsco Tbk',
-    'code' => 'RUIS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '7,5',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Ramayana Lestari Sentosa Tbk' =>
-  array (
-    'id' => 101554,
-    'name' => 'Ramayana Lestari Sentosa Tbk',
-    'code' => 'RALS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '30',
-      ),
-      2015 =>
-      array (
-        0 => '27',
-      ),
-    ),
-  ),
-  'Resource Alam Indonesia Tbk' =>
-  array (
-    'id' => 101557,
-    'name' => 'Resource Alam Indonesia Tbk',
-    'code' => 'KKGI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '4',
-      ),
-      2014 =>
-      array (
-        0 => '100',
-      ),
-    ),
-  ),
-  'Ricky Putra Globalindo Tbk' =>
-  array (
-    'id' => 101262,
-    'name' => 'Ricky Putra Globalindo Tbk',
-    'code' => 'RICY',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '3',
-      ),
-      2015 =>
-      array (
-        0 => '4',
-      ),
-    ),
-  ),
-  'Roda Vivatex Tbk' =>
-  array (
-    'id' => 945177,
-    'name' => 'Roda Vivatex Tbk',
-    'code' => 'RDTX',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '75',
-      ),
-      2015 =>
-      array (
-        0 => '85',
-      ),
-    ),
-  ),
-  'Rukun Raharja Tbk' =>
-  array (
-    'id' => 101560,
-    'name' => 'Rukun Raharja Tbk',
-    'code' => 'RAJA',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '3,05',
-      ),
-    ),
-  ),
-  'Salim Ivomas Pratama Tbk' =>
-  array (
-    'id' => 101561,
-    'name' => 'Salim Ivomas Pratama Tbk',
-    'code' => 'SIMP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '16',
-      ),
-    ),
-  ),
-  'Samindo Resources Tbk' =>
-  array (
-    'id' => 101562,
-    'name' => 'Samindo Resources Tbk',
-    'code' => 'MYOH',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '48,06',
-      ),
-      2015 =>
-      array (
-        0 => '47,73',
-      ),
-    ),
-  ),
-  'Sampoerna Agro Tbk' =>
-  array (
-    'id' => 101563,
-    'name' => 'Sampoerna Agro Tbk',
-    'code' => 'SGRO',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '25',
-      ),
-      2015 =>
-      array (
-        0 => '36',
-      ),
-    ),
-  ),
-  'Samudera Indonesia Tbk' =>
-  array (
-    'id' => 101264,
-    'name' => 'Samudera Indonesia Tbk',
-    'code' => 'SMDR',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '380',
-      ),
-      2015 =>
-      array (
-        0 => '380',
-      ),
-    ),
-  ),
-  'Sarana Meditama Metropolitan' =>
-  array (
-    'id' => 101564,
-    'name' => 'Sarana Meditama Metropolitan',
-    'code' => 'SAME',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '7',
-      ),
-      2015 =>
-      array (
-        0 => '7',
-      ),
-    ),
-  ),
-  'Saratoga Investama Sedaya' =>
-  array (
-    'id' => 101568,
-    'name' => 'Saratoga Investama Sedaya',
-    'code' => 'SRTG',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '77',
-        1 => '32',
-      ),
-    ),
-  ),
-  'Sawit Sumbermas Sarana Tbk' =>
-  array (
-    'id' => 101570,
-    'name' => 'Sawit Sumbermas Sarana Tbk',
-    'code' => 'SSMS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '17,67',
-      ),
-      2015 =>
-      array (
-        0 => '22,65',
-      ),
-    ),
-  ),
-  'Sekar Bumi Tbk' =>
-  array (
-    'id' => 101265,
-    'name' => 'Sekar Bumi Tbk',
-    'code' => 'SKBM',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '12',
-      ),
-    ),
-  ),
-  'Sekar Laut Tbk' =>
-  array (
-    'id' => 945181,
-    'name' => 'Sekar Laut Tbk',
-    'code' => 'SKLT',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '6',
-      ),
-      2015 =>
-      array (
-        0 => '5',
-      ),
-    ),
-  ),
-  'Selamat Sempurna Tbk' =>
-  array (
-    'id' => 101572,
-    'name' => 'Selamat Sempurna Tbk',
-    'code' => 'SMSM',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '46,56',
-        1 => '160',
-        2 => '135',
-      ),
-      2015 =>
-      array (
-        0 => '125',
-        1 => '105',
-      ),
-    ),
-  ),
-  'Semen Baturaja Persero Tbk' =>
-  array (
-    'id' => 101573,
-    'name' => 'Semen Baturaja Persero Tbk',
-    'code' => 'SMBR',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '9',
-      ),
-      2015 =>
-      array (
-        0 => '8,34',
-      ),
-    ),
-  ),
-  'Semen Indonesia Persero Tbk' =>
-  array (
-    'id' => 101574,
-    'name' => 'Semen Indonesia Persero Tbk',
-    'code' => 'SMGR',
-    'dividen' =>
-    array (
-      2017 =>
-      array (
-        0 => '304,92',
-      ),
-      2016 =>
+      2016 => 
       array (
-        0 => '304,91',
+        0 => 0.90000000000000002,
       ),
-      2015 =>
-      array (
-        0 => '375,34',
-      ),
-    ),
-  ),
-  'Sepatu Bata Tbk' =>
-  array (
-    'id' => 101266,
-    'name' => 'Sepatu Bata Tbk',
-    'code' => 'BATA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '21,45',
-        1 => '6,45',
-      ),
-      2015 =>
-      array (
-        0 => '21,78',
-      ),
-    ),
-  ),
-  'Sidomulyo Selaras Tbk' =>
-  array (
-    'id' => 101577,
-    'name' => 'Sidomulyo Selaras Tbk',
-    'code' => 'SDMU',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '2,77',
-      ),
-    ),
-  ),
-  'Siloam International Hospitals' =>
-  array (
-    'id' => 101579,
-    'name' => 'Siloam International Hospitals',
-    'code' => 'SILO',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '5,2',
-      ),
-    ),
-  ),
-  'Sinar Mas Multiartha Tbk' =>
-  array (
-    'id' => 101580,
-    'name' => 'Sinar Mas Multiartha Tbk',
-    'code' => 'SMMA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '1',
-      ),
-      2015 =>
-      array (
-        0 => '1',
-      ),
-    ),
-  ),
-  'Smart Tbk' =>
-  array (
-    'id' => 101582,
-    'name' => 'Smart Tbk',
-    'code' => 'SMAR',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Soechi Lines Tbk' =>
-  array (
-    'id' => 942839,
-    'name' => 'Soechi Lines Tbk',
-    'code' => 'SOCI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '7,5',
-      ),
-    ),
-  ),
-  'Sona Topas Tourism Industry' =>
-  array (
-    'id' => 101268,
-    'name' => 'Sona Topas Tourism Industry',
-    'code' => 'SONA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '100',
-      ),
-    ),
-  ),
-  'Sorini Agro Asia Corporindo' =>
-  array (
-    'id' => 101585,
-    'name' => 'Sorini Agro Asia Corporindo',
-    'code' => 'SOBI',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Sri Rejeki Isman Tbk' =>
-  array (
-    'id' => 101586,
-    'name' => 'Sri Rejeki Isman Tbk',
-    'code' => 'SRIL',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '3',
-      ),
-      2015 =>
-      array (
-        0 => '5,38',
-      ),
-    ),
-  ),
-  'Steel Pipe Industry Of Indonesia' =>
-  array (
-    'id' => 101589,
-    'name' => 'Steel Pipe Industry Of Indonesia',
-    'code' => 'ISSP',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2014 =>
-      array (
-        0 => '2',
-      ),
-    ),
-  ),
-  'Sumber Alfaria Trijaya Tbk' =>
-  array (
-    'id' => 101591,
-    'name' => 'Sumber Alfaria Trijaya Tbk',
-    'code' => 'AMRT',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '4,35',
-      ),
-      2015 =>
-      array (
-        0 => '3,85',
-      ),
-    ),
-  ),
-  'Sumi Indo Kabel Tbk' =>
-  array (
-    'id' => 102976,
-    'name' => 'Sumi Indo Kabel Tbk',
-    'code' => 'IKBI',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '7,68',
-      ),
-      2015 =>
-      array (
-        0 => '26,69',
-      ),
-    ),
-  ),
-  'Summarecon Agung Tbk' =>
-  array (
-    'id' => 101592,
-    'name' => 'Summarecon Agung Tbk',
-    'code' => 'SMRA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '5',
-      ),
-      2015 =>
-      array (
-        0 => '20',
-      ),
-    ),
-  ),
-  'Supreme Cable Manufacturing Corp' =>
-  array (
-    'id' => 101269,
-    'name' => 'Supreme Cable Manufacturing Corp',
-    'code' => 'SCCO',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '225',
-      ),
-      2015 =>
-      array (
-        0 => '200',
-      ),
-    ),
-  ),
-  'Surya Citra Media Tbk' =>
-  array (
-    'id' => 101595,
-    'name' => 'Surya Citra Media Tbk',
-    'code' => 'SCMA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '83',
-        1 => '83',
-      ),
-      2015 =>
-      array (
-        0 => '90',
-        1 => '70',
-      ),
-    ),
-  ),
-  'Surya Semesta Internusa Tbk' =>
-  array (
-    'id' => 101597,
-    'name' => 'Surya Semesta Internusa Tbk',
-    'code' => 'SSIA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '9,71',
-      ),
-      2015 =>
-      array (
-        0 => '18',
-      ),
-    ),
-  ),
-  'Surya Toto Indonesia Tbk' =>
-  array (
-    'id' => 101271,
-    'name' => 'Surya Toto Indonesia Tbk',
-    'code' => 'TOTO',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '12',
-        1 => '120',
-      ),
-      2015 =>
-      array (
-        0 => '84,9',
-        1 => '119,65',
-      ),
-    ),
-  ),
-  'Taisho Pharmaceutical Ind' =>
-  array (
-    'id' => 945184,
-    'name' => 'Taisho Pharmaceutical Ind',
-    'code' => 'SQBI',
-    'dividen' =>
-    array (
-      2009 =>
-      array (
-        0 => '8',
-      ),
-    ),
-  ),
-  'Tambang Batubara Bukit Asam' =>
-  array (
-    'id' => 101599,
-    'name' => 'Tambang Batubara Bukit Asam',
-    'code' => 'PTBA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '289,73',
-      ),
-      2015 =>
-      array (
-        0 => '324,57',
-      ),
-    ),
-  ),
-  'Telekomunikasi Indonesia Persero' =>
-  array (
-    'id' => 101600,
-    'name' => 'Telekomunikasi Indonesia Persero',
-    'code' => 'TLKM',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '66,7',
-        1 => '94,64',
-      ),
-      2015 =>
-      array (
-        0 => '74,55',
-      ),
-    ),
-  ),
-  'Tempo Scan Pacific Tbk' =>
-  array (
-    'id' => 101602,
-    'name' => 'Tempo Scan Pacific Tbk',
-    'code' => 'TSPC',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '50',
-      ),
-      2015 =>
-      array (
-        0 => '64',
-      ),
-    ),
-  ),
-  'Tifa Finance Tbk' =>
-  array (
-    'id' => 101603,
-    'name' => 'Tifa Finance Tbk',
-    'code' => 'TIFA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '7',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Tiga Pilar Sejahtera Food Tbk' =>
-  array (
-    'id' => 101604,
-    'name' => 'Tiga Pilar Sejahtera Food Tbk',
-    'code' => 'AISA',
-    'dividen' =>
-    array (
-      2014 =>
-      array (
-        0 => '8,5',
-      ),
-    ),
-  ),
-  'Tigaraksa Satria Tbk' =>
-  array (
-    'id' => 101274,
-    'name' => 'Tigaraksa Satria Tbk',
-    'code' => 'TGKA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '106,5',
-      ),
-      2015 =>
-      array (
-        0 => '94,5',
-      ),
-    ),
-  ),
-  'Timah Persero Tbk' =>
-  array (
-    'id' => 101605,
-    'name' => 'Timah Persero Tbk',
-    'code' => 'TINS',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '4,09',
-      ),
-      2015 =>
-      array (
-        0 => '25,7',
-      ),
-    ),
-  ),
-  'Tiphone Mobile Indonesia Tbk' =>
-  array (
-    'id' => 101606,
-    'name' => 'Tiphone Mobile Indonesia Tbk',
-    'code' => 'TELE',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '13',
-      ),
-      2015 =>
-      array (
-        0 => '10',
-      ),
-    ),
-  ),
-  'Tira Austenite Tbk' =>
-  array (
-    'id' => 946577,
-    'name' => 'Tira Austenite Tbk',
-    'code' => 'TIRA',
-    'dividen' =>
-    array (
-      2015 =>
-      array (
-        0 => '2',
-      ),
-    ),
-  ),
-  'Toba Bara Sejahtra Tbk' =>
-  array (
-    'id' => 101609,
-    'name' => 'Toba Bara Sejahtra Tbk',
-    'code' => 'TOBA',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '7,68',
-      ),
-      2015 =>
-      array (
-        0 => '39,83',
-      ),
-    ),
-  ),
-  'Total Bangun Persada Tbk' =>
-  array (
-    'id' => 101611,
-    'name' => 'Total Bangun Persada Tbk',
-    'code' => 'TOTL',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '40',
-      ),
-      2015 =>
-      array (
-        0 => '30',
-      ),
-    ),
-  ),
-  'Tower Bersama Infrastructure' =>
-  array (
-    'id' => 101612,
-    'name' => 'Tower Bersama Infrastructure',
-    'code' => 'TBIG',
-    'dividen' =>
-    array (
-      2016 =>
-      array (
-        0 => '100,84',
-        1 => '57,07',
-      ),
     ),
   ),
-  'Trans Power Marine Tbk' =>
+  'HMSP' => 
   array (
-    'id' => 101275,
-    'name' => 'Trans Power Marine Tbk',
-    'code' => 'TPMA',
-    'dividen' =>
+    'name' => 'HANJAYA MANDALA SAMPOERNA Tbk',
+    'code' => 'HMSP',
+    'dividen' => 
     array (
-      2014 =>
+      2014 => 
       array (
-        0 => '11',
+        0 => 1143,
+        1 => 360,
+        2 => 927,
       ),
-    ),
-  ),
-  'Trias Sentosa Tbk' =>
-  array (
-    'id' => 101276,
-    'name' => 'Trias Sentosa Tbk',
-    'code' => 'TRST',
-    'dividen' =>
-    array (
-      2016 =>
+      2015 => 
       array (
-        0 => '5',
+        0 => 787,
+        1 => 1033,
+        2 => 975,
       ),
-      2015 =>
+      2016 => 
       array (
-        0 => '5',
+        0 => 2225,
       ),
     ),
   ),
-  'Trisula International Tbk' =>
+  'BBCA' => 
   array (
-    'id' => 101616,
-    'name' => 'Trisula International Tbk',
-    'code' => 'TRIS',
-    'dividen' =>
+    'name' => 'BANK CENTRAL ASIA Tbk',
+    'code' => 'BBCA',
+    'dividen' => 
     array (
-      2016 =>
+      2014 => 
       array (
-        0 => '8',
+        0 => 50,
+        1 => 75,
       ),
-      2015 =>
+      2015 => 
       array (
-        0 => '9,5',
+        0 => 55,
+        1 => 55,
+        2 => 98,
       ),
-    ),
-  ),
-  'Tunas Alfin Tbk' =>
-  array (
-    'id' => 101618,
-    'name' => 'Tunas Alfin Tbk',
-    'code' => 'TALF',
-    'dividen' =>
-    array (
-      2016 =>
+      2016 => 
       array (
-        0 => '3',
+        0 => 70,
+        1 => 105,
       ),
-      2015 =>
-      array (
-        0 => '4',
-      ),
     ),
   ),
-  'Tunas Baru Lampung Tbk' =>
+  'BHIT' => 
   array (
-    'id' => 101619,
-    'name' => 'Tunas Baru Lampung Tbk',
-    'code' => 'TBLA',
-    'dividen' =>
+    'name' => 'MNC INVESTAMA Tbk',
+    'code' => 'BHIT',
+    'dividen' => 
     array (
-      2016 =>
+      2014 => 
       array (
-        0 => '24',
-        1 => '12',
+        0 => 3,
       ),
-      2015 =>
+      2015 => 
       array (
-        0 => '23',
+        0 => 3,
       ),
     ),
   ),
-  'Tunas Ridean Tbk' =>
+  'LPKR' => 
   array (
-    'id' => 101620,
-    'name' => 'Tunas Ridean Tbk',
-    'code' => 'TURI',
-    'dividen' =>
+    'name' => 'LIPPO KARAWACI Tbk',
+    'code' => 'LPKR',
+    'dividen' => 
     array (
-      2016 =>
-      array (
-        0 => '22',
-        1 => '16',
-      ),
-      2015 =>
+      2014 => 
       array (
-        0 => '14',
-        1 => '14',
+        0 => 14.050000000000001,
       ),
-    ),
-  ),
-  'Ultra Jaya Milk Industry Tbk' =>
-  array (
-    'id' => 101621,
-    'name' => 'Ultra Jaya Milk Industry Tbk',
-    'code' => 'ULTJ',
-    'dividen' =>
-    array (
-      2014 =>
+      2015 => 
       array (
-        0 => '12',
+        0 => 16.68,
       ),
-    ),
-  ),
-  'Unggul Indah Cahaya Tbk' =>
-  array (
-    'id' => 102972,
-    'name' => 'Unggul Indah Cahaya Tbk',
-    'code' => 'UNIC',
-    'dividen' =>
-    array (
-      2015 =>
+      2016 => 
       array (
-        0 => '69',
+        0 => 3.5,
       ),
     ),
   ),
-  'Unilever Indonesia Tbk' =>
+  'UNVR' => 
   array (
-    'id' => 101622,
-    'name' => 'Unilever Indonesia Tbk',
+    'name' => 'UNILEVER INDONESIA Tbk',
     'code' => 'UNVR',
-    'dividen' =>
+    'dividen' => 
     array (
-      2016 =>
+      2014 => 
       array (
-        0 => '799',
-        1 => '766',
+        0 => 336,
+        1 => 371,
       ),
-      2015 =>
+      2015 => 
       array (
-        0 => '758',
-        1 => '752',
+        0 => 342,
+        1 => 416,
+      ),
+      2016 => 
+      array (
+        0 => 375,
+        1 => 424,
       ),
     ),
   ),
-  'United Tractors Tbk' =>
+  'BATA' => 
   array (
-    'id' => 101623,
-    'name' => 'United Tractors Tbk',
+    'name' => 'SEPATU BATA Tbk',
+    'code' => 'BATA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 16.16,
+        1 => 13.470000000000001,
+      ),
+      2015 => 
+      array (
+        0 => 5.6200000000000001,
+      ),
+      2016 => 
+      array (
+        0 => 18.219999999999999,
+        1 => 6.4500000000000002,
+      ),
+    ),
+  ),
+  'INCO' => 
+  array (
+    'name' => 'VALE INDONESIA Tbk',
+    'code' => 'INCO',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 123.81,
+      ),
+    ),
+  ),
+  'KPIG' => 
+  array (
+    'name' => 'MNC LAND Tbk',
+    'code' => 'KPIG',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 6,
+      ),
+    ),
+  ),
+  'SMSM' => 
+  array (
+    'name' => 'SELAMAT SEMPURNA Tbk',
+    'code' => 'SMSM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 60,
+        1 => 40,
+        2 => 55,
+      ),
+      2015 => 
+      array (
+        0 => 50,
+        1 => 50,
+        2 => 25,
+      ),
+      2016 => 
+      array (
+        0 => 15,
+        1 => 50,
+        2 => 50,
+        3 => 35,
+      ),
+    ),
+  ),
+  'TURI' => 
+  array (
+    'name' => 'TUNAS RIDEAN Tbk',
+    'code' => 'TURI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4,
+        1 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 4,
+        1 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 10,
+        1 => 12,
+      ),
+    ),
+  ),
+  'BWPT' => 
+  array (
+    'name' => 'BW PLANTATION Tbk.',
+    'code' => 'BWPT',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 6,
+      ),
+    ),
+  ),
+  'MAIN' => 
+  array (
+    'name' => 'MALINDO FEEDMILL Tbk',
+    'code' => 'MAIN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'ADMF' => 
+  array (
+    'name' => 'ADIRA DINAMIKA MULTI FINANCE Tbk',
+    'code' => 'ADMF',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 2700,
+      ),
+      2015 => 
+      array (
+        0 => 396,
+      ),
+      2016 => 
+      array (
+        0 => 332.5,
+      ),
+    ),
+  ),
+  'MLBI' => 
+  array (
+    'name' => 'MULTI BINTANG INDONESIA Tbk',
+    'code' => 'MLBI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 119,
+        1 => 46076,
+      ),
+      2015 => 
+      array (
+        0 => 138,
+      ),
+      2016 => 
+      array (
+        0 => 95,
+        1 => 344,
+      ),
+    ),
+  ),
+  'ISSP' => 
+  array (
+    'name' => 'STEEL PIPE INDUSTRY OF INDONESIA Tbk',
+    'code' => 'ISSP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 2,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'GMTD' => 
+  array (
+    'name' => 'GOWA MAKASSAR TOURISM DEVELOPMENT Tbk',
+    'code' => 'GMTD',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 50,
+      ),
+      2015 => 
+      array (
+        0 => 65,
+      ),
+      2016 => 
+      array (
+        0 => 45,
+      ),
+    ),
+  ),
+  'ITMG' => 
+  array (
+    'name' => 'INDO TAMBANGRAYA MEGAH Tbk',
+    'code' => 'ITMG',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1100,
+        1 => 975,
+      ),
+      2015 => 
+      array (
+        0 => 752,
+        1 => 645,
+      ),
+      2016 => 
+      array (
+        0 => 434.31999999999999,
+        1 => 60.560000000000002,
+      ),
+    ),
+  ),
+  'MICE' => 
+  array (
+    'name' => 'MULTI INDOCITRA Tbk',
+    'code' => 'MICE',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'TKIM' => 
+  array (
+    'name' => 'PABRIK KERTAS TJIWI KIMIA Tbk',
+    'code' => 'TKIM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'INKP' => 
+  array (
+    'name' => 'INDAH KIAT PULP AND PAPER Tbk',
+    'code' => 'INKP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 25,
+      ),
+      2015 => 
+      array (
+        0 => 25,
+      ),
+      2016 => 
+      array (
+        0 => 25,
+      ),
+    ),
+  ),
+  'BMTR' => 
+  array (
+    'name' => 'GLOBAL MEDIACOM Tbk',
+    'code' => 'BMTR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 25,
+      ),
+      2015 => 
+      array (
+        0 => 25,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'ASII' => 
+  array (
+    'name' => 'ASTRA INTERNATIONAL Tbk',
+    'code' => 'ASII',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 64,
+        1 => 152,
+      ),
+      2015 => 
+      array (
+        0 => 64,
+        1 => 152,
+      ),
+      2016 => 
+      array (
+        0 => 55,
+        1 => 113,
+      ),
+    ),
+  ),
+  'MNCN' => 
+  array (
+    'name' => 'MEDIA NUSANTARA CITRA Tbk',
+    'code' => 'MNCN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 35,
+        1 => 25,
+      ),
+      2015 => 
+      array (
+        0 => 63,
+      ),
+      2016 => 
+      array (
+        0 => 42,
+      ),
+    ),
+  ),
+  'ASGR' => 
+  array (
+    'name' => 'ASTRA GRAPHIA Tbk',
+    'code' => 'ASGR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 25,
+        1 => 44,
+      ),
+      2015 => 
+      array (
+        0 => 25,
+        1 => 52,
+      ),
+      2016 => 
+      array (
+        0 => 27,
+        1 => 93,
+      ),
+    ),
+  ),
+  'UNTR' => 
+  array (
+    'name' => 'UNITED TRACTORS Tbk',
     'code' => 'UNTR',
-    'dividen' =>
+    'dividen' => 
     array (
-      2016 =>
+      2014 => 
       array (
-        0 => '583',
-        1 => '691',
+        0 => 195,
+        1 => 340,
       ),
-      2015 =>
+      2015 => 
       array (
-        0 => '796',
+        0 => 251,
+        1 => 545,
+      ),
+      2016 => 
+      array (
+        0 => 143,
+        1 => 440,
       ),
     ),
   ),
-  'Waskita Beton Precast Tbk PT' =>
+  'AALI' => 
   array (
-    'id' => 989631,
-    'name' => 'Waskita Beton Precast Tbk PT',
-    'code' => 'WSBP',
-    'dividen' =>
+    'name' => 'ASTRA AGRO LESTARI Tbk',
+    'code' => 'AALI',
+    'dividen' => 
     array (
-      2017 =>
+      2014 => 
       array (
-        0 => '12,04',
+        0 => 244,
+        1 => 355,
+      ),
+      2015 => 
+      array (
+        0 => 472,
+      ),
+      2016 => 
+      array (
+        0 => 99,
       ),
     ),
   ),
-  'Waskita Karya Persero Tbk' =>
+  'AUTO' => 
   array (
-    'id' => 101631,
-    'name' => 'Waskita Karya Persero Tbk',
-    'code' => 'WSKT',
-    'dividen' =>
+    'name' => 'ASTRA OTOPARTS Tbk',
+    'code' => 'AUTO',
+    'dividen' => 
     array (
-      2017 =>
+      2014 => 
       array (
-        0 => '37,87',
+        0 => 24,
+        1 => 61.5,
       ),
-      2016 =>
+      2015 => 
       array (
-        0 => '15,44',
+        0 => 10,
+        1 => 48,
       ),
-      2015 =>
+      2016 => 
       array (
-        0 => '10,05',
+        0 => 9,
+        1 => 17,
       ),
     ),
   ),
-  'Wijaya Karya Tbk' =>
+  'ALMI' => 
   array (
-    'id' => 101633,
-    'name' => 'Wijaya Karya Tbk',
-    'code' => 'WIKA',
-    'dividen' =>
+    'name' => 'ALUMINDO LIGHT METAL INDUSTRY Tbk',
+    'code' => 'ALMI',
+    'dividen' => 
     array (
-      2017 =>
+      2014 => 
       array (
-        0 => '33,86',
-      ),
-      2016 =>
-      array (
-        0 => '18,85',
-      ),
-      2015 =>
-      array (
-        0 => '20,03',
+        0 => 20,
       ),
     ),
   ),
-  'Wijaya Karya Beton' =>
+  'INAI' => 
   array (
-    'id' => 101634,
-    'name' => 'Wijaya Karya Beton',
-    'code' => 'WTON',
-    'dividen' =>
+    'name' => 'INDAL ALUMINIUM INDUSTRY Tbk',
+    'code' => 'INAI',
+    'dividen' => 
     array (
-      2017 =>
+      2014 => 
       array (
-        0 => '9,8',
+        0 => 8,
       ),
-      2016 =>
+      2015 => 
       array (
-        0 => '6,26',
+        0 => 35,
       ),
-      2015 =>
+      2016 => 
       array (
-        0 => '11,82',
+        0 => 45,
       ),
     ),
   ),
-  'Wilmar Cahaya Indonesia Tbk' =>
+  'BMAS' => 
   array (
-    'id' => 101635,
-    'name' => 'Wilmar Cahaya Indonesia Tbk',
+    'name' => 'BANK MASPION INDONESIA Tbk',
+    'code' => 'BMAS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4.0768599999999999,
+      ),
+      2015 => 
+      array (
+        0 => 3.21,
+      ),
+    ),
+  ),
+  'CSAP' => 
+  array (
+    'name' => 'CATUR SENTOSA ADIPRANA Tbk',
+    'code' => 'CSAP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 5,
+      ),
+      2015 => 
+      array (
+        0 => 5,
+      ),
+      2016 => 
+      array (
+        0 => 2.5,
+      ),
+    ),
+  ),
+  'CASS' => 
+  array (
+    'name' => 'CARDIG AERO SERVICES Tbk',
+    'code' => 'CASS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 20.890000000000001,
+      ),
+      2015 => 
+      array (
+        0 => 21,
+        1 => 21,
+      ),
+      2016 => 
+      array (
+        0 => 11.32,
+      ),
+    ),
+  ),
+  'HEXA' => 
+  array (
+    'name' => 'HEXINDO ADIPERKASA Tbk',
+    'code' => 'HEXA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 109,
+      ),
+      2015 => 
+      array (
+        0 => 117,
+      ),
+      2016 => 
+      array (
+        0 => 1641,
+      ),
+    ),
+  ),
+  'RICY' => 
+  array (
+    'name' => 'RICKY PUTRA GLOBALINDO Tbk',
+    'code' => 'RICY',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4,
+      ),
+      2015 => 
+      array (
+        0 => 4,
+      ),
+      2016 => 
+      array (
+        0 => 3,
+      ),
+    ),
+  ),
+  'TOBA' => 
+  array (
+    'name' => 'TOBA BARA SEJAHTRA Tbk',
+    'code' => 'TOBA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 17.809280000000001,
+        1 => 38.048279999999998,
+      ),
+      2015 => 
+      array (
+        0 => 22.019459999999999,
+      ),
+      2016 => 
+      array (
+        0 => 7.68093,
+      ),
+    ),
+  ),
+  'SMCB' => 
+  array (
+    'name' => 'HOLCIM INDONESIA Tbk',
+    'code' => 'SMCB',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 34,
+        1 => 53,
+      ),
+      2015 => 
+      array (
+        0 => 31,
+      ),
+      2016 => 
+      array (
+        0 => 15,
+      ),
+    ),
+  ),
+  'AKRA' => 
+  array (
+    'name' => 'AKR CORPORINDO Tbk',
+    'code' => 'AKRA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 50,
+        1 => 15,
+      ),
+      2015 => 
+      array (
+        0 => 100,
+        1 => 30,
+      ),
+      2016 => 
+      array (
+        0 => 70,
+        1 => 20,
+      ),
+    ),
+  ),
+  'PTIS' => 
+  array (
+    'name' => 'INDO STRAITS Tbk',
+    'code' => 'PTIS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 8,
+      ),
+    ),
+  ),
+  'LTLS' => 
+  array (
+    'name' => 'LAUTAN LUAS Tbk',
+    'code' => 'LTLS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 29,
+        1 => 33,
+      ),
+      2015 => 
+      array (
+        0 => 17,
+      ),
+    ),
+  ),
+  'SKBM' => 
+  array (
+    'name' => 'SEKAR BUMI Tbk',
+    'code' => 'SKBM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12.44,
+      ),
+      2015 => 
+      array (
+        0 => 12,
+      ),
+    ),
+  ),
+  'NELY' => 
+  array (
+    'name' => 'PELAYARAN NELLY DWI PUTRI Tbk',
+    'code' => 'NELY',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4,
+      ),
+      2015 => 
+      array (
+        0 => 3,
+      ),
+      2016 => 
+      array (
+        0 => 4,
+      ),
+    ),
+  ),
+  'JAWA' => 
+  array (
+    'name' => 'JAYA AGRA WATTIE Tbk',
+    'code' => 'JAWA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1.8,
+      ),
+      2015 => 
+      array (
+        0 => 1.3400000000000001,
+      ),
+    ),
+  ),
+  'ACST' => 
+  array (
+    'name' => 'ACSET INDONUSA Tbk',
+    'code' => 'ACST',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 39.5,
+      ),
+      2015 => 
+      array (
+        0 => 42,
+      ),
+      2016 => 
+      array (
+        0 => 11,
+        1 => 33.5,
+      ),
+    ),
+  ),
+  'MDIA' => 
+  array (
+    'name' => 'INTERMEDIA CAPITAL Tbk',
+    'code' => 'MDIA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'TBLA' => 
+  array (
+    'name' => 'TUNAS BARU LAMPUNG Tbk',
+    'code' => 'TBLA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12,
+      ),
+      2015 => 
+      array (
+        0 => 8,
+        1 => 15,
+      ),
+      2016 => 
+      array (
+        0 => 20,
+        1 => 4,
+      ),
+    ),
+  ),
+  'MDLN' => 
+  array (
+    'name' => 'MODERNLAND REALTY Tbk',
+    'code' => 'MDLN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 5,
+      ),
+      2015 => 
+      array (
+        0 => 12,
+        1 => 12,
+      ),
+    ),
+  ),
+  'EMTK' => 
+  array (
+    'name' => 'ELANG MAHKOTA TEKNOLOGI Tbk',
+    'code' => 'EMTK',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 79,
+      ),
+      2015 => 
+      array (
+        0 => 40,
+        1 => 40,
+        2 => 350,
+      ),
+      2016 => 
+      array (
+        0 => 20,
+        1 => 50,
+      ),
+    ),
+  ),
+  'RDTX' => 
+  array (
+    'name' => 'RODA VIVATEX Tbk',
+    'code' => 'RDTX',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 105,
+      ),
+      2015 => 
+      array (
+        0 => 85,
+      ),
+      2016 => 
+      array (
+        0 => 75,
+      ),
+    ),
+  ),
+  'SCMA' => 
+  array (
+    'name' => 'SURYA CITRA MEDIA Tbk',
+    'code' => 'SCMA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 51,
+        1 => 51,
+      ),
+      2015 => 
+      array (
+        0 => 55,
+        1 => 70,
+      ),
+      2016 => 
+      array (
+        0 => 55,
+        1 => 28,
+      ),
+    ),
+  ),
+  'IKBI' => 
+  array (
+    'name' => 'SUMI INDO KABEL Tbk',
+    'code' => 'IKBI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 20,
+      ),
+      2015 => 
+      array (
+        0 => 26.692,
+      ),
+      2016 => 
+      array (
+        0 => 30.699999999999999,
+      ),
+    ),
+  ),
+  'IPOL' => 
+  array (
+    'name' => 'INDOPOLY SWAKARSA INDUSTRY Tbk',
+    'code' => 'IPOL',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1,
+      ),
+    ),
+  ),
+  'PUDP' => 
+  array (
+    'name' => 'PUDJIADI PRESTIGE Tbk',
+    'code' => 'PUDP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12,
+      ),
+      2015 => 
+      array (
+        0 => 12,
+      ),
+      2016 => 
+      array (
+        0 => 11,
+      ),
+    ),
+  ),
+  'RUIS' => 
+  array (
+    'name' => 'RADIANT UTAMA INTERINSCO Tbk',
+    'code' => 'RUIS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 7.5,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 7.5,
+      ),
+    ),
+  ),
+  'DGIK' => 
+  array (
+    'name' => 'NUSA KONSTRUKSI ENJINIRING Tbk',
+    'code' => 'DGIK',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 2.5,
+      ),
+      2015 => 
+      array (
+        0 => 3.3500000000000001,
+      ),
+    ),
+  ),
+  'KIAS' => 
+  array (
+    'name' => 'KERAMIKA INDONESIA ASSOSIASI Tbk',
+    'code' => 'KIAS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1.51,
+      ),
+      2015 => 
+      array (
+        0 => 1.55,
+      ),
+    ),
+  ),
+  'PANS' => 
+  array (
+    'name' => 'PANIN SEKURITAS Tbk',
+    'code' => 'PANS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 115,
+      ),
+      2015 => 
+      array (
+        0 => 420,
+      ),
+      2016 => 
+      array (
+        0 => 80,
+      ),
+    ),
+  ),
+  'SMAR' => 
+  array (
+    'name' => 'SINAR MAS AGRO RESOURCES AND TECHNOLOGY Tbk',
+    'code' => 'SMAR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 5,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'TPMA' => 
+  array (
+    'name' => 'TRANS POWER MARINE Tbk',
+    'code' => 'TPMA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 11,
+      ),
+    ),
+  ),
+  'AMRT' => 
+  array (
+    'name' => 'SUMBER ALFARIA TRIJAYA Tbk',
+    'code' => 'AMRT',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4.25,
+      ),
+      2015 => 
+      array (
+        0 => 3.8500000000000001,
+      ),
+      2016 => 
+      array (
+        0 => 4.3499999999999996,
+      ),
+    ),
+  ),
+  'LMSH' => 
+  array (
+    'name' => 'LIONMESH PRIMA Tbk',
+    'code' => 'LMSH',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 200,
+      ),
+      2015 => 
+      array (
+        0 => 100,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'LION' => 
+  array (
+    'name' => 'LION METAL WORKS Tbk',
+    'code' => 'LION',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 400,
+      ),
+      2015 => 
+      array (
+        0 => 400,
+      ),
+      2016 => 
+      array (
+        0 => 40,
+      ),
+    ),
+  ),
+  'DART' => 
+  array (
+    'name' => 'DUTA ANGGADA REALTY Tbk',
+    'code' => 'DART',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 28,
+      ),
+    ),
+  ),
+  'GGRM' => 
+  array (
+    'name' => 'GUDANG GARAM Tbk',
+    'code' => 'GGRM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 800,
+      ),
+      2015 => 
+      array (
+        0 => 800,
+      ),
+      2016 => 
+      array (
+        0 => 2600,
+      ),
+    ),
+  ),
+  'TAXI' => 
+  array (
+    'name' => 'EXPRESS TRANSINDO UTAMA Tbk',
+    'code' => 'TAXI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12,
+      ),
+    ),
+  ),
+  'MDRN' => 
+  array (
+    'name' => 'MODERN INTERNASIONAL Tbk',
+    'code' => 'MDRN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 2,
+      ),
+    ),
+  ),
+  'GEMA' => 
+  array (
+    'name' => 'GEMA GRAHASARANA Tbk',
+    'code' => 'GEMA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 7,
+      ),
+      2015 => 
+      array (
+        0 => 7,
+      ),
+      2016 => 
+      array (
+        0 => 16,
+      ),
+    ),
+  ),
+  'ETWA' => 
+  array (
+    'name' => 'ETERINDO WAHANATAMA Tbk',
+    'code' => 'ETWA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1.6200000000000001,
+      ),
+    ),
+  ),
+  'DPNS' => 
+  array (
+    'name' => 'DUTA PERTIWI NUSANTARA',
+    'code' => 'DPNS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 20,
+      ),
+      2015 => 
+      array (
+        0 => 15,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'PANR' => 
+  array (
+    'name' => 'PANORAMA SENTRAWISATA Tbk',
+    'code' => 'PANR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 8.1799999999999997,
+      ),
+      2015 => 
+      array (
+        0 => 6.0700000000000003,
+      ),
+      2016 => 
+      array (
+        0 => 4.0800000000000001,
+      ),
+    ),
+  ),
+  'MASA' => 
+  array (
+    'name' => 'MULTISTRADA ARAH SARANA TBK',
+    'code' => 'MASA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1,
+      ),
+      2015 => 
+      array (
+        0 => 2,
+      ),
+    ),
+  ),
+  'BFIN' => 
+  array (
+    'name' => 'BFI FINANCE INDONESIA Tbk',
+    'code' => 'BFIN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 124.7,
+      ),
+      2015 => 
+      array (
+        0 => 138,
+        1 => 54,
+        2 => 138,
+      ),
+      2016 => 
+      array (
+        0 => 150,
+        1 => 70,
+      ),
+    ),
+  ),
+  'TSPC' => 
+  array (
+    'name' => 'TEMPO SCAN PACIFIC Tbk',
+    'code' => 'TSPC',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 75,
+      ),
+      2015 => 
+      array (
+        0 => 64,
+      ),
+      2016 => 
+      array (
+        0 => 50,
+      ),
+    ),
+  ),
+  'ASBI' => 
+  array (
+    'name' => 'ASURANSI BINTANG Tbk',
+    'code' => 'ASBI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 25,
+      ),
+      2015 => 
+      array (
+        0 => 20,
+      ),
+      2016 => 
+      array (
+        0 => 25,
+      ),
+    ),
+  ),
+  'AMAG' => 
+  array (
+    'name' => 'ASURANSI MULTI ARTHA GUNA Tbk',
+    'code' => 'AMAG',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'PEGE' => 
+  array (
+    'name' => 'PANCA GLOBAL SECURITIES Tbk',
+    'code' => 'PEGE',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'ULTJ' => 
+  array (
+    'name' => 'ULTRAJAYA MILK INDUSTRY AND TRADING COMPANY Tbk',
+    'code' => 'ULTJ',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12,
+      ),
+    ),
+  ),
+  'ASDM' => 
+  array (
+    'name' => 'ASURANSI DAYIN MITRA Tbk',
+    'code' => 'ASDM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 57,
+      ),
+      2015 => 
+      array (
+        0 => 65,
+      ),
+      2016 => 
+      array (
+        0 => 68,
+      ),
+    ),
+  ),
+  'CMNP' => 
+  array (
+    'name' => 'CITRA MARGA NUSAPHALA PERSADA Tbk',
+    'code' => 'CMNP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'TIFA' => 
+  array (
+    'name' => 'TIFA FINANCE Tbk',
+    'code' => 'TIFA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 9,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 7,
+      ),
+    ),
+  ),
+  'IMJS' => 
+  array (
+    'name' => 'INDOMOBIL MULTI JASA Tbk',
+    'code' => 'IMJS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 5.5999999999999996,
+      ),
+      2015 => 
+      array (
+        0 => 5.7999999999999998,
+      ),
+    ),
+  ),
+  'IMAS' => 
+  array (
+    'name' => 'INDOMOBIL SUKSES INTERNASIONAL Tbk',
+    'code' => 'IMAS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 19,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'CLPI' => 
+  array (
+    'name' => 'COLORPAK INDONESIA Tbk',
+    'code' => 'CLPI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 20.75,
+      ),
+      2015 => 
+      array (
+        0 => 53.289999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 39.719999999999999,
+      ),
+    ),
+  ),
+  'ALDO' => 
+  array (
+    'name' => 'ALKINDO NARATAMA Tbk',
+    'code' => 'ALDO',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1.5,
+      ),
+    ),
+  ),
+  'PWON' => 
+  array (
+    'name' => 'PAKUWON JATI Tbk',
+    'code' => 'PWON',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4.5,
+      ),
+      2015 => 
+      array (
+        0 => 4.5,
+      ),
+      2016 => 
+      array (
+        0 => 4.5,
+      ),
+    ),
+  ),
+  'FORU' => 
+  array (
+    'name' => 'FORTUNE INDONESIA Tbk',
+    'code' => 'FORU',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'BALI' => 
+  array (
+    'name' => 'BALI TOWERINDO SENTRA Tbk',
+    'code' => 'BALI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 35,
+      ),
+    ),
+  ),
+  'POOL' => 
+  array (
+    'name' => 'POOL ADVISTA INDONESIA Tbk',
+    'code' => 'POOL',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'GPRA' => 
+  array (
+    'name' => 'PERDANA GAPURAPRIMA Tbk',
+    'code' => 'GPRA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 2,
+      ),
+      2015 => 
+      array (
+        0 => 2.5,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'INDF' => 
+  array (
+    'name' => 'INDOFOOD SUKSES MAKMUR Tbk',
+    'code' => 'INDF',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 142,
+      ),
+      2015 => 
+      array (
+        0 => 220,
+      ),
+      2016 => 
+      array (
+        0 => 168,
+      ),
+    ),
+  ),
+  'FAST' => 
+  array (
+    'name' => 'FAST FOOD INDONESIA Tbk',
+    'code' => 'FAST',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 30,
+      ),
+      2015 => 
+      array (
+        0 => 30,
+      ),
+      2016 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'BBNP' => 
+  array (
+    'name' => 'BANK NUSANTARA PARAHYANGAN Tbk',
+    'code' => 'BBNP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 16,
+      ),
+      2015 => 
+      array (
+        0 => 14,
+      ),
+      2016 => 
+      array (
+        0 => 9,
+      ),
+    ),
+  ),
+  'DYAN' => 
+  array (
+    'name' => 'DYANDRA MEDIA INTERNATIONAL Tbk',
+    'code' => 'DYAN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 3,
+      ),
+    ),
+  ),
+  'MFIN' => 
+  array (
+    'name' => 'MANDALA MULTIFINANCE Tbk',
+    'code' => 'MFIN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 19.5,
+      ),
+      2015 => 
+      array (
+        0 => 23,
+      ),
+      2016 => 
+      array (
+        0 => 19,
+      ),
+    ),
+  ),
+  'AMFG' => 
+  array (
+    'name' => 'ASAHIMAS FLAT GLASS Tbk',
+    'code' => 'AMFG',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 80,
+      ),
+      2015 => 
+      array (
+        0 => 80,
+      ),
+      2016 => 
+      array (
+        0 => 80,
+      ),
+    ),
+  ),
+  'ICBP' => 
+  array (
+    'name' => 'INDOFOOD CBP SUKSES MAKMUR Tbk',
+    'code' => 'ICBP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 190,
+      ),
+      2015 => 
+      array (
+        0 => 222,
+      ),
+      2016 => 
+      array (
+        0 => 256,
+      ),
+    ),
+  ),
+  'KBLI' => 
+  array (
+    'name' => 'KMI Wire and Cable Tbk',
+    'code' => 'KBLI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4,
+      ),
+      2015 => 
+      array (
+        0 => 4,
+      ),
+      2016 => 
+      array (
+        0 => 7,
+      ),
+    ),
+  ),
+  'MKPI' => 
+  array (
+    'name' => 'METROPOLITAN KENTJANA Tbk',
+    'code' => 'MKPI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 205,
+      ),
+      2015 => 
+      array (
+        0 => 223.69999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 327,
+      ),
+    ),
+  ),
+  'DILD' => 
+  array (
+    'name' => 'INTILAND DEVELOPMENT Tbk',
+    'code' => 'DILD',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 8,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'SMRA' => 
+  array (
+    'name' => 'SUMMARECON AGUNG Tbk',
+    'code' => 'SMRA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 23,
+        1 => 23,
+      ),
+      2015 => 
+      array (
+        0 => 20,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'TRST' => 
+  array (
+    'name' => 'TRIAS SENTOSA Tbk',
+    'code' => 'TRST',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 5,
+      ),
+      2015 => 
+      array (
+        0 => 5,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'JTPE' => 
+  array (
+    'name' => 'JASUINDO TIGA PERKASA Tbk',
+    'code' => 'JTPE',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 7,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 14,
+      ),
+    ),
+  ),
+  'MYOR' => 
+  array (
+    'name' => 'MAYORA INDAH Tbk',
+    'code' => 'MYOR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 230,
+      ),
+      2015 => 
+      array (
+        0 => 160,
+      ),
+      2016 => 
+      array (
+        0 => 300,
+      ),
+    ),
+  ),
+  'SGRO' => 
+  array (
+    'name' => 'SAMPOERNA AGRO Tbk',
+    'code' => 'SGRO',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 15,
+      ),
+      2015 => 
+      array (
+        0 => 36,
+      ),
+      2016 => 
+      array (
+        0 => 25,
+      ),
+    ),
+  ),
+  'SMMA' => 
+  array (
+    'name' => 'SINAR MAS MULTIARTHA Tbk',
+    'code' => 'SMMA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1,
+      ),
+      2015 => 
+      array (
+        0 => 1,
+      ),
+      2016 => 
+      array (
+        0 => 1,
+      ),
+    ),
+  ),
+  'APLN' => 
+  array (
+    'name' => 'AGUNG PODOMORO LAND Tbk',
+    'code' => 'APLN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 6,
+      ),
+    ),
+  ),
+  'CTRA' => 
+  array (
+    'name' => 'CIPUTRA DEVELOPMENT Tbk',
+    'code' => 'CTRA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 19,
+      ),
+      2015 => 
+      array (
+        0 => 8,
+      ),
+      2016 => 
+      array (
+        0 => 6,
+      ),
+    ),
+  ),
+  'BNBA' => 
+  array (
+    'name' => 'BANK BUMI ARTA Tbk',
+    'code' => 'BNBA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 6.0999999999999996,
+      ),
+      2015 => 
+      array (
+        0 => 5.6100000000000003,
+      ),
+      2016 => 
+      array (
+        0 => 6.2000000000000002,
+      ),
+    ),
+  ),
+  'BVIC' => 
+  array (
+    'name' => 'BANK VICTORIA INTERNATIONAL  Tbk',
+    'code' => 'BVIC',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4.9000000000000004,
+      ),
+    ),
+  ),
+  'HRUM' => 
+  array (
+    'name' => 'HARUM ENERGY Tbk',
+    'code' => 'HRUM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 110,
+      ),
+    ),
+  ),
+  'INDS' => 
+  array (
+    'name' => 'INDOSPRING Tbk',
+    'code' => 'INDS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 100,
+      ),
+      2015 => 
+      array (
+        0 => 55,
+      ),
+    ),
+  ),
+  'CEKA' => 
+  array (
+    'name' => 'WILMAR CAHAYA INDONESIA Tbk',
     'code' => 'CEKA',
-    'dividen' =>
+    'dividen' => 
     array (
-      2014 =>
+      2014 => 
       array (
-        0 => '50',
+        0 => 100,
       ),
     ),
   ),
-  'Wintermar Offshore Marine Tbk' =>
+  'CPIN' => 
   array (
-    'id' => 101636,
-    'name' => 'Wintermar Offshore Marine Tbk',
-    'code' => 'WINS',
-    'dividen' =>
+    'name' => 'CHAROEN POKPHAND INDONESIA Tbk',
+    'code' => 'CPIN',
+    'dividen' => 
     array (
-      2014 =>
+      2014 => 
       array (
-        0 => '7,95',
+        0 => 46,
+      ),
+      2015 => 
+      array (
+        0 => 18,
+      ),
+      2016 => 
+      array (
+        0 => 29,
       ),
     ),
   ),
-  'Wismilak Inti Makmur Tbk' =>
+  'BISI' => 
   array (
-    'id' => 101637,
-    'name' => 'Wismilak Inti Makmur Tbk',
+    'name' => 'BISI INTERNATIONAL Tbk',
+    'code' => 'BISI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12,
+      ),
+      2015 => 
+      array (
+        0 => 21,
+      ),
+      2016 => 
+      array (
+        0 => 33,
+      ),
+    ),
+  ),
+  'SKLT' => 
+  array (
+    'name' => 'SEKAR LAUT Tbk',
+    'code' => 'SKLT',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4,
+      ),
+      2015 => 
+      array (
+        0 => 5,
+      ),
+      2016 => 
+      array (
+        0 => 6,
+      ),
+    ),
+  ),
+  'GJTL' => 
+  array (
+    'name' => 'GAJAH TUNGGAL Tbk',
+    'code' => 'GJTL',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'SRIL' => 
+  array (
+    'name' => 'SRI REJEKI ISMAN Tbk',
+    'code' => 'SRIL',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 2,
+      ),
+      2015 => 
+      array (
+        0 => 5.3799999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 3,
+      ),
+    ),
+  ),
+  'SIMP' => 
+  array (
+    'name' => 'SALIM IVOMAS PRATAMA Tbk',
+    'code' => 'SIMP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 16,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'PNSE' => 
+  array (
+    'name' => 'PUDJIADI AND SONS Tbk',
+    'code' => 'PNSE',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 3.5,
+      ),
+    ),
+  ),
+  'CTBN' => 
+  array (
+    'name' => 'CITRA TUBINDO Tbk',
+    'code' => 'CTBN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 0.037479999999999999,
+      ),
+      2015 => 
+      array (
+        0 => 333.38999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 114.45,
+      ),
+    ),
+  ),
+  'PBRX' => 
+  array (
+    'name' => 'PAN BROTHERS Tbk',
+    'code' => 'PBRX',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1,
+      ),
+      2015 => 
+      array (
+        0 => 1,
+      ),
+      2016 => 
+      array (
+        0 => 2,
+      ),
+    ),
+  ),
+  'CTRS' => 
+  array (
+    'name' => 'CIPUTRA SURYA Tbk',
+    'code' => 'CTRS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 60,
+      ),
+      2015 => 
+      array (
+        0 => 26,
+      ),
+      2016 => 
+      array (
+        0 => 22,
+      ),
+    ),
+  ),
+  'CTRP' => 
+  array (
+    'name' => 'CIPUTRA PROPERTY Tbk',
+    'code' => 'CTRP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 21,
+      ),
+      2015 => 
+      array (
+        0 => 6,
+      ),
+      2016 => 
+      array (
+        0 => 4,
+      ),
+    ),
+  ),
+  'PTRO' => 
+  array (
+    'name' => 'PETROSEA Tbk',
+    'code' => 'PTRO',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 81.879999999999995,
+      ),
+      2015 => 
+      array (
+        0 => 21.673999999999999,
+      ),
+    ),
+  ),
+  'KKGI' => 
+  array (
+    'name' => 'RESOURCE ALAM INDONESIA Tbk',
+    'code' => 'KKGI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 100,
+      ),
+      2016 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'JSPT' => 
+  array (
+    'name' => 'JAKARTA SETIABUDI INTERNASIONAL Tbk',
+    'code' => 'JSPT',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 14,
+      ),
+      2015 => 
+      array (
+        0 => 16,
+      ),
+      2016 => 
+      array (
+        0 => 17,
+      ),
+    ),
+  ),
+  'KREN' => 
+  array (
+    'name' => 'KRESNA GRAHA SEKURINDO Tbk',
+    'code' => 'KREN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 0.45000000000000001,
+      ),
+    ),
+  ),
+  'SCCO' => 
+  array (
+    'name' => 'SUPREME CABLE MANUFACTURING AND COMMERCE Tbk',
+    'code' => 'SCCO',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 150,
+      ),
+      2015 => 
+      array (
+        0 => 200,
+      ),
+      2016 => 
+      array (
+        0 => 225,
+      ),
+    ),
+  ),
+  'ASRI' => 
+  array (
+    'name' => 'ALAM SUTERA REALTY Tbk',
+    'code' => 'ASRI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 7,
+      ),
+      2015 => 
+      array (
+        0 => 7,
+      ),
+    ),
+  ),
+  'JPFA' => 
+  array (
+    'name' => 'JAPFA COMFEED INDONESIA Tbk',
+    'code' => 'JPFA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 15,
+      ),
+    ),
+  ),
+  'UNIC' => 
+  array (
+    'name' => 'UNGGUL INDAH CAHAYA Tbk',
+    'code' => 'UNIC',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 104,
+      ),
+      2015 => 
+      array (
+        0 => 69,
+      ),
+    ),
+  ),
+  'ANJT' => 
+  array (
+    'name' => 'AUSTINDO NUSANTARA JAYA Tbk',
+    'code' => 'ANJT',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 35,
+      ),
+      2015 => 
+      array (
+        0 => 35,
+      ),
+      2016 => 
+      array (
+        0 => 35,
+      ),
+    ),
+  ),
+  'ECII' => 
+  array (
+    'name' => 'ELECTRONIC CITY INDONESIA Tbk',
+    'code' => 'ECII',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 27.890000000000001,
+      ),
+      2015 => 
+      array (
+        0 => 9.6999999999999993,
+      ),
+      2016 => 
+      array (
+        0 => 5.6799999999999997,
+      ),
+    ),
+  ),
+  'AKPI' => 
+  array (
+    'name' => 'ARGHA KARYA PRIMA INDUSTRY Tbk',
+    'code' => 'AKPI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 17,
+        1 => 17,
+      ),
+      2015 => 
+      array (
+        0 => 8,
+      ),
+      2016 => 
+      array (
+        0 => 9,
+      ),
+    ),
+  ),
+  'DVLA' => 
+  array (
+    'name' => 'DARYA - VARIA LABORATORIA Tbk',
+    'code' => 'DVLA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 22,
+      ),
+      2015 => 
+      array (
+        0 => 30,
+        1 => 40,
+      ),
+      2016 => 
+      array (
+        0 => 35,
+      ),
+    ),
+  ),
+  'TOTO' => 
+  array (
+    'name' => 'SURYA TOTO INDONESIA Tbk',
+    'code' => 'TOTO',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 100,
+        1 => 100,
+      ),
+      2015 => 
+      array (
+        0 => 50,
+        1 => 70,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+        1 => 70,
+      ),
+    ),
+  ),
+  'TPIA' => 
+  array (
+    'name' => 'CHANDRA ASRI PETROCHEMICAL Tbk',
+    'code' => 'TPIA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 9.2699999999999996,
+      ),
+      2015 => 
+      array (
+        0 => 18.289999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 132.68000000000001,
+        1 => 43.049999999999997,
+      ),
+    ),
+  ),
+  'MTLA' => 
+  array (
+    'name' => 'METROPOLITAN LAND Tbk',
+    'code' => 'MTLA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 6.5,
+      ),
+      2015 => 
+      array (
+        0 => 3.5,
+      ),
+      2016 => 
+      array (
+        0 => 3.2000000000000002,
+      ),
+    ),
+  ),
+  'INTP' => 
+  array (
+    'name' => 'INDOCEMENT TUNGGAL PRAKARSA Tbk',
+    'code' => 'INTP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 900,
+      ),
+      2015 => 
+      array (
+        0 => 1350,
+      ),
+      2016 => 
+      array (
+        0 => 415,
+      ),
+    ),
+  ),
+  'JKON' => 
+  array (
+    'name' => 'JAYA KONSTRUKSI MANGGALA PRATAMA Tbk',
+    'code' => 'JKON',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4.2000000000000002,
+      ),
+      2015 => 
+      array (
+        0 => 4.2999999999999998,
+      ),
+      2016 => 
+      array (
+        0 => 4.5,
+      ),
+    ),
+  ),
+  'JRPT' => 
+  array (
+    'name' => 'JAYA REAL PROPERTY Tbk',
+    'code' => 'JRPT',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 13.5,
+      ),
+      2015 => 
+      array (
+        0 => 17.5,
+      ),
+      2016 => 
+      array (
+        0 => 21,
+      ),
+    ),
+  ),
+  'PJAA' => 
+  array (
+    'name' => 'PEMBANGUNAN JAYA ANCOL Tbk',
+    'code' => 'PJAA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 53.399999999999999,
+      ),
+      2015 => 
+      array (
+        0 => 65,
+      ),
+      2016 => 
+      array (
+        0 => 69,
+      ),
+    ),
+  ),
+  'DSNG' => 
+  array (
+    'name' => 'DHARMA SATYA NUSANTARA Tbk',
+    'code' => 'DSNG',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 20,
+      ),
+      2015 => 
+      array (
+        0 => 50,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'WIIM' => 
+  array (
+    'name' => 'WISMILAK INTI MAKMUR Tbk',
     'code' => 'WIIM',
-    'dividen' =>
+    'dividen' => 
     array (
-      2016 =>
+      2014 => 
       array (
-        0 => '25',
-        1 => '25',
+        0 => 18.899999999999999,
       ),
-      2015 =>
+      2015 => 
       array (
-        0 => '13,5',
+        0 => 13.5,
+      ),
+      2016 => 
+      array (
+        0 => 25,
       ),
     ),
   ),
-  'Xl Axiata Tbk' =>
+  'BBKP' => 
   array (
-    'id' => 101638,
-    'name' => 'Xl Axiata Tbk',
-    'code' => 'EXCL',
-    'dividen' =>
+    'name' => 'BANK BUKOPIN Tbk',
+    'code' => 'BBKP',
+    'dividen' => 
     array (
-      2014 =>
+      2014 => 
       array (
-        0 => '65',
+        0 => 30.694900000000001,
+      ),
+      2015 => 
+      array (
+        0 => 23.918019999999999,
+      ),
+      2016 => 
+      array (
+        0 => 31.70898,
+      ),
+    ),
+  ),
+  'ASRM' => 
+  array (
+    'name' => 'ASURANSI RAMAYANA Tbk',
+    'code' => 'ASRM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 55,
+      ),
+      2015 => 
+      array (
+        0 => 85,
+      ),
+      2016 => 
+      array (
+        0 => 95,
+      ),
+    ),
+  ),
+  'RALS' => 
+  array (
+    'name' => 'RAMAYANA LESTARI SENTOSA Tbk',
+    'code' => 'RALS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 30,
+      ),
+      2015 => 
+      array (
+        0 => 27,
+      ),
+      2016 => 
+      array (
+        0 => 30,
+      ),
+    ),
+  ),
+  'LSIP' => 
+  array (
+    'name' => 'PP LONDON SUMATRA INDONESIA Tbk',
+    'code' => 'LSIP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 46,
+      ),
+      2015 => 
+      array (
+        0 => 53,
+      ),
+      2016 => 
+      array (
+        0 => 37,
+      ),
+    ),
+  ),
+  'SMDR' => 
+  array (
+    'name' => 'SAMUDERA INDONESIA Tbk',
+    'code' => 'SMDR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 170,
+      ),
+      2015 => 
+      array (
+        0 => 380,
+      ),
+      2016 => 
+      array (
+        0 => 380,
+      ),
+    ),
+  ),
+  'EKAD' => 
+  array (
+    'name' => 'EKADHARMA INTERNATIONAL Tbk',
+    'code' => 'EKAD',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 9,
+      ),
+      2015 => 
+      array (
+        0 => 9,
+      ),
+      2016 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'FISH' => 
+  array (
+    'name' => 'FKS MULTI AGRO Tbk',
+    'code' => 'FISH',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 20,
+      ),
+      2015 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 50,
+      ),
+    ),
+  ),
+  'BBLD' => 
+  array (
+    'name' => 'BUANA FINANCE Tbk',
+    'code' => 'BBLD',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 60,
+      ),
+      2015 => 
+      array (
+        0 => 60,
+      ),
+      2016 => 
+      array (
+        0 => 18,
+      ),
+    ),
+  ),
+  'MAPI' => 
+  array (
+    'name' => 'MITRA ADIPERKASA Tbk',
+    'code' => 'MAPI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'KLBF' => 
+  array (
+    'name' => 'KALBE FARMA Tbk',
+    'code' => 'KLBF',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 17,
+      ),
+      2015 => 
+      array (
+        0 => 19,
+      ),
+      2016 => 
+      array (
+        0 => 19,
+      ),
+    ),
+  ),
+  'MIDI' => 
+  array (
+    'name' => 'MIDI UTAMA INDONESIA Tbk',
+    'code' => 'MIDI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 7,
+      ),
+      2015 => 
+      array (
+        0 => 14.5,
+      ),
+      2016 => 
+      array (
+        0 => 15,
+      ),
+    ),
+  ),
+  'SQBI' => 
+  array (
+    'name' => 'TAISHO PHARMACEUTICAL INDONESIA Tbk SERI A',
+    'code' => 'SQBI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 14000,
+      ),
+      2015 => 
+      array (
+        0 => 16000,
+      ),
+      2016 => 
+      array (
+        0 => 16000,
+      ),
+    ),
+  ),
+  'SQBB' => 
+  array (
+    'name' => 'TAISHO PHARMACEUTICAL INDONESIA Tbk SERI B',
+    'code' => 'SQBB',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 14000,
+      ),
+      2015 => 
+      array (
+        0 => 16000,
+      ),
+      2016 => 
+      array (
+        0 => 16000,
+      ),
+    ),
+  ),
+  'BSDE' => 
+  array (
+    'name' => 'BUMI SERPONG DAMAI Tbk',
+    'code' => 'BSDE',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 15,
+      ),
+      2015 => 
+      array (
+        0 => 15,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'ABMM' => 
+  array (
+    'name' => 'ABM INVESTAMA Tbk',
+    'code' => 'ABMM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 4.9800000000000004,
+      ),
+    ),
+  ),
+  'LPPF' => 
+  array (
+    'name' => 'MATAHARI DEPARTMENT STORE Tbk',
+    'code' => 'LPPF',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 157.69999999999999,
+      ),
+      2015 => 
+      array (
+        0 => 291.80000000000001,
+      ),
+      2016 => 
+      array (
+        0 => 427.30000000000001,
+      ),
+    ),
+  ),
+  'GDYR' => 
+  array (
+    'name' => 'GOODYEAR INDONESIA Tbk',
+    'code' => 'GDYR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 300,
+      ),
+      2015 => 
+      array (
+        0 => 300,
+      ),
+    ),
+  ),
+  'SSIA' => 
+  array (
+    'name' => 'SURYA SEMESTA INTERNUSA Tbk',
+    'code' => 'SSIA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 30,
+      ),
+      2015 => 
+      array (
+        0 => 18,
+      ),
+      2016 => 
+      array (
+        0 => 9.7100000000000009,
+      ),
+    ),
+  ),
+  'MYOH' => 
+  array (
+    'name' => 'SAMINDO RESOURCES Tbk',
+    'code' => 'MYOH',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 26,
+      ),
+      2015 => 
+      array (
+        0 => 47.960000000000001,
+      ),
+      2016 => 
+      array (
+        0 => 48.200000000000003,
+      ),
+    ),
+  ),
+  'ARNA' => 
+  array (
+    'name' => 'ARWANA CITRAMULIA Tbk',
+    'code' => 'ARNA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 16,
+      ),
+      2015 => 
+      array (
+        0 => 12,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'ACES' => 
+  array (
+    'name' => 'ACE HARDWARE INDONESIA Tbk',
+    'code' => 'ACES',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 6,
+      ),
+      2015 => 
+      array (
+        0 => 16,
+      ),
+      2016 => 
+      array (
+        0 => 15.4,
+      ),
+    ),
+  ),
+  'MREI' => 
+  array (
+    'name' => 'MASKAPAI REASURANSI INDONESIA Tbk',
+    'code' => 'MREI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 40,
+      ),
+      2015 => 
+      array (
+        0 => 40,
+      ),
+      2016 => 
+      array (
+        0 => 50,
+      ),
+    ),
+  ),
+  'ELSA' => 
+  array (
+    'name' => 'ELNUSA Tbk',
+    'code' => 'ELSA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 16.30884,
+      ),
+      2015 => 
+      array (
+        0 => 39.556019999999997,
+      ),
+      2016 => 
+      array (
+        0 => 10.286060000000001,
+      ),
+    ),
+  ),
+  'DLTA' => 
+  array (
+    'name' => 'DELTA DJAKARTA Tbk',
+    'code' => 'DLTA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12000,
+      ),
+      2015 => 
+      array (
+        0 => 6000,
+      ),
+      2016 => 
+      array (
+        0 => 120,
+      ),
+    ),
+  ),
+  'MTDL' => 
+  array (
+    'name' => 'METRODATA ELECTRONICS Tbk',
+    'code' => 'MTDL',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12.5,
+      ),
+    ),
+  ),
+  'TBIG' => 
+  array (
+    'name' => 'TOWER BERSAMA INFRASTRUCTURE Tbk',
+    'code' => 'TBIG',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 61,
+      ),
+      2016 => 
+      array (
+        0 => 72.298756999999995,
+        1 => 57.073954000000001,
+      ),
+    ),
+  ),
+  'MBSS' => 
+  array (
+    'name' => 'MITRABAHTERA SEGARA SEJATI Tbk',
+    'code' => 'MBSS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 65.307000000000002,
+      ),
+      2015 => 
+      array (
+        0 => 120.00386,
+      ),
+    ),
+  ),
+  'PLIN' => 
+  array (
+    'name' => 'PLAZA INDONESIA REALTY Tbk',
+    'code' => 'PLIN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 42.5,
+        1 => 42.5,
+      ),
+      2015 => 
+      array (
+        0 => 70,
+      ),
+      2016 => 
+      array (
+        0 => 43,
+      ),
+    ),
+  ),
+  'BBMD' => 
+  array (
+    'name' => 'BANK MESTIKA DHARMA Tbk',
+    'code' => 'BBMD',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 19.559999999999999,
+      ),
+      2015 => 
+      array (
+        0 => 12.220000000000001,
+      ),
+      2016 => 
+      array (
+        0 => 14.67,
+      ),
+    ),
+  ),
+  'BDMN' => 
+  array (
+    'name' => 'BANK DANAMON INDONESIA Tbk',
+    'code' => 'BDMN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 126.5,
+      ),
+      2015 => 
+      array (
+        0 => 81.5,
+      ),
+      2016 => 
+      array (
+        0 => 74.900000000000006,
+      ),
+    ),
+  ),
+  'TALF' => 
+  array (
+    'name' => 'TUNAS ALFIN Tbk',
+    'code' => 'TALF',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 2.5,
+      ),
+      2015 => 
+      array (
+        0 => 4,
+      ),
+      2016 => 
+      array (
+        0 => 3,
+      ),
+    ),
+  ),
+  'ASSA' => 
+  array (
+    'name' => 'ADI SARANA ARMADA Tbk',
+    'code' => 'ASSA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 9,
+      ),
+      2015 => 
+      array (
+        0 => 5,
+      ),
+      2016 => 
+      array (
+        0 => 4,
+      ),
+    ),
+  ),
+  'ADRO' => 
+  array (
+    'name' => 'ADARO ENERGY Tbk',
+    'code' => 'ADRO',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 12.91,
+        1 => 15.300000000000001,
+      ),
+      2015 => 
+      array (
+        0 => 18.52,
+        1 => 11.73,
+      ),
+      2016 => 
+      array (
+        0 => 16.640000000000001,
+        1 => 15.289999999999999,
+      ),
+    ),
+  ),
+  'BCAP' => 
+  array (
+    'name' => 'MNC KAPITAL INDONESIA Tbk',
+    'code' => 'BCAP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 3,
+        1 => 3,
+      ),
+      2015 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'MEDC' => 
+  array (
+    'name' => 'MEDCO ENERGI INTERNASIONAL Tbk',
+    'code' => 'MEDC',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 17.727399999999999,
+      ),
+      2015 => 
+      array (
+        0 => 15.65377,
+      ),
+    ),
+  ),
+  'SSMS' => 
+  array (
+    'name' => 'SAWIT SUMBERMAS SARANA Tbk',
+    'code' => 'SSMS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 5.1969000000000003,
+      ),
+      2015 => 
+      array (
+        0 => 22.649999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 17.666530000000002,
+      ),
+    ),
+  ),
+  'BEST' => 
+  array (
+    'name' => 'BEKASI FAJAR INDUSTRIAL ESTATE Tbk',
+    'code' => 'BEST',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 2.2799999999999998,
+      ),
+      2015 => 
+      array (
+        0 => 2.2799999999999998,
+      ),
+      2016 => 
+      array (
+        0 => 1.23,
+      ),
+    ),
+  ),
+  'SDMU' => 
+  array (
+    'name' => 'SIDOMULYO SELARAS Tbk',
+    'code' => 'SDMU',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 2.77,
+      ),
+    ),
+  ),
+  'NRCA' => 
+  array (
+    'name' => 'NUSA RAYA CIPTA Tbk',
+    'code' => 'NRCA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 28,
+      ),
+      2015 => 
+      array (
+        0 => 30.039999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 16.02,
+      ),
+    ),
+  ),
+  'ROTI' => 
+  array (
+    'name' => 'NIPPON INDOSARI CORPINDO Tbk',
+    'code' => 'ROTI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 3.1200000000000001,
+      ),
+      2015 => 
+      array (
+        0 => 5.5300000000000002,
+      ),
+      2016 => 
+      array (
+        0 => 10.609999999999999,
+      ),
+    ),
+  ),
+  'SIDO' => 
+  array (
+    'name' => 'INDUSTRI JAMU DAN FARMASI SIDO MUNCUL Tbk',
+    'code' => 'SIDO',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 27,
+      ),
+      2015 => 
+      array (
+        0 => 24,
+      ),
+      2016 => 
+      array (
+        0 => 25,
+      ),
+    ),
+  ),
+  'TOTL' => 
+  array (
+    'name' => 'TOTAL BANGUN PERSADA Tbk',
+    'code' => 'TOTL',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 35,
+      ),
+      2015 => 
+      array (
+        0 => 30,
+      ),
+      2016 => 
+      array (
+        0 => 40,
+      ),
+    ),
+  ),
+  'MLPL' => 
+  array (
+    'name' => 'MULTIPOLAR Tbk',
+    'code' => 'MLPL',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 21.199999999999999,
+      ),
+      2015 => 
+      array (
+        0 => 9.4000000000000004,
+      ),
+    ),
+  ),
+  'LEAD' => 
+  array (
+    'name' => 'LOGINDO SAMUDRAMAKMUR Tbk',
+    'code' => 'LEAD',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 28,
+      ),
+      2015 => 
+      array (
+        0 => 40,
+      ),
+    ),
+  ),
+  'LPGI' => 
+  array (
+    'name' => 'LIPPO GENERAL INSURANCE Tbk',
+    'code' => 'LPGI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 167,
+      ),
+      2015 => 
+      array (
+        0 => 180,
+      ),
+      2016 => 
+      array (
+        0 => 165,
+      ),
+    ),
+  ),
+  'BNLI' => 
+  array (
+    'name' => 'BANK PERMATA Tbk',
+    'code' => 'BNLI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 14.52,
+      ),
+      2015 => 
+      array (
+        0 => 14,
+      ),
+    ),
+  ),
+  'BPFI' => 
+  array (
+    'name' => 'BATAVIA PROSPERINDO FINANCE Tbk',
+    'code' => 'BPFI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 5,
+      ),
+      2016 => 
+      array (
+        0 => 22.050000000000001,
+      ),
+    ),
+  ),
+  'TCID' => 
+  array (
+    'name' => 'MANDOM INDONESIA Tbk',
+    'code' => 'TCID',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 370,
+      ),
+      2015 => 
+      array (
+        0 => 390,
+      ),
+      2016 => 
+      array (
+        0 => 410,
+      ),
+    ),
+  ),
+  'EXCL' => 
+  array (
+    'name' => 'XL Axiata Tbk',
+    'code' => 'EXCL',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 65,
+      ),
+    ),
+  ),
+  'SDRA' => 
+  array (
+    'name' => 'BANK WOORI SAUDARA INDONESIA 1906 Tbk',
+    'code' => 'SDRA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 11,
+      ),
+      2015 => 
+      array (
+        0 => 5,
+      ),
+      2016 => 
+      array (
+        0 => 8,
+      ),
+    ),
+  ),
+  'TGKA' => 
+  array (
+    'name' => 'TIGARAKSA SATRIA Tbk',
+    'code' => 'TGKA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 75.5,
+      ),
+      2015 => 
+      array (
+        0 => 94.5,
+        1 => 94.5,
+      ),
+      2016 => 
+      array (
+        0 => 106.5,
+      ),
+    ),
+  ),
+  'ABDA' => 
+  array (
+    'name' => 'ASURANSI BINA DANA ARTA Tbk',
+    'code' => 'ABDA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 75,
+        1 => 75,
+      ),
+      2015 => 
+      array (
+        0 => 85,
+      ),
+      2016 => 
+      array (
+        0 => 130,
+      ),
+    ),
+  ),
+  'MLPT' => 
+  array (
+    'name' => 'MULTIPOLAR TECHNOLOGY Tbk',
+    'code' => 'MLPT',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1.6000000000000001,
+      ),
+      2015 => 
+      array (
+        0 => 5.71,
+      ),
+      2016 => 
+      array (
+        0 => 7,
+      ),
+    ),
+  ),
+  'MPPA' => 
+  array (
+    'name' => 'MATAHARI PUTRA PRIMA Tbk',
+    'code' => 'MPPA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 186,
+      ),
+      2015 => 
+      array (
+        0 => 7,
+        1 => 36,
+      ),
+      2016 => 
+      array (
+        0 => 26,
+      ),
+    ),
+  ),
+  'MFMI' => 
+  array (
+    'name' => 'MULTIFILING MITRA INDONESIA Tbk',
+    'code' => 'MFMI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1.6000000000000001,
+      ),
+      2015 => 
+      array (
+        0 => 1.8,
+      ),
+      2016 => 
+      array (
+        0 => 2.2000000000000002,
+      ),
+    ),
+  ),
+  'ANTM' => 
+  array (
+    'name' => 'ANEKA TAMBANG Tbk',
+    'code' => 'ANTM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 9.6699999999999999,
+      ),
+    ),
+  ),
+  'NIKL' => 
+  array (
+    'name' => 'PELAT TIMAH NUSANTARA Tbk',
+    'code' => 'NIKL',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 0.47999999999999998,
+      ),
+    ),
+  ),
+  'TRIS' => 
+  array (
+    'name' => 'TRISULA INTERNATIONAL Tbk',
+    'code' => 'TRIS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 9.5,
+      ),
+      2015 => 
+      array (
+        0 => 9.5,
+      ),
+      2016 => 
+      array (
+        0 => 8,
+      ),
+    ),
+  ),
+  'WSKT' => 
+  array (
+    'name' => 'WASKITA KARYA (PERSERO) Tbk',
+    'code' => 'WSKT',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 11.4633813,
+      ),
+      2015 => 
+      array (
+        0 => 10.311597000000001,
+      ),
+      2016 => 
+      array (
+        0 => 15.43914,
+      ),
+    ),
+  ),
+  'SMGR' => 
+  array (
+    'name' => 'SEMEN INDONESIA (PERSERO) Tbk',
+    'code' => 'SMGR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 407.42000000000002,
+      ),
+      2015 => 
+      array (
+        0 => 375.33999999999997,
+      ),
+      2016 => 
+      array (
+        0 => 304.91000000000003,
+      ),
+    ),
+  ),
+  'BBRI' => 
+  array (
+    'name' => 'BANK RAKYAT INDONESIA (PERSERO) Tbk',
+    'code' => 'BBRI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 257.32709999999997,
+      ),
+      2015 => 
+      array (
+        0 => 294.80099999999999,
+      ),
+      2016 => 
+      array (
+        0 => 311.66129999999998,
+      ),
+    ),
+  ),
+  'BJTM' => 
+  array (
+    'name' => 'BANK PEMBANGUNAN DAERAH JAWA TIMUR Tbk',
+    'code' => 'BJTM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 40.609999999999999,
+      ),
+      2015 => 
+      array (
+        0 => 41.859999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 43,
+      ),
+    ),
+  ),
+  'PTBA' => 
+  array (
+    'name' => 'TAMBANG BATUBARA BUKIT ASAM (PERSERO) Tbk',
+    'code' => 'PTBA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 461.97000000000003,
+      ),
+      2015 => 
+      array (
+        0 => 324.56999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 289.73000000000002,
+      ),
+    ),
+  ),
+  'WIKA' => 
+  array (
+    'name' => 'WIJAYA KARYA (PERSERO) Tbk',
+    'code' => 'WIKA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 27.874700000000001,
+      ),
+      2015 => 
+      array (
+        0 => 20.028099999999998,
+      ),
+      2016 => 
+      array (
+        0 => 20.350000000000001,
+      ),
+    ),
+  ),
+  'PGAS' => 
+  array (
+    'name' => 'PERUSAHAAN GAS NEGARA (PERSERO) Tbk',
+    'code' => 'PGAS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 210.40000000000001,
+      ),
+      2015 => 
+      array (
+        0 => 144.84,
+      ),
+      2016 => 
+      array (
+        0 => 91.319999999999993,
+      ),
+    ),
+  ),
+  'BBNI' => 
+  array (
+    'name' => 'BANK NEGARA INDONESIA Tbk',
+    'code' => 'BBNI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 145.71000000000001,
+      ),
+      2015 => 
+      array (
+        0 => 144.54965799999999,
+      ),
+      2016 => 
+      array (
+        0 => 122.533827,
+      ),
+    ),
+  ),
+  'AGRO' => 
+  array (
+    'name' => 'BANK RAKYAT INDONESIA AGRONIAGA Tbk',
+    'code' => 'AGRO',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 1.3794770000000001,
+      ),
+      2015 => 
+      array (
+        0 => 0.8155,
+      ),
+      2016 => 
+      array (
+        0 => 1.3602620000000001,
+      ),
+    ),
+  ),
+  'TLKM' => 
+  array (
+    'name' => 'TELEKOMUNIKASI INDONESIA Tbk',
+    'code' => 'TLKM',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 102.401,
+      ),
+      2015 => 
+      array (
+        0 => 89.459999999999994,
+      ),
+      2016 => 
+      array (
+        0 => 19.379000000000001,
+        1 => 94.637,
+      ),
+    ),
+  ),
+  'IGAR' => 
+  array (
+    'name' => 'CHAMPION PACIFIC INDONESIA Tbk',
+    'code' => 'IGAR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'PTPP' => 
+  array (
+    'name' => 'PP (PERSERO) Tbk',
+    'code' => 'PTPP',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 26.059999999999999,
+      ),
+      2015 => 
+      array (
+        0 => 21.969999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 30.579999999999998,
+      ),
+    ),
+  ),
+  'KAEF' => 
+  array (
+    'name' => 'KIMIA FARMA (PERSERO) Tbk',
+    'code' => 'KAEF',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 9.6574000000000009,
+      ),
+      2015 => 
+      array (
+        0 => 8.4488000000000003,
+      ),
+      2016 => 
+      array (
+        0 => 8.9611000000000001,
+      ),
+    ),
+  ),
+  'BJBR' => 
+  array (
+    'name' => 'BANK JABAR BANTEN Tbk',
+    'code' => 'BJBR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 78.099999999999994,
+      ),
+      2015 => 
+      array (
+        0 => 71.599999999999994,
+      ),
+      2016 => 
+      array (
+        0 => 84.799999999999997,
+      ),
+    ),
+  ),
+  'TINS' => 
+  array (
+    'name' => 'TIMAH Tbk',
+    'code' => 'TINS',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 56.289999999999999,
+      ),
+      2015 => 
+      array (
+        0 => 25.697700000000001,
+      ),
+      2016 => 
+      array (
+        0 => 4.0919999999999996,
+      ),
+    ),
+  ),
+  'SMBR' => 
+  array (
+    'name' => 'SEMEN BATURAJA (PERSERO) Tbk',
+    'code' => 'SMBR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 7.9333999999999998,
+      ),
+      2015 => 
+      array (
+        0 => 8.3438499999999998,
+      ),
+      2016 => 
+      array (
+        0 => 9,
+      ),
+    ),
+  ),
+  'MERK' => 
+  array (
+    'name' => 'MERCK Tbk',
+    'code' => 'MERK',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 6250,
+      ),
+      2015 => 
+      array (
+        0 => 3300,
+        1 => 6500,
+      ),
+      2016 => 
+      array (
+        0 => 100,
+      ),
+    ),
+  ),
+  'ADHI' => 
+  array (
+    'name' => 'ADHI KARYA (PERSERO) Tbk',
+    'code' => 'ADHI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 67.613200000000006,
+        1 => 67.613200000000006,
+      ),
+      2015 => 
+      array (
+        0 => 35.981999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 26.225999999999999,
+      ),
+    ),
+  ),
+  'JSMR' => 
+  array (
+    'name' => 'JASA MARGA (PERSERO) Tbk',
+    'code' => 'JSMR',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 78.606899999999996,
+        1 => 78.606899999999996,
+      ),
+      2015 => 
+      array (
+        0 => 72.235299999999995,
+      ),
+      2016 => 
+      array (
+        0 => 43.128900000000002,
+      ),
+    ),
+  ),
+  'BMRI' => 
+  array (
+    'name' => 'BANK MANDIRI ( PERSERO ) Tbk',
+    'code' => 'BMRI',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 234.04825,
+      ),
+      2015 => 
+      array (
+        0 => 212.91292000000001,
+      ),
+      2016 => 
+      array (
+        0 => 261.44958000000003,
+      ),
+    ),
+  ),
+  'BBTN' => 
+  array (
+    'name' => 'BANK TABUNGAN NEGARA (PERSERO) Tbk',
+    'code' => 'BBTN',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 44.357489999999999,
+      ),
+      2015 => 
+      array (
+        0 => 21.113195000000001,
+      ),
+      2016 => 
+      array (
+        0 => 34.955756000000001,
+      ),
+    ),
+  ),
+  'DKFT' => 
+  array (
+    'name' => 'CENTRAL OMEGA RESOURCES Tbk',
+    'code' => 'DKFT',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 50,
+      ),
+    ),
+  ),
+  'BAJA' => 
+  array (
+    'name' => 'SARANACENTRAL BAJATAMA Tbk',
+    'code' => 'BAJA',
+    'dividen' => 
+    array (
+      2014 => 
+      array (
+        0 => 3.1499999999999999,
+      ),
+    ),
+  ),
+  'SOBI' => 
+  array (
+    'name' => 'SORINI AGRO ASIA CORPORINDO Tbk',
+    'code' => 'SOBI',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'MBAP' => 
+  array (
+    'name' => 'MITRABARA ADIPERDANA Tbk',
+    'code' => 'MBAP',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 50.25,
+        1 => 29,
+      ),
+      2016 => 
+      array (
+        0 => 100.91,
+      ),
+    ),
+  ),
+  'DMAS' => 
+  array (
+    'name' => 'PURADELTA LESTARI Tbk',
+    'code' => 'DMAS',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 12,
+      ),
+      2016 => 
+      array (
+        0 => 11,
+      ),
+    ),
+  ),
+  'BSSR' => 
+  array (
+    'name' => 'BARAMULTI SUKSESSARANA Tbk',
+    'code' => 'BSSR',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 53.549999999999997,
+        1 => 7.5,
+      ),
+      2016 => 
+      array (
+        0 => 25.309999999999999,
+      ),
+    ),
+  ),
+  'BKSL' => 
+  array (
+    'name' => 'SENTUL CITY Tbk',
+    'code' => 'BKSL',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 0.25,
+        1 => 0.25,
+      ),
+    ),
+  ),
+  'APII' => 
+  array (
+    'name' => 'ARITA PRIMA INDONESIA Tbk',
+    'code' => 'APII',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 5.9414300000000004,
+      ),
+      2016 => 
+      array (
+        0 => 2.8353000000000002,
+      ),
+    ),
+  ),
+  'TMAS' => 
+  array (
+    'name' => 'PELAYARAN TEMPURAN EMAS Tbk',
+    'code' => 'TMAS',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 17.809999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 41.700000000000003,
+      ),
+    ),
+  ),
+  'BRAM' => 
+  array (
+    'name' => 'INDO KORDSA Tbk',
+    'code' => 'BRAM',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 100,
+      ),
+      2016 => 
+      array (
+        0 => 125,
+      ),
+    ),
+  ),
+  'SAME' => 
+  array (
+    'name' => 'SARANA MEDITAMA METROPOLITAN Tbk',
+    'code' => 'SAME',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 7,
+      ),
+      2016 => 
+      array (
+        0 => 7,
+      ),
+    ),
+  ),
+  'EMDE' => 
+  array (
+    'name' => 'MEGAPOLITAN DEVELOPMENTS Tbk',
+    'code' => 'EMDE',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 1,
+      ),
+      2016 => 
+      array (
+        0 => 2,
+      ),
+    ),
+  ),
+  'BRNA' => 
+  array (
+    'name' => 'BERLINA Tbk',
+    'code' => 'BRNA',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 17.390000000000001,
+      ),
+    ),
+  ),
+  'GEMS' => 
+  array (
+    'name' => 'GOLDEN ENERGY MINES Tbk',
+    'code' => 'GEMS',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 3.3999999999999999,
+        1 => 3.3599999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 29.5,
+        1 => 6.8049999999999997,
+      ),
+    ),
+  ),
+  'BTON' => 
+  array (
+    'name' => 'BETONJAYA MANUNGGAL Tbk',
+    'code' => 'BTON',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'AHAP' => 
+  array (
+    'name' => 'ASURANSI HARTA AMAN PRATAMA Tbk',
+    'code' => 'AHAP',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 7,
+      ),
+      2016 => 
+      array (
+        0 => 2,
+      ),
+    ),
+  ),
+  'ASJT' => 
+  array (
+    'name' => 'ASURANSI JASA TANIA Tbk',
+    'code' => 'ASJT',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 17.539999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 10.390000000000001,
+      ),
+    ),
+  ),
+  'TIRA' => 
+  array (
+    'name' => 'TIRA AUSTENITE Tbk',
+    'code' => 'TIRA',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'DAJK' => 
+  array (
+    'name' => 'DWI ANEKA JAYA KEMASINDO Tbk',
+    'code' => 'DAJK',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 7,
+      ),
+    ),
+  ),
+  'KBLM' => 
+  array (
+    'name' => 'KABELINDO MURNI Tbk',
+    'code' => 'KBLM',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 5,
+      ),
+      2016 => 
+      array (
+        0 => 3,
+      ),
+    ),
+  ),
+  'ERAA' => 
+  array (
+    'name' => 'ERAJAYA SWASEMBADA Tbk',
+    'code' => 'ERAA',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 20,
+      ),
+      2016 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'ICON' => 
+  array (
+    'name' => 'ISLAND CONCEPTS INDONESIA Tbk',
+    'code' => 'ICON',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 0.25,
+      ),
+    ),
+  ),
+  'JECC' => 
+  array (
+    'name' => 'JEMBO CABLE COMPANY Tbk',
+    'code' => 'JECC',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 60,
+      ),
+      2016 => 
+      array (
+        0 => 200,
+      ),
+    ),
+  ),
+  'PADI' => 
+  array (
+    'name' => 'MINNA PADI INVESTAMA Tbk',
+    'code' => 'PADI',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 0.90000000000000002,
+      ),
+    ),
+  ),
+  'BIRD' => 
+  array (
+    'name' => 'BLUE BIRD Tbk',
+    'code' => 'BIRD',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 42.829999999999998,
+      ),
+      2016 => 
+      array (
+        0 => 66,
+      ),
+    ),
+  ),
+  'MIKA' => 
+  array (
+    'name' => 'MITRA KELUARGA KARYASEHAT Tbk',
+    'code' => 'MIKA',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 200,
+      ),
+      2016 => 
+      array (
+        0 => 25,
+        1 => 25,
+      ),
+    ),
+  ),
+  'IBFN' => 
+  array (
+    'name' => 'INTAN BARUPRANA FINANCE Tbk',
+    'code' => 'IBFN',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 1,
+      ),
+    ),
+  ),
+  'MPMX' => 
+  array (
+    'name' => 'MITRA PINASTHIKA MUSTIKA Tbk',
+    'code' => 'MPMX',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 7,
+      ),
+      2016 => 
+      array (
+        0 => 10,
+        1 => 17,
+      ),
+    ),
+  ),
+  'TELE' => 
+  array (
+    'name' => 'TIPHONE MOBILE INDONESIA Tbk',
+    'code' => 'TELE',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 10,
+        1 => 10,
+      ),
+      2016 => 
+      array (
+        0 => 13,
+      ),
+    ),
+  ),
+  'DNET' => 
+  array (
+    'name' => 'INDORITEL MAKMUR INTERNASIONAL Tbk',
+    'code' => 'DNET',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 2,
+      ),
+      2016 => 
+      array (
+        0 => 2,
+      ),
+    ),
+  ),
+  'FASW' => 
+  array (
+    'name' => 'FAJAR SURYA WISESA Tbk',
+    'code' => 'FASW',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 15,
+      ),
+      2016 => 
+      array (
+        0 => 24,
+      ),
+    ),
+  ),
+  'SILO' => 
+  array (
+    'name' => 'SILOAM INTERNATIONAL HOSPITALS Tbk',
+    'code' => 'SILO',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 5.2000000000000002,
+      ),
+    ),
+  ),
+  'EPMT' => 
+  array (
+    'name' => 'ENSEVAL PUTERA MEGATRADING Tbk',
+    'code' => 'EPMT',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 5,
+      ),
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'MEGA' => 
+  array (
+    'name' => 'BANK MEGA Tbk',
+    'code' => 'MEGA',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 14.359999999999999,
+      ),
+      2016 => 
+      array (
+        0 => 75.584001999999998,
+      ),
+    ),
+  ),
+  'RAJA' => 
+  array (
+    'name' => 'RUKUN RAHARJA Tbk',
+    'code' => 'RAJA',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 12.199999999999999,
+      ),
+    ),
+  ),
+  'CINT' => 
+  array (
+    'name' => 'CHITOSE INTERNASIONAL Tbk',
+    'code' => 'CINT',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 6,
+      ),
+      2016 => 
+      array (
+        0 => 8,
+      ),
+    ),
+  ),
+  'WTON' => 
+  array (
+    'name' => 'WIJAYA KARYA BETON Tbk',
+    'code' => 'WTON',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 11.82,
+      ),
+      2016 => 
+      array (
+        0 => 6.2599999999999998,
+      ),
+    ),
+  ),
+  'BIPI' => 
+  array (
+    'name' => 'BENAKAT INTEGRA Tbk',
+    'code' => 'BIPI',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 1,
+      ),
+    ),
+  ),
+  'AISA' => 
+  array (
+    'name' => 'TIGA PILAR SEJAHTERA FOOD Tbk',
+    'code' => 'AISA',
+    'dividen' => 
+    array (
+      2015 => 
+      array (
+        0 => 8.5,
+      ),
+    ),
+  ),
+  'SRTG' => 
+  array (
+    'name' => 'SARATOGA INVESTAMA SEDAYA Tbk',
+    'code' => 'SRTG',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 61,
+        1 => 32,
+      ),
+    ),
+  ),
+  'POWR' => 
+  array (
+    'name' => 'CIKARANG LISTRINDO Tbk',
+    'code' => 'POWR',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 8.3712800000000005,
+      ),
+    ),
+  ),
+  'PALM' => 
+  array (
+    'name' => 'PROVIDENT AGRO Tbk',
+    'code' => 'PALM',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 42,
+      ),
+    ),
+  ),
+  'SOCI' => 
+  array (
+    'name' => 'SOECHI LINES Tbk',
+    'code' => 'SOCI',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 7.5,
+      ),
+    ),
+  ),
+  'INPP' => 
+  array (
+    'name' => 'INDONESIAN PARADISE PROPERTY Tbk',
+    'code' => 'INPP',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 1.5,
+        1 => 1.5,
+      ),
+    ),
+  ),
+  'IDPR' => 
+  array (
+    'name' => 'INDONESIA PONDASI RAYA Tbk',
+    'code' => 'IDPR',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 5,
+      ),
+    ),
+  ),
+  'AMIN' => 
+  array (
+    'name' => 'ATELIERS MECANIQUES D\'INDONESIE Tbk',
+    'code' => 'AMIN',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 8,
+      ),
+    ),
+  ),
+  'ATIC' => 
+  array (
+    'name' => 'ANABATIC TECHNOLOGIES Tbk',
+    'code' => 'ATIC',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 6,
+      ),
+    ),
+  ),
+  'IMPC' => 
+  array (
+    'name' => 'IMPACK PRATAMA INDUSTRI Tbk',
+    'code' => 'IMPC',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 20,
+      ),
+    ),
+  ),
+  'BUKK' => 
+  array (
+    'name' => 'BUKAKA TEKNIK UTAMA Tbk',
+    'code' => 'BUKK',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 12.800000000000001,
+      ),
+    ),
+  ),
+  'KINO' => 
+  array (
+    'name' => 'KINO INDONESIA Tbk',
+    'code' => 'KINO',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 37,
+      ),
+    ),
+  ),
+  'INCI' => 
+  array (
+    'name' => 'INTANWIJAYA INTERNASIONAL Tbk',
+    'code' => 'INCI',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 10,
+      ),
+    ),
+  ),
+  'SONA' => 
+  array (
+    'name' => 'SONA TOPAS TOURISM INDUSTRY Tbk',
+    'code' => 'SONA',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 320,
+      ),
+    ),
+  ),
+  'MAYA' => 
+  array (
+    'name' => 'BANK MAYAPADA INTERNASIONAL Tbk',
+    'code' => 'MAYA',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 23,
+      ),
+    ),
+  ),
+  'BOLT' => 
+  array (
+    'name' => 'GARUDA METALINDO Tbk',
+    'code' => 'BOLT',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 25.010000000000002,
+      ),
+    ),
+  ),
+  'MARI' => 
+  array (
+    'name' => 'MAHAKA RADIO INTEGRA Tbk',
+    'code' => 'MARI',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 5.0999999999999996,
+      ),
+    ),
+  ),
+  'HDFA' => 
+  array (
+    'name' => 'RADANA BHASKARA FINANCE Tbk',
+    'code' => 'HDFA',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 3.5,
+      ),
+    ),
+  ),
+  'PPRO' => 
+  array (
+    'name' => 'PP Properti Tbk',
+    'code' => 'PPRO',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 4.2699999999999996,
+      ),
+    ),
+  ),
+  'LINK' => 
+  array (
+    'name' => 'LINK NET Tbk',
+    'code' => 'LINK',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 42,
+      ),
+    ),
+  ),
+  'SDPC' => 
+  array (
+    'name' => 'MILLENNIUM PHARMACON INTERNATIONAL Tbk',
+    'code' => 'SDPC',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 3,
+      ),
+    ),
+  ),
+  'BBYB' => 
+  array (
+    'name' => 'BANK YUDHA BHAKTI Tbk',
+    'code' => 'BBYB',
+    'dividen' => 
+    array (
+      2016 => 
+      array (
+        0 => 1.48,
       ),
     ),
   ),

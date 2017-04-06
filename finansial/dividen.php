@@ -1,7 +1,5 @@
 <?php
-require '../class/simple_html_dom.php';
-require '../class/text.php';
-require '../class/page.php';
+require 'vendor/autoload.php';
 
 // https://id.investing.com/equities/indonesia
 // 1. open id.investing
@@ -11,12 +9,8 @@ require '../class/page.php';
 	// title
 	// url
 	// data-pair-id="101278"
-// 5. open https://id.investing.com/equities/bank-pembangun-dividends
-// 6. grab dividen and year, group by year
-// 7. compile into list
-// deprecated:
-// 5. open https://id.investing.com/instruments/Financials/changereporttypeajax?action=change_report_type&pair_ID=101278&report_type=INC&period_type=Annual
-// 6. grab periode (year), grab dividen (per year)
+// 5. sumber lebih reliable: http://akses.ksei.co.id/corporate_actions/downloads
+// 6. Parse xls, group by year and saham
 // 7. compile into list
 
 function exporte($file, $value) {
@@ -41,50 +35,35 @@ function all_pairs() {
 // exporte('all_pairs.out', all_pairs());
 
 function all_dividens() {
-	$pairs = include 'all_pairs.out';
+	$files = ['corporate_action-2014.xls', 'corporate_action-2015.xls', 'corporate_action-2016.xls'];
 	$result = [];
-	foreach ($pairs as $id => list($name, $url)) {
-		echo "$id $name\n";
-		$dividen_url = $url . '-dividends';
-		try {
-			$p = new Page($dividen_url, array('become_firefox'=>true));
-		} catch (Exception $e) {
-			echo "Failed to get dividen: $name $dividen_url\n";
-			continue;
-		}
+	foreach ($files as $xlsfile) {
+		$reader = new SpreadsheetReader($xlsfile);
+		foreach ($reader as $i => $row) {
+			if ($i <= 1) continue;
+			// print_r($row);
+			$name = $row[1];
+			$code = $row[3];
+			$exercise = $row[8];
+			$date = $row[6];
+			$proceed = $row[10];
 
-		$h = new simple_html_dom();
-		$h->load($p->content());
+			if ($code == 'JASS' || $code == '') continue;
 
-		$header = $h->find('.instrumentHeader h2', 0);
-		preg_match('#Dividen (\w+)#', $header->innertext(), $m);
-		$code = $m[1];
-
-		if (strpos($p->content(), 'earningNoData')) {
-			echo "No Dividen: $code $name\n";
-			continue;
-		}
-
-		$compile = array();
-		$table = $h->find('.dividendTbl', 0);
-		foreach ($table->find('td.first') as $td) {
-			preg_match('#(\d{4}),#', $td->innertext(), $m);
+			preg_match('#/(\d{4})#', $date, $m);
 			$year = $m[1];
-			$dividen = $td->next_sibling()->innertext();
-			$compile[$year][] = $dividen;
-		}
+			$amount = floatval($proceed) / floatval($exercise);
 
-		$data = [
-			'id' => $id,
-			'name' => $name,
-			'code' => $code,
-			'dividen' => $compile,
-		];
-		$result[$name] = $data;
+			$result[$code]['name'] = $name;
+			$result[$code]['code'] = $code;
+			$result[$code]['dividen'][$year][] = $amount;
+		}
 	}
+
 	return $result;
 }
-// exporte('all_dividens.out', all_dividens());
+// all_dividens();
+exporte('all_dividens.out', all_dividens());
 // exit;
 
 function standardize_dividen() {
