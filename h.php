@@ -799,6 +799,7 @@ function porncomix($url) {
 	$p = new Page($url);
 	$h = new simple_html_dom();
 	$h->load($p->content());
+	// print_r($p->content())
 
 	$title = $h->find('.post-title', 0)->innertext;
 
