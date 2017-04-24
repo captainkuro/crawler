@@ -15,17 +15,30 @@ function get_all_codes() {
 
 	$h = new simple_html_dom();
 	$h->load(file_get_contents('raw-Company-Profile.xls'));
+	$result = [];
+
 	foreach ($h->find('tr') as $i => $tr) {
 		if ($i <= 0) continue;
-		print_r($tr->text());exit;
+		$code = trim($tr->find('td', 1)->text());
+		$name = trim($tr->find('td', 2)->text());
+		$join_date = trim($tr->find('td', 3)->text());
+		
+		$result[$code] = [
+			'code' => $code,
+			'name' => $name,
+			'join_date' => $join_date,
+		];
 	}
-
 	exporte($output, $result);
 	return $result;
 }
-get_all_codes();
+// get_all_codes();exit;
 
+// @todo sector info
 // http://infopersada.com/investasi/saham/ get index info
+function get_index_info() {
+	
+}
 
 function get_all_codes_te() {
 	if (is_file('all_codes.out')) {
