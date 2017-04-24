@@ -1,0 +1,4324 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:x='urn:schemas-microsoft-com:office:excel' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+
+</style>
+<!--[if gte mso 9]>
+
+<![endif]-->
+</head>
+<body>
+<table class=" rgClipCells" rules="all" border="1" id="dnn_ctr516_MainView_rgMain_ctl00" style="width:100%;table-layout:fixed;overflow:hidden;empty-cells:show;">
+	<colgroup>
+		<col style="width:33px" />
+		<col style="width:75px" />
+		<col style="width:200px" />
+		<col style="width:90px" />
+	</colgroup>
+<thead>
+		<tr>
+			<th scope="col">No.</th><th scope="col">Kode</th><th scope="col">Nama</th><th scope="col">Tanggal Pendaftaran</th>
+		</tr>
+	</thead><tbody>
+	<tr>
+		<td>
+                                            1
+                                        </td><td>
+                                            AALI
+                                        </td><td>Astra Agro Lestari Tbk</td><td>
+                                            09-Des-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            2
+                                        </td><td>
+                                            ABBA
+                                        </td><td>Mahaka Media Tbk</td><td>
+                                            03-Apr-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            3
+                                        </td><td>
+                                            ABDA
+                                        </td><td>Asuransi Bina Dana Arta Tbk</td><td>
+                                            06-Jul-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            4
+                                        </td><td>
+                                            ABMM
+                                        </td><td>ABM Investama Tbk</td><td>
+                                            06-Des-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            5
+                                        </td><td>
+                                            ACES
+                                        </td><td>Ace Hardware Indonesia Tbk</td><td>
+                                            06-Nop-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            6
+                                        </td><td>
+                                            ACST
+                                        </td><td>PT Acset Indonusa Tbk.</td><td>
+                                            24-Jun-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            7
+                                        </td><td>
+                                            ADES
+                                        </td><td>Akasha Wira International Tbk  Tbk</td><td>
+                                            13-Jun-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            8
+                                        </td><td>
+                                            ADHI
+                                        </td><td>Adhi Karya (Persero) Tbk</td><td>
+                                            18-Mar-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            9
+                                        </td><td>
+                                            ADMF
+                                        </td><td>Adira Dinamika Multi Finance Tbk</td><td>
+                                            31-Mar-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            10
+                                        </td><td>
+                                            ADMG
+                                        </td><td>Polychem Indonesia Tbk</td><td>
+                                            20-Okt-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            11
+                                        </td><td>
+                                            ADRO
+                                        </td><td>ADARO ENERGY Tbk</td><td>
+                                            16-Jul-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            12
+                                        </td><td>
+                                            AGII
+                                        </td><td>PT Aneka Gas Industri Tbk.</td><td>
+                                            28-Sep-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            13
+                                        </td><td>
+                                            AGRO
+                                        </td><td>Bank Rakyat Indonesia Agroniaga Tbk</td><td>
+                                            08-Agust-2003
+                                        </td>
+	</tr><tr>
+		<td>
+                                            14
+                                        </td><td>
+                                            AGRS
+                                        </td><td>PT Bank Agris Tbk</td><td>
+                                            22-Des-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            15
+                                        </td><td>
+                                            AHAP
+                                        </td><td>Asuransi Harta Aman Pratama Tbk</td><td>
+                                            14-Sep-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            16
+                                        </td><td>
+                                            AIMS
+                                        </td><td>Akbar Indomakmur Stimec Tbk</td><td>
+                                            20-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            17
+                                        </td><td>
+                                            AISA
+                                        </td><td>Tiga Pilar Sejahtera Food Tbk</td><td>
+                                            11-Jun-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            18
+                                        </td><td>
+                                            AKKU
+                                        </td><td>PT Anugerah Kagum Karya Utama Tbk</td><td>
+                                            01-Nop-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            19
+                                        </td><td>
+                                            AKPI
+                                        </td><td>Argha Karya Prima Ind. Tbk</td><td>
+                                            18-Des-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            20
+                                        </td><td>
+                                            AKRA
+                                        </td><td>AKR Corporindo Tbk</td><td>
+                                            03-Okt-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            21
+                                        </td><td>
+                                            AKSI
+                                        </td><td>Majapahit Inti Corpora Tbk</td><td>
+                                            13-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            22
+                                        </td><td>
+                                            ALDO
+                                        </td><td>Alkindo Naratama Tbk</td><td>
+                                            12-Jul-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            23
+                                        </td><td>
+                                            ALKA
+                                        </td><td>Alakasa Industrindo Tbk</td><td>
+                                            12-Jul-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            24
+                                        </td><td>
+                                            ALMI
+                                        </td><td>Alumindo Light Metal Industry Tbk</td><td>
+                                            02-Jan-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            25
+                                        </td><td>
+                                            ALTO
+                                        </td><td>Tri Banyan Tirta Tbk</td><td>
+                                            10-Jul-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            26
+                                        </td><td>
+                                            AMAG
+                                        </td><td>Asuransi Multi Artha Guna Tbk</td><td>
+                                            23-Des-2005
+                                        </td>
+	</tr><tr>
+		<td>
+                                            27
+                                        </td><td>
+                                            AMFG
+                                        </td><td>Asahimas Flat Glass Tbk</td><td>
+                                            08-Nop-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            28
+                                        </td><td>
+                                            AMIN
+                                        </td><td>PT Ateliers Mecaniques D'Indonesie Tbk.</td><td>
+                                            10-Des-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            29
+                                        </td><td>
+                                            AMRT
+                                        </td><td>Sumber Alfaria Trijaya Tbk</td><td>
+                                            15-Jan-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            30
+                                        </td><td>
+                                            ANJT
+                                        </td><td>PT Austindo Nusantara Jaya Tbk.</td><td>
+                                            08-Mei-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            31
+                                        </td><td>
+                                            ANTM
+                                        </td><td>Aneka Tambang (Persero) Tbk</td><td>
+                                            27-Nop-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            32
+                                        </td><td>
+                                            APEX
+                                        </td><td>Apexindo Pratama Duta Tbk</td><td>
+                                            10-Jul-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            33
+                                        </td><td>
+                                            APIC
+                                        </td><td>PACIFIC STRATEGIC FINANCIAL Tbk</td><td>
+                                            18-Des-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            34
+                                        </td><td>
+                                            APII
+                                        </td><td>PT Arita Prima Indonesia Tbk.</td><td>
+                                            29-Okt-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            35
+                                        </td><td>
+                                            APLI
+                                        </td><td>Asiaplast Industries Tbk</td><td>
+                                            01-Mei-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            36
+                                        </td><td>
+                                            APLN
+                                        </td><td>Agung Podomoro Land Tbk</td><td>
+                                            11-Nop-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            37
+                                        </td><td>
+                                            APOL
+                                        </td><td>Arpeni Pratama Ocean Line Tbk</td><td>
+                                            22-Jun-2005
+                                        </td>
+	</tr><tr>
+		<td>
+                                            38
+                                        </td><td>
+                                            ARGO
+                                        </td><td>Argo Pantes Tbk</td><td>
+                                            07-Jan-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            39
+                                        </td><td>
+                                            ARII
+                                        </td><td>Atlas Resources Tbk</td><td>
+                                            08-Nop-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            40
+                                        </td><td>
+                                            ARNA
+                                        </td><td>Arwana Citramulia Tbk</td><td>
+                                            17-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            41
+                                        </td><td>
+                                            ARTA
+                                        </td><td>Arthavest Tbk</td><td>
+                                            05-Nop-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            42
+                                        </td><td>
+                                            ARTI
+                                        </td><td>Ratu Prabu Energi Tbk</td><td>
+                                            30-Apr-2003
+                                        </td>
+	</tr><tr>
+		<td>
+                                            43
+                                        </td><td>
+                                            ARTO
+                                        </td><td>PT Bank Artos Indonesia Tbk</td><td>
+                                            12-Jan-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            44
+                                        </td><td>
+                                            ASBI
+                                        </td><td>Asuransi Bintang Tbk</td><td>
+                                            29-Nop-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            45
+                                        </td><td>
+                                            ASDM
+                                        </td><td>Asuransi Dayin Mitra Tbk</td><td>
+                                            15-Des-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            46
+                                        </td><td>
+                                            ASGR
+                                        </td><td>Astra Graphia Tbk</td><td>
+                                            15-Nop-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            47
+                                        </td><td>
+                                            ASII
+                                        </td><td>Astra International Tbk</td><td>
+                                            04-Apr-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            48
+                                        </td><td>
+                                            ASJT
+                                        </td><td>Asuransi Jasa Tania Tbk</td><td>
+                                            23-Des-2003
+                                        </td>
+	</tr><tr>
+		<td>
+                                            49
+                                        </td><td>
+                                            ASMI
+                                        </td><td>PT Asuransi Kresna Mitra Tbk.</td><td>
+                                            16-Jan-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            50
+                                        </td><td>
+                                            ASRI
+                                        </td><td>ALAM SUTERA REALTY Tbk</td><td>
+                                            18-Des-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            51
+                                        </td><td>
+                                            ASRM
+                                        </td><td>Asuransi Ramayana Tbk</td><td>
+                                            19-Mar-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            52
+                                        </td><td>
+                                            ASSA
+                                        </td><td>Adi Sarana Armada Tbk</td><td>
+                                            12-Nop-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            53
+                                        </td><td>
+                                            ATIC
+                                        </td><td>PT Anabatic Technologies Tbk</td><td>
+                                            08-Jul-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            54
+                                        </td><td>
+                                            ATPK
+                                        </td><td>Bara Jaya Internasional Tbk</td><td>
+                                            17-Apr-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            55
+                                        </td><td>
+                                            AUTO
+                                        </td><td>Astra Otoparts Tbk</td><td>
+                                            15-Jun-1998
+                                        </td>
+	</tr><tr>
+		<td>
+                                            56
+                                        </td><td>
+                                            BABP
+                                        </td><td>PT Bank MNC Internasional Tbk.</td><td>
+                                            15-Jul-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            57
+                                        </td><td>
+                                            BACA
+                                        </td><td>Bank Capital Indonesia Tbk</td><td>
+                                            04-Okt-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            58
+                                        </td><td>
+                                            BAJA
+                                        </td><td>Saranacentral Bajatama Tbk</td><td>
+                                            21-Des-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            59
+                                        </td><td>
+                                            BALI
+                                        </td><td>PT Bali Towerindo Sentra Tbk. </td><td>
+                                            13-Mar-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            60
+                                        </td><td>
+                                            BAPA
+                                        </td><td>Bekasi Asri Pemula Tbk</td><td>
+                                            14-Jan-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            61
+                                        </td><td>
+                                            BATA
+                                        </td><td>Sepatu Bata Tbk</td><td>
+                                            24-Mar-1982
+                                        </td>
+	</tr><tr>
+		<td>
+                                            62
+                                        </td><td>
+                                            BAYU
+                                        </td><td>Bayu Buana Tbk</td><td>
+                                            30-Okt-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            63
+                                        </td><td>
+                                            BBCA
+                                        </td><td>Bank Central Asia Tbk</td><td>
+                                            31-Mei-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            64
+                                        </td><td>
+                                            BBHI
+                                        </td><td>PT Bank Harda Internasional Tbk.</td><td>
+                                            12-Agust-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            65
+                                        </td><td>
+                                            BBKP
+                                        </td><td>Bank Bukopin Tbk</td><td>
+                                            10-Jul-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            66
+                                        </td><td>
+                                            BBLD
+                                        </td><td>Buana Finance Tbk</td><td>
+                                            07-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            67
+                                        </td><td>
+                                            BBMD
+                                        </td><td>PT Bank Mestika Dharma Tbk.</td><td>
+                                            08-Jul-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            68
+                                        </td><td>
+                                            BBNI
+                                        </td><td>Bank Negara Indonesia Tbk</td><td>
+                                            25-Nop-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            69
+                                        </td><td>
+                                            BBNP
+                                        </td><td>Bank Nusantara Parahyangan Tbk</td><td>
+                                            10-Jan-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            70
+                                        </td><td>
+                                            BBRI
+                                        </td><td>Bank Rakyat Indonesia (Persero) Tbk</td><td>
+                                            10-Nop-2003
+                                        </td>
+	</tr><tr>
+		<td>
+                                            71
+                                        </td><td>
+                                            BBRM
+                                        </td><td>Pelayaran Nasional Bina Buana Raya Tbk</td><td>
+                                            09-Jan-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            72
+                                        </td><td>
+                                            BBTN
+                                        </td><td>Bank Tabungan Negara (Persero) Tbk</td><td>
+                                            17-Des-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            73
+                                        </td><td>
+                                            BBYB
+                                        </td><td>PT Bank Yudha Bhakti Tbk.</td><td>
+                                            13-Jan-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            74
+                                        </td><td>
+                                            BCAP
+                                        </td><td>MNC Kapital Indonesia Tbk</td><td>
+                                            08-Jun-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            75
+                                        </td><td>
+                                            BCIC
+                                        </td><td>PT Bank JTrust Indonesia Tbk. </td><td>
+                                            25-Jun-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            76
+                                        </td><td>
+                                            BCIP
+                                        </td><td>Bumi Citra Permai Tbk</td><td>
+                                            11-Des-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            77
+                                        </td><td>
+                                            BDMN
+                                        </td><td>Bank Danamon Indonesia Tbk</td><td>
+                                            06-Des-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            78
+                                        </td><td>
+                                            BEKS
+                                        </td><td>PT Bank Pembangunan Daerah Banten Tbk.</td><td>
+                                            13-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            79
+                                        </td><td>
+                                            BEST
+                                        </td><td>Bekasi Fajar Industrial Estate Tbk</td><td>
+                                            10-Apr-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            80
+                                        </td><td>
+                                            BFIN
+                                        </td><td>BFI Finance Indonesia Tbk</td><td>
+                                            16-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            81
+                                        </td><td>
+                                            BGTG
+                                        </td><td>PT Bank Ganesha Tbk.</td><td>
+                                            12-Mei-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            82
+                                        </td><td>
+                                            BHIT
+                                        </td><td>PT MNC Investama Tbk.</td><td>
+                                            24-Nop-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            83
+                                        </td><td>
+                                            BIKA
+                                        </td><td>PT Binakarya Jaya Abadi Tbk.</td><td>
+                                            14-Jul-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            84
+                                        </td><td>
+                                            BIMA
+                                        </td><td>Primarindo Asia Infrastructure Tbk</td><td>
+                                            30-Agust-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            85
+                                        </td><td>
+                                            BINA
+                                        </td><td>PT Bank Ina Perdana Tbk.</td><td>
+                                            16-Jan-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            86
+                                        </td><td>
+                                            BIPI
+                                        </td><td>Benakat Integra Tbk</td><td>
+                                            11-Feb-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            87
+                                        </td><td>
+                                            BIPP
+                                        </td><td>Bhuwanatala Indah Permai Tbk</td><td>
+                                            23-Okt-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            88
+                                        </td><td>
+                                            BIRD
+                                        </td><td>PT Blue Bird Tbk</td><td>
+                                            05-Nop-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            89
+                                        </td><td>
+                                            BISI
+                                        </td><td>BISI INTERNATIONAL Tbk</td><td>
+                                            28-Mei-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            90
+                                        </td><td>
+                                            BJBR
+                                        </td><td>Bank Pembangunan Daerah Jawa Barat dan Banten Tbk</td><td>
+                                            08-Jul-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            91
+                                        </td><td>
+                                            BJTM
+                                        </td><td>Bank Pembangunan Daerah Jawa Timur Tbk</td><td>
+                                            12-Jul-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            92
+                                        </td><td>
+                                            BKDP
+                                        </td><td>Bukit Darmo Property Tbk</td><td>
+                                            15-Jun-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            93
+                                        </td><td>
+                                            BKSL
+                                        </td><td>Sentul City Tbk</td><td>
+                                            28-Jul-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            94
+                                        </td><td>
+                                            BKSW
+                                        </td><td>PT Bank QNB Indonesia Tbk</td><td>
+                                            21-Nop-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            95
+                                        </td><td>
+                                            BLTA
+                                        </td><td>Berlian Laju Tanker Tbk</td><td>
+                                            26-Mar-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            96
+                                        </td><td>
+                                            BLTZ
+                                        </td><td>PT Graha Layar Prima Tbk.</td><td>
+                                            10-Apr-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            97
+                                        </td><td>
+                                            BMAS
+                                        </td><td>PT Bank Maspion Indonesia Tbk.</td><td>
+                                            11-Jul-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            98
+                                        </td><td>
+                                            BMRI
+                                        </td><td>Bank Mandiri (Persero) Tbk</td><td>
+                                            14-Jul-2003
+                                        </td>
+	</tr><tr>
+		<td>
+                                            99
+                                        </td><td>
+                                            BMSR
+                                        </td><td>Bintang Mitra Semestaraya Tbk</td><td>
+                                            29-Des-1999
+                                        </td>
+	</tr><tr>
+		<td>
+                                            100
+                                        </td><td>
+                                            BMTR
+                                        </td><td>Global Mediacom Tbk</td><td>
+                                            17-Jul-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            101
+                                        </td><td>
+                                            BNBA
+                                        </td><td>Bank Bumi Arta Tbk</td><td>
+                                            31-Des-2099
+                                        </td>
+	</tr><tr>
+		<td>
+                                            102
+                                        </td><td>
+                                            BNBR
+                                        </td><td>Bakrie & Brothers Tbk</td><td>
+                                            28-Agust-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            103
+                                        </td><td>
+                                            BNGA
+                                        </td><td>Bank CIMB Niaga Tbk</td><td>
+                                            29-Nop-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            104
+                                        </td><td>
+                                            BNII
+                                        </td><td>PT Bank Maybank Indonesia Tbk</td><td>
+                                            21-Nop-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            105
+                                        </td><td>
+                                            BNLI
+                                        </td><td>Bank Permata Tbk</td><td>
+                                            15-Jan-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            106
+                                        </td><td>
+                                            BOGA
+                                        </td><td>PT Bintang Oto Global Tbk</td><td>
+                                            19-Des-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            107
+                                        </td><td>
+                                            BOLT
+                                        </td><td>PT Garuda Metalindo Tbk.</td><td>
+                                            07-Jul-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            108
+                                        </td><td>
+                                            BORN
+                                        </td><td>Borneo Lumbung Energi & Metal Tbk</td><td>
+                                            26-Nop-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            109
+                                        </td><td>
+                                            BPFI
+                                        </td><td>Batavia Prosperindo Finance Tbk</td><td>
+                                            01-Jun-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            110
+                                        </td><td>
+                                            BPII
+                                        </td><td>PT Batavia Prosperindo Internasional Tbk.</td><td>
+                                            08-Jul-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            111
+                                        </td><td>
+                                            BRAM
+                                        </td><td>Indo Kordsa Tbk</td><td>
+                                            05-Sep-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            112
+                                        </td><td>
+                                            BRAU
+                                        </td><td>Berau Coal Energy Tbk</td><td>
+                                            19-Agust-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            113
+                                        </td><td>
+                                            BRMS
+                                        </td><td>Bumi Resources Minerals Tbk</td><td>
+                                            09-Des-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            114
+                                        </td><td>
+                                            BRNA
+                                        </td><td>Berlina Tbk</td><td>
+                                            06-Nop-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            115
+                                        </td><td>
+                                            BRPT
+                                        </td><td>Barito Pacific Tbk</td><td>
+                                            01-Okt-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            116
+                                        </td><td>
+                                            BSDE
+                                        </td><td>Bumi Serpong Damai Tbk</td><td>
+                                            06-Jun-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            117
+                                        </td><td>
+                                            BSIM
+                                        </td><td>Bank Sinarmas Tbk</td><td>
+                                            13-Des-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            118
+                                        </td><td>
+                                            BSSR
+                                        </td><td>Baramulti Suksessarana Tbk</td><td>
+                                            08-Nop-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            119
+                                        </td><td>
+                                            BSWD
+                                        </td><td>Bank of India Indonesia Tbk</td><td>
+                                            01-Mei-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            120
+                                        </td><td>
+                                            BTEK
+                                        </td><td>Bumi Teknokultura Unggul Tbk</td><td>
+                                            14-Mei-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            121
+                                        </td><td>
+                                            BTEL
+                                        </td><td>Bakrie Telecom Tbk</td><td>
+                                            03-Feb-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            122
+                                        </td><td>
+                                            BTON
+                                        </td><td>Betonjaya Manunggal Tbk</td><td>
+                                            18-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            123
+                                        </td><td>
+                                            BTPN
+                                        </td><td>BANK TABUNGAN PENSIUNAN NASIONAL Tbk</td><td>
+                                            12-Mar-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            124
+                                        </td><td>
+                                            BUDI
+                                        </td><td>PT Budi Starch & Sweetener Tbk.</td><td>
+                                            08-Mei-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            125
+                                        </td><td>
+                                            BUKK
+                                        </td><td>Bukaka Teknik Utama Tbk</td><td>
+                                            29-Jun-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            126
+                                        </td><td>
+                                            BULL
+                                        </td><td>Buana Listya Tama Tbk</td><td>
+                                            23-Mei-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            127
+                                        </td><td>
+                                            BUMI
+                                        </td><td>Bumi Resources Tbk</td><td>
+                                            30-Jul-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            128
+                                        </td><td>
+                                            BUVA
+                                        </td><td>PT Bukit Uluwatu Villa Tbk</td><td>
+                                            12-Jul-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            129
+                                        </td><td>
+                                            BVIC
+                                        </td><td>Bank Victoria International Tbk</td><td>
+                                            30-Jun-1999
+                                        </td>
+	</tr><tr>
+		<td>
+                                            130
+                                        </td><td>
+                                            BWPT
+                                        </td><td>Eagle High Plantations Tbk</td><td>
+                                            27-Okt-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            131
+                                        </td><td>
+                                            BYAN
+                                        </td><td>Bayan Resources Tbk</td><td>
+                                            12-Agust-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            132
+                                        </td><td>
+                                            CANI
+                                        </td><td>PT Capitol Nusantara Indonesia Tbk.</td><td>
+                                            16-Jan-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            133
+                                        </td><td>
+                                            CARS
+                                        </td><td>PT Industri dan Perdagangan Bintraco Dharma Tbk</td><td>
+                                            10-Apr-2017
+                                        </td>
+	</tr><tr>
+		<td>
+                                            134
+                                        </td><td>
+                                            CASA
+                                        </td><td>PT Capital Financial Indonesia Tbk</td><td>
+                                            19-Jul-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            135
+                                        </td><td>
+                                            CASS
+                                        </td><td>Cardig Aero Services Tbk</td><td>
+                                            05-Des-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            136
+                                        </td><td>
+                                            CEKA
+                                        </td><td>PT Wilmar Cahaya Indonesia Tbk.</td><td>
+                                            09-Jul-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            137
+                                        </td><td>
+                                            CENT
+                                        </td><td>PT Centratama Telekomunikasi Indonesia Tbk.</td><td>
+                                            01-Nop-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            138
+                                        </td><td>
+                                            CFIN
+                                        </td><td>Clipan Finance Indonesia Tbk</td><td>
+                                            02-Okt-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            139
+                                        </td><td>
+                                            CINT
+                                        </td><td>PT Chitose Internasional Tbk</td><td>
+                                            27-Jun-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            140
+                                        </td><td>
+                                            CITA
+                                        </td><td>Cita Mineral Investindo Tbk</td><td>
+                                            20-Mar-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            141
+                                        </td><td>
+                                            CKRA
+                                        </td><td>Cakra Mineral Tbk.</td><td>
+                                            19-Mei-1999
+                                        </td>
+	</tr><tr>
+		<td>
+                                            142
+                                        </td><td>
+                                            CLPI
+                                        </td><td>Colorpak Indonesia Tbk</td><td>
+                                            30-Nop-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            143
+                                        </td><td>
+                                            CMNP
+                                        </td><td>Citra Marga Nusaphala Persada Tbk</td><td>
+                                            10-Jan-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            144
+                                        </td><td>
+                                            CMPP
+                                        </td><td>Rimau Multi Putra Pratama</td><td>
+                                            08-Des-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            145
+                                        </td><td>
+                                            CNKO
+                                        </td><td>Exploitasi Energi Indonesia Tbk</td><td>
+                                            20-Nop-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            146
+                                        </td><td>
+                                            CNTX
+                                        </td><td>Centex Tbk</td><td>
+                                            22-Mei-1979
+                                        </td>
+	</tr><tr>
+		<td>
+                                            147
+                                        </td><td>
+                                            COWL
+                                        </td><td>COWELL DEVELOPMENT Tbk</td><td>
+                                            19-Des-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            148
+                                        </td><td>
+                                            CPGT
+                                        </td><td>PT Citra Maharlika Nusantara Corpora Tbk.</td><td>
+                                            09-Jul-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            149
+                                        </td><td>
+                                            CPIN
+                                        </td><td>Charoen Pokphand Indonesia Tbk</td><td>
+                                            18-Mar-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            150
+                                        </td><td>
+                                            CPRO
+                                        </td><td>Central Proteina Prima Tbk</td><td>
+                                            28-Nop-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            151
+                                        </td><td>
+                                            CSAP
+                                        </td><td>Catur Sentosa Adiprana Tbk</td><td>
+                                            12-Des-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            152
+                                        </td><td>
+                                            CTBN
+                                        </td><td>Citra Tubindo Tbk</td><td>
+                                            28-Nop-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            153
+                                        </td><td>
+                                            CTRA
+                                        </td><td>Ciputra Development Tbk</td><td>
+                                            28-Mar-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            154
+                                        </td><td>
+                                            CTTH
+                                        </td><td>Citatah Tbk</td><td>
+                                            03-Jul-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            155
+                                        </td><td>
+                                            DAJK
+                                        </td><td>PT Dwi Aneka Jaya Kemasindo Tbk.</td><td>
+                                            14-Mei-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            156
+                                        </td><td>
+                                            DART
+                                        </td><td>Duta Anggada Realty Tbk</td><td>
+                                            08-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            157
+                                        </td><td>
+                                            DAYA
+                                        </td><td>PT Duta Intidaya Tbk.</td><td>
+                                            28-Jun-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            158
+                                        </td><td>
+                                            DEFI
+                                        </td><td>Danasupra Erapacific Tbk</td><td>
+                                            06-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            159
+                                        </td><td>
+                                            DEWA
+                                        </td><td>Darma Henwa Tbk</td><td>
+                                            26-Sep-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            160
+                                        </td><td>
+                                            DGIK
+                                        </td><td>Nusa Konstruksi Enjiniring  Tbk</td><td>
+                                            19-Des-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            161
+                                        </td><td>
+                                            DILD
+                                        </td><td>Intiland Development Tbk</td><td>
+                                            04-Sep-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            162
+                                        </td><td>
+                                            DKFT
+                                        </td><td>Central Omega Resources Tbk</td><td>
+                                            21-Nop-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            163
+                                        </td><td>
+                                            DLTA
+                                        </td><td>Delta Djakarta Tbk</td><td>
+                                            12-Feb-1984
+                                        </td>
+	</tr><tr>
+		<td>
+                                            164
+                                        </td><td>
+                                            DMAS
+                                        </td><td>PT Puradelta Lestari Tbk.</td><td>
+                                            29-Mei-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            165
+                                        </td><td>
+                                            DNAR
+                                        </td><td>PT Bank Dinar Indonesia Tbk.</td><td>
+                                            11-Jul-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            166
+                                        </td><td>
+                                            DNET
+                                        </td><td>PT Indoritel Makmur Internasional Tbk.</td><td>
+                                            11-Des-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            167
+                                        </td><td>
+                                            DOID
+                                        </td><td>Delta Dunia Makmur Tbk</td><td>
+                                            15-Jun-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            168
+                                        </td><td>
+                                            DPNS
+                                        </td><td>Duta Pertiwi Nusantara Tbk</td><td>
+                                            08-Agust-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            169
+                                        </td><td>
+                                            DPUM
+                                        </td><td>PT Dua Putra Utama Makmur Tbk.</td><td>
+                                            08-Des-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            170
+                                        </td><td>
+                                            DSFI
+                                        </td><td>Dharma Samudera Fishing Ind. Tbk</td><td>
+                                            24-Mar-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            171
+                                        </td><td>
+                                            DSNG
+                                        </td><td>PT Dharma Satya Nusantara Tbk.</td><td>
+                                            14-Jun-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            172
+                                        </td><td>
+                                            DSSA
+                                        </td><td>Dian Swastatika Sentosa Tbk</td><td>
+                                            10-Des-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            173
+                                        </td><td>
+                                            DUTI
+                                        </td><td>Duta Pertiwi Tbk</td><td>
+                                            02-Nop-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            174
+                                        </td><td>
+                                            DVLA
+                                        </td><td>Darya-Varia Laboratoria Tbk</td><td>
+                                            11-Nop-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            175
+                                        </td><td>
+                                            DYAN
+                                        </td><td>PT Dyandra Media International Tbk.</td><td>
+                                            25-Mar-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            176
+                                        </td><td>
+                                            ECII
+                                        </td><td>PT Electronic City Indonesia Tbk.</td><td>
+                                            03-Jul-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            177
+                                        </td><td>
+                                            EKAD
+                                        </td><td>Ekadharma International Tbk</td><td>
+                                            14-Agust-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            178
+                                        </td><td>
+                                            ELSA
+                                        </td><td>Elnusa Tbk</td><td>
+                                            06-Feb-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            179
+                                        </td><td>
+                                            ELTY
+                                        </td><td>Bakrieland Development Tbk</td><td>
+                                            30-Okt-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            180
+                                        </td><td>
+                                            EMDE
+                                        </td><td>Megapolitan Developments Tbk</td><td>
+                                            12-Jan-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            181
+                                        </td><td>
+                                            EMTK
+                                        </td><td>Elang Mahkota Teknologi Tbk</td><td>
+                                            12-Jan-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            182
+                                        </td><td>
+                                            ENRG
+                                        </td><td>Energi Mega Persada Tbk</td><td>
+                                            07-Jun-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            183
+                                        </td><td>
+                                            EPMT
+                                        </td><td>Enseval Putra Megatrading Tbk</td><td>
+                                            01-Agust-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            184
+                                        </td><td>
+                                            ERAA
+                                        </td><td>Erajaya Swasembada Tbk</td><td>
+                                            14-Des-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            185
+                                        </td><td>
+                                            ERTX
+                                        </td><td>Eratex Djaja Tbk</td><td>
+                                            21-Agust-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            186
+                                        </td><td>
+                                            ESSA
+                                        </td><td>Surya Esa Perkasa Tbk</td><td>
+                                            01-Feb-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            187
+                                        </td><td>
+                                            ESTI
+                                        </td><td>Ever Shine Textile Industry Tbk</td><td>
+                                            13-Okt-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            188
+                                        </td><td>
+                                            ETWA
+                                        </td><td>Eterindo Wahanatama Tbk</td><td>
+                                            16-Mei-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            189
+                                        </td><td>
+                                            EXCL
+                                        </td><td>XL Axiata Tbk</td><td>
+                                            29-Sep-2005
+                                        </td>
+	</tr><tr>
+		<td>
+                                            190
+                                        </td><td>
+                                            FAST
+                                        </td><td>Fast Food Indonesia Tbk</td><td>
+                                            11-Mei-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            191
+                                        </td><td>
+                                            FASW
+                                        </td><td>Fajar Surya Wisesa Tbk</td><td>
+                                            01-Des-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            192
+                                        </td><td>
+                                            FISH
+                                        </td><td>FKS Multi Agro Tbk</td><td>
+                                            18-Jan-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            193
+                                        </td><td>
+                                            FMII
+                                        </td><td>Fortune Mate Indonesia Tbk</td><td>
+                                            30-Jun-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            194
+                                        </td><td>
+                                            FORU
+                                        </td><td>Fortune Indonesia Tbk</td><td>
+                                            17-Jan-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            195
+                                        </td><td>
+                                            FPNI
+                                        </td><td>PT Lotte Chemical Titan Tbk.</td><td>
+                                            21-Mar-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            196
+                                        </td><td>
+                                            FREN
+                                        </td><td>Smartfren Telecom Tbk</td><td>
+                                            29-Nop-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            197
+                                        </td><td>
+                                            GAMA
+                                        </td><td>Gading Development Tbk</td><td>
+                                            11-Jul-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            198
+                                        </td><td>
+                                            GDST
+                                        </td><td>Gunawan Dianjaya Steel Tbk</td><td>
+                                            23-Des-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            199
+                                        </td><td>
+                                            GDYR
+                                        </td><td>Goodyear Indonesia Tbk</td><td>
+                                            01-Des-1980
+                                        </td>
+	</tr><tr>
+		<td>
+                                            200
+                                        </td><td>
+                                            GEMA
+                                        </td><td>Gema Grahasarana Tbk</td><td>
+                                            12-Agust-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            201
+                                        </td><td>
+                                            GEMS
+                                        </td><td>Golden Energy Mines Tbk</td><td>
+                                            17-Nop-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            202
+                                        </td><td>
+                                            GGRM
+                                        </td><td>Gudang Garam Tbk</td><td>
+                                            27-Agust-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            203
+                                        </td><td>
+                                            GIAA
+                                        </td><td>Garuda Indonesia (Persero) Tbk</td><td>
+                                            11-Feb-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            204
+                                        </td><td>
+                                            GJTL
+                                        </td><td>Gajah Tunggal Tbk</td><td>
+                                            08-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            205
+                                        </td><td>
+                                            GLOB
+                                        </td><td>Global Teleshop Tbk</td><td>
+                                            10-Jul-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            206
+                                        </td><td>
+                                            GMCW
+                                        </td><td>Grahamas Citrawisata Tbk</td><td>
+                                            14-Feb-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            207
+                                        </td><td>
+                                            GMTD
+                                        </td><td>Gowa Makassar Tourism Development Tbk</td><td>
+                                            11-Des-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            208
+                                        </td><td>
+                                            GOLD
+                                        </td><td>PT Visi Telekomunikasi Infrastruktur Tbk.</td><td>
+                                            07-Jul-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            209
+                                        </td><td>
+                                            GOLL
+                                        </td><td>PT Golden Plantation Tbk</td><td>
+                                            23-Des-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            210
+                                        </td><td>
+                                            GPRA
+                                        </td><td>Perdana Gapura Prima Tbk</td><td>
+                                            10-Okt-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            211
+                                        </td><td>
+                                            GREN
+                                        </td><td>Evergreen Invesco Tbk</td><td>
+                                            09-Jul-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            212
+                                        </td><td>
+                                            GSMF
+                                        </td><td>Equity Development Investment Tbk</td><td>
+                                            13-Okt-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            213
+                                        </td><td>
+                                            GTBO
+                                        </td><td>Garda Tujuh Buana Tbk</td><td>
+                                            09-Jul-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            214
+                                        </td><td>
+                                            GWSA
+                                        </td><td>Greenwood Sejahtera Tbk</td><td>
+                                            23-Des-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            215
+                                        </td><td>
+                                            GZCO
+                                        </td><td>Gozco Plantations Tbk</td><td>
+                                            15-Mei-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            216
+                                        </td><td>
+                                            HADE
+                                        </td><td>HD Capital Tbk</td><td>
+                                            12-Apr-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            217
+                                        </td><td>
+                                            HDFA
+                                        </td><td>Radana Bhaskara Finance Tbk</td><td>
+                                            10-Mei-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            218
+                                        </td><td>
+                                            HDTX
+                                        </td><td>Panasia Indo Resources Tbk</td><td>
+                                            06-Jun-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            219
+                                        </td><td>
+                                            HERO
+                                        </td><td>Hero Supermarket Tbk</td><td>
+                                            02-Des-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            220
+                                        </td><td>
+                                            HEXA
+                                        </td><td>Hexindo Adiperkasa Tbk</td><td>
+                                            13-Feb-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            221
+                                        </td><td>
+                                            HITS
+                                        </td><td>Humpuss Intermoda Transportasi Tbk</td><td>
+                                            15-Des-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            222
+                                        </td><td>
+                                            HMSP
+                                        </td><td>HM Sampoerna Tbk</td><td>
+                                            15-Agust-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            223
+                                        </td><td>
+                                            HOME
+                                        </td><td>Hotel Mandarine Regency Tbk</td><td>
+                                            17-Jul-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            224
+                                        </td><td>
+                                            HOTL
+                                        </td><td>Saraswati Griya Lestari Tbk</td><td>
+                                            10-Jan-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            225
+                                        </td><td>
+                                            HRUM
+                                        </td><td>Harum Energy Tbk</td><td>
+                                            06-Okt-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            226
+                                        </td><td>
+                                            IATA
+                                        </td><td>PT Indonesia Transport & Infrastructure Tbk.</td><td>
+                                            13-Sep-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            227
+                                        </td><td>
+                                            IBFN
+                                        </td><td>PT Intan Baruprana Finance Tbk</td><td>
+                                            22-Des-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            228
+                                        </td><td>
+                                            IBST
+                                        </td><td>Inti Bangun Sejahtera Tbk</td><td>
+                                            31-Agust-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            229
+                                        </td><td>
+                                            ICBP
+                                        </td><td>Indofood CBP Sukses Makmur Tbk</td><td>
+                                            07-Okt-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            230
+                                        </td><td>
+                                            ICON
+                                        </td><td>Island Concepts Indonesia Tbk</td><td>
+                                            08-Jul-2005
+                                        </td>
+	</tr><tr>
+		<td>
+                                            231
+                                        </td><td>
+                                            IDPR
+                                        </td><td>PT Indonesia Pondasi Raya Tbk.</td><td>
+                                            10-Des-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            232
+                                        </td><td>
+                                            IGAR
+                                        </td><td>Champion Pacific Indonesia Tbk</td><td>
+                                            05-Nop-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            233
+                                        </td><td>
+                                            IIKP
+                                        </td><td>Inti Kapuas Arowana Tbk</td><td>
+                                            20-Okt-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            234
+                                        </td><td>
+                                            IKAI
+                                        </td><td>Intikeramik Alamasri Industri Tbk</td><td>
+                                            04-Jun-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            235
+                                        </td><td>
+                                            IKBI
+                                        </td><td>Sumi Indo Kabel Tbk</td><td>
+                                            21-Jan-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            236
+                                        </td><td>
+                                            IMAS
+                                        </td><td>Indomobil Sukses Internasional Tbk</td><td>
+                                            15-Sep-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            237
+                                        </td><td>
+                                            IMJS
+                                        </td><td>PT Indomobil Multi Jasa Tbk.</td><td>
+                                            10-Des-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            238
+                                        </td><td>
+                                            IMPC
+                                        </td><td>PT Impack Pratama Industri Tbk</td><td>
+                                            17-Des-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            239
+                                        </td><td>
+                                            INAF
+                                        </td><td>Indofarma Tbk</td><td>
+                                            17-Apr-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            240
+                                        </td><td>
+                                            INAI
+                                        </td><td>Indal Aluminium Industry Tbk</td><td>
+                                            05-Des-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            241
+                                        </td><td>
+                                            INCF
+                                        </td><td>PT Indo Komoditi Korpora Tbk</td><td>
+                                            06-Sep-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            242
+                                        </td><td>
+                                            INCI
+                                        </td><td>Intanwijaya Internasional Tbk</td><td>
+                                            24-Jul-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            243
+                                        </td><td>
+                                            INCO
+                                        </td><td>Vale Indonesia Tbk</td><td>
+                                            16-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            244
+                                        </td><td>
+                                            INDF
+                                        </td><td>Indofood Sukses Makmur Tbk</td><td>
+                                            14-Jul-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            245
+                                        </td><td>
+                                            INDR
+                                        </td><td>Indorama Synthetics Tbk</td><td>
+                                            03-Agust-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            246
+                                        </td><td>
+                                            INDS
+                                        </td><td>Indospring Tbk</td><td>
+                                            10-Agust-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            247
+                                        </td><td>
+                                            INDX
+                                        </td><td>Tanah Laut Tbk</td><td>
+                                            17-Mei-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            248
+                                        </td><td>
+                                            INDY
+                                        </td><td>Indika Energy Tbk</td><td>
+                                            11-Jun-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            249
+                                        </td><td>
+                                            INKP
+                                        </td><td>Indah Kiat Pulp & Paper Tbk</td><td>
+                                            16-Jul-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            250
+                                        </td><td>
+                                            INPC
+                                        </td><td>Bank Artha Graha Internasional Tbk</td><td>
+                                            29-Agust-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            251
+                                        </td><td>
+                                            INPP
+                                        </td><td>Indonesian Paradise Property Tbk</td><td>
+                                            01-Des-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            252
+                                        </td><td>
+                                            INRU
+                                        </td><td>Toba Pulp Lestari Tbk</td><td>
+                                            18-Jun-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            253
+                                        </td><td>
+                                            INTA
+                                        </td><td>Intraco Penta Tbk</td><td>
+                                            23-Agust-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            254
+                                        </td><td>
+                                            INTD
+                                        </td><td>Inter-Delta Tbk</td><td>
+                                            18-Des-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            255
+                                        </td><td>
+                                            INTP
+                                        </td><td>Indocement Tunggal Prakarsa Tbk</td><td>
+                                            05-Des-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            256
+                                        </td><td>
+                                            INVS
+                                        </td><td>Inovisi Infracom Tbk</td><td>
+                                            03-Jul-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            257
+                                        </td><td>
+                                            IPOL
+                                        </td><td>Indopoly Swakarsa Industry Tbk</td><td>
+                                            09-Jul-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            258
+                                        </td><td>
+                                            ISAT
+                                        </td><td>Indosat Tbk</td><td>
+                                            19-Okt-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            259
+                                        </td><td>
+                                            ISSP
+                                        </td><td>PT Steel Pipe Industry of Indonesia Tbk</td><td>
+                                            22-Feb-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            260
+                                        </td><td>
+                                            ITMA
+                                        </td><td>SUMBER ENERGI ANDALAN Tbk</td><td>
+                                            10-Des-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            261
+                                        </td><td>
+                                            ITMG
+                                        </td><td>Indo Tambangraya Megah Tbk</td><td>
+                                            18-Des-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            262
+                                        </td><td>
+                                            ITTG
+                                        </td><td>Leo Investments Tbk</td><td>
+                                            26-Nop-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            263
+                                        </td><td>
+                                            JAWA
+                                        </td><td>Jaya Agra Wattie Tbk</td><td>
+                                            30-Mei-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            264
+                                        </td><td>
+                                            JECC
+                                        </td><td>Jembo Cable Company Tbk</td><td>
+                                            18-Nop-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            265
+                                        </td><td>
+                                            JGLE
+                                        </td><td>PT Graha Andrasentra Propertindo Tbk.</td><td>
+                                            29-Jun-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            266
+                                        </td><td>
+                                            JIHD
+                                        </td><td>Jakarta International Hotels & Development Tbk</td><td>
+                                            29-Feb-1984
+                                        </td>
+	</tr><tr>
+		<td>
+                                            267
+                                        </td><td>
+                                            JKON
+                                        </td><td>Jaya Konstruksi Manggala Pratama Tbk</td><td>
+                                            04-Des-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            268
+                                        </td><td>
+                                            JKSW
+                                        </td><td>Jakarta Kyoei Steel Works Tbk</td><td>
+                                            06-Agust-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            269
+                                        </td><td>
+                                            JPFA
+                                        </td><td>JAPFA Comfeed Indonesia Tbk</td><td>
+                                            23-Okt-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            270
+                                        </td><td>
+                                            JPRS
+                                        </td><td>Jaya Pari Steel Tbk</td><td>
+                                            08-Agust-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            271
+                                        </td><td>
+                                            JRPT
+                                        </td><td>Jaya Real Property Tbk</td><td>
+                                            29-Jun-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            272
+                                        </td><td>
+                                            JSMR
+                                        </td><td>Jasa Marga Tbk</td><td>
+                                            12-Nop-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            273
+                                        </td><td>
+                                            JSPT
+                                        </td><td>Jakarta Setiabudi Internasional Tbk</td><td>
+                                            12-Jan-1998
+                                        </td>
+	</tr><tr>
+		<td>
+                                            274
+                                        </td><td>
+                                            JTPE
+                                        </td><td>Jasuindo Tiga Perkasa Tbk</td><td>
+                                            16-Apr-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            275
+                                        </td><td>
+                                            KAEF
+                                        </td><td>Kimia Farma (Persero) Tbk</td><td>
+                                            04-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            276
+                                        </td><td>
+                                            KARW
+                                        </td><td>ICTSI JASA PRIMA Tbk</td><td>
+                                            20-Des-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            277
+                                        </td><td>
+                                            KBLI
+                                        </td><td>KMI Wire and Cable Tbk</td><td>
+                                            06-Jul-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            278
+                                        </td><td>
+                                            KBLM
+                                        </td><td>Kabelindo Murni Tbk</td><td>
+                                            01-Jun-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            279
+                                        </td><td>
+                                            KBLV
+                                        </td><td>First Media Tbk</td><td>
+                                            25-Feb-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            280
+                                        </td><td>
+                                            KBRI
+                                        </td><td>Kertas Basuki Rachmat Indonesia Tbk</td><td>
+                                            11-Jul-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            281
+                                        </td><td>
+                                            KDSI
+                                        </td><td>Kedawung Setia Industrial Tbk</td><td>
+                                            29-Jul-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            282
+                                        </td><td>
+                                            KIAS
+                                        </td><td>Keramika Indonesia Assosiasi Tbk</td><td>
+                                            08-Des-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            283
+                                        </td><td>
+                                            KICI
+                                        </td><td>Kedaung Indah Can Tbk</td><td>
+                                            28-Okt-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            284
+                                        </td><td>
+                                            KIJA
+                                        </td><td>Kawasan Industri Jababeka Tbk</td><td>
+                                            10-Jan-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            285
+                                        </td><td>
+                                            KINO
+                                        </td><td>PT Kino Indonesia Tbk</td><td>
+                                            11-Des-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            286
+                                        </td><td>
+                                            KKGI
+                                        </td><td>Resource Alam Indonesia Tbk</td><td>
+                                            01-Jul-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            287
+                                        </td><td>
+                                            KLBF
+                                        </td><td>Kalbe Farma Tbk</td><td>
+                                            30-Jul-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            288
+                                        </td><td>
+                                            KOBX
+                                        </td><td>Kobexindo Tractors Tbk</td><td>
+                                            05-Jul-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            289
+                                        </td><td>
+                                            KOIN
+                                        </td><td>Kokoh Inti Arebama Tbk</td><td>
+                                            09-Apr-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            290
+                                        </td><td>
+                                            KONI
+                                        </td><td>Perdana Bangun Pusaka Tbk</td><td>
+                                            22-Agust-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            291
+                                        </td><td>
+                                            KOPI
+                                        </td><td>PT Mitra Energi Persada Tbk</td><td>
+                                            04-Mei-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            292
+                                        </td><td>
+                                            KPIG
+                                        </td><td>MNC Land Tbk</td><td>
+                                            30-Mar-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            293
+                                        </td><td>
+                                            KRAH
+                                        </td><td>PT Grand Kartech Tbk</td><td>
+                                            08-Nop-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            294
+                                        </td><td>
+                                            KRAS
+                                        </td><td>Krakatau Steel (Persero) Tbk</td><td>
+                                            10-Nop-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            295
+                                        </td><td>
+                                            KREN
+                                        </td><td>PT Kresna Graha Investama Tbk.</td><td>
+                                            28-Jun-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            296
+                                        </td><td>
+                                            LAMI
+                                        </td><td>Lamicitra Nusantara Tbk</td><td>
+                                            18-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            297
+                                        </td><td>
+                                            LAPD
+                                        </td><td>Leyand International Tbk</td><td>
+                                            17-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            298
+                                        </td><td>
+                                            LCGP
+                                        </td><td>PT Eureka Prima Jakarta Tbk.</td><td>
+                                            13-Jul-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            299
+                                        </td><td>
+                                            LEAD
+                                        </td><td>PT Logindo Samudramakmur Tbk.</td><td>
+                                            11-Des-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            300
+                                        </td><td>
+                                            LINK
+                                        </td><td>PT Link Net Tbk.</td><td>
+                                            02-Jun-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            301
+                                        </td><td>
+                                            LION
+                                        </td><td>Lion Metal Works Tbk</td><td>
+                                            20-Agust-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            302
+                                        </td><td>
+                                            LMAS
+                                        </td><td>Limas Indonesia Makmur Tbk</td><td>
+                                            28-Des-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            303
+                                        </td><td>
+                                            LMPI
+                                        </td><td>Langgeng Makmur Industri Tbk</td><td>
+                                            17-Okt-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            304
+                                        </td><td>
+                                            LMSH
+                                        </td><td>Lionmesh Prima Tbk</td><td>
+                                            04-Jun-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            305
+                                        </td><td>
+                                            LPCK
+                                        </td><td>Lippo Cikarang Tbk</td><td>
+                                            24-Jul-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            306
+                                        </td><td>
+                                            LPGI
+                                        </td><td>Lippo General Insurance Tbk</td><td>
+                                            22-Jul-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            307
+                                        </td><td>
+                                            LPIN
+                                        </td><td>Multi Prima Sejahtera Tbk</td><td>
+                                            05-Feb-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            308
+                                        </td><td>
+                                            LPKR
+                                        </td><td>Lippo Karawaci Tbk</td><td>
+                                            28-Jun-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            309
+                                        </td><td>
+                                            LPLI
+                                        </td><td>Star Pacific Tbk</td><td>
+                                            23-Okt-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            310
+                                        </td><td>
+                                            LPPF
+                                        </td><td>Matahari Department Store Tbk</td><td>
+                                            09-Okt-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            311
+                                        </td><td>
+                                            LPPS
+                                        </td><td>Lippo Securities Tbk</td><td>
+                                            28-Mar-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            312
+                                        </td><td>
+                                            LRNA
+                                        </td><td>PT Eka Sari Lorena Transport Tbk.</td><td>
+                                            15-Apr-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            313
+                                        </td><td>
+                                            LSIP
+                                        </td><td>PP London Sumatra Indonesia Tbk</td><td>
+                                            05-Jul-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            314
+                                        </td><td>
+                                            LTLS
+                                        </td><td>Lautan Luas Tbk</td><td>
+                                            21-Jul-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            315
+                                        </td><td>
+                                            MAGP
+                                        </td><td>Multi Agro Gemilang Plantation Tbk</td><td>
+                                            16-Jan-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            316
+                                        </td><td>
+                                            MAIN
+                                        </td><td>Malindo Feedmill Tbk</td><td>
+                                            10-Feb-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            317
+                                        </td><td>
+                                            MAMI
+                                        </td><td>Mas Murni Indonesia Tbk</td><td>
+                                            09-Feb-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            318
+                                        </td><td>
+                                            MAPI
+                                        </td><td>Mitra Adiperkasa Tbk</td><td>
+                                            10-Nop-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            319
+                                        </td><td>
+                                            MARI
+                                        </td><td>PT Mahaka Radio Integra Tbk.</td><td>
+                                            11-Feb-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            320
+                                        </td><td>
+                                            MASA
+                                        </td><td>Multistrada Arah Sarana Tbk</td><td>
+                                            09-Jun-2005
+                                        </td>
+	</tr><tr>
+		<td>
+                                            321
+                                        </td><td>
+                                            MAYA
+                                        </td><td>Bank Mayapada Internasional Tbk</td><td>
+                                            29-Agust-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            322
+                                        </td><td>
+                                            MBAP
+                                        </td><td>PT Mitrabara Adiperdana Tbk</td><td>
+                                            10-Jul-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            323
+                                        </td><td>
+                                            MBSS
+                                        </td><td>Mitrabahtera Segara Sejati Tbk</td><td>
+                                            06-Apr-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            324
+                                        </td><td>
+                                            MBTO
+                                        </td><td>Martina Berto Tbk</td><td>
+                                            13-Jan-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            325
+                                        </td><td>
+                                            MCOR
+                                        </td><td>PT Bank China Construction Bank Indonesia Tbk</td><td>
+                                            03-Jul-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            326
+                                        </td><td>
+                                            MDIA
+                                        </td><td>PT Intermedia Capital Tbk.</td><td>
+                                            11-Apr-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            327
+                                        </td><td>
+                                            MDKA
+                                        </td><td>PT Merdeka Copper Gold Tbk.</td><td>
+                                            19-Jun-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            328
+                                        </td><td>
+                                            MDLN
+                                        </td><td>Modernland Realty Ltd Tbk</td><td>
+                                            18-Jan-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            329
+                                        </td><td>
+                                            MDRN
+                                        </td><td>Modern Internasional Tbk</td><td>
+                                            16-Jul-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            330
+                                        </td><td>
+                                            MEDC
+                                        </td><td>Medco Energi Internasional Tbk</td><td>
+                                            12-Okt-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            331
+                                        </td><td>
+                                            MEGA
+                                        </td><td>Bank Mega Tbk</td><td>
+                                            17-Apr-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            332
+                                        </td><td>
+                                            MERK
+                                        </td><td>Merck Tbk</td><td>
+                                            23-Jul-1981
+                                        </td>
+	</tr><tr>
+		<td>
+                                            333
+                                        </td><td>
+                                            META
+                                        </td><td>Nusantara Infrastructure Tbk</td><td>
+                                            18-Jul-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            334
+                                        </td><td>
+                                            MFIN
+                                        </td><td>Mandala Multifinance Tbk</td><td>
+                                            06-Sep-2005
+                                        </td>
+	</tr><tr>
+		<td>
+                                            335
+                                        </td><td>
+                                            MFMI
+                                        </td><td>Multifiling Mitra Indonesia Tbk</td><td>
+                                            29-Des-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            336
+                                        </td><td>
+                                            MGNA
+                                        </td><td>PT Magna Finance Tbk.</td><td>
+                                            07-Jul-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            337
+                                        </td><td>
+                                            MICE
+                                        </td><td>Multi Indocitra Tbk</td><td>
+                                            02-Nop-2005
+                                        </td>
+	</tr><tr>
+		<td>
+                                            338
+                                        </td><td>
+                                            MIDI
+                                        </td><td>Midi Utama Indonesia Tbk</td><td>
+                                            30-Nop-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            339
+                                        </td><td>
+                                            MIKA
+                                        </td><td>PT Mitra Keluarga Karyasehat Tbk.</td><td>
+                                            24-Mar-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            340
+                                        </td><td>
+                                            MIRA
+                                        </td><td>Mitra International Resources Tbk</td><td>
+                                            30-Jan-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            341
+                                        </td><td>
+                                            MITI
+                                        </td><td>Mitra Investindo Tbk</td><td>
+                                            16-Jul-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            342
+                                        </td><td>
+                                            MKNT
+                                        </td><td>PT Mitra Komunikasi Nusantara Tbk.</td><td>
+                                            26-Okt-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            343
+                                        </td><td>
+                                            MKPI
+                                        </td><td>Metropolitan Kentjana Tbk</td><td>
+                                            10-Jul-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            344
+                                        </td><td>
+                                            MLBI
+                                        </td><td>Multi Bintang Indonesia Tbk</td><td>
+                                            17-Jan-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            345
+                                        </td><td>
+                                            MLIA
+                                        </td><td>Mulia Industrindo Tbk</td><td>
+                                            17-Jan-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            346
+                                        </td><td>
+                                            MLPL
+                                        </td><td>Multipolar Tbk</td><td>
+                                            06-Nop-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            347
+                                        </td><td>
+                                            MLPT
+                                        </td><td>PT Multipolar Technology Tbk.</td><td>
+                                            08-Jul-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            348
+                                        </td><td>
+                                            MMLP
+                                        </td><td>PT Mega Manunggal Property Tbk.</td><td>
+                                            12-Jun-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            349
+                                        </td><td>
+                                            MNCN
+                                        </td><td>Media Nusantara Citra Tbk</td><td>
+                                            22-Jun-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            350
+                                        </td><td>
+                                            MPMX
+                                        </td><td>PT Mitra Pinasthika Mustika Tbk.</td><td>
+                                            29-Mei-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            351
+                                        </td><td>
+                                            MPPA
+                                        </td><td>Matahari Putra Prima Tbk</td><td>
+                                            21-Des-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            352
+                                        </td><td>
+                                            MRAT
+                                        </td><td>Mustika Ratu Tbk</td><td>
+                                            27-Jul-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            353
+                                        </td><td>
+                                            MREI
+                                        </td><td>Maskapai Reasuransi Indonesia Tbk</td><td>
+                                            04-Sep-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            354
+                                        </td><td>
+                                            MSKY
+                                        </td><td>MNC Sky Vision Tbk</td><td>
+                                            09-Jul-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            355
+                                        </td><td>
+                                            MTDL
+                                        </td><td>Metrodata Electronics Tbk</td><td>
+                                            09-Apr-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            356
+                                        </td><td>
+                                            MTFN
+                                        </td><td>Capitalinc Investment Tbk</td><td>
+                                            16-Apr-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            357
+                                        </td><td>
+                                            MTLA
+                                        </td><td>Metropolitan Land Tbk</td><td>
+                                            20-Jun-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            358
+                                        </td><td>
+                                            MTRA
+                                        </td><td>PT Mitra Pemuda Tbk.</td><td>
+                                            10-Feb-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            359
+                                        </td><td>
+                                            MTSM
+                                        </td><td>Metro Realty Tbk</td><td>
+                                            08-Jan-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            360
+                                        </td><td>
+                                            MYOH
+                                        </td><td>Samindo Resources Tbk</td><td>
+                                            27-Jul-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            361
+                                        </td><td>
+                                            MYOR
+                                        </td><td>Mayora Indah Tbk</td><td>
+                                            04-Jul-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            362
+                                        </td><td>
+                                            MYRX
+                                        </td><td>Hanson International Tbk</td><td>
+                                            31-Okt-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            363
+                                        </td><td>
+                                            MYTX
+                                        </td><td>APAC Citra Centertex Tbk</td><td>
+                                            10-Okt-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            364
+                                        </td><td>
+                                            NAGA
+                                        </td><td>PT Bank Mitraniaga Tbk.</td><td>
+                                            09-Jul-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            365
+                                        </td><td>
+                                            NELY
+                                        </td><td>Pelayaran Nelly Dwi Putri Tbk</td><td>
+                                            11-Okt-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            366
+                                        </td><td>
+                                            NIKL
+                                        </td><td>Pelat Timah Nusantara Tbk</td><td>
+                                            14-Des-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            367
+                                        </td><td>
+                                            NIPS
+                                        </td><td>Nipress Tbk</td><td>
+                                            24-Jul-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            368
+                                        </td><td>
+                                            NIRO
+                                        </td><td>Nirvana Development Tbk</td><td>
+                                            13-Sep-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            369
+                                        </td><td>
+                                            NISP
+                                        </td><td>Bank OCBC NISP Tbk</td><td>
+                                            20-Okt-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            370
+                                        </td><td>
+                                            NOBU
+                                        </td><td>PT Bank Nationalnobu Tbk.</td><td>
+                                            20-Mei-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            371
+                                        </td><td>
+                                            NRCA
+                                        </td><td>PT Nusa Raya Cipta Tbk.</td><td>
+                                            27-Jun-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            372
+                                        </td><td>
+                                            OASA
+                                        </td><td>PT Protech Mitra Perkasa Tbk</td><td>
+                                            18-Jul-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            373
+                                        </td><td>
+                                            OCAP
+                                        </td><td>ONIX CAPITAL Tbk</td><td>
+                                            10-Nop-2003
+                                        </td>
+	</tr><tr>
+		<td>
+                                            374
+                                        </td><td>
+                                            OKAS
+                                        </td><td>Ancora Indonesia Resources Tbk</td><td>
+                                            29-Mar-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            375
+                                        </td><td>
+                                            OMRE
+                                        </td><td>Indonesia Prima Property Tbk</td><td>
+                                            22-Agust-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            376
+                                        </td><td>
+                                            PADI
+                                        </td><td>Minna Padi Investama Tbk</td><td>
+                                            09-Jan-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            377
+                                        </td><td>
+                                            PALM
+                                        </td><td>Provident Agro Tbk</td><td>
+                                            08-Okt-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            378
+                                        </td><td>
+                                            PANR
+                                        </td><td>Panorama Sentrawisata Tbk</td><td>
+                                            01-Jan-1950
+                                        </td>
+	</tr><tr>
+		<td>
+                                            379
+                                        </td><td>
+                                            PANS
+                                        </td><td>Panin Sekuritas Tbk</td><td>
+                                            31-Des-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            380
+                                        </td><td>
+                                            PBRX
+                                        </td><td>Pan Brothers Tbk</td><td>
+                                            16-Agust-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            381
+                                        </td><td>
+                                            PBSA
+                                        </td><td>PT Paramita Bangun Sarana Tbk</td><td>
+                                            28-Sep-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            382
+                                        </td><td>
+                                            PDES
+                                        </td><td>Destinasi Tirta Nusantara Tbk</td><td>
+                                            08-Jul-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            383
+                                        </td><td>
+                                            PEGE
+                                        </td><td>Panca Global Securities Tbk</td><td>
+                                            24-Jun-2005
+                                        </td>
+	</tr><tr>
+		<td>
+                                            384
+                                        </td><td>
+                                            PGAS
+                                        </td><td>Perusahaan Gas Negara (Persero) Tbk</td><td>
+                                            15-Des-2003
+                                        </td>
+	</tr><tr>
+		<td>
+                                            385
+                                        </td><td>
+                                            PGLI
+                                        </td><td>Pembangunan Graha Lestari Tbk</td><td>
+                                            05-Apr-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            386
+                                        </td><td>
+                                            PICO
+                                        </td><td>Pelangi Indah Canindo Tbk</td><td>
+                                            23-Sep-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            387
+                                        </td><td>
+                                            PJAA
+                                        </td><td>Pembangunan Jaya Ancol Tbk</td><td>
+                                            02-Jul-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            388
+                                        </td><td>
+                                            PKPK
+                                        </td><td>Perdana Karya Perkasa Tbk</td><td>
+                                            11-Jul-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            389
+                                        </td><td>
+                                            PLAS
+                                        </td><td>Polaris Investama Tbk</td><td>
+                                            16-Mar-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            390
+                                        </td><td>
+                                            PLIN
+                                        </td><td>Plaza Indonesia Realty Tbk</td><td>
+                                            15-Jun-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            391
+                                        </td><td>
+                                            PNBN
+                                        </td><td>Bank Pan Indonesia Tbk</td><td>
+                                            29-Des-1982
+                                        </td>
+	</tr><tr>
+		<td>
+                                            392
+                                        </td><td>
+                                            PNBS
+                                        </td><td>PT Bank Panin Dubai Syariah Tbk.</td><td>
+                                            15-Jan-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            393
+                                        </td><td>
+                                            PNIN
+                                        </td><td>Paninvest Tbk</td><td>
+                                            20-Sep-1983
+                                        </td>
+	</tr><tr>
+		<td>
+                                            394
+                                        </td><td>
+                                            PNLF
+                                        </td><td>Panin Financial Tbk</td><td>
+                                            14-Jun-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            395
+                                        </td><td>
+                                            PNSE
+                                        </td><td>Pudjiadi & Sons Tbk</td><td>
+                                            01-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            396
+                                        </td><td>
+                                            POLY
+                                        </td><td>Asia Pacific Fibers Tbk</td><td>
+                                            12-Mar-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            397
+                                        </td><td>
+                                            POOL
+                                        </td><td>Pool Advista Indonesia Tbk</td><td>
+                                            20-Mei-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            398
+                                        </td><td>
+                                            PORT
+                                        </td><td>PT Nusantara Pelabuhan Handal Tbk.</td><td>
+                                            16-Mar-2017
+                                        </td>
+	</tr><tr>
+		<td>
+                                            399
+                                        </td><td>
+                                            POWR
+                                        </td><td>PT Cikarang Listrindo Tbk.</td><td>
+                                            14-Jun-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            400
+                                        </td><td>
+                                            PPRO
+                                        </td><td>PT PP Properti Tbk.</td><td>
+                                            19-Mei-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            401
+                                        </td><td>
+                                            PRAS
+                                        </td><td>Prima Alloy Steel Universal Tbk</td><td>
+                                            12-Jul-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            402
+                                        </td><td>
+                                            PRDA
+                                        </td><td>PT Prodia Widyahusada Tbk.</td><td>
+                                            07-Des-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            403
+                                        </td><td>
+                                            PSAB
+                                        </td><td>J RESOURCES ASIA PASIFIK Tbk</td><td>
+                                            01-Des-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            404
+                                        </td><td>
+                                            PSDN
+                                        </td><td>Prasidha Aneka Niaga Tbk</td><td>
+                                            18-Okt-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            405
+                                        </td><td>
+                                            PSKT
+                                        </td><td>PT Red Planet Indonesia Tbk</td><td>
+                                            19-Sep-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            406
+                                        </td><td>
+                                            PTBA
+                                        </td><td>Tambang Batubara Bukit Asam Tbk</td><td>
+                                            23-Des-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            407
+                                        </td><td>
+                                            PTIS
+                                        </td><td>Indo Straits Tbk</td><td>
+                                            12-Jul-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            408
+                                        </td><td>
+                                            PTPP
+                                        </td><td>PP (Persero) Tbk</td><td>
+                                            09-Feb-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            409
+                                        </td><td>
+                                            PTRO
+                                        </td><td>Petrosea Tbk</td><td>
+                                            21-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            410
+                                        </td><td>
+                                            PTSN
+                                        </td><td>Sat Nusapersada Tbk</td><td>
+                                            08-Nop-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            411
+                                        </td><td>
+                                            PTSP
+                                        </td><td>Pioneerindo Gourmet International Tbk</td><td>
+                                            30-Mei-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            412
+                                        </td><td>
+                                            PUDP
+                                        </td><td>Pudjiadi Prestige Tbk</td><td>
+                                            18-Nop-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            413
+                                        </td><td>
+                                            PWON
+                                        </td><td>Pakuwon Jati Tbk</td><td>
+                                            09-Okt-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            414
+                                        </td><td>
+                                            PYFA
+                                        </td><td>Pyridam Farma Tbk</td><td>
+                                            16-Okt-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            415
+                                        </td><td>
+                                            RAJA
+                                        </td><td>Rukun Raharja Tbk</td><td>
+                                            19-Apr-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            416
+                                        </td><td>
+                                            RALS
+                                        </td><td>Ramayana Lestari Sentosa Tbk</td><td>
+                                            24-Jul-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            417
+                                        </td><td>
+                                            RANC
+                                        </td><td>Supra Boga Lestari Tbk</td><td>
+                                            07-Jun-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            418
+                                        </td><td>
+                                            RBMS
+                                        </td><td>Ristia Bintang Mahkotasejati Tbk</td><td>
+                                            19-Des-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            419
+                                        </td><td>
+                                            RDTX
+                                        </td><td>Roda Vivatex Tbk</td><td>
+                                            14-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            420
+                                        </td><td>
+                                            RELI
+                                        </td><td>Reliance Securities Tbk</td><td>
+                                            13-Jul-2005
+                                        </td>
+	</tr><tr>
+		<td>
+                                            421
+                                        </td><td>
+                                            RICY
+                                        </td><td>Ricky Putra Globalindo Tbk</td><td>
+                                            22-Jan-1998
+                                        </td>
+	</tr><tr>
+		<td>
+                                            422
+                                        </td><td>
+                                            RIGS
+                                        </td><td>Rig Tenders Tbk</td><td>
+                                            26-Mar-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            423
+                                        </td><td>
+                                            RIMO
+                                        </td><td>PT Rimo International Lestari Tbk.</td><td>
+                                            10-Nop-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            424
+                                        </td><td>
+                                            RMBA
+                                        </td><td>Bentoel International Investama Tbk</td><td>
+                                            05-Mar-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            425
+                                        </td><td>
+                                            RODA
+                                        </td><td>Pikko Land Development Tbk</td><td>
+                                            22-Okt-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            426
+                                        </td><td>
+                                            ROTI
+                                        </td><td>Nippon Indosari Corpindo Tbk</td><td>
+                                            28-Jun-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            427
+                                        </td><td>
+                                            RUIS
+                                        </td><td>Radiant Utama Interinsco Tbk</td><td>
+                                            12-Jul-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            428
+                                        </td><td>
+                                            SAFE
+                                        </td><td>Steady Safe Tbk</td><td>
+                                            15-Agust-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            429
+                                        </td><td>
+                                            SAME
+                                        </td><td>Sarana Meditama Metropolitan Tbk</td><td>
+                                            11-Jan-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            430
+                                        </td><td>
+                                            SCBD
+                                        </td><td>Danayasa Arthatama Tbk</td><td>
+                                            31-Des-2099
+                                        </td>
+	</tr><tr>
+		<td>
+                                            431
+                                        </td><td>
+                                            SCCO
+                                        </td><td>Supreme Cable Manufacturing Corporation Tbk</td><td>
+                                            20-Jul-1982
+                                        </td>
+	</tr><tr>
+		<td>
+                                            432
+                                        </td><td>
+                                            SCMA
+                                        </td><td>Surya Citra Media Tbk</td><td>
+                                            16-Jul-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            433
+                                        </td><td>
+                                            SCPI
+                                        </td><td>Merck Sharp Dohme Pharma Tbk</td><td>
+                                            08-Jun-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            434
+                                        </td><td>
+                                            SDMU
+                                        </td><td>Sidomulyo Selaras Tbk</td><td>
+                                            12-Jul-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            435
+                                        </td><td>
+                                            SDPC
+                                        </td><td>Millennium Pharmacon International Tbk</td><td>
+                                            07-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            436
+                                        </td><td>
+                                            SDRA
+                                        </td><td>PT Bank Woori Saudara Indonesia 1906 Tbk</td><td>
+                                            15-Des-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            437
+                                        </td><td>
+                                            SGRO
+                                        </td><td>Sampoerna Agro Tbk</td><td>
+                                            18-Jun-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            438
+                                        </td><td>
+                                            SHID
+                                        </td><td>Hotel Sahid Jaya Tbk</td><td>
+                                            08-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            439
+                                        </td><td>
+                                            SHIP
+                                        </td><td>PT Sillo Maritime Perdana Tbk</td><td>
+                                            16-Jun-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            440
+                                        </td><td>
+                                            SIAP
+                                        </td><td>Sekawan Intipratama Tbk</td><td>
+                                            17-Okt-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            441
+                                        </td><td>
+                                            SIDO
+                                        </td><td>PT Industri Jamu dan Farmasi Sido Muncul  Tbk</td><td>
+                                            18-Des-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            442
+                                        </td><td>
+                                            SILO
+                                        </td><td>PT Siloam International Hospitals Tbk.</td><td>
+                                            12-Sep-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            443
+                                        </td><td>
+                                            SIMA
+                                        </td><td>Siwani Makmur Tbk</td><td>
+                                            03-Jun-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            444
+                                        </td><td>
+                                            SIMP
+                                        </td><td>Salim Ivomas Pratama Tbk</td><td>
+                                            09-Jun-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            445
+                                        </td><td>
+                                            SIPD
+                                        </td><td>Sierad Produce Tbk</td><td>
+                                            27-Des-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            446
+                                        </td><td>
+                                            SKBM
+                                        </td><td>Sekar Bumi Tbk</td><td>
+                                            05-Jan-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            447
+                                        </td><td>
+                                            SKLT
+                                        </td><td>Sekar Laut Tbk</td><td>
+                                            08-Sep-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            448
+                                        </td><td>
+                                            SKYB
+                                        </td><td>Skybee Tbk</td><td>
+                                            07-Jul-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            449
+                                        </td><td>
+                                            SMAR
+                                        </td><td>SMART Tbk</td><td>
+                                            20-Nop-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            450
+                                        </td><td>
+                                            SMBR
+                                        </td><td>PT Semen Baturaja (Persero) Tbk</td><td>
+                                            28-Jun-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            451
+                                        </td><td>
+                                            SMCB
+                                        </td><td>Holcim Indonesia Tbk</td><td>
+                                            10-Agust-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            452
+                                        </td><td>
+                                            SMDM
+                                        </td><td>Suryamas Dutamakmur Tbk</td><td>
+                                            12-Okt-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            453
+                                        </td><td>
+                                            SMDR
+                                        </td><td>Samudera Indonesia Tbk</td><td>
+                                            05-Des-1999
+                                        </td>
+	</tr><tr>
+		<td>
+                                            454
+                                        </td><td>
+                                            SMGR
+                                        </td><td>Semen Indonesia (Persero) Tbk</td><td>
+                                            08-Jul-1991
+                                        </td>
+	</tr><tr>
+		<td>
+                                            455
+                                        </td><td>
+                                            SMMA
+                                        </td><td>Sinar Mas Multiartha Tbk</td><td>
+                                            05-Jul-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            456
+                                        </td><td>
+                                            SMMT
+                                        </td><td>GOLDEN EAGLE ENERGY Tbk</td><td>
+                                            01-Des-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            457
+                                        </td><td>
+                                            SMRA
+                                        </td><td>Summarecon Agung Tbk</td><td>
+                                            07-Mei-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            458
+                                        </td><td>
+                                            SMRU
+                                        </td><td>SMR Utama Tbk</td><td>
+                                            10-Okt-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            459
+                                        </td><td>
+                                            SMSM
+                                        </td><td>Selamat Sempurna Tbk</td><td>
+                                            09-Sep-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            460
+                                        </td><td>
+                                            SOBI
+                                        </td><td>Sorini Agro Asia Corporindo Tbk</td><td>
+                                            03-Agust-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            461
+                                        </td><td>
+                                            SOCI
+                                        </td><td>PT Soechi Lines Tbk. </td><td>
+                                            03-Des-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            462
+                                        </td><td>
+                                            SONA
+                                        </td><td>Sona Topas Tourism Industry Tbk</td><td>
+                                            12-Jul-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            463
+                                        </td><td>
+                                            SPMA
+                                        </td><td>Suparma Tbk</td><td>
+                                            16-Nop-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            464
+                                        </td><td>
+                                            SQBB
+                                        </td><td>Taisho Pharmaceutical Indonesia Tbk</td><td>
+                                            29-Mar-1983
+                                        </td>
+	</tr><tr>
+		<td>
+                                            465
+                                        </td><td>
+                                            SQMI
+                                        </td><td>RENUKA COALINDO Tbk</td><td>
+                                            15-Jul-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            466
+                                        </td><td>
+                                            SRAJ
+                                        </td><td>Sejahteraraya Anugrahjaya Tbk</td><td>
+                                            11-Apr-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            467
+                                        </td><td>
+                                            SRIL
+                                        </td><td>PT Sri Rejeki Isman Tbk</td><td>
+                                            17-Jun-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            468
+                                        </td><td>
+                                            SRSN
+                                        </td><td>Indo Acidatama Tbk</td><td>
+                                            11-Jan-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            469
+                                        </td><td>
+                                            SRTG
+                                        </td><td>PT Saratoga Investama Sedaya Tbk.</td><td>
+                                            26-Jun-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            470
+                                        </td><td>
+                                            SSIA
+                                        </td><td>Surya Semesta Internusa Tbk</td><td>
+                                            27-Mar-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            471
+                                        </td><td>
+                                            SSMS
+                                        </td><td>PT Sawit Sumbermas Sarana Tbk. </td><td>
+                                            12-Des-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            472
+                                        </td><td>
+                                            SSTM
+                                        </td><td>Sunson Textile Manufacturer Tbk</td><td>
+                                            20-Agust-1997
+                                        </td>
+	</tr><tr>
+		<td>
+                                            473
+                                        </td><td>
+                                            STAR
+                                        </td><td>Star Petrcohem Tbk</td><td>
+                                            13-Jul-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            474
+                                        </td><td>
+                                            STTP
+                                        </td><td>Siantar Top Tbk</td><td>
+                                            16-Des-1996
+                                        </td>
+	</tr><tr>
+		<td>
+                                            475
+                                        </td><td>
+                                            SUGI
+                                        </td><td>Sugih Energy Tbk</td><td>
+                                            19-Jun-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            476
+                                        </td><td>
+                                            SULI
+                                        </td><td>PT SLJ Global Tbk</td><td>
+                                            21-Mar-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            477
+                                        </td><td>
+                                            SUPR
+                                        </td><td>Solusi Tunas Pratama Tbk</td><td>
+                                            11-Okt-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            478
+                                        </td><td>
+                                            TALF
+                                        </td><td>PT Tunas Alfin Tbk</td><td>
+                                            17-Jan-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            479
+                                        </td><td>
+                                            TARA
+                                        </td><td>PT Sitara Propertindo Tbk</td><td>
+                                            11-Jul-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            480
+                                        </td><td>
+                                            TAXI
+                                        </td><td>Express Transindo Utama Tbk</td><td>
+                                            02-Nop-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            481
+                                        </td><td>
+                                            TBIG
+                                        </td><td>PT Tower Bersama Infrastructure Tbk</td><td>
+                                            26-Okt-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            482
+                                        </td><td>
+                                            TBLA
+                                        </td><td>Tunas Baru Lampung Tbk</td><td>
+                                            14-Feb-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            483
+                                        </td><td>
+                                            TBMS
+                                        </td><td>Tembaga Mulia Semanan Tbk</td><td>
+                                            30-Sep-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            484
+                                        </td><td>
+                                            TCID
+                                        </td><td>Mandom Indonesia Tbk</td><td>
+                                            23-Sep-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            485
+                                        </td><td>
+                                            TELE
+                                        </td><td>Tiphone Mobile Indonesia Tbk</td><td>
+                                            12-Jan-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            486
+                                        </td><td>
+                                            TFCO
+                                        </td><td>Tifico Fiber Indonesia Tbk</td><td>
+                                            26-Feb-1980
+                                        </td>
+	</tr><tr>
+		<td>
+                                            487
+                                        </td><td>
+                                            TGKA
+                                        </td><td>Tigaraksa Satria Tbk</td><td>
+                                            11-Jun-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            488
+                                        </td><td>
+                                            TIFA
+                                        </td><td>Tifa Finance Tbk</td><td>
+                                            08-Jul-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            489
+                                        </td><td>
+                                            TINS
+                                        </td><td>Timah (Persero) Tbk</td><td>
+                                            19-Okt-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            490
+                                        </td><td>
+                                            TIRA
+                                        </td><td>Tira Austenite Tbk</td><td>
+                                            27-Jul-1993
+                                        </td>
+	</tr><tr>
+		<td>
+                                            491
+                                        </td><td>
+                                            TIRT
+                                        </td><td>Tirta Mahakam Resources Tbk</td><td>
+                                            13-Des-1999
+                                        </td>
+	</tr><tr>
+		<td>
+                                            492
+                                        </td><td>
+                                            TKGA
+                                        </td><td>PT Permata Prima Sakti Tbk.</td><td>
+                                            06-Jan-1992
+                                        </td>
+	</tr><tr>
+		<td>
+                                            493
+                                        </td><td>
+                                            TKIM
+                                        </td><td>Pabrik Kertas Tjiwi Kimia Tbk</td><td>
+                                            03-Apr-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            494
+                                        </td><td>
+                                            TLKM
+                                        </td><td>Telekomunikasi Indonesia (Persero) Tbk</td><td>
+                                            14-Nop-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            495
+                                        </td><td>
+                                            TMAS
+                                        </td><td>Pelayaran Tempuran Emas Tbk</td><td>
+                                            09-Jul-2003
+                                        </td>
+	</tr><tr>
+		<td>
+                                            496
+                                        </td><td>
+                                            TMPI
+                                        </td><td>PT Sigmagold Inti Perkasa Tbk.</td><td>
+                                            26-Jan-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            497
+                                        </td><td>
+                                            TMPO
+                                        </td><td>Tempo Inti Media Tbk</td><td>
+                                            08-Jan-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            498
+                                        </td><td>
+                                            TOBA
+                                        </td><td>Toba Bara Sejahtra Tbk</td><td>
+                                            06-Jul-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            499
+                                        </td><td>
+                                            TOTL
+                                        </td><td>Total Bangun Persada Tbk</td><td>
+                                            25-Jul-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            500
+                                        </td><td>
+                                            TOTO
+                                        </td><td>Surya Toto Indonesia Tbk</td><td>
+                                            30-Okt-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            501
+                                        </td><td>
+                                            TOWR
+                                        </td><td>Sarana Menara Nusantara Tbk</td><td>
+                                            08-Mar-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            502
+                                        </td><td>
+                                            TPIA
+                                        </td><td>Chandra Asri Petrochemical Tbk</td><td>
+                                            26-Mei-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            503
+                                        </td><td>
+                                            TPMA
+                                        </td><td>Trans Power Marine Tbk</td><td>
+                                            20-Feb-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            504
+                                        </td><td>
+                                            TRAM
+                                        </td><td>Trada Maritime Tbk</td><td>
+                                            10-Sep-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            505
+                                        </td><td>
+                                            TRIL
+                                        </td><td>Triwira Insanlestari Tbk</td><td>
+                                            28-Jan-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            506
+                                        </td><td>
+                                            TRIM
+                                        </td><td>PT Trimegah Sekuritas Indonesia Tbk</td><td>
+                                            31-Jan-2000
+                                        </td>
+	</tr><tr>
+		<td>
+                                            507
+                                        </td><td>
+                                            TRIO
+                                        </td><td>Trikomsel Oke Tbk</td><td>
+                                            14-Apr-2009
+                                        </td>
+	</tr><tr>
+		<td>
+                                            508
+                                        </td><td>
+                                            TRIS
+                                        </td><td>Trisula International Tbk</td><td>
+                                            28-Jun-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            509
+                                        </td><td>
+                                            TRST
+                                        </td><td>Trias Sentosa Tbk</td><td>
+                                            02-Jul-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            510
+                                        </td><td>
+                                            TRUB
+                                        </td><td>Truba Alam Manunggal Engineering Tbk</td><td>
+                                            16-Okt-2006
+                                        </td>
+	</tr><tr>
+		<td>
+                                            511
+                                        </td><td>
+                                            TRUS
+                                        </td><td>Trust Finance Indonesia Tbk</td><td>
+                                            28-Nop-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            512
+                                        </td><td>
+                                            TSPC
+                                        </td><td>Tempo Scan Pacific Tbk</td><td>
+                                            17-Jun-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            513
+                                        </td><td>
+                                            TURI
+                                        </td><td>Tunas Ridean Tbk</td><td>
+                                            06-Mei-1995
+                                        </td>
+	</tr><tr>
+		<td>
+                                            514
+                                        </td><td>
+                                            ULTJ
+                                        </td><td>Ultra Jaya Milk Industry Tbk</td><td>
+                                            02-Jul-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            515
+                                        </td><td>
+                                            UNIC
+                                        </td><td>Unggul Indah Cahaya Tbk</td><td>
+                                            06-Nop-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            516
+                                        </td><td>
+                                            UNIT
+                                        </td><td>Nusantara Inti Corpora Tbk</td><td>
+                                            18-Apr-2002
+                                        </td>
+	</tr><tr>
+		<td>
+                                            517
+                                        </td><td>
+                                            UNSP
+                                        </td><td>Bakrie Sumatera Plantations Tbk</td><td>
+                                            06-Mar-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            518
+                                        </td><td>
+                                            UNTR
+                                        </td><td>United Tractors Tbk</td><td>
+                                            19-Sep-1989
+                                        </td>
+	</tr><tr>
+		<td>
+                                            519
+                                        </td><td>
+                                            UNVR
+                                        </td><td>Unilever Indonesia Tbk</td><td>
+                                            11-Jan-1982
+                                        </td>
+	</tr><tr>
+		<td>
+                                            520
+                                        </td><td>
+                                            VICO
+                                        </td><td>PT Victoria Investama Tbk.</td><td>
+                                            08-Jul-2013
+                                        </td>
+	</tr><tr>
+		<td>
+                                            521
+                                        </td><td>
+                                            VINS
+                                        </td><td>PT Victoria Insurance Tbk.</td><td>
+                                            28-Sep-2015
+                                        </td>
+	</tr><tr>
+		<td>
+                                            522
+                                        </td><td>
+                                            VIVA
+                                        </td><td>PT Visi Media Asia Tbk</td><td>
+                                            21-Nop-2011
+                                        </td>
+	</tr><tr>
+		<td>
+                                            523
+                                        </td><td>
+                                            VOKS
+                                        </td><td>Voksel Electric Tbk</td><td>
+                                            20-Des-1990
+                                        </td>
+	</tr><tr>
+		<td>
+                                            524
+                                        </td><td>
+                                            VRNA
+                                        </td><td>Verena Multi Finance Tbk</td><td>
+                                            25-Jun-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            525
+                                        </td><td>
+                                            WAPO
+                                        </td><td>Wahana Pronatural Tbk</td><td>
+                                            22-Jun-2001
+                                        </td>
+	</tr><tr>
+		<td>
+                                            526
+                                        </td><td>
+                                            WEHA
+                                        </td><td>PT WEHA Transportasi Indonesia Tbk</td><td>
+                                            31-Mei-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            527
+                                        </td><td>
+                                            WICO
+                                        </td><td>Wicaksana Overseas International Tbk</td><td>
+                                            08-Agust-1994
+                                        </td>
+	</tr><tr>
+		<td>
+                                            528
+                                        </td><td>
+                                            WIIM
+                                        </td><td>Wismilak Inti Makmur Tbk</td><td>
+                                            18-Des-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            529
+                                        </td><td>
+                                            WIKA
+                                        </td><td>Wijaya Karya Tbk</td><td>
+                                            29-Okt-2007
+                                        </td>
+	</tr><tr>
+		<td>
+                                            530
+                                        </td><td>
+                                            WINS
+                                        </td><td>Wintermar Offshore Marine Tbk</td><td>
+                                            29-Nop-2010
+                                        </td>
+	</tr><tr>
+		<td>
+                                            531
+                                        </td><td>
+                                            WOMF
+                                        </td><td>Wahana Ottomitra Multiartha Tbk</td><td>
+                                            13-Des-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            532
+                                        </td><td>
+                                            WSBP
+                                        </td><td>PT Waskita Beton Precast Tbk.</td><td>
+                                            20-Sep-2016
+                                        </td>
+	</tr><tr>
+		<td>
+                                            533
+                                        </td><td>
+                                            WSKT
+                                        </td><td>Waskita Karya (Persero) Tbk</td><td>
+                                            19-Des-2012
+                                        </td>
+	</tr><tr>
+		<td>
+                                            534
+                                        </td><td>
+                                            WTON
+                                        </td><td>Wijaya Karya Beton</td><td>
+                                            08-Apr-2014
+                                        </td>
+	</tr><tr>
+		<td>
+                                            535
+                                        </td><td>
+                                            YPAS
+                                        </td><td>Yanaprima Hastapersada Tbk</td><td>
+                                            05-Mar-2008
+                                        </td>
+	</tr><tr>
+		<td>
+                                            536
+                                        </td><td>
+                                            YULE
+                                        </td><td>Yulie Sekurindo Tbk</td><td>
+                                            10-Des-2004
+                                        </td>
+	</tr><tr>
+		<td>
+                                            537
+                                        </td><td>
+                                            ZBRA
+                                        </td><td>Zebra Nusantara Tbk</td><td>
+                                            01-Agust-1991
+                                        </td>
+	</tr>
+	</tbody>
+
+</table></body></html>

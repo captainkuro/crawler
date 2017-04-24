@@ -36,7 +36,7 @@ function all_pairs() {
 // exporte('all_pairs.out', all_pairs());
 
 function all_dividens() {
-	$files = ['corporate_action-2014.xls', 'corporate_action-2015.xls', 'corporate_action-2016.xls'];
+	$files = ['raw-corporate_action-2014.xls', 'raw-corporate_action-2015.xls', 'raw-corporate_action-2016.xls'];
 	$result = [];
 	foreach ($files as $xlsfile) {
 		$reader = new SpreadsheetReader($xlsfile);
