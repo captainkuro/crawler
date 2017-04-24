@@ -1,7 +1,5 @@
 <?php
-require '../class/simple_html_dom.php';
-require '../class/text.php';
-require '../class/page.php';
+require 'vendor/autoload.php';
 
 // https://id.investing.com/equities/indonesia
 // 1. open id.investing
@@ -9,10 +7,12 @@ require '../class/page.php';
 // 3. for each stock links
 // 4. open page, grab info ...
 	// title
+	// url
 	// data-pair-id="101278"
-// 5. open https://id.investing.com/instruments/Financials/changereporttypeajax?action=change_report_type&pair_ID=101278&report_type=INC&period_type=Annual
-// 6. grab periode (year), grab dividen (per year)
+// 5. sumber lebih reliable: http://akses.ksei.co.id/corporate_actions/downloads
+// 6. Parse xls, group by year and saham
 // 7. compile into list
+// HATI2 SAMA STOCK SPLIT!
 
 function exporte($file, $value) {
 	file_put_contents($file, '<?php return '.var_export($value, true).';');
@@ -28,79 +28,71 @@ function all_pairs() {
 	foreach ($spans as $span) {
 		$name = $span->getAttribute('data-name');
 		$id = $span->getAttribute('data-id');
-		$result[$id] = $name;
+		$url = 'https://id.investing.com' . $span->prev_sibling()->getAttribute('href');
+		$result[$id] = [$name, $url];
 	}
 	return $result;
 }
 // exporte('all_pairs.out', all_pairs());
 
 function all_dividens() {
-	// @TODO ambil dividen info dari halaman lain
-	$pairs = include 'all_pairs.out';
+	$files = ['corporate_action-2014.xls', 'corporate_action-2015.xls', 'corporate_action-2016.xls'];
 	$result = [];
-	foreach ($pairs as $id => $name) {
-		echo "$id $name\n";
-		$table_url = "https://id.investing.com/instruments/Financials/changereporttypeajax?action=change_report_type&pair_ID={$id}&report_type=INC&period_type=Annual";
-		try {
-			$p = new Page($table_url, array('become_firefox'=>true));
-		} catch (Exception $e) {
-			echo "Failed to get financial: $name\n";
-			continue;
+	foreach ($files as $xlsfile) {
+		$reader = new SpreadsheetReader($xlsfile);
+		foreach ($reader as $i => $row) {
+			if ($i <= 1) continue;
+			// print_r($row);
+			$name = $row[1];
+			$code = $row[3];
+			$exercise = $row[8];
+			$date = $row[6];
+			$proceed = $row[10];
+
+			if ($code == 'JASS' || $code == '') continue;
+
+			preg_match('#/(\d{4})#', $date, $m);
+			$year = $m[1];
+			$amount = floatval($proceed) / floatval($exercise);
+
+			$result[$code]['name'] = $name;
+			$result[$code]['code'] = $code;
+			$result[$code]['dividen'][$year][] = $amount;
 		}
-		$h = new simple_html_dom();
-		$h->load($p->content());
-
-		$header = $h->find('#header_row', 0);
-		$periods = [];
-		foreach ($header->find('.bold') as $span) {
-			$periods[] = trim($span->innertext());
-		}
-
-		$summary_url = "https://id.investing.com/instruments/Financials/changesummaryreporttypeajax?action=change_report_type&pid={$id}&financial_id={$id}&ratios_id={$id}&period_type=Annual";
-		$p = new Page($summary_url, ['become_firefox' => true]);
-		preg_match('#Laporan Laba Rugi (\w+)#', $p->content(), $m);
-		$data = [
-			'id' => $id,
-			'name' => $name,
-			'code' => $m[1],
-		];
-
-		foreach ($h->find('tr') as $tr) {
-			if (strpos($tr->innertext(), 'Dividen per Saham') !== false) {
-				foreach ($periods as $i => $year) {
-					$dividen = $tr->find('td', $i+1)->innertext();
-					$data[$year] = trim($dividen);
-				}
-			}
-		}
-
-		$result[$name] = $data;
 	}
+
 	return $result;
 }
-// exporte('all_dividens.out', all_dividens());
+// all_dividens();
+exporte('all_dividens.out', all_dividens());
 // exit;
 
 function standardize_dividen() {
 	$dividens = include 'all_dividens.out';
 	$financials = include 'finan_2016.out';
 	$result = [];
-	foreach ($dividens as $name => $data) {
-		$finan = $financials[$data['code']];
-		if (isset($data[2015]) && $data[2015] != '-' && isset($finan['4th Quarter 2016'])) {
+	foreach ($dividens as $code => $data) {
+		$name = $data['name'];
+		$finan = $financials[$code];
+		if (isset($data['dividen'][2016]) && isset($finan['4th Quarter 2016'])) {
+			$dividen = array_sum($data['dividen'][2016]);
 			$item = [
 				'Name' => $name,
-				'Code' => $data['code'],
-				'Dividen 2015' => $data[2015],
+				'Code' => $code,
 			];
 			$item = $item + $finan['4th Quarter 2016'];
-			$item['Rasio Dividen'] = sprintf('%.2f', 
-				floatval(str_replace(',', '', $data[2015]) * 100
-				/ 
-				floatval(str_replace(',', '', $item['Close Price'])) 
+			$item['Dividen 2016'] = $dividen;
+			$item['Rasio Dividen'] = sprintf('%.2f',
+				floatval(str_replace(',', '', $dividen) * 100
+				/
+				floatval(str_replace(',', '', $item['Close Price']))
 				)
 			);
-			$item['History Dividen'] = "2016:$data[2016]/2015:$data[2015]/2014:$data[2014]/2013:$data[2013]";
+			$item['History Dividen'] = '';
+			foreach ($data['dividen'] as $year => $yearly) {
+				$item['History Dividen'] .= "$year : " . implode(' + ', $yearly) . ' / ';
+			}
+
 			$result[] = $item;
 		}
 	}

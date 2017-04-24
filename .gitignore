@@ -1,3 +1,5 @@
 sqlite/
 
 mangastream crawler/*.7z
+composer.lock
+vendor/

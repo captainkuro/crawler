@@ -26,13 +26,13 @@ function get_all_codes() {
 		$parts = explode('|', $sector);
 		$sector = trim(array_shift($parts));
 		$index = implode(',', array_map('trim', $parts));
-		
+
 		$result[$code] = [
-			'code' => $code, 'name' => $name, 
+			'code' => $code, 'name' => $name,
 			'sector' => $sector, 'index' => $index
 		];
 	}
-	
+
 	exporte('all_codes.out', $result);
 	return $result;
 }
@@ -88,7 +88,7 @@ function extract_fin($text) {
 // exit;
 
 function fetch_html($code, $year) {
-	$url = 'http://dwsec-id.com/hmpg/quote/quoteMain-finan.do';
+	$url = 'http://miraeasset.co.id/hmpg/quote/quoteMain-finan.do';
 	$body = "tabQuoteFlag=01&tabClickYn=Y&loadM_01=2&searchQuart=3&searchYear={$year}&stcd={$code}";
 	$p = new Page($url, [
 		CURLOPT_POST => 1,
@@ -111,14 +111,14 @@ function fin_in_year($year) {
 	return $result;
 }
 
-// for ($y=2016; $y<=2016; $y++) {
-// 	$result = fin_in_year($y);
-// 	exporte("finan_$y.out", $result);
-// }
-// exit;
+for ($y=2016; $y<=2016; $y++) {
+	$result = fin_in_year($y);
+	exporte("finan_$y.out", $result);
+}
+exit;
 
-// show chart http://dwsec-id.com/js/dwsComplex/complex.htm?StockCode=DEWA&periodBit=I
-// get data http://dwsec-id.com/tr/cpstChartAjaxTR.do?StockCode=DEWA&periodBit=I
+// show chart http://miraeasset.co.id/js/dwsComplex/complex.htm?StockCode=DEWA&periodBit=I
+// get data http://miraeasset.co.id/tr/cpstChartAjaxTR.do?StockCode=DEWA&periodBit=I
 
 function get_all_financials() {
 	$files = ['finan_2014.out','finan_2015.out','finan_2016.out',];
@@ -189,4 +189,4 @@ function save_standard_financials() {
 	}
 	exporte('all_standardized.out', $result);
 }
-save_standard_financials();
+// save_standard_financials();
