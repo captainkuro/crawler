@@ -3,3 +3,5 @@ sqlite/
 mangastream crawler/*.7z
 composer.lock
 vendor/
+
+start-all_standardized.out

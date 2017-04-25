@@ -135,9 +135,11 @@ function extract_fin($text) {
 	$crawl_table = function ($table, $row) use ($periods) {
 		$result = [];
 		while ($dataTr = $table->find('tr', $row++)) {
-		$label = trim($dataTr->find('th', 0)->text());
+			$label = trim($dataTr->find('th', 0)->text());
+			$label = html_entity_decode($label);
 			for ($i=0; $i<=3; $i++) {
 				$td = $dataTr->find('td', $i);
+				if (!$td) break;
 				$amount = trim($td->text());
 				if (isset($periods[$i])) $result[$periods[$i]][$label] = $amount;
 			}
@@ -145,13 +147,18 @@ function extract_fin($text) {
 		return $result;
 	};
 
+	// Equity Income Statement
 	$row = 2;
 	$result = $crawl_table($table, $row);
 
+	// Equity Balance Sheet
+	$table = $h->find('.align07', 1);
+	$row = 2;
+	$result = array_merge_recursive($result, $crawl_table($table, $row));
 
-	// Key Ratios
+	// Equity Cash Flow
 	$table = $h->find('.align07', 2);
-	$row = 9;
+	$row = 2;
 	$result = array_merge_recursive($result, $crawl_table($table, $row));
 
 	return $result;
@@ -186,21 +193,20 @@ function fin_in_year($year) {
 }
 
 // how to use: exit start and end index to year u want
-// for ($y=2016; $y<=2017; $y++) {
-// 	$result = fin_in_year($y);
-// 	exporte("start-finan_$y.out", $result);
-// }
-// exit;
+for ($y=2010; $y<=2017; $y++) {
+	$result = fin_in_year($y);
+	exporte("start-finan_$y.out", $result);
+}
+exit;
 
 // show chart http://miraeasset.co.id/js/dwsComplex/complex.htm?StockCode=DEWA&periodBit=I
 // get data http://miraeasset.co.id/tr/cpstChartAjaxTR.do?StockCode=DEWA&periodBit=I
 
 function get_all_financials() {
-	$files = [
-		'start-finan_2010.out','start-finan_2011.out','start-finan_2012.out',
-		'start-finan_2013.out','start-finan_2014.out','start-finan_2015.out',
-		'start-finan_2016.out','start-finan_2017.out',
-	];
+	$files = [];
+	for ($y=2010; $y<=2017; $y++) {
+		$files[] = "start-finan_{$y}.out";
+	};
 	$result = [];
 	foreach ($files as $input) {
 		$chunk = include $input;
@@ -236,6 +242,7 @@ function extract_to_normalized($stock, $data) {
 // $input = include 'finan_2016.out';
 // print_r(extract_to_normalized('AALI', $input['AALI']));
 
+// generate combined financial data
 function save_standard_financials() {
 	$stocks = get_all_codes();
 	$finances = get_all_financials();
