@@ -12,7 +12,7 @@ function exporte($file, $value) {
 	file_put_contents($file, '<?php return '.var_export($value, true).';');
 }
 
-function importo($file) {
+function importe($file) {
 	return include $file;
 }
 
@@ -30,7 +30,7 @@ function dom_from_url($url) {
 function get_all_indexes() {
 	$output = 'start-all_indexes.out';
 	if (is_file($output)) {
-		return importo($output);
+		return importe($output);
 	}
 
 	$h = dom_from_url('http://infopersada.com/investasi/saham/');
@@ -86,7 +86,7 @@ function get_all_sectors() {
 function get_all_codes() {
 	$output = 'start-all_codes.out';
 	if (is_file($output)) {
-		return importo($output);
+		return importe($output);
 	}
 
 	$h = new simple_html_dom();
