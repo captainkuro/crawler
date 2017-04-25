@@ -193,11 +193,11 @@ function fin_in_year($year) {
 }
 
 // how to use: exit start and end index to year u want
-for ($y=2010; $y<=2017; $y++) {
-	$result = fin_in_year($y);
-	exporte("start-finan_$y.out", $result);
-}
-exit;
+// for ($y=2010; $y<=2017; $y++) {
+// 	$result = fin_in_year($y);
+// 	exporte("start-finan_$y.out", $result);
+// }
+// exit;
 
 // show chart http://miraeasset.co.id/js/dwsComplex/complex.htm?StockCode=DEWA&periodBit=I
 // get data http://miraeasset.co.id/tr/cpstChartAjaxTR.do?StockCode=DEWA&periodBit=I
