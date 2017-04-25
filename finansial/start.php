@@ -1,13 +1,46 @@
 <?php
-require '../class/simple_html_dom.php';
-require '../class/text.php';
-require '../class/page.php';
+require 'vendor/autoload.php';
 
 function exporte($file, $value) {
 	file_put_contents($file, '<?php return '.var_export($value, true).';');
 }
 
+// @TODO refactor many many ways to get stock data
+// return list of saham kode
 function get_all_codes() {
+	$output = 'start-all_codes.export';
+	if (is_file($output)) {
+		return include $output;
+	}
+
+	$h = new simple_html_dom();
+	$h->load(file_get_contents('raw-Company-Profile.xls'));
+	$result = [];
+
+	foreach ($h->find('tr') as $i => $tr) {
+		if ($i <= 0) continue;
+		$code = trim($tr->find('td', 1)->text());
+		$name = trim($tr->find('td', 2)->text());
+		$join_date = trim($tr->find('td', 3)->text());
+		
+		$result[$code] = [
+			'code' => $code,
+			'name' => $name,
+			'join_date' => $join_date,
+		];
+	}
+	exporte($output, $result);
+	return $result;
+}
+// get_all_codes();exit;
+
+// @todo sector info
+// http://infopersada.com/investasi/saham/ get index info
+function get_index_info() {
+	
+}
+
+function get_all_codes_te() {
 	if (is_file('all_codes.out')) {
 		return include 'all_codes.out';
 	}
