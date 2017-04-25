@@ -211,29 +211,6 @@ function get_all_financials() {
 }
 
 function extract_to_normalized($stock, $data) {
-	$map = array(
-		'Total Sales' => 'total_sales',
-		'Cost of Good Sold' => 'cost_of_good_sold',
-		'Gross Profit' => 'gross_profit',
-		'Operation Expenses' => 'operation_expenses',
-		'EBIT' => 'ebit',
-		'Other Income/Expenses' => 'other_income_expenses',
-		'Earning Before Tax' => 'earning_before_tax',
-		'Net Income After Tax' => 'net_income_after_tax',
-		'Minority Interest' => 'minority_interest',
-		'Net Income(NI)' => 'net_income',
-		'Earning Per Share(EPS)' => 'eps',
-		'Book Value Per Share(BV)' => 'bv',
-		'Close Price' => 'close_price',
-		'PER(Colse Price/EPS*)' => 'per',
-		'PBV(Close Price/BV)' => 'pbv',
-		'PER (X) (ClostPrice/EPS*)' => 'per2',
-		'PBV (X) (ClosePrice/BV)' => 'pbv2',
-		'DER (X) (T.Liab/T.Eq)' => 'der',
-		'ROA (X) (NI*/T.Assrts)' => 'roa',
-		'ROE (X) (NI*/T.Equity)' => 'roe',
-		'Op.Margin (%) (EBIT/Sales)' => 'op_margin',
-    );
     $database = [];
 	foreach ($data as $period => $financials) {
 		preg_match('#(\d).*(\d{4})#', $period, $m);
@@ -245,8 +222,8 @@ function extract_to_normalized($stock, $data) {
 			'quarter' => $quarter,
 		];
 		foreach ($financials as $label => $amount) {
-			if (isset($map[$label])) {
-				$column = $map[$label];
+			if (Common::has_label($label)) {
+				$column = Common::label2key($label);
 				$value = floatval(str_replace(',', '', $amount));
 				$row[$column] = $value;
 			}

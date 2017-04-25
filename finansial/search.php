@@ -1,33 +1,8 @@
 <?php
-$stocks = include 'all_codes.out';
-$financials = include 'all_standardized.out';
-
-$map = array(
-	'code' => 'Code',
-	'year' => 'Year',
-	'quarter' => 'Q',
-	'total_sales' => 'Total Sales',
-	'cost_of_good_sold' => 'Cost of Good Sold',
-	'gross_profit' => 'Gross Profit',
-	'operation_expenses' => 'Operation Expenses',
-	'ebit' => 'EBIT',
-	'other_income_expenses' => 'Other Income/Expenses',
-	'earning_before_tax' => 'Earning Before Tax',
-	'net_income_after_tax' => 'Net Income After Tax',
-	'minority_interest' => 'Minority Interest',
-	'net_income' => 'Net Income(NI)',
-	'eps' => 'Earning Per Share(EPS)',
-	'bv' => 'Book Value Per Share(BV)',
-	'close_price' => 'Close Price',
-	'per' => 'PER(Close Price/EPS*)',
-	'pbv' => 'PBV(Close Price/BV)',
-	'per2' => 'PER (X) (ClostPrice/EPS*)',
-	'pbv2' => 'PBV (X) (ClosePrice/BV)',
-	'der' => 'DER (X) (T.Liab/T.Eq)',
-	'roa' => 'ROA (X) (NI*/T.Assrts)',
-	'roe' => 'ROE (X) (NI*/T.Equity)',
-	'op_margin' => 'Op.Margin (%) (EBIT/Sales)',
-);
+require 'vendor/autoload.php';
+// @TODO
+$stocks = include 'start-all_codes.out';
+$financials = include 'start-all_standardized.out';
 
 class Filtrasi {
 	public function setStocks($stocks) {
@@ -54,7 +29,6 @@ class Filtrasi {
 	}
 
 	public function save($file) {
-		global $map;
 		$formatted = [];
 		foreach ($this->financials as $row) {
 			$item = $this->stocks[$row['code']];
@@ -62,8 +36,8 @@ class Filtrasi {
 				if (preg_match('#\d{5,}#', $value)) {
 					$value = number_format($value);
 				}
-				if (isset($map[$key])) {
-					$item[$map[$key]] = $value;
+				if (Common::has_key($key)) {
+					$item[Common::key2label($key)] = $value;
 				} else {
 					$item[$key] = $value;
 				}
@@ -79,11 +53,11 @@ $f->setStocks($stocks);
 $f->setFinancials($financials);
 
 $f->filter(function ($p, $r) {
-	return /*$p['sector'] == 'CONSUMER' 
+	return /*$p['sector'] == 'CONSUMER'
 		&& */$r['year'] == 2016
 		&& $r['quarter'] == 3;
 });
 $f->sort(function ($a, $b) {
 	return ($a['roe'] > $b['roe']) ? -1 : 1;
 });
-$f->save('sort-by-roe-desc-CONSUMER.out');
+$f->save('search-sort-by-roe-desc-CONSUMER.out');

@@ -3,6 +3,6 @@
         "nuovo/spreadsheet-reader": "^0.5.11"
     },
     "autoload": {
-		"classmap": ["../class/"]
+		"classmap": ["../class/", "Common.php"]
 	}
 }
