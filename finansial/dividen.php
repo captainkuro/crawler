@@ -12,7 +12,7 @@ require 'vendor/autoload.php';
 // 5. sumber lebih reliable: http://akses.ksei.co.id/corporate_actions/downloads
 // 6. Parse xls, group by year and saham
 // 7. compile into list
-// HATI2 SAMA STOCK SPLIT!
+// HATI2 SAMA STOCK SPLIT! https://www.sahamok.com/emiten/saham-stock-split-reverse/stock-split-stock-reverse-2016/
 
 function exporte($file, $value) {
 	file_put_contents($file, '<?php return '.var_export($value, true).';');
