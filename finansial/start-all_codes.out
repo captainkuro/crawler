@@ -1,0 +1,4298 @@
+<?php return array (
+  'AALI' => 
+  array (
+    'code' => 'AALI',
+    'name' => 'Astra Agro Lestari Tbk',
+    'join_date' => '09-Des-1997',
+    'sector' => 'AGRI',
+    'index' => 'LQ45, JII, ISSI',
+  ),
+  'ABBA' => 
+  array (
+    'code' => 'ABBA',
+    'name' => 'Mahaka Media Tbk',
+    'join_date' => '03-Apr-2002',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'ABDA' => 
+  array (
+    'code' => 'ABDA',
+    'name' => 'Asuransi Bina Dana Arta Tbk',
+    'join_date' => '06-Jul-1989',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ABMM' => 
+  array (
+    'code' => 'ABMM',
+    'name' => 'ABM Investama Tbk',
+    'join_date' => '06-Des-2011',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'ACES' => 
+  array (
+    'code' => 'ACES',
+    'name' => 'Ace Hardware Indonesia Tbk',
+    'join_date' => '06-Nop-2007',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'ACST' => 
+  array (
+    'code' => 'ACST',
+    'name' => 'PT Acset Indonusa Tbk.',
+    'join_date' => '24-Jun-2013',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'ADES' => 
+  array (
+    'code' => 'ADES',
+    'name' => 'Akasha Wira International Tbk  Tbk',
+    'join_date' => '13-Jun-1994',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'ADHI' => 
+  array (
+    'code' => 'ADHI',
+    'name' => 'Adhi Karya (Persero) Tbk',
+    'join_date' => '18-Mar-2004',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'ADMF' => 
+  array (
+    'code' => 'ADMF',
+    'name' => 'Adira Dinamika Multi Finance Tbk',
+    'join_date' => '31-Mar-2004',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ADMG' => 
+  array (
+    'code' => 'ADMG',
+    'name' => 'Polychem Indonesia Tbk',
+    'join_date' => '20-Okt-1993',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'ADRO' => 
+  array (
+    'code' => 'ADRO',
+    'name' => 'ADARO ENERGY Tbk',
+    'join_date' => '16-Jul-2008',
+    'sector' => 'MINING',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'AGII' => 
+  array (
+    'code' => 'AGII',
+    'name' => 'PT Aneka Gas Industri Tbk.',
+    'join_date' => '28-Sep-2016',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'AGRO' => 
+  array (
+    'code' => 'AGRO',
+    'name' => 'Bank Rakyat Indonesia Agroniaga Tbk',
+    'join_date' => '08-Agust-2003',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'AGRS' => 
+  array (
+    'code' => 'AGRS',
+    'name' => 'PT Bank Agris Tbk',
+    'join_date' => '22-Des-2014',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'AHAP' => 
+  array (
+    'code' => 'AHAP',
+    'name' => 'Asuransi Harta Aman Pratama Tbk',
+    'join_date' => '14-Sep-1990',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'AIMS' => 
+  array (
+    'code' => 'AIMS',
+    'name' => 'Akbar Indomakmur Stimec Tbk',
+    'join_date' => '20-Jul-2001',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'AISA' => 
+  array (
+    'code' => 'AISA',
+    'name' => 'Tiga Pilar Sejahtera Food Tbk',
+    'join_date' => '11-Jun-1997',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'AKKU' => 
+  array (
+    'code' => 'AKKU',
+    'name' => 'PT Anugerah Kagum Karya Utama Tbk',
+    'join_date' => '01-Nop-2004',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'AKPI' => 
+  array (
+    'code' => 'AKPI',
+    'name' => 'Argha Karya Prima Ind. Tbk',
+    'join_date' => '18-Des-1992',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'AKRA' => 
+  array (
+    'code' => 'AKRA',
+    'name' => 'AKR Corporindo Tbk',
+    'join_date' => '03-Okt-1994',
+    'sector' => 'TRADE',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'AKSI' => 
+  array (
+    'code' => 'AKSI',
+    'name' => 'Majapahit Inti Corpora Tbk',
+    'join_date' => '13-Jul-2001',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ALDO' => 
+  array (
+    'code' => 'ALDO',
+    'name' => 'Alkindo Naratama Tbk',
+    'join_date' => '12-Jul-2011',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'ALKA' => 
+  array (
+    'code' => 'ALKA',
+    'name' => 'Alakasa Industrindo Tbk',
+    'join_date' => '12-Jul-1990',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'ALMI' => 
+  array (
+    'code' => 'ALMI',
+    'name' => 'Alumindo Light Metal Industry Tbk',
+    'join_date' => '02-Jan-1997',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'ALTO' => 
+  array (
+    'code' => 'ALTO',
+    'name' => 'Tri Banyan Tirta Tbk',
+    'join_date' => '10-Jul-2012',
+    'sector' => 'CONSUMER',
+    'index' => '',
+  ),
+  'AMAG' => 
+  array (
+    'code' => 'AMAG',
+    'name' => 'Asuransi Multi Artha Guna Tbk',
+    'join_date' => '23-Des-2005',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'AMFG' => 
+  array (
+    'code' => 'AMFG',
+    'name' => 'Asahimas Flat Glass Tbk',
+    'join_date' => '08-Nop-1995',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'AMIN' => 
+  array (
+    'code' => 'AMIN',
+    'name' => 'PT Ateliers Mecaniques D\'Indonesie Tbk.',
+    'join_date' => '10-Des-2015',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'AMRT' => 
+  array (
+    'code' => 'AMRT',
+    'name' => 'Sumber Alfaria Trijaya Tbk',
+    'join_date' => '15-Jan-2009',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'ANJT' => 
+  array (
+    'code' => 'ANJT',
+    'name' => 'PT Austindo Nusantara Jaya Tbk.',
+    'join_date' => '08-Mei-2013',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'ANTM' => 
+  array (
+    'code' => 'ANTM',
+    'name' => 'Aneka Tambang (Persero) Tbk',
+    'join_date' => '27-Nop-1997',
+    'sector' => 'MINING',
+    'index' => 'LQ45, JII, ISSI',
+  ),
+  'APEX' => 
+  array (
+    'code' => 'APEX',
+    'name' => 'Apexindo Pratama Duta Tbk',
+    'join_date' => '10-Jul-2002',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'APIC' => 
+  array (
+    'code' => 'APIC',
+    'name' => 'PACIFIC STRATEGIC FINANCIAL Tbk',
+    'join_date' => '18-Des-2002',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'APII' => 
+  array (
+    'code' => 'APII',
+    'name' => 'PT Arita Prima Indonesia Tbk.',
+    'join_date' => '29-Okt-2013',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'APLI' => 
+  array (
+    'code' => 'APLI',
+    'name' => 'Asiaplast Industries Tbk',
+    'join_date' => '01-Mei-2000',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'APLN' => 
+  array (
+    'code' => 'APLN',
+    'name' => 'Agung Podomoro Land Tbk',
+    'join_date' => '11-Nop-2010',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'APOL' => 
+  array (
+    'code' => 'APOL',
+    'name' => 'Arpeni Pratama Ocean Line Tbk',
+    'join_date' => '22-Jun-2005',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'ARGO' => 
+  array (
+    'code' => 'ARGO',
+    'name' => 'Argo Pantes Tbk',
+    'join_date' => '07-Jan-1991',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'ARII' => 
+  array (
+    'code' => 'ARII',
+    'name' => 'Atlas Resources Tbk',
+    'join_date' => '08-Nop-2011',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'ARNA' => 
+  array (
+    'code' => 'ARNA',
+    'name' => 'Arwana Citramulia Tbk',
+    'join_date' => '17-Jul-2001',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'ARTA' => 
+  array (
+    'code' => 'ARTA',
+    'name' => 'Arthavest Tbk',
+    'join_date' => '05-Nop-2002',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'ARTI' => 
+  array (
+    'code' => 'ARTI',
+    'name' => 'Ratu Prabu Energi Tbk',
+    'join_date' => '30-Apr-2003',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'ARTO' => 
+  array (
+    'code' => 'ARTO',
+    'name' => 'PT Bank Artos Indonesia Tbk',
+    'join_date' => '12-Jan-2016',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ASBI' => 
+  array (
+    'code' => 'ASBI',
+    'name' => 'Asuransi Bintang Tbk',
+    'join_date' => '29-Nop-1989',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ASDM' => 
+  array (
+    'code' => 'ASDM',
+    'name' => 'Asuransi Dayin Mitra Tbk',
+    'join_date' => '15-Des-1989',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ASGR' => 
+  array (
+    'code' => 'ASGR',
+    'name' => 'Astra Graphia Tbk',
+    'join_date' => '15-Nop-1989',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'ASII' => 
+  array (
+    'code' => 'ASII',
+    'name' => 'Astra International Tbk',
+    'join_date' => '04-Apr-1990',
+    'sector' => 'MISC-IND',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'ASJT' => 
+  array (
+    'code' => 'ASJT',
+    'name' => 'Asuransi Jasa Tania Tbk',
+    'join_date' => '23-Des-2003',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ASMI' => 
+  array (
+    'code' => 'ASMI',
+    'name' => 'PT Asuransi Kresna Mitra Tbk.',
+    'join_date' => '16-Jan-2014',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ASRI' => 
+  array (
+    'code' => 'ASRI',
+    'name' => 'ALAM SUTERA REALTY Tbk',
+    'join_date' => '18-Des-2007',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, ISSI',
+  ),
+  'ASRM' => 
+  array (
+    'code' => 'ASRM',
+    'name' => 'Asuransi Ramayana Tbk',
+    'join_date' => '19-Mar-1990',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ASSA' => 
+  array (
+    'code' => 'ASSA',
+    'name' => 'Adi Sarana Armada Tbk',
+    'join_date' => '12-Nop-2012',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'ATIC' => 
+  array (
+    'code' => 'ATIC',
+    'name' => 'PT Anabatic Technologies Tbk',
+    'join_date' => '08-Jul-2015',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'ATPK' => 
+  array (
+    'code' => 'ATPK',
+    'name' => 'Bara Jaya Internasional Tbk',
+    'join_date' => '17-Apr-2002',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'AUTO' => 
+  array (
+    'code' => 'AUTO',
+    'name' => 'Astra Otoparts Tbk',
+    'join_date' => '15-Jun-1998',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'BABP' => 
+  array (
+    'code' => 'BABP',
+    'name' => 'PT Bank MNC Internasional Tbk.',
+    'join_date' => '15-Jul-2002',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BACA' => 
+  array (
+    'code' => 'BACA',
+    'name' => 'Bank Capital Indonesia Tbk',
+    'join_date' => '04-Okt-2007',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BAJA' => 
+  array (
+    'code' => 'BAJA',
+    'name' => 'Saranacentral Bajatama Tbk',
+    'join_date' => '21-Des-2011',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'BALI' => 
+  array (
+    'code' => 'BALI',
+    'name' => 'PT Bali Towerindo Sentra Tbk.',
+    'join_date' => '13-Mar-2014',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'BAPA' => 
+  array (
+    'code' => 'BAPA',
+    'name' => 'Bekasi Asri Pemula Tbk',
+    'join_date' => '14-Jan-2008',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'BATA' => 
+  array (
+    'code' => 'BATA',
+    'name' => 'Sepatu Bata Tbk',
+    'join_date' => '24-Mar-1982',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'BAYU' => 
+  array (
+    'code' => 'BAYU',
+    'name' => 'Bayu Buana Tbk',
+    'join_date' => '30-Okt-1989',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'BBCA' => 
+  array (
+    'code' => 'BBCA',
+    'name' => 'Bank Central Asia Tbk',
+    'join_date' => '31-Mei-2000',
+    'sector' => 'FINANCE',
+    'index' => 'LQ45, IDX30',
+  ),
+  'BBHI' => 
+  array (
+    'code' => 'BBHI',
+    'name' => 'PT Bank Harda Internasional Tbk.',
+    'join_date' => '12-Agust-2015',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BBKP' => 
+  array (
+    'code' => 'BBKP',
+    'name' => 'Bank Bukopin Tbk',
+    'join_date' => '10-Jul-2006',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BBLD' => 
+  array (
+    'code' => 'BBLD',
+    'name' => 'Buana Finance Tbk',
+    'join_date' => '07-Mei-1990',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BBMD' => 
+  array (
+    'code' => 'BBMD',
+    'name' => 'PT Bank Mestika Dharma Tbk.',
+    'join_date' => '08-Jul-2013',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BBNI' => 
+  array (
+    'code' => 'BBNI',
+    'name' => 'Bank Negara Indonesia Tbk',
+    'join_date' => '25-Nop-1996',
+    'sector' => 'FINANCE',
+    'index' => 'LQ45, IDX30',
+  ),
+  'BBNP' => 
+  array (
+    'code' => 'BBNP',
+    'name' => 'Bank Nusantara Parahyangan Tbk',
+    'join_date' => '10-Jan-2001',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BBRI' => 
+  array (
+    'code' => 'BBRI',
+    'name' => 'Bank Rakyat Indonesia (Persero) Tbk',
+    'join_date' => '10-Nop-2003',
+    'sector' => 'FINANCE',
+    'index' => 'LQ45, IDX30',
+  ),
+  'BBRM' => 
+  array (
+    'code' => 'BBRM',
+    'name' => 'Pelayaran Nasional Bina Buana Raya Tbk',
+    'join_date' => '09-Jan-2013',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'BBTN' => 
+  array (
+    'code' => 'BBTN',
+    'name' => 'Bank Tabungan Negara (Persero) Tbk',
+    'join_date' => '17-Des-2009',
+    'sector' => 'FINANCE',
+    'index' => 'LQ45',
+  ),
+  'BBYB' => 
+  array (
+    'code' => 'BBYB',
+    'name' => 'PT Bank Yudha Bhakti Tbk.',
+    'join_date' => '13-Jan-2015',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BCAP' => 
+  array (
+    'code' => 'BCAP',
+    'name' => 'MNC Kapital Indonesia Tbk',
+    'join_date' => '08-Jun-2001',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BCIC' => 
+  array (
+    'code' => 'BCIC',
+    'name' => 'PT Bank JTrust Indonesia Tbk.',
+    'join_date' => '25-Jun-1997',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BCIP' => 
+  array (
+    'code' => 'BCIP',
+    'name' => 'Bumi Citra Permai Tbk',
+    'join_date' => '11-Des-2009',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'BDMN' => 
+  array (
+    'code' => 'BDMN',
+    'name' => 'Bank Danamon Indonesia Tbk',
+    'join_date' => '06-Des-1989',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BEKS' => 
+  array (
+    'code' => 'BEKS',
+    'name' => 'PT Bank Pembangunan Daerah Banten Tbk.',
+    'join_date' => '13-Jul-2001',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BEST' => 
+  array (
+    'code' => 'BEST',
+    'name' => 'Bekasi Fajar Industrial Estate Tbk',
+    'join_date' => '10-Apr-2012',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'BFIN' => 
+  array (
+    'code' => 'BFIN',
+    'name' => 'BFI Finance Indonesia Tbk',
+    'join_date' => '16-Mei-1990',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BGTG' => 
+  array (
+    'code' => 'BGTG',
+    'name' => 'PT Bank Ganesha Tbk.',
+    'join_date' => '12-Mei-2016',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BHIT' => 
+  array (
+    'code' => 'BHIT',
+    'name' => 'PT MNC Investama Tbk.',
+    'join_date' => '24-Nop-1997',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'BIKA' => 
+  array (
+    'code' => 'BIKA',
+    'name' => 'PT Binakarya Jaya Abadi Tbk.',
+    'join_date' => '14-Jul-2015',
+    'sector' => 'PROPERTY',
+    'index' => '',
+  ),
+  'BIMA' => 
+  array (
+    'code' => 'BIMA',
+    'name' => 'Primarindo Asia Infrastructure Tbk',
+    'join_date' => '30-Agust-1994',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'BINA' => 
+  array (
+    'code' => 'BINA',
+    'name' => 'PT Bank Ina Perdana Tbk.',
+    'join_date' => '16-Jan-2014',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BIPI' => 
+  array (
+    'code' => 'BIPI',
+    'name' => 'Benakat Integra Tbk',
+    'join_date' => '11-Feb-2010',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'BIPP' => 
+  array (
+    'code' => 'BIPP',
+    'name' => 'Bhuwanatala Indah Permai Tbk',
+    'join_date' => '23-Okt-1995',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'BIRD' => 
+  array (
+    'code' => 'BIRD',
+    'name' => 'PT Blue Bird Tbk',
+    'join_date' => '05-Nop-2014',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'BISI' => 
+  array (
+    'code' => 'BISI',
+    'name' => 'BISI INTERNATIONAL Tbk',
+    'join_date' => '28-Mei-2007',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'BJBR' => 
+  array (
+    'code' => 'BJBR',
+    'name' => 'Bank Pembangunan Daerah Jawa Barat dan Banten Tbk',
+    'join_date' => '08-Jul-2010',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BJTM' => 
+  array (
+    'code' => 'BJTM',
+    'name' => 'Bank Pembangunan Daerah Jawa Timur Tbk',
+    'join_date' => '12-Jul-2012',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BKDP' => 
+  array (
+    'code' => 'BKDP',
+    'name' => 'Bukit Darmo Property Tbk',
+    'join_date' => '15-Jun-2007',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'BKSL' => 
+  array (
+    'code' => 'BKSL',
+    'name' => 'Sentul City Tbk',
+    'join_date' => '28-Jul-1997',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'BKSW' => 
+  array (
+    'code' => 'BKSW',
+    'name' => 'PT Bank QNB Indonesia Tbk',
+    'join_date' => '21-Nop-2002',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BLTA' => 
+  array (
+    'code' => 'BLTA',
+    'name' => 'Berlian Laju Tanker Tbk',
+    'join_date' => '26-Mar-1990',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'BLTZ' => 
+  array (
+    'code' => 'BLTZ',
+    'name' => 'PT Graha Layar Prima Tbk.',
+    'join_date' => '10-Apr-2014',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'BMAS' => 
+  array (
+    'code' => 'BMAS',
+    'name' => 'PT Bank Maspion Indonesia Tbk.',
+    'join_date' => '11-Jul-2013',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BMRI' => 
+  array (
+    'code' => 'BMRI',
+    'name' => 'Bank Mandiri (Persero) Tbk',
+    'join_date' => '14-Jul-2003',
+    'sector' => 'FINANCE',
+    'index' => 'LQ45, IDX30',
+  ),
+  'BMSR' => 
+  array (
+    'code' => 'BMSR',
+    'name' => 'Bintang Mitra Semestaraya Tbk',
+    'join_date' => '29-Des-1999',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'BMTR' => 
+  array (
+    'code' => 'BMTR',
+    'name' => 'Global Mediacom Tbk',
+    'join_date' => '17-Jul-1995',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'BNBA' => 
+  array (
+    'code' => 'BNBA',
+    'name' => 'Bank Bumi Arta Tbk',
+    'join_date' => '31-Des-2099',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BNBR' => 
+  array (
+    'code' => 'BNBR',
+    'name' => 'Bakrie & Brothers Tbk',
+    'join_date' => '28-Agust-1989',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'BNGA' => 
+  array (
+    'code' => 'BNGA',
+    'name' => 'Bank CIMB Niaga Tbk',
+    'join_date' => '29-Nop-1989',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BNII' => 
+  array (
+    'code' => 'BNII',
+    'name' => 'PT Bank Maybank Indonesia Tbk',
+    'join_date' => '21-Nop-1989',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BNLI' => 
+  array (
+    'code' => 'BNLI',
+    'name' => 'Bank Permata Tbk',
+    'join_date' => '15-Jan-1990',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BOGA' => 
+  array (
+    'code' => 'BOGA',
+    'name' => 'PT Bintang Oto Global Tbk',
+    'join_date' => '19-Des-2016',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'BOLT' => 
+  array (
+    'code' => 'BOLT',
+    'name' => 'PT Garuda Metalindo Tbk.',
+    'join_date' => '07-Jul-2015',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'BORN' => 
+  array (
+    'code' => 'BORN',
+    'name' => 'Borneo Lumbung Energi & Metal Tbk',
+    'join_date' => '26-Nop-2010',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'BPFI' => 
+  array (
+    'code' => 'BPFI',
+    'name' => 'Batavia Prosperindo Finance Tbk',
+    'join_date' => '01-Jun-2009',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BPII' => 
+  array (
+    'code' => 'BPII',
+    'name' => 'PT Batavia Prosperindo Internasional Tbk.',
+    'join_date' => '08-Jul-2014',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BRAM' => 
+  array (
+    'code' => 'BRAM',
+    'name' => 'Indo Kordsa Tbk',
+    'join_date' => '05-Sep-1990',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'BRAU' => 
+  array (
+    'code' => 'BRAU',
+    'name' => 'Berau Coal Energy Tbk',
+    'join_date' => '19-Agust-2010',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'BRMS' => 
+  array (
+    'code' => 'BRMS',
+    'name' => 'Bumi Resources Minerals Tbk',
+    'join_date' => '09-Des-2010',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'BRNA' => 
+  array (
+    'code' => 'BRNA',
+    'name' => 'Berlina Tbk',
+    'join_date' => '06-Nop-1989',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'BRPT' => 
+  array (
+    'code' => 'BRPT',
+    'name' => 'Barito Pacific Tbk',
+    'join_date' => '01-Okt-1993',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'BSDE' => 
+  array (
+    'code' => 'BSDE',
+    'name' => 'Bumi Serpong Damai Tbk',
+    'join_date' => '06-Jun-2008',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'BSIM' => 
+  array (
+    'code' => 'BSIM',
+    'name' => 'Bank Sinarmas Tbk',
+    'join_date' => '13-Des-2010',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BSSR' => 
+  array (
+    'code' => 'BSSR',
+    'name' => 'Baramulti Suksessarana Tbk',
+    'join_date' => '08-Nop-2012',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'BSWD' => 
+  array (
+    'code' => 'BSWD',
+    'name' => 'Bank of India Indonesia Tbk',
+    'join_date' => '01-Mei-2002',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BTEK' => 
+  array (
+    'code' => 'BTEK',
+    'name' => 'Bumi Teknokultura Unggul Tbk',
+    'join_date' => '14-Mei-2004',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'BTEL' => 
+  array (
+    'code' => 'BTEL',
+    'name' => 'Bakrie Telecom Tbk',
+    'join_date' => '03-Feb-2006',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'BTON' => 
+  array (
+    'code' => 'BTON',
+    'name' => 'Betonjaya Manunggal Tbk',
+    'join_date' => '18-Jul-2001',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'BTPN' => 
+  array (
+    'code' => 'BTPN',
+    'name' => 'BANK TABUNGAN PENSIUNAN NASIONAL Tbk',
+    'join_date' => '12-Mar-2008',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BUDI' => 
+  array (
+    'code' => 'BUDI',
+    'name' => 'PT Budi Starch & Sweetener Tbk.',
+    'join_date' => '08-Mei-1995',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'BUKK' => 
+  array (
+    'code' => 'BUKK',
+    'name' => 'Bukaka Teknik Utama Tbk',
+    'join_date' => '29-Jun-2015',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'BULL' => 
+  array (
+    'code' => 'BULL',
+    'name' => 'Buana Listya Tama Tbk',
+    'join_date' => '23-Mei-2011',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'BUMI' => 
+  array (
+    'code' => 'BUMI',
+    'name' => 'Bumi Resources Tbk',
+    'join_date' => '30-Jul-1990',
+    'sector' => 'MINING',
+    'index' => 'LQ45',
+  ),
+  'BUVA' => 
+  array (
+    'code' => 'BUVA',
+    'name' => 'PT Bukit Uluwatu Villa Tbk',
+    'join_date' => '12-Jul-2010',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'BVIC' => 
+  array (
+    'code' => 'BVIC',
+    'name' => 'Bank Victoria International Tbk',
+    'join_date' => '30-Jun-1999',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'BWPT' => 
+  array (
+    'code' => 'BWPT',
+    'name' => 'Eagle High Plantations Tbk',
+    'join_date' => '27-Okt-2009',
+    'sector' => 'AGRI',
+    'index' => '',
+  ),
+  'BYAN' => 
+  array (
+    'code' => 'BYAN',
+    'name' => 'Bayan Resources Tbk',
+    'join_date' => '12-Agust-2008',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'CANI' => 
+  array (
+    'code' => 'CANI',
+    'name' => 'PT Capitol Nusantara Indonesia Tbk.',
+    'join_date' => '16-Jan-2014',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'CARS' => 
+  array (
+    'code' => 'CARS',
+    'name' => 'PT Industri dan Perdagangan Bintraco Dharma Tbk',
+    'join_date' => '10-Apr-2017',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'CASA' => 
+  array (
+    'code' => 'CASA',
+    'name' => 'PT Capital Financial Indonesia Tbk',
+    'join_date' => '19-Jul-2016',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'CASS' => 
+  array (
+    'code' => 'CASS',
+    'name' => 'Cardig Aero Services Tbk',
+    'join_date' => '05-Des-2011',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'CEKA' => 
+  array (
+    'code' => 'CEKA',
+    'name' => 'PT Wilmar Cahaya Indonesia Tbk.',
+    'join_date' => '09-Jul-1996',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'CENT' => 
+  array (
+    'code' => 'CENT',
+    'name' => 'PT Centratama Telekomunikasi Indonesia Tbk.',
+    'join_date' => '01-Nop-2001',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'CFIN' => 
+  array (
+    'code' => 'CFIN',
+    'name' => 'Clipan Finance Indonesia Tbk',
+    'join_date' => '02-Okt-1990',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'CINT' => 
+  array (
+    'code' => 'CINT',
+    'name' => 'PT Chitose Internasional Tbk',
+    'join_date' => '27-Jun-2014',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'CITA' => 
+  array (
+    'code' => 'CITA',
+    'name' => 'Cita Mineral Investindo Tbk',
+    'join_date' => '20-Mar-2002',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'CKRA' => 
+  array (
+    'code' => 'CKRA',
+    'name' => 'Cakra Mineral Tbk.',
+    'join_date' => '19-Mei-1999',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'CLPI' => 
+  array (
+    'code' => 'CLPI',
+    'name' => 'Colorpak Indonesia Tbk',
+    'join_date' => '30-Nop-2001',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'CMNP' => 
+  array (
+    'code' => 'CMNP',
+    'name' => 'Citra Marga Nusaphala Persada Tbk',
+    'join_date' => '10-Jan-1995',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'CMPP' => 
+  array (
+    'code' => 'CMPP',
+    'name' => 'Rimau Multi Putra Pratama',
+    'join_date' => '08-Des-1994',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'CNKO' => 
+  array (
+    'code' => 'CNKO',
+    'name' => 'Exploitasi Energi Indonesia Tbk',
+    'join_date' => '20-Nop-2001',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'CNTX' => 
+  array (
+    'code' => 'CNTX',
+    'name' => 'Centex Tbk',
+    'join_date' => '22-Mei-1979',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'COWL' => 
+  array (
+    'code' => 'COWL',
+    'name' => 'COWELL DEVELOPMENT Tbk',
+    'join_date' => '19-Des-2007',
+    'sector' => 'PROPERTY',
+    'index' => '',
+  ),
+  'CPGT' => 
+  array (
+    'code' => 'CPGT',
+    'name' => 'PT Citra Maharlika Nusantara Corpora Tbk.',
+    'join_date' => '09-Jul-2013',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'CPIN' => 
+  array (
+    'code' => 'CPIN',
+    'name' => 'Charoen Pokphand Indonesia Tbk',
+    'join_date' => '18-Mar-1991',
+    'sector' => 'BASIC-IND',
+    'index' => 'LQ45, ISSI, IDX30',
+  ),
+  'CPRO' => 
+  array (
+    'code' => 'CPRO',
+    'name' => 'Central Proteina Prima Tbk',
+    'join_date' => '28-Nop-2006',
+    'sector' => 'AGRI',
+    'index' => '',
+  ),
+  'CSAP' => 
+  array (
+    'code' => 'CSAP',
+    'name' => 'Catur Sentosa Adiprana Tbk',
+    'join_date' => '12-Des-2007',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'CTBN' => 
+  array (
+    'code' => 'CTBN',
+    'name' => 'Citra Tubindo Tbk',
+    'join_date' => '28-Nop-1989',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'CTRA' => 
+  array (
+    'code' => 'CTRA',
+    'name' => 'Ciputra Development Tbk',
+    'join_date' => '28-Mar-1994',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'CTTH' => 
+  array (
+    'code' => 'CTTH',
+    'name' => 'Citatah Tbk',
+    'join_date' => '03-Jul-1996',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'DAJK' => 
+  array (
+    'code' => 'DAJK',
+    'name' => 'PT Dwi Aneka Jaya Kemasindo Tbk.',
+    'join_date' => '14-Mei-2014',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'DART' => 
+  array (
+    'code' => 'DART',
+    'name' => 'Duta Anggada Realty Tbk',
+    'join_date' => '08-Mei-1990',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'DAYA' => 
+  array (
+    'code' => 'DAYA',
+    'name' => 'PT Duta Intidaya Tbk.',
+    'join_date' => '28-Jun-2016',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'DEFI' => 
+  array (
+    'code' => 'DEFI',
+    'name' => 'Danasupra Erapacific Tbk',
+    'join_date' => '06-Jul-2001',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'DEWA' => 
+  array (
+    'code' => 'DEWA',
+    'name' => 'Darma Henwa Tbk',
+    'join_date' => '26-Sep-2007',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'DGIK' => 
+  array (
+    'code' => 'DGIK',
+    'name' => 'Nusa Konstruksi Enjiniring  Tbk',
+    'join_date' => '19-Des-2007',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'DILD' => 
+  array (
+    'code' => 'DILD',
+    'name' => 'Intiland Development Tbk',
+    'join_date' => '04-Sep-1991',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'DKFT' => 
+  array (
+    'code' => 'DKFT',
+    'name' => 'Central Omega Resources Tbk',
+    'join_date' => '21-Nop-1997',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'DLTA' => 
+  array (
+    'code' => 'DLTA',
+    'name' => 'Delta Djakarta Tbk',
+    'join_date' => '12-Feb-1984',
+    'sector' => 'CONSUMER',
+    'index' => '',
+  ),
+  'DMAS' => 
+  array (
+    'code' => 'DMAS',
+    'name' => 'PT Puradelta Lestari Tbk.',
+    'join_date' => '29-Mei-2015',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'DNAR' => 
+  array (
+    'code' => 'DNAR',
+    'name' => 'PT Bank Dinar Indonesia Tbk.',
+    'join_date' => '11-Jul-2014',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'DNET' => 
+  array (
+    'code' => 'DNET',
+    'name' => 'PT Indoritel Makmur Internasional Tbk.',
+    'join_date' => '11-Des-2000',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'DOID' => 
+  array (
+    'code' => 'DOID',
+    'name' => 'Delta Dunia Makmur Tbk',
+    'join_date' => '15-Jun-2001',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'DPNS' => 
+  array (
+    'code' => 'DPNS',
+    'name' => 'Duta Pertiwi Nusantara Tbk',
+    'join_date' => '08-Agust-1990',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'DPUM' => 
+  array (
+    'code' => 'DPUM',
+    'name' => 'PT Dua Putra Utama Makmur Tbk.',
+    'join_date' => '08-Des-2015',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'DSFI' => 
+  array (
+    'code' => 'DSFI',
+    'name' => 'Dharma Samudera Fishing Ind. Tbk',
+    'join_date' => '24-Mar-2000',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'DSNG' => 
+  array (
+    'code' => 'DSNG',
+    'name' => 'PT Dharma Satya Nusantara Tbk.',
+    'join_date' => '14-Jun-2013',
+    'sector' => 'AGRI',
+    'index' => '',
+  ),
+  'DSSA' => 
+  array (
+    'code' => 'DSSA',
+    'name' => 'Dian Swastatika Sentosa Tbk',
+    'join_date' => '10-Des-2009',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'DUTI' => 
+  array (
+    'code' => 'DUTI',
+    'name' => 'Duta Pertiwi Tbk',
+    'join_date' => '02-Nop-1994',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'DVLA' => 
+  array (
+    'code' => 'DVLA',
+    'name' => 'Darya-Varia Laboratoria Tbk',
+    'join_date' => '11-Nop-1994',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'DYAN' => 
+  array (
+    'code' => 'DYAN',
+    'name' => 'PT Dyandra Media International Tbk.',
+    'join_date' => '25-Mar-2013',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'ECII' => 
+  array (
+    'code' => 'ECII',
+    'name' => 'PT Electronic City Indonesia Tbk.',
+    'join_date' => '03-Jul-2013',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'EKAD' => 
+  array (
+    'code' => 'EKAD',
+    'name' => 'Ekadharma International Tbk',
+    'join_date' => '14-Agust-1990',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'ELSA' => 
+  array (
+    'code' => 'ELSA',
+    'name' => 'Elnusa Tbk',
+    'join_date' => '06-Feb-2008',
+    'sector' => 'MINING',
+    'index' => 'LQ45, ISSI',
+  ),
+  'ELTY' => 
+  array (
+    'code' => 'ELTY',
+    'name' => 'Bakrieland Development Tbk',
+    'join_date' => '30-Okt-1995',
+    'sector' => 'PROPERTY',
+    'index' => '',
+  ),
+  'EMDE' => 
+  array (
+    'code' => 'EMDE',
+    'name' => 'Megapolitan Developments Tbk',
+    'join_date' => '12-Jan-2011',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'EMTK' => 
+  array (
+    'code' => 'EMTK',
+    'name' => 'Elang Mahkota Teknologi Tbk',
+    'join_date' => '12-Jan-2010',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'ENRG' => 
+  array (
+    'code' => 'ENRG',
+    'name' => 'Energi Mega Persada Tbk',
+    'join_date' => '07-Jun-2004',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'EPMT' => 
+  array (
+    'code' => 'EPMT',
+    'name' => 'Enseval Putra Megatrading Tbk',
+    'join_date' => '01-Agust-1994',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'ERAA' => 
+  array (
+    'code' => 'ERAA',
+    'name' => 'Erajaya Swasembada Tbk',
+    'join_date' => '14-Des-2011',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'ERTX' => 
+  array (
+    'code' => 'ERTX',
+    'name' => 'Eratex Djaja Tbk',
+    'join_date' => '21-Agust-1990',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'ESSA' => 
+  array (
+    'code' => 'ESSA',
+    'name' => 'Surya Esa Perkasa Tbk',
+    'join_date' => '01-Feb-2012',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'ESTI' => 
+  array (
+    'code' => 'ESTI',
+    'name' => 'Ever Shine Textile Industry Tbk',
+    'join_date' => '13-Okt-1992',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'ETWA' => 
+  array (
+    'code' => 'ETWA',
+    'name' => 'Eterindo Wahanatama Tbk',
+    'join_date' => '16-Mei-1997',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'EXCL' => 
+  array (
+    'code' => 'EXCL',
+    'name' => 'XL Axiata Tbk',
+    'join_date' => '29-Sep-2005',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'LQ45, ISSI',
+  ),
+  'FAST' => 
+  array (
+    'code' => 'FAST',
+    'name' => 'Fast Food Indonesia Tbk',
+    'join_date' => '11-Mei-1993',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'FASW' => 
+  array (
+    'code' => 'FASW',
+    'name' => 'Fajar Surya Wisesa Tbk',
+    'join_date' => '01-Des-1994',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'FISH' => 
+  array (
+    'code' => 'FISH',
+    'name' => 'FKS Multi Agro Tbk',
+    'join_date' => '18-Jan-2002',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'FMII' => 
+  array (
+    'code' => 'FMII',
+    'name' => 'Fortune Mate Indonesia Tbk',
+    'join_date' => '30-Jun-2000',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'FORU' => 
+  array (
+    'code' => 'FORU',
+    'name' => 'Fortune Indonesia Tbk',
+    'join_date' => '17-Jan-2004',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'FPNI' => 
+  array (
+    'code' => 'FPNI',
+    'name' => 'PT Lotte Chemical Titan Tbk.',
+    'join_date' => '21-Mar-2002',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'FREN' => 
+  array (
+    'code' => 'FREN',
+    'name' => 'Smartfren Telecom Tbk',
+    'join_date' => '29-Nop-2006',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'GAMA' => 
+  array (
+    'code' => 'GAMA',
+    'name' => 'Gading Development Tbk',
+    'join_date' => '11-Jul-2012',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'GDST' => 
+  array (
+    'code' => 'GDST',
+    'name' => 'Gunawan Dianjaya Steel Tbk',
+    'join_date' => '23-Des-2009',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'GDYR' => 
+  array (
+    'code' => 'GDYR',
+    'name' => 'Goodyear Indonesia Tbk',
+    'join_date' => '01-Des-1980',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'GEMA' => 
+  array (
+    'code' => 'GEMA',
+    'name' => 'Gema Grahasarana Tbk',
+    'join_date' => '12-Agust-2002',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'GEMS' => 
+  array (
+    'code' => 'GEMS',
+    'name' => 'Golden Energy Mines Tbk',
+    'join_date' => '17-Nop-2011',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'GGRM' => 
+  array (
+    'code' => 'GGRM',
+    'name' => 'Gudang Garam Tbk',
+    'join_date' => '27-Agust-1990',
+    'sector' => 'CONSUMER',
+    'index' => 'LQ45, IDX30',
+  ),
+  'GIAA' => 
+  array (
+    'code' => 'GIAA',
+    'name' => 'Garuda Indonesia (Persero) Tbk',
+    'join_date' => '11-Feb-2011',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'GJTL' => 
+  array (
+    'code' => 'GJTL',
+    'name' => 'Gajah Tunggal Tbk',
+    'join_date' => '08-Mei-1990',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'GLOB' => 
+  array (
+    'code' => 'GLOB',
+    'name' => 'Global Teleshop Tbk',
+    'join_date' => '10-Jul-2012',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'GMCW' => 
+  array (
+    'code' => 'GMCW',
+    'name' => 'Grahamas Citrawisata Tbk',
+    'join_date' => '14-Feb-1995',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'GMTD' => 
+  array (
+    'code' => 'GMTD',
+    'name' => 'Gowa Makassar Tourism Development Tbk',
+    'join_date' => '11-Des-2000',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'GOLD' => 
+  array (
+    'code' => 'GOLD',
+    'name' => 'PT Visi Telekomunikasi Infrastruktur Tbk.',
+    'join_date' => '07-Jul-2010',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'GOLL' => 
+  array (
+    'code' => 'GOLL',
+    'name' => 'PT Golden Plantation Tbk',
+    'join_date' => '23-Des-2014',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'GPRA' => 
+  array (
+    'code' => 'GPRA',
+    'name' => 'Perdana Gapura Prima Tbk',
+    'join_date' => '10-Okt-2007',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'GREN' => 
+  array (
+    'code' => 'GREN',
+    'name' => 'Evergreen Invesco Tbk',
+    'join_date' => '09-Jul-2010',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'GSMF' => 
+  array (
+    'code' => 'GSMF',
+    'name' => 'Equity Development Investment Tbk',
+    'join_date' => '13-Okt-1989',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'GTBO' => 
+  array (
+    'code' => 'GTBO',
+    'name' => 'Garda Tujuh Buana Tbk',
+    'join_date' => '09-Jul-2009',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'GWSA' => 
+  array (
+    'code' => 'GWSA',
+    'name' => 'Greenwood Sejahtera Tbk',
+    'join_date' => '23-Des-2011',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'GZCO' => 
+  array (
+    'code' => 'GZCO',
+    'name' => 'Gozco Plantations Tbk',
+    'join_date' => '15-Mei-2008',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'HADE' => 
+  array (
+    'code' => 'HADE',
+    'name' => 'HD Capital Tbk',
+    'join_date' => '12-Apr-2004',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'HDFA' => 
+  array (
+    'code' => 'HDFA',
+    'name' => 'Radana Bhaskara Finance Tbk',
+    'join_date' => '10-Mei-2011',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'HDTX' => 
+  array (
+    'code' => 'HDTX',
+    'name' => 'Panasia Indo Resources Tbk',
+    'join_date' => '06-Jun-1990',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'HERO' => 
+  array (
+    'code' => 'HERO',
+    'name' => 'Hero Supermarket Tbk',
+    'join_date' => '02-Des-1989',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'HEXA' => 
+  array (
+    'code' => 'HEXA',
+    'name' => 'Hexindo Adiperkasa Tbk',
+    'join_date' => '13-Feb-1995',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'HITS' => 
+  array (
+    'code' => 'HITS',
+    'name' => 'Humpuss Intermoda Transportasi Tbk',
+    'join_date' => '15-Des-1997',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'HMSP' => 
+  array (
+    'code' => 'HMSP',
+    'name' => 'HM Sampoerna Tbk',
+    'join_date' => '15-Agust-1990',
+    'sector' => 'CONSUMER',
+    'index' => 'LQ45, IDX30',
+  ),
+  'HOME' => 
+  array (
+    'code' => 'HOME',
+    'name' => 'Hotel Mandarine Regency Tbk',
+    'join_date' => '17-Jul-2008',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'HOTL' => 
+  array (
+    'code' => 'HOTL',
+    'name' => 'Saraswati Griya Lestari Tbk',
+    'join_date' => '10-Jan-2013',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'HRUM' => 
+  array (
+    'code' => 'HRUM',
+    'name' => 'Harum Energy Tbk',
+    'join_date' => '06-Okt-2010',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'IATA' => 
+  array (
+    'code' => 'IATA',
+    'name' => 'PT Indonesia Transport & Infrastructure Tbk.',
+    'join_date' => '13-Sep-2006',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'IBFN' => 
+  array (
+    'code' => 'IBFN',
+    'name' => 'PT Intan Baruprana Finance Tbk',
+    'join_date' => '22-Des-2014',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'IBST' => 
+  array (
+    'code' => 'IBST',
+    'name' => 'Inti Bangun Sejahtera Tbk',
+    'join_date' => '31-Agust-2012',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'ICBP' => 
+  array (
+    'code' => 'ICBP',
+    'name' => 'Indofood CBP Sukses Makmur Tbk',
+    'join_date' => '07-Okt-2010',
+    'sector' => 'CONSUMER',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'ICON' => 
+  array (
+    'code' => 'ICON',
+    'name' => 'Island Concepts Indonesia Tbk',
+    'join_date' => '08-Jul-2005',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'IDPR' => 
+  array (
+    'code' => 'IDPR',
+    'name' => 'PT Indonesia Pondasi Raya Tbk.',
+    'join_date' => '10-Des-2015',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'IGAR' => 
+  array (
+    'code' => 'IGAR',
+    'name' => 'Champion Pacific Indonesia Tbk',
+    'join_date' => '05-Nop-1990',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'IIKP' => 
+  array (
+    'code' => 'IIKP',
+    'name' => 'Inti Kapuas Arowana Tbk',
+    'join_date' => '20-Okt-2002',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'IKAI' => 
+  array (
+    'code' => 'IKAI',
+    'name' => 'Intikeramik Alamasri Industri Tbk',
+    'join_date' => '04-Jun-1997',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'IKBI' => 
+  array (
+    'code' => 'IKBI',
+    'name' => 'Sumi Indo Kabel Tbk',
+    'join_date' => '21-Jan-1991',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'IMAS' => 
+  array (
+    'code' => 'IMAS',
+    'name' => 'Indomobil Sukses Internasional Tbk',
+    'join_date' => '15-Sep-1993',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'IMJS' => 
+  array (
+    'code' => 'IMJS',
+    'name' => 'PT Indomobil Multi Jasa Tbk.',
+    'join_date' => '10-Des-2013',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'IMPC' => 
+  array (
+    'code' => 'IMPC',
+    'name' => 'PT Impack Pratama Industri Tbk',
+    'join_date' => '17-Des-2014',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'INAF' => 
+  array (
+    'code' => 'INAF',
+    'name' => 'Indofarma Tbk',
+    'join_date' => '17-Apr-2001',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'INAI' => 
+  array (
+    'code' => 'INAI',
+    'name' => 'Indal Aluminium Industry Tbk',
+    'join_date' => '05-Des-1994',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'INCF' => 
+  array (
+    'code' => 'INCF',
+    'name' => 'PT Indo Komoditi Korpora Tbk',
+    'join_date' => '06-Sep-2016',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'INCI' => 
+  array (
+    'code' => 'INCI',
+    'name' => 'Intanwijaya Internasional Tbk',
+    'join_date' => '24-Jul-1990',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'INCO' => 
+  array (
+    'code' => 'INCO',
+    'name' => 'Vale Indonesia Tbk',
+    'join_date' => '16-Mei-1990',
+    'sector' => 'MINING',
+    'index' => 'LQ45, JII, ISSI',
+  ),
+  'INDF' => 
+  array (
+    'code' => 'INDF',
+    'name' => 'Indofood Sukses Makmur Tbk',
+    'join_date' => '14-Jul-1994',
+    'sector' => 'CONSUMER',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'INDR' => 
+  array (
+    'code' => 'INDR',
+    'name' => 'Indorama Synthetics Tbk',
+    'join_date' => '03-Agust-1990',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'INDS' => 
+  array (
+    'code' => 'INDS',
+    'name' => 'Indospring Tbk',
+    'join_date' => '10-Agust-1990',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'INDX' => 
+  array (
+    'code' => 'INDX',
+    'name' => 'Tanah Laut Tbk',
+    'join_date' => '17-Mei-2001',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'INDY' => 
+  array (
+    'code' => 'INDY',
+    'name' => 'Indika Energy Tbk',
+    'join_date' => '11-Jun-2008',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'INKP' => 
+  array (
+    'code' => 'INKP',
+    'name' => 'Indah Kiat Pulp & Paper Tbk',
+    'join_date' => '16-Jul-1990',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'INPC' => 
+  array (
+    'code' => 'INPC',
+    'name' => 'Bank Artha Graha Internasional Tbk',
+    'join_date' => '29-Agust-1990',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'INPP' => 
+  array (
+    'code' => 'INPP',
+    'name' => 'Indonesian Paradise Property Tbk',
+    'join_date' => '01-Des-2004',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'INRU' => 
+  array (
+    'code' => 'INRU',
+    'name' => 'Toba Pulp Lestari Tbk',
+    'join_date' => '18-Jun-1990',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'INTA' => 
+  array (
+    'code' => 'INTA',
+    'name' => 'Intraco Penta Tbk',
+    'join_date' => '23-Agust-1993',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'INTD' => 
+  array (
+    'code' => 'INTD',
+    'name' => 'Inter-Delta Tbk',
+    'join_date' => '18-Des-1989',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'INTP' => 
+  array (
+    'code' => 'INTP',
+    'name' => 'Indocement Tunggal Prakarsa Tbk',
+    'join_date' => '05-Des-1989',
+    'sector' => 'BASIC-IND',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'INVS' => 
+  array (
+    'code' => 'INVS',
+    'name' => 'Inovisi Infracom Tbk',
+    'join_date' => '03-Jul-2009',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'IPOL' => 
+  array (
+    'code' => 'IPOL',
+    'name' => 'Indopoly Swakarsa Industry Tbk',
+    'join_date' => '09-Jul-2010',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'ISAT' => 
+  array (
+    'code' => 'ISAT',
+    'name' => 'Indosat Tbk',
+    'join_date' => '19-Okt-1994',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'ISSP' => 
+  array (
+    'code' => 'ISSP',
+    'name' => 'PT Steel Pipe Industry of Indonesia Tbk',
+    'join_date' => '22-Feb-2013',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'ITMA' => 
+  array (
+    'code' => 'ITMA',
+    'name' => 'SUMBER ENERGI ANDALAN Tbk',
+    'join_date' => '10-Des-1990',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'ITMG' => 
+  array (
+    'code' => 'ITMG',
+    'name' => 'Indo Tambangraya Megah Tbk',
+    'join_date' => '18-Des-2007',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'ITTG' => 
+  array (
+    'code' => 'ITTG',
+    'name' => 'Leo Investments Tbk',
+    'join_date' => '26-Nop-2001',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'JAWA' => 
+  array (
+    'code' => 'JAWA',
+    'name' => 'Jaya Agra Wattie Tbk',
+    'join_date' => '30-Mei-2011',
+    'sector' => 'AGRI',
+    'index' => '',
+  ),
+  'JECC' => 
+  array (
+    'code' => 'JECC',
+    'name' => 'Jembo Cable Company Tbk',
+    'join_date' => '18-Nop-1992',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'JGLE' => 
+  array (
+    'code' => 'JGLE',
+    'name' => 'PT Graha Andrasentra Propertindo Tbk.',
+    'join_date' => '29-Jun-2016',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'JIHD' => 
+  array (
+    'code' => 'JIHD',
+    'name' => 'Jakarta International Hotels & Development Tbk',
+    'join_date' => '29-Feb-1984',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'JKON' => 
+  array (
+    'code' => 'JKON',
+    'name' => 'Jaya Konstruksi Manggala Pratama Tbk',
+    'join_date' => '04-Des-2007',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'JKSW' => 
+  array (
+    'code' => 'JKSW',
+    'name' => 'Jakarta Kyoei Steel Works Tbk',
+    'join_date' => '06-Agust-1997',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'JPFA' => 
+  array (
+    'code' => 'JPFA',
+    'name' => 'JAPFA Comfeed Indonesia Tbk',
+    'join_date' => '23-Okt-1989',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'JPRS' => 
+  array (
+    'code' => 'JPRS',
+    'name' => 'Jaya Pari Steel Tbk',
+    'join_date' => '08-Agust-1989',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'JRPT' => 
+  array (
+    'code' => 'JRPT',
+    'name' => 'Jaya Real Property Tbk',
+    'join_date' => '29-Jun-1994',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'JSMR' => 
+  array (
+    'code' => 'JSMR',
+    'name' => 'Jasa Marga Tbk',
+    'join_date' => '12-Nop-2007',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'LQ45',
+  ),
+  'JSPT' => 
+  array (
+    'code' => 'JSPT',
+    'name' => 'Jakarta Setiabudi Internasional Tbk',
+    'join_date' => '12-Jan-1998',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'JTPE' => 
+  array (
+    'code' => 'JTPE',
+    'name' => 'Jasuindo Tiga Perkasa Tbk',
+    'join_date' => '16-Apr-2002',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'KAEF' => 
+  array (
+    'code' => 'KAEF',
+    'name' => 'Kimia Farma (Persero) Tbk',
+    'join_date' => '04-Jul-2001',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'KARW' => 
+  array (
+    'code' => 'KARW',
+    'name' => 'ICTSI JASA PRIMA Tbk',
+    'join_date' => '20-Des-2008',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'KBLI' => 
+  array (
+    'code' => 'KBLI',
+    'name' => 'KMI Wire and Cable Tbk',
+    'join_date' => '06-Jul-1992',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'KBLM' => 
+  array (
+    'code' => 'KBLM',
+    'name' => 'Kabelindo Murni Tbk',
+    'join_date' => '01-Jun-1992',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'KBLV' => 
+  array (
+    'code' => 'KBLV',
+    'name' => 'First Media Tbk',
+    'join_date' => '25-Feb-2000',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'KBRI' => 
+  array (
+    'code' => 'KBRI',
+    'name' => 'Kertas Basuki Rachmat Indonesia Tbk',
+    'join_date' => '11-Jul-2008',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'KDSI' => 
+  array (
+    'code' => 'KDSI',
+    'name' => 'Kedawung Setia Industrial Tbk',
+    'join_date' => '29-Jul-1996',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'KIAS' => 
+  array (
+    'code' => 'KIAS',
+    'name' => 'Keramika Indonesia Assosiasi Tbk',
+    'join_date' => '08-Des-1994',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'KICI' => 
+  array (
+    'code' => 'KICI',
+    'name' => 'Kedaung Indah Can Tbk',
+    'join_date' => '28-Okt-1993',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'KIJA' => 
+  array (
+    'code' => 'KIJA',
+    'name' => 'Kawasan Industri Jababeka Tbk',
+    'join_date' => '10-Jan-1995',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'KINO' => 
+  array (
+    'code' => 'KINO',
+    'name' => 'PT Kino Indonesia Tbk',
+    'join_date' => '11-Des-2015',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'KKGI' => 
+  array (
+    'code' => 'KKGI',
+    'name' => 'Resource Alam Indonesia Tbk',
+    'join_date' => '01-Jul-1991',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'KLBF' => 
+  array (
+    'code' => 'KLBF',
+    'name' => 'Kalbe Farma Tbk',
+    'join_date' => '30-Jul-1991',
+    'sector' => 'CONSUMER',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'KOBX' => 
+  array (
+    'code' => 'KOBX',
+    'name' => 'Kobexindo Tractors Tbk',
+    'join_date' => '05-Jul-2012',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'KOIN' => 
+  array (
+    'code' => 'KOIN',
+    'name' => 'Kokoh Inti Arebama Tbk',
+    'join_date' => '09-Apr-2008',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'KONI' => 
+  array (
+    'code' => 'KONI',
+    'name' => 'Perdana Bangun Pusaka Tbk',
+    'join_date' => '22-Agust-1995',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'KOPI' => 
+  array (
+    'code' => 'KOPI',
+    'name' => 'PT Mitra Energi Persada Tbk',
+    'join_date' => '04-Mei-2015',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'KPIG' => 
+  array (
+    'code' => 'KPIG',
+    'name' => 'MNC Land Tbk',
+    'join_date' => '30-Mar-2000',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'KRAH' => 
+  array (
+    'code' => 'KRAH',
+    'name' => 'PT Grand Kartech Tbk',
+    'join_date' => '08-Nop-2013',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'KRAS' => 
+  array (
+    'code' => 'KRAS',
+    'name' => 'Krakatau Steel (Persero) Tbk',
+    'join_date' => '10-Nop-2010',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'KREN' => 
+  array (
+    'code' => 'KREN',
+    'name' => 'PT Kresna Graha Investama Tbk.',
+    'join_date' => '28-Jun-2002',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'LAMI' => 
+  array (
+    'code' => 'LAMI',
+    'name' => 'Lamicitra Nusantara Tbk',
+    'join_date' => '18-Jul-2001',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'LAPD' => 
+  array (
+    'code' => 'LAPD',
+    'name' => 'Leyand International Tbk',
+    'join_date' => '17-Jul-2001',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'LCGP' => 
+  array (
+    'code' => 'LCGP',
+    'name' => 'PT Eureka Prima Jakarta Tbk.',
+    'join_date' => '13-Jul-2007',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'LEAD' => 
+  array (
+    'code' => 'LEAD',
+    'name' => 'PT Logindo Samudramakmur Tbk.',
+    'join_date' => '11-Des-2013',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'LINK' => 
+  array (
+    'code' => 'LINK',
+    'name' => 'PT Link Net Tbk.',
+    'join_date' => '02-Jun-2014',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'LION' => 
+  array (
+    'code' => 'LION',
+    'name' => 'Lion Metal Works Tbk',
+    'join_date' => '20-Agust-1993',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'LMAS' => 
+  array (
+    'code' => 'LMAS',
+    'name' => 'Limas Indonesia Makmur Tbk',
+    'join_date' => '28-Des-2001',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'LMPI' => 
+  array (
+    'code' => 'LMPI',
+    'name' => 'Langgeng Makmur Industri Tbk',
+    'join_date' => '17-Okt-1994',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'LMSH' => 
+  array (
+    'code' => 'LMSH',
+    'name' => 'Lionmesh Prima Tbk',
+    'join_date' => '04-Jun-1990',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'LPCK' => 
+  array (
+    'code' => 'LPCK',
+    'name' => 'Lippo Cikarang Tbk',
+    'join_date' => '24-Jul-1997',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'LPGI' => 
+  array (
+    'code' => 'LPGI',
+    'name' => 'Lippo General Insurance Tbk',
+    'join_date' => '22-Jul-1997',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'LPIN' => 
+  array (
+    'code' => 'LPIN',
+    'name' => 'Multi Prima Sejahtera Tbk',
+    'join_date' => '05-Feb-1990',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'LPKR' => 
+  array (
+    'code' => 'LPKR',
+    'name' => 'Lippo Karawaci Tbk',
+    'join_date' => '28-Jun-1996',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'LPLI' => 
+  array (
+    'code' => 'LPLI',
+    'name' => 'Star Pacific Tbk',
+    'join_date' => '23-Okt-1989',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'LPPF' => 
+  array (
+    'code' => 'LPPF',
+    'name' => 'Matahari Department Store Tbk',
+    'join_date' => '09-Okt-1989',
+    'sector' => 'TRADE',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'LPPS' => 
+  array (
+    'code' => 'LPPS',
+    'name' => 'Lippo Securities Tbk',
+    'join_date' => '28-Mar-1994',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'LRNA' => 
+  array (
+    'code' => 'LRNA',
+    'name' => 'PT Eka Sari Lorena Transport Tbk.',
+    'join_date' => '15-Apr-2014',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'LSIP' => 
+  array (
+    'code' => 'LSIP',
+    'name' => 'PP London Sumatra Indonesia Tbk',
+    'join_date' => '05-Jul-1996',
+    'sector' => 'AGRI',
+    'index' => 'LQ45, JII, ISSI',
+  ),
+  'LTLS' => 
+  array (
+    'code' => 'LTLS',
+    'name' => 'Lautan Luas Tbk',
+    'join_date' => '21-Jul-1997',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MAGP' => 
+  array (
+    'code' => 'MAGP',
+    'name' => 'Multi Agro Gemilang Plantation Tbk',
+    'join_date' => '16-Jan-2013',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'MAIN' => 
+  array (
+    'code' => 'MAIN',
+    'name' => 'Malindo Feedmill Tbk',
+    'join_date' => '10-Feb-2006',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'MAMI' => 
+  array (
+    'code' => 'MAMI',
+    'name' => 'Mas Murni Indonesia Tbk',
+    'join_date' => '09-Feb-1994',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MAPI' => 
+  array (
+    'code' => 'MAPI',
+    'name' => 'Mitra Adiperkasa Tbk',
+    'join_date' => '10-Nop-2004',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MARI' => 
+  array (
+    'code' => 'MARI',
+    'name' => 'PT Mahaka Radio Integra Tbk.',
+    'join_date' => '11-Feb-2016',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'MASA' => 
+  array (
+    'code' => 'MASA',
+    'name' => 'Multistrada Arah Sarana Tbk',
+    'join_date' => '09-Jun-2005',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'MAYA' => 
+  array (
+    'code' => 'MAYA',
+    'name' => 'Bank Mayapada Internasional Tbk',
+    'join_date' => '29-Agust-1997',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'MBAP' => 
+  array (
+    'code' => 'MBAP',
+    'name' => 'PT Mitrabara Adiperdana Tbk',
+    'join_date' => '10-Jul-2014',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'MBSS' => 
+  array (
+    'code' => 'MBSS',
+    'name' => 'Mitrabahtera Segara Sejati Tbk',
+    'join_date' => '06-Apr-2011',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'MBTO' => 
+  array (
+    'code' => 'MBTO',
+    'name' => 'Martina Berto Tbk',
+    'join_date' => '13-Jan-2011',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'MCOR' => 
+  array (
+    'code' => 'MCOR',
+    'name' => 'PT Bank China Construction Bank Indonesia Tbk',
+    'join_date' => '03-Jul-2007',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'MDIA' => 
+  array (
+    'code' => 'MDIA',
+    'name' => 'PT Intermedia Capital Tbk.',
+    'join_date' => '11-Apr-2014',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MDKA' => 
+  array (
+    'code' => 'MDKA',
+    'name' => 'PT Merdeka Copper Gold Tbk.',
+    'join_date' => '19-Jun-2015',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'MDLN' => 
+  array (
+    'code' => 'MDLN',
+    'name' => 'Modernland Realty Ltd Tbk',
+    'join_date' => '18-Jan-1993',
+    'sector' => 'PROPERTY',
+    'index' => '',
+  ),
+  'MDRN' => 
+  array (
+    'code' => 'MDRN',
+    'name' => 'Modern Internasional Tbk',
+    'join_date' => '16-Jul-1991',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MEDC' => 
+  array (
+    'code' => 'MEDC',
+    'name' => 'Medco Energi Internasional Tbk',
+    'join_date' => '12-Okt-1994',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'MEGA' => 
+  array (
+    'code' => 'MEGA',
+    'name' => 'Bank Mega Tbk',
+    'join_date' => '17-Apr-2000',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'MERK' => 
+  array (
+    'code' => 'MERK',
+    'name' => 'Merck Tbk',
+    'join_date' => '23-Jul-1981',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'META' => 
+  array (
+    'code' => 'META',
+    'name' => 'Nusantara Infrastructure Tbk',
+    'join_date' => '18-Jul-2001',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'MFIN' => 
+  array (
+    'code' => 'MFIN',
+    'name' => 'Mandala Multifinance Tbk',
+    'join_date' => '06-Sep-2005',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'MFMI' => 
+  array (
+    'code' => 'MFMI',
+    'name' => 'Multifiling Mitra Indonesia Tbk',
+    'join_date' => '29-Des-2010',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MGNA' => 
+  array (
+    'code' => 'MGNA',
+    'name' => 'PT Magna Finance Tbk.',
+    'join_date' => '07-Jul-2014',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'MICE' => 
+  array (
+    'code' => 'MICE',
+    'name' => 'Multi Indocitra Tbk',
+    'join_date' => '02-Nop-2005',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MIDI' => 
+  array (
+    'code' => 'MIDI',
+    'name' => 'Midi Utama Indonesia Tbk',
+    'join_date' => '30-Nop-2010',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'MIKA' => 
+  array (
+    'code' => 'MIKA',
+    'name' => 'PT Mitra Keluarga Karyasehat Tbk.',
+    'join_date' => '24-Mar-2015',
+    'sector' => 'TRADE',
+    'index' => 'JII, ISSI',
+  ),
+  'MIRA' => 
+  array (
+    'code' => 'MIRA',
+    'name' => 'Mitra International Resources Tbk',
+    'join_date' => '30-Jan-1997',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'MITI' => 
+  array (
+    'code' => 'MITI',
+    'name' => 'Mitra Investindo Tbk',
+    'join_date' => '16-Jul-1997',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'MKNT' => 
+  array (
+    'code' => 'MKNT',
+    'name' => 'PT Mitra Komunikasi Nusantara Tbk.',
+    'join_date' => '26-Okt-2015',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MKPI' => 
+  array (
+    'code' => 'MKPI',
+    'name' => 'Metropolitan Kentjana Tbk',
+    'join_date' => '10-Jul-2009',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'MLBI' => 
+  array (
+    'code' => 'MLBI',
+    'name' => 'Multi Bintang Indonesia Tbk',
+    'join_date' => '17-Jan-1994',
+    'sector' => 'CONSUMER',
+    'index' => '',
+  ),
+  'MLIA' => 
+  array (
+    'code' => 'MLIA',
+    'name' => 'Mulia Industrindo Tbk',
+    'join_date' => '17-Jan-1994',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'MLPL' => 
+  array (
+    'code' => 'MLPL',
+    'name' => 'Multipolar Tbk',
+    'join_date' => '06-Nop-1989',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MLPT' => 
+  array (
+    'code' => 'MLPT',
+    'name' => 'PT Multipolar Technology Tbk.',
+    'join_date' => '08-Jul-2013',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MMLP' => 
+  array (
+    'code' => 'MMLP',
+    'name' => 'PT Mega Manunggal Property Tbk.',
+    'join_date' => '12-Jun-2015',
+    'sector' => 'PROPERTY',
+    'index' => '',
+  ),
+  'MNCN' => 
+  array (
+    'code' => 'MNCN',
+    'name' => 'Media Nusantara Citra Tbk',
+    'join_date' => '22-Jun-2007',
+    'sector' => 'TRADE',
+    'index' => 'LQ45, IDX30',
+  ),
+  'MPMX' => 
+  array (
+    'code' => 'MPMX',
+    'name' => 'PT Mitra Pinasthika Mustika Tbk.',
+    'join_date' => '29-Mei-2013',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'MPPA' => 
+  array (
+    'code' => 'MPPA',
+    'name' => 'Matahari Putra Prima Tbk',
+    'join_date' => '21-Des-1992',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MRAT' => 
+  array (
+    'code' => 'MRAT',
+    'name' => 'Mustika Ratu Tbk',
+    'join_date' => '27-Jul-1995',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'MREI' => 
+  array (
+    'code' => 'MREI',
+    'name' => 'Maskapai Reasuransi Indonesia Tbk',
+    'join_date' => '04-Sep-1989',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'MSKY' => 
+  array (
+    'code' => 'MSKY',
+    'name' => 'MNC Sky Vision Tbk',
+    'join_date' => '09-Jul-2012',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'MTDL' => 
+  array (
+    'code' => 'MTDL',
+    'name' => 'Metrodata Electronics Tbk',
+    'join_date' => '09-Apr-1990',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'MTFN' => 
+  array (
+    'code' => 'MTFN',
+    'name' => 'Capitalinc Investment Tbk',
+    'join_date' => '16-Apr-1990',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'MTLA' => 
+  array (
+    'code' => 'MTLA',
+    'name' => 'Metropolitan Land Tbk',
+    'join_date' => '20-Jun-2011',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'MTRA' => 
+  array (
+    'code' => 'MTRA',
+    'name' => 'PT Mitra Pemuda Tbk.',
+    'join_date' => '10-Feb-2016',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'MTSM' => 
+  array (
+    'code' => 'MTSM',
+    'name' => 'Metro Realty Tbk',
+    'join_date' => '08-Jan-1992',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'MYOH' => 
+  array (
+    'code' => 'MYOH',
+    'name' => 'Samindo Resources Tbk',
+    'join_date' => '27-Jul-2000',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'MYOR' => 
+  array (
+    'code' => 'MYOR',
+    'name' => 'Mayora Indah Tbk',
+    'join_date' => '04-Jul-1990',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'MYRX' => 
+  array (
+    'code' => 'MYRX',
+    'name' => 'Hanson International Tbk',
+    'join_date' => '31-Okt-1990',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, JII, ISSI',
+  ),
+  'MYTX' => 
+  array (
+    'code' => 'MYTX',
+    'name' => 'APAC Citra Centertex Tbk',
+    'join_date' => '10-Okt-1989',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'NAGA' => 
+  array (
+    'code' => 'NAGA',
+    'name' => 'PT Bank Mitraniaga Tbk.',
+    'join_date' => '09-Jul-2013',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'NELY' => 
+  array (
+    'code' => 'NELY',
+    'name' => 'Pelayaran Nelly Dwi Putri Tbk',
+    'join_date' => '11-Okt-2012',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'NIKL' => 
+  array (
+    'code' => 'NIKL',
+    'name' => 'Pelat Timah Nusantara Tbk',
+    'join_date' => '14-Des-2009',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'NIPS' => 
+  array (
+    'code' => 'NIPS',
+    'name' => 'Nipress Tbk',
+    'join_date' => '24-Jul-1991',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'NIRO' => 
+  array (
+    'code' => 'NIRO',
+    'name' => 'Nirvana Development Tbk',
+    'join_date' => '13-Sep-2012',
+    'sector' => 'PROPERTY',
+    'index' => '',
+  ),
+  'NISP' => 
+  array (
+    'code' => 'NISP',
+    'name' => 'Bank OCBC NISP Tbk',
+    'join_date' => '20-Okt-1994',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'NOBU' => 
+  array (
+    'code' => 'NOBU',
+    'name' => 'PT Bank Nationalnobu Tbk.',
+    'join_date' => '20-Mei-2013',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'NRCA' => 
+  array (
+    'code' => 'NRCA',
+    'name' => 'PT Nusa Raya Cipta Tbk.',
+    'join_date' => '27-Jun-2013',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'OASA' => 
+  array (
+    'code' => 'OASA',
+    'name' => 'PT Protech Mitra Perkasa Tbk',
+    'join_date' => '18-Jul-2016',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'OCAP' => 
+  array (
+    'code' => 'OCAP',
+    'name' => 'ONIX CAPITAL Tbk',
+    'join_date' => '10-Nop-2003',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'OKAS' => 
+  array (
+    'code' => 'OKAS',
+    'name' => 'Ancora Indonesia Resources Tbk',
+    'join_date' => '29-Mar-2006',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'OMRE' => 
+  array (
+    'code' => 'OMRE',
+    'name' => 'Indonesia Prima Property Tbk',
+    'join_date' => '22-Agust-1994',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'PADI' => 
+  array (
+    'code' => 'PADI',
+    'name' => 'Minna Padi Investama Tbk',
+    'join_date' => '09-Jan-2012',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'PALM' => 
+  array (
+    'code' => 'PALM',
+    'name' => 'Provident Agro Tbk',
+    'join_date' => '08-Okt-2012',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'PANR' => 
+  array (
+    'code' => 'PANR',
+    'name' => 'Panorama Sentrawisata Tbk',
+    'join_date' => '01-Jan-1950',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'PANS' => 
+  array (
+    'code' => 'PANS',
+    'name' => 'Panin Sekuritas Tbk',
+    'join_date' => '31-Des-2000',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'PBRX' => 
+  array (
+    'code' => 'PBRX',
+    'name' => 'Pan Brothers Tbk',
+    'join_date' => '16-Agust-1990',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'PBSA' => 
+  array (
+    'code' => 'PBSA',
+    'name' => 'PT Paramita Bangun Sarana Tbk',
+    'join_date' => '28-Sep-2016',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'PDES' => 
+  array (
+    'code' => 'PDES',
+    'name' => 'Destinasi Tirta Nusantara Tbk',
+    'join_date' => '08-Jul-2008',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'PEGE' => 
+  array (
+    'code' => 'PEGE',
+    'name' => 'Panca Global Securities Tbk',
+    'join_date' => '24-Jun-2005',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'PGAS' => 
+  array (
+    'code' => 'PGAS',
+    'name' => 'Perusahaan Gas Negara (Persero) Tbk',
+    'join_date' => '15-Des-2003',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'PGLI' => 
+  array (
+    'code' => 'PGLI',
+    'name' => 'Pembangunan Graha Lestari Tbk',
+    'join_date' => '05-Apr-2000',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'PICO' => 
+  array (
+    'code' => 'PICO',
+    'name' => 'Pelangi Indah Canindo Tbk',
+    'join_date' => '23-Sep-1996',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'PJAA' => 
+  array (
+    'code' => 'PJAA',
+    'name' => 'Pembangunan Jaya Ancol Tbk',
+    'join_date' => '02-Jul-2004',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'PKPK' => 
+  array (
+    'code' => 'PKPK',
+    'name' => 'Perdana Karya Perkasa Tbk',
+    'join_date' => '11-Jul-2007',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'PLAS' => 
+  array (
+    'code' => 'PLAS',
+    'name' => 'Polaris Investama Tbk',
+    'join_date' => '16-Mar-2001',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'PLIN' => 
+  array (
+    'code' => 'PLIN',
+    'name' => 'Plaza Indonesia Realty Tbk',
+    'join_date' => '15-Jun-1992',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'PNBN' => 
+  array (
+    'code' => 'PNBN',
+    'name' => 'Bank Pan Indonesia Tbk',
+    'join_date' => '29-Des-1982',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'PNBS' => 
+  array (
+    'code' => 'PNBS',
+    'name' => 'PT Bank Panin Dubai Syariah Tbk.',
+    'join_date' => '15-Jan-2014',
+    'sector' => 'FINANCE',
+    'index' => 'ISSI',
+  ),
+  'PNIN' => 
+  array (
+    'code' => 'PNIN',
+    'name' => 'Paninvest Tbk',
+    'join_date' => '20-Sep-1983',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'PNLF' => 
+  array (
+    'code' => 'PNLF',
+    'name' => 'Panin Financial Tbk',
+    'join_date' => '14-Jun-1993',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'PNSE' => 
+  array (
+    'code' => 'PNSE',
+    'name' => 'Pudjiadi & Sons Tbk',
+    'join_date' => '01-Mei-1990',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'POLY' => 
+  array (
+    'code' => 'POLY',
+    'name' => 'Asia Pacific Fibers Tbk',
+    'join_date' => '12-Mar-1991',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'POOL' => 
+  array (
+    'code' => 'POOL',
+    'name' => 'Pool Advista Indonesia Tbk',
+    'join_date' => '20-Mei-1991',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'PORT' => 
+  array (
+    'code' => 'PORT',
+    'name' => 'PT Nusantara Pelabuhan Handal Tbk.',
+    'join_date' => '16-Mar-2017',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'POWR' => 
+  array (
+    'code' => 'POWR',
+    'name' => 'PT Cikarang Listrindo Tbk.',
+    'join_date' => '14-Jun-2016',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'PPRO' => 
+  array (
+    'code' => 'PPRO',
+    'name' => 'PT PP Properti Tbk.',
+    'join_date' => '19-Mei-2015',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, ISSI, IDX30',
+  ),
+  'PRAS' => 
+  array (
+    'code' => 'PRAS',
+    'name' => 'Prima Alloy Steel Universal Tbk',
+    'join_date' => '12-Jul-1990',
+    'sector' => 'MISC-IND',
+    'index' => '',
+  ),
+  'PRDA' => 
+  array (
+    'code' => 'PRDA',
+    'name' => 'PT Prodia Widyahusada Tbk.',
+    'join_date' => '07-Des-2016',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'PSAB' => 
+  array (
+    'code' => 'PSAB',
+    'name' => 'J RESOURCES ASIA PASIFIK Tbk',
+    'join_date' => '01-Des-2007',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'PSDN' => 
+  array (
+    'code' => 'PSDN',
+    'name' => 'Prasidha Aneka Niaga Tbk',
+    'join_date' => '18-Okt-1994',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'PSKT' => 
+  array (
+    'code' => 'PSKT',
+    'name' => 'PT Red Planet Indonesia Tbk',
+    'join_date' => '19-Sep-1995',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'PTBA' => 
+  array (
+    'code' => 'PTBA',
+    'name' => 'Tambang Batubara Bukit Asam Tbk',
+    'join_date' => '23-Des-2002',
+    'sector' => 'MINING',
+    'index' => 'LQ45, JII, ISSI',
+  ),
+  'PTIS' => 
+  array (
+    'code' => 'PTIS',
+    'name' => 'Indo Straits Tbk',
+    'join_date' => '12-Jul-2011',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'PTPP' => 
+  array (
+    'code' => 'PTPP',
+    'name' => 'PP (Persero) Tbk',
+    'join_date' => '09-Feb-2010',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, JII, ISSI',
+  ),
+  'PTRO' => 
+  array (
+    'code' => 'PTRO',
+    'name' => 'Petrosea Tbk',
+    'join_date' => '21-Mei-1990',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'PTSN' => 
+  array (
+    'code' => 'PTSN',
+    'name' => 'Sat Nusapersada Tbk',
+    'join_date' => '08-Nop-2007',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'PTSP' => 
+  array (
+    'code' => 'PTSP',
+    'name' => 'Pioneerindo Gourmet International Tbk',
+    'join_date' => '30-Mei-1994',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'PUDP' => 
+  array (
+    'code' => 'PUDP',
+    'name' => 'Pudjiadi Prestige Tbk',
+    'join_date' => '18-Nop-1994',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'PWON' => 
+  array (
+    'code' => 'PWON',
+    'name' => 'Pakuwon Jati Tbk',
+    'join_date' => '09-Okt-1989',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'PYFA' => 
+  array (
+    'code' => 'PYFA',
+    'name' => 'Pyridam Farma Tbk',
+    'join_date' => '16-Okt-2001',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'RAJA' => 
+  array (
+    'code' => 'RAJA',
+    'name' => 'Rukun Raharja Tbk',
+    'join_date' => '19-Apr-2006',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'RALS' => 
+  array (
+    'code' => 'RALS',
+    'name' => 'Ramayana Lestari Sentosa Tbk',
+    'join_date' => '24-Jul-1996',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'RANC' => 
+  array (
+    'code' => 'RANC',
+    'name' => 'Supra Boga Lestari Tbk',
+    'join_date' => '07-Jun-2012',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'RBMS' => 
+  array (
+    'code' => 'RBMS',
+    'name' => 'Ristia Bintang Mahkotasejati Tbk',
+    'join_date' => '19-Des-1997',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'RDTX' => 
+  array (
+    'code' => 'RDTX',
+    'name' => 'Roda Vivatex Tbk',
+    'join_date' => '14-Mei-1990',
+    'sector' => 'PROPERTY',
+    'index' => '',
+  ),
+  'RELI' => 
+  array (
+    'code' => 'RELI',
+    'name' => 'Reliance Securities Tbk',
+    'join_date' => '13-Jul-2005',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'RICY' => 
+  array (
+    'code' => 'RICY',
+    'name' => 'Ricky Putra Globalindo Tbk',
+    'join_date' => '22-Jan-1998',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'RIGS' => 
+  array (
+    'code' => 'RIGS',
+    'name' => 'Rig Tenders Tbk',
+    'join_date' => '26-Mar-1990',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'RIMO' => 
+  array (
+    'code' => 'RIMO',
+    'name' => 'PT Rimo International Lestari Tbk.',
+    'join_date' => '10-Nop-2000',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'RMBA' => 
+  array (
+    'code' => 'RMBA',
+    'name' => 'Bentoel International Investama Tbk',
+    'join_date' => '05-Mar-1990',
+    'sector' => 'CONSUMER',
+    'index' => '',
+  ),
+  'RODA' => 
+  array (
+    'code' => 'RODA',
+    'name' => 'Pikko Land Development Tbk',
+    'join_date' => '22-Okt-2001',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'ROTI' => 
+  array (
+    'code' => 'ROTI',
+    'name' => 'Nippon Indosari Corpindo Tbk',
+    'join_date' => '28-Jun-2010',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'RUIS' => 
+  array (
+    'code' => 'RUIS',
+    'name' => 'Radiant Utama Interinsco Tbk',
+    'join_date' => '12-Jul-2006',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'SAFE' => 
+  array (
+    'code' => 'SAFE',
+    'name' => 'Steady Safe Tbk',
+    'join_date' => '15-Agust-1994',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'SAME' => 
+  array (
+    'code' => 'SAME',
+    'name' => 'Sarana Meditama Metropolitan Tbk',
+    'join_date' => '11-Jan-2013',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'SCBD' => 
+  array (
+    'code' => 'SCBD',
+    'name' => 'Danayasa Arthatama Tbk',
+    'join_date' => '31-Des-2099',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'SCCO' => 
+  array (
+    'code' => 'SCCO',
+    'name' => 'Supreme Cable Manufacturing Corporation Tbk',
+    'join_date' => '20-Jul-1982',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'SCMA' => 
+  array (
+    'code' => 'SCMA',
+    'name' => 'Surya Citra Media Tbk',
+    'join_date' => '16-Jul-2002',
+    'sector' => 'TRADE',
+    'index' => 'LQ45',
+  ),
+  'SCPI' => 
+  array (
+    'code' => 'SCPI',
+    'name' => 'Merck Sharp Dohme Pharma Tbk',
+    'join_date' => '08-Jun-1990',
+    'sector' => 'CONSUMER',
+    'index' => '',
+  ),
+  'SDMU' => 
+  array (
+    'code' => 'SDMU',
+    'name' => 'Sidomulyo Selaras Tbk',
+    'join_date' => '12-Jul-2011',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'SDPC' => 
+  array (
+    'code' => 'SDPC',
+    'name' => 'Millennium Pharmacon International Tbk',
+    'join_date' => '07-Mei-1990',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'SDRA' => 
+  array (
+    'code' => 'SDRA',
+    'name' => 'PT Bank Woori Saudara Indonesia 1906 Tbk',
+    'join_date' => '15-Des-2006',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'SGRO' => 
+  array (
+    'code' => 'SGRO',
+    'name' => 'Sampoerna Agro Tbk',
+    'join_date' => '18-Jun-2007',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'SHID' => 
+  array (
+    'code' => 'SHID',
+    'name' => 'Hotel Sahid Jaya Tbk',
+    'join_date' => '08-Mei-1990',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'SHIP' => 
+  array (
+    'code' => 'SHIP',
+    'name' => 'PT Sillo Maritime Perdana Tbk',
+    'join_date' => '16-Jun-2016',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'SIAP' => 
+  array (
+    'code' => 'SIAP',
+    'name' => 'Sekawan Intipratama Tbk',
+    'join_date' => '17-Okt-2008',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'SIDO' => 
+  array (
+    'code' => 'SIDO',
+    'name' => 'PT Industri Jamu dan Farmasi Sido Muncul  Tbk',
+    'join_date' => '18-Des-2013',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'SILO' => 
+  array (
+    'code' => 'SILO',
+    'name' => 'PT Siloam International Hospitals Tbk.',
+    'join_date' => '12-Sep-2013',
+    'sector' => 'TRADE',
+    'index' => 'JII, ISSI',
+  ),
+  'SIMA' => 
+  array (
+    'code' => 'SIMA',
+    'name' => 'Siwani Makmur Tbk',
+    'join_date' => '03-Jun-1994',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'SIMP' => 
+  array (
+    'code' => 'SIMP',
+    'name' => 'Salim Ivomas Pratama Tbk',
+    'join_date' => '09-Jun-2011',
+    'sector' => 'AGRI',
+    'index' => 'ISSI',
+  ),
+  'SIPD' => 
+  array (
+    'code' => 'SIPD',
+    'name' => 'Sierad Produce Tbk',
+    'join_date' => '27-Des-1996',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'SKBM' => 
+  array (
+    'code' => 'SKBM',
+    'name' => 'Sekar Bumi Tbk',
+    'join_date' => '05-Jan-1993',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'SKLT' => 
+  array (
+    'code' => 'SKLT',
+    'name' => 'Sekar Laut Tbk',
+    'join_date' => '08-Sep-1993',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'SKYB' => 
+  array (
+    'code' => 'SKYB',
+    'name' => 'Skybee Tbk',
+    'join_date' => '07-Jul-2010',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'SMAR' => 
+  array (
+    'code' => 'SMAR',
+    'name' => 'SMART Tbk',
+    'join_date' => '20-Nop-1992',
+    'sector' => 'AGRI',
+    'index' => '',
+  ),
+  'SMBR' => 
+  array (
+    'code' => 'SMBR',
+    'name' => 'PT Semen Baturaja (Persero) Tbk',
+    'join_date' => '28-Jun-2013',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'SMCB' => 
+  array (
+    'code' => 'SMCB',
+    'name' => 'Holcim Indonesia Tbk',
+    'join_date' => '10-Agust-1997',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'SMDM' => 
+  array (
+    'code' => 'SMDM',
+    'name' => 'Suryamas Dutamakmur Tbk',
+    'join_date' => '12-Okt-1995',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'SMDR' => 
+  array (
+    'code' => 'SMDR',
+    'name' => 'Samudera Indonesia Tbk',
+    'join_date' => '05-Des-1999',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'SMGR' => 
+  array (
+    'code' => 'SMGR',
+    'name' => 'Semen Indonesia (Persero) Tbk',
+    'join_date' => '08-Jul-1991',
+    'sector' => 'BASIC-IND',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'SMMA' => 
+  array (
+    'code' => 'SMMA',
+    'name' => 'Sinar Mas Multiartha Tbk',
+    'join_date' => '05-Jul-1995',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'SMMT' => 
+  array (
+    'code' => 'SMMT',
+    'name' => 'GOLDEN EAGLE ENERGY Tbk',
+    'join_date' => '01-Des-2007',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'SMRA' => 
+  array (
+    'code' => 'SMRA',
+    'name' => 'Summarecon Agung Tbk',
+    'join_date' => '07-Mei-1990',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'SMRU' => 
+  array (
+    'code' => 'SMRU',
+    'name' => 'SMR Utama Tbk',
+    'join_date' => '10-Okt-2011',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'SMSM' => 
+  array (
+    'code' => 'SMSM',
+    'name' => 'Selamat Sempurna Tbk',
+    'join_date' => '09-Sep-1996',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'SOBI' => 
+  array (
+    'code' => 'SOBI',
+    'name' => 'Sorini Agro Asia Corporindo Tbk',
+    'join_date' => '03-Agust-1992',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'SOCI' => 
+  array (
+    'code' => 'SOCI',
+    'name' => 'PT Soechi Lines Tbk.',
+    'join_date' => '03-Des-2014',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'SONA' => 
+  array (
+    'code' => 'SONA',
+    'name' => 'Sona Topas Tourism Industry Tbk',
+    'join_date' => '12-Jul-1992',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'SPMA' => 
+  array (
+    'code' => 'SPMA',
+    'name' => 'Suparma Tbk',
+    'join_date' => '16-Nop-1994',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'SQBB' => 
+  array (
+    'code' => 'SQBB',
+    'name' => 'Taisho Pharmaceutical Indonesia Tbk',
+    'join_date' => '29-Mar-1983',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'SQMI' => 
+  array (
+    'code' => 'SQMI',
+    'name' => 'RENUKA COALINDO Tbk',
+    'join_date' => '15-Jul-2004',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'SRAJ' => 
+  array (
+    'code' => 'SRAJ',
+    'name' => 'Sejahteraraya Anugrahjaya Tbk',
+    'join_date' => '11-Apr-2011',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'SRIL' => 
+  array (
+    'code' => 'SRIL',
+    'name' => 'PT Sri Rejeki Isman Tbk',
+    'join_date' => '17-Jun-2013',
+    'sector' => 'MISC-IND',
+    'index' => 'LQ45, IDX30',
+  ),
+  'SRSN' => 
+  array (
+    'code' => 'SRSN',
+    'name' => 'Indo Acidatama Tbk',
+    'join_date' => '11-Jan-1993',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'SRTG' => 
+  array (
+    'code' => 'SRTG',
+    'name' => 'PT Saratoga Investama Sedaya Tbk.',
+    'join_date' => '26-Jun-2013',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'SSIA' => 
+  array (
+    'code' => 'SSIA',
+    'name' => 'Surya Semesta Internusa Tbk',
+    'join_date' => '27-Mar-1997',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'SSMS' => 
+  array (
+    'code' => 'SSMS',
+    'name' => 'PT Sawit Sumbermas Sarana Tbk.',
+    'join_date' => '12-Des-2013',
+    'sector' => 'AGRI',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'SSTM' => 
+  array (
+    'code' => 'SSTM',
+    'name' => 'Sunson Textile Manufacturer Tbk',
+    'join_date' => '20-Agust-1997',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'STAR' => 
+  array (
+    'code' => 'STAR',
+    'name' => 'Star Petrcohem Tbk',
+    'join_date' => '13-Jul-2011',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'STTP' => 
+  array (
+    'code' => 'STTP',
+    'name' => 'Siantar Top Tbk',
+    'join_date' => '16-Des-1996',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'SUGI' => 
+  array (
+    'code' => 'SUGI',
+    'name' => 'Sugih Energy Tbk',
+    'join_date' => '19-Jun-2002',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'SULI' => 
+  array (
+    'code' => 'SULI',
+    'name' => 'PT SLJ Global Tbk',
+    'join_date' => '21-Mar-1994',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'SUPR' => 
+  array (
+    'code' => 'SUPR',
+    'name' => 'Solusi Tunas Pratama Tbk',
+    'join_date' => '11-Okt-2011',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'TALF' => 
+  array (
+    'code' => 'TALF',
+    'name' => 'PT Tunas Alfin Tbk',
+    'join_date' => '17-Jan-2014',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'TARA' => 
+  array (
+    'code' => 'TARA',
+    'name' => 'PT Sitara Propertindo Tbk',
+    'join_date' => '11-Jul-2014',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'TAXI' => 
+  array (
+    'code' => 'TAXI',
+    'name' => 'Express Transindo Utama Tbk',
+    'join_date' => '02-Nop-2012',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'TBIG' => 
+  array (
+    'code' => 'TBIG',
+    'name' => 'PT Tower Bersama Infrastructure Tbk',
+    'join_date' => '26-Okt-2010',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'TBLA' => 
+  array (
+    'code' => 'TBLA',
+    'name' => 'Tunas Baru Lampung Tbk',
+    'join_date' => '14-Feb-2000',
+    'sector' => 'AGRI',
+    'index' => '',
+  ),
+  'TBMS' => 
+  array (
+    'code' => 'TBMS',
+    'name' => 'Tembaga Mulia Semanan Tbk',
+    'join_date' => '30-Sep-1993',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'TCID' => 
+  array (
+    'code' => 'TCID',
+    'name' => 'Mandom Indonesia Tbk',
+    'join_date' => '23-Sep-1993',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'TELE' => 
+  array (
+    'code' => 'TELE',
+    'name' => 'Tiphone Mobile Indonesia Tbk',
+    'join_date' => '12-Jan-2012',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'TFCO' => 
+  array (
+    'code' => 'TFCO',
+    'name' => 'Tifico Fiber Indonesia Tbk',
+    'join_date' => '26-Feb-1980',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'TGKA' => 
+  array (
+    'code' => 'TGKA',
+    'name' => 'Tigaraksa Satria Tbk',
+    'join_date' => '11-Jun-1990',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'TIFA' => 
+  array (
+    'code' => 'TIFA',
+    'name' => 'Tifa Finance Tbk',
+    'join_date' => '08-Jul-2011',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'TINS' => 
+  array (
+    'code' => 'TINS',
+    'name' => 'Timah (Persero) Tbk',
+    'join_date' => '19-Okt-1995',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'TIRA' => 
+  array (
+    'code' => 'TIRA',
+    'name' => 'Tira Austenite Tbk',
+    'join_date' => '27-Jul-1993',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'TIRT' => 
+  array (
+    'code' => 'TIRT',
+    'name' => 'Tirta Mahakam Resources Tbk',
+    'join_date' => '13-Des-1999',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'TKGA' => 
+  array (
+    'code' => 'TKGA',
+    'name' => 'PT Permata Prima Sakti Tbk.',
+    'join_date' => '06-Jan-1992',
+    'sector' => 'MINING',
+    'index' => '',
+  ),
+  'TKIM' => 
+  array (
+    'code' => 'TKIM',
+    'name' => 'Pabrik Kertas Tjiwi Kimia Tbk',
+    'join_date' => '03-Apr-1990',
+    'sector' => 'BASIC-IND',
+    'index' => '',
+  ),
+  'TLKM' => 
+  array (
+    'code' => 'TLKM',
+    'name' => 'Telekomunikasi Indonesia (Persero) Tbk',
+    'join_date' => '14-Nop-1995',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'TMAS' => 
+  array (
+    'code' => 'TMAS',
+    'name' => 'Pelayaran Tempuran Emas Tbk',
+    'join_date' => '09-Jul-2003',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'TMPI' => 
+  array (
+    'code' => 'TMPI',
+    'name' => 'PT Sigmagold Inti Perkasa Tbk.',
+    'join_date' => '26-Jan-1995',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'TMPO' => 
+  array (
+    'code' => 'TMPO',
+    'name' => 'Tempo Inti Media Tbk',
+    'join_date' => '08-Jan-2001',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'TOBA' => 
+  array (
+    'code' => 'TOBA',
+    'name' => 'Toba Bara Sejahtra Tbk',
+    'join_date' => '06-Jul-2012',
+    'sector' => 'MINING',
+    'index' => 'ISSI',
+  ),
+  'TOTL' => 
+  array (
+    'code' => 'TOTL',
+    'name' => 'Total Bangun Persada Tbk',
+    'join_date' => '25-Jul-2006',
+    'sector' => 'PROPERTY',
+    'index' => 'ISSI',
+  ),
+  'TOTO' => 
+  array (
+    'code' => 'TOTO',
+    'name' => 'Surya Toto Indonesia Tbk',
+    'join_date' => '30-Okt-1990',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'TOWR' => 
+  array (
+    'code' => 'TOWR',
+    'name' => 'Sarana Menara Nusantara Tbk',
+    'join_date' => '08-Mar-2010',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'TPIA' => 
+  array (
+    'code' => 'TPIA',
+    'name' => 'Chandra Asri Petrochemical Tbk',
+    'join_date' => '26-Mei-2008',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'TPMA' => 
+  array (
+    'code' => 'TPMA',
+    'name' => 'Trans Power Marine Tbk',
+    'join_date' => '20-Feb-2013',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'TRAM' => 
+  array (
+    'code' => 'TRAM',
+    'name' => 'Trada Maritime Tbk',
+    'join_date' => '10-Sep-2008',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'TRIL' => 
+  array (
+    'code' => 'TRIL',
+    'name' => 'Triwira Insanlestari Tbk',
+    'join_date' => '28-Jan-2008',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'TRIM' => 
+  array (
+    'code' => 'TRIM',
+    'name' => 'PT Trimegah Sekuritas Indonesia Tbk',
+    'join_date' => '31-Jan-2000',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'TRIO' => 
+  array (
+    'code' => 'TRIO',
+    'name' => 'Trikomsel Oke Tbk',
+    'join_date' => '14-Apr-2009',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'TRIS' => 
+  array (
+    'code' => 'TRIS',
+    'name' => 'Trisula International Tbk',
+    'join_date' => '28-Jun-2012',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'TRST' => 
+  array (
+    'code' => 'TRST',
+    'name' => 'Trias Sentosa Tbk',
+    'join_date' => '02-Jul-1990',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'TRUB' => 
+  array (
+    'code' => 'TRUB',
+    'name' => 'Truba Alam Manunggal Engineering Tbk',
+    'join_date' => '16-Okt-2006',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'TRUS' => 
+  array (
+    'code' => 'TRUS',
+    'name' => 'Trust Finance Indonesia Tbk',
+    'join_date' => '28-Nop-2002',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'TSPC' => 
+  array (
+    'code' => 'TSPC',
+    'name' => 'Tempo Scan Pacific Tbk',
+    'join_date' => '17-Jun-1994',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'TURI' => 
+  array (
+    'code' => 'TURI',
+    'name' => 'Tunas Ridean Tbk',
+    'join_date' => '06-Mei-1995',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'ULTJ' => 
+  array (
+    'code' => 'ULTJ',
+    'name' => 'Ultra Jaya Milk Industry Tbk',
+    'join_date' => '02-Jul-1990',
+    'sector' => 'CONSUMER',
+    'index' => 'ISSI',
+  ),
+  'UNIC' => 
+  array (
+    'code' => 'UNIC',
+    'name' => 'Unggul Indah Cahaya Tbk',
+    'join_date' => '06-Nop-1989',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'UNIT' => 
+  array (
+    'code' => 'UNIT',
+    'name' => 'Nusantara Inti Corpora Tbk',
+    'join_date' => '18-Apr-2002',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'UNSP' => 
+  array (
+    'code' => 'UNSP',
+    'name' => 'Bakrie Sumatera Plantations Tbk',
+    'join_date' => '06-Mar-1990',
+    'sector' => 'AGRI',
+    'index' => '',
+  ),
+  'UNTR' => 
+  array (
+    'code' => 'UNTR',
+    'name' => 'United Tractors Tbk',
+    'join_date' => '19-Sep-1989',
+    'sector' => 'TRADE',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'UNVR' => 
+  array (
+    'code' => 'UNVR',
+    'name' => 'Unilever Indonesia Tbk',
+    'join_date' => '11-Jan-1982',
+    'sector' => 'CONSUMER',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'VICO' => 
+  array (
+    'code' => 'VICO',
+    'name' => 'PT Victoria Investama Tbk.',
+    'join_date' => '08-Jul-2013',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'VINS' => 
+  array (
+    'code' => 'VINS',
+    'name' => 'PT Victoria Insurance Tbk.',
+    'join_date' => '28-Sep-2015',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'VIVA' => 
+  array (
+    'code' => 'VIVA',
+    'name' => 'PT Visi Media Asia Tbk',
+    'join_date' => '21-Nop-2011',
+    'sector' => 'TRADE',
+    'index' => '',
+  ),
+  'VOKS' => 
+  array (
+    'code' => 'VOKS',
+    'name' => 'Voksel Electric Tbk',
+    'join_date' => '20-Des-1990',
+    'sector' => 'MISC-IND',
+    'index' => 'ISSI',
+  ),
+  'VRNA' => 
+  array (
+    'code' => 'VRNA',
+    'name' => 'Verena Multi Finance Tbk',
+    'join_date' => '25-Jun-2008',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'WAPO' => 
+  array (
+    'code' => 'WAPO',
+    'name' => 'Wahana Pronatural Tbk',
+    'join_date' => '22-Jun-2001',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'WEHA' => 
+  array (
+    'code' => 'WEHA',
+    'name' => 'PT WEHA Transportasi Indonesia Tbk',
+    'join_date' => '31-Mei-2007',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => '',
+  ),
+  'WICO' => 
+  array (
+    'code' => 'WICO',
+    'name' => 'Wicaksana Overseas International Tbk',
+    'join_date' => '08-Agust-1994',
+    'sector' => 'TRADE',
+    'index' => 'ISSI',
+  ),
+  'WIIM' => 
+  array (
+    'code' => 'WIIM',
+    'name' => 'Wismilak Inti Makmur Tbk',
+    'join_date' => '18-Des-2012',
+    'sector' => 'CONSUMER',
+    'index' => '',
+  ),
+  'WIKA' => 
+  array (
+    'code' => 'WIKA',
+    'name' => 'Wijaya Karya Tbk',
+    'join_date' => '29-Okt-2007',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, JII, ISSI',
+  ),
+  'WINS' => 
+  array (
+    'code' => 'WINS',
+    'name' => 'Wintermar Offshore Marine Tbk',
+    'join_date' => '29-Nop-2010',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+  'WOMF' => 
+  array (
+    'code' => 'WOMF',
+    'name' => 'Wahana Ottomitra Multiartha Tbk',
+    'join_date' => '13-Des-2004',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'WSBP' => 
+  array (
+    'code' => 'WSBP',
+    'name' => 'PT Waskita Beton Precast Tbk.',
+    'join_date' => '20-Sep-2016',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'WSKT' => 
+  array (
+    'code' => 'WSKT',
+    'name' => 'Waskita Karya (Persero) Tbk',
+    'join_date' => '19-Des-2012',
+    'sector' => 'PROPERTY',
+    'index' => 'LQ45, JII, ISSI, IDX30',
+  ),
+  'WTON' => 
+  array (
+    'code' => 'WTON',
+    'name' => 'Wijaya Karya Beton',
+    'join_date' => '08-Apr-2014',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'YPAS' => 
+  array (
+    'code' => 'YPAS',
+    'name' => 'Yanaprima Hastapersada Tbk',
+    'join_date' => '05-Mar-2008',
+    'sector' => 'BASIC-IND',
+    'index' => 'ISSI',
+  ),
+  'YULE' => 
+  array (
+    'code' => 'YULE',
+    'name' => 'Yulie Sekurindo Tbk',
+    'join_date' => '10-Des-2004',
+    'sector' => 'FINANCE',
+    'index' => '',
+  ),
+  'ZBRA' => 
+  array (
+    'code' => 'ZBRA',
+    'name' => 'Zebra Nusantara Tbk',
+    'join_date' => '01-Agust-1991',
+    'sector' => 'INFRASTRUCTURE',
+    'index' => 'ISSI',
+  ),
+);

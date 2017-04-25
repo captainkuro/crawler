@@ -1,20 +1,98 @@
 <?php
 require 'vendor/autoload.php';
+/*
+Reference:
+http://www.idx.co.id/id-id/beranda/perusahaantercatat/profilperusahaantercatat.aspx
+http://www.bareksa.com/id/stock/sector
+http://infopersada.com/investasi/saham/
+
+ */
 
 function exporte($file, $value) {
 	file_put_contents($file, '<?php return '.var_export($value, true).';');
 }
 
+function importo($file) {
+	return include $file;
+}
+
+function dom_from_url($url) {
+	$p = new Page($url);
+	$h = new simple_html_dom();
+	$h->load($p->content());
+	return $h;
+}
+
 // @TODO refactor many many ways to get stock data
-// return list of saham kode
-function get_all_codes() {
-	$output = 'start-all_codes.export';
+// @todo sector info
+
+// return list index info
+function get_all_indexes() {
+	$output = 'start-all_indexes.out';
 	if (is_file($output)) {
-		return include $output;
+		return importo($output);
+	}
+
+	$h = dom_from_url('http://infopersada.com/investasi/saham/');
+
+	$result = [];
+	foreach ($h->find('.ia-cat') as $div) {
+		$a = $div->find('a', 0);
+		$url = $a->href;
+		preg_match('#Indeks Saham (\w+)#', $a->text(), $m);
+		$index = $m[1];
+
+		$dom_list = dom_from_url($url);
+		$url_post = $dom_list->find('.ia-item__title', 0)->find('a', 0)->href;
+		$dom_article = dom_from_url($url_post);
+
+		$table = $dom_article->find('.ia-item-view__body', 0)->find('table', 0);
+		foreach ($table->find('tr') as $i => $tr) {
+			if ($i == 0) continue;
+			$td_code = $tr->find('td', 1);
+			$result[$index][] = trim($td_code->text());
+		}
+	}
+	exporte($output, $result);
+	return $result;
+}
+
+// return array, list of index contain $code
+function find_index($code, $indexes) {
+	$result = [];
+	foreach ($indexes as $index => $list) {
+		if (array_search($code, $list) !== false) {
+			$result[] = $index;
+		}
+	}
+	return $result;
+}
+
+function get_all_sectors() {
+	$dom_sectors = dom_from_url('http://www.bareksa.com/id/stock/sector');
+	$table = $dom_sectors->find('#TableBEI', 0);
+	$result = [];
+
+	foreach ($table->find('tr.colTab') as $tr) {
+		$code = trim($tr->find('td', 1)->text());
+		$sector = trim($tr->find('td', 3)->text());
+		$result[$code] = $sector;
+	}
+
+	return $result;
+}
+
+// return list of saham kode, combined
+function get_all_codes() {
+	$output = 'start-all_codes.out';
+	if (is_file($output)) {
+		return importo($output);
 	}
 
 	$h = new simple_html_dom();
 	$h->load(file_get_contents('raw-Company-Profile.xls'));
+	$indexes = get_all_indexes();
+	$sectors = get_all_sectors();
 	$result = [];
 
 	foreach ($h->find('tr') as $i => $tr) {
@@ -22,11 +100,13 @@ function get_all_codes() {
 		$code = trim($tr->find('td', 1)->text());
 		$name = trim($tr->find('td', 2)->text());
 		$join_date = trim($tr->find('td', 3)->text());
-		
+
 		$result[$code] = [
 			'code' => $code,
 			'name' => $name,
 			'join_date' => $join_date,
+			'sector' => $sectors[$code],
+			'index' => implode(', ', find_index($code, $indexes)),
 		];
 	}
 	exporte($output, $result);
@@ -34,45 +114,6 @@ function get_all_codes() {
 }
 // get_all_codes();exit;
 
-// @todo sector info
-// http://infopersada.com/investasi/saham/ get index info
-function get_index_info() {
-	
-}
-
-function get_all_codes_te() {
-	if (is_file('all_codes.out')) {
-		return include 'all_codes.out';
-	}
-	$raw = file_get_contents('Daftar Emiten Dan Kode Saham Di Bursa Efek Indonesia.html');
-	$h = new simple_html_dom();
-	$h->load($raw);
-
-	$table = $h->find('.font_general', 0);
-	$trs = $table->find('tr[bgcolor="#F4F4F4"]');
-	$result = [];
-	foreach ($trs as $tr) {
-		$code = trim($tr->find('td', 1)->text());
-		$name = trim($tr->find('td', 2)->text());
-
-		$sector = $tr->find('td', 3)->text();
-		$parts = explode('|', $sector);
-		$sector = trim(array_shift($parts));
-		$index = implode(',', array_map('trim', $parts));
-
-		$result[$code] = [
-			'code' => $code, 'name' => $name,
-			'sector' => $sector, 'index' => $index
-		];
-	}
-
-	exporte('all_codes.out', $result);
-	return $result;
-}
-
-// $x = get_all_codes();
-// print_r($x);
-// file_put_contents('all_codes.out', var_export($x, true));
 
 function extract_fin($text) {
 	$text = preg_replace('#\+\s+<td#', '</th><td', $text);
@@ -144,17 +185,22 @@ function fin_in_year($year) {
 	return $result;
 }
 
-for ($y=2016; $y<=2016; $y++) {
-	$result = fin_in_year($y);
-	exporte("finan_$y.out", $result);
-}
-exit;
+// how to use: exit start and end index to year u want
+// for ($y=2016; $y<=2017; $y++) {
+// 	$result = fin_in_year($y);
+// 	exporte("start-finan_$y.out", $result);
+// }
+// exit;
 
 // show chart http://miraeasset.co.id/js/dwsComplex/complex.htm?StockCode=DEWA&periodBit=I
 // get data http://miraeasset.co.id/tr/cpstChartAjaxTR.do?StockCode=DEWA&periodBit=I
 
 function get_all_financials() {
-	$files = ['finan_2014.out','finan_2015.out','finan_2016.out',];
+	$files = [
+		'start-finan_2010.out','start-finan_2011.out','start-finan_2012.out',
+		'start-finan_2013.out','start-finan_2014.out','start-finan_2015.out',
+		'start-finan_2016.out','start-finan_2017.out',
+	];
 	$result = [];
 	foreach ($files as $input) {
 		$chunk = include $input;
@@ -220,6 +266,6 @@ function save_standard_financials() {
 	foreach ($stocks as $code => $profile) {
 		$result = array_merge($result, extract_to_normalized($code, $finances[$code]));
 	}
-	exporte('all_standardized.out', $result);
+	exporte('start-all_standardized.out', $result);
 }
-// save_standard_financials();
+save_standard_financials();

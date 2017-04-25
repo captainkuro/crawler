@@ -1,0 +1,2038 @@
+<?php return array (
+  'AALI' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '4,490,671,000,000',
+      'Cost of Good Sold' => '-3,093,858,000,000',
+      'Gross Profit' => '1,396,813,000,000',
+      'Operation Expenses' => '-277,443,000,000',
+      'EBIT' => '1,119,370,000,000',
+      'Other Income/Expenses' => '4,420,000,000',
+      'Earning Before Tax' => '1,123,790,000,000',
+      'Net Income After Tax' => '836,104,000,000',
+      'Minority Interest' => '-35,074,000,000',
+      'Net Income(NI)' => '801,030,000,000',
+      'Earning Per Share(EPS)' => '416',
+      'Book Value Per Share(BV)' => '9,320',
+      'Close Price' => '14,900',
+      'PER(Colse Price/EPS*)' => '8.9',
+      'PBV(Close Price/BV)' => '1.6',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '8.9',
+      'PBV (X) (ClosePrice/BV)' => '1.6',
+      'DER (X) (T.Liab/T.Eq)' => '0.0',
+      'ROA (X) (NI*/T.Assrts)' => '13.0',
+      'ROE (X) (NI*/T.Equity)' => '17.9',
+      'Op.Margin (%) (EBIT/Sales)' => '25.0',
+    ),
+  ),
+  'ABBA' => 
+  array (
+  ),
+  'ABDA' => 
+  array (
+  ),
+  'ABMM' => 
+  array (
+  ),
+  'ACES' => 
+  array (
+  ),
+  'ACST' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '506,221,000,000',
+      'Cost of Good Sold' => '-427,977,000,000',
+      'Gross Profit' => '78,244,000,000',
+      'Operation Expenses' => '-26,485,000,000',
+      'EBIT' => '51,759,000,000',
+      'Other Income/Expenses' => '-21,057,000,000',
+      'Earning Before Tax' => '30,702,000,000',
+      'Net Income After Tax' => '30,477,000,000',
+      'Minority Interest' => '140,000,000',
+      'Net Income(NI)' => '30,617,000,000',
+      'Earning Per Share(EPS)' => '43',
+      'Book Value Per Share(BV)' => '1,902',
+      'Close Price' => '2,710',
+      'PER(Colse Price/EPS*)' => '15.5',
+      'PBV(Close Price/BV)' => '1.4',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '15.5',
+      'PBV (X) (ClosePrice/BV)' => '1.4',
+      'DER (X) (T.Liab/T.Eq)' => '1.1',
+      'ROA (X) (NI*/T.Assrts)' => '4.4',
+      'ROE (X) (NI*/T.Equity)' => '9.2',
+      'Op.Margin (%) (EBIT/Sales)' => '10.2',
+    ),
+  ),
+  'ADES' => 
+  array (
+  ),
+  'ADHI' => 
+  array (
+  ),
+  'ADMF' => 
+  array (
+  ),
+  'ADMG' => 
+  array (
+  ),
+  'ADRO' => 
+  array (
+  ),
+  'AGII' => 
+  array (
+  ),
+  'AGRO' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '277,295,000,000',
+      'Cost of Good Sold' => '0',
+      'Gross Profit' => '277,295,000,000',
+      'Operation Expenses' => '-233,115,000,000',
+      'EBIT' => '44,180,000,000',
+      'Other Income/Expenses' => '3,093,000,000',
+      'Earning Before Tax' => '47,273,000,000',
+      'Net Income After Tax' => '36,251,000,000',
+      'Minority Interest' => '0',
+      'Net Income(NI)' => '36,251,000,000',
+      'Earning Per Share(EPS)' => '2',
+      'Book Value Per Share(BV)' => '131',
+      'Close Price' => '825',
+      'PER(Colse Price/EPS*)' => '86.3',
+      'PBV(Close Price/BV)' => '6.3',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '86.3',
+      'PBV (X) (ClosePrice/BV)' => '6.3',
+      'DER (X) (T.Liab/T.Eq)' => '5.1',
+      'ROA (X) (NI*/T.Assrts)' => '1.2',
+      'ROE (X) (NI*/T.Equity)' => '7.3',
+      'Op.Margin (%) (EBIT/Sales)' => '15.9',
+    ),
+  ),
+  'AGRS' => 
+  array (
+  ),
+  'AHAP' => 
+  array (
+  ),
+  'AIMS' => 
+  array (
+  ),
+  'AISA' => 
+  array (
+  ),
+  'AKKU' => 
+  array (
+  ),
+  'AKPI' => 
+  array (
+  ),
+  'AKRA' => 
+  array (
+  ),
+  'AKSI' => 
+  array (
+  ),
+  'ALDO' => 
+  array (
+  ),
+  'ALKA' => 
+  array (
+  ),
+  'ALMI' => 
+  array (
+  ),
+  'ALTO' => 
+  array (
+  ),
+  'AMAG' => 
+  array (
+  ),
+  'AMFG' => 
+  array (
+  ),
+  'AMIN' => 
+  array (
+  ),
+  'AMRT' => 
+  array (
+  ),
+  'ANJT' => 
+  array (
+  ),
+  'ANTM' => 
+  array (
+  ),
+  'APEX' => 
+  array (
+  ),
+  'APIC' => 
+  array (
+  ),
+  'APII' => 
+  array (
+  ),
+  'APLI' => 
+  array (
+  ),
+  'APLN' => 
+  array (
+  ),
+  'APOL' => 
+  array (
+  ),
+  'ARGO' => 
+  array (
+  ),
+  'ARII' => 
+  array (
+  ),
+  'ARNA' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '441,483,489,358',
+      'Cost of Good Sold' => '-325,258,674,979',
+      'Gross Profit' => '116,224,814,379',
+      'Operation Expenses' => '-57,176,027,999',
+      'EBIT' => '59,048,786,380',
+      'Other Income/Expenses' => '-5,639,662,317',
+      'Earning Before Tax' => '53,409,124,063',
+      'Net Income After Tax' => '40,003,692,000',
+      'Minority Interest' => '-593,768,443',
+      'Net Income(NI)' => '39,409,923,557',
+      'Earning Per Share(EPS)' => '5',
+      'Book Value Per Share(BV)' => '132',
+      'Close Price' => '478',
+      'PER(Colse Price/EPS*)' => '22.3',
+      'PBV(Close Price/BV)' => '3.6',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '22.3',
+      'PBV (X) (ClosePrice/BV)' => '3.6',
+      'DER (X) (T.Liab/T.Eq)' => '0.6',
+      'ROA (X) (NI*/T.Assrts)' => '10.0',
+      'ROE (X) (NI*/T.Equity)' => '16.2',
+      'Op.Margin (%) (EBIT/Sales)' => '13.4',
+    ),
+  ),
+  'ARTA' => 
+  array (
+  ),
+  'ARTI' => 
+  array (
+  ),
+  'ARTO' => 
+  array (
+  ),
+  'ASBI' => 
+  array (
+  ),
+  'ASDM' => 
+  array (
+  ),
+  'ASGR' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '578,418,000,000',
+      'Cost of Good Sold' => '-424,268,000,000',
+      'Gross Profit' => '154,150,000,000',
+      'Operation Expenses' => '-110,811,000,000',
+      'EBIT' => '43,339,000,000',
+      'Other Income/Expenses' => '1,443,000,000',
+      'Earning Before Tax' => '44,782,000,000',
+      'Net Income After Tax' => '33,489,000,000',
+      'Minority Interest' => '0',
+      'Net Income(NI)' => '33,489,000,000',
+      'Earning Per Share(EPS)' => '24',
+      'Book Value Per Share(BV)' => '890',
+      'Close Price' => '1,930',
+      'PER(Colse Price/EPS*)' => '19.4',
+      'PBV(Close Price/BV)' => '2.2',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '19.4',
+      'PBV (X) (ClosePrice/BV)' => '2.2',
+      'DER (X) (T.Liab/T.Eq)' => '0.0',
+      'ROA (X) (NI*/T.Assrts)' => '8.0',
+      'ROE (X) (NI*/T.Equity)' => '11.2',
+      'Op.Margin (%) (EBIT/Sales)' => '7.0',
+    ),
+  ),
+  'ASII' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '48,780,000,000,000',
+      'Cost of Good Sold' => '-38,768,000,000,000',
+      'Gross Profit' => '10,012,000,000,000',
+      'Operation Expenses' => '-4,939,000,000,000',
+      'EBIT' => '5,073,000,000,000',
+      'Other Income/Expenses' => '2,291,000,000,000',
+      'Earning Before Tax' => '7,364,000,000,000',
+      'Net Income After Tax' => '6,083,000,000,000',
+      'Minority Interest' => '-996,000,000,000',
+      'Net Income(NI)' => '5,087,000,000,000',
+      'Earning Per Share(EPS)' => '125',
+      'Book Value Per Share(BV)' => '2,888',
+      'Close Price' => '8,625',
+      'PER(Colse Price/EPS*)' => '17.2',
+      'PBV(Close Price/BV)' => '3.0',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '17.2',
+      'PBV (X) (ClosePrice/BV)' => '3.0',
+      'DER (X) (T.Liab/T.Eq)' => '1.0',
+      'ROA (X) (NI*/T.Assrts)' => '7.0',
+      'ROE (X) (NI*/T.Equity)' => '17.4',
+      'Op.Margin (%) (EBIT/Sales)' => '10.0',
+    ),
+  ),
+  'ASJT' => 
+  array (
+  ),
+  'ASMI' => 
+  array (
+  ),
+  'ASRI' => 
+  array (
+  ),
+  'ASRM' => 
+  array (
+  ),
+  'ASSA' => 
+  array (
+  ),
+  'ATIC' => 
+  array (
+  ),
+  'ATPK' => 
+  array (
+  ),
+  'AUTO' => 
+  array (
+  ),
+  'BABP' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '276,017,000,000',
+      'Cost of Good Sold' => '0',
+      'Gross Profit' => '276,017,000,000',
+      'Operation Expenses' => '-341,056,000,000',
+      'EBIT' => '-65,039,000,000',
+      'Other Income/Expenses' => '-13,000,000',
+      'Earning Before Tax' => '-65,052,000,000',
+      'Net Income After Tax' => '-48,794,000,000',
+      'Minority Interest' => '0',
+      'Net Income(NI)' => '-48,794,000,000',
+      'Earning Per Share(EPS)' => '-2',
+      'Book Value Per Share(BV)' => '89',
+      'Close Price' => '67',
+      'PER(Colse Price/EPS*)' => '-6.9',
+      'PBV(Close Price/BV)' => '0.8',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '-6.9',
+      'PBV (X) (ClosePrice/BV)' => '0.8',
+      'DER (X) (T.Liab/T.Eq)' => '6.0',
+      'ROA (X) (NI*/T.Assrts)' => '-1.5',
+      'ROE (X) (NI*/T.Equity)' => '-10.7',
+      'Op.Margin (%) (EBIT/Sales)' => '-23.5',
+    ),
+  ),
+  'BACA' => 
+  array (
+  ),
+  'BAJA' => 
+  array (
+  ),
+  'BALI' => 
+  array (
+  ),
+  'BAPA' => 
+  array (
+  ),
+  'BATA' => 
+  array (
+  ),
+  'BAYU' => 
+  array (
+  ),
+  'BBCA' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '12,937,071,000,000',
+      'Cost of Good Sold' => '0',
+      'Gross Profit' => '12,937,071,000,000',
+      'Operation Expenses' => '-6,669,547,000,000',
+      'EBIT' => '6,267,524,000,000',
+      'Other Income/Expenses' => '0',
+      'Earning Before Tax' => '6,267,524,000,000',
+      'Net Income After Tax' => '4,988,752,000,000',
+      'Minority Interest' => '546,000,000',
+      'Net Income(NI)' => '4,989,298,000,000',
+      'Earning Per Share(EPS)' => '204',
+      'Book Value Per Share(BV)' => '4,839',
+      'Close Price' => '16,550',
+      'PER(Colse Price/EPS*)' => '20.2',
+      'PBV(Close Price/BV)' => '3.4',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '20.2',
+      'PBV (X) (ClosePrice/BV)' => '3.4',
+      'DER (X) (T.Liab/T.Eq)' => '4.8',
+      'ROA (X) (NI*/T.Assrts)' => '2.9',
+      'ROE (X) (NI*/T.Equity)' => '16.9',
+      'Op.Margin (%) (EBIT/Sales)' => '48.4',
+    ),
+  ),
+  'BBHI' => 
+  array (
+  ),
+  'BBKP' => 
+  array (
+  ),
+  'BBLD' => 
+  array (
+  ),
+  'BBMD' => 
+  array (
+  ),
+  'BBNI' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '11,559,151,000,000',
+      'Cost of Good Sold' => '0',
+      'Gross Profit' => '11,559,151,000,000',
+      'Operation Expenses' => '-7,432,641,000,000',
+      'EBIT' => '4,126,510,000,000',
+      'Other Income/Expenses' => '-74,244,000,000',
+      'Earning Before Tax' => '4,052,266,000,000',
+      'Net Income After Tax' => '3,251,103,000,000',
+      'Minority Interest' => '-24,452,000,000',
+      'Net Income(NI)' => '3,226,651,000,000',
+      'Earning Per Share(EPS)' => '174',
+      'Book Value Per Share(BV)' => '4,731',
+      'Close Price' => '6,475',
+      'PER(Colse Price/EPS*)' => '9.3',
+      'PBV(Close Price/BV)' => '1.4',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '9.3',
+      'PBV (X) (ClosePrice/BV)' => '1.4',
+      'DER (X) (T.Liab/T.Eq)' => '6.0',
+      'ROA (X) (NI*/T.Assrts)' => '2.0',
+      'ROE (X) (NI*/T.Equity)' => '14.8',
+      'Op.Margin (%) (EBIT/Sales)' => '36.0',
+    ),
+  ),
+  'BBNP' => 
+  array (
+  ),
+  'BBRI' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '24,654,834,000,000',
+      'Cost of Good Sold' => '0',
+      'Gross Profit' => '24,654,834,000,000',
+      'Operation Expenses' => '-16,684,861,000,000',
+      'EBIT' => '7,969,973,000,000',
+      'Other Income/Expenses' => '143,697,000,000',
+      'Earning Before Tax' => '8,113,670,000,000',
+      'Net Income After Tax' => '6,659,610,000,000',
+      'Minority Interest' => '-13,911,000,000',
+      'Net Income(NI)' => '6,645,699,000,000',
+      'Earning Per Share(EPS)' => '272',
+      'Book Value Per Share(BV)' => '5,883',
+      'Close Price' => '12,975',
+      'PER(Colse Price/EPS*)' => '11.9',
+      'PBV(Close Price/BV)' => '2.2',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '11.9',
+      'PBV (X) (ClosePrice/BV)' => '2.2',
+      'DER (X) (T.Liab/T.Eq)' => '5.9',
+      'ROA (X) (NI*/T.Assrts)' => '2.7',
+      'ROE (X) (NI*/T.Equity)' => '18.5',
+      'Op.Margin (%) (EBIT/Sales)' => '32.3',
+    ),
+  ),
+  'BBRM' => 
+  array (
+  ),
+  'BBTN' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '4,559,240,000,000',
+      'Cost of Good Sold' => '0',
+      'Gross Profit' => '4,559,240,000,000',
+      'Operation Expenses' => '-3,774,956,000,000',
+      'EBIT' => '784,284,000,000',
+      'Other Income/Expenses' => '122,000,000',
+      'Earning Before Tax' => '784,406,000,000',
+      'Net Income After Tax' => '594,384,000,000',
+      'Minority Interest' => '0',
+      'Net Income(NI)' => '594,384,000,000',
+      'Earning Per Share(EPS)' => '56',
+      'Book Value Per Share(BV)' => '1,830',
+      'Close Price' => '2,270',
+      'PER(Colse Price/EPS*)' => '10.0',
+      'PBV(Close Price/BV)' => '1.2',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '10.0',
+      'PBV (X) (ClosePrice/BV)' => '1.2',
+      'DER (X) (T.Liab/T.Eq)' => '10.0',
+      'ROA (X) (NI*/T.Assrts)' => '1.0',
+      'ROE (X) (NI*/T.Equity)' => '12.4',
+      'Op.Margin (%) (EBIT/Sales)' => '17.0',
+    ),
+  ),
+  'BBYB' => 
+  array (
+  ),
+  'BCAP' => 
+  array (
+  ),
+  'BCIC' => 
+  array (
+  ),
+  'BCIP' => 
+  array (
+  ),
+  'BDMN' => 
+  array (
+  ),
+  'BEKS' => 
+  array (
+  ),
+  'BEST' => 
+  array (
+  ),
+  'BFIN' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '901,439,000,000',
+      'Cost of Good Sold' => '0',
+      'Gross Profit' => '901,439,000,000',
+      'Operation Expenses' => '-94,771,000,000',
+      'EBIT' => '806,668,000,000',
+      'Other Income/Expenses' => '-487,759,000,000',
+      'Earning Before Tax' => '318,909,000,000',
+      'Net Income After Tax' => '254,433,000,000',
+      'Minority Interest' => '0',
+      'Net Income(NI)' => '254,433,000,000',
+      'Earning Per Share(EPS)' => '159',
+      'Book Value Per Share(BV)' => '2,817',
+      'Close Price' => '4,790',
+      'PER(Colse Price/EPS*)' => '7.5',
+      'PBV(Close Price/BV)' => '1.7',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '7.5',
+      'PBV (X) (ClosePrice/BV)' => '1.7',
+      'DER (X) (T.Liab/T.Eq)' => '2.0',
+      'ROA (X) (NI*/T.Assrts)' => '7.6',
+      'ROE (X) (NI*/T.Equity)' => '22.6',
+      'Op.Margin (%) (EBIT/Sales)' => '89.5',
+    ),
+  ),
+  'BGTG' => 
+  array (
+  ),
+  'BHIT' => 
+  array (
+  ),
+  'BIKA' => 
+  array (
+  ),
+  'BIMA' => 
+  array (
+  ),
+  'BINA' => 
+  array (
+  ),
+  'BIPI' => 
+  array (
+  ),
+  'BIPP' => 
+  array (
+  ),
+  'BIRD' => 
+  array (
+  ),
+  'BISI' => 
+  array (
+  ),
+  'BJBR' => 
+  array (
+  ),
+  'BJTM' => 
+  array (
+  ),
+  'BKDP' => 
+  array (
+  ),
+  'BKSL' => 
+  array (
+  ),
+  'BKSW' => 
+  array (
+  ),
+  'BLTA' => 
+  array (
+  ),
+  'BLTZ' => 
+  array (
+  ),
+  'BMAS' => 
+  array (
+  ),
+  'BMRI' => 
+  array (
+  ),
+  'BMSR' => 
+  array (
+  ),
+  'BMTR' => 
+  array (
+  ),
+  'BNBA' => 
+  array (
+  ),
+  'BNBR' => 
+  array (
+  ),
+  'BNGA' => 
+  array (
+  ),
+  'BNII' => 
+  array (
+  ),
+  'BNLI' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '3,020,319,000,000',
+      'Cost of Good Sold' => '0',
+      'Gross Profit' => '3,020,319,000,000',
+      'Operation Expenses' => '-2,424,477,000,000',
+      'EBIT' => '595,842,000,000',
+      'Other Income/Expenses' => '0',
+      'Earning Before Tax' => '595,842,000,000',
+      'Net Income After Tax' => '452,648,000,000',
+      'Minority Interest' => '0',
+      'Net Income(NI)' => '452,648,000,000',
+      'Earning Per Share(EPS)' => '20',
+      'Book Value Per Share(BV)' => '894',
+      'Close Price' => '670',
+      'PER(Colse Price/EPS*)' => '8.2',
+      'PBV(Close Price/BV)' => '0.7',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '8.2',
+      'PBV (X) (ClosePrice/BV)' => '0.7',
+      'DER (X) (T.Liab/T.Eq)' => '7.0',
+      'ROA (X) (NI*/T.Assrts)' => '1.0',
+      'ROE (X) (NI*/T.Equity)' => '9.2',
+      'Op.Margin (%) (EBIT/Sales)' => '20.0',
+    ),
+  ),
+  'BOGA' => 
+  array (
+  ),
+  'BOLT' => 
+  array (
+  ),
+  'BORN' => 
+  array (
+  ),
+  'BPFI' => 
+  array (
+  ),
+  'BPII' => 
+  array (
+  ),
+  'BRAM' => 
+  array (
+  ),
+  'BRAU' => 
+  array (
+  ),
+  'BRMS' => 
+  array (
+  ),
+  'BRNA' => 
+  array (
+  ),
+  'BRPT' => 
+  array (
+  ),
+  'BSDE' => 
+  array (
+  ),
+  'BSIM' => 
+  array (
+  ),
+  'BSSR' => 
+  array (
+  ),
+  'BSWD' => 
+  array (
+  ),
+  'BTEK' => 
+  array (
+  ),
+  'BTEL' => 
+  array (
+  ),
+  'BTON' => 
+  array (
+  ),
+  'BTPN' => 
+  array (
+  ),
+  'BUDI' => 
+  array (
+  ),
+  'BUKK' => 
+  array (
+  ),
+  'BULL' => 
+  array (
+  ),
+  'BUMI' => 
+  array (
+  ),
+  'BUVA' => 
+  array (
+  ),
+  'BVIC' => 
+  array (
+  ),
+  'BWPT' => 
+  array (
+  ),
+  'BYAN' => 
+  array (
+  ),
+  'CANI' => 
+  array (
+  ),
+  'CARS' => 
+  array (
+  ),
+  'CASA' => 
+  array (
+  ),
+  'CASS' => 
+  array (
+  ),
+  'CEKA' => 
+  array (
+  ),
+  'CENT' => 
+  array (
+  ),
+  'CFIN' => 
+  array (
+  ),
+  'CINT' => 
+  array (
+  ),
+  'CITA' => 
+  array (
+  ),
+  'CKRA' => 
+  array (
+  ),
+  'CLPI' => 
+  array (
+  ),
+  'CMNP' => 
+  array (
+  ),
+  'CMPP' => 
+  array (
+  ),
+  'CNKO' => 
+  array (
+  ),
+  'CNTX' => 
+  array (
+  ),
+  'COWL' => 
+  array (
+  ),
+  'CPGT' => 
+  array (
+  ),
+  'CPIN' => 
+  array (
+  ),
+  'CPRO' => 
+  array (
+  ),
+  'CSAP' => 
+  array (
+  ),
+  'CTBN' => 
+  array (
+  ),
+  'CTRA' => 
+  array (
+  ),
+  'CTTH' => 
+  array (
+  ),
+  'DAJK' => 
+  array (
+  ),
+  'DART' => 
+  array (
+  ),
+  'DAYA' => 
+  array (
+  ),
+  'DEFI' => 
+  array (
+  ),
+  'DEWA' => 
+  array (
+  ),
+  'DGIK' => 
+  array (
+  ),
+  'DILD' => 
+  array (
+  ),
+  'DKFT' => 
+  array (
+  ),
+  'DLTA' => 
+  array (
+  ),
+  'DMAS' => 
+  array (
+  ),
+  'DNAR' => 
+  array (
+  ),
+  'DNET' => 
+  array (
+  ),
+  'DOID' => 
+  array (
+  ),
+  'DPNS' => 
+  array (
+  ),
+  'DPUM' => 
+  array (
+  ),
+  'DSFI' => 
+  array (
+  ),
+  'DSNG' => 
+  array (
+  ),
+  'DSSA' => 
+  array (
+  ),
+  'DUTI' => 
+  array (
+  ),
+  'DVLA' => 
+  array (
+  ),
+  'DYAN' => 
+  array (
+  ),
+  'ECII' => 
+  array (
+  ),
+  'EKAD' => 
+  array (
+  ),
+  'ELSA' => 
+  array (
+  ),
+  'ELTY' => 
+  array (
+  ),
+  'EMDE' => 
+  array (
+  ),
+  'EMTK' => 
+  array (
+  ),
+  'ENRG' => 
+  array (
+  ),
+  'EPMT' => 
+  array (
+  ),
+  'ERAA' => 
+  array (
+  ),
+  'ERTX' => 
+  array (
+  ),
+  'ESSA' => 
+  array (
+  ),
+  'ESTI' => 
+  array (
+  ),
+  'ETWA' => 
+  array (
+  ),
+  'EXCL' => 
+  array (
+  ),
+  'FAST' => 
+  array (
+  ),
+  'FASW' => 
+  array (
+  ),
+  'FISH' => 
+  array (
+  ),
+  'FMII' => 
+  array (
+  ),
+  'FORU' => 
+  array (
+  ),
+  'FPNI' => 
+  array (
+  ),
+  'FREN' => 
+  array (
+  ),
+  'GAMA' => 
+  array (
+  ),
+  'GDST' => 
+  array (
+  ),
+  'GDYR' => 
+  array (
+  ),
+  'GEMA' => 
+  array (
+  ),
+  'GEMS' => 
+  array (
+  ),
+  'GGRM' => 
+  array (
+  ),
+  'GIAA' => 
+  array (
+  ),
+  'GJTL' => 
+  array (
+  ),
+  'GLOB' => 
+  array (
+  ),
+  'GMCW' => 
+  array (
+  ),
+  'GMTD' => 
+  array (
+  ),
+  'GOLD' => 
+  array (
+  ),
+  'GOLL' => 
+  array (
+  ),
+  'GPRA' => 
+  array (
+  ),
+  'GREN' => 
+  array (
+  ),
+  'GSMF' => 
+  array (
+  ),
+  'GTBO' => 
+  array (
+  ),
+  'GWSA' => 
+  array (
+  ),
+  'GZCO' => 
+  array (
+  ),
+  'HADE' => 
+  array (
+  ),
+  'HDFA' => 
+  array (
+  ),
+  'HDTX' => 
+  array (
+  ),
+  'HERO' => 
+  array (
+  ),
+  'HEXA' => 
+  array (
+  ),
+  'HITS' => 
+  array (
+  ),
+  'HMSP' => 
+  array (
+  ),
+  'HOME' => 
+  array (
+  ),
+  'HOTL' => 
+  array (
+  ),
+  'HRUM' => 
+  array (
+  ),
+  'IATA' => 
+  array (
+  ),
+  'IBFN' => 
+  array (
+  ),
+  'IBST' => 
+  array (
+  ),
+  'ICBP' => 
+  array (
+  ),
+  'ICON' => 
+  array (
+  ),
+  'IDPR' => 
+  array (
+  ),
+  'IGAR' => 
+  array (
+  ),
+  'IIKP' => 
+  array (
+  ),
+  'IKAI' => 
+  array (
+  ),
+  'IKBI' => 
+  array (
+  ),
+  'IMAS' => 
+  array (
+  ),
+  'IMJS' => 
+  array (
+  ),
+  'IMPC' => 
+  array (
+  ),
+  'INAF' => 
+  array (
+  ),
+  'INAI' => 
+  array (
+  ),
+  'INCF' => 
+  array (
+  ),
+  'INCI' => 
+  array (
+  ),
+  'INCO' => 
+  array (
+  ),
+  'INDF' => 
+  array (
+  ),
+  'INDR' => 
+  array (
+  ),
+  'INDS' => 
+  array (
+  ),
+  'INDX' => 
+  array (
+  ),
+  'INDY' => 
+  array (
+  ),
+  'INKP' => 
+  array (
+  ),
+  'INPC' => 
+  array (
+  ),
+  'INPP' => 
+  array (
+  ),
+  'INRU' => 
+  array (
+  ),
+  'INTA' => 
+  array (
+  ),
+  'INTD' => 
+  array (
+  ),
+  'INTP' => 
+  array (
+  ),
+  'INVS' => 
+  array (
+  ),
+  'IPOL' => 
+  array (
+  ),
+  'ISAT' => 
+  array (
+  ),
+  'ISSP' => 
+  array (
+  ),
+  'ITMA' => 
+  array (
+  ),
+  'ITMG' => 
+  array (
+  ),
+  'ITTG' => 
+  array (
+  ),
+  'JAWA' => 
+  array (
+  ),
+  'JECC' => 
+  array (
+  ),
+  'JGLE' => 
+  array (
+  ),
+  'JIHD' => 
+  array (
+  ),
+  'JKON' => 
+  array (
+  ),
+  'JKSW' => 
+  array (
+  ),
+  'JPFA' => 
+  array (
+  ),
+  'JPRS' => 
+  array (
+  ),
+  'JRPT' => 
+  array (
+  ),
+  'JSMR' => 
+  array (
+  ),
+  'JSPT' => 
+  array (
+  ),
+  'JTPE' => 
+  array (
+  ),
+  'KAEF' => 
+  array (
+  ),
+  'KARW' => 
+  array (
+  ),
+  'KBLI' => 
+  array (
+  ),
+  'KBLM' => 
+  array (
+  ),
+  'KBLV' => 
+  array (
+  ),
+  'KBRI' => 
+  array (
+  ),
+  'KDSI' => 
+  array (
+  ),
+  'KIAS' => 
+  array (
+  ),
+  'KICI' => 
+  array (
+  ),
+  'KIJA' => 
+  array (
+  ),
+  'KINO' => 
+  array (
+  ),
+  'KKGI' => 
+  array (
+  ),
+  'KLBF' => 
+  array (
+  ),
+  'KOBX' => 
+  array (
+  ),
+  'KOIN' => 
+  array (
+  ),
+  'KONI' => 
+  array (
+  ),
+  'KOPI' => 
+  array (
+  ),
+  'KPIG' => 
+  array (
+  ),
+  'KRAH' => 
+  array (
+  ),
+  'KRAS' => 
+  array (
+  ),
+  'KREN' => 
+  array (
+  ),
+  'LAMI' => 
+  array (
+  ),
+  'LAPD' => 
+  array (
+  ),
+  'LCGP' => 
+  array (
+  ),
+  'LEAD' => 
+  array (
+  ),
+  'LINK' => 
+  array (
+  ),
+  'LION' => 
+  array (
+  ),
+  'LMAS' => 
+  array (
+  ),
+  'LMPI' => 
+  array (
+  ),
+  'LMSH' => 
+  array (
+  ),
+  'LPCK' => 
+  array (
+  ),
+  'LPGI' => 
+  array (
+  ),
+  'LPIN' => 
+  array (
+  ),
+  'LPKR' => 
+  array (
+  ),
+  'LPLI' => 
+  array (
+  ),
+  'LPPF' => 
+  array (
+  ),
+  'LPPS' => 
+  array (
+  ),
+  'LRNA' => 
+  array (
+  ),
+  'LSIP' => 
+  array (
+  ),
+  'LTLS' => 
+  array (
+  ),
+  'MAGP' => 
+  array (
+  ),
+  'MAIN' => 
+  array (
+  ),
+  'MAMI' => 
+  array (
+  ),
+  'MAPI' => 
+  array (
+  ),
+  'MARI' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '22,564,138,677',
+      'Cost of Good Sold' => '-10,835,733,545',
+      'Gross Profit' => '11,728,405,132',
+      'Operation Expenses' => '-45,923,640',
+      'EBIT' => '11,682,481,492',
+      'Other Income/Expenses' => '405,426,638',
+      'Earning Before Tax' => '12,087,908,130',
+      'Net Income After Tax' => '9,016,091,033',
+      'Minority Interest' => '0',
+      'Net Income(NI)' => '9,016,091,033',
+      'Earning Per Share(EPS)' => '17',
+      'Book Value Per Share(BV)' => '350',
+      'Close Price' => '1,215',
+      'PER(Colse Price/EPS*)' => '17.7',
+      'PBV(Close Price/BV)' => '3.5',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '17.7',
+      'PBV (X) (ClosePrice/BV)' => '3.5',
+      'DER (X) (T.Liab/T.Eq)' => '0.2',
+      'ROA (X) (NI*/T.Assrts)' => '16.8',
+      'ROE (X) (NI*/T.Equity)' => '19.6',
+      'Op.Margin (%) (EBIT/Sales)' => '51.8',
+    ),
+  ),
+  'MASA' => 
+  array (
+  ),
+  'MAYA' => 
+  array (
+  ),
+  'MBAP' => 
+  array (
+  ),
+  'MBSS' => 
+  array (
+  ),
+  'MBTO' => 
+  array (
+  ),
+  'MCOR' => 
+  array (
+  ),
+  'MDIA' => 
+  array (
+  ),
+  'MDKA' => 
+  array (
+  ),
+  'MDLN' => 
+  array (
+  ),
+  'MDRN' => 
+  array (
+  ),
+  'MEDC' => 
+  array (
+  ),
+  'MEGA' => 
+  array (
+  ),
+  'MERK' => 
+  array (
+  ),
+  'META' => 
+  array (
+  ),
+  'MFIN' => 
+  array (
+  ),
+  'MFMI' => 
+  array (
+  ),
+  'MGNA' => 
+  array (
+  ),
+  'MICE' => 
+  array (
+  ),
+  'MIDI' => 
+  array (
+  ),
+  'MIKA' => 
+  array (
+  ),
+  'MIRA' => 
+  array (
+  ),
+  'MITI' => 
+  array (
+  ),
+  'MKNT' => 
+  array (
+  ),
+  'MKPI' => 
+  array (
+  ),
+  'MLBI' => 
+  array (
+  ),
+  'MLIA' => 
+  array (
+  ),
+  'MLPL' => 
+  array (
+  ),
+  'MLPT' => 
+  array (
+  ),
+  'MMLP' => 
+  array (
+  ),
+  'MNCN' => 
+  array (
+  ),
+  'MPMX' => 
+  array (
+  ),
+  'MPPA' => 
+  array (
+  ),
+  'MRAT' => 
+  array (
+  ),
+  'MREI' => 
+  array (
+  ),
+  'MSKY' => 
+  array (
+  ),
+  'MTDL' => 
+  array (
+  ),
+  'MTFN' => 
+  array (
+  ),
+  'MTLA' => 
+  array (
+  ),
+  'MTRA' => 
+  array (
+  ),
+  'MTSM' => 
+  array (
+  ),
+  'MYOH' => 
+  array (
+  ),
+  'MYOR' => 
+  array (
+  ),
+  'MYRX' => 
+  array (
+  ),
+  'MYTX' => 
+  array (
+  ),
+  'NAGA' => 
+  array (
+  ),
+  'NELY' => 
+  array (
+  ),
+  'NIKL' => 
+  array (
+  ),
+  'NIPS' => 
+  array (
+  ),
+  'NIRO' => 
+  array (
+  ),
+  'NISP' => 
+  array (
+  ),
+  'NOBU' => 
+  array (
+  ),
+  'NRCA' => 
+  array (
+  ),
+  'OASA' => 
+  array (
+  ),
+  'OCAP' => 
+  array (
+  ),
+  'OKAS' => 
+  array (
+  ),
+  'OMRE' => 
+  array (
+  ),
+  'PADI' => 
+  array (
+  ),
+  'PALM' => 
+  array (
+  ),
+  'PANR' => 
+  array (
+  ),
+  'PANS' => 
+  array (
+  ),
+  'PBRX' => 
+  array (
+  ),
+  'PBSA' => 
+  array (
+  ),
+  'PDES' => 
+  array (
+  ),
+  'PEGE' => 
+  array (
+  ),
+  'PGAS' => 
+  array (
+  ),
+  'PGLI' => 
+  array (
+  ),
+  'PICO' => 
+  array (
+  ),
+  'PJAA' => 
+  array (
+  ),
+  'PKPK' => 
+  array (
+  ),
+  'PLAS' => 
+  array (
+  ),
+  'PLIN' => 
+  array (
+  ),
+  'PNBN' => 
+  array (
+  ),
+  'PNBS' => 
+  array (
+  ),
+  'PNIN' => 
+  array (
+  ),
+  'PNLF' => 
+  array (
+  ),
+  'PNSE' => 
+  array (
+  ),
+  'POLY' => 
+  array (
+  ),
+  'POOL' => 
+  array (
+  ),
+  'PORT' => 
+  array (
+  ),
+  'POWR' => 
+  array (
+  ),
+  'PPRO' => 
+  array (
+  ),
+  'PRAS' => 
+  array (
+  ),
+  'PRDA' => 
+  array (
+  ),
+  'PSAB' => 
+  array (
+  ),
+  'PSDN' => 
+  array (
+  ),
+  'PSKT' => 
+  array (
+  ),
+  'PTBA' => 
+  array (
+  ),
+  'PTIS' => 
+  array (
+  ),
+  'PTPP' => 
+  array (
+  ),
+  'PTRO' => 
+  array (
+  ),
+  'PTSN' => 
+  array (
+  ),
+  'PTSP' => 
+  array (
+  ),
+  'PUDP' => 
+  array (
+  ),
+  'PWON' => 
+  array (
+  ),
+  'PYFA' => 
+  array (
+  ),
+  'RAJA' => 
+  array (
+  ),
+  'RALS' => 
+  array (
+  ),
+  'RANC' => 
+  array (
+  ),
+  'RBMS' => 
+  array (
+  ),
+  'RDTX' => 
+  array (
+  ),
+  'RELI' => 
+  array (
+  ),
+  'RICY' => 
+  array (
+  ),
+  'RIGS' => 
+  array (
+  ),
+  'RIMO' => 
+  array (
+  ),
+  'RMBA' => 
+  array (
+  ),
+  'RODA' => 
+  array (
+  ),
+  'ROTI' => 
+  array (
+  ),
+  'RUIS' => 
+  array (
+  ),
+  'SAFE' => 
+  array (
+  ),
+  'SAME' => 
+  array (
+  ),
+  'SCBD' => 
+  array (
+  ),
+  'SCCO' => 
+  array (
+  ),
+  'SCMA' => 
+  array (
+  ),
+  'SCPI' => 
+  array (
+  ),
+  'SDMU' => 
+  array (
+  ),
+  'SDPC' => 
+  array (
+  ),
+  'SDRA' => 
+  array (
+  ),
+  'SGRO' => 
+  array (
+  ),
+  'SHID' => 
+  array (
+  ),
+  'SHIP' => 
+  array (
+  ),
+  'SIAP' => 
+  array (
+  ),
+  'SIDO' => 
+  array (
+  ),
+  'SILO' => 
+  array (
+  ),
+  'SIMA' => 
+  array (
+  ),
+  'SIMP' => 
+  array (
+  ),
+  'SIPD' => 
+  array (
+  ),
+  'SKBM' => 
+  array (
+  ),
+  'SKLT' => 
+  array (
+  ),
+  'SKYB' => 
+  array (
+  ),
+  'SMAR' => 
+  array (
+  ),
+  'SMBR' => 
+  array (
+  ),
+  'SMCB' => 
+  array (
+  ),
+  'SMDM' => 
+  array (
+  ),
+  'SMDR' => 
+  array (
+  ),
+  'SMGR' => 
+  array (
+  ),
+  'SMMA' => 
+  array (
+  ),
+  'SMMT' => 
+  array (
+  ),
+  'SMRA' => 
+  array (
+  ),
+  'SMRU' => 
+  array (
+  ),
+  'SMSM' => 
+  array (
+  ),
+  'SOBI' => 
+  array (
+  ),
+  'SOCI' => 
+  array (
+  ),
+  'SONA' => 
+  array (
+  ),
+  'SPMA' => 
+  array (
+  ),
+  'SQBB' => 
+  array (
+  ),
+  'SQMI' => 
+  array (
+  ),
+  'SRAJ' => 
+  array (
+  ),
+  'SRIL' => 
+  array (
+  ),
+  'SRSN' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '132,007,834,000',
+      'Cost of Good Sold' => '-107,574,819,000',
+      'Gross Profit' => '24,433,015,000',
+      'Operation Expenses' => '-17,978,127,000',
+      'EBIT' => '6,454,888,000',
+      'Other Income/Expenses' => '-6,627,194,000',
+      'Earning Before Tax' => '-172,306,000',
+      'Net Income After Tax' => '-434,014,000',
+      'Minority Interest' => '0',
+      'Net Income(NI)' => '-434,014,000',
+      'Earning Per Share(EPS)' => '0',
+      'Book Value Per Share(BV)' => '66',
+      'Close Price' => '50',
+      'PER(Colse Price/EPS*)' => '-173.3',
+      'PBV(Close Price/BV)' => '0.7',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '-173.3',
+      'PBV (X) (ClosePrice/BV)' => '0.7',
+      'DER (X) (T.Liab/T.Eq)' => '0.8',
+      'ROA (X) (NI*/T.Assrts)' => '-0.2',
+      'ROE (X) (NI*/T.Equity)' => '-0.4',
+      'Op.Margin (%) (EBIT/Sales)' => '4.9',
+    ),
+  ),
+  'SRTG' => 
+  array (
+  ),
+  'SSIA' => 
+  array (
+  ),
+  'SSMS' => 
+  array (
+  ),
+  'SSTM' => 
+  array (
+  ),
+  'STAR' => 
+  array (
+  ),
+  'STTP' => 
+  array (
+  ),
+  'SUGI' => 
+  array (
+  ),
+  'SULI' => 
+  array (
+  ),
+  'SUPR' => 
+  array (
+  ),
+  'TALF' => 
+  array (
+  ),
+  'TARA' => 
+  array (
+  ),
+  'TAXI' => 
+  array (
+  ),
+  'TBIG' => 
+  array (
+  ),
+  'TBLA' => 
+  array (
+  ),
+  'TBMS' => 
+  array (
+  ),
+  'TCID' => 
+  array (
+  ),
+  'TELE' => 
+  array (
+  ),
+  'TFCO' => 
+  array (
+  ),
+  'TGKA' => 
+  array (
+  ),
+  'TIFA' => 
+  array (
+  ),
+  'TINS' => 
+  array (
+  ),
+  'TIRA' => 
+  array (
+  ),
+  'TIRT' => 
+  array (
+  ),
+  'TKGA' => 
+  array (
+  ),
+  'TKIM' => 
+  array (
+  ),
+  'TLKM' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '31,022,000,000,000',
+      'Cost of Good Sold' => '0',
+      'Gross Profit' => '31,022,000,000,000',
+      'Operation Expenses' => '-18,531,000,000,000',
+      'EBIT' => '12,491,000,000,000',
+      'Other Income/Expenses' => '-167,000,000,000',
+      'Earning Before Tax' => '12,324,000,000,000',
+      'Net Income After Tax' => '9,376,000,000,000',
+      'Minority Interest' => '-2,688,000,000,000',
+      'Net Income(NI)' => '6,688,000,000,000',
+      'Earning Per Share(EPS)' => '66',
+      'Book Value Per Share(BV)' => '903',
+      'Close Price' => '4,130',
+      'PER(Colse Price/EPS*)' => '15.6',
+      'PBV(Close Price/BV)' => '4.6',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '15.6',
+      'PBV (X) (ClosePrice/BV)' => '4.6',
+      'DER (X) (T.Liab/T.Eq)' => '0.8',
+      'ROA (X) (NI*/T.Assrts)' => '14.3',
+      'ROE (X) (NI*/T.Equity)' => '29.4',
+      'Op.Margin (%) (EBIT/Sales)' => '40.3',
+    ),
+  ),
+  'TMAS' => 
+  array (
+  ),
+  'TMPI' => 
+  array (
+  ),
+  'TMPO' => 
+  array (
+  ),
+  'TOBA' => 
+  array (
+  ),
+  'TOTL' => 
+  array (
+  ),
+  'TOTO' => 
+  array (
+  ),
+  'TOWR' => 
+  array (
+  ),
+  'TPIA' => 
+  array (
+  ),
+  'TPMA' => 
+  array (
+  ),
+  'TRAM' => 
+  array (
+  ),
+  'TRIL' => 
+  array (
+  ),
+  'TRIM' => 
+  array (
+  ),
+  'TRIO' => 
+  array (
+  ),
+  'TRIS' => 
+  array (
+  ),
+  'TRST' => 
+  array (
+  ),
+  'TRUB' => 
+  array (
+  ),
+  'TRUS' => 
+  array (
+  ),
+  'TSPC' => 
+  array (
+  ),
+  'TURI' => 
+  array (
+  ),
+  'ULTJ' => 
+  array (
+  ),
+  'UNIC' => 
+  array (
+  ),
+  'UNIT' => 
+  array (
+  ),
+  'UNSP' => 
+  array (
+  ),
+  'UNTR' => 
+  array (
+    '1st Quarter 2017' => 
+    array (
+      'Total Sales' => '13,679,376,000,000',
+      'Cost of Good Sold' => '-10,822,762,000,000',
+      'Gross Profit' => '2,856,614,000,000',
+      'Operation Expenses' => '-771,661,000,000',
+      'EBIT' => '2,084,953,000,000',
+      'Other Income/Expenses' => '-35,428,000,000',
+      'Earning Before Tax' => '2,049,525,000,000',
+      'Net Income After Tax' => '1,575,858,000,000',
+      'Minority Interest' => '-74,762,000,000',
+      'Net Income(NI)' => '1,501,096,000,000',
+      'Earning Per Share(EPS)' => '402',
+      'Book Value Per Share(BV)' => '11,350',
+      'Close Price' => '26,500',
+      'PER(Colse Price/EPS*)' => '16.5',
+      'PBV(Close Price/BV)' => '2.3',
+      'Public Accountant' => '',
+      'PER (X) (ClostPrice/EPS*)' => '16.5',
+      'PBV (X) (ClosePrice/BV)' => '2.3',
+      'DER (X) (T.Liab/T.Eq)' => '1.0',
+      'ROA (X) (NI*/T.Assrts)' => '8.0',
+      'ROE (X) (NI*/T.Equity)' => '14.2',
+      'Op.Margin (%) (EBIT/Sales)' => '15.0',
+    ),
+  ),
+  'UNVR' => 
+  array (
+  ),
+  'VICO' => 
+  array (
+  ),
+  'VINS' => 
+  array (
+  ),
+  'VIVA' => 
+  array (
+  ),
+  'VOKS' => 
+  array (
+  ),
+  'VRNA' => 
+  array (
+  ),
+  'WAPO' => 
+  array (
+  ),
+  'WEHA' => 
+  array (
+  ),
+  'WICO' => 
+  array (
+  ),
+  'WIIM' => 
+  array (
+  ),
+  'WIKA' => 
+  array (
+  ),
+  'WINS' => 
+  array (
+  ),
+  'WOMF' => 
+  array (
+  ),
+  'WSBP' => 
+  array (
+  ),
+  'WSKT' => 
+  array (
+  ),
+  'WTON' => 
+  array (
+  ),
+  'YPAS' => 
+  array (
+  ),
+  'YULE' => 
+  array (
+  ),
+  'ZBRA' => 
+  array (
+  ),
+);
