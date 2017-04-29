@@ -111,7 +111,7 @@ foreach ($grouped as $code => $yearly_info) {
 	// quick fix
 	foreach ($included_years as $y) {
 		if (isset($dividens[$code]['dividen'][$y])) {
-			$compiled[$code]['Dividen'][$y] = implode(',', $dividens[$code]['dividen'][$y]);
+			$compiled[$code]['Dividen'][$y] = implode(', ', $dividens[$code]['dividen'][$y]);
 		}
 	}
 
