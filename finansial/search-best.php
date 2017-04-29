@@ -76,7 +76,11 @@ foreach ($grouped as $code => $yearly_info) {
 	if (!$infonow || !$infoprev || !$infoprev2) continue;
 
 	$compiled[$code] = $stocks[$code];
-	$compiled[$code]['Price~'] = $infonow['close_price'];
+	$compiled[$code]['Close Price'] = [
+		$ynow => $infonow['close_price'],
+		$yprev => $infoprev['close_price'],
+		$yprev2 => $infoprev2['close_price'],
+	];
 
 	$compiled[$code]['Total Aset'] = [
 		$ynow => $infonow['total_asset'],
@@ -105,8 +109,10 @@ foreach ($grouped as $code => $yearly_info) {
 	];
 	$compiled[$code]['Dividen'] = '';
 	// quick fix
-	if (isset($dividens[$code])) {
-		$compiled[$code]['Dividen'] = $dividens[$code];
+	foreach ($included_years as $y) {
+		if (isset($dividens[$code]['dividen'][$y])) {
+			$compiled[$code]['Dividen'][$y] = implode(',', $dividens[$code]['dividen'][$y]);
+		}
 	}
 
 	$compiled[$code]['ROE'] = [
