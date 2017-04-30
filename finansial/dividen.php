@@ -13,6 +13,9 @@ require 'vendor/autoload.php';
 // 6. Parse xls, group by year and saham
 // 7. compile into list
 // HATI2 SAMA STOCK SPLIT! https://www.sahamok.com/emiten/saham-stock-split-reverse/stock-split-stock-reverse-2016/
+// Alt: http://chart.finance.yahoo.com/table.csv?s=HMSP.JK&a=0&b=1&c=2010&d=11&e=31&f=2016&g=v&ignore=.csv
+// http://finance.yahoo.com/quote/HMSP.JK/history?period1=1451581200&period2=1483117200&interval=div%7Csplit&filter=split&frequency=1mo
+// need research to parse: https://query2.finance.yahoo.com/v8/finance/chart/INAI.JK?formatted=true&crumb=L2o8uRPbeFo&lang=en-US&region=US&period1=1262278800&period2=1483117200&interval=1mo&events=div%7Csplit&corsDomain=finance.yahoo.com
 
 function exporte($file, $value) {
 	file_put_contents($file, '<?php return '.var_export($value, true).';');

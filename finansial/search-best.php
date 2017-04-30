@@ -206,4 +206,5 @@ usort($compiled, function ($a, $b) use ($ynow) {
 	else return 0;
 });
 
-file_put_contents('search-best-buku.out', print_r($compiled, true));
+
+file_put_contents('search-best-buku.out', '<?php return '.var_export($compiled, true).';');
