@@ -799,7 +799,7 @@ function porncomix($url) {
 	$p = new Page($url);
 	$h = new simple_html_dom();
 	$h->load($p->content());
-	// print_r($p->content())
+	// print_r($p->content());
 
 	$title = $h->find('.post-title', 0)->innertext;
 
@@ -853,6 +853,7 @@ if ($_POST) {
 			'nhentai.net' => 'nhentai',
 			'tsumino.com' => 'tsumino',
 			'porncomix.info' => 'porncomix',
+			'www.porncomix.info' => 'porncomix',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
