@@ -375,7 +375,7 @@ function rule34($url) {
 		} else {
 			$continue = false;
 		}
-		$c->go_to("id='image-list'");
+		$c->go_to("id='imagelist'");
 		while ($line = $c->readline()) {
 			if (Crawler::is_there($line, '>Image Only<')) {
 				$href = Crawler::extract($line, '<br><a href="', '"');
