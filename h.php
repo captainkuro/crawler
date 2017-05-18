@@ -812,6 +812,20 @@ function porncomix($url) {
 	}
 }
 
+// https://www.porncomix.one/gallery/milftoon-nutcase
+function porncomix1($url) {
+	$p = new Page($url);
+	$h = new simple_html_dom();
+	$h->load($p->content());
+	$gal = $h->find('.unite-gallery', 0);
+
+	$title = basename($url);
+	foreach ($gal->find('img') as $img) {
+		$src = $img->getAttribute('data-image');
+		echo "<a href='$src'>$title</a><br>\n";
+	}
+}
+
 ?>
 <html>
 <body>
@@ -854,6 +868,7 @@ if ($_POST) {
 			'tsumino.com' => 'tsumino',
 			'porncomix.info' => 'porncomix',
 			'www.porncomix.info' => 'porncomix',
+			'www.porncomix.one' => 'porncomix1',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
