@@ -817,12 +817,23 @@ function porncomix1($url) {
 	$p = new Page($url);
 	$h = new simple_html_dom();
 	$h->load($p->content());
-	$gal = $h->find('.unite-gallery', 0);
-
 	$title = basename($url);
-	foreach ($gal->find('img') as $img) {
-		$src = $img->getAttribute('data-image');
-		echo "<a href='$src'>$title</a><br>\n";
+
+	$gal = $h->find('.unite-gallery', 0);
+	$gal2 = $h->find('#gallery-2', 0);
+
+	if ($gal) {
+		foreach ($gal->find('img') as $img) {
+			$src = $img->getAttribute('data-image');
+			echo "<a href='$src'>$title</a><br>\n";
+		}
+	} else if ($gal2) {
+		foreach ($gal2->find('.gallery-icon') as $dt) {
+			$src = $dt->find('a', 0)->href;
+			echo "<a href='$src'>$title</a><br>\n";
+		}
+	} else {
+		echo "Unknown pattern";
 	}
 }
 

@@ -7,7 +7,7 @@ class Rule34xxx_Downloader implements ADownloader {
 		return 'Rule34 XXX';
 	}
 
-	public function download () {
+	public function download() {
 		$this->default_dir = DConfig::p_folder();
 		
 		echo "List URL: ";
@@ -42,8 +42,9 @@ class Rule34xxx_Downloader implements ADownloader {
 
 	private function collect_images($url, $dir) {
 		$continue = true;
-		$domain = 'http://rule34.xxx/';
-		$base = 'http://rule34.xxx/index.php';
+		$domain = 'https://rule34.xxx/';
+		$base = 'https://rule34.xxx/index.php';
+		$i = 1;
 		do {
 			echo $url."\n";
 			$p = new Page($url);
@@ -55,13 +56,14 @@ class Rule34xxx_Downloader implements ADownloader {
 				$href = htmlspecialchars_decode($href);
 				echo "$domain$href\n";
 				$p2 = new Page($domain . $href);
-				$p2->go_line('Original image');
+				$p2->go_line('>Original image<');
 				$src = $p2->curr_line()
-					->cut_between('href="http:', '"')
+					->cut_between('href="//', '"')
 					->to_s();
-				$src = 'http:' . $src;
-				$outpath = $dir . basename($src);
+				$src = 'https://' . $src;
+				$outpath = $dir . Text::create($i)->pad(3) .'-'. basename($src);
 				download_it($src, $outpath, "--header=\"Accept: image/*\"");
+				$i++;
 	// echo '<pre>'.htmlspecialchars($p2->curr_line()).'</pre>';
 			}} while (!$p->next_line()->contain('<center>'));
 			$p->reset_line();
