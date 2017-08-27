@@ -58,7 +58,7 @@ class Rule34xxx_Downloader implements ADownloader {
 				$p2 = new Page($domain . $href);
 				$p2->go_line('>Original image<');
 				$src = $p2->curr_line()
-					->cut_between('href="//', '"')
+					->cut_between('href="https://', '"')
 					->to_s();
 				$src = 'https://' . $src;
 				$outpath = $dir . Text::create($i)->pad(3) .'-'. basename($src);
