@@ -238,5 +238,13 @@ usort($compiled, function ($a, $b) use ($ynow) {
 	else return 0;
 });
 
+$compiled = filter_var($compiled, FILTER_CALLBACK, ['options' => function ($value) {
+	if (is_numeric($value)) {
+		return number_format((float)$value, 2, ',', '.');
+	} else {
+		return $value;
+	}
+}]);
+
 
 file_put_contents('search-best-buku.out', '<?php return '.var_export($compiled, true).';');
