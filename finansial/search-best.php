@@ -148,50 +148,82 @@ function is_3_tahun($stockdata, $label, $arah) {
 // Give scores
 foreach ($compiled as $code => $stockdata) {
 	$score = 0;
+	$detail = [];
 	// Aset meningkat 3 tahun terakhir
 	if (is_3_tahun($stockdata, 'Total Aset', 'naik')) {
 		$score++;
+		$detail['Aset meningkat 3 tahun terakhir'] = 1;
+	} else {
+		$detail['Aset meningkat 3 tahun terakhir'] = 0;
 	}
 	// Modal meningkat 3 tahun terakhir
 	if (is_3_tahun($stockdata, 'Modal', 'naik')) {
 		$score++;
+		$detail['Modal meningkat 3 tahun terakhir'] = 1;
+	} else {
+		$detail['Modal meningkat 3 tahun terakhir'] = 0;
 	}
 	// Aset lancar > Hutang lancar (Current Ratio > 1)
 	if ($stockdata[$ynow]['Current Ratio'] > 1) {
 		$score++;
+		$detail['Aset lancar > Hutang lancar (Current Ratio > 1)'] = 1;
+	} else {
+		$detail['Aset lancar > Hutang lancar (Current Ratio > 1)'] = 0;
 	}
 	// Total Hutang < Total Aset (DAR < 1)
 	if ($stockdata[$ynow]['DAR'] < 1) {
 		$score++;
+		$detail['Total Hutang < Total Aset (DAR < 1)'] = 1;
+	} else {
+		$detail['Total Hutang < Total Aset (DAR < 1)'] = 0;
 	}
 	// Total Hutang < Total Modal > Hutang (DER < 1)
 	if ($stockdata[$ynow]['DER'] < 1) {
 		$score++;
+		$detail['Total Hutang < Total Modal > Hutang (DER < 1)'] = 1;
+	} else {
+		$detail['Total Hutang < Total Modal > Hutang (DER < 1)'] = 0;
 	}
 
 	// EPS meningkat 3 tahun terakhir
 	if (is_3_tahun($stockdata, 'EPS', 'naik')) {
 		$score++;
+		$detail['EPS meningkat 3 tahun terakhir'] = 1;
+	} else {
+		$detail['EPS meningkat 3 tahun terakhir'] = 0;
 	}
 	// Laba usaha meningkat 3 tahun terakhir
 	if (is_3_tahun($stockdata, 'Laba Usaha', 'naik')) {
 		$score++;
+		$detail['Laba usaha meningkat 3 tahun terakhir'] = 1;
+	} else {
+		$detail['Laba usaha meningkat 3 tahun terakhir'] = 0;
 	}
 	// Penjualan meningkat 3 tahun terakhir
 	if (is_3_tahun($stockdata, 'Penjualan', 'naik')) {
 		$score++;
+		$detail['Penjualan meningkat 3 tahun terakhir'] = 1;
+	} else {
+		$detail['Penjualan meningkat 3 tahun terakhir'] = 0;
 	}
 
 	// Arus kas bersih positif
 	if ($stockdata[$ynow]['Arus Kas'] > 0) {
 		$score++;
+		$detail['Arus kas bersih positif'] = 1;
+	} else {
+		$detail['Arus kas bersih positif'] = 0;
 	}
 	// Arus kas dari operasi > lainnya
 	if ($stockdata[$ynow]['Arus Kas Operasi'] > ($stockdata[$ynow]['Arus Kas Investasi'] + $stockdata[$ynow]['Arus Kas Pendanaan'])) {
 		$score++;
+		$detail['Arus kas dari operasi > lainnya'] = 1;
+	} else {
+		$detail['Arus kas dari operasi > lainnya'] = 0;
 	}
 
 	$compiled[$code]['Score'] = $score;
+	$compiled[$code]['Score Detail'] = $detail;
 	// Not counted:
 	// Rutin membagikan dividen
 	// Khusus bank, CAR > 8%
