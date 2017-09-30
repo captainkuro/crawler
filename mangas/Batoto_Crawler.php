@@ -5,7 +5,7 @@ class Batoto_Crawler implements Manga_Crawler {
 
 	public function __construct() {
 		$this->p = new Page(null, array(
-			CURLOPT_COOKIE => "__cfduid=d43a2850679622247b0321ecc8a6b52741483288079; _ga=GA1.2.304237761.1483288082; __qca=P0-1460143808-1483288083060; member_id=198664; rteStatus=rte; session_id=6c09653738b931f0790e024406b388b6; _gid=GA1.2.1259514004.1497025199; _gat=1; pass_hash=89bab6b6176091bc3cfaf60ccc29aee8; ipsconnect_d8874f8d538b1279c8106e636bf7afe9=1; coppa=0",
+			CURLOPT_COOKIE => "__cfduid=d43a2850679622247b0321ecc8a6b52741483288079; _ga=GA1.2.304237761.1483288082; __qca=P0-1460143808-1483288083060; member_id=198664; rteStatus=rte; session_id=9df81f141a3b422db0e9baed54f50a89; _gid=GA1.2.1293987899.1506164577; pass_hash=c8b688f7dc950cf94de5967968138ef6; ipsconnect_d8874f8d538b1279c8106e636bf7afe9=1; coppa=0",
 			CURLOPT_REFERER => 'http://bato.to/reader',
 			'become_firefox' => true,
 			CURLOPT_HTTPHEADER => ['X-Requested-With: XMLHttpRequest', 'Accept-Language: en-US,en;q=0.5'],
@@ -14,7 +14,7 @@ class Batoto_Crawler implements Manga_Crawler {
 
 	public function is_supported($url) {
 		return strpos($url, 'http://www.batoto.net/') !== false
-			|| strpos($url, 'http://bato.to/') !== false;
+			|| strpos($url, 'https://bato.to/') !== false;
 	}
 
 	public function is_single_chapter($url) {
@@ -74,7 +74,7 @@ class Batoto_Crawler implements Manga_Crawler {
 
 	private function get_areader($chapter_url) {
 		$id = parse_url($chapter_url, PHP_URL_FRAGMENT);
-		$url_pattern = "http://bato.to/areader?id={$id}&p=%s";
+		$url_pattern = "https://bato.to/areader?id={$id}&p=%s";
 		$this->p->fetch_url(sprintf($url_pattern, 1));
 // file_put_contents('batoto.debug', print_r($this->p, true)); //debug
 		$h = new simple_html_dom();

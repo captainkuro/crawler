@@ -101,7 +101,7 @@ class Sankakucomplex_Downloader implements ADownloader {
 
 	private function download_if_not_exist($img, $dir, $id) {
 		if ($img->pos('//') === 0) {
-			$src = 'https:' . $img->to_s();
+			$src = 'https:' . $img->html_entity_decode()->to_s();
 		} else {
 			$src = $img->to_s();
 		}
