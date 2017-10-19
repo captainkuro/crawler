@@ -108,8 +108,8 @@ class Hmanga extends Model {
 
 // Main program
 class Hbrowse implements Spider {
-	public static $update = 'http://www.hbrowse.com/browse/title/date/DESC';
-	public static $base = 'http://www.hbrowse.com';
+	public static $update = 'https://www.hbrowse.com/browse/title/date/DESC';
+	public static $base = 'https://www.hbrowse.com';
 	
 	public function get_title() {
 		return 'Hbrowse scraper';

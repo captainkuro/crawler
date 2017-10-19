@@ -1,0 +1,219 @@
+Page Object
+(
+    [url:protected] => http://bato.to/areader?id=7ff0b83b157a8da5&p=1
+    [prev_url:protected] => http://bato.to/areader?id=9883d4c46540dd5a&p=10
+    [opts] => Array
+        (
+            [10022] => __cfduid=d43a2850679622247b0321ecc8a6b52741483288079; _ga=GA1.2.304237761.1483288082; __qca=P0-1460143808-1483288083060; member_id=198664; rteStatus=rte; session_id=01edad3986c91cb44d5f5fef6ada5ad7; _gid=GA1.2.1062646240.1495473427; _gat=1
+            [10016] => http://bato.to/reader
+            [10023] => Array
+                (
+                    [0] => X-Requested-With: XMLHttpRequest
+                    [1] => Accept-Language: en-US,en;q=0.5
+                )
+
+        )
+
+    [content:protected] => <div class="moderation_bar rounded clear" style="text-align:center; margin-bottom:8px; height:30px; padding-top: 17px;">
+    <ul>
+        <li style="display: inline-block; margin-right: 20px;"><a href="http://bato.to/comic/_/comics/shingeki-no-kyojin-chibi-4-koma-training-squad-r10065">Shingeki no Kyojin Chibi 4-Koma&#33; Training Squad</a></li>
+        <li style="display: inline-block; margin-right: 20px;">
+            <select name="chapter_select" onchange="window.location=this.value;" style="max-width: 250px;">
+              <option value="http://bato.to/reader#7ff0b83b157a8da5" selected="selected">Ch.4.1: Extras</option><option value="http://bato.to/reader#9883d4c46540dd5a" >Ch.4: Episode 12-22</option><option value="http://bato.to/reader#d6afb42288400dcf" >Ch.3: Episode 11-15</option><option value="http://bato.to/reader#56f75d73a6edd960" >Ch.2: Episode 6-10</option><option value="http://bato.to/reader#c7df6eb5ce86bf77" >Ch.1: Episode 1-5</option>
+            </select>
+        </li>
+        <li style="display: inline-block; margin-right: 20px;">
+            <select name="group_select" onchange="window.location=this.value;">
+      <option value="http://bato.to/reader#7ff0b83b157a8da5" selected="selected">`「Nekyou.net」 - English</option>
+    </select>
+        </li>
+        <li style="display: inline-block; margin-right: 20px;">    <select name="page_select" id="page_select" onchange="window.location=this.value;">
+      <option value="http://bato.to/reader#7ff0b83b157a8da5_1" selected="selected">page 1</option><option value="http://bato.to/reader#7ff0b83b157a8da5_2" >page 2</option><option value="http://bato.to/reader#7ff0b83b157a8da5_3" >page 3</option><option value="http://bato.to/reader#7ff0b83b157a8da5_4" >page 4</option><option value="http://bato.to/reader#7ff0b83b157a8da5_5" >page 5</option><option value="http://bato.to/reader#7ff0b83b157a8da5_6" >page 6</option><option value="http://bato.to/reader#7ff0b83b157a8da5_7" >page 7</option>
+    </select></li>
+                    <li style="display: inline-block; float: left; margin-top:-11px;">
+                <a href="http://bato.to/reader#9883d4c46540dd5a" style="text-decoration:none;"><img src="http://bato.to/images/pprev.png" border="0" title="Previous Chapter" /></a>
+            </li>
+                <li style="display: inline-block; float: left; margin-top:-11px;">
+            <a href="http://bato.to/reader#9883d4c46540dd5a_last" style="text-decoration:none;"><img src="http://bato.to/images/prev.png" border=0" title="Previous Page" /></a>
+        </li>
+        
+                <li style="display: inline-block; float: right; margin-top:-11px;">
+            <a href="http://bato.to/reader#7ff0b83b157a8da5_2" style="text-decoration:none;"><img src="http://bato.to/images/next.png" border=0" title="Next Page" /></a>
+        </li>
+        <li style="display: inline-block; margin-right: 20px;"><a href="javascript:void(0)" onclick="$('read_settings').toggle();" title="Reader Settings"><img src="http://bato.to/forums/public/style_images/master/cog.png" /></a></li>
+    </ul>
+</div><div id="read_settings" style="clear:both; padding: 10px; border-radius: 4px; background-color: #F3F3F3; text-align:center; display:none;">
+<form action="" method="POST">
+    Current download settings: Auto. Currently loading from: <img src="http://img.bato.to/comics/misc/location.png" />. 
+    Change to: <select name='location'>
+        <option value="auto">Auto</option>
+        <option value="img3">Image Server EU</option>
+        <option value="img4">Image Server NA</option>
+        <option value="cdn">CDN (default)</option>
+        <option value="cdn2">CDN2 (testing)</option>
+    </select>
+    <input type="submit" name="submit" value="Submit" class="input_submit"/>
+</form>
+</div>    <div id="zoom_notice" style="margin:auto; margin-bottom: 3px; padding: 8px; border:1px solid #FFFF00; background: #FFFFEE; display:none; text-align:center;" onclick="toggle_full_image()">
+        <img src="http://bato.to/images/zoom_in.png" style="margin-top: -4px; margin-bottom: -4px;" /> The following page has been zoomed for your viewing comfort. Click this box to see the original size or press the Z key on your keyboard.
+    </div>
+    <div id="full_image" style="display: none; z-index: 1000;" onclick="toggle_full_image()">
+        <div style="position:absolute; z-index: 1001; top:0; left:0; width:100%; height:100%; background: #000; opacity: 0.8;" onclick="toggle_full_image()"></div>
+        <div style="position:absolute; z-index: 1002; left:0; margin:auto; text-align:center; width:100%;">
+            <img src="http://img.bato.to/comics/2013/09/19/s/read523aca83a2e9e/img000001.jpg" style="z-index: 1003; margin:auto; border: 4px solid #000;" />
+        </div>
+    </div>
+    <div style="text-align:center; position:relative; min-height:600px;" id="comic_wrap">
+        <div style="text-align:center; width:100%; position:relative; top:100px; margin-bottom:100px;right: 80px;">
+        <a href="http://bato.to/reader#7ff0b83b157a8da5_2">
+            <img id="comic_page" style="max-width: 100%;" src="http://img.bato.to/comics/2013/09/19/s/read523aca83a2e9e/img000001.jpg" alt="Shingeki no Kyojin Chibi 4-Koma&#33; Training Squad - ch 4.1 Page 1 | Batoto!" onerror="imgError(this);" onload="adjust_page_width();" />
+        </a>
+        </div>
+        <div style="position:absolute; right:50%; top:0;"><div style="position:relative; left:50%;"><div id="topa" style="margin-top: 5px; margin-bottom: 5px; width:728px; margin-left: auto; margin-right:auto; text-align:center;"><iframe id="50f82502ca6be" name="50f82502ca6be" src="http://ax-d.pixfuture.net/w/1.0/afr?auid=338511&cb=INSERT_RANDOM_NUMBER_HERE" frameBorder="0" frameSpacing="0" scrolling="no" width="728" height="90"><a href="http://ax-d.pixfuture.net/w/1.0/rc?cs=50f82502ca6be&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="http://ax-d.pixfuture.net/w/1.0/ai?auid=338511&cs=50f82502ca6be&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe></div></div></div>
+        <div style="width: 160px; height: 700px; position: absolute; top:100px; right:0; "><div style="width: 160px; padding-top: 5px; margin: 0 auto;"><iframe src="http://bato.to/ads/pixfuture-ads-160.html" frameborder="0" scrolling="no" width="160" height="600"><a href="http://ax-d.pixfuture.net/w/1.0/rc?cs=514762a80749e&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="http://ax-d.pixfuture.net/w/1.0/ai?auid=338510&cs=514762a80749e&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe></div></div>
+    </div><div class="moderation_bar rounded clear" style="text-align:center; margin-bottom:8px; height:30px; padding-top: 17px;">
+    <ul>
+        <li style="display: inline-block; margin-right: 20px;"><a href="http://bato.to/comic/_/comics/shingeki-no-kyojin-chibi-4-koma-training-squad-r10065">Shingeki no Kyojin Chibi 4-Koma&#33; Training Squad</a></li>
+        <li style="display: inline-block; margin-right: 20px;">
+            <select name="chapter_select" onchange="window.location=this.value;" style="max-width: 250px;">
+              <option value="http://bato.to/reader#7ff0b83b157a8da5" selected="selected">Ch.4.1: Extras</option><option value="http://bato.to/reader#9883d4c46540dd5a" >Ch.4: Episode 12-22</option><option value="http://bato.to/reader#d6afb42288400dcf" >Ch.3: Episode 11-15</option><option value="http://bato.to/reader#56f75d73a6edd960" >Ch.2: Episode 6-10</option><option value="http://bato.to/reader#c7df6eb5ce86bf77" >Ch.1: Episode 1-5</option>
+            </select>
+        </li>
+        <li style="display: inline-block; margin-right: 20px;">
+            <select name="group_select" onchange="window.location=this.value;">
+      <option value="http://bato.to/reader#7ff0b83b157a8da5" selected="selected">`「Nekyou.net」 - English</option>
+    </select>
+        </li>
+        <li style="display: inline-block; margin-right: 20px;">    <select name="page_select" id="page_select" onchange="window.location=this.value;">
+      <option value="http://bato.to/reader#7ff0b83b157a8da5_1" selected="selected">page 1</option><option value="http://bato.to/reader#7ff0b83b157a8da5_2" >page 2</option><option value="http://bato.to/reader#7ff0b83b157a8da5_3" >page 3</option><option value="http://bato.to/reader#7ff0b83b157a8da5_4" >page 4</option><option value="http://bato.to/reader#7ff0b83b157a8da5_5" >page 5</option><option value="http://bato.to/reader#7ff0b83b157a8da5_6" >page 6</option><option value="http://bato.to/reader#7ff0b83b157a8da5_7" >page 7</option>
+    </select></li>
+                    <li style="display: inline-block; float: left; margin-top:-11px;">
+                <a href="http://bato.to/reader#9883d4c46540dd5a" style="text-decoration:none;"><img src="http://bato.to/images/pprev.png" border="0" title="Previous Chapter" /></a>
+            </li>
+                <li style="display: inline-block; float: left; margin-top:-11px;">
+            <a href="http://bato.to/reader#9883d4c46540dd5a_last" style="text-decoration:none;"><img src="http://bato.to/images/prev.png" border=0" title="Previous Page" /></a>
+        </li>
+        
+                <li style="display: inline-block; float: right; margin-top:-11px;">
+            <a href="http://bato.to/reader#7ff0b83b157a8da5_2" style="text-decoration:none;"><img src="http://bato.to/images/next.png" border=0" title="Next Page" /></a>
+        </li>
+        <li style="display: inline-block; margin-right: 20px;"><a href="javascript:void(0)" onclick="$('read_settings').toggle();" title="Reader Settings"><img src="http://bato.to/forums/public/style_images/master/cog.png" /></a></li>
+    </ul>
+</div>    <script type='text/javascript'>
+    //<[!CDATA[
+        img = new Image();
+        img.src = "http://img.bato.to/comics/2013/09/19/s/read523aca83a2e9e/img000002.jpg";
+    //]]>
+    </script><script type='text/javascript'>
+    next_page = 'http://bato.to/reader#7ff0b83b157a8da5_2';
+    prev_page = 'http://bato.to/reader#9883d4c46540dd5a_last';
+    document.title = 'Shingeki no Kyojin Chibi 4-Koma&#33; Training Squad - ch 4.1 Page 1 | Batoto!';
+</script>
+    [lines:protected] => Array
+        (
+            [0] => <div class="moderation_bar rounded clear" style="text-align:center; margin-bottom:8px; height:30px; padding-top: 17px;">
+            [1] =>     <ul>
+            [2] =>         <li style="display: inline-block; margin-right: 20px;"><a href="http://bato.to/comic/_/comics/shingeki-no-kyojin-chibi-4-koma-training-squad-r10065">Shingeki no Kyojin Chibi 4-Koma&#33; Training Squad</a></li>
+            [3] =>         <li style="display: inline-block; margin-right: 20px;">
+            [4] =>             <select name="chapter_select" onchange="window.location=this.value;" style="max-width: 250px;">
+            [5] =>               <option value="http://bato.to/reader#7ff0b83b157a8da5" selected="selected">Ch.4.1: Extras</option><option value="http://bato.to/reader#9883d4c46540dd5a" >Ch.4: Episode 12-22</option><option value="http://bato.to/reader#d6afb42288400dcf" >Ch.3: Episode 11-15</option><option value="http://bato.to/reader#56f75d73a6edd960" >Ch.2: Episode 6-10</option><option value="http://bato.to/reader#c7df6eb5ce86bf77" >Ch.1: Episode 1-5</option>
+            [6] =>             </select>
+            [7] =>         </li>
+            [8] =>         <li style="display: inline-block; margin-right: 20px;">
+            [9] =>             <select name="group_select" onchange="window.location=this.value;">
+            [10] =>       <option value="http://bato.to/reader#7ff0b83b157a8da5" selected="selected">`「Nekyou.net」 - English</option>
+            [11] =>     </select>
+            [12] =>         </li>
+            [13] =>         <li style="display: inline-block; margin-right: 20px;">    <select name="page_select" id="page_select" onchange="window.location=this.value;">
+            [14] =>       <option value="http://bato.to/reader#7ff0b83b157a8da5_1" selected="selected">page 1</option><option value="http://bato.to/reader#7ff0b83b157a8da5_2" >page 2</option><option value="http://bato.to/reader#7ff0b83b157a8da5_3" >page 3</option><option value="http://bato.to/reader#7ff0b83b157a8da5_4" >page 4</option><option value="http://bato.to/reader#7ff0b83b157a8da5_5" >page 5</option><option value="http://bato.to/reader#7ff0b83b157a8da5_6" >page 6</option><option value="http://bato.to/reader#7ff0b83b157a8da5_7" >page 7</option>
+            [15] =>     </select></li>
+            [16] =>                     <li style="display: inline-block; float: left; margin-top:-11px;">
+            [17] =>                 <a href="http://bato.to/reader#9883d4c46540dd5a" style="text-decoration:none;"><img src="http://bato.to/images/pprev.png" border="0" title="Previous Chapter" /></a>
+            [18] =>             </li>
+            [19] =>                 <li style="display: inline-block; float: left; margin-top:-11px;">
+            [20] =>             <a href="http://bato.to/reader#9883d4c46540dd5a_last" style="text-decoration:none;"><img src="http://bato.to/images/prev.png" border=0" title="Previous Page" /></a>
+            [21] =>         </li>
+            [22] =>         
+            [23] =>                 <li style="display: inline-block; float: right; margin-top:-11px;">
+            [24] =>             <a href="http://bato.to/reader#7ff0b83b157a8da5_2" style="text-decoration:none;"><img src="http://bato.to/images/next.png" border=0" title="Next Page" /></a>
+            [25] =>         </li>
+            [26] =>         <li style="display: inline-block; margin-right: 20px;"><a href="javascript:void(0)" onclick="$('read_settings').toggle();" title="Reader Settings"><img src="http://bato.to/forums/public/style_images/master/cog.png" /></a></li>
+            [27] =>     </ul>
+            [28] => </div><div id="read_settings" style="clear:both; padding: 10px; border-radius: 4px; background-color: #F3F3F3; text-align:center; display:none;">
+            [29] => <form action="" method="POST">
+            [30] =>     Current download settings: Auto. Currently loading from: <img src="http://img.bato.to/comics/misc/location.png" />. 
+            [31] =>     Change to: <select name='location'>
+            [32] =>         <option value="auto">Auto</option>
+            [33] =>         <option value="img3">Image Server EU</option>
+            [34] =>         <option value="img4">Image Server NA</option>
+            [35] =>         <option value="cdn">CDN (default)</option>
+            [36] =>         <option value="cdn2">CDN2 (testing)</option>
+            [37] =>     </select>
+            [38] =>     <input type="submit" name="submit" value="Submit" class="input_submit"/>
+            [39] => </form>
+            [40] => </div>    <div id="zoom_notice" style="margin:auto; margin-bottom: 3px; padding: 8px; border:1px solid #FFFF00; background: #FFFFEE; display:none; text-align:center;" onclick="toggle_full_image()">
+            [41] =>         <img src="http://bato.to/images/zoom_in.png" style="margin-top: -4px; margin-bottom: -4px;" /> The following page has been zoomed for your viewing comfort. Click this box to see the original size or press the Z key on your keyboard.
+            [42] =>     </div>
+            [43] =>     <div id="full_image" style="display: none; z-index: 1000;" onclick="toggle_full_image()">
+            [44] =>         <div style="position:absolute; z-index: 1001; top:0; left:0; width:100%; height:100%; background: #000; opacity: 0.8;" onclick="toggle_full_image()"></div>
+            [45] =>         <div style="position:absolute; z-index: 1002; left:0; margin:auto; text-align:center; width:100%;">
+            [46] =>             <img src="http://img.bato.to/comics/2013/09/19/s/read523aca83a2e9e/img000001.jpg" style="z-index: 1003; margin:auto; border: 4px solid #000;" />
+            [47] =>         </div>
+            [48] =>     </div>
+            [49] =>     <div style="text-align:center; position:relative; min-height:600px;" id="comic_wrap">
+            [50] =>         <div style="text-align:center; width:100%; position:relative; top:100px; margin-bottom:100px;right: 80px;">
+            [51] =>         <a href="http://bato.to/reader#7ff0b83b157a8da5_2">
+            [52] =>             <img id="comic_page" style="max-width: 100%;" src="http://img.bato.to/comics/2013/09/19/s/read523aca83a2e9e/img000001.jpg" alt="Shingeki no Kyojin Chibi 4-Koma&#33; Training Squad - ch 4.1 Page 1 | Batoto!" onerror="imgError(this);" onload="adjust_page_width();" />
+            [53] =>         </a>
+            [54] =>         </div>
+            [55] =>         <div style="position:absolute; right:50%; top:0;"><div style="position:relative; left:50%;"><div id="topa" style="margin-top: 5px; margin-bottom: 5px; width:728px; margin-left: auto; margin-right:auto; text-align:center;"><iframe id="50f82502ca6be" name="50f82502ca6be" src="http://ax-d.pixfuture.net/w/1.0/afr?auid=338511&cb=INSERT_RANDOM_NUMBER_HERE" frameBorder="0" frameSpacing="0" scrolling="no" width="728" height="90"><a href="http://ax-d.pixfuture.net/w/1.0/rc?cs=50f82502ca6be&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="http://ax-d.pixfuture.net/w/1.0/ai?auid=338511&cs=50f82502ca6be&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe></div></div></div>
+            [56] =>         <div style="width: 160px; height: 700px; position: absolute; top:100px; right:0; "><div style="width: 160px; padding-top: 5px; margin: 0 auto;"><iframe src="http://bato.to/ads/pixfuture-ads-160.html" frameborder="0" scrolling="no" width="160" height="600"><a href="http://ax-d.pixfuture.net/w/1.0/rc?cs=514762a80749e&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="http://ax-d.pixfuture.net/w/1.0/ai?auid=338510&cs=514762a80749e&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe></div></div>
+            [57] =>     </div><div class="moderation_bar rounded clear" style="text-align:center; margin-bottom:8px; height:30px; padding-top: 17px;">
+            [58] =>     <ul>
+            [59] =>         <li style="display: inline-block; margin-right: 20px;"><a href="http://bato.to/comic/_/comics/shingeki-no-kyojin-chibi-4-koma-training-squad-r10065">Shingeki no Kyojin Chibi 4-Koma&#33; Training Squad</a></li>
+            [60] =>         <li style="display: inline-block; margin-right: 20px;">
+            [61] =>             <select name="chapter_select" onchange="window.location=this.value;" style="max-width: 250px;">
+            [62] =>               <option value="http://bato.to/reader#7ff0b83b157a8da5" selected="selected">Ch.4.1: Extras</option><option value="http://bato.to/reader#9883d4c46540dd5a" >Ch.4: Episode 12-22</option><option value="http://bato.to/reader#d6afb42288400dcf" >Ch.3: Episode 11-15</option><option value="http://bato.to/reader#56f75d73a6edd960" >Ch.2: Episode 6-10</option><option value="http://bato.to/reader#c7df6eb5ce86bf77" >Ch.1: Episode 1-5</option>
+            [63] =>             </select>
+            [64] =>         </li>
+            [65] =>         <li style="display: inline-block; margin-right: 20px;">
+            [66] =>             <select name="group_select" onchange="window.location=this.value;">
+            [67] =>       <option value="http://bato.to/reader#7ff0b83b157a8da5" selected="selected">`「Nekyou.net」 - English</option>
+            [68] =>     </select>
+            [69] =>         </li>
+            [70] =>         <li style="display: inline-block; margin-right: 20px;">    <select name="page_select" id="page_select" onchange="window.location=this.value;">
+            [71] =>       <option value="http://bato.to/reader#7ff0b83b157a8da5_1" selected="selected">page 1</option><option value="http://bato.to/reader#7ff0b83b157a8da5_2" >page 2</option><option value="http://bato.to/reader#7ff0b83b157a8da5_3" >page 3</option><option value="http://bato.to/reader#7ff0b83b157a8da5_4" >page 4</option><option value="http://bato.to/reader#7ff0b83b157a8da5_5" >page 5</option><option value="http://bato.to/reader#7ff0b83b157a8da5_6" >page 6</option><option value="http://bato.to/reader#7ff0b83b157a8da5_7" >page 7</option>
+            [72] =>     </select></li>
+            [73] =>                     <li style="display: inline-block; float: left; margin-top:-11px;">
+            [74] =>                 <a href="http://bato.to/reader#9883d4c46540dd5a" style="text-decoration:none;"><img src="http://bato.to/images/pprev.png" border="0" title="Previous Chapter" /></a>
+            [75] =>             </li>
+            [76] =>                 <li style="display: inline-block; float: left; margin-top:-11px;">
+            [77] =>             <a href="http://bato.to/reader#9883d4c46540dd5a_last" style="text-decoration:none;"><img src="http://bato.to/images/prev.png" border=0" title="Previous Page" /></a>
+            [78] =>         </li>
+            [79] =>         
+            [80] =>                 <li style="display: inline-block; float: right; margin-top:-11px;">
+            [81] =>             <a href="http://bato.to/reader#7ff0b83b157a8da5_2" style="text-decoration:none;"><img src="http://bato.to/images/next.png" border=0" title="Next Page" /></a>
+            [82] =>         </li>
+            [83] =>         <li style="display: inline-block; margin-right: 20px;"><a href="javascript:void(0)" onclick="$('read_settings').toggle();" title="Reader Settings"><img src="http://bato.to/forums/public/style_images/master/cog.png" /></a></li>
+            [84] =>     </ul>
+            [85] => </div>    <script type='text/javascript'>
+            [86] =>     //<[!CDATA[
+            [87] =>         img = new Image();
+            [88] =>         img.src = "http://img.bato.to/comics/2013/09/19/s/read523aca83a2e9e/img000002.jpg";
+            [89] =>     //]]>
+            [90] =>     </script><script type='text/javascript'>
+            [91] =>     next_page = 'http://bato.to/reader#7ff0b83b157a8da5_2';
+            [92] =>     prev_page = 'http://bato.to/reader#9883d4c46540dd5a_last';
+            [93] =>     document.title = 'Shingeki no Kyojin Chibi 4-Koma&#33; Training Squad - ch 4.1 Page 1 | Batoto!';
+            [94] => </script>
+        )
+
+    [current_line:protected] => Text Object
+        (
+            [s:protected] => <div class="moderation_bar rounded clear" style="text-align:center; margin-bottom:8px; height:30px; padding-top: 17px;">
+        )
+
+    [current_i:protected] => 0
+    [prev_i:protected] => 0
+    [ch:protected] => Resource id #10
+)

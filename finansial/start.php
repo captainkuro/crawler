@@ -193,7 +193,7 @@ function fin_in_year($year) {
 }
 
 // how to use: exit start and end index to year u want
-// for ($y=2010; $y<=2017; $y++) {
+// for ($y=2017; $y<=2017; $y++) {
 // 	$result = fin_in_year($y);
 // 	exporte("start-finan_$y.out", $result);
 // }

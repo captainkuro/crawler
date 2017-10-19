@@ -1,0 +1,2342 @@
+<?php return array (
+  'MKPI' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 25750.0,
+      'lowest' => 16800.0,
+      'eps' => 1264.0,
+      'per_lowest' => 13.291139240506329,
+      'per_highest' => 20.371835443037973,
+      'eps_growth' => 34.040296924708379,
+    ),
+    2015 => 
+    array (
+      'highest' => 17000.0,
+      'lowest' => 13000.0,
+      'eps' => 943.0,
+      'per_lowest' => 13.785790031813361,
+      'per_highest' => 18.027571580063626,
+      'eps_growth' => 104.55531453362256,
+    ),
+    2014 => 
+    array (
+      'highest' => 15675.0,
+      'lowest' => 9000.0,
+      'eps' => 461.0,
+      'per_lowest' => 19.522776572668114,
+      'per_highest' => 34.002169197396967,
+      'eps_growth' => 19.740259740259742,
+    ),
+    2013 => 
+    array (
+      'highest' => 9500.0,
+      'lowest' => 3900.0,
+      'eps' => 385.0,
+      'per_lowest' => 10.129870129870129,
+      'per_highest' => 24.675324675324674,
+      'eps_growth' => 0.78534031413612571,
+    ),
+    2012 => 
+    array (
+      'highest' => 3900.0,
+      'lowest' => 2900.0,
+      'eps' => 382.0,
+      'per_lowest' => 7.5916230366492146,
+      'per_highest' => 10.209424083769633,
+      'eps_growth' => 12.352941176470589,
+    ),
+    2011 => 
+    array (
+      'highest' => 2900.0,
+      'lowest' => 2300.0,
+      'eps' => 340.0,
+      'per_lowest' => 6.7647058823529411,
+      'per_highest' => 8.5294117647058822,
+      'eps_growth' => 22.743682310469314,
+    ),
+    2010 => 
+    array (
+      'highest' => 2800.0,
+      'lowest' => 2750.0,
+      'eps' => 277.0,
+      'per_lowest' => 9.9277978339350188,
+      'per_highest' => 10.108303249097473,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 32.369639166611115,
+      'per_lowest' => 11.57338610397073,
+      'per_highest' => 17.989148570485177,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 1673.0,
+      'PER terendah' => '10.42',
+      'Harga terendah' => 17428.0,
+      'PER tengah' => '15.10',
+      'Harga tengah' => 25268.0,
+      'PER tertinggi' => '19.79',
+      'Harga tertinggi' => 33108.0,
+    ),
+  ),
+  'KBLI' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 328.0,
+      'lowest' => 113.0,
+      'eps' => 83.0,
+      'per_lowest' => 1.3614457831325302,
+      'per_highest' => 3.9518072289156625,
+      'eps_growth' => 196.42857142857142,
+    ),
+    2015 => 
+    array (
+      'highest' => 145.0,
+      'lowest' => 84.0,
+      'eps' => 28.0,
+      'per_lowest' => 3.0,
+      'per_highest' => 5.1785714285714288,
+      'eps_growth' => 64.705882352941174,
+    ),
+    2014 => 
+    array (
+      'highest' => 179.0,
+      'lowest' => 124.0,
+      'eps' => 17.0,
+      'per_lowest' => 7.2941176470588234,
+      'per_highest' => 10.529411764705882,
+      'eps_growth' => -5.5555555555555554,
+    ),
+    2013 => 
+    array (
+      'highest' => 315.0,
+      'lowest' => 140.0,
+      'eps' => 18.0,
+      'per_lowest' => 7.7777777777777777,
+      'per_highest' => 17.5,
+      'eps_growth' => -41.935483870967744,
+    ),
+    2012 => 
+    array (
+      'highest' => 230.0,
+      'lowest' => 103.0,
+      'eps' => 31.0,
+      'per_lowest' => 3.3225806451612905,
+      'per_highest' => 7.419354838709677,
+      'eps_growth' => 106.66666666666667,
+    ),
+    2011 => 
+    array (
+      'highest' => 122.0,
+      'lowest' => 80.0,
+      'eps' => 15.0,
+      'per_lowest' => 5.333333333333333,
+      'per_highest' => 8.1333333333333329,
+      'eps_growth' => 25.0,
+    ),
+    2010 => 
+    array (
+      'highest' => 95.0,
+      'lowest' => 52.0,
+      'eps' => 12.0,
+      'per_lowest' => 4.333333333333333,
+      'per_highest' => 7.916666666666667,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 57.551680170275993,
+      'per_lowest' => 4.6317983599710129,
+      'per_highest' => 8.6613064658432357,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 131.0,
+      'PER terendah' => '4.17',
+      'Harga terendah' => 545.0,
+      'PER tengah' => '6.85',
+      'Harga tengah' => 896.0,
+      'PER tertinggi' => '9.53',
+      'Harga tertinggi' => 1246.0,
+    ),
+  ),
+  'ACES' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 1025.0,
+      'lowest' => 735.0,
+      'eps' => 41.0,
+      'per_lowest' => 17.926829268292682,
+      'per_highest' => 25.0,
+      'eps_growth' => 20.588235294117649,
+    ),
+    2015 => 
+    array (
+      'highest' => 845.0,
+      'lowest' => 500.0,
+      'eps' => 34.0,
+      'per_lowest' => 14.705882352941176,
+      'per_highest' => 24.852941176470587,
+      'eps_growth' => 6.25,
+    ),
+    2014 => 
+    array (
+      'highest' => 1000.0,
+      'lowest' => 590.0,
+      'eps' => 32.0,
+      'per_lowest' => 18.4375,
+      'per_highest' => 31.25,
+      'eps_growth' => 10.344827586206897,
+    ),
+    2013 => 
+    array (
+      'highest' => 1080.0,
+      'lowest' => 580.0,
+      'eps' => 29.0,
+      'per_lowest' => 20.0,
+      'per_highest' => 37.241379310344826,
+      'eps_growth' => 20.833333333333332,
+    ),
+    2012 => 
+    array (
+      'highest' => 7000.0,
+      'lowest' => 700.0,
+      'eps' => 24.0,
+      'per_lowest' => 29.166666666666668,
+      'per_highest' => 291.66666666666669,
+      'eps_growth' => -85.5421686746988,
+    ),
+    2011 => 
+    array (
+      'highest' => 4150.0,
+      'lowest' => 2250.0,
+      'eps' => 166.0,
+      'per_lowest' => 13.554216867469879,
+      'per_highest' => 25.0,
+      'eps_growth' => 61.165048543689323,
+    ),
+    2010 => 
+    array (
+      'highest' => 2950.0,
+      'lowest' => 1320.0,
+      'eps' => 103.0,
+      'per_lowest' => 12.815533980582524,
+      'per_highest' => 28.640776699029125,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 5.6065460137747332,
+      'per_lowest' => 18.086661305136133,
+      'per_highest' => 66.23596626464446,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 43.0,
+      'PER terendah' => '16.28',
+      'Harga terendah' => 705.0,
+      'PER tengah' => '44.57',
+      'Harga tengah' => 1930.0,
+      'PER tertinggi' => '72.86',
+      'Harga tertinggi' => 3155.0,
+    ),
+  ),
+  'PTBA' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 13600.0,
+      'lowest' => 4165.0,
+      'eps' => 951.0,
+      'per_lowest' => 4.3796004206098846,
+      'per_highest' => 14.300736067297581,
+      'eps_growth' => 1.0626992561105206,
+    ),
+    2015 => 
+    array (
+      'highest' => 12500.0,
+      'lowest' => 4315.0,
+      'eps' => 941.0,
+      'per_lowest' => 4.5855472901168968,
+      'per_highest' => 13.283740701381509,
+      'eps_growth' => 1.5102481121898597,
+    ),
+    2014 => 
+    array (
+      'highest' => 13975.0,
+      'lowest' => 9125.0,
+      'eps' => 927.0,
+      'per_lowest' => 9.8435814455231938,
+      'per_highest' => 15.075512405609492,
+      'eps_growth' => 12.773722627737227,
+    ),
+    2013 => 
+    array (
+      'highest' => 16900.0,
+      'lowest' => 9950.0,
+      'eps' => 822.0,
+      'per_lowest' => 12.104622871046228,
+      'per_highest' => 20.559610705596107,
+      'eps_growth' => -34.813639968279141,
+    ),
+    2012 => 
+    array (
+      'highest' => 21000.0,
+      'lowest' => 13150.0,
+      'eps' => 1261.0,
+      'per_lowest' => 10.428231562252181,
+      'per_highest' => 16.653449643140366,
+      'eps_growth' => -5.825242718446602,
+    ),
+    2011 => 
+    array (
+      'highest' => 24900.0,
+      'lowest' => 13850.0,
+      'eps' => 1339.0,
+      'per_lowest' => 10.34353995519044,
+      'per_highest' => 18.595967139656459,
+      'eps_growth' => 53.731343283582092,
+    ),
+    2010 => 
+    array (
+      'highest' => 22950.0,
+      'lowest' => 15400.0,
+      'eps' => 871.0,
+      'per_lowest' => 17.680826636050515,
+      'per_highest' => 26.349024110218139,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 4.7398550988156591,
+      'per_lowest' => 9.909421454398478,
+      'per_highest' => 17.831148681842809,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 996.0,
+      'PER terendah' => '8.92',
+      'Harga terendah' => 8883.0,
+      'PER tengah' => '14.27',
+      'Harga tengah' => 14210.0,
+      'PER tertinggi' => '19.61',
+      'Harga tertinggi' => 19537.0,
+    ),
+  ),
+  'BISI' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 2010.0,
+      'lowest' => 1250.0,
+      'eps' => 112.0,
+      'per_lowest' => 11.160714285714286,
+      'per_highest' => 17.946428571428573,
+      'eps_growth' => 28.735632183908045,
+    ),
+    2015 => 
+    array (
+      'highest' => 1690.0,
+      'lowest' => 780.0,
+      'eps' => 87.0,
+      'per_lowest' => 8.9655172413793096,
+      'per_highest' => 19.425287356321839,
+      'eps_growth' => 58.18181818181818,
+    ),
+    2014 => 
+    array (
+      'highest' => 825.0,
+      'lowest' => 464.0,
+      'eps' => 55.0,
+      'per_lowest' => 8.4363636363636356,
+      'per_highest' => 15.0,
+      'eps_growth' => 30.952380952380953,
+    ),
+    2013 => 
+    array (
+      'highest' => 990.0,
+      'lowest' => 550.0,
+      'eps' => 42.0,
+      'per_lowest' => 13.095238095238095,
+      'per_highest' => 23.571428571428573,
+      'eps_growth' => -2.3255813953488373,
+    ),
+    2012 => 
+    array (
+      'highest' => 1380.0,
+      'lowest' => 720.0,
+      'eps' => 43.0,
+      'per_lowest' => 16.744186046511629,
+      'per_highest' => 32.093023255813954,
+      'eps_growth' => -12.244897959183673,
+    ),
+    2011 => 
+    array (
+      'highest' => 1880.0,
+      'lowest' => 850.0,
+      'eps' => 49.0,
+      'per_lowest' => 17.346938775510203,
+      'per_highest' => 38.367346938775512,
+      'eps_growth' => 4.2553191489361701,
+    ),
+    2010 => 
+    array (
+      'highest' => 2650.0,
+      'lowest' => 1090.0,
+      'eps' => 47.0,
+      'per_lowest' => 23.191489361702128,
+      'per_highest' => 56.382978723404257,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 17.925778518751809,
+      'per_lowest' => 14.134349634631326,
+      'per_highest' => 28.969499059596103,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 132.0,
+      'PER terendah' => '12.72',
+      'Harga terendah' => 1680.0,
+      'PER tengah' => '22.29',
+      'Harga tengah' => 2944.0,
+      'PER tertinggi' => '31.87',
+      'Harga tertinggi' => 4209.0,
+    ),
+  ),
+  'JTPE' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 308.0,
+      'lowest' => 211.0,
+      'eps' => 45.0,
+      'per_lowest' => 4.6888888888888891,
+      'per_highest' => 6.8444444444444441,
+      'eps_growth' => 25.0,
+    ),
+    2015 => 
+    array (
+      'highest' => 378.0,
+      'lowest' => 209.0,
+      'eps' => 36.0,
+      'per_lowest' => 5.8055555555555554,
+      'per_highest' => 10.5,
+      'eps_growth' => 16.129032258064516,
+    ),
+    2014 => 
+    array (
+      'highest' => 378.0,
+      'lowest' => 278.0,
+      'eps' => 31.0,
+      'per_lowest' => 8.9677419354838701,
+      'per_highest' => 12.193548387096774,
+      'eps_growth' => 34.782608695652172,
+    ),
+    2013 => 
+    array (
+      'highest' => 400.0,
+      'lowest' => 295.0,
+      'eps' => 23.0,
+      'per_lowest' => 12.826086956521738,
+      'per_highest' => 17.391304347826086,
+      'eps_growth' => -4.166666666666667,
+    ),
+    2012 => 
+    array (
+      'highest' => 420.0,
+      'lowest' => 305.0,
+      'eps' => 24.0,
+      'per_lowest' => 12.708333333333334,
+      'per_highest' => 17.5,
+      'eps_growth' => -46.666666666666664,
+    ),
+    2011 => 
+    array (
+      'highest' => 1780.0,
+      'lowest' => 197.0,
+      'eps' => 45.0,
+      'per_lowest' => 4.3777777777777782,
+      'per_highest' => 39.555555555555557,
+      'eps_growth' => -79.069767441860463,
+    ),
+    2010 => 
+    array (
+      'highest' => 1250.0,
+      'lowest' => 510.0,
+      'eps' => 215.0,
+      'per_lowest' => 2.3720930232558142,
+      'per_highest' => 5.8139534883720927,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => -8.9985766369128513,
+      'per_lowest' => 7.3923539244024266,
+      'per_highest' => 15.685543746184994,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 41.0,
+      'PER terendah' => '6.65',
+      'Harga terendah' => 272.0,
+      'PER tengah' => '11.95',
+      'Harga tengah' => 490.0,
+      'PER tertinggi' => '17.25',
+      'Harga tertinggi' => 707.0,
+    ),
+  ),
+  'LPPF' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 21500.0,
+      'lowest' => 13325.0,
+      'eps' => 692.0,
+      'per_lowest' => 19.25578034682081,
+      'per_highest' => 31.069364161849713,
+      'eps_growth' => 13.442622950819672,
+    ),
+    2015 => 
+    array (
+      'highest' => 19950.0,
+      'lowest' => 14200.0,
+      'eps' => 610.0,
+      'per_lowest' => 23.278688524590162,
+      'per_highest' => 32.704918032786885,
+      'eps_growth' => 25.514403292181068,
+    ),
+    2014 => 
+    array (
+      'highest' => 17025.0,
+      'lowest' => 10925.0,
+      'eps' => 486.0,
+      'per_lowest' => 22.479423868312757,
+      'per_highest' => 35.030864197530867,
+      'eps_growth' => 23.350253807106601,
+    ),
+    2013 => 
+    array (
+      'highest' => 14000.0,
+      'lowest' => 2700.0,
+      'eps' => 394.0,
+      'per_lowest' => 6.8527918781725887,
+      'per_highest' => 35.532994923857871,
+      'eps_growth' => 49.809885931558938,
+    ),
+    2012 => 
+    array (
+      'highest' => 2700.0,
+      'lowest' => 2300.0,
+      'eps' => 263.0,
+      'per_lowest' => 8.7452471482889731,
+      'per_highest' => 10.266159695817491,
+      'eps_growth' => 64.375,
+    ),
+    2011 => 
+    array (
+      'highest' => 3000.0,
+      'lowest' => 2300.0,
+      'eps' => 160.0,
+      'per_lowest' => 14.375,
+      'per_highest' => 18.75,
+      'eps_growth' => -25.233644859813083,
+    ),
+    2010 => 
+    array (
+      'highest' => 3000.0,
+      'lowest' => 2450.0,
+      'eps' => 214.0,
+      'per_lowest' => 11.448598130841122,
+      'per_highest' => 14.018691588785046,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 25.209753520308865,
+      'per_lowest' => 15.205075699575202,
+      'per_highest' => 25.338998942946837,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 866.0,
+      'PER terendah' => '13.68',
+      'Harga terendah' => 11857.0,
+      'PER tengah' => '20.78',
+      'Harga tengah' => 18004.0,
+      'PER tertinggi' => '27.87',
+      'Harga tertinggi' => 24151.0,
+    ),
+  ),
+  'FMII' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 805.0,
+      'lowest' => 313.0,
+      'eps' => 92.0,
+      'per_lowest' => 3.402173913043478,
+      'per_highest' => 8.75,
+      'eps_growth' => 206.66666666666666,
+    ),
+    2015 => 
+    array (
+      'highest' => 800.0,
+      'lowest' => 383.0,
+      'eps' => 30.0,
+      'per_lowest' => 12.766666666666667,
+      'per_highest' => 26.666666666666668,
+    ),
+    2014 => 
+    array (
+      'highest' => 455.0,
+      'lowest' => 380.0,
+      'eps' => 0.0,
+      'eps_growth' => -100.0,
+    ),
+    2013 => 
+    array (
+      'highest' => 385.0,
+      'lowest' => 210.0,
+      'eps' => -2.0,
+      'per_lowest' => -105.0,
+      'per_highest' => -192.5,
+    ),
+    2012 => 
+    array (
+      'highest' => 245.0,
+      'lowest' => 100.0,
+      'eps' => 0.0,
+      'eps_growth' => -100.0,
+    ),
+    2011 => 
+    array (
+      'highest' => 103.0,
+      'lowest' => 90.0,
+      'eps' => -1.0,
+      'per_lowest' => -90.0,
+      'per_highest' => -103.0,
+    ),
+    2010 => 
+    array (
+      'highest' => 95.0,
+      'lowest' => 88.0,
+      'eps' => 0.0,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 2.2222222222222192,
+      'per_lowest' => -44.707789855072463,
+      'per_highest' => -65.020833333333329,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 94.0,
+      'PER terendah' => '-40.24',
+      'Harga terendah' => -3784.0,
+      'PER tengah' => '-55.88',
+      'Harga tengah' => -5255.0,
+      'PER tertinggi' => '-71.52',
+      'Harga tertinggi' => -6726.0,
+    ),
+  ),
+  'HMSP' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 111400.0,
+      'lowest' => 3630.0,
+      'eps' => 109.0,
+      'per_lowest' => 33.302752293577981,
+      'per_highest' => 1022.0183486238532,
+      'eps_growth' => -95.313843508168532,
+    ),
+    2015 => 
+    array (
+      'highest' => 101900.0,
+      'lowest' => 61235.247799999997,
+      'eps' => 2326.0,
+      'per_lowest' => 26.326417798796214,
+      'per_highest' => 43.809114359415304,
+      'eps_growth' => 0.17226528854435832,
+    ),
+    2014 => 
+    array (
+      'highest' => 69714.001499999998,
+      'lowest' => 57042.999300000003,
+      'eps' => 2322.0,
+      'per_lowest' => 24.566321834625324,
+      'per_highest' => 30.023256459948321,
+      'eps_growth' => -5.9157212317666126,
+    ),
+    2013 => 
+    array (
+      'highest' => 82903.002900000007,
+      'lowest' => 55582.751499999998,
+      'eps' => 2468.0,
+      'per_lowest' => 22.521374189627227,
+      'per_highest' => 33.591168111831443,
+      'eps_growth' => 8.7703834288232709,
+    ),
+    2012 => 
+    array (
+      'highest' => 56430.499300000003,
+      'lowest' => 36741.000399999997,
+      'eps' => 2269.0,
+      'per_lowest' => 16.192596033494929,
+      'per_highest' => 24.870206831203173,
+      'eps_growth' => 23.382272974442632,
+    ),
+    2011 => 
+    array (
+      'highest' => 37023.748800000001,
+      'lowest' => 23646.2006,
+      'eps' => 1839.0,
+      'per_lowest' => 12.85818412180533,
+      'per_highest' => 20.132544208809136,
+      'eps_growth' => 25.529010238907851,
+    ),
+    2010 => 
+    array (
+      'highest' => 27414.498899999999,
+      'lowest' => 9844.7250000000004,
+      'eps' => 1465.0,
+      'per_lowest' => 6.719948805460751,
+      'per_highest' => 18.712968532423208,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => -7.2292721348695039,
+      'per_lowest' => 20.35537072534111,
+      'per_highest' => 170.45108673249769,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 101.0,
+      'PER terendah' => '18.32',
+      'Harga terendah' => 1853.0,
+      'PER tengah' => '102.91',
+      'Harga tengah' => 10406.0,
+      'PER tertinggi' => '187.50',
+      'Harga tertinggi' => 18960.0,
+    ),
+  ),
+  'JPFA' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 1960.0,
+      'lowest' => 575.0,
+      'eps' => 180.0,
+      'per_lowest' => 3.1944444444444446,
+      'per_highest' => 10.888888888888889,
+      'eps_growth' => 309.09090909090907,
+    ),
+    2015 => 
+    array (
+      'highest' => 950.0,
+      'lowest' => 297.0,
+      'eps' => 44.0,
+      'per_lowest' => 6.75,
+      'per_highest' => 21.59090909090909,
+      'eps_growth' => 41.935483870967744,
+    ),
+    2014 => 
+    array (
+      'highest' => 1650.0,
+      'lowest' => 935.0,
+      'eps' => 31.0,
+      'per_lowest' => 30.161290322580644,
+      'per_highest' => 53.225806451612904,
+      'eps_growth' => -43.636363636363633,
+    ),
+    2013 => 
+    array (
+      'highest' => 9500.0,
+      'lowest' => 1050.0,
+      'eps' => 55.0,
+      'per_lowest' => 19.09090909090909,
+      'per_highest' => 172.72727272727272,
+      'eps_growth' => -88.322717622080674,
+    ),
+    2012 => 
+    array (
+      'highest' => 6150.0,
+      'lowest' => 3775.0,
+      'eps' => 471.0,
+      'per_lowest' => 8.0148619957537157,
+      'per_highest' => 13.057324840764331,
+      'eps_growth' => 58.585858585858588,
+    ),
+    2011 => 
+    array (
+      'highest' => 5600.0,
+      'lowest' => 2775.0,
+      'eps' => 297.0,
+      'per_lowest' => 9.3434343434343443,
+      'per_highest' => 18.855218855218855,
+      'eps_growth' => -35.85313174946004,
+    ),
+    2010 => 
+    array (
+      'highest' => 4400.0,
+      'lowest' => 1180.0,
+      'eps' => 463.0,
+      'per_lowest' => 2.548596112311015,
+      'per_highest' => 9.5032397408207352,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 40.300006423305177,
+      'per_lowest' => 11.300505187061892,
+      'per_highest' => 42.835522942212506,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 253.0,
+      'PER terendah' => '10.17',
+      'Harga terendah' => 2568.0,
+      'PER tengah' => '28.64',
+      'Harga tengah' => 7234.0,
+      'PER tertinggi' => '47.12',
+      'Harga tertinggi' => 11899.0,
+    ),
+  ),
+  'TLKM' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 4550.0,
+      'lowest' => 3060.0,
+      'eps' => 196.0,
+      'per_lowest' => 15.612244897959183,
+      'per_highest' => 23.214285714285715,
+      'eps_growth' => 24.840764331210192,
+    ),
+    2015 => 
+    array (
+      'highest' => 3135.0,
+      'lowest' => 2600.0,
+      'eps' => 157.0,
+      'per_lowest' => 16.560509554140129,
+      'per_highest' => 19.96815286624204,
+      'eps_growth' => 5.3691275167785237,
+    ),
+    2014 => 
+    array (
+      'highest' => 2945.0,
+      'lowest' => 2070.0,
+      'eps' => 149.0,
+      'per_lowest' => 13.89261744966443,
+      'per_highest' => 19.765100671140939,
+      'eps_growth' => 1.3605442176870748,
+    ),
+    2013 => 
+    array (
+      'highest' => 12400.0,
+      'lowest' => 1990.0,
+      'eps' => 147.0,
+      'per_lowest' => 13.537414965986395,
+      'per_highest' => 84.353741496598644,
+      'eps_growth' => -78.026905829596416,
+    ),
+    2012 => 
+    array (
+      'highest' => 9850.0,
+      'lowest' => 6750.0,
+      'eps' => 669.0,
+      'per_lowest' => 10.089686098654708,
+      'per_highest' => 14.723467862481316,
+      'eps_growth' => 23.204419889502763,
+    ),
+    2011 => 
+    array (
+      'highest' => 8000.0,
+      'lowest' => 6600.0,
+      'eps' => 543.0,
+      'per_lowest' => 12.154696132596685,
+      'per_highest' => 14.732965009208103,
+      'eps_growth' => -7.337883959044369,
+    ),
+    2010 => 
+    array (
+      'highest' => 9800.0,
+      'lowest' => 7100.0,
+      'eps' => 586.0,
+      'per_lowest' => 12.1160409556314,
+      'per_highest' => 16.723549488054609,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => -5.098322305577037,
+      'per_lowest' => 13.423315722090418,
+      'per_highest' => 27.640180444001626,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 186.0,
+      'PER terendah' => '12.08',
+      'Harga terendah' => 2247.0,
+      'PER tengah' => '21.24',
+      'Harga tengah' => 3951.0,
+      'PER tertinggi' => '30.40',
+      'Harga tertinggi' => 5655.0,
+    ),
+  ),
+  'JRPT' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 905.0,
+      'lowest' => 580.0,
+      'eps' => 73.0,
+      'per_lowest' => 7.9452054794520546,
+      'per_highest' => 12.397260273972602,
+      'eps_growth' => 14.0625,
+    ),
+    2015 => 
+    array (
+      'highest' => 1250.0,
+      'lowest' => 685.0,
+      'eps' => 64.0,
+      'per_lowest' => 10.703125,
+      'per_highest' => 19.53125,
+      'eps_growth' => 18.518518518518519,
+    ),
+    2014 => 
+    array (
+      'highest' => 1050.0,
+      'lowest' => 760.0,
+      'eps' => 54.0,
+      'per_lowest' => 14.074074074074074,
+      'per_highest' => 19.444444444444443,
+      'eps_growth' => 31.707317073170731,
+    ),
+    2013 => 
+    array (
+      'highest' => 5350.0,
+      'lowest' => 750.0,
+      'eps' => 41.0,
+      'per_lowest' => 18.292682926829269,
+      'per_highest' => 130.48780487804879,
+      'eps_growth' => -74.534161490683232,
+    ),
+    2012 => 
+    array (
+      'highest' => 3100.0,
+      'lowest' => 2025.0,
+      'eps' => 161.0,
+      'per_lowest' => 12.577639751552795,
+      'per_highest' => 19.254658385093169,
+      'eps_growth' => 28.800000000000001,
+    ),
+    2011 => 
+    array (
+      'highest' => 2450.0,
+      'lowest' => 1160.0,
+      'eps' => 125.0,
+      'per_lowest' => 9.2799999999999994,
+      'per_highest' => 19.600000000000001,
+      'eps_growth' => 25.0,
+    ),
+    2010 => 
+    array (
+      'highest' => 1500.0,
+      'lowest' => 650.0,
+      'eps' => 100.0,
+      'per_lowest' => 6.5,
+      'per_highest' => 15.0,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 7.2590290168343357,
+      'per_lowest' => 11.338961033129744,
+      'per_highest' => 33.673631140222717,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 78.0,
+      'PER terendah' => '10.21',
+      'Harga terendah' => 799.0,
+      'PER tengah' => '23.62',
+      'Harga tengah' => 1850.0,
+      'PER tertinggi' => '37.04',
+      'Harga tertinggi' => 2900.0,
+    ),
+  ),
+  'BSSR' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 1410.0,
+      'lowest' => 955.0,
+      'eps' => 140.0,
+      'per_lowest' => 6.8214285714285712,
+      'per_highest' => 10.071428571428571,
+      'eps_growth' => 12.0,
+    ),
+    2015 => 
+    array (
+      'highest' => 1590.0,
+      'lowest' => 1000.0,
+      'eps' => 125.0,
+      'per_lowest' => 8.0,
+      'per_highest' => 12.720000000000001,
+      'eps_growth' => 941.66666666666663,
+    ),
+    2014 => 
+    array (
+      'highest' => 1990.0,
+      'lowest' => 1455.0,
+      'eps' => 12.0,
+      'per_lowest' => 121.25,
+      'per_highest' => 165.83333333333334,
+      'eps_growth' => -45.454545454545453,
+    ),
+    2013 => 
+    array (
+      'highest' => 2075.0,
+      'lowest' => 1410.0,
+      'eps' => 22.0,
+      'per_lowest' => 64.090909090909093,
+      'per_highest' => 94.318181818181813,
+      'eps_growth' => -42.10526315789474,
+    ),
+    2012 => 
+    array (
+      'highest' => 1980.0,
+      'lowest' => 1890.0,
+      'eps' => 38.0,
+      'per_lowest' => 49.736842105263158,
+      'per_highest' => 52.10526315789474,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 216.52671451355661,
+      'per_lowest' => 49.979835953520166,
+      'per_highest' => 67.009641376167707,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 443.0,
+      'PER terendah' => '44.98',
+      'Harga terendah' => 19933.0,
+      'PER tengah' => '59.35',
+      'Harga tengah' => 26299.0,
+      'PER tertinggi' => '73.71',
+      'Harga tertinggi' => 32664.0,
+    ),
+  ),
+  'LINK' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 5600.0,
+      'lowest' => 2920.0,
+      'eps' => 269.0,
+      'per_lowest' => 10.855018587360595,
+      'per_highest' => 20.817843866171003,
+      'eps_growth' => 28.095238095238095,
+    ),
+    2015 => 
+    array (
+      'highest' => 6400.0,
+      'lowest' => 3150.0,
+      'eps' => 210.0,
+      'per_lowest' => 15.0,
+      'per_highest' => 30.476190476190474,
+      'eps_growth' => 14.754098360655737,
+    ),
+    2014 => 
+    array (
+      'highest' => 7500.0,
+      'lowest' => 2400.0,
+      'eps' => 183.0,
+      'per_lowest' => 13.114754098360656,
+      'per_highest' => 40.983606557377051,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 21.424668227946917,
+      'per_lowest' => 12.98992422857375,
+      'per_highest' => 30.759213633246176,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 327.0,
+      'PER terendah' => '11.69',
+      'Harga terendah' => 3819.0,
+      'PER tengah' => '22.76',
+      'Harga tengah' => 7435.0,
+      'PER tertinggi' => '33.84',
+      'Harga tertinggi' => 11052.0,
+    ),
+  ),
+  'ICBP' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 17475.0,
+      'lowest' => 7550.0,
+      'eps' => 309.0,
+      'per_lowest' => 24.433656957928804,
+      'per_highest' => 56.553398058252426,
+      'eps_growth' => -39.883268482490273,
+    ),
+    2015 => 
+    array (
+      'highest' => 15100.0,
+      'lowest' => 11250.0,
+      'eps' => 514.0,
+      'per_lowest' => 21.88715953307393,
+      'per_highest' => 29.377431906614785,
+      'eps_growth' => 15.246636771300448,
+    ),
+    2014 => 
+    array (
+      'highest' => 13100.0,
+      'lowest' => 9900.0,
+      'eps' => 446.0,
+      'per_lowest' => 22.197309417040358,
+      'per_highest' => 29.372197309417039,
+      'eps_growth' => 17.060367454068242,
+    ),
+    2013 => 
+    array (
+      'highest' => 13100.0,
+      'lowest' => 7750.0,
+      'eps' => 381.0,
+      'per_lowest' => 20.341207349081365,
+      'per_highest' => 34.383202099737531,
+      'eps_growth' => 1.8716577540106951,
+    ),
+    2012 => 
+    array (
+      'highest' => 8200.0,
+      'lowest' => 5000.0,
+      'eps' => 374.0,
+      'per_lowest' => 13.368983957219251,
+      'per_highest' => 21.925133689839573,
+      'eps_growth' => 10.32448377581121,
+    ),
+    2011 => 
+    array (
+      'highest' => 6000.0,
+      'lowest' => 4325.0,
+      'eps' => 339.0,
+      'per_lowest' => 12.75811209439528,
+      'per_highest' => 17.699115044247787,
+      'eps_growth' => -1.4534883720930232,
+    ),
+    2010 => 
+    array (
+      'highest' => 5950.0,
+      'lowest' => 3350.0,
+      'eps' => 344.0,
+      'per_lowest' => 9.7383720930232567,
+      'per_highest' => 17.296511627906977,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 0.52773148343454912,
+      'per_lowest' => 17.817828771680318,
+      'per_highest' => 29.515284248002306,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 311.0,
+      'PER terendah' => '16.04',
+      'Harga terendah' => 4981.0,
+      'PER tengah' => '24.25',
+      'Harga tengah' => 7533.0,
+      'PER tertinggi' => '32.47',
+      'Harga tertinggi' => 10085.0,
+    ),
+  ),
+  'ROTI' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 1770.0,
+      'lowest' => 1170.0,
+      'eps' => 55.0,
+      'per_lowest' => 21.272727272727273,
+      'per_highest' => 32.18181818181818,
+      'eps_growth' => 3.7735849056603774,
+    ),
+    2015 => 
+    array (
+      'highest' => 1415.0,
+      'lowest' => 1045.0,
+      'eps' => 53.0,
+      'per_lowest' => 19.716981132075471,
+      'per_highest' => 26.69811320754717,
+      'eps_growth' => 43.243243243243242,
+    ),
+    2014 => 
+    array (
+      'highest' => 1460.0,
+      'lowest' => 990.0,
+      'eps' => 37.0,
+      'per_lowest' => 26.756756756756758,
+      'per_highest' => 39.45945945945946,
+      'eps_growth' => 19.35483870967742,
+    ),
+    2013 => 
+    array (
+      'highest' => 9200.0,
+      'lowest' => 1000.0,
+      'eps' => 31.0,
+      'per_lowest' => 32.258064516129032,
+      'per_highest' => 296.77419354838707,
+      'eps_growth' => -78.911564625850346,
+    ),
+    2012 => 
+    array (
+      'highest' => 6900.0,
+      'lowest' => 3250.0,
+      'eps' => 147.0,
+      'per_lowest' => 22.108843537414966,
+      'per_highest' => 46.938775510204081,
+    ),
+    2011 => 
+    array (
+      'highest' => 3750.0,
+      'lowest' => 2075.0,
+      'eps' => 0.0,
+    ),
+    2010 => 
+    array (
+      'highest' => 3200.0,
+      'lowest' => 1440.0,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => -3.1349744418173255,
+      'per_lowest' => 24.422674643020702,
+      'per_highest' => 88.410471981483198,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 53.0,
+      'PER terendah' => '21.98',
+      'Harga terendah' => 1171.0,
+      'PER tengah' => '59.62',
+      'Harga tengah' => 3176.0,
+      'PER tertinggi' => '97.25',
+      'Harga tertinggi' => 5181.0,
+    ),
+  ),
+  'CPIN' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 3940.0,
+      'lowest' => 2600.0,
+      'eps' => 135.0,
+      'per_lowest' => 19.25925925925926,
+      'per_highest' => 29.185185185185187,
+      'eps_growth' => 20.535714285714285,
+    ),
+    2015 => 
+    array (
+      'highest' => 4025.0,
+      'lowest' => 1400.0,
+      'eps' => 112.0,
+      'per_lowest' => 12.5,
+      'per_highest' => 35.9375,
+      'eps_growth' => 5.6603773584905657,
+    ),
+    2014 => 
+    array (
+      'highest' => 4350.0,
+      'lowest' => 3300.0,
+      'eps' => 106.0,
+      'per_lowest' => 31.132075471698112,
+      'per_highest' => 41.037735849056602,
+      'eps_growth' => -31.168831168831169,
+    ),
+    2013 => 
+    array (
+      'highest' => 5500.0,
+      'lowest' => 2575.0,
+      'eps' => 154.0,
+      'per_lowest' => 16.720779220779221,
+      'per_highest' => 35.714285714285715,
+      'eps_growth' => -6.0975609756097562,
+    ),
+    2012 => 
+    array (
+      'highest' => 3500.0,
+      'lowest' => 2100.0,
+      'eps' => 164.0,
+      'per_lowest' => 12.804878048780488,
+      'per_highest' => 21.341463414634145,
+      'eps_growth' => 14.685314685314685,
+    ),
+    2011 => 
+    array (
+      'highest' => 2950.0,
+      'lowest' => 1430.0,
+      'eps' => 143.0,
+      'per_lowest' => 10.0,
+      'per_highest' => 20.62937062937063,
+      'eps_growth' => 6.7164179104477615,
+    ),
+    2010 => 
+    array (
+      'highest' => 9600.0,
+      'lowest' => 1670.0,
+      'eps' => 134.0,
+      'per_lowest' => 12.462686567164178,
+      'per_highest' => 71.641791044776113,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 1.7219053492543954,
+      'per_lowest' => 16.411382652525894,
+      'per_highest' => 36.498190262472626,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 137.0,
+      'PER terendah' => '14.77',
+      'Harga terendah' => 2028.0,
+      'PER tengah' => '27.46',
+      'Harga tengah' => 3771.0,
+      'PER tertinggi' => '40.15',
+      'Harga tertinggi' => 5513.0,
+    ),
+  ),
+  'DEFI' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 905.0,
+      'lowest' => 140.5,
+      'eps' => 13.0,
+      'per_lowest' => 10.807692307692308,
+      'per_highest' => 69.615384615384613,
+    ),
+    2015 => 
+    array (
+      'highest' => 1430.0,
+      'lowest' => 140.5,
+      'eps' => 0.0,
+      'eps_growth' => -100.0,
+    ),
+    2014 => 
+    array (
+      'highest' => 1250.0,
+      'lowest' => 1170.0,
+      'eps' => 66.0,
+      'per_lowest' => 17.727272727272727,
+      'per_highest' => 18.939393939393938,
+      'eps_growth' => 135.71428571428572,
+    ),
+    2013 => 
+    array (
+      'highest' => 1170.0,
+      'lowest' => 800.0,
+      'eps' => 28.0,
+      'per_lowest' => 28.571428571428573,
+      'per_highest' => 41.785714285714285,
+      'eps_growth' => 16.666666666666668,
+    ),
+    2012 => 
+    array (
+      'highest' => 1000.0,
+      'lowest' => 560.0,
+      'eps' => 24.0,
+      'per_lowest' => 23.333333333333332,
+      'per_highest' => 41.666666666666664,
+    ),
+    2011 => 
+    array (
+      'highest' => 630.0,
+      'lowest' => 490.0,
+      'eps' => 0.0,
+      'eps_growth' => -100.0,
+    ),
+    2010 => 
+    array (
+      'highest' => 780.0,
+      'lowest' => 475.0,
+      'eps' => 23.0,
+      'per_lowest' => 20.652173913043477,
+      'per_highest' => 33.913043478260867,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => -11.904761904761902,
+      'per_lowest' => 20.218380170554084,
+      'per_highest' => 41.184040597084071,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 11.0,
+      'PER terendah' => '18.20',
+      'Harga terendah' => 208.0,
+      'PER tengah' => '31.75',
+      'Harga tengah' => 364.0,
+      'PER tertinggi' => '45.30',
+      'Harga tertinggi' => 519.0,
+    ),
+  ),
+  'DVLA' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 1790.0,
+      'lowest' => 1195.0,
+      'eps' => 135.0,
+      'per_lowest' => 8.8518518518518512,
+      'per_highest' => 13.25925925925926,
+      'eps_growth' => 39.175257731958766,
+    ),
+    2015 => 
+    array (
+      'highest' => 1840.0,
+      'lowest' => 1165.0,
+      'eps' => 97.0,
+      'per_lowest' => 12.010309278350515,
+      'per_highest' => 18.969072164948454,
+      'eps_growth' => 34.722222222222221,
+    ),
+    2014 => 
+    array (
+      'highest' => 2350.0,
+      'lowest' => 1500.0,
+      'eps' => 72.0,
+      'per_lowest' => 20.833333333333332,
+      'per_highest' => 32.638888888888886,
+      'eps_growth' => -35.714285714285715,
+    ),
+    2013 => 
+    array (
+      'highest' => 4075.0,
+      'lowest' => 1680.0,
+      'eps' => 112.0,
+      'per_lowest' => 15.0,
+      'per_highest' => 36.383928571428569,
+      'eps_growth' => -15.151515151515152,
+    ),
+    2012 => 
+    array (
+      'highest' => 1820.0,
+      'lowest' => 1150.0,
+      'eps' => 132.0,
+      'per_lowest' => 8.7121212121212128,
+      'per_highest' => 13.787878787878787,
+      'eps_growth' => 22.222222222222221,
+    ),
+    2011 => 
+    array (
+      'highest' => 1270.0,
+      'lowest' => 1000.0,
+      'eps' => 108.0,
+      'per_lowest' => 9.2592592592592595,
+      'per_highest' => 11.75925925925926,
+      'eps_growth' => -10.743801652892563,
+    ),
+    2010 => 
+    array (
+      'highest' => 2225.0,
+      'lowest' => 1140.0,
+      'eps' => 121.0,
+      'per_lowest' => 9.4214876033057848,
+      'per_highest' => 18.388429752066116,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 5.7516832762849637,
+      'per_lowest' => 12.012623219745993,
+      'per_highest' => 20.74095952624705,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 143.0,
+      'PER terendah' => '10.81',
+      'Harga terendah' => 1543.0,
+      'PER tengah' => '16.81',
+      'Harga tengah' => 2400.0,
+      'PER tertinggi' => '22.82',
+      'Harga tertinggi' => 3257.0,
+    ),
+  ),
+  'EPMT' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 3240.0,
+      'lowest' => 2600.0,
+      'eps' => 205.0,
+      'per_lowest' => 12.682926829268293,
+      'per_highest' => 15.804878048780488,
+      'eps_growth' => 1.9900497512437811,
+    ),
+    2015 => 
+    array (
+      'highest' => 3395.0,
+      'lowest' => 1900.0,
+      'eps' => 201.0,
+      'per_lowest' => 9.4527363184079594,
+      'per_highest' => 16.890547263681594,
+      'eps_growth' => 6.9148936170212769,
+    ),
+    2014 => 
+    array (
+      'highest' => 4000.0,
+      'lowest' => 2750.0,
+      'eps' => 188.0,
+      'per_lowest' => 14.627659574468085,
+      'per_highest' => 21.276595744680851,
+      'eps_growth' => 9.9415204678362574,
+    ),
+    2013 => 
+    array (
+      'highest' => 4000.0,
+      'lowest' => 1740.0,
+      'eps' => 171.0,
+      'per_lowest' => 10.175438596491228,
+      'per_highest' => 23.391812865497077,
+      'eps_growth' => 15.54054054054054,
+    ),
+    2012 => 
+    array (
+      'highest' => 1750.0,
+      'lowest' => 730.0,
+      'eps' => 148.0,
+      'per_lowest' => 4.9324324324324325,
+      'per_highest' => 11.824324324324325,
+      'eps_growth' => 10.447761194029852,
+    ),
+    2011 => 
+    array (
+      'highest' => 1234.3900000000001,
+      'lowest' => 680.0,
+      'eps' => 134.0,
+      'per_lowest' => 5.0746268656716422,
+      'per_highest' => 9.2118656716417924,
+      'eps_growth' => 19.642857142857142,
+    ),
+    2010 => 
+    array (
+      'highest' => 1224.51,
+      'lowest' => 780.13099999999997,
+      'eps' => 112.0,
+      'per_lowest' => 6.965455357142857,
+      'per_highest' => 10.933125,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 10.74627045225481,
+      'per_lowest' => 9.1301822819832132,
+      'per_highest' => 15.61902127408659,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 227.0,
+      'PER terendah' => '8.22',
+      'Harga terendah' => 1866.0,
+      'PER tengah' => '12.70',
+      'Harga tengah' => 2883.0,
+      'PER tertinggi' => '17.18',
+      'Harga tertinggi' => 3901.0,
+    ),
+  ),
+  'KAEF' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 2980.0,
+      'lowest' => 850.0,
+      'eps' => 48.0,
+      'per_lowest' => 17.708333333333332,
+      'per_highest' => 62.083333333333336,
+      'eps_growth' => 9.0909090909090917,
+    ),
+    2015 => 
+    array (
+      'highest' => 1465.0,
+      'lowest' => 615.0,
+      'eps' => 44.0,
+      'per_lowest' => 13.977272727272727,
+      'per_highest' => 33.295454545454547,
+      'eps_growth' => 4.7619047619047619,
+    ),
+    2014 => 
+    array (
+      'highest' => 1465.0,
+      'lowest' => 590.0,
+      'eps' => 42.0,
+      'per_lowest' => 14.047619047619047,
+      'per_highest' => 34.88095238095238,
+      'eps_growth' => 10.526315789473685,
+    ),
+    2013 => 
+    array (
+      'highest' => 1120.0,
+      'lowest' => 425.0,
+      'eps' => 38.0,
+      'per_lowest' => 11.184210526315789,
+      'per_highest' => 29.473684210526315,
+      'eps_growth' => 5.5555555555555554,
+    ),
+    2012 => 
+    array (
+      'highest' => 760.0,
+      'lowest' => 330.0,
+      'eps' => 36.0,
+      'per_lowest' => 9.1666666666666661,
+      'per_highest' => 21.111111111111111,
+      'eps_growth' => 20.0,
+    ),
+    2011 => 
+    array (
+      'highest' => 350.0,
+      'lowest' => 133.0,
+      'eps' => 30.0,
+      'per_lowest' => 4.4333333333333336,
+      'per_highest' => 11.666666666666666,
+      'eps_growth' => 25.0,
+    ),
+    2010 => 
+    array (
+      'highest' => 220.0,
+      'lowest' => 110.0,
+      'eps' => 24.0,
+      'per_lowest' => 4.583333333333333,
+      'per_highest' => 9.1666666666666661,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 12.489114199640516,
+      'per_lowest' => 10.72868128112489,
+      'per_highest' => 28.811124130673001,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 54.0,
+      'PER terendah' => '9.66',
+      'Harga terendah' => 521.0,
+      'PER tengah' => '20.67',
+      'Harga tengah' => 1116.0,
+      'PER tertinggi' => '31.69',
+      'Harga tertinggi' => 1711.0,
+    ),
+  ),
+  'MFMI' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 800.0,
+      'lowest' => 165.0,
+      'eps' => 27.0,
+      'per_lowest' => 6.1111111111111107,
+      'per_highest' => 29.62962962962963,
+      'eps_growth' => 28.571428571428573,
+    ),
+    2015 => 
+    array (
+      'highest' => 420.0,
+      'lowest' => 161.0,
+      'eps' => 21.0,
+      'per_lowest' => 7.666666666666667,
+      'per_highest' => 20.0,
+      'eps_growth' => 16.666666666666668,
+    ),
+    2014 => 
+    array (
+      'highest' => 420.0,
+      'lowest' => 136.0,
+      'eps' => 18.0,
+      'per_lowest' => 7.5555555555555554,
+      'per_highest' => 23.333333333333332,
+      'eps_growth' => 20.0,
+    ),
+    2013 => 
+    array (
+      'highest' => 240.0,
+      'lowest' => 130.0,
+      'eps' => 15.0,
+      'per_lowest' => 8.6666666666666661,
+      'per_highest' => 16.0,
+      'eps_growth' => 7.1428571428571432,
+    ),
+    2012 => 
+    array (
+      'highest' => 275.0,
+      'lowest' => 180.0,
+      'eps' => 14.0,
+      'per_lowest' => 12.857142857142858,
+      'per_highest' => 19.642857142857142,
+      'eps_growth' => -12.5,
+    ),
+    2011 => 
+    array (
+      'highest' => 440.0,
+      'lowest' => 182.0,
+      'eps' => 16.0,
+      'per_lowest' => 11.375,
+      'per_highest' => 27.5,
+      'eps_growth' => -71.428571428571431,
+    ),
+    2010 => 
+    array (
+      'eps' => 56.0,
+      'per_lowest' => 0.0,
+      'per_highest' => 0.0,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => -1.9246031746031746,
+      'per_lowest' => 7.7474489795918373,
+      'per_highest' => 19.443688586545729,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 26.0,
+      'PER terendah' => '6.97',
+      'Harga terendah' => 185.0,
+      'PER tengah' => '14.18',
+      'Harga tengah' => 376.0,
+      'PER tertinggi' => '21.39',
+      'Harga tertinggi' => 566.0,
+    ),
+  ),
+  'GEMA' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 450.0,
+      'lowest' => 310.0,
+      'eps' => 95.0,
+      'per_lowest' => 3.263157894736842,
+      'per_highest' => 4.7368421052631575,
+      'eps_growth' => 23.376623376623378,
+    ),
+    2015 => 
+    array (
+      'highest' => 395.0,
+      'lowest' => 286.0,
+      'eps' => 77.0,
+      'per_lowest' => 3.7142857142857144,
+      'per_highest' => 5.1298701298701301,
+      'eps_growth' => 37.5,
+    ),
+    2014 => 
+    array (
+      'highest' => 475.0,
+      'lowest' => 298.0,
+      'eps' => 56.0,
+      'per_lowest' => 5.3214285714285712,
+      'per_highest' => 8.4821428571428577,
+      'eps_growth' => -1.7543859649122806,
+    ),
+    2013 => 
+    array (
+      'highest' => 740.0,
+      'lowest' => 395.0,
+      'eps' => 57.0,
+      'per_lowest' => 6.9298245614035086,
+      'per_highest' => 12.982456140350877,
+      'eps_growth' => -36.666666666666664,
+    ),
+    2012 => 
+    array (
+      'highest' => 550.0,
+      'lowest' => 250.0,
+      'eps' => 90.0,
+      'per_lowest' => 2.7777777777777777,
+      'per_highest' => 6.1111111111111107,
+      'eps_growth' => 4.6511627906976747,
+    ),
+    2011 => 
+    array (
+      'highest' => 345.0,
+      'lowest' => 250.0,
+      'eps' => 86.0,
+      'per_lowest' => 2.9069767441860463,
+      'per_highest' => 4.0116279069767442,
+      'eps_growth' => 6.1728395061728394,
+    ),
+    2010 => 
+    array (
+      'highest' => 325.0,
+      'lowest' => 62.0,
+      'eps' => 81.0,
+      'per_lowest' => 0.76543209876543206,
+      'per_highest' => 4.0123456790123457,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 5.5465955069858239,
+      'per_lowest' => 3.6684119089405565,
+      'per_highest' => 6.4951994185324597,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 100.0,
+      'PER terendah' => '3.30',
+      'Harga terendah' => 331.0,
+      'PER tengah' => '5.22',
+      'Harga tengah' => 524.0,
+      'PER tertinggi' => '7.14',
+      'Harga tertinggi' => 716.0,
+    ),
+  ),
+  'TRIM' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 88.0,
+      'lowest' => 50.0,
+      'eps' => 6.0,
+      'per_lowest' => 8.3333333333333339,
+      'per_highest' => 14.666666666666666,
+      'eps_growth' => 50.0,
+    ),
+    2015 => 
+    array (
+      'highest' => 70.0,
+      'lowest' => 50.0,
+      'eps' => 4.0,
+      'per_lowest' => 12.5,
+      'per_highest' => 17.5,
+      'eps_growth' => 33.333333333333336,
+    ),
+    2014 => 
+    array (
+      'highest' => 89.0,
+      'lowest' => 55.0,
+      'eps' => 3.0,
+      'per_lowest' => 18.333333333333332,
+      'per_highest' => 29.666666666666668,
+    ),
+    2013 => 
+    array (
+      'highest' => 120.0,
+      'lowest' => 59.0,
+      'eps' => 0.0,
+      'eps_growth' => -100.0,
+    ),
+    2012 => 
+    array (
+      'highest' => 118.69499999999999,
+      'lowest' => 73.7607,
+      'eps' => -36.0,
+      'per_lowest' => -2.0489083333333333,
+      'per_highest' => -3.2970833333333331,
+      'eps_growth' => -3700.0,
+    ),
+    2011 => 
+    array (
+      'highest' => 93.2607,
+      'lowest' => 71.217200000000005,
+      'eps' => 1.0,
+      'per_lowest' => 71.217200000000005,
+      'per_highest' => 93.2607,
+      'eps_growth' => -80.0,
+    ),
+    2010 => 
+    array (
+      'highest' => 178.04300000000001,
+      'lowest' => 89.869299999999996,
+      'eps' => 5.0,
+      'per_lowest' => 17.973859999999998,
+      'per_highest' => 35.608600000000003,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => -759.33333333333326,
+      'per_lowest' => 21.051469722222222,
+      'per_highest' => 31.234258333333333,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => -40.0,
+      'PER terendah' => '18.95',
+      'Harga terendah' => -750.0,
+      'PER tengah' => '26.65',
+      'Harga tengah' => -1054.0,
+      'PER tertinggi' => '34.36',
+      'Harga tertinggi' => -1359.0,
+    ),
+  ),
+  'MAMI' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 79.0,
+      'lowest' => 50.0,
+      'eps' => 5.0,
+      'per_lowest' => 10.0,
+      'per_highest' => 15.800000000000001,
+    ),
+    2015 => 
+    array (
+      'highest' => 80.0,
+      'lowest' => 50.0,
+      'eps' => 0.0,
+      'eps_growth' => -100.0,
+    ),
+    2014 => 
+    array (
+      'highest' => 50.0,
+      'lowest' => 50.0,
+      'eps' => 1.0,
+      'per_lowest' => 50.0,
+      'per_highest' => 50.0,
+      'eps_growth' => 0.0,
+    ),
+    2013 => 
+    array (
+      'highest' => 51.0,
+      'lowest' => 50.0,
+      'eps' => 1.0,
+      'per_lowest' => 50.0,
+      'per_highest' => 51.0,
+      'eps_growth' => 0.0,
+    ),
+    2012 => 
+    array (
+      'highest' => 59.0,
+      'lowest' => 50.0,
+      'eps' => 1.0,
+      'per_lowest' => 50.0,
+      'per_highest' => 59.0,
+    ),
+    2011 => 
+    array (
+      'highest' => 50.0,
+      'lowest' => 50.0,
+      'eps' => 0.0,
+    ),
+    2010 => 
+    array (
+      'highest' => 55.0,
+      'lowest' => 50.0,
+      'eps' => 0.0,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => -33.333333333333336,
+      'per_lowest' => 40.0,
+      'per_highest' => 43.950000000000003,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 3.0,
+      'PER terendah' => '36.00',
+      'Harga terendah' => 120.0,
+      'PER tengah' => '42.17',
+      'Harga tengah' => 141.0,
+      'PER tertinggi' => '48.35',
+      'Harga tertinggi' => 161.0,
+    ),
+  ),
+  'SILO' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 11750.0,
+      'lowest' => 7250.0,
+      'eps' => 66.0,
+      'per_lowest' => 109.84848484848484,
+      'per_highest' => 178.03030303030303,
+      'eps_growth' => 10.0,
+    ),
+    2015 => 
+    array (
+      'highest' => 16900.0,
+      'lowest' => 8950.0,
+      'eps' => 60.0,
+      'per_lowest' => 149.16666666666666,
+      'per_highest' => 281.66666666666669,
+      'eps_growth' => 11.111111111111111,
+    ),
+    2014 => 
+    array (
+      'highest' => 15900.0,
+      'lowest' => 9450.0,
+      'eps' => 54.0,
+      'per_lowest' => 175.0,
+      'per_highest' => 294.44444444444446,
+      'eps_growth' => 14.893617021276595,
+    ),
+    2013 => 
+    array (
+      'highest' => 11000.0,
+      'lowest' => 9400.0,
+      'eps' => 47.0,
+      'per_lowest' => 200.0,
+      'per_highest' => 234.04255319148936,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 12.001576044129235,
+      'per_lowest' => 158.50378787878788,
+      'per_highest' => 247.04599183322586,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 74.0,
+      'PER terendah' => '142.65',
+      'Harga terendah' => 10545.0,
+      'PER tengah' => '207.20',
+      'Harga tengah' => 15317.0,
+      'PER tertinggi' => '271.75',
+      'Harga tertinggi' => 20088.0,
+    ),
+  ),
+  'SULI' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 228.0,
+      'lowest' => 50.0,
+      'eps' => 1.0,
+      'per_lowest' => 50.0,
+      'per_highest' => 228.0,
+      'eps_growth' => 0.0,
+    ),
+    2015 => 
+    array (
+      'highest' => 74.0,
+      'lowest' => 50.0,
+      'eps' => 1.0,
+      'per_lowest' => 50.0,
+      'per_highest' => 74.0,
+      'eps_growth' => 0.0,
+    ),
+    2014 => 
+    array (
+      'highest' => 79.0,
+      'lowest' => 59.0,
+      'eps' => 1.0,
+      'per_lowest' => 59.0,
+      'per_highest' => 79.0,
+      'eps_growth' => -100.96153846153847,
+    ),
+    2013 => 
+    array (
+      'highest' => 119.0,
+      'lowest' => 56.0,
+      'eps' => -104.0,
+      'per_lowest' => -0.53846153846153844,
+      'per_highest' => -1.1442307692307692,
+      'eps_growth' => 73.333333333333329,
+    ),
+    2012 => 
+    array (
+      'highest' => 138.0,
+      'lowest' => 57.0,
+      'eps' => -60.0,
+      'per_lowest' => -0.94999999999999996,
+      'per_highest' => -2.2999999999999998,
+    ),
+    2011 => 
+    array (
+      'highest' => 159.0,
+      'lowest' => 105.0,
+      'eps' => 0.0,
+      'eps_growth' => -100.0,
+    ),
+    2010 => 
+    array (
+      'highest' => 299.57600000000002,
+      'lowest' => 90.0,
+      'eps' => 1.0,
+      'per_lowest' => 90.0,
+      'per_highest' => 299.57600000000002,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => -25.525641025641029,
+      'per_lowest' => 41.251923076923077,
+      'per_highest' => 112.85529487179487,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 1.0,
+      'PER terendah' => '37.13',
+      'Harga terendah' => 28.0,
+      'PER tengah' => '80.63',
+      'Harga tengah' => 60.0,
+      'PER tertinggi' => '124.14',
+      'Harga tertinggi' => 92.0,
+    ),
+  ),
+  'SMSM' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 4855.0,
+      'lowest' => 960.0,
+      'eps' => 78.0,
+      'per_lowest' => 12.307692307692308,
+      'per_highest' => 62.243589743589745,
+      'eps_growth' => -73.648648648648646,
+    ),
+    2015 => 
+    array (
+      'highest' => 5175.0,
+      'lowest' => 4320.0,
+      'eps' => 296.0,
+      'per_lowest' => 14.594594594594595,
+      'per_highest' => 17.483108108108109,
+      'eps_growth' => 9.6296296296296298,
+    ),
+    2014 => 
+    array (
+      'highest' => 5025.0,
+      'lowest' => 3060.0,
+      'eps' => 270.0,
+      'per_lowest' => 11.333333333333334,
+      'per_highest' => 18.611111111111111,
+      'eps_growth' => 26.760563380281692,
+    ),
+    2013 => 
+    array (
+      'highest' => 3900.0,
+      'lowest' => 2350.0,
+      'eps' => 213.0,
+      'per_lowest' => 11.032863849765258,
+      'per_highest' => 18.309859154929576,
+      'eps_growth' => 32.298136645962735,
+    ),
+    2012 => 
+    array (
+      'highest' => 2700.0,
+      'lowest' => 1370.0,
+      'eps' => 161.0,
+      'per_lowest' => 8.5093167701863361,
+      'per_highest' => 16.770186335403725,
+      'eps_growth' => 15.827338129496402,
+    ),
+    2011 => 
+    array (
+      'highest' => 1460.0,
+      'lowest' => 980.0,
+      'eps' => 139.0,
+      'per_lowest' => 7.0503597122302155,
+      'per_highest' => 10.503597122302159,
+      'eps_growth' => 34.95145631067961,
+    ),
+    2010 => 
+    array (
+      'highest' => 1380.0,
+      'lowest' => 780.0,
+      'eps' => 103.0,
+      'per_lowest' => 7.5728155339805827,
+      'per_highest' => 13.398058252427184,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 7.6364125745669069,
+      'per_lowest' => 10.342996585968947,
+      'per_highest' => 22.474215689695942,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 84.0,
+      'PER terendah' => '9.31',
+      'Harga terendah' => 782.0,
+      'PER tengah' => '17.02',
+      'Harga tengah' => 1429.0,
+      'PER tertinggi' => '24.72',
+      'Harga tertinggi' => 2076.0,
+    ),
+  ),
+  'TOWR' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 4850.0,
+      'lowest' => 3480.0,
+      'eps' => 297.0,
+      'per_lowest' => 11.717171717171718,
+      'per_highest' => 16.329966329966329,
+      'eps_growth' => 2.7681660899653977,
+    ),
+    2015 => 
+    array (
+      'highest' => 4750.0,
+      'lowest' => 3720.0,
+      'eps' => 289.0,
+      'per_lowest' => 12.8719723183391,
+      'per_highest' => 16.435986159169548,
+      'eps_growth' => 252.4390243902439,
+    ),
+    2014 => 
+    array (
+      'highest' => 4200.0,
+      'lowest' => 2680.0,
+      'eps' => 82.0,
+      'per_lowest' => 32.68292682926829,
+      'per_highest' => 51.219512195121951,
+      'eps_growth' => 412.5,
+    ),
+    2013 => 
+    array (
+      'highest' => 28050.0,
+      'lowest' => 2575.0,
+      'eps' => 16.0,
+      'per_lowest' => 160.9375,
+      'per_highest' => 1753.125,
+      'eps_growth' => -95.294117647058826,
+    ),
+    2012 => 
+    array (
+      'highest' => 24200.0,
+      'lowest' => 10000.0,
+      'eps' => 340.0,
+      'per_lowest' => 29.411764705882351,
+      'per_highest' => 71.17647058823529,
+      'eps_growth' => 22.743682310469314,
+    ),
+    2011 => 
+    array (
+      'highest' => 13000.0,
+      'lowest' => 8550.0,
+      'eps' => 277.0,
+      'per_lowest' => 30.866425992779785,
+      'per_highest' => 46.931407942238266,
+      'eps_growth' => 179.79797979797979,
+    ),
+    2010 => 
+    array (
+      'highest' => 1812240.0,
+      'lowest' => 1900.0,
+      'eps' => 99.0,
+      'per_lowest' => 19.19191919191919,
+      'per_highest' => 18305.454545454544,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 129.15912249026658,
+      'per_lowest' => 42.525668679337208,
+      'per_highest' => 2894.3818412384676,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 681.0,
+      'PER terendah' => '38.27',
+      'Harga terendah' => 26049.0,
+      'PER tengah' => '1611.05',
+      'Harga tengah' => 1096482.0,
+      'PER tertinggi' => '3183.82',
+      'Harga tertinggi' => 2166916.0,
+    ),
+  ),
+  'JECC' => 
+  array (
+    2016 => 
+    array (
+      'highest' => 3500.0,
+      'lowest' => 1350.0,
+      'eps' => 875.0,
+      'per_lowest' => 1.5428571428571429,
+      'per_highest' => 4.0,
+      'eps_growth' => 5368.75,
+    ),
+    2015 => 
+    array (
+      'highest' => 2950.0,
+      'lowest' => 1350.0,
+      'eps' => 16.0,
+      'per_lowest' => 84.375,
+      'per_highest' => 184.375,
+      'eps_growth' => -89.808917197452232,
+    ),
+    2014 => 
+    array (
+      'highest' => 3000.0,
+      'lowest' => 2275.0,
+      'eps' => 157.0,
+      'per_lowest' => 14.490445859872612,
+      'per_highest' => 19.108280254777071,
+      'eps_growth' => 3.9735099337748343,
+    ),
+    2013 => 
+    array (
+      'highest' => 2950.0,
+      'lowest' => 1600.0,
+      'eps' => 151.0,
+      'per_lowest' => 10.596026490066226,
+      'per_highest' => 19.536423841059602,
+      'eps_growth' => -28.436018957345972,
+    ),
+    2012 => 
+    array (
+      'highest' => 3000.0,
+      'lowest' => 590.0,
+      'eps' => 211.0,
+      'per_lowest' => 2.796208530805687,
+      'per_highest' => 14.218009478672986,
+      'eps_growth' => 7.6530612244897958,
+    ),
+    2011 => 
+    array (
+      'highest' => 730.0,
+      'lowest' => 450.0,
+      'eps' => 196.0,
+      'per_lowest' => 2.295918367346939,
+      'per_highest' => 3.7244897959183674,
+      'eps_growth' => -3366.6666666666665,
+    ),
+    2010 => 
+    array (
+      'highest' => 980.0,
+      'lowest' => 500.0,
+      'eps' => -6.0,
+      'per_lowest' => -83.333333333333329,
+      'per_highest' => -163.33333333333334,
+    ),
+    'median' => 
+    array (
+      'eps_growth' => 315.91082805613337,
+      'per_lowest' => 4.6804461510878967,
+      'per_highest' => 11.661267148156385,
+    ),
+    'prediction' => 
+    array (
+      'year' => 2017,
+      'Asumsi EPS' => 3639.0,
+      'PER terendah' => '4.21',
+      'Harga terendah' => 15330.0,
+      'PER tengah' => '8.52',
+      'Harga tengah' => 31006.0,
+      'PER tertinggi' => '12.83',
+      'Harga tertinggi' => 46682.0,
+    ),
+  ),
+);

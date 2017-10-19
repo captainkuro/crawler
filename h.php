@@ -375,7 +375,7 @@ function rule34($url) {
 		} else {
 			$continue = false;
 		}
-		$c->go_to("id='image-list'");
+		$c->go_to("id='imagelist'");
 		while ($line = $c->readline()) {
 			if (Crawler::is_there($line, '>Image Only<')) {
 				$href = Crawler::extract($line, '<br><a href="', '"');
@@ -799,7 +799,7 @@ function porncomix($url) {
 	$p = new Page($url);
 	$h = new simple_html_dom();
 	$h->load($p->content());
-	// print_r($p->content())
+	// print_r($p->content());
 
 	$title = $h->find('.post-title', 0)->innertext;
 
@@ -809,6 +809,31 @@ function porncomix($url) {
 		$tsrc = new Text($src);
 		$src = $tsrc->regex_replace('#-\d+x\d+\.#', '.')->to_s();
 		echo "<a href='$src'>$title</a><br>\n";
+	}
+}
+
+// https://www.porncomix.one/gallery/milftoon-nutcase
+function porncomix1($url) {
+	$p = new Page($url);
+	$h = new simple_html_dom();
+	$h->load($p->content());
+	$title = basename($url);
+
+	$gal = $h->find('.unite-gallery', 0);
+	$gal2 = $h->find('#gallery-2', 0);
+
+	if ($gal) {
+		foreach ($gal->find('img') as $img) {
+			$src = $img->getAttribute('data-image');
+			echo "<a href='$src'>$title</a><br>\n";
+		}
+	} else if ($gal2) {
+		foreach ($gal2->find('.gallery-icon') as $dt) {
+			$src = $dt->find('a', 0)->href;
+			echo "<a href='$src'>$title</a><br>\n";
+		}
+	} else {
+		echo "Unknown pattern";
 	}
 }
 
@@ -853,6 +878,8 @@ if ($_POST) {
 			'nhentai.net' => 'nhentai',
 			'tsumino.com' => 'tsumino',
 			'porncomix.info' => 'porncomix',
+			'www.porncomix.info' => 'porncomix',
+			'www.porncomix.one' => 'porncomix1',
 		);
 		$found = false;
 		foreach ($map as $host => $func) {
