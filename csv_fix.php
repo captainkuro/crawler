@@ -25,5 +25,8 @@ function fixit($file) {
 	fclose($out);
 }
 setlocale(LC_ALL, 'id');
+
 fixit('C:\MINE\Download\KHANDARW0705_1654173949.CSV');
+
+
 // print_r(localeconv());
