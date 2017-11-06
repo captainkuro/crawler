@@ -5,6 +5,7 @@ class Mangastream_Crawler implements Manga_Crawler {
 
 	public function is_supported($url) {
 		return strpos($url, 'http://mangastream.com/') !== false
+			|| strpos($url, 'https://mangastream.com/') !== false
 			|| strpos($url, 'http://readms.com/') !== false
 			|| strpos($url, 'http://readms.net/') !== false;
 	}
