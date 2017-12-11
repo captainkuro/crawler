@@ -11,12 +11,14 @@ function something($number)
 function fixit($file) {
 	$in = fopen($file, 'r');
 	$out = fopen($file.'-out.csv', 'w');
+    $locale = localeconv();
+
 	while ($data = fgetcsv($in)) {
 		foreach ($data as $key => $value) {
 			if (preg_match('#^\d\.\d+E\d$#', $value)) {
 				$data[$key] = something((float)$value);
 			} else if (preg_match('#^\d{4,}\.\d\d$#', $value)) {
-				$data[$key] = str_replace('.', ',', $value);
+				$data[$key] = str_replace('.', $locale['decimal_point'], $value);
 			}
 		}
 		fputcsv($out, $data);
@@ -25,5 +27,5 @@ function fixit($file) {
 	fclose($out);
 }
 setlocale(LC_ALL, 'id');
-fixit('/home/khandar-gdp/Downloads/KHANDARW0705_155870085.CSV');
+fixit('/home/khandar-gdp/Downloads/KHANDARW0705_1325297476.CSV');
 // print_r(localeconv());
