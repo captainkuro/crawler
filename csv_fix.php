@@ -27,5 +27,5 @@ function fixit($file) {
 	fclose($out);
 }
 setlocale(LC_ALL, 'id');
-fixit('/home/khandar-gdp/Downloads/KHANDARW0705_1325297476.CSV');
+fixit('C:\\MINE\\Download\\KHANDARW0705_1732514504.CSV');
 // print_r(localeconv());

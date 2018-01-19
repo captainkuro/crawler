@@ -29,6 +29,9 @@ class Mangastream_Crawler implements Manga_Crawler {
 		// crawl chapters
 		$p = new Page($base);
 		$p->go_line('<table class="table table-striped">');
+
+		$parsed = parse_url($base);
+		$prefix_url = "{$parsed['scheme']}://{$parsed['host']}";
 		
 		$list = array();
 		do {
@@ -40,7 +43,7 @@ class Mangastream_Crawler implements Manga_Crawler {
 				$infix = $infix[1];
 				
 				$list[] = array(
-					'url' => $href->to_s(),
+					'url' => $prefix_url.$href->to_s(),
 					'desc' => $desc->to_s(),
 					'infix' => $infix,
 				);

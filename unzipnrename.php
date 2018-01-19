@@ -275,7 +275,7 @@ class Dir_To_Cbz {
 	private $source;
 	private $destination;
 	private $prefix_gen;
-	private $temp_dir = 'e:\Temp\unzip'; // make sure this exists!
+	private $temp_dir = 'C:\MINE\Temp\unzip'; // make sure this exists!
 
 	private $current_dir;
 	private $moved_dir;
@@ -355,5 +355,5 @@ class Dir_To_Cbz {
 }
 
 // Test run
-// $x = new Dir_To_Cbz('D:\Download\manga\Sho', 'D:\Download\manga\tes', 'Shokugeki_no_Soma', '# v(\d{2}) #');
-// $x->run();
+$x = new Dir_To_Cbz('D:\Manga\#Complete\Gamble Fish', 'D:\Manga\#Complete\out', 'Gamble_Fish', '#v(\d{2})#');
+$x->run();
