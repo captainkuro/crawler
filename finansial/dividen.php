@@ -17,6 +17,10 @@ require 'vendor/autoload.php';
 // http://finance.yahoo.com/quote/HMSP.JK/history?period1=1451581200&period2=1483117200&interval=div%7Csplit&filter=split&frequency=1mo
 // need research to parse: https://query2.finance.yahoo.com/v8/finance/chart/INAI.JK?formatted=true&crumb=L2o8uRPbeFo&lang=en-US&region=US&period1=1262278800&period2=1483117200&interval=1mo&events=div%7Csplit&corsDomain=finance.yahoo.com
 
+class G {
+	const YEAR = 2017;
+}
+
 function exporte($file, $value) {
 	file_put_contents($file, '<?php return '.var_export($value, true).';');
 }
@@ -39,7 +43,7 @@ function all_pairs() {
 // exporte('all_pairs.out', all_pairs());
 
 function all_dividens() {
-	$files = ['raw-corporate_action-2014.xls', 'raw-corporate_action-2015.xls', 'raw-corporate_action-2016.xls'];
+	$files = ['raw-corporate_action-2015.xls', 'raw-corporate_action-2016.xls', 'raw-corporate_action-2017.xls'];
 	$result = [];
 	foreach ($files as $xlsfile) {
 		$reader = new SpreadsheetReader($xlsfile);
@@ -72,19 +76,19 @@ exporte('all_dividens.out', all_dividens());
 
 function standardize_dividen() {
 	$dividens = include 'all_dividens.out';
-	$financials = include 'finan_2016.out';
+	$financials = include "finan_{G::YEAR}.out";
 	$result = [];
 	foreach ($dividens as $code => $data) {
 		$name = $data['name'];
 		$finan = $financials[$code];
-		if (isset($data['dividen'][2016]) && isset($finan['4th Quarter 2016'])) {
-			$dividen = array_sum($data['dividen'][2016]);
+		if (isset($data['dividen'][G::YEAR]) && isset($finan["4th Quarter {G::YEAR}"])) {
+			$dividen = array_sum($data['dividen'][G::YEAR]);
 			$item = [
 				'Name' => $name,
 				'Code' => $code,
 			];
-			$item = $item + $finan['4th Quarter 2016'];
-			$item['Dividen 2016'] = $dividen;
+			$item = $item + $finan["4th Quarter {G::YEAR}"];
+			$item["Dividen {G::YEAR}"] = $dividen;
 			$item['Rasio Dividen'] = sprintf('%.2f',
 				floatval(str_replace(',', '', $dividen) * 100
 				/
