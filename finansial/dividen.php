@@ -76,19 +76,19 @@ exporte('all_dividens.out', all_dividens());
 
 function standardize_dividen() {
 	$dividens = include 'all_dividens.out';
-	$financials = include "finan_{G::YEAR}.out";
+	$financials = include 'start-finan_'.G::YEAR.'.out';
 	$result = [];
 	foreach ($dividens as $code => $data) {
 		$name = $data['name'];
 		$finan = $financials[$code];
-		if (isset($data['dividen'][G::YEAR]) && isset($finan["4th Quarter {G::YEAR}"])) {
+		if (isset($data['dividen'][G::YEAR]) && isset($finan['4th Quarter '.G::YEAR])) {
 			$dividen = array_sum($data['dividen'][G::YEAR]);
 			$item = [
 				'Name' => $name,
 				'Code' => $code,
 			];
-			$item = $item + $finan["4th Quarter {G::YEAR}"];
-			$item["Dividen {G::YEAR}"] = $dividen;
+			$item = $item + $finan['4th Quarter '.G::YEAR];
+			$item['Dividen '.G::YEAR] = $dividen;
 			$item['Rasio Dividen'] = sprintf('%.2f',
 				floatval(str_replace(',', '', $dividen) * 100
 				/

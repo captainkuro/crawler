@@ -53,7 +53,7 @@ $dividens = include 'all_dividens.out';
 $financials = include 'start-all_standardized.out';
 
 // Configs sort of
-$included_years = [2017, 2016, 2015];
+$included_years = [2016, 2015, 2014];
 $quarter = '4';
 list($ynow, $yprev, $yprev2) = $included_years;
 
