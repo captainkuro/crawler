@@ -82,6 +82,7 @@ function get_all_sectors() {
 	return $result;
 }
 
+// Download from http://www.idx.co.id/id-id/beranda/perusahaantercatat/profilperusahaantercatat.aspx
 // return list of saham kode, combined
 function get_all_codes() {
 	$output = 'start-all_codes.out';
@@ -169,7 +170,7 @@ function extract_fin($text) {
 // exit;
 
 function fetch_html($code, $year) {
-	$url = 'http://miraeasset.co.id/hmpg/quote/quoteMain-finan.do';
+	$url = 'https://miraeasset.co.id/hmpg/quote/quoteMain-finan.do';
 	$body = "tabQuoteFlag=01&tabClickYn=Y&loadM_01=2&searchQuart=3&searchYear={$year}&stcd={$code}";
 	$p = new Page($url, [
 		CURLOPT_POST => 1,
@@ -193,10 +194,10 @@ function fin_in_year($year) {
 }
 
 // how to use: exit start and end index to year u want
-// for ($y=2017; $y<=2017; $y++) {
-// 	$result = fin_in_year($y);
-// 	exporte("start-finan_$y.out", $result);
-// }
+for ($y=2017; $y<=2017; $y++) {
+	$result = fin_in_year($y);
+	exporte("start-finan_$y.out", $result);
+}
 // exit;
 
 // show chart http://miraeasset.co.id/js/dwsComplex/complex.htm?StockCode=DEWA&periodBit=I
