@@ -361,7 +361,7 @@ function old_hfh_realm($url) {
 
 function rule34($url) {
 	$text = rawurldecode(basename(dirname($url)));
-	$site = 'http://rule34.paheal.net';
+	$site = 'https://rule34.paheal.net';
 	$continue = true;
 	while ($continue) {
 		echo "$url<br/>";
@@ -599,8 +599,8 @@ function rule34xxx($url) {
 // http://img.rule34.xxx/rule34//images/1202/fc0d335a14ffbdbb861bdabb8afd8bd6.jpeg
 
 	$continue = true;
-	$domain = 'http://rule34.xxx/';
-	$base = 'http://rule34.xxx/index.php';
+	$domain = 'https://rule34.xxx/';
+	$base = 'https://rule34.xxx/index.php';
 	$tags = Text::create($url)->regex_match('/tags=([^&]+)/');
 	$tags = $tags[1];
 	do {
@@ -616,7 +616,7 @@ function rule34xxx($url) {
 			$p2 = new Page($domain . $href);
 			$p2->go_line('Original image');
 			$src = $p2->curr_line()
-				->cut_between('href="http:', '"');
+				->cut_between('href="https:', '"');
 // echo '<pre>'.htmlspecialchars($p2->curr_line()).'</pre>';
 			echo "<a href='$src'>$tags</a><br>\n";
 		}} while (!$p->next_line()->contain('<center>'));
