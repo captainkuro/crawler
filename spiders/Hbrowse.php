@@ -302,26 +302,28 @@ class Hbrowse implements Spider {
 		$links = array();
 		
 		while (!$stop) {
+			echo "Updating from $start<br>\n";
 			$p = new Page($start);
 			$p->go_line('id="main"');
 			do {
 				$line = $p->curr_line();
 				if ($line->contain('class="thumbImg"')) {
 					$arr = $line->extract_to_array('href="', '"');
-					$href = rtrim(end($arr), '/');
+					$href = Hbrowse::$base . rtrim(end($arr), '/');
 					if ($this->is_already_exist($href)) {
 						$stop = true;
 						break;
 					}
 					$links[] = $href;
 				}
-			} while (!$p->next_line()->contain('>Next<'));
+				$next_line = $p->next_line();
+			} while (!$next_line->contain('>Next<') && !$next_line->contain('> | Next'));
 
 			$line = $p->curr_line();
 			// Cek ada next/tidak
 			if ($line->contain('">Next<')) {
 				$arr = $line->extract_to_array('href="', '"');
-				$start = end($arr);
+				$start = Hbrowse::$base . end($arr);
 			} else {
 				$stop = true;
 			}
