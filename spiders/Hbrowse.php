@@ -63,6 +63,7 @@ class Hmanga extends Model {
 			$line = $p->curr_line();
 			if ($line->contain('/thumbnails/') /*&& strpos($line, '.jpg') === false*/) {
 				$link = $line->cut_between('href="', '"');
+				$link = Hbrowse::$base . $link;
 				$x = new Page($link);
 				$x->go_line('id="main"');
 				do {
@@ -70,7 +71,7 @@ class Hmanga extends Model {
 					if ($line->contain('/zzz/')) {
 						$raw = $line->cut_between('src="', '"');
 						//$img = str_replace('/zzz/', '/', $raw);
-						$img = $raw;
+						$img = Hbrowse::$base . $raw;
 						$thumbs[] = $img;
 					}
 				} while (!$x->next_line()->contain('</table>'));

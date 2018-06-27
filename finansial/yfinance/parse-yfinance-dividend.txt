@@ -1,0 +1,20 @@
+Collect data:
+From search-best-buku.out, get all code with score >= 7
+Iterate each code:
+  Open https://finance.yahoo.com/quote/<CODE>.JK/history?period1=1096304400&period2=1530032400&interval=1mo&filter=history&frequency=1mo
+  Pick json "HistoricalPriceStore"
+  Store pair [code => json price]
+
+Process json data:
+Open all pairs
+Iterate each code:
+  Iterate each row:
+    Pick Year
+    If Type==Dividend accumulate dividend[Year]
+    Else accumulate closing_price[Year]
+  Iterate each year:
+    Count average closing_price = sum(closing_price[Year])/length
+    Count dividend percentage = sum(divideng[Year]) / avg closing_price * 100%
+
+Rank them:
+Sort by divident percentage DESC

@@ -355,5 +355,5 @@ class Dir_To_Cbz {
 }
 
 // Test run
-$x = new Dir_To_Cbz('D:\Temp Manga\Red Eyes\i', 'D:\Temp Manga\Red Eyes\o', 'Red_Eyes', '#v(\d{2})#');
+$x = new Dir_To_Cbz('C:\MINE\To Be Kept\Detective Conan', 'C:\MINE\To Be Kept\Deto', 'Detective_Conan', '#v(\d{2})#');
 $x->run();
