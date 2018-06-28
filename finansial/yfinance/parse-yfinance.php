@@ -5,7 +5,7 @@ $best_result = require '../search-best-buku.out';
 $codes = [];
 
 foreach ($best_result as $stock) {
-	if (in_array($stock['Score'], ['9,00', '8,00', '7,00'])) {
+	if (in_array($stock['Score'], ['9,00', '8,00', '7,00', '6,00'])) {
 		$codes[] = $stock['code'];
 	}
 }
