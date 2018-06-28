@@ -39,7 +39,7 @@ foreach ($prices_collection as $code => $prices) {
 		if (isset($row['type']) && $row['type'] == 'DIVIDEND') {
 			$dividend_sums[$code][$year][] = $row['data'] / $divider;
 		} else if (isset($row['type']) && $row['type'] == 'SPLIT') {
-			$divider = $divider * $row['denominator'];
+			$divider = $divider * $row['denominator'] / $row['numerator'];
 		} else {
 			// must be price
 			$closing_price_sums[$code][$year][] = $row['close'];
