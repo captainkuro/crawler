@@ -22,7 +22,7 @@ class Kissmanga_Crawler implements Manga_Crawler {
 	public function get_info($base) {
 		$DOMAIN = 'http://kissmanga.com';
 		// crawl chapters
-		$p = new Page($base, array('become_firefox' => true));
+		$p = new Page($base, array('become_firefox' => true, 'bypass_cloudflare' => true));
 		$h = new simple_html_dom();
 		$h->load($p->content());
 
@@ -44,7 +44,7 @@ class Kissmanga_Crawler implements Manga_Crawler {
 	
 	public function get_images($chapter_url, $prefix, $infix) {
 		$ifx = Text::create($infix)->pad(3)->to_s();
-		$p = new Page($chapter_url, array('become_firefox' => true));
+		$p = new Page($chapter_url, array('become_firefox' => true, 'bypass_cloudflare' => true));
 		// grab list of pages
 		$p->go_line('var lstImages');
 		$i = 1;

@@ -10,7 +10,7 @@ foreach ($best_result as $stock) {
 	}
 }
 
-if (!is_file('prices-score-7-above.json')) {
+if (!is_file('prices-score-6-above.json')) {
 	$prices_collection = [];
 	foreach ($codes as $code) {
 		echo "Page $code\n";
@@ -24,9 +24,9 @@ if (!is_file('prices-score-7-above.json')) {
 		$prices_collection[$code] = $prices;
 	}
 
-	file_put_contents('prices-score-7-above.json', json_encode($prices_collection, JSON_PRETTY_PRINT));
+	file_put_contents('prices-score-6-above.json', json_encode($prices_collection, JSON_PRETTY_PRINT));
 } else {
-	$prices_collection = json_decode(file_get_contents('prices-score-7-above.json'), true);
+	$prices_collection = json_decode(file_get_contents('prices-score-6-above.json'), true);
 }
 
 $closing_price_sums = [];
@@ -60,16 +60,34 @@ foreach ($dividend_sums as $code => $per_year) {
 	}
 }
 
+/*
+@TODO show data:
+- avg price yearly
+- divicen amount
+- per semester: dividen percent & avg price 
+*/
 $report = [];
-uasort($dividend_percents, function ($a, $b) {
-	if (isset($a['2017'])) {
-		if (!isset($b['2017'])) {
+foreach ($closing_price_avgs as $code => $per_year) {
+	foreach ($per_year as $year => $closing_avg) {
+		$dividend_sum = isset($dividend_sums[$code][$year]) ? array_sum($dividend_sums[$code][$year]) : 0;
+		$dividend_percent = isset($dividend_percents[$code][$year]) ? $dividend_percents[$code][$year] : 0;
+		$report[$code][$year] = array(
+			'dividend_sum' => $dividend_sum,
+			'dividend_%' => $dividend_percent,
+			'close_avg' => $closing_avg,
+		);
+	}
+}
+
+uasort($report, function ($a, $b) {
+	if (isset($a['2017']['dividend_%'])) {
+		if (!isset($b['2017']['dividend_%'])) {
 			return -1;
 		} else {
-			return ($a['2017'] > $b['2017']) ? -1 : 1; 
+			return ($a['2017']['dividend_%'] > $b['2017']['dividend_%']) ? -1 : 1; 
 		}
 	} else {
-		if (isset($b['2017'])) {
+		if (isset($b['2017']['dividend_%'])) {
 			return 1;
 		} else {
 			return 0;
@@ -77,4 +95,4 @@ uasort($dividend_percents, function ($a, $b) {
 	}
 });
 
-file_put_contents('dividends-score-7-above.json', json_encode($dividend_percents, JSON_PRETTY_PRINT));
+file_put_contents('dividends-score-6-above.json', json_encode($report, JSON_PRETTY_PRINT));
