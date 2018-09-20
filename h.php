@@ -821,6 +821,7 @@ function porncomix1($url) {
 
 	$gal = $h->find('.unite-gallery', 0);
 	$gal2 = $h->find('#gallery-2', 0);
+	$gal3 = $h->find('.dgwt-jg-gallery', 0);
 
 	if ($gal) {
 		foreach ($gal->find('img') as $img) {
@@ -830,6 +831,11 @@ function porncomix1($url) {
 	} else if ($gal2) {
 		foreach ($gal2->find('.gallery-icon') as $dt) {
 			$src = $dt->find('a', 0)->href;
+			echo "<a href='$src'>$title</a><br>\n";
+		}
+	} else if ($gal3) {
+		foreach ($gal3->find('a') as $a) {
+			$src = $a->href;
 			echo "<a href='$src'>$title</a><br>\n";
 		}
 	} else {
