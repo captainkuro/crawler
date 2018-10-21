@@ -1,19 +1,16 @@
 <?php
 
 class Rlsbb_Extractor implements Extractor {
-	
+
 	public function can_extract($url) {
-		return strpos($url, 'http://www.rlsbb.com') === 0
-			|| strpos($url, 'http://rlsbb.com') === 0
+		return strpos($url, 'https://www.rlsbb.ru') === 0
+			|| strpos($url, 'https://rlsbb.ru') === 0
 			|| strpos($url, 'http://www.rlsbb.ru') === 0
 			|| strpos($url, 'http://rlsbb.ru') === 0;
 	}
 
 	public function extract($columns, $s, $n, $url) {
 		$result = array();
-		if (strpos($url, 'http://www.rlsbb.com') === 0) {
-			$url = str_replace('http://www.rlsbb.com', 'http://rlsbb.com', $url);
-		}
 		for ($i=$s; $i<=$n; $i++) {
 			$purl = rtrim($url, '/') . '/';
 			if ($i > 1) $purl .= 'page/'.$i.'/';
